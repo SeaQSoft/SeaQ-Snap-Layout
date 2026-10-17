@@ -1,0 +1,734 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>KDE Snap Layout – User Manual</title>
+<script src="assets/snap.js"></script>
+<style>
+@page { size: A4; margin: 0; }
+:root {
+  --ink: #1d2330; --muted: #5d6675; --line: #e2e6ec; --soft: #f4f6f9;
+  --blue: #2a7fd4; --sky: #3daee9; --navy: #14224f; --violet: #6a4fd8;
+  --tip: #e8f6ee; --tipb: #2f9e5f; --note: #eaf3fc; --noteb: #2a7fd4; --warn: #fff4e5; --warnb: #e8590c;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: #d9dde3; font-family: Inter, "Noto Sans", sans-serif; color: var(--ink); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.page { width: 210mm; height: 297mm; margin: 10mm auto; background: #fff; position: relative; overflow: hidden; padding: 20mm 18mm 18mm; page-break-after: always; box-shadow: 0 4px 24px rgba(0,0,0,.12); }
+@media print { html, body { background: #fff; } .page { margin: 0; box-shadow: none; } }
+.page:last-child { page-break-after: auto; }
+
+/* running header / footer */
+.hdr { position: absolute; left: 18mm; right: 18mm; top: 9mm; display: flex; justify-content: space-between; font-size: 8pt; color: var(--muted); letter-spacing: .3px; }
+.hdr b { color: var(--ink); font-weight: 600; }
+.ftr { position: absolute; left: 18mm; right: 18mm; bottom: 8mm; display: flex; justify-content: space-between; align-items: center; font-size: 8pt; color: var(--muted); }
+.ftr .pn { width: 7mm; height: 7mm; border-radius: 50%; background: var(--navy); color: #fff; display: grid; place-items: center; font-weight: 700; font-size: 8pt; }
+
+/* type */
+h1 { font-size: 26pt; letter-spacing: -.8px; margin: 0 0 3mm; line-height: 1.1; }
+h2 { font-size: 14pt; margin: 6mm 0 2.5mm; letter-spacing: -.3px; }
+h3 { font-size: 11pt; margin: 4mm 0 1.5mm; }
+p, li { font-size: 9.6pt; line-height: 1.55; color: #2b3240; }
+p { margin: 0 0 2.6mm; }
+ul, ol { margin: 0 0 3mm; padding-left: 5mm; }
+li { margin-bottom: 1mm; }
+.lead { font-size: 11pt; color: var(--muted); margin-bottom: 5mm; line-height: 1.5; }
+.chap { display: flex; align-items: center; gap: 4mm; margin-bottom: 2mm; }
+.chap .no { width: 13mm; height: 13mm; border-radius: 3.5mm; background: linear-gradient(135deg, var(--sky), var(--blue)); color: #fff; font-weight: 800; font-size: 16pt; display: grid; place-items: center; box-shadow: 0 3px 10px rgba(42,127,212,.35); }
+.chap .k { font-size: 8pt; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--blue); }
+kbd, .ui { font-family: inherit; font-size: 8.8pt; font-weight: 600; background: var(--soft); border: 1px solid var(--line); border-radius: 1.2mm; padding: .2mm 1.4mm; white-space: nowrap; color: var(--ink); }
+code { font-family: "JetBrains Mono", "DejaVu Sans Mono", monospace; font-size: 8.4pt; background: var(--soft); border: 1px solid var(--line); border-radius: 1mm; padding: .1mm 1.2mm; }
+pre { font-family: "JetBrains Mono", "DejaVu Sans Mono", monospace; font-size: 8.4pt; background: #141a2a; color: #e6ecf5; border-radius: 2.5mm; padding: 3.5mm 4mm; margin: 0 0 3mm; line-height: 1.6; white-space: pre-wrap; }
+pre .c { color: #7f8ba3; }
+
+/* boxes */
+.box { border-radius: 2.5mm; padding: 3mm 4mm 3mm 13mm; margin: 0 0 3.5mm; position: relative; font-size: 9.2pt; line-height: 1.5; }
+.box:before { position: absolute; left: 3.6mm; top: 3mm; width: 6mm; height: 6mm; border-radius: 50%; color: #fff; display: grid; place-items: center; font-weight: 800; font-size: 9pt; }
+.box b.t { display: block; margin-bottom: .6mm; }
+.tip { background: var(--tip); border-left: 1.2mm solid var(--tipb); } .tip:before { content: "✓"; background: var(--tipb); }
+.note { background: var(--note); border-left: 1.2mm solid var(--noteb); } .note:before { content: "i"; background: var(--noteb); font-family: Georgia, serif; }
+.warn { background: var(--warn); border-left: 1.2mm solid var(--warnb); } .warn:before { content: "!"; background: var(--warnb); }
+
+/* annotated screenshots */
+.shot { position: relative; margin: 0 6mm 4mm; }
+.shot img { width: 100%; display: block; border-radius: 2mm; box-shadow: 0 2mm 6mm rgba(20,30,60,.18), 0 0 0 .25mm rgba(0,0,0,.08); }
+.b { position: absolute; width: 6.4mm; height: 6.4mm; margin: -3.2mm 0 0 -3.2mm; border-radius: 50%; background: #e8590c; color: #fff; font-weight: 800; font-size: 8.6pt;
+     display: grid; place-items: center; box-shadow: 0 1mm 2.5mm rgba(0,0,0,.35), 0 0 0 .6mm #fff; z-index: 2; }
+.legend { display: grid; grid-template-columns: 1fr 1fr; gap: 1.4mm 6mm; margin: 0 0 4mm; }
+.legend div { display: flex; gap: 2.4mm; font-size: 9pt; line-height: 1.45; align-items: flex-start; }
+.legend i { flex: none; width: 5.2mm; height: 5.2mm; border-radius: 50%; background: #e8590c; color: #fff; font-style: normal; font-weight: 800; font-size: 7.6pt; display: grid; place-items: center; margin-top: .2mm; }
+.legend.one { grid-template-columns: 1fr; }
+
+/* tables */
+table { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 8.8pt; margin: 0 0 4mm; border: 1px solid var(--line); border-radius: 2.5mm; overflow: hidden; }
+th { background: var(--navy); color: #fff; text-align: left; font-weight: 600; padding: 2mm 3mm; font-size: 8.4pt; }
+td { padding: 1.9mm 3mm; border-top: 1px solid var(--line); vertical-align: top; line-height: 1.45; color: #2b3240; }
+tr:nth-child(even) td { background: #fafbfc; }
+td:first-child { font-weight: 600; color: var(--ink); width: 34%; }
+td.d, th.d { width: 15%; white-space: nowrap; }
+td.r, th.r { width: 17%; white-space: nowrap; color: var(--muted); }
+.n { display: inline-grid; place-items: center; width: 4.6mm; height: 4.6mm; border-radius: 50%; background: #e8590c; color: #fff; font-size: 7pt; font-weight: 800; margin-right: 1.5mm; vertical-align: .2mm; }
+
+/* misc */
+.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; }
+.steps { counter-reset: s; list-style: none; padding: 0; }
+.steps > li { counter-increment: s; position: relative; padding-left: 10mm; margin-bottom: 2.4mm; }
+.steps > li:before { content: counter(s); position: absolute; left: 0; top: -.3mm; width: 6.4mm; height: 6.4mm; border-radius: 50%; background: var(--blue); color: #fff; font-weight: 800; font-size: 8.6pt; display: grid; place-items: center; }
+.card { border: 1px solid var(--line); border-radius: 3mm; padding: 4mm; background: #fff; }
+.feat { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; margin: 0 0 4mm; }
+.feat div { border: 1px solid var(--line); border-radius: 3mm; padding: 3mm 3.5mm; background: linear-gradient(180deg,#fff,#f8fafc); }
+.feat b { display: block; font-size: 9.6pt; margin-bottom: .8mm; }
+.feat span { font-size: 8.8pt; color: var(--muted); line-height: 1.45; display: block; }
+.feat em { font-style: normal; display: inline-grid; place-items: center; width: 7mm; height: 7mm; border-radius: 2mm; background: linear-gradient(135deg,var(--sky),var(--blue)); color: #fff; font-size: 10pt; margin-bottom: 1.6mm; }
+.img { width: 100%; display: block; border-radius: 3mm; margin: 0 0 4mm; box-shadow: 0 2mm 6mm rgba(20,30,60,.15); }
+.dark { background: linear-gradient(135deg, #0d1b3a, #1d3a7a); border-radius: 3mm; padding: 6mm; color: #fff; position: relative; }
+.toc { list-style: none; padding: 0; margin: 0; }
+.toc li { display: flex; align-items: baseline; gap: 2mm; padding: 2.2mm 0; border-bottom: 1px dashed var(--line); font-size: 10.5pt; }
+.toc li .nb { width: 9mm; font-weight: 800; color: var(--blue); }
+.toc li .dots { flex: 1; }
+.toc li .pg { font-weight: 600; color: var(--muted); }
+.toc li.sub { padding: 1.2mm 0 1.2mm 9mm; font-size: 9.4pt; color: var(--muted); border-bottom: none; }
+.faq h3 { display: flex; gap: 2mm; align-items: baseline; }
+.faq h3:before { content: "Q"; flex: none; width: 5.6mm; height: 5.6mm; border-radius: 1.5mm; background: var(--navy); color: #fff; font-size: 8pt; display: grid; place-items: center; }
+.curve { display: grid; grid-template-columns: repeat(6, 1fr); gap: 2.5mm; margin: 0 0 4mm; }
+.curve div { border: 1px solid var(--line); border-radius: 2.5mm; padding: 2mm; text-align: center; font-size: 8.4pt; font-weight: 600; }
+.curve div span { display: block; font-weight: 400; color: var(--muted); font-size: 7.6pt; }
+</style>
+</head>
+<body>
+
+<!-- ======================================================== COVER -->
+<section class="page" style="padding:0;background:#0f1b46">
+  <div style="position:absolute;inset:0;background:
+    radial-gradient(120mm 90mm at 10% 100%, #3d6cff 0%, transparent 70%),
+    radial-gradient(130mm 100mm at 90% 15%, #1d99f3 0%, transparent 70%),
+    radial-gradient(110mm 90mm at 100% 100%, #7b5cff 0%, transparent 70%),
+    linear-gradient(160deg,#1b2a7a 0%,#141d4d 55%,#163a6e 100%)"></div>
+  <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:8mm 8mm"></div>
+  <div style="position:absolute;left:20mm;top:26mm;display:flex;align-items:center;gap:4mm;color:rgba(255,255,255,.8);font-size:9pt;letter-spacing:2px;text-transform:uppercase;font-weight:700">
+    <span style="width:10mm;height:.6mm;background:#7cd0ff"></span>User manual</div>
+  <div style="position:absolute;left:20mm;top:44mm;width:34mm;height:34mm;border-radius:9mm;background:rgba(255,255,255,.12);display:grid;place-items:center;box-shadow:0 6mm 16mm rgba(0,0,0,.35)">
+    <img src="assets/icon.svg" style="width:28mm"></div>
+  <h1 style="position:absolute;left:20mm;top:88mm;color:#fff;font-size:44pt;letter-spacing:-2px;margin:0">KDE Snap<br>Layout</h1>
+  <p style="position:absolute;left:20mm;top:136mm;width:120mm;color:rgba(255,255,255,.85);font-size:14pt;line-height:1.45;margin:0">Snap layouts for KDE Plasma 6.<br>Drag a window to the top edge, drop it onto a zone – done.</p>
+  <div id="coverbar" style="position:absolute;left:20mm;right:20mm;top:172mm;height:82mm;border-radius:5mm;overflow:hidden;box-shadow:0 8mm 20mm rgba(0,0,0,.45);border:.3mm solid rgba(255,255,255,.18)">
+    <img src="assets/hero.png" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block"></div>
+  <div style="position:absolute;left:20mm;right:20mm;bottom:16mm;display:flex;justify-content:space-between;align-items:flex-end;color:rgba(255,255,255,.8);font-size:9pt;line-height:1.6">
+    <div><b style="color:#fff">Version 1.6.5</b><br>KWin script for Plasma 6 · Wayland &amp; X11</div>
+    <div style="text-align:right"><b style="color:#fff">Swenix-dev</b><br>github.com/Swenix-dev/KDE-Snap-Layout</div></div>
+</section>
+
+<!-- ======================================================== CONTENTS -->
+<section class="page">
+  <div class="hdr"><span><b>KDE Snap Layout</b> · User manual</span><span>Contents</span></div>
+  <h1>Contents</h1>
+  <p class="lead">Everything KDE Snap Layout can do, page by page – from the first snap to your own layouts.</p>
+  <ul class="toc">
+    <li><span class="nb">1</span>Introduction<span class="dots"></span><span class="pg">3</span></li>
+    <li><span class="nb">2</span>The snap bar at a glance<span class="dots"></span><span class="pg">4</span></li>
+    <li><span class="nb">3</span>Installation<span class="dots"></span><span class="pg">5</span></li>
+    <li><span class="nb">4</span>Quick start – your first snap<span class="dots"></span><span class="pg">6</span></li>
+    <li><span class="nb">5</span>Opening the settings<span class="dots"></span><span class="pg">7</span></li>
+    <li><span class="nb">6</span>The settings editor<span class="dots"></span><span class="pg">8</span></li>
+    <li class="sub">6.1 General · 6.2 Appearance · 6.3 Behavior &amp; Animation</li>
+    <li class="sub">6.4 Layouts · 6.5 Layout designer · 6.6 About &amp; Help</li>
+    <li><span class="nb">7</span>Shortcuts &amp; languages<span class="dots"></span><span class="pg">16</span></li>
+    <li><span class="nb">8</span>Recommended values<span class="dots"></span><span class="pg">17</span></li>
+    <li><span class="nb">9</span>Troubleshooting &amp; FAQ<span class="dots"></span><span class="pg">18</span></li>
+    <li><span class="nb">10</span>Files, uninstalling &amp; license<span class="dots"></span><span class="pg">19</span></li>
+  </ul>
+  <h2 style="margin-top:12mm">How to read this manual</h2>
+  <div class="cols">
+    <div>
+      <p><span class="n">1</span>Orange numbers in a screenshot point to a control. The list below the picture explains each one.</p>
+      <p><span class="ui">Button</span> Grey labels are text you see on the screen: buttons, switches, menu entries.</p>
+      <p><code>command</code> Monospaced text is typed into a terminal.</p>
+    </div>
+    <div>
+      <div class="box tip"><b class="t">Tip</b>Ideas that make daily use quicker.</div>
+      <div class="box note"><b class="t">Note</b>Background information worth knowing.</div>
+      <div class="box warn"><b class="t">Important</b>Read this before you continue.</div>
+    </div>
+  </div>
+  <div class="box note" style="margin-top:4mm"><b class="t">Screenshots</b>The pictures show the light Breeze color scheme in English. KDE Snap Layout always uses your own colors, window decoration and system language, so it may look slightly different on your desktop.</div>
+  <div class="ftr"><span>KDE Snap Layout 1.6.5</span><span class="pn">2</span></div>
+</section>
+
+<!-- ======================================================== 1 INTRO -->
+<section class="page">
+  <div class="hdr"><span><b>KDE Snap Layout</b> · User manual</span><span>1 · Introduction</span></div>
+  <div class="chap"><div class="no">1</div><div><div class="k">Chapter 1</div><h1 style="margin:0">Introduction</h1></div></div>
+  <p class="lead">KDE Snap Layout brings snap layouts to KDE Plasma 6. Drag a window towards the top edge of the screen, a bar with layouts slides down, and you drop the window onto the zone where it should go.</p>
+  <img class="img" src="assets/hero.png">
+  <div class="feat">
+    <div><em>⇡</em><b>Drag, drop, done</b><span>No shortcuts to learn – it works with the mouse movement you already know.</span></div>
+    <div><em>▦</em><b>Your own layouts</b><span>Six layouts ready to go, plus a designer for any split you like – up to 16 zones.</span></div>
+    <div><em>◐</em><b>Fits your desktop</b><span>System, light or dark colors, any accent. The editor uses your color scheme, decoration and language.</span></div>
+    <div><em>⏱</em><b>Feels right</b><span>Distances, delays, slide speed and six motion curves – every detail can be tuned.</span></div>
+    <div><em>↺</em><b>Gets out of the way</b><span>Drag a snapped window out and it gets its old size back. Exclude apps you never want to snap.</span></div>
+    <div><em>⚙</em><b>Pure KWin script</b><span>No extra program running in the background. Install from the KDE Store with two clicks.</span></div>
+  </div>
+  <div class="box note"><b class="t">What is a “zone”?</b>A layout splits the screen into areas, for example two halves or three columns. Each area is a zone. The snap bar shows every layout as a small picture of the screen; each rectangle in it is a zone you can drop a window onto.</div>
+  <div class="ftr"><span>KDE Snap Layout 1.6.5</span><span class="pn">3</span></div>
+</section>
+
+<!-- ======================================================== 2 ANATOMY -->
+<section class="page">
+  <div class="hdr"><span><b>KDE Snap Layout</b> · User manual</span><span>2 · The snap bar at a glance</span></div>
+  <div class="chap"><div class="no">2</div><div><div class="k">Chapter 2</div><h1 style="margin:0">The snap bar at a glance</h1></div></div>
+  <p class="lead">The snap bar only appears while you move a window. It never takes space on your screen otherwise.</p>
+  <div class="dark" id="anatomy" style="height:74mm;margin-bottom:3mm"></div>
+  <div class="legend">
+    <div><i>1</i><span><b>Handle</b> – a small pill that appears first when the window gets close to the top. It tells you the bar is ready.</span></div>
+    <div><i>2</i><span><b>Snap bar</b> – slides down once the cursor reaches the top edge. It always appears on the screen you are working on.</span></div>
+    <div><i>3</i><span><b>Layout</b> – a small picture of your screen. The bar shows all layouts marked <span class="ui">In bar</span>.</span></div>
+    <div><i>4</i><span><b>Zone</b> – one area of a layout. Hover it to select it.</span></div>
+    <div><i>5</i><span><b>Highlighted zone</b> – drawn in the accent color. Releasing the mouse now snaps the window here.</span></div>
+    <div><i>6</i><span><b>Name line</b> (optional) – shows the layout and zone name, e.g. “Four quarters · Zone 3”.</span></div>
+  </div>
+  <h2 style="margin-top:3mm">The landing preview</h2>
+  <p>While a zone is highlighted, a translucent rectangle in the accent color shows on the desktop exactly where the window will land – including gaps and panels. Move away from the bar and the preview disappears.</p>
+  <h2>Built-in layouts</h2>
+  <img class="img" src="assets/out_gallery.png" style="width:86%;margin:0 auto 2mm">
+  <div class="ftr"><span>KDE Snap Layout 1.6.5</span><span class="pn">4</span></div>
+</section>
+
+<!-- ======================================================== 3 INSTALL -->
+<section class="page">
+  <div class="hdr"><span><b>KDE Snap Layout</b> · User manual</span><span>3 · Installation</span></div>
+  <div class="chap"><div class="no">3</div><div><div class="k">Chapter 3</div><h1 style="margin:0">Installation</h1></div></div>
+  <p class="lead">KDE Snap Layout is a KWin script. It installs into your home folder, needs no administrator rights and adds no background program.</p>
+  <table>
+    <tr><th>Requirement</th><th>Details</th></tr>
+    <tr><td>Desktop</td><td>KDE Plasma 6 (KWin 6) – Wayland or X11</td></tr>
+    <tr><td>Distribution</td><td>Any: Fedora, Arch, openSUSE, KDE neon, Kubuntu, Debian …</td></tr>
+    <tr><td>Extra packages</td><td>None – everything it needs ships with Plasma</td></tr>
+  </table>
+  <h2>Option A – KDE Store (recommended)</h2>
+  <ol class="steps">
+    <li>Open <span class="ui">System Settings</span> → <span class="ui">Window Management</span> → <span class="ui">KWin Scripts</span>.</li>
+    <li>Click <span class="ui">Get New…</span> at the top right, search for <b>KDE Snap Layout</b> and click <span class="ui">Install</span>.</li>
+    <li>Tick the checkbox next to <b>KDE Snap Layout</b> and click <span class="ui">Apply</span>.</li>
+  </ol>
+  <h2>Option B – file from GitHub</h2>
+  <ol class="steps">
+    <li>Download <code>kdesnaplayout-&lt;version&gt;.kwinscript</code> from the <b>Releases</b> page.</li>
+    <li>In <span class="ui">KWin Scripts</span> click <span class="ui">Install from File…</span> and choose the file.</li>
+    <li>Tick <b>KDE Snap Layout</b> and click <span class="ui">Apply</span>.</li>
+  </ol>
+  <h2>Option C – terminal</h2>
+<pre><span class="c"># install</span>
+kpackagetool6 --type KWin/Script --install kdesnaplayout-1.6.5.kwinscript
+<span class="c"># update to a newer version</span>
+kpackagetool6 --type KWin/Script --upgrade kdesnaplayout-1.6.5.kwinscript
+<span class="c"># switch it on</span>
+kwriteconfig6 --file kwinrc --group Plugins --key kdesnaplayoutEnabled true
+qdbus6 org.kde.KWin /KWin reconfigure</pre>
+  <div class="box warn"><b class="t">After an update: log out once</b>KWin keeps a loaded script in memory. After installing a new version, log out and back in so the new files are used. You can check the version on the <span class="ui">About &amp; Help</span> page of the settings editor.</div>
+  <div class="ftr"><span>KDE Snap Layout 1.6.5</span><span class="pn">5</span></div>
+</section>
+
+<!-- ======================================================== 4 QUICK START -->
+<section class="page">
+  <div class="hdr"><span><b>KDE Snap Layout</b> · User manual</span><span>4 · Quick start</span></div>
+  <div class="chap"><div class="no">4</div><div><div class="k">Chapter 4</div><h1 style="margin:0">Quick start – your first snap</h1></div></div>
+  <p class="lead">Three movements, about two seconds.</p>
+  <img class="img" src="assets/out_steps.png">
+  <ol class="steps">
+    <li><b>Grab a window</b> by its title bar and hold the left mouse button.</li>
+    <li><b>Move it up.</b> About 140 px below the top edge a small handle appears. Keep going until the cursor touches the top edge – the snap bar slides down.</li>
+    <li><b>Point at a zone.</b> It lights up in your accent color, and a preview on the desktop shows where the window will land.</li>
+    <li><b>Let go.</b> The window fills exactly that zone.</li>
+  </ol>
+  <div class="cols">
+    <div>
+      <h3>Changed your mind?</h3>
+      <p>Move the cursor away from the bar, or release the window anywhere outside it. Nothing is snapped and the bar slides back up.</p>
+      <h3>Getting the old size back</h3>
+      <p>Grab a snapped window and drag it away – it returns to the size it had before snapping. You can turn this off on the <span class="ui">General</span> page.</p>
+    </div>
+    <div>
+      <h3>Which windows can snap?</h3>
+      <p>Normal, resizable windows. Dialogs, fullscreen windows and apps on your exclusion list never show the snap bar.</p>
+      <h3>More than one screen?</h3>
+      <p>The bar opens on the screen under the cursor, and zones fill that screen’s free area – panels are left uncovered.</p>
+    </div>
+  </div>
+  <div class="box tip"><b class="t">Smoother snapping</b>Plasma maximizes a window that is dragged to the top edge. For the best experience, turn that off: <span class="ui">System Settings</span> → <span class="ui">Window Management</span> → <span class="ui">Screen Edges</span> → untick <span class="ui">Maximize: Windows dragged to top edge</span> (the exact name can vary slightly between Plasma versions).</div>
+  <div class="ftr"><span>KDE Snap Layout 1.6.5</span><span class="pn">6</span></div>
+</section>
+
+<!-- ======================================================== 5 OPEN SETTINGS -->
+<section class="page">
+  <div class="hdr"><span><b>KDE Snap Layout</b> · User manual</span><span>5 · Opening the settings</span></div>
+  <div class="chap"><div class="no">5</div><div><div class="k">Chapter 5</div><h1 style="margin:0">Opening the settings</h1></div></div>
+  <p class="lead">A KWin script has no app icon of its own. Its settings are reached through the gear icon in System Settings, which opens a small quick menu.</p>
+  <img class="img" src="assets/out_quick.png">
+  <ol class="steps">
+    <li>Open <span class="ui">System Settings</span> → <span class="ui">Window Management</span> → <span class="ui">KWin Scripts</span> and click the <b>gear icon</b> <span class="n" style="margin:0 .5mm">1</span> next to <b>KDE Snap Layout</b>.</li>
+    <li>Click <span class="ui">Open Snap Layout settings editor</span> <span class="n" style="margin:0 .5mm">2</span>. The hint “Ready – click OK to open the settings editor.” appears.</li>
+    <li>Click <span class="ui">OK</span>. The settings editor opens within about a second.</li>
+  </ol>
+  <h2>Quick settings</h2>
+  <p><span class="n">3</span><span class="ui">Snap bar colors</span> switches the snap bar between <b>System</b>, <b>Light</b> and <b>Dark</b> without opening the editor. Everything else – appearance, size, animation, behavior and your own layouts – lives in the settings editor.</p>
+  <div class="box note"><b class="t">Why the extra click?</b>System Settings only saves the quick menu when you press <span class="ui">OK</span> or <span class="ui">Apply</span>. KDE Snap Layout notices the saved button press and opens its editor. The button can be used as often as you like.</div>
+  <div class="ftr"><span>KDE Snap Layout 1.6.5</span><span class="pn">7</span></div>
+</section>
+
+<!-- ======================================================== 6 EDITOR OVERVIEW -->
+<section class="page">
+  <div class="hdr"><span><b>KDE Snap Layout</b> · User manual</span><span>6 · The settings editor</span></div>
+  <div class="chap"><div class="no">6</div><div><div class="k">Chapter 6</div><h1 style="margin:0">The settings editor</h1></div></div>
+  <p class="lead">One window, five pages. Every change is saved and applied immediately – there is no Apply button.</p>
+  <div class="shot">
+    <img src="assets/editor-general-light.png">
+    <span class="b" style="left:33%;top:2.1%">1</span>
+    <span class="b" style="left:97.6%;top:2.1%">2</span>
+    <span class="b" style="left:-1.5%;top:9.5%">3</span>
+    <span class="b" style="left:-1.5%;top:26%">4</span>
+    <span class="b" style="left:-1.5%;top:95%">5</span>
+    <span class="b" style="left:23.2%;top:13%">6</span>
+    <span class="b" style="left:100.6%;top:94.2%">7</span>
+  </div>
+  <div class="legend">
+    <div><i>1</i><span><b>Title bar</b> – drag to move the window, double-click to maximize. Height, font and alignment follow your window decoration.</span></div>
+    <div><i>2</i><span><b>Window buttons</b> – maximize/restore and close, in the order and style of your decoration.</span></div>
+    <div><i>3</i><span><b>Name and version</b> of the installed script.</span></div>
+    <div><i>4</i><span><b>Pages</b> – General, Appearance, Behavior &amp; Animation, Layouts, About &amp; Help.</span></div>
+    <div><i>5</i><span><b>Active</b> – pauses or resumes the snap bar everywhere. Shows <span class="ui">Paused</span> while off.</span></div>
+    <div><i>6</i><span><b>Page area</b> – settings are grouped in cards.</span></div>
+    <div><i>7</i><span><b>Recommended values</b> – resets the settings of the current page to their defaults.</span></div>
+  </div>
+  <div class="box tip"><b class="t">Resize it</b>Drag the right edge, the bottom edge or the bottom-right corner to make the window larger or smaller. Size and position are kept while the session runs.</div>
+  <div class="box note"><b class="t">Matches your system</b>The editor uses your color scheme, accent color, window decoration and system language – and follows changes live while it is open.</div>
+  <div class="ftr"><span>KDE Snap Layout 1.6.5</span><span class="pn">8</span></div>
+</section>
+
+<!-- ======================================================== 6.1 GENERAL -->
+<section class="page">
+  <div class="hdr"><span><b>KDE Snap Layout</b> · User manual</span><span>6.1 · General</span></div>
+  <div class="chap"><div class="no" style="font-size:12pt">6.1</div><div><div class="k">Settings editor</div><h1 style="margin:0">General</h1></div></div>
+  <p class="lead">Switch snapping on or off, control the preview and leave room between windows.</p>
+  <div class="shot" style="margin:0 30mm 3mm">
+    <img src="assets/editor-general-light.png">
+    <span class="b" style="left:100.6%;top:23.2%">1</span>
+    <span class="b" style="left:100.6%;top:28.4%">2</span>
+    <span class="b" style="left:100.6%;top:33.6%">3</span>
+    <span class="b" style="left:100.6%;top:45.2%">4</span>
+    <span class="b" style="left:100.6%;top:50.6%">5</span>
+    <span class="b" style="left:100.6%;top:69.5%">6</span>
+    <span class="b" style="left:100.6%;top:85%">7</span>
+  </div>
+  <table>
+    <tr><th>Setting</th><th>What it does</th><th class="d">Default</th><th class="r">Range</th></tr>
+    <tr><td><span class="n">1</span>Show the snap bar when dragging a window to the top edge</td><td>Main switch. Same as <span class="ui">Active</span> in the sidebar.</td><td class="d">On</td><td class="r">On / Off</td></tr>
+    <tr><td><span class="n">2</span>Preview where the window will land</td><td>Shows the translucent landing rectangle while a zone is highlighted.</td><td class="d">On</td><td class="r">On / Off</td></tr>
+    <tr><td><span class="n">3</span>Restore the original size when dragging a window out</td><td>A snapped window that you drag away gets its earlier size back.</td><td class="d">On</td><td class="r">On / Off</td></tr>
+    <tr><td><span class="n">4</span>Gap between windows</td><td>Space between neighbouring zones. Use it for a tiling look.</td><td class="d">0 px</td><td class="r">0 – 48 px</td></tr>
+    <tr><td><span class="n">5</span>Gap to the screen edge</td><td>Space between the zones and the edges of the free screen area.</td><td class="d">0 px</td><td class="r">0 – 48 px</td></tr>
+    <tr><td><span class="n">6</span>Excluded applications</td><td>Window classes that never show the snap bar – one per line (commas and semicolons work too). Not case-sensitive.</td><td class="d">empty</td><td class="r">any text</td></tr>
+    <tr><td><span class="n">7</span>Tip</td><td>Reminder to turn off Plasma’s own maximize-at-top (see chapter 4).</td><td class="d">–</td><td class="r">–</td></tr>
+  </table>
+  <div class="box tip"><b class="t">Finding a window class</b>Open <span class="ui">System Settings</span> → <span class="ui">Window Management</span> → <span class="ui">Window Rules</span> → <span class="ui">Add New…</span> → <span class="ui">Detect Window Properties</span> and click the app window. The value under <b>Window class</b> (for example <code>krita</code> or <code>steam</code>) is what you enter here.</div>
+  <div class="ftr"><span>KDE Snap Layout 1.6.5</span><span class="pn">9</span></div>
+</section>
+
+<!-- ======================================================== 6.2 APPEARANCE -->
+<section class="page">
+  <div class="hdr"><span><b>KDE Snap Layout</b> · User manual</span><span>6.2 · Appearance</span></div>
+  <div class="chap"><div class="no" style="font-size:12pt">6.2</div><div><div class="k">Settings editor</div><h1 style="margin:0">Appearance</h1></div></div>
+  <p class="lead">Colors, size and shape of the snap bar. The live preview at the top shows every change at once.</p>
+  <div class="shot" style="margin:0 26mm 3mm">
+    <img src="assets/editor-appearance-light.png">
+    <span class="b" style="left:100.6%;top:17.4%">1</span>
+    <span class="b" style="left:53%;top:40.1%">2</span>
+    <span class="b" style="left:100.6%;top:53.4%">3</span>
+    <span class="b" style="left:26.2%;top:58.7%">4</span>
+    <span class="b" style="left:78.4%;top:58.7%">5</span>
+    <span class="b" style="left:100.6%;top:75.2%">6</span>
+    <span class="b" style="left:100.6%;top:86.8%">7</span>
+    <span class="b" style="left:100.6%;top:92.3%">8</span>
+    <span class="b" style="left:72%;top:99.3%">9</span>
+  </div>
+  <div class="legend">
+    <div><i>1</i><span><b>Preview</b> of the snap bar with your current settings.</span></div>
+    <div><i>2</i><span><b>Color scheme</b> – <b>System</b> follows your Plasma colors; <b>Light</b> and <b>Dark</b> are fixed. Default: System.</span></div>
+    <div><i>3</i><span><b>Use the system accent color</b> – highlights zones in your Plasma accent. Default: on.</span></div>
+    <div><i>4</i><span><b>Color swatches</b> – twelve ready-made accents. Turn off ③ first.</span></div>
+    <div><i>5</i><span><b>Custom color</b> – the rainbow circle opens a color picker (see below).</span></div>
+    <div><i>6</i><span><b>Size &amp; shape</b> – four sliders, see the table.</span></div>
+    <div><i>7</i><span><b>Layouts per row</b> – 0 shows all layouts in one row; any other number wraps the bar into several rows.</span></div>
+    <div><i>8</i><span><b>Show layout and zone names</b> under the thumbnails. Default: off.</span></div>
+    <div><i>9</i><span><b>Test on screen</b> plays the snap bar on your desktop so you can judge the result.</span></div>
+  </div>
+  <table>
+    <tr><th>Size &amp; shape</th><th>What it does</th><th class="d">Default</th><th class="r">Range</th></tr>
+    <tr><td>Snap bar size</td><td>Scales the whole bar – handy on high-resolution screens.</td><td class="d">100 %</td><td class="r">60 – 200 %</td></tr>
+    <tr><td>Thumbnail width</td><td>Width of each layout picture; the height follows your screen’s shape.</td><td class="d">72 px</td><td class="r">48 – 160 px</td></tr>
+    <tr><td>Corner radius</td><td>Roundness of the bar. 0 gives square corners.</td><td class="d">8 px</td><td class="r">0 – 24 px</td></tr>
+    <tr><td>Background opacity</td><td>How see-through the bar background is.</td><td class="d">96 %</td><td class="r">40 – 100 %</td></tr>
+  </table>
+  <div class="ftr"><span>KDE Snap Layout 1.6.5</span><span class="pn">10</span></div>
+</section>
+
+<!-- ======================================================== 6.2b COLORS -->
+<section class="page">
+  <div class="hdr"><span><b>KDE Snap Layout</b> · User manual</span><span>6.2 · Appearance – colors</span></div>
+  <h1 style="font-size:20pt">Colors and styles</h1>
+  <p class="lead">A few combinations of the appearance settings.</p>
+  <img class="img" src="assets/out_themes.png">
+  <h2>Picking your own accent color</h2>
+  <div class="cols">
+    <div>
+      <ol class="steps">
+        <li>Turn off <span class="ui">Use the system accent color</span>.</li>
+        <li>Click the <b>rainbow circle</b> at the end of the swatches. The color picker opens below.</li>
+        <li>Choose the hue on the <b>strip</b>, then brightness and saturation in the <b>square</b>.</li>
+        <li>Or type an exact value such as <code>#3daee9</code> into the <b>hex field</b>.</li>
+      </ol>
+    </div>
+    <div class="card" style="display:flex;flex-direction:column;gap:3mm;align-items:center">
+      <div style="display:flex;gap:2mm">
+        <span style="width:7mm;height:7mm;border-radius:50%;background:#0078d4"></span><span style="width:7mm;height:7mm;border-radius:50%;background:#00b294"></span>
+        <span style="width:7mm;height:7mm;border-radius:50%;background:#ffb900"></span><span style="width:7mm;height:7mm;border-radius:50%;background:#e81123"></span>
+        <span style="width:7mm;height:7mm;border-radius:50%;background:#c239b3"></span>
+        <span style="width:7mm;height:7mm;border-radius:50%;background:conic-gradient(red,magenta,blue,cyan,lime,yellow,red);box-shadow:0 0 0 .6mm #fff,0 0 0 1.1mm #e8590c"></span></div>
+      <div style="display:flex;gap:2.5mm">
+        <div style="width:42mm;height:30mm;border-radius:2mm;background:linear-gradient(to top,#000,transparent),linear-gradient(to right,#fff,hsl(200,100%,50%));position:relative">
+          <span style="position:absolute;left:70%;top:25%;width:3.5mm;height:3.5mm;border-radius:50%;border:.6mm solid #fff;box-shadow:0 0 0 .3mm #000;transform:translate(-50%,-50%)"></span></div>
+        <div style="width:5mm;height:30mm;border-radius:1.5mm;background:linear-gradient(red,yellow,lime,cyan,blue,magenta,red)"></div></div>
+      <div style="display:flex;gap:2mm;align-items:center;font-size:8.6pt"><span style="width:6mm;height:6mm;border-radius:1.5mm;background:#3daee9"></span><code>#3daee9</code></div>
+    </div>
+  </div>
+  <div class="box note"><b class="t">Snap bar vs. editor colors</b>The color scheme and accent on this page only change the <b>snap bar</b>. The settings editor itself always uses your system colors.</div>
+  <div class="ftr"><span>KDE Snap Layout 1.6.5</span><span class="pn">11</span></div>
+</section>
+
+<!-- ======================================================== 6.3 BEHAVIOR -->
+<section class="page">
+  <div class="hdr"><span><b>KDE Snap Layout</b> · User manual</span><span>6.3 · Behavior &amp; Animation</span></div>
+  <div class="chap"><div class="no" style="font-size:12pt">6.3</div><div><div class="k">Settings editor</div><h1 style="margin:0">Behavior &amp; Animation</h1></div></div>
+  <p class="lead">When the bar appears, when it hides again and how it moves. The default values are based on Windows 11.</p>
+  <div class="dark" style="height:72mm;padding:0;overflow:hidden;margin-bottom:4mm" id="dist"></div>
+  <table>
+    <tr><th>Showing</th><th>What it does</th><th class="d">Default</th><th class="r">Range</th></tr>
+    <tr><td><span class="n" style="background:#3daee9">A</span>Trigger distance from the top edge</td><td>How close the cursor must get to the top edge before the full bar opens.</td><td class="d">24 px</td><td class="r">2 – 200 px</td></tr>
+    <tr><td>Show a small handle first</td><td>Shows the handle on the way up, so the bar never pops up by surprise.</td><td class="d">On</td><td class="r">On / Off</td></tr>
+    <tr><td><span class="n" style="background:#9b7bff">B</span>Distance at which the handle appears</td><td>Distance from the top edge at which the handle appears.</td><td class="d">140 px</td><td class="r">20 – 400 px</td></tr>
+    <tr><td><span class="n" style="background:#2fbf71">C</span>Active width along the top edge</td><td>Only this centered part of the top edge reacts. 100 % = the whole width.</td><td class="d">100 %</td><td class="r">10 – 100 %</td></tr>
+    <tr><td>Delay before showing</td><td>Waiting time before the bar opens. Prevents opening while passing by.</td><td class="d">40 ms</td><td class="r">0 – 600 ms</td></tr>
+  </table>
+  <table>
+    <tr><th>Hiding</th><th>What it does</th><th class="d">Default</th><th class="r">Range</th></tr>
+    <tr><td><span class="n" style="background:#ffb900">D</span>Distance before the bar hides again</td><td>How far you can move below the bar before it closes – a safety margin.</td><td class="d">56 px</td><td class="r">0 – 300 px</td></tr>
+    <tr><td>Delay before hiding</td><td>Waiting time after leaving that area before the bar slides up.</td><td class="d">150 ms</td><td class="r">0 – 1000 ms</td></tr>
+  </table>
+  <div class="ftr"><span>KDE Snap Layout 1.6.5</span><span class="pn">12</span></div>
+</section>
+
+<!-- ======================================================== 6.3b ANIMATION -->
+<section class="page">
+  <div class="hdr"><span><b>KDE Snap Layout</b> · User manual</span><span>6.3 · Behavior &amp; Animation</span></div>
+  <div class="shot" style="margin:0 34mm 3mm">
+    <img src="assets/editor-behavior-light.png">
+    <span class="b" style="left:100.6%;top:18.6%">1</span>
+    <span class="b" style="left:100.6%;top:46.5%">2</span>
+    <span class="b" style="left:100.6%;top:61.6%">3</span>
+    <span class="b" style="left:72%;top:89%">4</span>
+  </div>
+  <div class="legend">
+    <div><i>1</i><span><b>Showing</b> – see the table on the previous page.</span></div>
+    <div><i>2</i><span><b>Hiding</b> – see the table on the previous page.</span></div>
+    <div><i>3</i><span><b>Animation</b> – see below.</span></div>
+    <div><i>4</i><span><b>Test animation</b> plays the bar with the current values.</span></div>
+  </div>
+  <table>
+    <tr><th>Animation</th><th>What it does</th><th class="d">Default</th><th class="r">Range</th></tr>
+    <tr><td><span class="n" style="background:#ff6b8a">E</span>How far the bar slides down</td><td>Distance between the top of the free screen area and the bar when it is open.</td><td class="d">12 px</td><td class="r">0 – 150 px</td></tr>
+    <tr><td>Slide-in duration</td><td>How long the bar takes to slide down.</td><td class="d">220 ms</td><td class="r">0 – 1000 ms</td></tr>
+    <tr><td>Slide-out duration</td><td>How long it takes to slide back up. Shorter feels snappier.</td><td class="d">150 ms</td><td class="r">0 – 1000 ms</td></tr>
+    <tr><td>Motion curve</td><td>The character of the movement – see the curves below.</td><td class="d">Smooth</td><td class="r">6 curves</td></tr>
+    <tr><td>Fade in and out</td><td>Fades the bar while it slides.</td><td class="d">On</td><td class="r">On / Off</td></tr>
+  </table>
+  <h2>Motion curves</h2>
+  <p>Each curve has a matching reverse for sliding back up, so hiding feels like showing played backwards.</p>
+  <div class="curve" id="curves"></div>
+  <div class="box tip"><b class="t">Slow PC or remote desktop?</b>Set both durations to 0 ms and turn off fading – the bar then appears instantly.</div>
+  <div class="ftr"><span>KDE Snap Layout 1.6.5</span><span class="pn">13</span></div>
+</section>
+
+<!-- ======================================================== 6.4 LAYOUTS -->
+<section class="page">
+  <div class="hdr"><span><b>KDE Snap Layout</b> · User manual</span><span>6.4 · Layouts</span></div>
+  <div class="chap"><div class="no" style="font-size:12pt">6.4</div><div><div class="k">Settings editor</div><h1 style="margin:0">Layouts</h1></div></div>
+  <p class="lead">Choose which layouts appear in the snap bar and in which order.</p>
+  <div class="shot" style="margin:0 10mm 4mm">
+    <img src="assets/editor-layouts-light.png">
+    <span class="b" style="left:36.6%;top:17.1%">1</span>
+    <span class="b" style="left:80.4%;top:17.1%">2</span>
+    <span class="b" style="left:37.8%;top:29%">3</span>
+    <span class="b" style="left:26%;top:37.3%">4</span>
+    <span class="b" style="left:50.4%;top:37.3%">5</span>
+    <span class="b" style="left:35.2%;top:41.1%">6</span>
+    <span class="b" style="left:41.3%;top:44.6%">7</span>
+    <span class="b" style="left:67.7%;top:44.6%">8</span>
+    <span class="b" style="left:94.2%;top:44.6%">9</span>
+  </div>
+  <div class="legend">
+    <div><i>1</i><span><b>New layout</b> – creates a layout and opens the designer.</span></div>
+    <div><i>2</i><span><b>Restore default layouts</b> – brings back the six built-in layouts. Asks first, because your own layouts and order are lost.</span></div>
+    <div><i>3</i><span><b>Layout card</b> – a picture of the layout. <b>Double-click</b> to edit it.</span></div>
+    <div><i>4</i><span><b>Drag handle ⠿</b> – drag a card to another place to change the order in the bar.</span></div>
+    <div><i>5</i><span><b>Position</b> in the snap bar (1 = left).</span></div>
+    <div><i>6</i><span><b>In bar</b> – untick to hide a layout from the bar without deleting it.</span></div>
+    <div><i>7</i><span><b>Edit ✎</b> – opens the layout designer (shown on card 1).</span></div>
+    <div><i>8</i><span><b>Duplicate</b> – copies the layout as a starting point for a variant (card 2).</span></div>
+    <div><i>9</i><span><b>Delete</b> – removes the layout after a confirmation (card 3).</span></div>
+  </div>
+  <h3>Changing the order</h3>
+  <ol class="steps">
+    <li>Press and hold the mouse button on a card.</li>
+    <li>Drag it onto the position where it should go – the other cards move aside.</li>
+    <li>Release. The new order is saved and used the next time the bar opens.</li>
+  </ol>
+  <div class="ftr"><span>KDE Snap Layout 1.6.5</span><span class="pn">14</span></div>
+</section>
+
+<!-- ======================================================== 6.5 DESIGNER -->
+<section class="page">
+  <div class="hdr"><span><b>KDE Snap Layout</b> · User manual</span><span>6.5 · Layout designer</span></div>
+  <div class="chap"><div class="no" style="font-size:12pt">6.5</div><div><div class="k">Settings editor</div><h1 style="margin:0">Layout designer</h1></div></div>
+  <p class="lead">Split the screen any way you like – up to 16 zones per layout.</p>
+  <div class="shot" style="margin:0 12mm 4mm">
+    <img src="assets/designer-light.png">
+    <span class="b" style="left:97.6%;top:10.3%">1</span>
+    <span class="b" style="left:15.8%;top:14.8%">2</span>
+    <span class="b" style="left:30.5%;top:14.8%">3</span>
+    <span class="b" style="left:41.5%;top:14.8%">4</span>
+    <span class="b" style="left:63.3%;top:14.8%">5</span>
+    <span class="b" style="left:26.8%;top:44%">6</span>
+    <span class="b" style="left:50%;top:52.5%">7</span>
+    <span class="b" style="left:49.4%;top:89.4%">8</span>
+    <span class="b" style="left:22%;top:93.5%">9</span>
+    <span class="b" style="left:78.6%;top:93.6%">10</span>
+  </div>
+  <div class="legend">
+    <div><i>1</i><span><b>Name</b> of the layout, shown on the card and in the name line.</span></div>
+    <div><i>2</i><span><b>Split side by side</b> – cuts the selected zone into a left and a right half.</span></div>
+    <div><i>3</i><span><b>Split top and bottom</b> – cuts the selected zone horizontally.</span></div>
+    <div><i>4</i><span><b>Remove zone</b> – deletes the selected zone; its neighbour takes the space.</span></div>
+    <div><i>5</i><span><b>Load template…</b> – starts from one of eleven ready-made layouts.</span></div>
+    <div><i>6</i><span><b>Selected zone</b> – click a zone to select it. Number and size in % are shown inside. <b>Double-click</b> splits it along its longer side.</span></div>
+    <div><i>7</i><span><b>Divider</b> – drag it to change the sizes of the zones on both sides.</span></div>
+    <div><i>8</i><span><b>Zone counter</b> – shows how many of the 16 possible zones are used.</span></div>
+    <div><i>9</i><span><b>Snap dividers</b> – dividers click into place at ¼, ⅓, ½, ⅔ and ¾.</span></div>
+    <div><i>10</i><span><b>Cancel / Save</b> – discard or keep your changes.</span></div>
+  </div>
+  <h3>Example: a large main area with two small zones on the right</h3>
+  <ol class="steps">
+    <li>Click <span class="ui">New layout</span> on the Layouts page and type a name, e.g. <i>Focus + 2</i>.</li>
+    <li>Click <span class="ui">Split side by side</span>, then drag the divider to ⅔.</li>
+    <li>Select the right zone and click <span class="ui">Split top and bottom</span>. Click <span class="ui">Save</span>.</li>
+  </ol>
+  <div class="ftr"><span>KDE Snap Layout 1.6.5</span><span class="pn">15</span></div>
+</section>
+
+<!-- ======================================================== 6.6 ABOUT + 7 -->
+<section class="page">
+  <div class="hdr"><span><b>KDE Snap Layout</b> · User manual</span><span>6.6 · About &amp; Help · 7 · Shortcuts &amp; languages</span></div>
+  <div class="chap"><div class="no" style="font-size:12pt">6.6</div><div><div class="k">Settings editor</div><h1 style="margin:0">About &amp; Help</h1></div></div>
+  <div class="cols" style="grid-template-columns:1.1fr 1fr;align-items:start;margin-top:5mm">
+    <div class="shot" style="margin:0"><img src="assets/editor-about-light.png"></div>
+    <div><p>A short reminder of how snapping works and how to open the editor, plus:</p>
+      <ul><li><b>Version</b> – the installed version. Check it after an update.</li><li><b>Author</b> – Swenix-dev</li><li><b>License</b> – GPL-3.0-or-later</li><li><b>Settings file</b> – where your settings and layouts are stored.</li></ul></div>
+  </div>
+  <div class="chap" style="margin-top:8mm"><div class="no">7</div><div><div class="k">Chapter 7</div><h1 style="margin:0">Shortcuts &amp; languages</h1></div></div>
+  <h2>Keyboard shortcuts</h2>
+  <p>KDE Snap Layout registers two actions with KWin. They have no key assigned by default, so they never clash with your own shortcuts.</p>
+  <table>
+    <tr><th>Action</th><th>What it does</th></tr>
+    <tr><td>KDE Snap Layout: turn on/off</td><td>Pauses or resumes snapping – the same as the <span class="ui">Active</span> switch.</td></tr>
+    <tr><td>KDE Snap Layout: test the snap bar</td><td>Plays the snap bar on the current screen.</td></tr>
+  </table>
+  <p>To assign keys: <span class="ui">System Settings</span> → <span class="ui">Keyboard</span> → <span class="ui">Shortcuts</span> → <span class="ui">KWin</span>, search for “Snap Layout”, select an action and press the new key combination.</p>
+  <h2>Languages</h2>
+  <p>The settings editor, the quick menu and the layout names follow your system language (<span class="ui">System Settings</span> → <span class="ui">Region &amp; Language</span>). 62 languages are included – all European languages plus Chinese (simplified and traditional), Japanese, Korean, Hindi, Bengali, Tamil, Telugu, Marathi, Gujarati, Punjabi, Urdu, Arabic, Hebrew, Persian, Indonesian, Malay, Vietnamese, Thai, Filipino, Georgian, Armenian and more. Right-to-left languages are mirrored automatically.</p>
+  <div class="box note"><b class="t">Help translate</b>Each language is a plain text file in the <code>i18n</code> folder of the repository – one line per text. Corrections and new languages are welcome as pull requests.</div>
+  <div class="ftr"><span>KDE Snap Layout 1.6.5</span><span class="pn">16</span></div>
+</section>
+
+<!-- ======================================================== 8 DEFAULTS -->
+<section class="page">
+  <div class="hdr"><span><b>KDE Snap Layout</b> · User manual</span><span>8 · Recommended values</span></div>
+  <div class="chap"><div class="no">8</div><div><div class="k">Chapter 8</div><h1 style="margin:0">Recommended values</h1></div></div>
+  <p class="lead">All defaults at a glance. <span class="ui">Recommended values</span> on each page restores them for that page.</p>
+  <div class="cols" style="gap:5mm">
+    <table>
+      <tr><th colspan="2">General</th></tr>
+      <tr><td>Show the snap bar</td><td>On</td></tr>
+      <tr><td>Landing preview</td><td>On</td></tr>
+      <tr><td>Restore original size</td><td>On</td></tr>
+      <tr><td>Gap between windows</td><td>0 px</td></tr>
+      <tr><td>Gap to the screen edge</td><td>0 px</td></tr>
+      <tr><td>Excluded applications</td><td>none</td></tr>
+      <tr><th colspan="2">Appearance</th></tr>
+      <tr><td>Color scheme</td><td>System</td></tr>
+      <tr><td>System accent color</td><td>On</td></tr>
+      <tr><td>Snap bar size</td><td>100 %</td></tr>
+      <tr><td>Thumbnail width</td><td>72 px</td></tr>
+      <tr><td>Corner radius</td><td>8 px</td></tr>
+      <tr><td>Background opacity</td><td>96 %</td></tr>
+      <tr><td>Layouts per row</td><td>0 (one row)</td></tr>
+      <tr><td>Layout and zone names</td><td>Off</td></tr>
+    </table>
+    <table>
+      <tr><th colspan="2">Behavior</th></tr>
+      <tr><td>Trigger distance</td><td>24 px</td></tr>
+      <tr><td>Small handle first</td><td>On</td></tr>
+      <tr><td>Handle distance</td><td>140 px</td></tr>
+      <tr><td>Active width</td><td>100 %</td></tr>
+      <tr><td>Delay before showing</td><td>40 ms</td></tr>
+      <tr><td>Hide distance</td><td>56 px</td></tr>
+      <tr><td>Delay before hiding</td><td>150 ms</td></tr>
+      <tr><th colspan="2">Animation</th></tr>
+      <tr><td>Slide distance</td><td>12 px</td></tr>
+      <tr><td>Slide-in duration</td><td>220 ms</td></tr>
+      <tr><td>Slide-out duration</td><td>150 ms</td></tr>
+      <tr><td>Motion curve</td><td>Smooth</td></tr>
+      <tr><td>Fade in and out</td><td>On</td></tr>
+      <tr><th colspan="2">Layouts in the bar</th></tr>
+      <tr><td colspan="2" style="width:auto;font-weight:400">Halves · Two thirds · Three columns · Main + stack · Four quarters · Center focus</td></tr>
+    </table>
+  </div>
+  <div class="ftr"><span>KDE Snap Layout 1.6.5</span><span class="pn">17</span></div>
+</section>
+
+<!-- ======================================================== 9 FAQ -->
+<section class="page faq">
+  <div class="hdr"><span><b>KDE Snap Layout</b> · User manual</span><span>9 · Troubleshooting &amp; FAQ</span></div>
+  <div class="chap"><div class="no">9</div><div><div class="k">Chapter 9</div><h1 style="margin:0">Troubleshooting &amp; FAQ</h1></div></div>
+  <h3>The snap bar does not appear.</h3>
+  <p>Check that the script is ticked in <span class="ui">KWin Scripts</span> and that <span class="ui">Active</span> is on in the editor. Make sure the app is not on your exclusion list and that you drag a normal, resizable window by its title bar. If <span class="ui">Active width along the top edge</span> is below 100 %, move towards the middle of the top edge.</p>
+  <h3>The window gets maximized instead of snapped.</h3>
+  <p>That is Plasma’s own top-edge maximize. Turn it off under <span class="ui">Screen Edges</span> (see chapter 4).</p>
+  <h3>I installed an update, but the old version is still running.</h3>
+  <p>KWin keeps loaded scripts in memory. Log out and back in once. The <span class="ui">About &amp; Help</span> page shows the running version.</p>
+  <h3>The quick menu button does nothing.</h3>
+  <p>After <span class="ui">Open Snap Layout settings editor</span> you have to click <span class="ui">OK</span> (or <span class="ui">Apply</span>). The editor appears about one second later.</p>
+  <h3>“Could not locate package metadata” in KWin Scripts.</h3>
+  <p>The script folder was removed while KWin still listed it. Install the <code>.kwinscript</code> file again, then log out and back in.</p>
+  <h3>The bar opens too easily / not easily enough.</h3>
+  <p>Lower the <span class="ui">Trigger distance</span> and raise <span class="ui">Delay before showing</span> to make it harder to open by accident – or the other way round.</p>
+  <h3>Can I use it with several monitors?</h3>
+  <p>Yes. The bar opens on the screen under the cursor and zones are calculated for that screen.</p>
+  <h3>Something is still wrong – how do I report it?</h3>
+  <p>Collect the log and open an issue on GitHub:</p>
+<pre>journalctl --user -b | grep kdesnaplayout | tail -n 30</pre>
+  <div class="ftr"><span>KDE Snap Layout 1.6.5</span><span class="pn">18</span></div>
+</section>
+
+<!-- ======================================================== 10 FILES -->
+<section class="page">
+  <div class="hdr"><span><b>KDE Snap Layout</b> · User manual</span><span>10 · Files, uninstalling &amp; license</span></div>
+  <div class="chap"><div class="no">10</div><div><div class="k">Chapter 10</div><h1 style="margin:0">Files, uninstalling &amp; license</h1></div></div>
+  <h2>Where things are stored</h2>
+  <table>
+    <tr><th>Path</th><th>Contents</th></tr>
+    <tr><td><code>~/.config/kde-snaplayout.ini</code></td><td>All settings of the editor and your layouts. Copy it to move your setup to another PC.</td></tr>
+    <tr><td><code>~/.config/kwinrc</code> → <code>[Script-kdesnaplayout]</code></td><td>The two quick-menu values (editor button, snap bar colors).</td></tr>
+    <tr><td><code>~/.local/share/kwin/scripts/kdesnaplayout</code></td><td>The installed script.</td></tr>
+  </table>
+  <div class="box note"><b class="t">Privacy</b>KDE Snap Layout works completely offline. It sends no data anywhere and only reads window positions while you drag a window.</div>
+  <h2>Uninstalling</h2>
+  <p>In <span class="ui">KWin Scripts</span>, click the trash icon next to <b>KDE Snap Layout</b> and then <span class="ui">Apply</span>. Or in a terminal:</p>
+<pre>kpackagetool6 --type KWin/Script --remove kdesnaplayout
+rm ~/.config/kde-snaplayout.ini        <span class="c"># optional: delete your settings</span></pre>
+  <h2>License</h2>
+  <p>KDE Snap Layout is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License, version 3 or (at your option) any later version. It is distributed in the hope that it will be useful, but without any warranty.</p>
+  <div class="dark" style="margin-top:10mm;display:flex;align-items:center;gap:6mm;padding:7mm">
+    <img src="assets/icon.svg" style="width:22mm">
+    <div><div style="font-size:16pt;font-weight:800;letter-spacing:-.4px">KDE Snap Layout</div>
+      <div style="font-size:9.5pt;color:rgba(255,255,255,.8);line-height:1.6;margin-top:1mm">Made by <b style="color:#fff">Swenix-dev</b><br>Source &amp; issues: github.com/Swenix-dev/KDE-Snap-Layout<br>Also on the KDE Store</div></div>
+  </div>
+  <div class="ftr"><span>KDE Snap Layout 1.6.5</span><span class="pn">19</span></div>
+</section>
+
+<script>
+// anatomy figure
+(function () {
+  const host = document.getElementById("anatomy");
+  const W = host.clientWidth, H = host.clientHeight;
+  host.style.background = WALL;
+  const bar = snapBar({ s: 1.05, hoverL: 4, hoverZ: 2, showName: true, accent: "#3daee9" });
+  bar.style.left = Math.round((W - bar._w) / 2) + "px"; bar.style.top = "64px"; host.appendChild(bar);
+  const pill = document.createElement("div");
+  Object.assign(pill.style, { position: "absolute", left: Math.round((W - 140) / 2) + "px", top: "16px", width: "140px", height: "17px", borderRadius: "9px", background: "rgba(43,43,43,.96)", border: "1px solid rgba(255,255,255,.1)" });
+  pill.innerHTML = '<div style="position:absolute;left:50%;top:50%;width:38px;height:4px;border-radius:2px;background:#575757;transform:translate(-50%,-50%)"></div>';
+  host.appendChild(pill);
+  const bx = (W - bar._w) / 2, by = 64;
+  const hz = bar._hits.find(h => h.li === 4 && h.zi === 2), z0 = bar._hits.find(h => h.li === 1 && h.zi === 1), l0 = bar._hits.find(h => h.li === 2 && h.zi === 0);
+  const mk = (n, x, y) => { const b = document.createElement("span"); b.className = "b"; b.textContent = n; b.style.left = x + "px"; b.style.top = y + "px"; host.appendChild(b); };
+  mk(1, W / 2 + 84, 24); mk(2, bx - 14, by + 20);
+  mk(3, bx + l0.x + l0.w / 2, by - 12);
+  mk(4, bx + z0.x + z0.w / 2, by + z0.y - 10);
+  mk(5, bx + hz.x + hz.w + 14, by + hz.y - 6);
+  mk(6, W / 2 + 92, by + bar._h - 15);
+  // desktop hint: preview + window
+  const pv = document.createElement("div");
+  Object.assign(pv.style, { position: "absolute", left: (W / 2) + "px", top: (H * 0.5) + "px", width: (W / 2 - 14) + "px", height: (H * 0.5 - 14) + "px", borderRadius: "8px", background: "rgba(61,174,233,.22)", border: "2px solid #3daee9" });
+  host.insertBefore(pv, host.firstChild);
+  const lab = document.createElement("div"); lab.textContent = "Landing preview for “Zone 3”";
+  Object.assign(lab.style, { position: "absolute", left: (W * 0.75 - 90) + "px", top: (H * 0.75 - 8) + "px", width: "180px", textAlign: "center", color: "#cfe9ff", font: "600 11px Inter" });
+  host.appendChild(lab);
+})();
+// distances figure
+(function () {
+  const host = document.getElementById("dist");
+  const W = host.clientWidth, H = host.clientHeight;
+  host.style.background = WALL;
+  const k = 1.35;                         // screen px -> figure px
+  const add = (html) => host.insertAdjacentHTML("beforeend", html);
+  const lab = (x, y, col, t, extra = "") => add(`<div style="position:absolute;left:${x}px;top:${y}px;color:${col};font:700 10px Inter;white-space:nowrap;${extra}">${t}</div>`);
+  // C: active width
+  add(`<div style="position:absolute;left:${W * .14}px;width:${W * .72}px;top:0;height:5px;background:#2fbf71;border-radius:0 0 3px 3px"></div>`);
+  lab(W * .14, 8, "#9ff0c4", "C · active width (60 % here)");
+  // A, B lines
+  const trig = 24 * k, peek = 140 * k;
+  const line = (y, col) => add(`<div style="position:absolute;left:0;right:0;top:${y}px;border-top:1.5px dashed ${col}"></div>`);
+  line(trig, "#3daee9"); lab(10, trig + 4, "#8fd3ff", "A · trigger distance 24 px – the bar opens");
+  line(peek, "#9b7bff"); lab(10, peek + 4, "#c9b8ff", "B · handle distance 140 px – the handle appears");
+  // bar + slide distance + hide area
+  const bar = snapBar({ s: .55, hoverL: 0, hoverZ: 0 });
+  const bTop = 12 * k, bLeft = W - bar._w - 18;
+  bar.style.left = bLeft + "px"; bar.style.top = bTop + "px"; host.appendChild(bar);
+  add(`<div style="position:absolute;left:${bLeft - 8}px;top:0;height:${bTop}px;width:2px;background:#ff6b8a"></div>`);
+  lab(bLeft - 66, 1, "#ffb3c4", "E · 12 px");
+  const bBot = bTop + bar._h, hideY = bBot + 56 * k;
+  add(`<div style="position:absolute;left:${bLeft}px;width:${bar._w}px;top:${bBot}px;height:${hideY - bBot}px;background:repeating-linear-gradient(45deg,rgba(255,185,0,.18) 0 6px,transparent 6px 12px);border:1.5px dashed #ffb900;border-top:none;border-radius:0 0 6px 6px"></div>`);
+  lab(bLeft, hideY + 4, "#ffd970", "D · hide distance 56 px – the bar stays open inside", `width:${bar._w}px;text-align:center;white-space:normal`);
+  // cursor
+  const cx = W * .34, cy = peek + 34;
+  add(`<div style="position:absolute;left:${cx + 3}px;top:${trig + 2}px;width:2px;height:${cy - trig}px;background:linear-gradient(#ffffff00,#ffffffaa)"></div>
+       <svg style="position:absolute;left:${cx}px;top:${cy}px" width="18" height="22" viewBox="0 0 22 26"><path d="M2 2 L2 21 L7 16 L10.5 24 L14 22.5 L10.5 15 L17 15 Z" fill="#fff" stroke="#111" stroke-width="1.3"/></svg>`);
+  lab(cx + 22, cy + 4, "#fff", "window being dragged up", "font-weight:600");
+  lab(W - 170, H - 18, "rgba(255,255,255,.55)", "Top of the screen · scaled", "font-weight:500;width:160px;text-align:right");
+})();
+// motion curves
+(function () {
+  const c1 = 1.70158, c3 = c1 + 1;
+  const curves = [
+    ["Smooth", "default · cubic", t => 1 - Math.pow(1 - t, 3)],
+    ["Quick", "quartic", t => 1 - Math.pow(1 - t, 4)],
+    ["Bouncy", "small overshoot", t => 1 + c3 * Math.pow(t - 1, 3) + c1 * Math.pow(t - 1, 2)],
+    ["Dynamic", "exponential", t => t === 1 ? 1 : 1 - Math.pow(2, -10 * t)],
+    ["Soft", "ease in-out", t => t < .5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2],
+    ["Linear", "constant speed", t => t],
+  ];
+  const host = document.getElementById("curves");
+  curves.forEach(([n, d, f]) => {
+    let p = ""; for (let i = 0; i <= 40; i++) { const t = i / 40; p += (i ? "L" : "M") + (6 + t * 68).toFixed(1) + " " + (62 - f(t) * 48).toFixed(1); }
+    host.insertAdjacentHTML("beforeend", `<div><svg width="80" height="68" viewBox="0 0 80 68"><rect x="6" y="14" width="68" height="48" fill="#f4f6f9" rx="3"/><line x1="6" y1="14" x2="74" y2="14" stroke="#d5dae2" stroke-dasharray="2 2"/><path d="${p}" fill="none" stroke="#2a7fd4" stroke-width="2.4" stroke-linecap="round"/></svg>${n}<span>${d}</span></div>`);
+  });
+})();
+</script>
+</body>
+</html>

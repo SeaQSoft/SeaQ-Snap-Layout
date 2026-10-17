@@ -1,0 +1,8 @@
+KDE Snap Layout 1.6.5 – First release on the KDE Store
+
+- Snap bar at the top edge with six layouts, landing preview and size restore
+- Settings editor: General, Appearance, Behavior & Animation, Layouts, About & Help
+- Layout designer with up to 16 zones, eleven templates, divider snapping
+- Colors: system / light / dark, system accent, swatches or color wheel
+- Six motion curves, separate slide-in and slide-out durations
+- Editor follows the system colors, window decoration and language (62 languages)

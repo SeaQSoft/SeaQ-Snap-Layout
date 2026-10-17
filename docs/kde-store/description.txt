@@ -1,0 +1,30 @@
+KDE Snap Layout – snap layouts for KDE Plasma 6
+
+Drag a window to the top edge of the screen: a bar with layouts slides down. Drop the window onto a zone and it fills exactly that area. Drag it away again and it gets its old size back.
+
+A pure KWin script – no extra program, no background service.
+
+FEATURES
+• Six layouts in the bar, eleven templates in the designer
+• Layout designer: split zones side by side or top and bottom, drag the dividers, up to 16 zones
+• Drag & drop to reorder layouts, hide, duplicate or delete them
+• Landing preview that shows where the window will end up
+• System, light or dark snap bar, system accent, swatches or any color from the color wheel
+• Bar size, thumbnail width, corner radius, opacity, several rows, layout and zone names
+• Trigger distance, handle, delays, slide distance, slide-in/out durations, six motion curves (defaults based on Windows 11)
+• Gaps between windows and to the screen edge, excluded applications
+• Multi-monitor, Wayland and X11
+• Settings editor uses your color scheme, window decoration and system language (62 languages)
+
+OPENING THE SETTINGS
+System Settings → Window Management → KWin Scripts → gear icon next to "KDE Snap Layout" → "Open Snap Layout settings editor" → OK.
+
+TIP
+Turn off Plasma's own "maximize when dragged to the top edge" under System Settings → Window Management → Screen Edges for the smoothest snapping.
+
+After updating, log out and back in once – KWin keeps loaded scripts in memory.
+
+Manual (PDF), video and source code:
+https://github.com/Swenix-dev/KDE-Snap-Layout
+
+License: GPL-3.0-or-later · Author: Swenix-dev
