@@ -29,7 +29,11 @@ A pure KWin script: no extra program, no background service, nothing to compile.
 
 <div align="center">
 
-<a href="docs/video/kde-snap-layout-intro.mp4"><img src="docs/images/video-thumbnail.png" alt="Play the 34-second intro video" width="720"></a>
+
+
+https://github.com/user-attachments/assets/befe5993-af49-4e00-9e5b-f22f84b214b6
+
+
 
 <sub>34 seconds · snapping two windows, the settings editor and the color options</sub>
 
