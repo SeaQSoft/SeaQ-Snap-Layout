@@ -1,0 +1,124 @@
+Mbyll
+Rikthe
+Maksimizo
+Zgjero
+Palos
+Ndaj krah për krah
+Ndaj lart dhe poshtë
+Hiq zonën
+Ngarko model…
+Klikoni një zonë për ta përzgjedhur · klikim i dyfishtë e ndan · tërhiqni ndarëset
+%1 nga %2 zona
+KDE Snap Layout – Redaktori i rregullimeve
+për KWin · v%1
+Të përgjithshme
+Pamja
+Sjellja dhe animacioni
+Skemat
+Rreth dhe ndihmë
+Aktiv
+Në pushim
+Tërhiqni një dritare te buza e sipërme e ekranit dhe lëshojeni mbi një zonë.
+Ngjitja
+Shfaq shiritin kur tërhiqet një dritare te buza e sipërme
+Trego ku do të vendoset dritarja
+Rikthe madhësinë fillestare kur dritarja nxirret jashtë
+Hapësirat
+Hapësira mes dritareve
+Hapësira deri te buza e ekranit
+Aplikacione të përjashtuara
+Klasa dritaresh për të cilat shiriti nuk shfaqet kurrë, një për rresht.
+Këshillë
+KDE i maksimizon dritaret e tërhequra te buza e sipërme. Për ngjitje më të butë, çaktivizojeni te Rregullimet e sistemit → Buzët e ekranit.
+Vlera të rekomanduara
+Ngjyrat, madhësia dhe forma e shiritit.
+Paraparje
+Skema e ngjyrave
+Sistemi
+E çelët
+E errët
+Ngjyra theksuese
+Përdor ngjyrën theksuese të sistemit
+Ngjyrë e zgjedhur
+Madhësia dhe forma
+Madhësia e shiritit
+Gjerësia e miniaturave
+Rrezja e qosheve
+Patejdukshmëria e sfondit
+Skema për rresht
+0 = të gjitha në një rresht
+Shfaq emrat e skemave dhe zonave
+Provo në ekran
+Vlerat parazgjedhje bazohen te Windows 11.
+Shfaqja
+Largësia e aktivizimit nga buza e sipërme
+Shfaq fillimisht një dorezë të vogël
+Largësia ku shfaqet doreza
+Gjerësia aktive përgjatë buzës së sipërme
+Vonesa para shfaqjes
+Fshehja
+Largësia pas së cilës shiriti fshihet sërish
+Vonesa para fshehjes
+Animacioni
+Sa poshtë rrëshqet shiriti
+Kohëzgjatja e zbritjes
+Kohëzgjatja e ngjitjes
+Lakorja e lëvizjes
+E butë (parazgjedhje)
+E shpejtë
+Kërcyese
+Dinamike
+E qetë
+Lineare
+Zbehje në shfaqje dhe zhdukje
+Provo animacionin
+Tërhiqni kartat për të ndryshuar renditjen në shirit. Klikoni dy herë mbi një kartë për ta përpunuar.
+Skemë e re
+Rikthe skemat parazgjedhje
+Në shirit
+Përpuno
+Dyfisho
+Fshi
+Si funksionon
+Kapni një dritare nga shiriti i titullit dhe tërhiqeni lart. Shiriti zbret; lëshojeni dritaren mbi një zonë dhe ajo mbush saktësisht atë hapësirë. Kur e tërhiqni sërish jashtë, merr përsëri madhësinë e vjetër.
+Hapja e redaktorit të rregullimeve
+Rregullimet e sistemit → Administrimi i dritareve → Skriptet KWin → ikona e ingranazhit pranë “KDE Snap Layout” → “Hap redaktorin e rregullimeve të Snap Layout” → OK.
+Informacion
+Versioni
+Autori
+Licenca
+Kartela e rregullimeve
+Skemë vetjake %1
+%1 (kopje)
+Ta fshij skemën?
+“%1” do të hiqet.
+T’i rikthej skemat parazgjedhje?
+Skemat tuaja dhe renditja e tyre do të humbasin.
+Përpuno skemën
+Emri:
+Ngjit ndarëset (¼, ⅓, ½ …)
+Anulo
+Ruaje
+Po
+Zona %1
+Lëshojeni dritaren mbi një zonë
+KDE Snap Layout: aktivizo/çaktivizo
+KDE Snap Layout: provo shiritin
+Gjysma
+Dy të tretat
+Tri shtylla
+Kryesore + grumbull
+Katër çerekë
+Fokus në qendër
+Një zonë
+Lart / poshtë
+Grumbull + kryesore
+Gjashtë pllaka
+Anështyllë + rrjetë
+Tërhiqni dritaret te buza e sipërme e ekranit dhe lëshojini mbi një zonë.
+Redaktori i rregullimeve
+Hap redaktorin e rregullimeve të Snap Layout
+✔ Gati – klikoni OK për të hapur redaktorin e rregullimeve.
+Rregullime të shpejta
+Ngjyrat e shiritit:
+Të gjitha rregullimet e tjera – pamja, madhësia, animacioni, sjellja dhe skemat tuaja – ndryshohen te redaktori i rregullimeve të Snap Layout.

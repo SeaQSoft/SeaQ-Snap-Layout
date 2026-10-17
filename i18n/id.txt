@@ -1,0 +1,124 @@
+Tutup
+Pulihkan
+Maksimalkan
+Bentangkan
+Ciutkan
+Bagi berdampingan
+Bagi atas dan bawah
+Hapus zona
+Muat templat…
+Klik zona untuk memilihnya · klik ganda untuk membaginya · seret pembatasnya
+%1 dari %2 zona
+KDE Snap Layout – Penyunting pengaturan
+untuk KWin · v%1
+Umum
+Tampilan
+Perilaku & animasi
+Tata letak
+Tentang & bantuan
+Aktif
+Dijeda
+Seret jendela ke tepi atas layar lalu lepaskan di sebuah zona.
+Penambatan
+Tampilkan bilah saat jendela diseret ke tepi atas
+Tampilkan posisi jendela nanti
+Pulihkan ukuran asli saat jendela diseret keluar
+Jarak
+Jarak antarjendela
+Jarak ke tepi layar
+Aplikasi yang dikecualikan
+Kelas jendela yang tidak pernah menampilkan bilah, satu per baris.
+Kiat
+KDE memaksimalkan jendela yang diseret ke tepi atas. Agar penambatan lebih mulus, matikan ini di Pengaturan Sistem → Tepi Layar.
+Nilai yang disarankan
+Warna, ukuran, dan bentuk bilah.
+Pratinjau
+Skema warna
+Sistem
+Terang
+Gelap
+Warna aksen
+Gunakan warna aksen sistem
+Warna khusus
+Ukuran & bentuk
+Ukuran bilah
+Lebar gambar mini
+Radius sudut
+Opasitas latar
+Tata letak per baris
+0 = semua dalam satu baris
+Tampilkan nama tata letak dan zona
+Uji di layar
+Nilai bawaan mengacu pada Windows 11.
+Tampil
+Jarak pemicu dari tepi atas
+Tampilkan pegangan kecil lebih dulu
+Jarak munculnya pegangan
+Lebar aktif di sepanjang tepi atas
+Jeda sebelum tampil
+Sembunyi
+Jarak sebelum bilah bersembunyi lagi
+Jeda sebelum sembunyi
+Animasi
+Seberapa jauh bilah turun
+Durasi masuk
+Durasi keluar
+Kurva gerak
+Halus (bawaan)
+Cepat
+Memantul
+Dinamis
+Lembut
+Linear
+Memudar saat masuk dan keluar
+Uji animasi
+Seret kartu untuk mengubah urutan di bilah. Klik ganda kartu untuk menyuntingnya.
+Tata letak baru
+Pulihkan tata letak bawaan
+Di bilah
+Sunting
+Gandakan
+Hapus
+Cara kerjanya
+Pegang jendela pada bilah judulnya lalu seret ke atas. Bilah akan turun; lepaskan jendela di sebuah zona dan jendela akan mengisi tepat area itu. Seret keluar lagi dan ukurannya kembali seperti semula.
+Membuka penyunting pengaturan
+Pengaturan Sistem → Manajemen Jendela → Skrip KWin → ikon roda gigi di samping “KDE Snap Layout” → “Buka penyunting pengaturan Snap Layout” → OK.
+Informasi
+Versi
+Pembuat
+Lisensi
+Berkas pengaturan
+Tata letak khusus %1
+%1 (salinan)
+Hapus tata letak?
+“%1” akan dihapus.
+Pulihkan tata letak bawaan?
+Tata letak buatan Anda dan urutannya akan hilang.
+Sunting tata letak
+Nama:
+Tambatkan pembatas (¼, ⅓, ½ …)
+Batal
+Simpan
+Ya
+Zona %1
+Lepaskan jendela di sebuah zona
+KDE Snap Layout: hidup/mati
+KDE Snap Layout: uji bilah
+Separuh
+Dua pertiga
+Tiga kolom
+Utama + tumpukan
+Empat perempat
+Fokus tengah
+Satu zona
+Atas / bawah
+Tumpukan + utama
+Enam ubin
+Bilah sisi + kisi
+Seret jendela ke tepi atas layar lalu lepaskan di sebuah zona.
+Penyunting pengaturan
+Buka penyunting pengaturan Snap Layout
+✔ Siap – klik OK untuk membuka penyunting pengaturan.
+Pengaturan cepat
+Warna bilah:
+Semua pengaturan lainnya – tampilan, ukuran, animasi, perilaku, dan tata letak buatan Anda – diubah di penyunting pengaturan Snap Layout.

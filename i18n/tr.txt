@@ -1,0 +1,124 @@
+Kapat
+Geri yükle
+Büyüt
+Genişlet
+Daralt
+Yan yana böl
+Üst ve alt olarak böl
+Bölgeyi kaldır
+Şablon yükle…
+Seçmek için bir bölgeye tıklayın · bölmek için çift tıklayın · ayırıcıları sürükleyin
+%1 / %2 bölge
+KDE Snap Layout – Ayar düzenleyicisi
+KWin için · v%1
+Genel
+Görünüm
+Davranış ve animasyon
+Yerleşimler
+Hakkında ve yardım
+Etkin
+Duraklatıldı
+Bir pencereyi ekranın üst kenarına sürükleyin ve bir bölgeye bırakın.
+Yaslama
+Pencere üst kenara sürüklenince yaslama çubuğunu göster
+Pencerenin nereye yerleşeceğini göster
+Pencere dışarı çekilince özgün boyutu geri yükle
+Boşluklar
+Pencereler arası boşluk
+Ekran kenarına boşluk
+Hariç tutulan uygulamalar
+Çubuğun hiç görünmeyeceği pencere sınıfları, her satıra bir tane.
+İpucu
+KDE, üst kenara sürüklenen pencereleri büyütür. Daha akıcı yaslama için bunu Sistem Ayarları → Ekran Kenarları altında kapatın.
+Önerilen değerler
+Yaslama çubuğunun renkleri, boyutu ve şekli.
+Önizleme
+Renk şeması
+Sistem
+Açık
+Koyu
+Vurgu rengi
+Sistemin vurgu rengini kullan
+Özel renk
+Boyut ve şekil
+Çubuk boyutu
+Küçük resim genişliği
+Köşe yarıçapı
+Arka plan opaklığı
+Satır başına yerleşim
+0 = hepsi tek satırda
+Yerleşim ve bölge adlarını göster
+Ekranda dene
+Varsayılan değerler Windows 11 temel alınarak belirlendi.
+Gösterme
+Üst kenardan tetikleme mesafesi
+Önce küçük bir tutamaç göster
+Tutamacın göründüğü mesafe
+Üst kenar boyunca etkin genişlik
+Göstermeden önce gecikme
+Gizleme
+Çubuğun yeniden gizlenmesi için mesafe
+Gizlemeden önce gecikme
+Animasyon
+Çubuğun ne kadar aşağı kaydığı
+Kayarak girme süresi
+Kayarak çıkma süresi
+Hareket eğrisi
+Yumuşak (varsayılan)
+Hızlı
+Yaylı
+Dinamik
+Sakin
+Doğrusal
+Girerken ve çıkarken soldur
+Animasyonu dene
+Çubuktaki sırayı değiştirmek için kartları sürükleyin. Düzenlemek için bir karta çift tıklayın.
+Yeni yerleşim
+Varsayılan yerleşimleri geri yükle
+Çubukta
+Düzenle
+Çoğalt
+Sil
+Nasıl çalışır
+Bir pencereyi başlık çubuğundan tutun ve yukarı sürükleyin. Çubuk aşağı kayar; pencereyi bir bölgeye bırakın, tam o alanı kaplar. Yeniden dışarı çektiğinizde eski boyutuna döner.
+Ayar düzenleyicisini açma
+Sistem Ayarları → Pencere Yönetimi → KWin Betikleri → “KDE Snap Layout” yanındaki dişli simgesi → “Snap Layout ayar düzenleyicisini aç” → Tamam.
+Bilgi
+Sürüm
+Yazar
+Lisans
+Ayar dosyası
+Özel yerleşim %1
+%1 (kopya)
+Yerleşim silinsin mi?
+“%1” kaldırılacak.
+Varsayılan yerleşimler geri yüklensin mi?
+Kendi yerleşimleriniz ve sıraları kaybolacak.
+Yerleşimi düzenle
+Ad:
+Ayırıcıları yasla (¼, ⅓, ½ …)
+İptal
+Kaydet
+Evet
+Bölge %1
+Pencereyi bir bölgeye bırakın
+KDE Snap Layout: aç/kapat
+KDE Snap Layout: çubuğu dene
+Yarımlar
+Üçte iki
+Üç sütun
+Ana + yığın
+Dört çeyrek
+Ortada odak
+Tek bölge
+Üst / alt
+Yığın + ana
+Altı döşeme
+Kenar çubuğu + ızgara
+Pencereleri ekranın üst kenarına sürükleyin ve bir bölgeye bırakın.
+Ayar düzenleyicisi
+Snap Layout ayar düzenleyicisini aç
+✔ Hazır – ayar düzenleyicisini açmak için Tamam’a tıklayın.
+Hızlı ayarlar
+Çubuk renkleri:
+Diğer tüm ayarlar – görünüm, boyut, animasyon, davranış ve kendi yerleşimleriniz – Snap Layout ayar düzenleyicisinde değiştirilir.

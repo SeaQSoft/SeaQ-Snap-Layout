@@ -1,0 +1,124 @@
+Lukk
+Gjenopprett
+Maksimer
+Fold ut
+Fold sammen
+Del side om side
+Del øverst og nederst
+Fjern sone
+Last inn mal…
+Klikk på en sone for å velge den · dobbeltklikk for å dele · dra i skillelinjene
+%1 av %2 soner
+KDE Snap Layout – Innstillingsredigerer
+for KWin · v%1
+Generelt
+Utseende
+Oppførsel & animasjon
+Oppsett
+Om & hjelp
+Aktiv
+Satt på pause
+Dra et vindu til overkanten av skjermen og slipp det på en sone.
+Festing
+Vis festelinjen når et vindu dras mot overkanten
+Vis hvor vinduet havner
+Gjenopprett opprinnelig størrelse når vinduet dras ut
+Avstand
+Avstand mellom vinduer
+Avstand til skjermkanten
+Unntatte programmer
+Vindusklasser som aldri viser festelinjen, én per linje.
+Tips
+KDE maksimerer vinduer som dras mot overkanten. Slå det av under Systeminnstillinger → Skjermkanter for jevnere festing.
+Anbefalte verdier
+Farger, størrelse og form på festelinjen.
+Forhåndsvisning
+Fargeoppsett
+System
+Lyst
+Mørkt
+Uthevingsfarge
+Bruk systemets uthevingsfarge
+Egen farge
+Størrelse & form
+Størrelse på festelinjen
+Bredde på miniatyrer
+Hjørneradius
+Bakgrunnens dekkevne
+Oppsett per rad
+0 = alle på én rad
+Vis navn på oppsett og soner
+Test på skjermen
+Standardverdiene er basert på Windows 11.
+Visning
+Utløseravstand fra overkanten
+Vis først et lite håndtak
+Avstand der håndtaket dukker opp
+Aktiv bredde langs overkanten
+Forsinkelse før visning
+Skjuling
+Avstand før linjen skjules igjen
+Forsinkelse før skjuling
+Animasjon
+Hvor langt linjen glir ned
+Varighet inn
+Varighet ut
+Bevegelseskurve
+Myk (standard)
+Rask
+Fjærende
+Dynamisk
+Rolig
+Lineær
+Ton inn og ut
+Test animasjon
+Dra kortene for å endre rekkefølgen i festelinjen. Dobbeltklikk på et kort for å redigere det.
+Nytt oppsett
+Gjenopprett standardoppsett
+I linjen
+Rediger
+Dupliser
+Slett
+Slik virker det
+Ta tak i et vindu i tittellinjen og dra det oppover. Festelinjen glir ned; slipp vinduet på en sone, så fyller det nøyaktig det området. Drar du det ut igjen, får det tilbake sin gamle størrelse.
+Åpne innstillingsredigereren
+Systeminnstillinger → Vindusbehandling → KWin-skript → tannhjulikonet ved «KDE Snap Layout» → «Åpne innstillingsredigereren for Snap Layout» → OK.
+Informasjon
+Versjon
+Opphavsperson
+Lisens
+Innstillingsfil
+Eget oppsett %1
+%1 (kopi)
+Slette oppsettet?
+«%1» blir fjernet.
+Gjenopprette standardoppsettene?
+Dine egne oppsett og rekkefølgen deres går tapt.
+Rediger oppsett
+Navn:
+Fest skillelinjer (¼, ⅓, ½ …)
+Avbryt
+Lagre
+Ja
+Sone %1
+Slipp vinduet på en sone
+KDE Snap Layout: på/av
+KDE Snap Layout: test festelinjen
+Halvdeler
+To tredjedeler
+Tre kolonner
+Hoved + stabel
+Fire fjerdedeler
+Fokus i midten
+Én sone
+Øverst / nederst
+Stabel + hoved
+Seks ruter
+Sidepanel + rutenett
+Dra vinduer til overkanten av skjermen og slipp dem på en sone.
+Innstillingsredigerer
+Åpne innstillingsredigereren for Snap Layout
+✔ Klar – klikk OK for å åpne innstillingsredigereren.
+Hurtiginnstillinger
+Festelinjens farger:
+Alle andre innstillinger – utseende, størrelse, animasjon, oppførsel og egne oppsett – endres i innstillingsredigereren for Snap Layout.

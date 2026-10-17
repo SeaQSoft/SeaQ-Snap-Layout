@@ -1,0 +1,124 @@
+Zoumaachen
+Restauréieren
+Maximéieren
+Opklappen
+Zouklappen
+Niewenteneen deelen
+Uewen an ënnen deelen
+Zon ewechhuelen
+Virlag lueden…
+Klickt op eng Zon fir se ze wielen · Duebelklick deelt se · Trennlinnen mat der Maus zéien
+%1 vun %2 Zonen
+KDE Snap Layout – Astellungseditor
+fir KWin · v%1
+Allgemeng
+Ausgesinn
+Verhalen & Animatioun
+Layouten
+Info & Hëllef
+Aktiv
+Pauséiert
+Zitt eng Fënster un den ieweschte Bildschiermrand a leet se op eng Zon of.
+Andocken
+Snap-Leescht weisen, wann eng Fënster un den ieweschte Rand gezu gëtt
+Weisen, wou d’Fënster landt
+Ursprénglech Gréisst restauréieren, wann d’Fënster erausgezu gëtt
+Ofstänn
+Ofstand tëscht Fënsteren
+Ofstand zum Bildschiermrand
+Ausgeschloss Applikatiounen
+Fënsterklassen, bei deenen d’Leescht ni erschéngt, eng pro Linn.
+Tipp
+KDE maximéiert Fënsteren, déi un den ieweschte Rand gezu ginn. Fir méi flüssegt Andocken schalt dat ënner Systemastellungen → Bildschiermränner aus.
+Recommandéiert Wäerter
+Faarwen, Gréisst a Form vun der Snap-Leescht.
+Virschau
+Faarfschema
+System
+Hell
+Däischter
+Akzentfaarf
+Akzentfaarf vum System benotzen
+Eege Faarf
+Gréisst & Form
+Gréisst vun der Leescht
+Breet vun de Virschaubiller
+Eckeradius
+Deckkraaft vum Hannergrond
+Layouten pro Rei
+0 = all an enger Rei
+Nimm vu Layouten an Zone weisen
+Um Bildschierm testen
+D’Standardwäerter orientéiere sech u Windows 11.
+Weisen
+Ausléisungsofstand vum ieweschte Rand
+Fir d’éischt e klenge Grëff weisen
+Ofstand, ab deem de Grëff erschéngt
+Aktiv Breet um ieweschte Rand
+Verzögerung virum Erausfueren
+Verstoppen
+Ofstand, bis d’Leescht erëm erafiert
+Verzögerung virum Erafueren
+Animatioun
+Wéi wäit d’Leescht erofféiert
+Dauer beim Erofféieren
+Dauer beim Zréckféieren
+Beweegungskurv
+Sanft (Standard)
+Séier
+Fiederend
+Dynamesch
+Douce
+Linear
+Beim Eran- an Erausfueren iwwerblenden
+Animatioun testen
+Zitt d’Kaarten, fir d’Reiefolleg an der Leescht z’änneren. Duebelklick op eng Kaart mécht den Editor op.
+Neie Layout
+Standard-Layouten restauréieren
+An der Leescht
+Beaarbechten
+Duplizéieren
+Läschen
+Esou funktionéiert et
+Gräift eng Fënster un der Titelleescht a zitt se no uewen. D’Leescht fiert erof; leet d’Fënster op eng Zon of an si fëllt genee dee Beräich. Zitt se erëm ewech, da kritt se hir al Gréisst zréck.
+Astellungseditor opmaachen
+Systemastellungen → Fënsterverwaltung → KWin-Skripter → Zännrad bei „KDE Snap Layout“ → „Snap Layout Astellungseditor opmaachen“ → OK.
+Informatiounen
+Versioun
+Auteur
+Lizenz
+Astellungsdatei
+Eegene Layout %1
+%1 (Kopie)
+Layout läschen?
+„%1“ gëtt ewechgeholl.
+Standard-Layouten restauréieren?
+Eege Layouten an hir Reiefolleg ginn dobäi verluer.
+Layout beaarbechten
+Numm:
+Trennlinnen arasten (¼, ⅓, ½ …)
+Ofbriechen
+Späicheren
+Jo
+Zon %1
+Fënster op eng Zon ofleeën
+KDE Snap Layout: un/aus
+KDE Snap Layout: Snap-Leescht testen
+Hallefen
+Zwee Drëttel
+Dräi Kolonnen
+Haapt + Stapel
+Véier Véierel
+Fokus an der Mëtt
+Eng Zon
+Uewen / Ënnen
+Stapel + Haapt
+Sechs Kachelen
+Säitebar + Raster
+Zitt Fënsteren un den ieweschte Bildschiermrand a leet se op eng Zon of.
+Astellungseditor
+Snap Layout Astellungseditor opmaachen
+✔ Prett – klickt op OK, fir den Astellungseditor opzemaachen.
+Quick-Astellungen
+Faarwen vun der Leescht:
+All aner Astellungen – Ausgesinn, Gréisst, Animatioun, Verhalen an eege Layouten – mécht een am Snap Layout Astellungseditor.

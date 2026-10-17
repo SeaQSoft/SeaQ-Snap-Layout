@@ -1,0 +1,124 @@
+Fechar
+Restaurar
+Maximizar
+Expandir
+Recolher
+Dividir lado a lado
+Dividir em cima e em baixo
+Remover zona
+Carregar modelo…
+Clique numa zona para a selecionar · duplo clique para a dividir · arraste os divisores
+%1 de %2 zonas
+KDE Snap Layout – Editor de definições
+para KWin · v%1
+Geral
+Aspeto
+Comportamento e animação
+Disposições
+Acerca e ajuda
+Ativo
+Em pausa
+Arraste uma janela para o limite superior do ecrã e largue-a numa zona.
+Encaixe
+Mostrar a barra ao arrastar uma janela para o limite superior
+Mostrar onde a janela vai ficar
+Restaurar o tamanho original ao retirar a janela
+Espaçamento
+Espaço entre janelas
+Espaço até ao limite do ecrã
+Aplicações excluídas
+Classes de janela que nunca mostram a barra, uma por linha.
+Dica
+O KDE maximiza as janelas arrastadas para o limite superior. Para um encaixe mais suave, desative isso em Definições do sistema → Extremos do ecrã.
+Valores recomendados
+Cores, tamanho e forma da barra.
+Pré-visualização
+Esquema de cores
+Sistema
+Claro
+Escuro
+Cor de destaque
+Usar a cor de destaque do sistema
+Cor personalizada
+Tamanho e forma
+Tamanho da barra
+Largura das miniaturas
+Raio dos cantos
+Opacidade do fundo
+Disposições por linha
+0 = todas numa linha
+Mostrar nomes das disposições e zonas
+Testar no ecrã
+Os valores predefinidos baseiam-se no Windows 11.
+Mostrar
+Distância de ativação a partir do limite superior
+Mostrar primeiro uma pequena pega
+Distância a que a pega aparece
+Largura ativa ao longo do limite superior
+Atraso antes de mostrar
+Ocultar
+Distância até a barra voltar a ocultar-se
+Atraso antes de ocultar
+Animação
+Quanto a barra desce
+Duração da descida
+Duração da subida
+Curva de movimento
+Suave (predefinida)
+Rápida
+Com ressalto
+Dinâmica
+Delicada
+Linear
+Desvanecer ao aparecer e desaparecer
+Testar animação
+Arraste os cartões para mudar a ordem na barra. Faça duplo clique num cartão para o editar.
+Nova disposição
+Restaurar disposições predefinidas
+Na barra
+Editar
+Duplicar
+Eliminar
+Como funciona
+Agarre uma janela pela barra de título e arraste-a para cima. A barra desce; largue a janela numa zona e ela ocupa exatamente essa área. Ao arrastá-la de novo para fora, recupera o tamanho anterior.
+Abrir o editor de definições
+Definições do sistema → Gestão de janelas → Scripts do KWin → ícone de roda dentada junto a «KDE Snap Layout» → «Abrir o editor de definições do Snap Layout» → OK.
+Informações
+Versão
+Autor
+Licença
+Ficheiro de definições
+Disposição personalizada %1
+%1 (cópia)
+Eliminar a disposição?
+«%1» será removida.
+Restaurar as disposições predefinidas?
+As suas disposições e a respetiva ordem serão perdidas.
+Editar disposição
+Nome:
+Encaixar divisores (¼, ⅓, ½ …)
+Cancelar
+Guardar
+Sim
+Zona %1
+Largue a janela numa zona
+KDE Snap Layout: ativar/desativar
+KDE Snap Layout: testar a barra
+Metades
+Dois terços
+Três colunas
+Principal + pilha
+Quatro quartos
+Foco central
+Zona única
+Cima / baixo
+Pilha + principal
+Seis mosaicos
+Barra lateral + grelha
+Arraste as janelas para o limite superior do ecrã e largue-as numa zona.
+Editor de definições
+Abrir o editor de definições do Snap Layout
+✔ Pronto – clique em OK para abrir o editor de definições.
+Definições rápidas
+Cores da barra:
+Todas as outras definições – aspeto, tamanho, animação, comportamento e as suas disposições – são alteradas no editor de definições do Snap Layout.

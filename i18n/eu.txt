@@ -1,0 +1,124 @@
+Itxi
+Leheneratu
+Maximizatu
+Zabaldu
+Tolestu
+Zatitu alboz albo
+Zatitu goian eta behean
+Kendu eremua
+Kargatu txantiloia…
+Egin klik eremu batean hautatzeko · klik bikoitzak zatitzen du · arrastatu bereizleak
+%1 / %2 eremu
+KDE Snap Layout – Ezarpen-editorea
+KWin-erako · v%1
+Orokorra
+Itxura
+Portaera eta animazioa
+Diseinuak
+Honi buruz eta laguntza
+Aktibo
+Pausatuta
+Arrastatu leiho bat pantailaren goiko ertzera eta askatu eremu baten gainean.
+Atxikitzea
+Erakutsi barra leiho bat goiko ertzera arrastatzean
+Erakutsi leihoa non geratuko den
+Leheneratu jatorrizko tamaina leihoa ateratzean
+Tarteak
+Leihoen arteko tartea
+Pantailaren ertzerainoko tartea
+Baztertutako aplikazioak
+Barra inoiz erakusten ez duten leiho-klaseak, bat lerro bakoitzeko.
+Aholkua
+KDEk maximizatu egiten ditu goiko ertzera arrastatutako leihoak. Atxikitze leunagoa nahi baduzu, desaktibatu Sistemaren ezarpenak → Pantailaren ertzak atalean.
+Gomendatutako balioak
+Barraren koloreak, tamaina eta forma.
+Aurrebista
+Kolore-eskema
+Sistema
+Argia
+Iluna
+Nabarmentze-kolorea
+Erabili sistemaren nabarmentze-kolorea
+Kolore pertsonalizatua
+Tamaina eta forma
+Barraren tamaina
+Koadro txikien zabalera
+Izkinen erradioa
+Atzeko planoaren opakotasuna
+Diseinu errenkadako
+0 = denak errenkada batean
+Erakutsi diseinuen eta eremuen izenak
+Probatu pantailan
+Balio lehenetsiak Windows 11n oinarrituta daude.
+Erakustea
+Aktibatze-distantzia goiko ertzetik
+Erakutsi lehenik helduleku txiki bat
+Heldulekua agertzen den distantzia
+Zabalera aktiboa goiko ertzean zehar
+Atzerapena erakutsi aurretik
+Ezkutatzea
+Barra berriro ezkutatu aurreko distantzia
+Atzerapena ezkutatu aurretik
+Animazioa
+Barra zenbat jaisten den
+Jaitsieraren iraupena
+Igoeraren iraupena
+Mugimendu-kurba
+Leuna (lehenetsia)
+Azkarra
+Errebotea
+Dinamikoa
+Bigun
+Lineala
+Iraungitzea agertzean eta desagertzean
+Probatu animazioa
+Arrastatu txartelak barrako ordena aldatzeko. Egin klik bikoitza txartel batean editatzeko.
+Diseinu berria
+Leheneratu diseinu lehenetsiak
+Barran
+Editatu
+Bikoiztu
+Ezabatu
+Nola dabilen
+Heldu leiho bati titulu-barratik eta arrastatu gora. Barra jaisten da; askatu leihoa eremu batean eta eremu hori bera beteko du. Berriro ateratzen baduzu, lehengo tamaina berreskuratzen du.
+Ezarpen-editorea irekitzea
+Sistemaren ezarpenak → Leiho-kudeaketa → KWin scriptak → engranaje-ikonoa «KDE Snap Layout»-en ondoan → «Ireki Snap Layout-en ezarpen-editorea» → Ados.
+Informazioa
+Bertsioa
+Egilea
+Lizentzia
+Ezarpen-fitxategia
+Diseinu pertsonalizatua %1
+%1 (kopia)
+Diseinua ezabatu?
+«%1» kenduko da.
+Diseinu lehenetsiak leheneratu?
+Zure diseinuak eta haien ordena galduko dira.
+Editatu diseinua
+Izena:
+Atxiki bereizleak (¼, ⅓, ½ …)
+Utzi
+Gorde
+Bai
+%1. eremua
+Askatu leihoa eremu batean
+KDE Snap Layout: aktibatu/desaktibatu
+KDE Snap Layout: probatu barra
+Erdiak
+Bi heren
+Hiru zutabe
+Nagusia + pila
+Lau laurden
+Erdiko fokua
+Eremu bakarra
+Goian / behean
+Pila + nagusia
+Sei lauza
+Alboko barra + sareta
+Arrastatu leihoak pantailaren goiko ertzera eta askatu eremu baten gainean.
+Ezarpen-editorea
+Ireki Snap Layout-en ezarpen-editorea
+✔ Prest – egin klik Ados botoian ezarpen-editorea irekitzeko.
+Ezarpen azkarrak
+Barraren koloreak:
+Gainerako ezarpen guztiak – itxura, tamaina, animazioa, portaera eta zure diseinuak – Snap Layout-en ezarpen-editorean aldatzen dira.

@@ -1,0 +1,124 @@
+Đóng
+Khôi phục
+Phóng to
+Mở rộng
+Thu gọn
+Chia cạnh nhau
+Chia trên và dưới
+Xóa vùng
+Tải mẫu…
+Nhấp vào vùng để chọn · nhấp đúp để chia · kéo các đường phân cách
+%1 trên %2 vùng
+KDE Snap Layout – Trình chỉnh sửa cài đặt
+cho KWin · v%1
+Chung
+Giao diện
+Hành vi & hoạt ảnh
+Bố cục
+Giới thiệu & trợ giúp
+Đang bật
+Tạm dừng
+Kéo cửa sổ lên mép trên màn hình rồi thả vào một vùng.
+Gắn cửa sổ
+Hiện thanh khi kéo cửa sổ lên mép trên
+Cho biết cửa sổ sẽ nằm ở đâu
+Khôi phục kích thước ban đầu khi kéo cửa sổ ra
+Khoảng cách
+Khoảng cách giữa các cửa sổ
+Khoảng cách tới mép màn hình
+Ứng dụng bị loại trừ
+Các lớp cửa sổ không bao giờ hiện thanh, mỗi dòng một lớp.
+Mẹo
+KDE phóng to các cửa sổ bị kéo lên mép trên. Để gắn mượt hơn, hãy tắt tính năng này trong Thiết lập hệ thống → Cạnh màn hình.
+Giá trị khuyến nghị
+Màu sắc, kích thước và hình dạng của thanh.
+Xem trước
+Bảng màu
+Hệ thống
+Sáng
+Tối
+Màu nhấn
+Dùng màu nhấn của hệ thống
+Màu tùy chọn
+Kích thước & hình dạng
+Kích thước thanh
+Chiều rộng ảnh thu nhỏ
+Bán kính góc
+Độ mờ đục của nền
+Số bố cục mỗi hàng
+0 = tất cả trên một hàng
+Hiện tên bố cục và vùng
+Thử trên màn hình
+Giá trị mặc định dựa trên Windows 11.
+Hiển thị
+Khoảng cách kích hoạt từ mép trên
+Hiện tay nắm nhỏ trước
+Khoảng cách tay nắm xuất hiện
+Chiều rộng hoạt động dọc mép trên
+Độ trễ trước khi hiện
+Ẩn
+Khoảng cách trước khi thanh ẩn lại
+Độ trễ trước khi ẩn
+Hoạt ảnh
+Thanh trượt xuống bao xa
+Thời gian trượt vào
+Thời gian trượt ra
+Đường cong chuyển động
+Mượt (mặc định)
+Nhanh
+Nảy
+Năng động
+Êm
+Tuyến tính
+Mờ dần khi hiện và ẩn
+Thử hoạt ảnh
+Kéo các thẻ để đổi thứ tự trên thanh. Nhấp đúp vào thẻ để chỉnh sửa.
+Bố cục mới
+Khôi phục bố cục mặc định
+Trên thanh
+Sửa
+Nhân bản
+Xóa
+Cách hoạt động
+Nắm cửa sổ ở thanh tiêu đề rồi kéo lên. Thanh trượt xuống; thả cửa sổ vào một vùng và nó sẽ lấp đúng vùng đó. Kéo nó ra lần nữa thì cửa sổ trở lại kích thước cũ.
+Mở trình chỉnh sửa cài đặt
+Thiết lập hệ thống → Quản lý cửa sổ → Tập lệnh KWin → biểu tượng bánh răng cạnh “KDE Snap Layout” → “Mở trình chỉnh sửa cài đặt Snap Layout” → OK.
+Thông tin
+Phiên bản
+Tác giả
+Giấy phép
+Tệp cài đặt
+Bố cục tùy chỉnh %1
+%1 (bản sao)
+Xóa bố cục?
+“%1” sẽ bị xóa.
+Khôi phục bố cục mặc định?
+Các bố cục của bạn và thứ tự của chúng sẽ bị mất.
+Sửa bố cục
+Tên:
+Gắn đường phân cách (¼, ⅓, ½ …)
+Hủy
+Lưu
+Có
+Vùng %1
+Thả cửa sổ vào một vùng
+KDE Snap Layout: bật/tắt
+KDE Snap Layout: thử thanh
+Hai nửa
+Hai phần ba
+Ba cột
+Chính + chồng
+Bốn phần tư
+Tập trung giữa
+Một vùng
+Trên / dưới
+Chồng + chính
+Sáu ô
+Thanh bên + lưới
+Kéo cửa sổ lên mép trên màn hình rồi thả vào một vùng.
+Trình chỉnh sửa cài đặt
+Mở trình chỉnh sửa cài đặt Snap Layout
+✔ Sẵn sàng – nhấp OK để mở trình chỉnh sửa cài đặt.
+Cài đặt nhanh
+Màu của thanh:
+Mọi cài đặt khác – giao diện, kích thước, hoạt ảnh, hành vi và bố cục của riêng bạn – được thay đổi trong trình chỉnh sửa cài đặt Snap Layout.

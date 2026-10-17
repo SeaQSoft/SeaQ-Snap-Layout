@@ -1,0 +1,124 @@
+Cerrar
+Restaurar
+Maximizar
+Desplegar
+Plegar
+Dividir en paralelo
+Dividir arriba y abajo
+Quitar zona
+Cargar plantilla…
+Haz clic en una zona para seleccionarla · doble clic para dividirla · arrastra los divisores
+%1 de %2 zonas
+KDE Snap Layout – Editor de ajustes
+para KWin · v%1
+General
+Apariencia
+Comportamiento y animación
+Diseños
+Acerca de y ayuda
+Activo
+En pausa
+Arrastra una ventana al borde superior de la pantalla y suéltala sobre una zona.
+Acoplar
+Mostrar la barra al arrastrar una ventana al borde superior
+Mostrar dónde quedará la ventana
+Restaurar el tamaño original al sacar la ventana
+Espaciado
+Separación entre ventanas
+Separación con el borde de la pantalla
+Aplicaciones excluidas
+Clases de ventana que nunca muestran la barra, una por línea.
+Consejo
+KDE maximiza las ventanas que se arrastran al borde superior. Para un acoplado más fluido, desactívalo en Preferencias del sistema → Bordes de la pantalla.
+Valores recomendados
+Colores, tamaño y forma de la barra.
+Vista previa
+Esquema de color
+Sistema
+Claro
+Oscuro
+Color de acento
+Usar el color de acento del sistema
+Color personalizado
+Tamaño y forma
+Tamaño de la barra
+Ancho de las miniaturas
+Radio de las esquinas
+Opacidad del fondo
+Diseños por fila
+0 = todos en una fila
+Mostrar nombres de diseños y zonas
+Probar en pantalla
+Los valores predeterminados se basan en Windows 11.
+Mostrar
+Distancia de activación desde el borde superior
+Mostrar primero un pequeño tirador
+Distancia a la que aparece el tirador
+Ancho activo en el borde superior
+Retraso antes de mostrar
+Ocultar
+Distancia antes de que la barra se oculte
+Retraso antes de ocultar
+Animación
+Cuánto baja la barra
+Duración al bajar
+Duración al subir
+Curva de movimiento
+Suave (predeterminada)
+Rápida
+Con rebote
+Dinámica
+Delicada
+Lineal
+Fundido al aparecer y desaparecer
+Probar animación
+Arrastra las tarjetas para cambiar el orden en la barra. Haz doble clic en una tarjeta para editarla.
+Nuevo diseño
+Restaurar diseños predeterminados
+En la barra
+Editar
+Duplicar
+Eliminar
+Cómo funciona
+Agarra una ventana por la barra de título y arrástrala hacia arriba. La barra baja; suelta la ventana sobre una zona y ocupará exactamente ese espacio. Si vuelves a sacarla, recupera su tamaño anterior.
+Abrir el editor de ajustes
+Preferencias del sistema → Gestión de ventanas → Scripts de KWin → icono de engranaje junto a «KDE Snap Layout» → «Abrir el editor de ajustes de Snap Layout» → Aceptar.
+Información
+Versión
+Autor
+Licencia
+Archivo de ajustes
+Diseño personalizado %1
+%1 (copia)
+¿Eliminar el diseño?
+Se eliminará «%1».
+¿Restaurar los diseños predeterminados?
+Se perderán tus diseños propios y su orden.
+Editar diseño
+Nombre:
+Ajustar divisores (¼, ⅓, ½ …)
+Cancelar
+Guardar
+Sí
+Zona %1
+Suelta la ventana sobre una zona
+KDE Snap Layout: activar/desactivar
+KDE Snap Layout: probar la barra
+Mitades
+Dos tercios
+Tres columnas
+Principal + pila
+Cuatro cuartos
+Foco central
+Zona única
+Arriba / abajo
+Pila + principal
+Seis mosaicos
+Barra lateral + cuadrícula
+Arrastra las ventanas al borde superior de la pantalla y suéltalas sobre una zona.
+Editor de ajustes
+Abrir el editor de ajustes de Snap Layout
+✔ Listo: haz clic en Aceptar para abrir el editor de ajustes.
+Ajustes rápidos
+Colores de la barra:
+Todos los demás ajustes – apariencia, tamaño, animación, comportamiento y tus propios diseños – se cambian en el editor de ajustes de Snap Layout.

@@ -1,0 +1,124 @@
+Zatvori
+Vrati
+Maksimizuj
+Raširi
+Skupi
+Podeli jedno pored drugog
+Podeli gore i dole
+Ukloni zonu
+Učitaj šablon…
+Kliknite na zonu da je izaberete · dvoklik je deli · prevlačite razdelnike
+%1 od %2 zona
+KDE Snap Layout – Uređivač podešavanja
+za KWin · v%1
+Opšte
+Izgled
+Ponašanje i animacija
+Rasporedi
+O programu i pomoć
+Aktivno
+Pauzirano
+Prevucite prozor do gornje ivice ekrana i spustite ga na zonu.
+Prijanjanje
+Prikaži traku pri prevlačenju prozora do gornje ivice
+Prikaži gde će prozor biti smešten
+Vrati prvobitnu veličinu pri izvlačenju prozora
+Razmaci
+Razmak između prozora
+Razmak do ivice ekrana
+Izuzeti programi
+Klase prozora za koje se traka nikad ne prikazuje, jedna po redu.
+Savet
+KDE maksimizuje prozore prevučene do gornje ivice. Za glađe prijanjanje isključite to u Sistemske postavke → Ivice ekrana.
+Preporučene vrednosti
+Boje, veličina i oblik trake.
+Pregled
+Šema boja
+Sistem
+Svetla
+Tamna
+Boja isticanja
+Koristi sistemsku boju isticanja
+Sopstvena boja
+Veličina i oblik
+Veličina trake
+Širina sličica
+Poluprečnik uglova
+Neprozirnost pozadine
+Rasporeda po redu
+0 = svi u jednom redu
+Prikaži nazive rasporeda i zona
+Isprobaj na ekranu
+Podrazumevane vrednosti zasnovane su na Windows 11.
+Prikazivanje
+Udaljenost aktivacije od gornje ivice
+Prvo prikaži malu ručicu
+Udaljenost na kojoj se pojavljuje ručica
+Aktivna širina duž gornje ivice
+Kašnjenje pre prikaza
+Skrivanje
+Udaljenost posle koje se traka ponovo skriva
+Kašnjenje pre skrivanja
+Animacija
+Koliko se traka spušta
+Trajanje spuštanja
+Trajanje podizanja
+Kriva kretanja
+Glatka (podrazumevano)
+Brza
+Elastična
+Dinamična
+Blaga
+Linearna
+Postepeno pojavljivanje i nestajanje
+Isprobaj animaciju
+Prevlačite kartice da biste promenili redosled na traci. Dvokliknite na karticu da biste je uredili.
+Novi raspored
+Vrati podrazumevane rasporede
+Na traci
+Uredi
+Udvostruči
+Obriši
+Kako radi
+Uhvatite prozor za naslovnu traku i prevucite ga nagore. Traka se spušta; spustite prozor na zonu i on popunjava tačno tu oblast. Kad ga ponovo izvučete, vraća mu se stara veličina.
+Otvaranje uređivača podešavanja
+Sistemske postavke → Upravljanje prozorima → KWin skripte → ikonica zupčanika pored „KDE Snap Layout“ → „Otvori uređivač podešavanja Snap Layout-a“ → U redu.
+Informacije
+Verzija
+Autor
+Licenca
+Datoteka podešavanja
+Sopstveni raspored %1
+%1 (kopija)
+Obrisati raspored?
+„%1“ će biti uklonjen.
+Vratiti podrazumevane rasporede?
+Vaši rasporedi i njihov redosled biće izgubljeni.
+Uredi raspored
+Naziv:
+Prijanjanje razdelnika (¼, ⅓, ½ …)
+Otkaži
+Sačuvaj
+Da
+Zona %1
+Spustite prozor na zonu
+KDE Snap Layout: uključi/isključi
+KDE Snap Layout: isprobaj traku
+Polovine
+Dve trećine
+Tri kolone
+Glavni + gomila
+Četiri četvrtine
+Fokus u sredini
+Jedna zona
+Gore / dole
+Gomila + glavni
+Šest pločica
+Bočna traka + mreža
+Prevlačite prozore do gornje ivice ekrana i spuštajte ih na zonu.
+Uređivač podešavanja
+Otvori uređivač podešavanja Snap Layout-a
+✔ Spremno – kliknite U redu da biste otvorili uređivač podešavanja.
+Brza podešavanja
+Boje trake:
+Sva ostala podešavanja – izgled, veličinu, animaciju, ponašanje i sopstvene rasporede – menjate u uređivaču podešavanja Snap Layout-a.

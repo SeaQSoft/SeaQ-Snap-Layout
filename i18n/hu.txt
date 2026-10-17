@@ -1,0 +1,124 @@
+Bezárás
+Visszaállítás
+Teljes méret
+Kinyitás
+Összecsukás
+Felosztás egymás mellé
+Felosztás felül és alul
+Zóna eltávolítása
+Sablon betöltése…
+Kattintson egy zónára a kijelöléshez · dupla kattintással felosztja · húzza az elválasztókat
+%2 zónából %1
+KDE Snap Layout – Beállításszerkesztő
+KWinhez · v%1
+Általános
+Megjelenés
+Viselkedés és animáció
+Elrendezések
+Névjegy és súgó
+Aktív
+Szüneteltetve
+Húzzon egy ablakot a képernyő felső széléhez, és engedje el egy zónán.
+Illesztés
+Az illesztősáv megjelenítése, amikor egy ablakot a felső szélhez húz
+Megmutatja, hová kerül az ablak
+Eredeti méret visszaállítása az ablak kihúzásakor
+Térközök
+Térköz az ablakok között
+Térköz a képernyő szélétől
+Kizárt alkalmazások
+Ablakosztályok, amelyeknél a sáv sosem jelenik meg, soronként egy.
+Tipp
+A KDE teljes méretűre nagyítja a felső szélhez húzott ablakokat. A gördülékenyebb illesztéshez kapcsolja ki ezt a Rendszerbeállítások → Képernyőszélek alatt.
+Ajánlott értékek
+Az illesztősáv színei, mérete és formája.
+Előnézet
+Színséma
+Rendszer
+Világos
+Sötét
+Kiemelőszín
+A rendszer kiemelőszínének használata
+Egyéni szín
+Méret és forma
+Sáv mérete
+Bélyegképek szélessége
+Sarokkerekítés
+Háttér átlátszatlansága
+Elrendezések soronként
+0 = mind egy sorban
+Elrendezés- és zónanevek megjelenítése
+Kipróbálás a képernyőn
+Az alapértékek a Windows 11-en alapulnak.
+Megjelenítés
+Aktiválási távolság a felső széltől
+Először egy kis fogantyú megjelenítése
+Távolság, ahol a fogantyú megjelenik
+Aktív szélesség a felső szél mentén
+Késleltetés megjelenítés előtt
+Elrejtés
+Távolság, amely után a sáv újra eltűnik
+Késleltetés elrejtés előtt
+Animáció
+Mennyire csúszik le a sáv
+Lecsúszás időtartama
+Visszacsúszás időtartama
+Mozgásgörbe
+Lágy (alapértelmezett)
+Gyors
+Rugalmas
+Dinamikus
+Finom
+Lineáris
+Áttűnés megjelenéskor és eltűnéskor
+Animáció kipróbálása
+Húzza a kártyákat a sorrend módosításához. Dupla kattintással szerkesztheti a kártyát.
+Új elrendezés
+Alapértelmezett elrendezések visszaállítása
+A sávban
+Szerkesztés
+Kettőzés
+Törlés
+Hogyan működik
+Fogja meg az ablakot a címsoránál, és húzza felfelé. A sáv lecsúszik; engedje el az ablakot egy zónán, és pontosan azt a területet tölti ki. Ha újra elhúzza, visszakapja korábbi méretét.
+A beállításszerkesztő megnyitása
+Rendszerbeállítások → Ablakkezelés → KWin parancsfájlok → fogaskerék ikon a „KDE Snap Layout” mellett → „Snap Layout beállításszerkesztő megnyitása” → OK.
+Információ
+Verzió
+Szerző
+Licenc
+Beállításfájl
+Egyéni elrendezés %1
+%1 (másolat)
+Törli az elrendezést?
+„%1” el lesz távolítva.
+Visszaállítja az alapértelmezett elrendezéseket?
+A saját elrendezések és azok sorrendje elvesznek.
+Elrendezés szerkesztése
+Név:
+Elválasztók illesztése (¼, ⅓, ½ …)
+Mégse
+Mentés
+Igen
+%1. zóna
+Engedje el az ablakot egy zónán
+KDE Snap Layout: be/ki
+KDE Snap Layout: sáv kipróbálása
+Felezés
+Kétharmad
+Három oszlop
+Fő + köteg
+Negyedelés
+Középső fókusz
+Egyetlen zóna
+Fent / lent
+Köteg + fő
+Hat csempe
+Oldalsáv + rács
+Húzza az ablakokat a képernyő felső széléhez, és engedje el őket egy zónán.
+Beállításszerkesztő
+Snap Layout beállításszerkesztő megnyitása
+✔ Kész – kattintson az OK gombra a beállításszerkesztő megnyitásához.
+Gyorsbeállítások
+A sáv színei:
+Minden további beállítást – megjelenés, méret, animáció, viselkedés és saját elrendezések – a Snap Layout beállításszerkesztőben módosíthat.

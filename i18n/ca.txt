@@ -1,0 +1,124 @@
+Tanca
+Restaura
+Maximitza
+Desplega
+Plega
+Divideix un al costat de l’altre
+Divideix a dalt i a baix
+Elimina la zona
+Carrega una plantilla…
+Feu clic en una zona per seleccionar-la · doble clic per dividir-la · arrossegueu els separadors
+%1 de %2 zones
+KDE Snap Layout – Editor de configuració
+per a KWin · v%1
+General
+Aparença
+Comportament i animació
+Disposicions
+Quant a i ajuda
+Actiu
+En pausa
+Arrossegueu una finestra a la vora superior de la pantalla i deixeu-la anar sobre una zona.
+Acoblament
+Mostra la barra en arrossegar una finestra a la vora superior
+Mostra on quedarà la finestra
+Restaura la mida original en treure la finestra
+Espaiat
+Espai entre finestres
+Espai fins a la vora de la pantalla
+Aplicacions excloses
+Classes de finestra que no mostren mai la barra, una per línia.
+Consell
+El KDE maximitza les finestres arrossegades a la vora superior. Per a un acoblament més suau, desactiveu-ho a Arranjament del sistema → Vores de la pantalla.
+Valors recomanats
+Colors, mida i forma de la barra.
+Vista prèvia
+Esquema de colors
+Sistema
+Clar
+Fosc
+Color d’èmfasi
+Usa el color d’èmfasi del sistema
+Color personalitzat
+Mida i forma
+Mida de la barra
+Amplada de les miniatures
+Radi de les cantonades
+Opacitat del fons
+Disposicions per fila
+0 = totes en una fila
+Mostra els noms de les disposicions i les zones
+Prova a la pantalla
+Els valors predeterminats es basen en el Windows 11.
+Visualització
+Distància d’activació des de la vora superior
+Mostra primer una nansa petita
+Distància a la qual apareix la nansa
+Amplada activa al llarg de la vora superior
+Retard abans de mostrar
+Ocultació
+Distància abans que la barra torni a amagar-se
+Retard abans d’amagar
+Animació
+Quant baixa la barra
+Durada de la baixada
+Durada de la pujada
+Corba de moviment
+Suau (predeterminada)
+Ràpida
+Amb rebot
+Dinàmica
+Delicada
+Lineal
+Esvaïment en aparèixer i desaparèixer
+Prova l’animació
+Arrossegueu les targetes per canviar l’ordre a la barra. Feu doble clic en una targeta per editar-la.
+Disposició nova
+Restaura les disposicions predeterminades
+A la barra
+Edita
+Duplica
+Suprimeix
+Com funciona
+Agafeu una finestra per la barra de títol i arrossegueu-la cap amunt. La barra baixa; deixeu anar la finestra sobre una zona i ocuparà exactament aquell espai. Si la torneu a treure, recupera la mida anterior.
+Obrir l’editor de configuració
+Arranjament del sistema → Gestió de finestres → Scripts del KWin → icona d’engranatge al costat de «KDE Snap Layout» → «Obre l’editor de configuració del Snap Layout» → D’acord.
+Informació
+Versió
+Autor
+Llicència
+Fitxer de configuració
+Disposició personalitzada %1
+%1 (còpia)
+Voleu suprimir la disposició?
+S’eliminarà «%1».
+Voleu restaurar les disposicions predeterminades?
+Es perdran les vostres disposicions i el seu ordre.
+Edita la disposició
+Nom:
+Ajusta els separadors (¼, ⅓, ½ …)
+Cancel·la
+Desa
+Sí
+Zona %1
+Deixeu anar la finestra sobre una zona
+KDE Snap Layout: activa/desactiva
+KDE Snap Layout: prova la barra
+Meitats
+Dos terços
+Tres columnes
+Principal + pila
+Quatre quarts
+Focus central
+Zona única
+A dalt / a baix
+Pila + principal
+Sis mosaics
+Barra lateral + quadrícula
+Arrossegueu les finestres a la vora superior de la pantalla i deixeu-les anar sobre una zona.
+Editor de configuració
+Obre l’editor de configuració del Snap Layout
+✔ A punt: feu clic a D’acord per obrir l’editor de configuració.
+Configuració ràpida
+Colors de la barra:
+Tota la resta de la configuració – aparença, mida, animació, comportament i les vostres disposicions – es canvia a l’editor de configuració del Snap Layout.

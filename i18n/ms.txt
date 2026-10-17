@@ -1,0 +1,124 @@
+Tutup
+Pulihkan
+Maksimumkan
+Kembangkan
+Kuncupkan
+Bahagi bersebelahan
+Bahagi atas dan bawah
+Buang zon
+Muatkan templat…
+Klik zon untuk memilihnya · klik dua kali untuk membahagi · seret pemisah
+%1 daripada %2 zon
+KDE Snap Layout – Editor tetapan
+untuk KWin · v%1
+Umum
+Penampilan
+Kelakuan & animasi
+Susun atur
+Perihal & bantuan
+Aktif
+Dijeda
+Seret tetingkap ke tepi atas skrin dan lepaskan pada zon.
+Lekapan
+Tunjukkan bar apabila tetingkap diseret ke tepi atas
+Tunjukkan tempat tetingkap akan diletakkan
+Pulihkan saiz asal apabila tetingkap diseret keluar
+Jarak
+Jarak antara tetingkap
+Jarak ke tepi skrin
+Aplikasi yang dikecualikan
+Kelas tetingkap yang tidak pernah menunjukkan bar, satu bagi setiap baris.
+Petua
+KDE memaksimumkan tetingkap yang diseret ke tepi atas. Untuk lekapan yang lebih lancar, matikan ini dalam Tetapan Sistem → Tepi Skrin.
+Nilai disyorkan
+Warna, saiz dan bentuk bar.
+Pratonton
+Skema warna
+Sistem
+Cerah
+Gelap
+Warna aksen
+Guna warna aksen sistem
+Warna tersuai
+Saiz & bentuk
+Saiz bar
+Lebar lakaran kecil
+Jejari bucu
+Kelegapan latar belakang
+Susun atur setiap baris
+0 = semua dalam satu baris
+Tunjukkan nama susun atur dan zon
+Uji pada skrin
+Nilai lalai berasaskan Windows 11.
+Paparan
+Jarak picu dari tepi atas
+Tunjukkan pemegang kecil dahulu
+Jarak pemegang muncul
+Lebar aktif sepanjang tepi atas
+Lengah sebelum dipaparkan
+Penyembunyian
+Jarak sebelum bar bersembunyi semula
+Lengah sebelum disembunyikan
+Animasi
+Sejauh mana bar turun
+Tempoh masuk
+Tempoh keluar
+Lengkung gerakan
+Lancar (lalai)
+Pantas
+Melantun
+Dinamik
+Lembut
+Linear
+Pudar ketika masuk dan keluar
+Uji animasi
+Seret kad untuk menukar susunan dalam bar. Klik dua kali pada kad untuk menyuntingnya.
+Susun atur baharu
+Pulihkan susun atur lalai
+Dalam bar
+Sunting
+Pendua
+Padam
+Cara ia berfungsi
+Pegang tetingkap pada bar tajuknya dan seret ke atas. Bar akan turun; lepaskan tetingkap pada zon dan ia mengisi tepat kawasan itu. Seret keluar semula dan saiz lamanya kembali.
+Membuka editor tetapan
+Tetapan Sistem → Pengurusan Tetingkap → Skrip KWin → ikon gear di sebelah “KDE Snap Layout” → “Buka editor tetapan Snap Layout” → OK.
+Maklumat
+Versi
+Pengarang
+Lesen
+Fail tetapan
+Susun atur tersuai %1
+%1 (salinan)
+Padam susun atur?
+“%1” akan dibuang.
+Pulihkan susun atur lalai?
+Susun atur anda sendiri dan susunannya akan hilang.
+Sunting susun atur
+Nama:
+Lekapkan pemisah (¼, ⅓, ½ …)
+Batal
+Simpan
+Ya
+Zon %1
+Lepaskan tetingkap pada zon
+KDE Snap Layout: hidup/mati
+KDE Snap Layout: uji bar
+Separuh
+Dua pertiga
+Tiga lajur
+Utama + timbunan
+Empat suku
+Fokus tengah
+Satu zon
+Atas / bawah
+Timbunan + utama
+Enam jubin
+Bar sisi + grid
+Seret tetingkap ke tepi atas skrin dan lepaskan pada zon.
+Editor tetapan
+Buka editor tetapan Snap Layout
+✔ Sedia – klik OK untuk membuka editor tetapan.
+Tetapan pantas
+Warna bar:
+Semua tetapan lain – penampilan, saiz, animasi, kelakuan dan susun atur anda sendiri – ditukar dalam editor tetapan Snap Layout.

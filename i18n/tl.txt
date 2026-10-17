@@ -1,0 +1,124 @@
+Isara
+Ibalik
+I-maximize
+Palawakin
+Itiklop
+Hatiin nang magkatabi
+Hatiin sa itaas at ibaba
+Alisin ang zone
+Mag-load ng template…
+I-click ang zone para piliin · i-double-click para hatiin · hilahin ang mga divider
+%1 sa %2 zone
+KDE Snap Layout – Editor ng mga setting
+para sa KWin · v%1
+Pangkalahatan
+Itsura
+Gawi at animasyon
+Mga layout
+Tungkol at tulong
+Aktibo
+Naka-pause
+Hilahin ang window sa itaas na gilid ng screen at bitawan sa isang zone.
+Pag-snap
+Ipakita ang snap bar kapag hinila ang window sa itaas na gilid
+Ipakita kung saan mapupunta ang window
+Ibalik ang orihinal na laki kapag hinila palabas ang window
+Pagitan
+Pagitan ng mga window
+Pagitan sa gilid ng screen
+Mga hindi kasamang application
+Mga window class na hindi kailanman nagpapakita ng snap bar, isa bawat linya.
+Tip
+Mina-maximize ng KDE ang mga window na hinila sa itaas na gilid. Para sa mas maayos na pag-snap, i-off ito sa System Settings → Screen Edges.
+Mga inirerekomendang value
+Mga kulay, laki at hugis ng snap bar.
+Preview
+Color scheme
+System
+Maliwanag
+Madilim
+Accent color
+Gamitin ang accent color ng system
+Sariling kulay
+Laki at hugis
+Laki ng snap bar
+Lapad ng mga thumbnail
+Radius ng mga sulok
+Opacity ng background
+Mga layout bawat hilera
+0 = lahat sa iisang hilera
+Ipakita ang mga pangalan ng layout at zone
+Subukan sa screen
+Ang mga default na value ay batay sa Windows 11.
+Pagpapakita
+Layo ng pag-trigger mula sa itaas na gilid
+Magpakita muna ng maliit na hawakan
+Layo kung saan lumilitaw ang hawakan
+Aktibong lapad sa itaas na gilid
+Pagkaantala bago ipakita
+Pagtatago
+Layo bago muling magtago ang bar
+Pagkaantala bago itago
+Animasyon
+Gaano kalayo bumababa ang bar
+Tagal ng pagpasok
+Tagal ng paglabas
+Kurba ng galaw
+Makinis (default)
+Mabilis
+Patalbog
+Dinamiko
+Malambot
+Linear
+Mag-fade kapag lumilitaw at nawawala
+Subukan ang animasyon
+Hilahin ang mga card para baguhin ang ayos sa snap bar. I-double-click ang card para i-edit ito.
+Bagong layout
+Ibalik ang mga default na layout
+Nasa bar
+I-edit
+Doblehin
+Burahin
+Paano ito gumagana
+Hawakan ang window sa title bar nito at hilahin pataas. Bababa ang snap bar; bitawan ang window sa isang zone at pupunuin nito ang eksaktong lugar na iyon. Kapag hinila mo ulit palabas, babalik ang dati nitong laki.
+Pagbubukas ng editor ng mga setting
+System Settings → Window Management → KWin Scripts → icon na gear sa tabi ng “KDE Snap Layout” → “Buksan ang editor ng mga setting ng Snap Layout” → OK.
+Impormasyon
+Bersyon
+May-akda
+Lisensya
+File ng mga setting
+Sariling layout %1
+%1 (kopya)
+Burahin ang layout?
+Aalisin ang “%1”.
+Ibalik ang mga default na layout?
+Mawawala ang sarili mong mga layout at ang ayos nila.
+I-edit ang layout
+Pangalan:
+I-snap ang mga divider (¼, ⅓, ½ …)
+Kanselahin
+I-save
+Oo
+Zone %1
+Bitawan ang window sa isang zone
+KDE Snap Layout: i-on/i-off
+KDE Snap Layout: subukan ang snap bar
+Kalahati
+Dalawang ikatlo
+Tatlong column
+Pangunahin + salansan
+Apat na kapat
+Pokus sa gitna
+Iisang zone
+Itaas / ibaba
+Salansan + pangunahin
+Anim na tile
+Sidebar + grid
+Hilahin ang mga window sa itaas na gilid ng screen at bitawan sa isang zone.
+Editor ng mga setting
+Buksan ang editor ng mga setting ng Snap Layout
+✔ Handa na – i-click ang OK para buksan ang editor ng mga setting.
+Mabilis na setting
+Mga kulay ng snap bar:
+Lahat ng iba pang setting – itsura, laki, animasyon, gawi at sarili mong mga layout – ay binabago sa editor ng mga setting ng Snap Layout.

@@ -1,0 +1,124 @@
+Sluiten
+Herstellen
+Maximaliseren
+Uitvouwen
+Invouwen
+Naast elkaar splitsen
+Boven en onder splitsen
+Zone verwijderen
+Sjabloon laden…
+Klik op een zone om te selecteren · dubbelklik om te splitsen · sleep de scheidingslijnen
+%1 van %2 zones
+KDE Snap Layout – Instellingeneditor
+voor KWin · v%1
+Algemeen
+Uiterlijk
+Gedrag & animatie
+Indelingen
+Over & hulp
+Actief
+Gepauzeerd
+Sleep een venster naar de bovenrand van het scherm en zet het neer op een zone.
+Vastklikken
+Snapbalk tonen bij slepen van een venster naar de bovenrand
+Tonen waar het venster terechtkomt
+Oorspronkelijke grootte herstellen bij wegslepen
+Tussenruimte
+Ruimte tussen vensters
+Ruimte tot de schermrand
+Uitgesloten toepassingen
+Vensterklassen die nooit de snapbalk tonen, één per regel.
+Tip
+KDE maximaliseert vensters die naar de bovenrand worden gesleept. Schakel dit voor soepeler vastklikken uit in Systeeminstellingen → Schermranden.
+Aanbevolen waarden
+Kleuren, grootte en vorm van de snapbalk.
+Voorbeeld
+Kleurenschema
+Systeem
+Licht
+Donker
+Accentkleur
+Accentkleur van het systeem gebruiken
+Eigen kleur
+Grootte & vorm
+Grootte van de snapbalk
+Breedte van miniaturen
+Hoekradius
+Dekking van de achtergrond
+Indelingen per rij
+0 = alles op één rij
+Namen van indelingen en zones tonen
+Op het scherm testen
+De standaardwaarden zijn gebaseerd op Windows 11.
+Tonen
+Activeringsafstand vanaf de bovenrand
+Eerst een kleine greep tonen
+Afstand waarop de greep verschijnt
+Actieve breedte langs de bovenrand
+Vertraging vóór tonen
+Verbergen
+Afstand voordat de balk weer verdwijnt
+Vertraging vóór verbergen
+Animatie
+Hoe ver de balk naar beneden schuift
+Duur van inschuiven
+Duur van uitschuiven
+Bewegingscurve
+Vloeiend (standaard)
+Snel
+Verend
+Dynamisch
+Zacht
+Lineair
+In- en uitfaden
+Animatie testen
+Sleep de kaarten om de volgorde in de snapbalk te wijzigen. Dubbelklik op een kaart om deze te bewerken.
+Nieuwe indeling
+Standaardindelingen herstellen
+In balk
+Bewerken
+Dupliceren
+Verwijderen
+Zo werkt het
+Pak een venster bij de titelbalk en sleep het omhoog. De snapbalk schuift naar beneden; zet het venster neer op een zone en het vult precies dat gebied. Sleep het weer weg en het krijgt zijn oude grootte terug.
+De instellingeneditor openen
+Systeeminstellingen → Vensterbeheer → KWin-scripts → tandwielpictogram naast ‘KDE Snap Layout’ → ‘Snap Layout-instellingeneditor openen’ → OK.
+Informatie
+Versie
+Auteur
+Licentie
+Instellingenbestand
+Eigen indeling %1
+%1 (kopie)
+Indeling verwijderen?
+‘%1’ wordt verwijderd.
+Standaardindelingen herstellen?
+Je eigen indelingen en hun volgorde gaan verloren.
+Indeling bewerken
+Naam:
+Scheidingslijnen laten vastklikken (¼, ⅓, ½ …)
+Annuleren
+Opslaan
+Ja
+Zone %1
+Zet het venster neer op een zone
+KDE Snap Layout: aan/uit
+KDE Snap Layout: snapbalk testen
+Helften
+Twee derde
+Drie kolommen
+Hoofd + stapel
+Vier kwarten
+Focus midden
+Eén zone
+Boven / onder
+Stapel + hoofd
+Zes tegels
+Zijbalk + raster
+Sleep vensters naar de bovenrand van het scherm en zet ze neer op een zone.
+Instellingeneditor
+Snap Layout-instellingeneditor openen
+✔ Klaar – klik op OK om de instellingeneditor te openen.
+Snelle instellingen
+Kleuren van de snapbalk:
+Alle overige instellingen – uiterlijk, grootte, animatie, gedrag en je eigen indelingen – wijzig je in de Snap Layout-instellingeneditor.

@@ -1,0 +1,124 @@
+Sulge
+Taasta
+Maksimeeri
+Laienda
+Ahenda
+Jaga kõrvuti
+Jaga üles ja alla
+Eemalda tsoon
+Laadi mall…
+Klõpsa tsoonil selle valimiseks · topeltklõps jagab · lohista eraldajaid
+%1 / %2 tsooni
+KDE Snap Layout – Seadistuste redaktor
+KWinile · v%1
+Üldine
+Välimus
+Käitumine ja animatsioon
+Paigutused
+Teave ja abi
+Aktiivne
+Peatatud
+Lohista aken ekraani ülaserva ja aseta see tsoonile.
+Haakimine
+Näita haakeriba, kui akent lohistatakse ülaserva
+Näita, kuhu aken satub
+Taasta algne suurus, kui aken välja lohistatakse
+Vahed
+Vahe akende vahel
+Vahe ekraani servani
+Välistatud rakendused
+Akende klassid, mille puhul riba kunagi ei ilmu, üks rea kohta.
+Nõuanne
+KDE maksimeerib ülaserva lohistatud aknad. Sujuvamaks haakimiseks lülita see välja: Süsteemi seadistused → Ekraani servad.
+Soovitatud väärtused
+Haakeriba värvid, suurus ja kuju.
+Eelvaade
+Värviskeem
+Süsteem
+Hele
+Tume
+Rõhuvärv
+Kasuta süsteemi rõhuvärvi
+Oma värv
+Suurus ja kuju
+Riba suurus
+Pisipiltide laius
+Nurkade raadius
+Tausta läbipaistmatus
+Paigutusi rea kohta
+0 = kõik ühes reas
+Näita paigutuste ja tsoonide nimesid
+Proovi ekraanil
+Vaikeväärtused põhinevad Windows 11-l.
+Näitamine
+Käivituskaugus ülaservast
+Näita esmalt väikest pidet
+Kaugus, millel pide ilmub
+Aktiivne laius ülaserval
+Viivitus enne näitamist
+Peitmine
+Kaugus, mille järel riba uuesti peitub
+Viivitus enne peitmist
+Animatsioon
+Kui kaugele riba alla libiseb
+Sisselibisemise kestus
+Väljalibisemise kestus
+Liikumiskõver
+Sujuv (vaikimisi)
+Kiire
+Vetruv
+Dünaamiline
+Pehme
+Lineaarne
+Hajutus sisse ja välja
+Proovi animatsiooni
+Lohista kaarte, et muuta järjekorda ribal. Topeltklõpsa kaardil selle muutmiseks.
+Uus paigutus
+Taasta vaikepaigutused
+Ribal
+Muuda
+Klooni
+Kustuta
+Kuidas see töötab
+Haara aken tiitliribast ja lohista see üles. Riba libiseb alla; aseta aken tsoonile ja see täidab täpselt selle ala. Kui lohistad selle uuesti välja, saab see tagasi oma endise suuruse.
+Seadistuste redaktori avamine
+Süsteemi seadistused → Aknahaldus → KWini skriptid → hammasratta ikoon „KDE Snap Layout“ kõrval → „Ava Snap Layouti seadistuste redaktor“ → OK.
+Teave
+Versioon
+Autor
+Litsents
+Seadistuste fail
+Oma paigutus %1
+%1 (koopia)
+Kas kustutada paigutus?
+„%1“ eemaldatakse.
+Kas taastada vaikepaigutused?
+Sinu oma paigutused ja nende järjekord lähevad kaotsi.
+Muuda paigutust
+Nimi:
+Haagi eraldajad (¼, ⅓, ½ …)
+Loobu
+Salvesta
+Jah
+Tsoon %1
+Aseta aken tsoonile
+KDE Snap Layout: sisse/välja
+KDE Snap Layout: proovi riba
+Pooled
+Kaks kolmandikku
+Kolm veergu
+Põhi + virn
+Neli veerandit
+Keskne fookus
+Üks tsoon
+Üleval / all
+Virn + põhi
+Kuus paani
+Külgriba + ruudustik
+Lohista aknad ekraani ülaserva ja aseta need tsoonile.
+Seadistuste redaktor
+Ava Snap Layouti seadistuste redaktor
+✔ Valmis – klõpsa OK, et avada seadistuste redaktor.
+Kiirseadistused
+Riba värvid:
+Kõik muud seadistused – välimus, suurus, animatsioon, käitumine ja oma paigutused – muudetakse Snap Layouti seadistuste redaktoris.

@@ -1,0 +1,124 @@
+Închide
+Restabilește
+Maximizează
+Extinde
+Restrânge
+Împarte alăturat
+Împarte sus și jos
+Elimină zona
+Încarcă un șablon…
+Clic pe o zonă pentru a o selecta · dublu clic pentru a o împărți · trage separatoarele
+%1 din %2 zone
+KDE Snap Layout – Editor de setări
+pentru KWin · v%1
+General
+Aspect
+Comportament și animație
+Aranjamente
+Despre și ajutor
+Activ
+În pauză
+Trage o fereastră spre marginea de sus a ecranului și las-o pe o zonă.
+Ancorare
+Arată bara când tragi o fereastră spre marginea de sus
+Arată unde va ajunge fereastra
+Restabilește dimensiunea inițială când scoți fereastra
+Spațiere
+Spațiu între ferestre
+Spațiu față de marginea ecranului
+Aplicații excluse
+Clase de ferestre pentru care bara nu apare niciodată, câte una pe rând.
+Sfat
+KDE maximizează ferestrele trase spre marginea de sus. Pentru o ancorare mai fluidă, dezactivează asta în Configurări de sistem → Marginile ecranului.
+Valori recomandate
+Culorile, dimensiunea și forma barei.
+Previzualizare
+Schemă de culori
+Sistem
+Luminoasă
+Întunecată
+Culoare de accent
+Folosește culoarea de accent a sistemului
+Culoare personalizată
+Dimensiune și formă
+Dimensiunea barei
+Lățimea miniaturilor
+Raza colțurilor
+Opacitatea fundalului
+Aranjamente pe rând
+0 = toate pe un rând
+Arată numele aranjamentelor și zonelor
+Testează pe ecran
+Valorile implicite se bazează pe Windows 11.
+Afișare
+Distanța de declanșare față de marginea de sus
+Arată mai întâi un mic mâner
+Distanța la care apare mânerul
+Lățimea activă de-a lungul marginii de sus
+Întârziere înainte de afișare
+Ascundere
+Distanța după care bara se ascunde din nou
+Întârziere înainte de ascundere
+Animație
+Cât de jos coboară bara
+Durata coborârii
+Durata urcării
+Curbă de mișcare
+Lină (implicit)
+Rapidă
+Elastică
+Dinamică
+Blândă
+Liniară
+Estompare la apariție și dispariție
+Testează animația
+Trage cardurile pentru a schimba ordinea în bară. Dublu clic pe un card pentru a-l edita.
+Aranjament nou
+Restabilește aranjamentele implicite
+În bară
+Editează
+Duplică
+Șterge
+Cum funcționează
+Prinde o fereastră de bara de titlu și trage-o în sus. Bara coboară; las-o pe o zonă și fereastra ocupă exact acea suprafață. Când o tragi din nou afară, își recapătă dimensiunea anterioară.
+Deschiderea editorului de setări
+Configurări de sistem → Gestionarea ferestrelor → Scripturi KWin → pictograma roată dințată de lângă „KDE Snap Layout” → „Deschide editorul de setări Snap Layout” → OK.
+Informații
+Versiune
+Autor
+Licență
+Fișier de setări
+Aranjament personalizat %1
+%1 (copie)
+Ștergi aranjamentul?
+„%1” va fi eliminat.
+Restabilești aranjamentele implicite?
+Aranjamentele tale și ordinea lor se vor pierde.
+Editează aranjamentul
+Nume:
+Fixează separatoarele (¼, ⅓, ½ …)
+Anulează
+Salvează
+Da
+Zona %1
+Lasă fereastra pe o zonă
+KDE Snap Layout: pornește/oprește
+KDE Snap Layout: testează bara
+Jumătăți
+Două treimi
+Trei coloane
+Principal + stivă
+Patru sferturi
+Focus central
+O singură zonă
+Sus / jos
+Stivă + principal
+Șase dale
+Bară laterală + grilă
+Trage ferestrele spre marginea de sus a ecranului și lasă-le pe o zonă.
+Editor de setări
+Deschide editorul de setări Snap Layout
+✔ Gata – apasă OK pentru a deschide editorul de setări.
+Setări rapide
+Culorile barei:
+Toate celelalte setări – aspect, dimensiune, animație, comportament și aranjamentele tale – se modifică în editorul de setări Snap Layout.

@@ -1,0 +1,124 @@
+Zamknij
+Przywróć
+Maksymalizuj
+Rozwiń
+Zwiń
+Podziel obok siebie
+Podziel na górę i dół
+Usuń strefę
+Wczytaj szablon…
+Kliknij strefę, aby ją zaznaczyć · kliknij dwukrotnie, aby podzielić · przeciągaj separatory
+%1 z %2 stref
+KDE Snap Layout – Edytor ustawień
+dla KWin · v%1
+Ogólne
+Wygląd
+Zachowanie i animacja
+Układy
+O programie i pomoc
+Aktywne
+Wstrzymane
+Przeciągnij okno do górnej krawędzi ekranu i upuść je na strefę.
+Przyciąganie
+Pokazuj pasek przy przeciąganiu okna do górnej krawędzi
+Pokazuj, gdzie trafi okno
+Przywracaj pierwotny rozmiar po wyciągnięciu okna
+Odstępy
+Odstęp między oknami
+Odstęp od krawędzi ekranu
+Wykluczone aplikacje
+Klasy okien, dla których pasek nigdy się nie pojawia, po jednej w wierszu.
+Wskazówka
+KDE maksymalizuje okna przeciągnięte do górnej krawędzi. Aby przyciąganie działało płynniej, wyłącz to w Ustawieniach systemowych → Krawędzie ekranu.
+Zalecane wartości
+Kolory, rozmiar i kształt paska.
+Podgląd
+Schemat kolorów
+Systemowy
+Jasny
+Ciemny
+Kolor akcentu
+Używaj systemowego koloru akcentu
+Własny kolor
+Rozmiar i kształt
+Rozmiar paska
+Szerokość miniatur
+Promień narożników
+Krycie tła
+Układy w wierszu
+0 = wszystkie w jednym wierszu
+Pokazuj nazwy układów i stref
+Testuj na ekranie
+Wartości domyślne wzorowane są na Windows 11.
+Pokazywanie
+Odległość wyzwalania od górnej krawędzi
+Najpierw pokazuj mały uchwyt
+Odległość, przy której pojawia się uchwyt
+Aktywna szerokość wzdłuż górnej krawędzi
+Opóźnienie przed pokazaniem
+Ukrywanie
+Odległość, po której pasek znowu się chowa
+Opóźnienie przed ukryciem
+Animacja
+Jak nisko zjeżdża pasek
+Czas wysuwania
+Czas chowania
+Krzywa ruchu
+Płynna (domyślna)
+Szybka
+Sprężysta
+Dynamiczna
+Łagodna
+Liniowa
+Przenikanie przy pojawianiu i znikaniu
+Testuj animację
+Przeciągaj karty, aby zmienić kolejność w pasku. Kliknij kartę dwukrotnie, aby ją edytować.
+Nowy układ
+Przywróć układy domyślne
+W pasku
+Edytuj
+Duplikuj
+Usuń
+Jak to działa
+Chwyć okno za pasek tytułu i przeciągnij je w górę. Pasek zjeżdża w dół; upuść okno na strefę, a wypełni dokładnie ten obszar. Gdy je znowu wyciągniesz, odzyska poprzedni rozmiar.
+Otwieranie edytora ustawień
+Ustawienia systemowe → Zarządzanie oknami → Skrypty KWin → ikona koła zębatego przy „KDE Snap Layout” → „Otwórz edytor ustawień Snap Layout” → OK.
+Informacje
+Wersja
+Autor
+Licencja
+Plik ustawień
+Własny układ %1
+%1 (kopia)
+Usunąć układ?
+„%1” zostanie usunięty.
+Przywrócić układy domyślne?
+Twoje własne układy i ich kolejność zostaną utracone.
+Edytuj układ
+Nazwa:
+Przyciągaj separatory (¼, ⅓, ½ …)
+Anuluj
+Zapisz
+Tak
+Strefa %1
+Upuść okno na strefę
+KDE Snap Layout: włącz/wyłącz
+KDE Snap Layout: testuj pasek
+Połówki
+Dwie trzecie
+Trzy kolumny
+Główne + stos
+Cztery ćwiartki
+Środek w centrum
+Jedna strefa
+Góra / dół
+Stos + główne
+Sześć kafelków
+Panel boczny + siatka
+Przeciągaj okna do górnej krawędzi ekranu i upuszczaj je na strefę.
+Edytor ustawień
+Otwórz edytor ustawień Snap Layout
+✔ Gotowe – kliknij OK, aby otworzyć edytor ustawień.
+Szybkie ustawienia
+Kolory paska:
+Wszystkie pozostałe ustawienia – wygląd, rozmiar, animację, zachowanie i własne układy – zmieniasz w edytorze ustawień Snap Layout.

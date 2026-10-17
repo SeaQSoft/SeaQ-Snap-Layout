@@ -1,0 +1,124 @@
+Luk
+Gendan
+Maksimér
+Fold ud
+Fold sammen
+Del side om side
+Del øverst og nederst
+Fjern zone
+Indlæs skabelon…
+Klik på en zone for at vælge den · dobbeltklik for at dele · træk i skillelinjerne
+%1 af %2 zoner
+KDE Snap Layout – Indstillingseditor
+til KWin · v%1
+Generelt
+Udseende
+Adfærd & animation
+Layouts
+Om & hjælp
+Aktiv
+Sat på pause
+Træk et vindue til skærmens overkant og slip det på en zone.
+Fastgørelse
+Vis bjælken, når et vindue trækkes mod overkanten
+Vis hvor vinduet havner
+Gendan den oprindelige størrelse, når vinduet trækkes ud
+Afstand
+Afstand mellem vinduer
+Afstand til skærmkanten
+Udelukkede programmer
+Vinduesklasser, der aldrig viser bjælken, én pr. linje.
+Tip
+KDE maksimerer vinduer, der trækkes mod overkanten. Slå det fra under Systemindstillinger → Skærmkanter for en mere glidende fastgørelse.
+Anbefalede værdier
+Bjælkens farver, størrelse og form.
+Forhåndsvisning
+Farveskema
+System
+Lyst
+Mørkt
+Accentfarve
+Brug systemets accentfarve
+Egen farve
+Størrelse & form
+Bjælkens størrelse
+Miniaturernes bredde
+Hjørneradius
+Baggrundens uigennemsigtighed
+Layouts pr. række
+0 = alle på én række
+Vis navne på layouts og zoner
+Test på skærmen
+Standardværdierne er baseret på Windows 11.
+Visning
+Aktiveringsafstand fra overkanten
+Vis først et lille håndtag
+Afstand hvor håndtaget vises
+Aktiv bredde langs overkanten
+Forsinkelse før visning
+Skjulning
+Afstand før bjælken skjules igen
+Forsinkelse før skjulning
+Animation
+Hvor langt bjælken glider ned
+Varighed ind
+Varighed ud
+Bevægelseskurve
+Blød (standard)
+Hurtig
+Fjedrende
+Dynamisk
+Rolig
+Lineær
+Ton ind og ud
+Test animation
+Træk kortene for at ændre rækkefølgen i bjælken. Dobbeltklik på et kort for at redigere det.
+Nyt layout
+Gendan standardlayouts
+I bjælken
+Redigér
+Duplikér
+Slet
+Sådan virker det
+Tag fat i et vindue i titellinjen og træk det opad. Bjælken glider ned; slip vinduet på en zone, så fylder det præcis det område. Trækker du det ud igen, får det sin gamle størrelse tilbage.
+Åbn indstillingseditoren
+Systemindstillinger → Vindueshåndtering → KWin-scripts → tandhjulsikonet ved “KDE Snap Layout” → “Åbn Snap Layout-indstillingseditoren” → OK.
+Information
+Version
+Ophavsperson
+Licens
+Indstillingsfil
+Eget layout %1
+%1 (kopi)
+Slet layoutet?
+“%1” bliver fjernet.
+Gendan standardlayouts?
+Dine egne layouts og deres rækkefølge går tabt.
+Redigér layout
+Navn:
+Fastgør skillelinjer (¼, ⅓, ½ …)
+Annullér
+Gem
+Ja
+Zone %1
+Slip vinduet på en zone
+KDE Snap Layout: til/fra
+KDE Snap Layout: test bjælken
+Halvdele
+To tredjedele
+Tre kolonner
+Hoved + stak
+Fire fjerdedele
+Fokus i midten
+Én zone
+Øverst / nederst
+Stak + hoved
+Seks felter
+Sidepanel + gitter
+Træk vinduer til skærmens overkant og slip dem på en zone.
+Indstillingseditor
+Åbn Snap Layout-indstillingseditoren
+✔ Klar – klik på OK for at åbne indstillingseditoren.
+Hurtige indstillinger
+Bjælkens farver:
+Alle øvrige indstillinger – udseende, størrelse, animation, adfærd og dine egne layouts – ændres i Snap Layout-indstillingseditoren.

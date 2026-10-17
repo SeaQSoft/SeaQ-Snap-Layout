@@ -1,0 +1,124 @@
+Cau
+Adfer
+Mwyafu
+Ehangu
+Crebachu
+Rhannu ochr yn ochr
+Rhannu top a gwaelod
+Tynnu’r parth
+Llwytho templed…
+Cliciwch ar barth i’w ddewis · clic dwbl i’w rannu · llusgwch y rhanwyr
+%1 o %2 parth
+KDE Snap Layout – Golygydd gosodiadau
+ar gyfer KWin · v%1
+Cyffredinol
+Golwg
+Ymddygiad ac animeiddio
+Cynlluniau
+Ynghylch a chymorth
+Gweithredol
+Wedi oedi
+Llusgwch ffenestr i ymyl uchaf y sgrin a’i gollwng ar barth.
+Snapio
+Dangos y bar wrth lusgo ffenestr i’r ymyl uchaf
+Dangos ble bydd y ffenestr yn glanio
+Adfer y maint gwreiddiol wrth lusgo’r ffenestr allan
+Bylchau
+Bwlch rhwng ffenestri
+Bwlch i ymyl y sgrin
+Rhaglenni wedi’u heithrio
+Dosbarthiadau ffenestri na fyddant byth yn dangos y bar, un i bob llinell.
+Awgrym
+Mae KDE yn mwyafu ffenestri sy’n cael eu llusgo i’r ymyl uchaf. I snapio’n fwy llyfn, diffoddwch hyn yn Gosodiadau’r System → Ymylon y Sgrin.
+Gwerthoedd a argymhellir
+Lliwiau, maint a siâp y bar.
+Rhagolwg
+Cynllun lliw
+System
+Golau
+Tywyll
+Lliw acen
+Defnyddio lliw acen y system
+Lliw personol
+Maint a siâp
+Maint y bar
+Lled y mân-luniau
+Radiws y corneli
+Didreiddedd y cefndir
+Cynlluniau fesul rhes
+0 = pob un mewn un rhes
+Dangos enwau cynlluniau a pharthau
+Profi ar y sgrin
+Mae’r gwerthoedd rhagosodedig yn seiliedig ar Windows 11.
+Dangos
+Pellter sbarduno o’r ymyl uchaf
+Dangos dolen fach yn gyntaf
+Pellter lle mae’r ddolen yn ymddangos
+Lled gweithredol ar hyd yr ymyl uchaf
+Oedi cyn dangos
+Cuddio
+Pellter cyn i’r bar guddio eto
+Oedi cyn cuddio
+Animeiddio
+Pa mor bell mae’r bar yn llithro i lawr
+Hyd llithro i mewn
+Hyd llithro allan
+Cromlin symud
+Llyfn (rhagosodiad)
+Cyflym
+Sbonciog
+Deinamig
+Meddal
+Llinol
+Pylu i mewn ac allan
+Profi’r animeiddio
+Llusgwch y cardiau i newid y drefn yn y bar. Cliciwch ddwywaith ar gerdyn i’w olygu.
+Cynllun newydd
+Adfer y cynlluniau rhagosodedig
+Yn y bar
+Golygu
+Dyblygu
+Dileu
+Sut mae’n gweithio
+Gafaelwch mewn ffenestr wrth ei bar teitl a’i llusgo i fyny. Mae’r bar yn llithro i lawr; gollyngwch y ffenestr ar barth a bydd yn llenwi’r union ardal honno. Llusgwch hi allan eto ac fe gaiff ei hen faint yn ôl.
+Agor y golygydd gosodiadau
+Gosodiadau’r System → Rheoli Ffenestri → Sgriptiau KWin → eicon cocsen wrth ymyl “KDE Snap Layout” → “Agor golygydd gosodiadau Snap Layout” → Iawn.
+Gwybodaeth
+Fersiwn
+Awdur
+Trwydded
+Ffeil gosodiadau
+Cynllun personol %1
+%1 (copi)
+Dileu’r cynllun?
+Bydd “%1” yn cael ei dynnu.
+Adfer y cynlluniau rhagosodedig?
+Bydd eich cynlluniau eich hun a’u trefn yn cael eu colli.
+Golygu’r cynllun
+Enw:
+Snapio’r rhanwyr (¼, ⅓, ½ …)
+Diddymu
+Cadw
+Iawn
+Parth %1
+Gollyngwch y ffenestr ar barth
+KDE Snap Layout: troi ymlaen/diffodd
+KDE Snap Layout: profi’r bar
+Haneri
+Dwy ran o dair
+Tair colofn
+Prif + pentwr
+Pedwar chwarter
+Ffocws yn y canol
+Un parth
+Top / gwaelod
+Pentwr + prif
+Chwe teilsen
+Bar ochr + grid
+Llusgwch ffenestri i ymyl uchaf y sgrin a’u gollwng ar barth.
+Golygydd gosodiadau
+Agor golygydd gosodiadau Snap Layout
+✔ Yn barod – cliciwch Iawn i agor y golygydd gosodiadau.
+Gosodiadau cyflym
+Lliwiau’r bar:
+Mae pob gosodiad arall – golwg, maint, animeiddio, ymddygiad a’ch cynlluniau eich hun – yn cael ei newid yng ngolygydd gosodiadau Snap Layout.

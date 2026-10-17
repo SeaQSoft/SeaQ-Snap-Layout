@@ -1,0 +1,124 @@
+Fermer
+Restaurer
+Agrandir
+Déplier
+Replier
+Diviser côte à côte
+Diviser en haut et en bas
+Supprimer la zone
+Charger un modèle…
+Cliquez sur une zone pour la sélectionner · double-clic pour la diviser · faites glisser les séparateurs
+%1 zones sur %2
+KDE Snap Layout – Éditeur de réglages
+pour KWin · v%1
+Général
+Apparence
+Comportement & animation
+Dispositions
+À propos & aide
+Actif
+En pause
+Faites glisser une fenêtre vers le bord supérieur de l’écran et déposez-la sur une zone.
+Ancrage
+Afficher la barre d’ancrage en faisant glisser une fenêtre vers le bord supérieur
+Montrer où la fenêtre va se placer
+Restaurer la taille d’origine en sortant la fenêtre
+Espacement
+Écart entre les fenêtres
+Écart avec le bord de l’écran
+Applications exclues
+Classes de fenêtres pour lesquelles la barre n’apparaît jamais, une par ligne.
+Astuce
+KDE agrandit les fenêtres glissées vers le bord supérieur. Pour un ancrage plus fluide, désactivez cela dans Configuration du système → Bords de l’écran.
+Valeurs recommandées
+Couleurs, taille et forme de la barre d’ancrage.
+Aperçu
+Jeu de couleurs
+Système
+Clair
+Sombre
+Couleur d’accentuation
+Utiliser la couleur d’accentuation du système
+Couleur personnalisée
+Taille & forme
+Taille de la barre
+Largeur des miniatures
+Rayon des coins
+Opacité de l’arrière-plan
+Dispositions par ligne
+0 = toutes sur une ligne
+Afficher les noms des dispositions et des zones
+Tester à l’écran
+Les valeurs par défaut s’inspirent de Windows 11.
+Affichage
+Distance de déclenchement depuis le bord supérieur
+Afficher d’abord une petite poignée
+Distance à laquelle la poignée apparaît
+Largeur active le long du bord supérieur
+Délai avant l’affichage
+Masquage
+Distance avant que la barre ne disparaisse
+Délai avant le masquage
+Animation
+Distance de descente de la barre
+Durée d’apparition
+Durée de disparition
+Courbe de mouvement
+Douce (par défaut)
+Rapide
+Rebondissante
+Dynamique
+Légère
+Linéaire
+Fondu à l’entrée et à la sortie
+Tester l’animation
+Faites glisser les cartes pour changer l’ordre dans la barre. Double-cliquez sur une carte pour la modifier.
+Nouvelle disposition
+Restaurer les dispositions par défaut
+Dans la barre
+Modifier
+Dupliquer
+Supprimer
+Fonctionnement
+Saisissez une fenêtre par sa barre de titre et faites-la glisser vers le haut. La barre descend ; déposez la fenêtre sur une zone et elle occupe exactement cet espace. Écartez-la à nouveau et elle retrouve sa taille d’origine.
+Ouvrir l’éditeur de réglages
+Configuration du système → Gestion des fenêtres → Scripts KWin → icône d’engrenage à côté de « KDE Snap Layout » → « Ouvrir l’éditeur de réglages Snap Layout » → OK.
+Informations
+Version
+Auteur
+Licence
+Fichier de configuration
+Disposition personnalisée %1
+%1 (copie)
+Supprimer la disposition ?
+« %1 » sera supprimée.
+Restaurer les dispositions par défaut ?
+Vos propres dispositions et leur ordre seront perdus.
+Modifier la disposition
+Nom :
+Aimanter les séparateurs (¼, ⅓, ½ …)
+Annuler
+Enregistrer
+Oui
+Zone %1
+Déposez la fenêtre sur une zone
+KDE Snap Layout : activer/désactiver
+KDE Snap Layout : tester la barre
+Moitiés
+Deux tiers
+Trois colonnes
+Principale + pile
+Quatre quarts
+Focus central
+Zone unique
+Haut / bas
+Pile + principale
+Six tuiles
+Barre latérale + grille
+Faites glisser les fenêtres vers le bord supérieur de l’écran et déposez-les sur une zone.
+Éditeur de réglages
+Ouvrir l’éditeur de réglages Snap Layout
+✔ Prêt – cliquez sur OK pour ouvrir l’éditeur de réglages.
+Réglages rapides
+Couleurs de la barre :
+Tous les autres réglages – apparence, taille, animation, comportement et vos propres dispositions – se font dans l’éditeur de réglages Snap Layout.

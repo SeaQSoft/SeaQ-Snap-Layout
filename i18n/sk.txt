@@ -1,0 +1,124 @@
+Zavrieť
+Obnoviť
+Maximalizovať
+Rozbaliť
+Zbaliť
+Rozdeliť vedľa seba
+Rozdeliť hore a dole
+Odstrániť zónu
+Načítať šablónu…
+Kliknutím zónu vyberiete · dvojklikom ju rozdelíte · ťahajte oddeľovače
+%1 z %2 zón
+KDE Snap Layout – Editor nastavení
+pre KWin · v%1
+Všeobecné
+Vzhľad
+Správanie a animácia
+Rozloženia
+O aplikácii a pomocník
+Aktívne
+Pozastavené
+Potiahnite okno k hornému okraju obrazovky a pustite ho na zónu.
+Prichytávanie
+Zobraziť lištu pri ťahaní okna k hornému okraju
+Ukázať, kam sa okno umiestni
+Obnoviť pôvodnú veľkosť pri vytiahnutí okna
+Medzery
+Medzera medzi oknami
+Medzera od okraja obrazovky
+Vylúčené aplikácie
+Triedy okien, pri ktorých sa lišta nikdy nezobrazí, jedna na riadok.
+Tip
+KDE maximalizuje okná potiahnuté k hornému okraju. Pre plynulejšie prichytávanie to vypnite v Nastaveniach systému → Okraje obrazovky.
+Odporúčané hodnoty
+Farby, veľkosť a tvar lišty.
+Náhľad
+Farebná schéma
+Systém
+Svetlá
+Tmavá
+Farba zvýraznenia
+Použiť systémovú farbu zvýraznenia
+Vlastná farba
+Veľkosť a tvar
+Veľkosť lišty
+Šírka náhľadov
+Polomer rohov
+Nepriehľadnosť pozadia
+Rozloženia na riadok
+0 = všetky v jednom riadku
+Zobraziť názvy rozložení a zón
+Vyskúšať na obrazovke
+Predvolené hodnoty vychádzajú z Windows 11.
+Zobrazenie
+Vzdialenosť aktivácie od horného okraja
+Najprv zobraziť malý úchyt
+Vzdialenosť, pri ktorej sa objaví úchyt
+Aktívna šírka pozdĺž horného okraja
+Oneskorenie pred zobrazením
+Skrytie
+Vzdialenosť, po ktorej sa lišta opäť skryje
+Oneskorenie pred skrytím
+Animácia
+Ako ďaleko lišta zíde nadol
+Trvanie vysunutia
+Trvanie zasunutia
+Krivka pohybu
+Plynulá (predvolená)
+Rýchla
+Pružná
+Dynamická
+Jemná
+Lineárna
+Prelínanie pri zobrazení a skrytí
+Vyskúšať animáciu
+Potiahnutím kariet zmeníte poradie v lište. Dvojklikom na kartu ju upravíte.
+Nové rozloženie
+Obnoviť predvolené rozloženia
+V lište
+Upraviť
+Duplikovať
+Odstrániť
+Ako to funguje
+Chyťte okno za titulkový pruh a ťahajte ho nahor. Lišta zíde nadol; pustite okno na zónu a vyplní presne túto oblasť. Keď ho znova odtiahnete, získa späť pôvodnú veľkosť.
+Otvorenie editora nastavení
+Nastavenia systému → Správa okien → Skripty KWin → ikona ozubeného kolesa pri „KDE Snap Layout“ → „Otvoriť editor nastavení Snap Layout“ → OK.
+Informácie
+Verzia
+Autor
+Licencia
+Súbor nastavení
+Vlastné rozloženie %1
+%1 (kópia)
+Odstrániť rozloženie?
+„%1“ bude odstránené.
+Obnoviť predvolené rozloženia?
+Vaše vlastné rozloženia a ich poradie sa stratia.
+Upraviť rozloženie
+Názov:
+Prichytávať oddeľovače (¼, ⅓, ½ …)
+Zrušiť
+Uložiť
+Áno
+Zóna %1
+Pustite okno na zónu
+KDE Snap Layout: zapnúť/vypnúť
+KDE Snap Layout: vyskúšať lištu
+Polovice
+Dve tretiny
+Tri stĺpce
+Hlavné + kôpka
+Štyri štvrtiny
+Stred v strede
+Jedna zóna
+Hore / dole
+Kôpka + hlavné
+Šesť dlaždíc
+Bočný panel + mriežka
+Ťahajte okná k hornému okraju obrazovky a púšťajte ich na zónu.
+Editor nastavení
+Otvoriť editor nastavení Snap Layout
+✔ Pripravené – kliknite na OK a otvorí sa editor nastavení.
+Rýchle nastavenia
+Farby lišty:
+Všetky ostatné nastavenia – vzhľad, veľkosť, animáciu, správanie a vlastné rozloženia – meníte v editore nastavení Snap Layout.

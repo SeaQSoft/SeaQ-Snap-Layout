@@ -1,0 +1,124 @@
+Pechar
+Restaurar
+Maximizar
+Despregar
+Pregar
+Dividir en paralelo
+Dividir arriba e abaixo
+Retirar a zona
+Cargar un modelo…
+Prema nunha zona para seleccionala · dobre clic para dividila · arrastre os separadores
+%1 de %2 zonas
+KDE Snap Layout – Editor de configuración
+para KWin · v%1
+Xeral
+Aparencia
+Comportamento e animación
+Disposicións
+Sobre e axuda
+Activo
+En pausa
+Arrastre unha xanela ao bordo superior da pantalla e sóltea sobre unha zona.
+Acoplamento
+Amosar a barra ao arrastrar unha xanela ao bordo superior
+Amosar onde vai quedar a xanela
+Restaurar o tamaño orixinal ao sacar a xanela
+Espazado
+Espazo entre xanelas
+Espazo ata o bordo da pantalla
+Aplicacións excluídas
+Clases de xanela que nunca amosan a barra, unha por liña.
+Consello
+KDE maximiza as xanelas arrastradas ao bordo superior. Para un acoplamento máis suave, desactíveo en Configuración do sistema → Bordos da pantalla.
+Valores recomendados
+Cores, tamaño e forma da barra.
+Vista previa
+Esquema de cores
+Sistema
+Claro
+Escuro
+Cor de realce
+Usar a cor de realce do sistema
+Cor personalizada
+Tamaño e forma
+Tamaño da barra
+Largura das miniaturas
+Raio das esquinas
+Opacidade do fondo
+Disposicións por fila
+0 = todas nunha fila
+Amosar os nomes das disposicións e zonas
+Probar na pantalla
+Os valores predeterminados baséanse en Windows 11.
+Amosar
+Distancia de activación desde o bordo superior
+Amosar primeiro unha pequena asa
+Distancia á que aparece a asa
+Largura activa ao longo do bordo superior
+Atraso antes de amosar
+Agochar
+Distancia antes de que a barra se agoche de novo
+Atraso antes de agochar
+Animación
+Canto baixa a barra
+Duración da baixada
+Duración da subida
+Curva de movemento
+Suave (predeterminada)
+Rápida
+Con rebote
+Dinámica
+Delicada
+Lineal
+Esvaecemento ao aparecer e desaparecer
+Probar a animación
+Arrastre as tarxetas para cambiar a orde na barra. Prema dúas veces nunha tarxeta para editala.
+Nova disposición
+Restaurar as disposicións predeterminadas
+Na barra
+Editar
+Duplicar
+Eliminar
+Como funciona
+Colla unha xanela pola barra de título e arrástrea cara arriba. A barra baixa; solte a xanela sobre unha zona e ocupará exactamente esa área. Se a volve sacar, recupera o tamaño anterior.
+Abrir o editor de configuración
+Configuración do sistema → Xestión de xanelas → Scripts de KWin → icona de engrenaxe xunto a «KDE Snap Layout» → «Abrir o editor de configuración de Snap Layout» → Aceptar.
+Información
+Versión
+Autor
+Licenza
+Ficheiro de configuración
+Disposición personalizada %1
+%1 (copia)
+Eliminar a disposición?
+Retirarase «%1».
+Restaurar as disposicións predeterminadas?
+Perderanse as súas disposicións e a súa orde.
+Editar a disposición
+Nome:
+Axustar os separadores (¼, ⅓, ½ …)
+Cancelar
+Gardar
+Si
+Zona %1
+Solte a xanela sobre unha zona
+KDE Snap Layout: activar/desactivar
+KDE Snap Layout: probar a barra
+Metades
+Dous terzos
+Tres columnas
+Principal + morea
+Catro cuartos
+Foco central
+Zona única
+Arriba / abaixo
+Morea + principal
+Seis mosaicos
+Barra lateral + grade
+Arrastre as xanelas ao bordo superior da pantalla e sólteas sobre unha zona.
+Editor de configuración
+Abrir o editor de configuración de Snap Layout
+✔ Listo – prema Aceptar para abrir o editor de configuración.
+Configuración rápida
+Cores da barra:
+O resto da configuración – aparencia, tamaño, animación, comportamento e as súas disposicións – cámbiase no editor de configuración de Snap Layout.

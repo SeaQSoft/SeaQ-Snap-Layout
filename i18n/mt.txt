@@ -1,0 +1,124 @@
+Agħlaq
+Irrestawra
+Immassimizza
+Espandi
+Iġbor
+Aqsam ħdejn xulxin
+Aqsam fuq u isfel
+Neħħi ż-żona
+Tella’ mudell…
+Ikklikkja fuq żona biex tagħżilha · ikklikkja darbtejn biex taqsamha · kaxkar id-diviżorji
+%1 minn %2 żoni
+KDE Snap Layout – Editur tas-settings
+għal KWin · v%1
+Ġenerali
+Dehra
+Imġiba u animazzjoni
+Tqassimiet
+Dwar u għajnuna
+Attiv
+Fuq pawża
+Kaxkar tieqa sat-tarf ta’ fuq tal-iskrin u itlaqha fuq żona.
+Twaħħil
+Uri l-istrixxa meta tkaxkar tieqa lejn it-tarf ta’ fuq
+Uri fejn se tinżel it-tieqa
+Irrestawra d-daqs oriġinali meta toħroġ it-tieqa
+Spazji
+Spazju bejn it-twieqi
+Spazju mat-tarf tal-iskrin
+Applikazzjonijiet esklużi
+Klassijiet ta’ twieqi li qatt ma juru l-istrixxa, waħda f’kull linja.
+Parir
+KDE jimmassimizza t-twieqi li jitkaxkru lejn it-tarf ta’ fuq. Għal twaħħil iktar bla xkiel, itfih fis-Settings tas-Sistema → Truf tal-Iskrin.
+Valuri rakkomandati
+Kuluri, daqs u forma tal-istrixxa.
+Previżjoni
+Skema tal-kuluri
+Sistema
+Ċar
+Skur
+Kulur tal-enfasi
+Uża l-kulur tal-enfasi tas-sistema
+Kulur personalizzat
+Daqs u forma
+Daqs tal-istrixxa
+Wisa’ tal-minjaturi
+Raġġ tal-kantunieri
+Opaċità tal-isfond
+Tqassimiet għal kull ringiela
+0 = kollha f’ringiela waħda
+Uri l-ismijiet tat-tqassimiet u taż-żoni
+Ipprova fuq l-iskrin
+Il-valuri awtomatiċi huma bbażati fuq Windows 11.
+Wiri
+Distanza tal-attivazzjoni mit-tarf ta’ fuq
+Uri l-ewwel manku żgħir
+Distanza li fiha jidher il-manku
+Wisa’ attiva tul it-tarf ta’ fuq
+Dewmien qabel ma tidher
+Ħbi
+Distanza qabel ma l-istrixxa terġa’ tinħeba
+Dewmien qabel ma tinħeba
+Animazzjoni
+Kemm tinżel l-istrixxa
+Tul tal-inżul
+Tul tat-tlugħ
+Kurva tal-moviment
+Ħelwa (awtomatika)
+Mgħaġġla
+Tqabbeż
+Dinamika
+Ratba
+Lineari
+Iffaddja meta tidher u tisparixxi
+Ipprova l-animazzjoni
+Kaxkar il-kards biex tibdel l-ordni fl-istrixxa. Ikklikkja darbtejn fuq karta biex teditjaha.
+Tqassim ġdid
+Irrestawra t-tqassimiet awtomatiċi
+Fl-istrixxa
+Editja
+Ikkopja
+Ħassar
+Kif jaħdem
+Aqbad tieqa mill-istrixxa tat-titlu u kaxkarha ’l fuq. L-istrixxa tinżel; itlaq it-tieqa fuq żona u timla eżattament dik iż-żona. Jekk terġa’ toħroġha, terġa’ tieħu d-daqs ta’ qabel.
+Kif tiftaħ l-editur tas-settings
+Settings tas-Sistema → Ġestjoni tat-Twieqi → Skripts ta’ KWin → ikona tal-irkaptu ħdejn “KDE Snap Layout” → “Iftaħ l-editur tas-settings ta’ Snap Layout” → OK.
+Informazzjoni
+Verżjoni
+Awtur
+Liċenzja
+Fajl tas-settings
+Tqassim personalizzat %1
+%1 (kopja)
+Tħassar it-tqassim?
+“%1” se jitneħħa.
+Tirrestawra t-tqassimiet awtomatiċi?
+It-tqassimiet tiegħek u l-ordni tagħhom se jintilfu.
+Editja t-tqassim
+Isem:
+Waħħal id-diviżorji (¼, ⅓, ½ …)
+Ikkanċella
+Issejvja
+Iva
+Żona %1
+Itlaq it-tieqa fuq żona
+KDE Snap Layout: ixgħel/itfi
+KDE Snap Layout: ipprova l-istrixxa
+Nofsijiet
+Żewġ terzi
+Tliet kolonni
+Prinċipali + munzell
+Erba’ kwarti
+Fokus fiċ-ċentru
+Żona waħda
+Fuq / isfel
+Munzell + prinċipali
+Sitt madum
+Strixxa tal-ġenb + grilja
+Kaxkar it-twieqi sat-tarf ta’ fuq tal-iskrin u itlaqhom fuq żona.
+Editur tas-settings
+Iftaħ l-editur tas-settings ta’ Snap Layout
+✔ Lest – ikklikkja OK biex tiftaħ l-editur tas-settings.
+Settings veloċi
+Kuluri tal-istrixxa:
+Is-settings l-oħra kollha – dehra, daqs, animazzjoni, imġiba u t-tqassimiet tiegħek – jinbidlu fl-editur tas-settings ta’ Snap Layout.

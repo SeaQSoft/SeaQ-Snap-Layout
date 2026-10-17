@@ -1,0 +1,124 @@
+Loka
+Endurheimta
+Hámarka
+Fella út
+Fella saman
+Skipta hlið við hlið
+Skipta efst og neðst
+Fjarlægja svæði
+Hlaða sniðmáti…
+Smelltu á svæði til að velja það · tvísmelltu til að skipta því · dragðu skilin
+%1 af %2 svæðum
+KDE Snap Layout – Stillingaritill
+fyrir KWin · v%1
+Almennt
+Útlit
+Hegðun og hreyfingar
+Uppsetningar
+Um og hjálp
+Virkt
+Í biðstöðu
+Dragðu glugga upp að efri brún skjásins og slepptu honum á svæði.
+Festing
+Sýna festistikuna þegar gluggi er dreginn upp að efri brún
+Sýna hvar glugginn lendir
+Endurheimta upprunalega stærð þegar glugginn er dreginn út
+Bil
+Bil milli glugga
+Bil að skjábrún
+Undanskilin forrit
+Gluggaflokkar sem sýna aldrei stikuna, einn í hverri línu.
+Ábending
+KDE hámarkar glugga sem dregnir eru upp að efri brún. Fyrir mýkri festingu skaltu slökkva á því í Kerfisstillingum → Skjábrúnir.
+Ráðlögð gildi
+Litir, stærð og lögun stikunnar.
+Forskoðun
+Litastef
+Kerfi
+Ljóst
+Dökkt
+Áherslulitur
+Nota áherslulit kerfisins
+Eigin litur
+Stærð og lögun
+Stærð stikunnar
+Breidd smámynda
+Horngeisli
+Ógegnsæi bakgrunns
+Uppsetningar í röð
+0 = allar í einni röð
+Sýna heiti uppsetninga og svæða
+Prófa á skjánum
+Sjálfgefin gildi byggja á Windows 11.
+Birting
+Virkjunarfjarlægð frá efri brún
+Sýna fyrst lítið handfang
+Fjarlægð þar sem handfangið birtist
+Virk breidd meðfram efri brún
+Töf áður en birt er
+Felun
+Fjarlægð áður en stikan felur sig aftur
+Töf áður en falið er
+Hreyfing
+Hve langt stikan rennur niður
+Tími inn
+Tími út
+Hreyfiferill
+Mjúkur (sjálfgefið)
+Hraður
+Fjaðrandi
+Kvikur
+Rólegur
+Línulegur
+Deyfa inn og út
+Prófa hreyfingu
+Dragðu spjöldin til að breyta röðinni á stikunni. Tvísmelltu á spjald til að breyta því.
+Ný uppsetning
+Endurheimta sjálfgefnar uppsetningar
+Á stiku
+Breyta
+Tvítaka
+Eyða
+Svona virkar þetta
+Gríptu glugga í titilstikuna og dragðu hann upp. Stikan rennur niður; slepptu glugganum á svæði og hann fyllir nákvæmlega það svæði. Ef þú dregur hann út aftur fær hann fyrri stærð sína.
+Opna stillingaritilinn
+Kerfisstillingar → Gluggastjórnun → KWin-skriftur → tannhjólstákn við „KDE Snap Layout“ → „Opna stillingaritil Snap Layout“ → Í lagi.
+Upplýsingar
+Útgáfa
+Höfundur
+Notkunarleyfi
+Stillingaskrá
+Eigin uppsetning %1
+%1 (afrit)
+Eyða uppsetningu?
+„%1“ verður fjarlægð.
+Endurheimta sjálfgefnar uppsetningar?
+Eigin uppsetningar og röð þeirra glatast.
+Breyta uppsetningu
+Heiti:
+Festa skil (¼, ⅓, ½ …)
+Hætta við
+Vista
+Já
+Svæði %1
+Slepptu glugganum á svæði
+KDE Snap Layout: kveikja/slökkva
+KDE Snap Layout: prófa stikuna
+Helmingar
+Tveir þriðju
+Þrír dálkar
+Aðal + stafli
+Fjórir fjórðungar
+Áhersla á miðju
+Eitt svæði
+Efst / neðst
+Stafli + aðal
+Sex reitir
+Hliðarstika + net
+Dragðu glugga upp að efri brún skjásins og slepptu þeim á svæði.
+Stillingaritill
+Opna stillingaritil Snap Layout
+✔ Tilbúið – smelltu á Í lagi til að opna stillingaritilinn.
+Flýtistillingar
+Litir stikunnar:
+Allar aðrar stillingar – útlit, stærð, hreyfingar, hegðun og eigin uppsetningar – eru gerðar í stillingaritli Snap Layout.

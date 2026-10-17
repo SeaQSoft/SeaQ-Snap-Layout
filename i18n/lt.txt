@@ -1,0 +1,124 @@
+Užverti
+Atkurti
+Išdidinti
+Išskleisti
+Suskleisti
+Padalyti greta
+Padalyti viršuje ir apačioje
+Pašalinti zoną
+Įkelti šabloną…
+Spustelėkite zoną, kad ją pažymėtumėte · dukart spustelėkite, kad padalytumėte · tempkite skirtukus
+%1 iš %2 zonų
+KDE Snap Layout – Nustatymų redaktorius
+skirta KWin · v%1
+Bendra
+Išvaizda
+Elgsena ir animacija
+Išdėstymai
+Apie ir žinynas
+Aktyvu
+Pristabdyta
+Nutempkite langą prie viršutinio ekrano krašto ir paleiskite jį ant zonos.
+Prikabinimas
+Rodyti juostą tempiant langą prie viršutinio krašto
+Rodyti, kur atsidurs langas
+Atkurti pradinį dydį ištraukiant langą
+Tarpai
+Tarpas tarp langų
+Tarpas iki ekrano krašto
+Neįtraukiamos programos
+Langų klasės, kurioms juosta niekada nerodoma, po vieną eilutėje.
+Patarimas
+KDE išdidina langus, nutemptus prie viršutinio krašto. Sklandesniam prikabinimui išjunkite tai skiltyje Sistemos nuostatos → Ekrano kraštai.
+Rekomenduojamos reikšmės
+Juostos spalvos, dydis ir forma.
+Peržiūra
+Spalvų schema
+Sistemos
+Šviesi
+Tamsi
+Akcento spalva
+Naudoti sistemos akcento spalvą
+Pasirinkta spalva
+Dydis ir forma
+Juostos dydis
+Miniatiūrų plotis
+Kampų spindulys
+Fono nepermatomumas
+Išdėstymų eilutėje
+0 = visi vienoje eilutėje
+Rodyti išdėstymų ir zonų pavadinimus
+Išbandyti ekrane
+Numatytosios reikšmės pagrįstos Windows 11.
+Rodymas
+Suveikimo atstumas nuo viršutinio krašto
+Pirmiausia rodyti mažą rankenėlę
+Atstumas, kuriame atsiranda rankenėlė
+Aktyvus plotis palei viršutinį kraštą
+Delsa prieš rodant
+Slėpimas
+Atstumas, po kurio juosta vėl pasislepia
+Delsa prieš slepiant
+Animacija
+Kaip žemai nusileidžia juosta
+Įslydimo trukmė
+Išslydimo trukmė
+Judėjimo kreivė
+Sklandi (numatytoji)
+Greita
+Spyruoklinė
+Dinamiška
+Švelni
+Tiesinė
+Išblukinti pasirodant ir dingstant
+Išbandyti animaciją
+Tempkite korteles, kad pakeistumėte tvarką juostoje. Dukart spustelėkite kortelę, kad ją redaguotumėte.
+Naujas išdėstymas
+Atkurti numatytuosius išdėstymus
+Juostoje
+Redaguoti
+Dubliuoti
+Ištrinti
+Kaip tai veikia
+Suimkite langą už antraštės juostos ir tempkite aukštyn. Juosta nusileidžia; paleiskite langą ant zonos ir jis užims būtent tą sritį. Ištraukus jį vėl, jis atgauna ankstesnį dydį.
+Nustatymų redaktoriaus atvėrimas
+Sistemos nuostatos → Langų tvarkymas → KWin scenarijai → krumpliaračio piktograma šalia „KDE Snap Layout“ → „Atverti Snap Layout nustatymų redaktorių“ → Gerai.
+Informacija
+Versija
+Autorius
+Licencija
+Nustatymų failas
+Savas išdėstymas %1
+%1 (kopija)
+Ištrinti išdėstymą?
+„%1“ bus pašalintas.
+Atkurti numatytuosius išdėstymus?
+Jūsų išdėstymai ir jų tvarka bus prarasti.
+Redaguoti išdėstymą
+Pavadinimas:
+Prikabinti skirtukus (¼, ⅓, ½ …)
+Atsisakyti
+Įrašyti
+Taip
+Zona %1
+Paleiskite langą ant zonos
+KDE Snap Layout: įjungti/išjungti
+KDE Snap Layout: išbandyti juostą
+Pusės
+Du trečdaliai
+Trys stulpeliai
+Pagrindinis + krūva
+Keturi ketvirčiai
+Dėmesys centre
+Viena zona
+Viršus / apačia
+Krūva + pagrindinis
+Šešios plytelės
+Šoninė juosta + tinklelis
+Tempkite langus prie viršutinio ekrano krašto ir paleiskite juos ant zonos.
+Nustatymų redaktorius
+Atverti Snap Layout nustatymų redaktorių
+✔ Paruošta – spustelėkite Gerai, kad atvertumėte nustatymų redaktorių.
+Greitieji nustatymai
+Juostos spalvos:
+Visi kiti nustatymai – išvaizda, dydis, animacija, elgsena ir jūsų išdėstymai – keičiami Snap Layout nustatymų redaktoriuje.

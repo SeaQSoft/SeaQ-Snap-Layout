@@ -1,0 +1,124 @@
+Zapri
+Obnovi
+Razpni
+Razširi
+Strni
+Razdeli drug ob drugem
+Razdeli zgoraj in spodaj
+Odstrani območje
+Naloži predlogo…
+Kliknite območje za izbor · dvoklik ga razdeli · vlecite ločilnike
+%1 od %2 območij
+KDE Snap Layout – Urejevalnik nastavitev
+za KWin · v%1
+Splošno
+Videz
+Obnašanje in animacija
+Razporeditve
+O programu in pomoč
+Dejavno
+Začasno ustavljeno
+Povlecite okno k zgornjemu robu zaslona in ga spustite na območje.
+Pripenjanje
+Pokaži vrstico, ko okno vlečete k zgornjemu robu
+Pokaži, kam bo okno postavljeno
+Obnovi prvotno velikost, ko okno izvlečete
+Razmiki
+Razmik med okni
+Razmik do roba zaslona
+Izključeni programi
+Razredi oken, pri katerih se vrstica nikoli ne pokaže, po en v vrstici.
+Namig
+KDE razpne okna, ki jih povlečete k zgornjemu robu. Za bolj tekoče pripenjanje to izklopite v Sistemske nastavitve → Robovi zaslona.
+Priporočene vrednosti
+Barve, velikost in oblika vrstice.
+Predogled
+Barvna shema
+Sistemska
+Svetla
+Temna
+Poudarna barva
+Uporabi sistemsko poudarno barvo
+Barva po meri
+Velikost in oblika
+Velikost vrstice
+Širina sličic
+Polmer vogalov
+Prekrivnost ozadja
+Razporeditev na vrstico
+0 = vse v eni vrstici
+Pokaži imena razporeditev in območij
+Preizkusi na zaslonu
+Privzete vrednosti temeljijo na Windows 11.
+Prikaz
+Razdalja sprožitve od zgornjega roba
+Najprej pokaži majhen ročaj
+Razdalja, pri kateri se pokaže ročaj
+Dejavna širina vzdolž zgornjega roba
+Zakasnitev pred prikazom
+Skrivanje
+Razdalja, po kateri se vrstica spet skrije
+Zakasnitev pred skritjem
+Animacija
+Kako nizko se vrstica spusti
+Trajanje spusta
+Trajanje dviga
+Krivulja gibanja
+Gladka (privzeta)
+Hitra
+Prožna
+Dinamična
+Mehka
+Linearna
+Pojemanje ob prikazu in skritju
+Preizkusi animacijo
+Vlecite kartice, da spremenite vrstni red v vrstici. Dvokliknite kartico, da jo uredite.
+Nova razporeditev
+Obnovi privzete razporeditve
+V vrstici
+Uredi
+Podvoji
+Izbriši
+Kako deluje
+Primite okno za naslovno vrstico in ga povlecite navzgor. Vrstica se spusti; spustite okno na območje in zapolni natanko ta prostor. Ko ga znova izvlečete, dobi nazaj prejšnjo velikost.
+Odpiranje urejevalnika nastavitev
+Sistemske nastavitve → Upravljanje oken → Skripti KWin → ikona zobnika ob »KDE Snap Layout« → »Odpri urejevalnik nastavitev Snap Layout« → V redu.
+Podatki
+Različica
+Avtor
+Licenca
+Datoteka nastavitev
+Razporeditev po meri %1
+%1 (kopija)
+Izbrišem razporeditev?
+»%1« bo odstranjena.
+Obnovim privzete razporeditve?
+Vaše razporeditve in njihov vrstni red bodo izgubljeni.
+Uredi razporeditev
+Ime:
+Pripenjaj ločilnike (¼, ⅓, ½ …)
+Prekliči
+Shrani
+Da
+Območje %1
+Spustite okno na območje
+KDE Snap Layout: vklop/izklop
+KDE Snap Layout: preizkusi vrstico
+Polovici
+Dve tretjini
+Trije stolpci
+Glavno + kup
+Štiri četrtine
+Poudarek na sredini
+Eno območje
+Zgoraj / spodaj
+Kup + glavno
+Šest ploščic
+Stranska vrstica + mreža
+Povlecite okna k zgornjemu robu zaslona in jih spustite na območje.
+Urejevalnik nastavitev
+Odpri urejevalnik nastavitev Snap Layout
+✔ Pripravljeno – kliknite V redu, da odprete urejevalnik nastavitev.
+Hitre nastavitve
+Barve vrstice:
+Vse ostale nastavitve – videz, velikost, animacijo, obnašanje in lastne razporeditve – spremenite v urejevalniku nastavitev Snap Layout.

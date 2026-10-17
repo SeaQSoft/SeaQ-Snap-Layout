@@ -1,0 +1,124 @@
+Stäng
+Återställ
+Maximera
+Fäll ut
+Fäll ihop
+Dela sida vid sida
+Dela upptill och nedtill
+Ta bort zon
+Läs in mall…
+Klicka på en zon för att markera den · dubbelklicka för att dela · dra i avdelarna
+%1 av %2 zoner
+KDE Snap Layout – Inställningsredigerare
+för KWin · v%1
+Allmänt
+Utseende
+Beteende & animering
+Layouter
+Om & hjälp
+Aktiv
+Pausad
+Dra ett fönster till skärmens överkant och släpp det på en zon.
+Fästning
+Visa fästlisten när ett fönster dras mot överkanten
+Visa var fönstret hamnar
+Återställ ursprunglig storlek när fönstret dras ut
+Avstånd
+Avstånd mellan fönster
+Avstånd till skärmkanten
+Undantagna program
+Fönsterklasser som aldrig visar fästlisten, en per rad.
+Tips
+KDE maximerar fönster som dras mot överkanten. Stäng av det under Systeminställningar → Skärmkanter för smidigare fästning.
+Rekommenderade värden
+Fästlistens färger, storlek och form.
+Förhandsgranskning
+Färgschema
+System
+Ljust
+Mörkt
+Accentfärg
+Använd systemets accentfärg
+Egen färg
+Storlek & form
+Fästlistens storlek
+Miniatyrernas bredd
+Hörnradie
+Bakgrundens opacitet
+Layouter per rad
+0 = alla på en rad
+Visa namn på layouter och zoner
+Testa på skärmen
+Standardvärdena utgår från Windows 11.
+Visning
+Aktiveringsavstånd från överkanten
+Visa först ett litet handtag
+Avstånd där handtaget visas
+Aktiv bredd längs överkanten
+Fördröjning innan visning
+Döljning
+Avstånd innan listen döljs igen
+Fördröjning innan döljning
+Animering
+Hur långt listen glider ner
+Varaktighet in
+Varaktighet ut
+Rörelsekurva
+Mjuk (standard)
+Snabb
+Studsande
+Dynamisk
+Lugn
+Linjär
+Tona in och ut
+Testa animering
+Dra korten för att ändra ordningen i fästlisten. Dubbelklicka på ett kort för att redigera det.
+Ny layout
+Återställ standardlayouter
+I listen
+Redigera
+Duplicera
+Ta bort
+Så fungerar det
+Ta tag i ett fönster i namnlisten och dra det uppåt. Fästlisten glider ner; släpp fönstret på en zon så fyller det exakt det området. Drar du ut det igen får det tillbaka sin gamla storlek.
+Öppna inställningsredigeraren
+Systeminställningar → Fönsterhantering → KWin-skript → kugghjulsikonen bredvid ”KDE Snap Layout” → ”Öppna Snap Layouts inställningsredigerare” → OK.
+Information
+Version
+Upphovsperson
+Licens
+Inställningsfil
+Egen layout %1
+%1 (kopia)
+Ta bort layouten?
+”%1” tas bort.
+Återställa standardlayouterna?
+Dina egna layouter och deras ordning går förlorade.
+Redigera layout
+Namn:
+Fäst avdelare (¼, ⅓, ½ …)
+Avbryt
+Spara
+Ja
+Zon %1
+Släpp fönstret på en zon
+KDE Snap Layout: på/av
+KDE Snap Layout: testa fästlisten
+Halvor
+Två tredjedelar
+Tre kolumner
+Huvud + stapel
+Fyra fjärdedelar
+Fokus i mitten
+En zon
+Upptill / nedtill
+Stapel + huvud
+Sex rutor
+Sidopanel + rutnät
+Dra fönster till skärmens överkant och släpp dem på en zon.
+Inställningsredigerare
+Öppna Snap Layouts inställningsredigerare
+✔ Klart – klicka på OK för att öppna inställningsredigeraren.
+Snabbinställningar
+Fästlistens färger:
+Alla övriga inställningar – utseende, storlek, animering, beteende och egna layouter – ändras i Snap Layouts inställningsredigerare.

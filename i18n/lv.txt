@@ -1,0 +1,124 @@
+Aizvērt
+Atjaunot
+Maksimizēt
+Izvērst
+Sakļaut
+Sadalīt blakus
+Sadalīt augšā un apakšā
+Noņemt zonu
+Ielādēt veidni…
+Noklikšķiniet uz zonas, lai to atlasītu · dubultklikšķis to sadala · velciet atdalītājus
+%1 no %2 zonām
+KDE Snap Layout – Iestatījumu redaktors
+KWin · v%1
+Vispārīgi
+Izskats
+Uzvedība un animācija
+Izkārtojumi
+Par un palīdzība
+Aktīvs
+Pauzēts
+Velciet logu uz ekrāna augšmalu un nometiet to uz zonas.
+Piesaiste
+Rādīt joslu, velkot logu uz augšmalu
+Rādīt, kur logs tiks novietots
+Atjaunot sākotnējo izmēru, izvelkot logu ārā
+Atstarpes
+Atstarpe starp logiem
+Atstarpe līdz ekrāna malai
+Izslēgtās lietotnes
+Logu klases, kurām josla nekad netiek rādīta, pa vienai rindā.
+Padoms
+KDE maksimizē logus, kas pievilkti pie augšmalas. Vienmērīgākai piesaistei izslēdziet to sadaļā Sistēmas iestatījumi → Ekrāna malas.
+Ieteicamās vērtības
+Joslas krāsas, izmērs un forma.
+Priekšskatījums
+Krāsu shēma
+Sistēmas
+Gaiša
+Tumša
+Akcenta krāsa
+Izmantot sistēmas akcenta krāsu
+Sava krāsa
+Izmērs un forma
+Joslas izmērs
+Sīktēlu platums
+Stūru rādiuss
+Fona necaurredzamība
+Izkārtojumi rindā
+0 = visi vienā rindā
+Rādīt izkārtojumu un zonu nosaukumus
+Pārbaudīt uz ekrāna
+Noklusējuma vērtības balstās uz Windows 11.
+Rādīšana
+Aktivizēšanas attālums no augšmalas
+Vispirms rādīt mazu rokturi
+Attālums, kurā parādās rokturis
+Aktīvais platums gar augšmalu
+Aizture pirms rādīšanas
+Paslēpšana
+Attālums, pēc kura josla atkal paslēpjas
+Aizture pirms paslēpšanas
+Animācija
+Cik tālu josla nobīdās lejup
+Ieslīdēšanas ilgums
+Izslīdēšanas ilgums
+Kustības līkne
+Vienmērīga (noklusējums)
+Ātra
+Atsperīga
+Dinamiska
+Maiga
+Lineāra
+Izgaisināt parādoties un pazūdot
+Pārbaudīt animāciju
+Velciet kartītes, lai mainītu secību joslā. Veiciet dubultklikšķi uz kartītes, lai to rediģētu.
+Jauns izkārtojums
+Atjaunot noklusējuma izkārtojumus
+Joslā
+Rediģēt
+Dublēt
+Dzēst
+Kā tas darbojas
+Satveriet logu aiz virsrakstjoslas un velciet to augšup. Josla nolaižas; nometiet logu uz zonas, un tas aizņems tieši šo laukumu. Ja to atkal izvelkat, tas atgūst iepriekšējo izmēru.
+Iestatījumu redaktora atvēršana
+Sistēmas iestatījumi → Logu pārvaldība → KWin skripti → zobrata ikona pie “KDE Snap Layout” → “Atvērt Snap Layout iestatījumu redaktoru” → Labi.
+Informācija
+Versija
+Autors
+Licence
+Iestatījumu fails
+Savs izkārtojums %1
+%1 (kopija)
+Dzēst izkārtojumu?
+“%1” tiks noņemts.
+Atjaunot noklusējuma izkārtojumus?
+Jūsu izkārtojumi un to secība tiks zaudēti.
+Rediģēt izkārtojumu
+Nosaukums:
+Piesaistīt atdalītājus (¼, ⅓, ½ …)
+Atcelt
+Saglabāt
+Jā
+Zona %1
+Nometiet logu uz zonas
+KDE Snap Layout: ieslēgt/izslēgt
+KDE Snap Layout: pārbaudīt joslu
+Puses
+Divas trešdaļas
+Trīs kolonnas
+Galvenais + kaudze
+Četras ceturtdaļas
+Fokuss centrā
+Viena zona
+Augša / apakša
+Kaudze + galvenais
+Sešas flīzes
+Sānjosla + režģis
+Velciet logus uz ekrāna augšmalu un nometiet tos uz zonas.
+Iestatījumu redaktors
+Atvērt Snap Layout iestatījumu redaktoru
+✔ Gatavs – noklikšķiniet uz Labi, lai atvērtu iestatījumu redaktoru.
+Ātrie iestatījumi
+Joslas krāsas:
+Visus pārējos iestatījumus – izskatu, izmēru, animāciju, uzvedību un savus izkārtojumus – maina Snap Layout iestatījumu redaktorā.

@@ -1,0 +1,124 @@
+Dún
+Athchóirigh
+Uasmhéadaigh
+Leathnaigh
+Laghdaigh
+Roinn taobh le taobh
+Roinn barr agus bun
+Bain an crios
+Luchtaigh teimpléad…
+Cliceáil ar chrios chun é a roghnú · cliceáil faoi dhó chun é a roinnt · tarraing na deighilteoirí
+%1 as %2 crios
+KDE Snap Layout – Eagarthóir socruithe
+do KWin · v%1
+Ginearálta
+Cuma
+Iompar agus beochan
+Leagain amach
+Maidir leis agus cabhair
+Gníomhach
+Ar sos
+Tarraing fuinneog go dtí barr an scáileáin agus scaoil ar chrios í.
+Greamú
+Taispeáin an barra nuair a tharraingítear fuinneog go dtí an barr
+Taispeáin cá rachaidh an fhuinneog
+Athchóirigh an bunmhéid nuair a tharraingítear an fhuinneog amach
+Spásáil
+Bearna idir fuinneoga
+Bearna go dtí imeall an scáileáin
+Feidhmchláir eisiata
+Aicmí fuinneog nach dtaispeánann an barra choíche, ceann in aghaidh an líne.
+Leid
+Uasmhéadaíonn KDE fuinneoga a tharraingítear go dtí an barr. Chun greamú níos míne a fháil, múch é seo i Socruithe an Chórais → Imill an Scáileáin.
+Luachanna molta
+Dathanna, méid agus cruth an bharra.
+Réamhamharc
+Scéim dathanna
+Córas
+Geal
+Dorcha
+Dath aibhsithe
+Úsáid dath aibhsithe an chórais
+Dath saincheaptha
+Méid agus cruth
+Méid an bharra
+Leithead na mionsamhlacha
+Ga na gcúinní
+Teimhneacht an chúlra
+Leagain amach in aghaidh an ró
+0 = gach ceann in aon ró amháin
+Taispeáin ainmneacha leagan amach agus crios
+Tástáil ar an scáileán
+Tá na luachanna réamhshocraithe bunaithe ar Windows 11.
+Taispeáint
+Fad truicir ón imeall uachtarach
+Taispeáin hanla beag ar dtús
+Fad ag a dtaispeántar an hanla
+Leithead gníomhach feadh an imill uachtaraigh
+Moill roimh thaispeáint
+Folú
+Fad sula bhfolaítear an barra arís
+Moill roimh fholú
+Beochan
+Cé chomh fada síos a shleamhnaíonn an barra
+Fad sleamhnú isteach
+Fad sleamhnú amach
+Cuar gluaiseachta
+Réidh (réamhshocrú)
+Tapa
+Preabach
+Dinimiciúil
+Bog
+Líneach
+Céimnigh isteach agus amach
+Tástáil an bheochan
+Tarraing na cártaí chun an t-ord sa bharra a athrú. Cliceáil faoi dhó ar chárta chun é a chur in eagar.
+Leagan amach nua
+Athchóirigh na leagain amach réamhshocraithe
+Sa bharra
+Cuir in eagar
+Dúblaigh
+Scrios
+Conas a oibríonn sé
+Beir ar fhuinneog ag a barra teidil agus tarraing suas í. Sleamhnaíonn an barra síos; scaoil an fhuinneog ar chrios agus líonfaidh sí an limistéar sin go díreach. Má tharraingíonn tú amach arís í, gheobhaidh sí a seanmhéid ar ais.
+An t-eagarthóir socruithe a oscailt
+Socruithe an Chórais → Bainistíocht Fuinneog → Scripteanna KWin → deilbhín an fhearais in aice le “KDE Snap Layout” → “Oscail eagarthóir socruithe Snap Layout” → OK.
+Faisnéis
+Leagan
+Údar
+Ceadúnas
+Comhad socruithe
+Leagan amach saincheaptha %1
+%1 (cóip)
+Scrios an leagan amach?
+Bainfear “%1”.
+Athchóirigh na leagain amach réamhshocraithe?
+Caillfear do leagain amach féin agus a n-ord.
+Cuir leagan amach in eagar
+Ainm:
+Greamaigh na deighilteoirí (¼, ⅓, ½ …)
+Cealaigh
+Sábháil
+Tá
+Crios %1
+Scaoil an fhuinneog ar chrios
+KDE Snap Layout: cas air/as
+KDE Snap Layout: tástáil an barra
+Leatha
+Dhá thrian
+Trí cholún
+Príomh + cruach
+Ceithre cheathrú
+Fócas sa lár
+Crios aonair
+Barr / bun
+Cruach + príomh
+Sé thíl
+Barra taoibh + greille
+Tarraing fuinneoga go dtí barr an scáileáin agus scaoil ar chrios iad.
+Eagarthóir socruithe
+Oscail eagarthóir socruithe Snap Layout
+✔ Réidh – cliceáil OK chun an t-eagarthóir socruithe a oscailt.
+Socruithe tapa
+Dathanna an bharra:
+Athraítear gach socrú eile – cuma, méid, beochan, iompar agus do leagain amach féin – in eagarthóir socruithe Snap Layout.

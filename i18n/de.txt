@@ -1,0 +1,124 @@
+Schließen
+Wiederherstellen
+Maximieren
+Ausklappen
+Einklappen
+Nebeneinander teilen
+Übereinander teilen
+Zone entfernen
+Vorlage laden …
+Zone anklicken zum Auswählen · Doppelklick teilt sie · Teiler mit der Maus ziehen
+%1 von %2 Zonen
+KDE Snap Layout – Einstellungseditor
+für KWin · v%1
+Allgemein
+Aussehen
+Verhalten & Animation
+Layouts
+Info & Hilfe
+Aktiv
+Pausiert
+Fenster an den oberen Bildschirmrand ziehen und auf einer Zone ablegen.
+Andocken
+Snap-Leiste beim Ziehen an den oberen Rand anzeigen
+Vorschau zeigen, wo das Fenster landet
+Ursprüngliche Größe beim Herausziehen wiederherstellen
+Abstände
+Abstand zwischen Fenstern
+Abstand zum Bildschirmrand
+Ausgenommene Anwendungen
+Fensterklassen, bei denen die Snap-Leiste nie erscheint, eine pro Zeile.
+Tipp
+KDE maximiert Fenster, die an den oberen Rand gezogen werden. Für flüssigeres Andocken schalte das unter Systemeinstellungen → Bildschirmränder aus.
+Empfohlene Werte
+Farben, Größe und Form der Snap-Leiste.
+Vorschau
+Farbschema
+System
+Hell
+Dunkel
+Akzentfarbe
+Akzentfarbe des Systems verwenden
+Eigene Farbe
+Größe & Form
+Größe der Snap-Leiste
+Breite der Vorschaubilder
+Eckenradius
+Deckkraft des Hintergrunds
+Layouts pro Reihe
+0 = alle in einer Reihe
+Layout- und Zonennamen anzeigen
+Auf dem Bildschirm testen
+Die Standardwerte orientieren sich an Windows 11.
+Einblenden
+Auslöseabstand zum oberen Rand
+Zuerst einen kleinen Griff zeigen
+Abstand, ab dem der Griff erscheint
+Aktive Breite am oberen Rand
+Verzögerung bis zum Ausfahren
+Ausblenden
+Abstand, bis die Leiste wieder einfährt
+Verzögerung bis zum Einfahren
+Animation
+Wie weit die Leiste herunterfährt
+Dauer beim Herunterfahren
+Dauer beim Zurückfahren
+Bewegungskurve
+Sanft (Standard)
+Zügig
+Federnd
+Dynamisch
+Weich
+Linear
+Beim Ein- und Ausfahren überblenden
+Animation testen
+Karten ziehen, um die Reihenfolge in der Snap-Leiste zu ändern. Doppelklick auf eine Karte öffnet den Editor.
+Neues Layout
+Standard-Layouts wiederherstellen
+In Leiste
+Bearbeiten
+Duplizieren
+Löschen
+So funktioniert’s
+Fenster an der Titelleiste greifen und nach oben ziehen. Die Snap-Leiste fährt herunter; das Fenster auf einer Zone ablegen und es füllt genau diesen Bereich. Wieder wegziehen, und es bekommt seine alte Größe zurück.
+Einstellungseditor öffnen
+Systemeinstellungen → Fensterverwaltung → KWin-Skripte → Zahnrad bei „KDE Snap Layout“ → „Snap Layout Einstellungseditor öffnen“ → OK.
+Informationen
+Version
+Autor
+Lizenz
+Einstellungsdatei
+Eigenes Layout %1
+%1 (Kopie)
+Layout löschen?
+„%1“ wird entfernt.
+Standard-Layouts wiederherstellen?
+Eigene Layouts und die Reihenfolge gehen dabei verloren.
+Layout bearbeiten
+Name:
+Teiler einrasten (¼, ⅓, ½ …)
+Abbrechen
+Speichern
+Ja
+Zone %1
+Fenster auf einer Zone ablegen
+KDE Snap Layout: ein-/ausschalten
+KDE Snap Layout: Snap-Leiste testen
+Hälften
+Zwei Drittel
+Drei Spalten
+Haupt + Stapel
+Vier Viertel
+Fokus Mitte
+Eine Zone
+Oben / Unten
+Stapel + Haupt
+Sechs Kacheln
+Seitenleiste + Raster
+Fenster an den oberen Bildschirmrand ziehen und auf einer Zone ablegen.
+Einstellungseditor
+Snap Layout Einstellungseditor öffnen
+✔ Bereit – jetzt auf OK klicken, um den Einstellungseditor zu öffnen.
+Quick-Einstellungen
+Farben der Snap-Leiste:
+Alle weiteren Einstellungen – Aussehen, Größe, Animation, Verhalten und eigene Layouts – nimmst du im Snap Layout Einstellungseditor vor.

@@ -1,0 +1,124 @@
+Sulje
+Palauta
+Suurenna
+Laajenna
+Pienennä palkiksi
+Jaa vierekkäin
+Jaa ylös ja alas
+Poista alue
+Lataa malli…
+Valitse alue napsauttamalla · jaa kaksoisnapsautuksella · vedä jakajia
+%1/%2 aluetta
+KDE Snap Layout – Asetusten muokkain
+KWinille · v%1
+Yleiset
+Ulkoasu
+Toiminta ja animaatio
+Asettelut
+Tietoja ja ohje
+Käytössä
+Tauolla
+Vedä ikkuna näytön yläreunaan ja pudota se alueelle.
+Kiinnitys
+Näytä kiinnityspalkki, kun ikkunaa vedetään yläreunaan
+Näytä, mihin ikkuna asettuu
+Palauta alkuperäinen koko, kun ikkuna vedetään pois
+Välit
+Ikkunoiden väli
+Väli näytön reunaan
+Ohitettavat sovellukset
+Ikkunaluokat, joille palkkia ei koskaan näytetä, yksi riviä kohden.
+Vinkki
+KDE suurentaa yläreunaan vedetyt ikkunat. Sujuvamman kiinnityksen saat, kun poistat tämän käytöstä kohdassa Järjestelmäasetukset → Näytön reunat.
+Suositellut arvot
+Palkin värit, koko ja muoto.
+Esikatselu
+Väriteema
+Järjestelmä
+Vaalea
+Tumma
+Korostusväri
+Käytä järjestelmän korostusväriä
+Oma väri
+Koko ja muoto
+Palkin koko
+Pikkukuvien leveys
+Kulmien pyöristys
+Taustan peittävyys
+Asetteluja riviä kohden
+0 = kaikki samalla rivillä
+Näytä asettelujen ja alueiden nimet
+Kokeile näytöllä
+Oletusarvot perustuvat Windows 11:een.
+Näyttäminen
+Aktivointietäisyys yläreunasta
+Näytä ensin pieni kahva
+Etäisyys, jolla kahva ilmestyy
+Aktiivinen leveys yläreunassa
+Viive ennen näyttämistä
+Piilottaminen
+Etäisyys, jonka jälkeen palkki piiloutuu
+Viive ennen piilottamista
+Animaatio
+Kuinka alas palkki liukuu
+Sisääntulon kesto
+Poistumisen kesto
+Liikekäyrä
+Pehmeä (oletus)
+Nopea
+Joustava
+Dynaaminen
+Lempeä
+Lineaarinen
+Häivytys sisään ja ulos
+Kokeile animaatiota
+Muuta järjestystä palkissa vetämällä kortteja. Muokkaa korttia kaksoisnapsauttamalla.
+Uusi asettelu
+Palauta oletusasettelut
+Palkissa
+Muokkaa
+Monista
+Poista
+Näin se toimii
+Tartu ikkunaan otsikkopalkista ja vedä se ylös. Palkki liukuu alas; pudota ikkuna alueelle, niin se täyttää juuri sen kohdan. Kun vedät sen taas pois, se saa entisen kokonsa takaisin.
+Asetusten muokkaimen avaaminen
+Järjestelmäasetukset → Ikkunointi → KWin-skriptit → hammasratas ”KDE Snap Layout” -kohdan vieressä → ”Avaa Snap Layoutin asetusten muokkain” → OK.
+Tiedot
+Versio
+Tekijä
+Lisenssi
+Asetustiedosto
+Oma asettelu %1
+%1 (kopio)
+Poistetaanko asettelu?
+”%1” poistetaan.
+Palautetaanko oletusasettelut?
+Omat asettelusi ja niiden järjestys menetetään.
+Muokkaa asettelua
+Nimi:
+Kiinnitä jakajat (¼, ⅓, ½ …)
+Peru
+Tallenna
+Kyllä
+Alue %1
+Pudota ikkuna alueelle
+KDE Snap Layout: päälle/pois
+KDE Snap Layout: kokeile palkkia
+Puolikkaat
+Kaksi kolmasosaa
+Kolme saraketta
+Pää + pino
+Neljä neljännestä
+Keskikohdistus
+Yksi alue
+Ylä / ala
+Pino + pää
+Kuusi ruutua
+Sivupalkki + ruudukko
+Vedä ikkunat näytön yläreunaan ja pudota ne alueelle.
+Asetusten muokkain
+Avaa Snap Layoutin asetusten muokkain
+✔ Valmis – avaa asetusten muokkain napsauttamalla OK.
+Pika-asetukset
+Palkin värit:
+Kaikki muut asetukset – ulkoasu, koko, animaatio, toiminta ja omat asettelut – muutetaan Snap Layoutin asetusten muokkaimessa.
