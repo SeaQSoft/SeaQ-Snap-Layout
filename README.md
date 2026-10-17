@@ -31,7 +31,7 @@ A pure KWin script: no extra program, no background service, nothing to compile.
 
 
 
-https://github.com/user-attachments/assets/befe5993-af49-4e00-9e5b-f22f84b214b6
+https://github.com/user-attachments/assets/af72e2e9-0a39-45df-96e0-f2f0e356da13
 
 
 
