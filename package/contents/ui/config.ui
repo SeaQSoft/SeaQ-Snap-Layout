@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Quick menu behind the gear icon in System Settings → KWin Scripts.
+     Source strings are English; System Settings translates them through the
+     .mo files in contents/locale (domain "kdesnaplayout"). -->
+<ui version="4.0">
+ <class>KDESnapLayoutQuickMenu</class>
+ <widget class="QWidget" name="KDESnapLayoutQuickMenu">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>520</width><height>330</height></rect>
+  </property>
+  <layout class="QVBoxLayout" name="mainLayout">
+   <property name="spacing"><number>14</number></property>
+   <item>
+    <widget class="QLabel" name="subtitle">
+     <property name="text"><string>Drag windows to the top edge of the screen and drop them onto a zone.</string></property>
+     <property name="wordWrap"><bool>true</bool></property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="editorBox">
+     <property name="title"><string>Settings editor</string></property>
+     <layout class="QVBoxLayout" name="editorLayout">
+      <property name="spacing"><number>8</number></property>
+      <item>
+       <widget class="QPushButton" name="openButton">
+        <property name="text"><string>Open Snap Layout settings editor</string></property>
+        <property name="icon"><iconset theme="configure"/></property>
+        <property name="iconSize"><size><width>22</width><height>22</height></size></property>
+        <property name="minimumSize"><size><width>0</width><height>46</height></size></property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="kcfg_OpenSettings">
+        <property name="visible"><bool>false</bool></property>
+        <property name="text"><string notr="true">OpenSettings</string></property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="readyHint">
+        <property name="visible"><bool>false</bool></property>
+        <property name="text"><string>✔ Ready – click OK to open the settings editor.</string></property>
+        <property name="wordWrap"><bool>true</bool></property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="quickBox">
+     <property name="title"><string>Quick settings</string></property>
+     <layout class="QHBoxLayout" name="quickLayout">
+      <item>
+       <widget class="QLabel" name="themeLabel">
+        <property name="text"><string>Snap bar colors:</string></property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="kcfg_themeMode">
+        <property name="minimumSize"><size><width>220</width><height>0</height></size></property>
+        <item><property name="text"><string>System</string></property></item>
+        <item><property name="text"><string>Light</string></property></item>
+        <item><property name="text"><string>Dark</string></property></item>
+       </widget>
+      </item>
+      <item>
+       <spacer name="themeSpacer">
+        <property name="orientation"><enum>Qt::Horizontal</enum></property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="info">
+     <property name="text"><string>All other settings – appearance, size, animation, behavior and your own layouts – are changed in the Snap Layout settings editor.</string></property>
+     <property name="wordWrap"><bool>true</bool></property>
+     <property name="frameShape"><enum>QFrame::StyledPanel</enum></property>
+     <property name="margin"><number>10</number></property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="bottomSpacer">
+     <property name="orientation"><enum>Qt::Vertical</enum></property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>openButton</sender>
+   <signal>clicked()</signal>
+   <receiver>kcfg_OpenSettings</receiver>
+   <slot>toggle()</slot>
+  </connection>
+  <connection>
+   <sender>openButton</sender>
+   <signal>clicked()</signal>
+   <receiver>readyHint</receiver>
+   <slot>show()</slot>
+  </connection>
+ </connections>
+</ui>

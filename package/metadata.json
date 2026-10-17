@@ -1,0 +1,25 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "Swenix-dev"
+            }
+        ],
+        "Category": "Window Management",
+        "Description": "Snap layouts for KWin: drag a window to the top edge of the screen and drop it onto a zone. Custom layouts, drag & drop editor, system colors.",
+        "EnabledByDefault": false,
+        "Icon": "preferences-system-windows",
+        "Id": "kdesnaplayout",
+        "License": "GPL-3.0-or-later",
+        "Name": "KDE Snap Layout",
+        "Version": "1.6.5",
+        "Description[de]": "Snap-Layouts für KWin: Fenster an den oberen Bildschirmrand ziehen und auf einer Zone ablegen. Eigene Layouts, Drag-&-Drop-Editor, Systemfarben.",
+        "Website": "https://github.com/Swenix-dev/KDE-Snap-Layout",
+        "BugReportUrl": "https://github.com/Swenix-dev/KDE-Snap-Layout/issues"
+    },
+    "KPackageStructure": "KWin/Script",
+    "X-Plasma-API": "declarativescript",
+    "X-Plasma-MainScript": "ui/main.qml",
+    "X-KDE-ConfigModule": "kwin/effects/configs/kcm_kwin4_genericscripted",
+    "X-KWin-Config-TranslationDomain": "kdesnaplayout"
+}
