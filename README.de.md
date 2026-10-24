@@ -224,8 +224,8 @@ qdbus6 org.kde.KWin /KWin reconfigure
 ```bash
 git clone https://github.com/SeaQSoft/SeaQ-Snap-Layout.git
 cd SeaQ-Snap-Layout
-./build.sh                       # → dist/kdesnaplayout-<version>.kwinscript
-./install.sh                     # optional: saubere Installation für die Entwicklung
+bash build.sh                     # → dist/kdesnaplayout-<version>.kwinscript
+bash install.sh                   # optional: saubere Installation für die Entwicklung
 ```
 
 > [!IMPORTANT]
