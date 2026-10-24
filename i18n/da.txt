@@ -9,8 +9,8 @@ Fjern zone
 Indlæs skabelon…
 Klik på en zone for at vælge den · dobbeltklik for at dele · træk i skillelinjerne
 %1 af %2 zoner
-KDE Snap Layout – Indstillingseditor
-til KWin · v%1
+SeaQ Snap Layout – Indstillingseditor
+til KDE · v%1
 Generelt
 Udseende
 Adfærd & animation
@@ -82,7 +82,7 @@ Slet
 Sådan virker det
 Tag fat i et vindue i titellinjen og træk det opad. Bjælken glider ned; slip vinduet på en zone, så fylder det præcis det område. Trækker du det ud igen, får det sin gamle størrelse tilbage.
 Åbn indstillingseditoren
-Systemindstillinger → Vindueshåndtering → KWin-scripts → tandhjulsikonet ved “KDE Snap Layout” → “Åbn Snap Layout-indstillingseditoren” → OK.
+Systemindstillinger → Vindueshåndtering → KWin-scripts → tandhjulsikonet ved “SeaQ Snap Layout” → “Åbn Snap Layout-indstillingseditoren” → OK.
 Information
 Version
 Ophavsperson
@@ -102,8 +102,8 @@ Gem
 Ja
 Zone %1
 Slip vinduet på en zone
-KDE Snap Layout: til/fra
-KDE Snap Layout: test bjælken
+SeaQ Snap Layout: til/fra
+SeaQ Snap Layout: test bjælken
 Halvdele
 To tredjedele
 Tre kolonner
@@ -122,3 +122,146 @@ Indstillingseditor
 Hurtige indstillinger
 Bjælkens farver:
 Alle øvrige indstillinger – udseende, størrelse, animation, adfærd og dine egne layouts – ændres i Snap Layout-indstillingseditoren.
+Indstillinger
+Ingen
+Skift
+Almindelige kombinationer
+Din egen kombination
+Angiv
+Fjern
+Fastgørelsesbjælke
+Skærmkanter
+Flere måder at fastgøre på
+Vinduesmagnet
+Tastaturgenveje
+Genveje
+Fire måder at fastgøre vinduer på. Hver kan slås til og fra for sig.
+Funktioner
+Skub et vindue mod en kant eller et hjørne: maksimér, halvdele, kvarte.
+Vinduer klæber til hinanden og til skærmkanterne.
+Fastgør det aktive vindue med tastekombinationer.
+Forhåndsvisninger
+Vis forhåndsvisninger i accentfarven
+Fra: en neutral ramme. Gælder alle forhåndsvisninger.
+Vinduesklasser, der aldrig fastgøres, én pr. linje.
+KDE har sine egne skærmkanthandlinger og sin egen vinduesfastgørelse. Når samme funktion er slået til her, så slå KDE's fra: Systemindstillinger → Vindueshåndtering → Skærmkanter samt Vinduesadfærd → Flytning.
+Skub et vindue mod en kant eller et hjørne af skærmen, så fylder det den del. Virker med eller uden bjælken.
+Fuldskærm
+Øverste halvdel
+Fra
+Nederste halvdel
+Venstre halvdel
+Højre halvdel
+Kanter og hjørner
+Brug skærmkanter
+Uafhængigt af bjælken. Hver kant kan slås til for sig.
+Overkant
+Venstre og højre kant: halv skærm
+Underkant: nederste halvdel
+Hjørner: en fjerdedel af skærmen
+Smart udfyldning
+Tilpas til vinduer, der allerede er fastgjort
+Ligger der allerede et vindue nederst, giver overkanten den øverste halvdel i stedet for at maksimere. Halvdele og kvarte lader også fastgjorte vinduer være fri.
+Følelse
+Afstand til kanten
+Hvor tæt markøren skal komme på kanten.
+Skubforsinkelse
+Hvor længe vinduet skal ligge mod kanten – et lille skub. 0 = med det samme.
+Hjørnestørrelse
+Den del af hver side, der tæller som hjørne.
+KDE's egne skærmkanthandlinger er stadig slået til, så to hjælpere reagerer på samme træk. Slå "Maksimér" og "Fliselæg" fra i Systemindstillinger → Vindueshåndtering → Skærmkanter.
+Mens du flytter eller ændrer størrelse på et vindue, klæber kanterne til nærliggende vinduer og til skærmkanterne.
+Magnet
+Brug vinduesmagneten
+Uafhængigt af bjælken og skærmkanterne.
+Fastgørelsesafstand
+Hvor tæt en kant skal komme, før den klikker på plads.
+Klæb til andre vinduer
+Klæb til skærmkanterne
+Også ved ændring af størrelse
+Behold afstanden mellem vinduer
+Vinduer stopper ved "Afstand mellem vinduer" fra siden Generelt i stedet for at røre hinanden.
+KDE's egen vinduesfastgørelse er også slået til. For en ensartet følelse skal du sætte dens zoner til "Ingen" i Systemindstillinger → Vindueshåndtering → Vinduesadfærd → Flytning.
+Fastgør det aktive vindue med tastaturet. Det er almindelige globale KDE-genveje – du finder dem også i Systemindstillinger → Genveje → KWin.
+Brug tastaturgenveje
+Fra: tasterne forbliver tildelt, men gør ingenting.
+Tasteskema
+Angiver tasterne for alle handlinger på én gang. Enkelte taster kan stadig ændres nedenfor.
+Anvend
+KDE's genvejstjeneste svarede ikke. Du kan stadig angive tasterne i Systemindstillinger → Genveje → KWin.
+Taster, der allerede bruges
+%1 bruges af "%2".
+Ønsket til: %1
+Overtag
+Overtag alle
+Behold dem
+Godt at vide
+Fastgørelseshandlingerne bruger de samme afstande som bjælken og husker størrelsen fra før fastgørelsen: "Gendan størrelsen fra før fastgørelse" henter den tilbage.
+SeaQ Snap Layout: %1
+Fastgør i venstre halvdel
+Fastgør i højre halvdel
+Fastgør i øverste halvdel
+Fastgør i nederste halvdel
+Fastgør i øverste venstre kvart
+Fastgør i øverste højre kvart
+Fastgør i nederste venstre kvart
+Fastgør i nederste højre kvart
+Fastgør i venstre tredjedel
+Fastgør i midterste tredjedel
+Fastgør i højre tredjedel
+Fastgør i venstre to tredjedele
+Fastgør i højre to tredjedele
+Maksimér eller gendan
+Centrér vinduet
+Gendan størrelsen fra før fastgørelse
+Bjælke til/fra
+Skærmkanter til/fra
+Vinduesmagnet til/fra
+Test bjælken
+Kvarte
+Tredjedele
+Vindue
+Ctrl+Alt + tast (standard)
+Meta+Ctrl+Alt + tast
+Meta + tast (KDE-stil)
+Meta+Skift + tast
+Ctrl+Skift+Alt + tast
+Ctrl+Alt + numerisk tastatur
+Ingen genveje
+Klik, og derefter OK – indstillingseditoren åbnes.
+Modstand mod overlapning
+Hvor langt du skal skubbe et vindue ind i et andet, før det giver slip. 0 = vinduer kan overlappe frit.
+Nulstil til standard
+Nulstil alle taster
+Giver hver handling tasten fra det valgte skema igen og fjerner taster, som skemaet ikke har.
+Nulstil alle
+Klæbende kanter
+Ændr størrelsen på vinduer, der rører hinanden, sammen
+Når du ændrer størrelsen på et vindue, flytter vinduer, der rører det, den fælles kant med – intet overlapper, intet mellemrum opstår.
+Hold stablede vinduer på linje
+Vinduer over hinanden holder venstre og højre kant sammen, vinduer ved siden af hinanden top- og bundkant.
+Ryst for at slippe
+Ryst musen, mens du ændrer størrelse, og de andre vinduer springer tilbage.
+Ton de andre vinduer ned
+Mens du ændrer størrelse, vises vinduer, der ikke følger med, gennemsigtige.
+Forhåndsvisning for snapbjælken
+Viser, hvor vinduet lander, mens en zone i bjælken er fremhævet. Fra: ingen forhåndsvisning.
+Forhåndsvisning for skærmkanterne
+Viser, hvor vinduet lander ved en kant eller et hjørne. Fra: ingen forhåndsvisning.
+Fra: en neutral ramme – kun for de forhåndsvisninger, der er slået til.
+Sæt KDE's kantfliser og dens forhåndsvisning på pause
+Slå dette fra, hvis du foretrækker KDE's eget omrids – slå så forhåndsvisningen for skærmkanterne ovenfor fra.
+Hold for at fylde
+Hold ved kanten for at fylde den frie plads
+Et kort skub giver halvdelen eller kvarten. Hold vinduet lidt længere ved kanten, så vokser det op til det næste vindue – forhåndsvisningen viser det.
+Holdetid
+Hvor længe vinduet skal blive ved kanten, før det vokser.
+KDE's egne kantfliser
+KDE's egen maksimering og fliselægning ved skærmkanterne – med omrids – holder pause, mens SeaQ Snap Layout kører, så der kun vises én forhåndsvisning. Dine KDE-indstillinger ændres ikke: slå dette fra, deaktivér eller fjern SeaQ Snap Layout, og KDE's egen opførsel er tilbage.
+KDE's egen vinduesfastgørelse
+Sæt KDE's fastgørelseszoner på pause, mens magneten er til
+Så kun én magnet trækker i et vindue. Dine KDE-indstillinger ændres ikke: slå dette fra, deaktivér eller fjern SeaQ Snap Layout, og KDE's egen fastgørelse er tilbage.
+Støt SeaQ Snap Layout
+Hvis du kan lide SeaQ Snap Layout, kan du støtte udviklingen – tak!
+Donér med PayPal
+Køb mig en kop kaffe

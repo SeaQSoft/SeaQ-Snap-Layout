@@ -9,8 +9,8 @@ Remove zone
 Load template…
 Click a zone to select it · double-click to split · drag the dividers
 %1 of %2 zones
-KDE Snap Layout – Settings editor
-for KWin · v%1
+SeaQ Snap Layout – Settings editor
+for KDE · v%1
 General
 Appearance
 Behavior & Animation
@@ -82,7 +82,7 @@ Delete
 How it works
 Grab a window by its title bar and drag it up. The snap bar slides down; drop the window onto a zone and it fills exactly that area. Drag it away again and it gets its old size back.
 Opening the settings editor
-System Settings → Window Management → KWin Scripts → gear icon next to “KDE Snap Layout” → “Open Snap Layout settings editor” → OK.
+System Settings → Window Management → KWin Scripts → gear icon next to “SeaQ Snap Layout” → “Open Snap Layout settings editor” → OK.
 Information
 Version
 Author
@@ -102,8 +102,8 @@ Save
 Yes
 Zone %1
 Drop the window onto a zone
-KDE Snap Layout: turn on/off
-KDE Snap Layout: test the snap bar
+SeaQ Snap Layout: turn on/off
+SeaQ Snap Layout: test the snap bar
 Halves
 Two thirds
 Three columns
@@ -122,3 +122,146 @@ Open Snap Layout settings editor
 Quick settings
 Snap bar colors:
 All other settings – appearance, size, animation, behavior and your own layouts – are changed in the Snap Layout settings editor.
+Settings
+None
+Change
+Usual combinations
+Your own combination
+Set
+Remove
+Snap bar
+Screen edges
+More ways to snap
+Window magnet
+Keyboard shortcuts
+Shortcuts
+Four ways to snap windows. Each one can be switched on and off on its own.
+Features
+Push a window against an edge or corner: maximize, halves, quarters.
+Windows stick to each other and to the screen edges.
+Snap the active window with key combinations.
+Previews
+Show previews in the accent color
+Off: a neutral frame. Applies to all previews.
+Window classes that are never snapped, one per line.
+KDE has its own screen edge actions and window snapping. When the same feature is on here, turn KDE's off: System Settings → Window Management → Screen Edges, and Window Behavior → Movement.
+Push a window against an edge or a corner of the screen and it fills that part. Works with or without the snap bar.
+Fullscreen
+Top half
+Off
+Bottom half
+Left half
+Right half
+Edges and corners
+Use screen edges
+Independent of the snap bar. Each edge can be switched on its own.
+Top edge
+Left and right edge: half of the screen
+Bottom edge: bottom half
+Corners: quarter of the screen
+Smart fill
+Fit around windows that are already snapped
+If a window sits at the bottom, the top edge gives the top half instead of maximizing. Halves and quarters also leave snapped windows uncovered.
+Feel
+Distance to the edge
+How close the cursor has to get to the edge.
+Push delay
+How long the window has to rest against the edge – a small push. 0 = at once.
+Corner size
+Part of each side that counts as corner.
+KDE's own screen edge actions are still on, so two helpers react to the same drag. Turn off “Maximize” and “Tile” in System Settings → Window Management → Screen Edges.
+While you move or resize a window, its edges stick to nearby windows and to the screen edges.
+Magnet
+Use the window magnet
+Independent of the snap bar and the screen edges.
+Snap distance
+How close an edge has to come before it clicks into place.
+Stick to other windows
+Stick to the screen edges
+Also while resizing
+Keep the gap between windows
+Windows stop at “Gap between windows” from the General page instead of touching.
+KDE's own window snapping is on as well. For one consistent feel, set its snap zones to “None” in System Settings → Window Management → Window Behavior → Movement.
+Snap the active window with the keyboard. These are normal KDE global shortcuts – you also find them in System Settings → Shortcuts → KWin.
+Use keyboard shortcuts
+Off: the keys stay assigned but do nothing.
+Key scheme
+Sets the keys of all actions at once. You can still change single keys below.
+Apply
+KDE's shortcut service did not answer. You can still set the keys in System Settings → Shortcuts → KWin.
+Keys already in use
+%1 is used by “%2”.
+Wanted for: %1
+Take it over
+Take over all
+Keep them
+Good to know
+The snapping actions use the same gaps as the snap bar and remember the size before snapping: “Restore the size before snapping” brings it back.
+SeaQ Snap Layout: %1
+Snap to the left half
+Snap to the right half
+Snap to the top half
+Snap to the bottom half
+Snap to the top-left quarter
+Snap to the top-right quarter
+Snap to the bottom-left quarter
+Snap to the bottom-right quarter
+Snap to the left third
+Snap to the center third
+Snap to the right third
+Snap to the left two thirds
+Snap to the right two thirds
+Maximize or restore
+Center the window
+Restore the size before snapping
+Snap bar on/off
+Screen edges on/off
+Window magnet on/off
+Test the snap bar
+Quarters
+Thirds
+Window
+Ctrl+Alt + key (default)
+Meta+Ctrl+Alt + key
+Meta + key (KDE style)
+Meta+Shift + key
+Ctrl+Shift+Alt + key
+Ctrl+Alt + number block
+No shortcuts
+Click, then OK – the settings editor opens.
+Resistance against overlapping
+How far you have to push a window into another one before it lets go. 0 = windows can overlap freely.
+Reset to default
+Reset all keys
+Gives every action the key of the chosen scheme again and removes keys the scheme does not have.
+Reset all
+Sticky edges
+Resize touching windows together
+When you resize a window, windows that touch it move their shared edge along – nothing overlaps, no gap opens.
+Keep stacked windows in line
+Windows above each other keep their left and right edges together, windows side by side their top and bottom edges.
+Shake to let go
+Shake the mouse while resizing and the other windows jump back.
+Fade the other windows
+While resizing, windows that do not follow are shown transparent.
+Snap bar preview
+Shows where the window lands while a zone of the snap bar is highlighted. Off: no preview at all.
+Screen edges preview
+Shows where the window lands at an edge or corner. Off: no preview at all.
+Off: a neutral frame – only for the previews that are switched on.
+Pause KDE's edge tiling and its preview
+Turn this off if you prefer KDE's own outline – then switch the screen edges preview above off.
+Hold to fill
+Hold at the edge to fill the free space
+A short push gives the half or quarter. Keep the window at the edge a moment longer and it grows up to the next window – the preview shows it.
+Hold time
+How long the window has to stay at the edge before it grows.
+KDE's own edge tiling
+KDE's own maximize and tile at the screen edges – with its outline – pause while SeaQ Snap Layout runs, so only one preview appears. Your KDE settings are not changed: switch this off, disable or remove SeaQ Snap Layout and KDE's own behavior is back.
+KDE's own window snapping
+Pause KDE's snap zones while the magnet is on
+So only one magnet pulls at a window. Your KDE settings are not changed: switch this off, disable or remove SeaQ Snap Layout and KDE's own snapping is back.
+Support SeaQ Snap Layout
+If you like SeaQ Snap Layout, you can support its development – thank you!
+Donate with PayPal
+Buy me a coffee

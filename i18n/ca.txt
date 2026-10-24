@@ -9,8 +9,8 @@ Elimina la zona
 Carrega una plantilla…
 Feu clic en una zona per seleccionar-la · doble clic per dividir-la · arrossegueu els separadors
 %1 de %2 zones
-KDE Snap Layout – Editor de configuració
-per a KWin · v%1
+SeaQ Snap Layout – Editor de configuració
+per a KDE · v%1
 General
 Aparença
 Comportament i animació
@@ -82,7 +82,7 @@ Suprimeix
 Com funciona
 Agafeu una finestra per la barra de títol i arrossegueu-la cap amunt. La barra baixa; deixeu anar la finestra sobre una zona i ocuparà exactament aquell espai. Si la torneu a treure, recupera la mida anterior.
 Obrir l’editor de configuració
-Arranjament del sistema → Gestió de finestres → Scripts del KWin → icona d’engranatge al costat de «KDE Snap Layout» → «Obre l’editor de configuració del Snap Layout» → D’acord.
+Arranjament del sistema → Gestió de finestres → Scripts del KWin → icona d’engranatge al costat de «SeaQ Snap Layout» → «Obre l’editor de configuració del Snap Layout» → D’acord.
 Informació
 Versió
 Autor
@@ -102,8 +102,8 @@ Desa
 Sí
 Zona %1
 Deixeu anar la finestra sobre una zona
-KDE Snap Layout: activa/desactiva
-KDE Snap Layout: prova la barra
+SeaQ Snap Layout: activa/desactiva
+SeaQ Snap Layout: prova la barra
 Meitats
 Dos terços
 Tres columnes
@@ -122,3 +122,146 @@ Obre l’editor de configuració del Snap Layout
 Configuració ràpida
 Colors de la barra:
 Tota la resta de la configuració – aparença, mida, animació, comportament i les vostres disposicions – es canvia a l’editor de configuració del Snap Layout.
+Configuració
+Cap
+Canvia
+Combinacions habituals
+La vostra combinació
+Assigna
+Elimina
+Barra d’ajust
+Vores de la pantalla
+Més maneres d’ajustar
+Imant de finestres
+Dreceres de teclat
+Dreceres
+Quatre maneres d’ajustar finestres. Cadascuna s’activa i es desactiva per separat.
+Funcions
+Empenyeu una finestra contra una vora o un cantó: maximitza, meitats, quarts.
+Les finestres s’enganxen entre si i a les vores de la pantalla.
+Ajusteu la finestra activa amb combinacions de tecles.
+Vistes prèvies
+Mostra les vistes prèvies amb el color d’èmfasi
+Desactivat: un marc neutre. S’aplica a totes les vistes prèvies.
+Classes de finestra que no s’ajusten mai, una per línia.
+El KDE té les seves pròpies accions de vora de pantalla i el seu propi ajust de finestres. Si la mateixa funció és activa aquí, desactiveu la del KDE: Arranjament del sistema → Gestió de finestres → Vores de la pantalla, i Comportament de les finestres → Moviment.
+Empenyeu una finestra contra una vora o un cantó de la pantalla i n’omplirà aquesta part. Funciona amb la barra d’ajust o sense.
+Pantalla completa
+Meitat superior
+Desactivat
+Meitat inferior
+Meitat esquerra
+Meitat dreta
+Vores i cantons
+Usa les vores de la pantalla
+Independent de la barra d’ajust. Cada vora s’activa per separat.
+Vora superior
+Vores esquerra i dreta: mitja pantalla
+Vora inferior: meitat inferior
+Cantons: un quart de la pantalla
+Ompliment intel·ligent
+Adapta’t a les finestres ja ajustades
+Si ja hi ha una finestra a baix, la vora superior dona la meitat superior en lloc de maximitzar. Les meitats i els quarts també deixen lliures les finestres ajustades.
+Sensació
+Distància a la vora
+Com d’a prop de la vora ha d’arribar el cursor.
+Retard d’empenta
+Quant de temps ha d’estar la finestra contra la vora: una petita empenta. 0 = de seguida.
+Mida dels cantons
+Part de cada costat que compta com a cantó.
+Les accions de vora de pantalla del KDE encara estan actives, de manera que dos ajudants reaccionen al mateix arrossegament. Desactiveu «Maximitza» i «Mosaic» a Arranjament del sistema → Gestió de finestres → Vores de la pantalla.
+Mentre moveu o redimensioneu una finestra, les seves vores s’enganxen a les finestres properes i a les vores de la pantalla.
+Imant
+Usa l’imant de finestres
+Independent de la barra d’ajust i de les vores de la pantalla.
+Distància d’enganxada
+Com d’a prop ha d’arribar una vora abans d’encaixar.
+Enganxa a altres finestres
+Enganxa a les vores de la pantalla
+També en redimensionar
+Mantén l’espai entre finestres
+Les finestres s’aturen a l’«Espai entre finestres» de la pàgina General en lloc de tocar-se.
+L’ajust de finestres propi del KDE també és actiu. Per a una sensació uniforme, poseu les seves zones a «Cap» a Arranjament del sistema → Gestió de finestres → Comportament de les finestres → Moviment.
+Ajusteu la finestra activa amb el teclat. Són dreceres globals normals del KDE: també les trobareu a Arranjament del sistema → Dreceres → KWin.
+Usa dreceres de teclat
+Desactivat: les tecles continuen assignades però no fan res.
+Esquema de tecles
+Assigna les tecles de totes les accions de cop. Podeu continuar canviant tecles soltes a sota.
+Aplica
+El servei de dreceres del KDE no ha respost. Encara podeu assignar les tecles a Arranjament del sistema → Dreceres → KWin.
+Tecles ja en ús
+%1 l’usa «%2».
+Volguda per a: %1
+Pren-la
+Pren-les totes
+Deixa-les
+Bo de saber
+Les accions d’ajust usen els mateixos espais que la barra i recorden la mida d’abans de l’ajust: «Restaura la mida d’abans de l’ajust» la recupera.
+SeaQ Snap Layout: %1
+Ajusta a la meitat esquerra
+Ajusta a la meitat dreta
+Ajusta a la meitat superior
+Ajusta a la meitat inferior
+Ajusta al quart superior esquerre
+Ajusta al quart superior dret
+Ajusta al quart inferior esquerre
+Ajusta al quart inferior dret
+Ajusta al terç esquerre
+Ajusta al terç central
+Ajusta al terç dret
+Ajusta als dos terços esquerres
+Ajusta als dos terços drets
+Maximitza o restaura
+Centra la finestra
+Restaura la mida d’abans de l’ajust
+Barra d’ajust sí/no
+Vores de la pantalla sí/no
+Imant de finestres sí/no
+Prova la barra d’ajust
+Quarts
+Terços
+Finestra
+Ctrl+Alt + tecla (predeterminat)
+Meta+Ctrl+Alt + tecla
+Meta + tecla (estil KDE)
+Meta+Maj + tecla
+Ctrl+Maj+Alt + tecla
+Ctrl+Alt + teclat numèric
+Sense dreceres
+Feu clic i després D'acord – s'obre l'editor de configuració.
+Resistència a la superposició
+Fins on cal empènyer una finestra dins d'una altra abans que la deixi anar. 0 = les finestres es poden superposar lliurement.
+Restableix el valor per defecte
+Restableix totes les tecles
+Torna a donar a cada acció la tecla de l'esquema triat i elimina les tecles que l'esquema no té.
+Restableix-ho tot
+Vores enganxoses
+Redimensiona juntes les finestres que es toquen
+Quan redimensioneu una finestra, les que la toquen mouen la vora compartida amb ella – res no se superposa, no queda cap espai.
+Mantén alineades les finestres apilades
+Les finestres una sobre l'altra mantenen juntes les vores esquerra i dreta; les finestres de costat, les de dalt i de baix.
+Sacseja per deixar anar
+Sacsegeu el ratolí mentre redimensioneu i les altres finestres tornen enrere.
+Esvaeix les altres finestres
+Mentre redimensioneu, les finestres que no segueixen es mostren transparents.
+Previsualització de la barra
+Mostra on anirà la finestra mentre una zona de la barra està ressaltada. Desactivat: cap previsualització.
+Previsualització de les vores
+Mostra on anirà la finestra en una vora o una cantonada. Desactivat: cap previsualització.
+Desactivat: un marc neutre – només per a les previsualitzacions activades.
+Pausa el mosaic de vores de KDE i la seva previsualització
+Desactiveu-ho si preferiu el contorn de KDE; aleshores desactiveu a dalt la previsualització de les vores.
+Mantén per omplir
+Mantén a la vora per omplir l'espai lliure
+Una empenta curta dona la meitat o el quart. Manteniu la finestra una mica més a la vora i creix fins a la finestra següent; la previsualització ho mostra.
+Temps de manteniment
+Quanta estona ha de quedar-se la finestra a la vora abans de créixer.
+Mosaic de vores propi de KDE
+El maximitzar i el mosaic de KDE a les vores de la pantalla –amb el contorn– s'aturen mentre s'executa SeaQ Snap Layout, perquè aparegui només una previsualització. La configuració de KDE no canvia: desactiveu això, desactiveu o elimineu SeaQ Snap Layout i el comportament de KDE torna.
+Enganxament de finestres propi de KDE
+Pausa les zones d'enganxament de KDE mentre l'imant està actiu
+Perquè només un imant estiri una finestra. La configuració de KDE no canvia: desactiveu això, desactiveu o elimineu SeaQ Snap Layout i l'enganxament de KDE torna.
+Doneu suport a SeaQ Snap Layout
+Si us agrada SeaQ Snap Layout, podeu donar suport al seu desenvolupament. Gràcies!
+Feu una donació amb PayPal
+Convida'm a un cafè

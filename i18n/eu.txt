@@ -9,8 +9,8 @@ Kendu eremua
 Kargatu txantiloia…
 Egin klik eremu batean hautatzeko · klik bikoitzak zatitzen du · arrastatu bereizleak
 %1 / %2 eremu
-KDE Snap Layout – Ezarpen-editorea
-KWin-erako · v%1
+SeaQ Snap Layout – Ezarpen-editorea
+KDE-erako · v%1
 Orokorra
 Itxura
 Portaera eta animazioa
@@ -82,7 +82,7 @@ Ezabatu
 Nola dabilen
 Heldu leiho bati titulu-barratik eta arrastatu gora. Barra jaisten da; askatu leihoa eremu batean eta eremu hori bera beteko du. Berriro ateratzen baduzu, lehengo tamaina berreskuratzen du.
 Ezarpen-editorea irekitzea
-Sistemaren ezarpenak → Leiho-kudeaketa → KWin scriptak → engranaje-ikonoa «KDE Snap Layout»-en ondoan → «Ireki Snap Layout-en ezarpen-editorea» → Ados.
+Sistemaren ezarpenak → Leiho-kudeaketa → KWin scriptak → engranaje-ikonoa «SeaQ Snap Layout»-en ondoan → «Ireki Snap Layout-en ezarpen-editorea» → Ados.
 Informazioa
 Bertsioa
 Egilea
@@ -102,8 +102,8 @@ Gorde
 Bai
 %1. eremua
 Askatu leihoa eremu batean
-KDE Snap Layout: aktibatu/desaktibatu
-KDE Snap Layout: probatu barra
+SeaQ Snap Layout: aktibatu/desaktibatu
+SeaQ Snap Layout: probatu barra
 Erdiak
 Bi heren
 Hiru zutabe
@@ -122,3 +122,146 @@ Ireki Snap Layout-en ezarpen-editorea
 Ezarpen azkarrak
 Barraren koloreak:
 Gainerako ezarpen guztiak – itxura, tamaina, animazioa, portaera eta zure diseinuak – Snap Layout-en ezarpen-editorean aldatzen dira.
+Ezarpenak
+Bat ere ez
+Aldatu
+Ohiko konbinazioak
+Zure konbinazioa
+Ezarri
+Kendu
+Atxikitze-barra
+Pantailaren ertzak
+Atxikitzeko modu gehiago
+Leihoen imana
+Teklatuko lasterbideak
+Lasterbideak
+Leihoak atxikitzeko lau modu. Bakoitza bere aldetik aktibatu eta desaktibatzen da.
+Eginbideak
+Bultzatu leiho bat ertz edo izkina baten kontra: maximizatu, erdiak, laurdenak.
+Leihoak elkarri eta pantailaren ertzei itsasten zaizkie.
+Atxiki leiho aktiboa tekla-konbinazioekin.
+Aurrebistak
+Erakutsi aurrebistak nabarmentze-kolorean
+Desaktibatuta: marko neutroa. Aurrebista guztiei aplikatzen zaie.
+Inoiz atxikitzen ez diren leiho-klaseak, bat lerro bakoitzeko.
+KDEk pantaila-ertzetarako bere ekintzak eta leihoak atxikitzeko bere sistema ditu. Funtzio bera hemen aktibatuta badago, desaktibatu KDErena: Sistemaren ezarpenak → Leiho-kudeaketa → Pantailaren ertzak, eta Leihoen portaera → Mugimendua.
+Bultzatu leiho bat pantailaren ertz edo izkina baten kontra eta zati hori beteko du. Atxikitze-barrarekin edo gabe dabil.
+Pantaila osoa
+Goiko erdia
+Desaktibatuta
+Beheko erdia
+Ezkerreko erdia
+Eskuineko erdia
+Ertzak eta izkinak
+Erabili pantailaren ertzak
+Atxikitze-barratik aparte. Ertz bakoitza bere aldetik aktibatzen da.
+Goiko ertza
+Ezkerreko eta eskuineko ertza: pantailaren erdia
+Beheko ertza: beheko erdia
+Izkinak: pantailaren laurdena
+Betetze adimenduna
+Egokitu dagoeneko atxikitako leihoei
+Behean leiho bat badago, goiko ertzak goiko erdia ematen du maximizatu beharrean. Erdiek eta laurdenek ere libre uzten dituzte atxikitako leihoak.
+Sentsazioa
+Ertzerainoko distantzia
+Kurtsoreak ertzetik zenbat hurbildu behar duen.
+Bultzatze-atzerapena
+Leihoak ertzaren kontra zenbat denbora egon behar duen – bultzada txiki bat. 0 = berehala.
+Izkinen tamaina
+Alde bakoitzeko izkinatzat hartzen den zatia.
+KDEren pantaila-ertzetako ekintzak aktibatuta daude oraindik, beraz bi laguntzailek erreakzionatzen dute arrastatze berean. Desaktibatu «Maximizatu» eta «Lauza» Sistemaren ezarpenak → Leiho-kudeaketa → Pantailaren ertzak atalean.
+Leiho bat mugitu edo tamainaz aldatzen duzun bitartean, haren ertzak inguruko leihoei eta pantailaren ertzei itsasten zaizkie.
+Imana
+Erabili leihoen imana
+Atxikitze-barratik eta pantailaren ertzetatik aparte.
+Atxikitze-distantzia
+Ertz batek zenbat hurbildu behar duen bere lekuan sartu aurretik.
+Itsatsi beste leihoei
+Itsatsi pantailaren ertzei
+Tamaina aldatzean ere bai
+Mantendu leihoen arteko tartea
+Leihoak Orokorra orriko «Leihoen arteko tartea»-n gelditzen dira, elkar ukitu ordez.
+KDEren leihoak atxikitzeko sistema ere aktibatuta dago. Sentsazio bateraturako, ezarri bere eremuak «Bat ere ez» balioan Sistemaren ezarpenak → Leiho-kudeaketa → Leihoen portaera → Mugimendua atalean.
+Atxiki leiho aktiboa teklatuarekin. KDEren lasterbide global arruntak dira – Sistemaren ezarpenak → Lasterbideak → KWin atalean ere aurkituko dituzu.
+Erabili teklatuko lasterbideak
+Desaktibatuta: teklak esleituta geratzen dira baina ez dute ezer egiten.
+Tekla-eskema
+Ekintza guztien teklak batera ezartzen ditu. Tekla bakarrak behean alda ditzakezu oraindik.
+Aplikatu
+KDEren lasterbide-zerbitzuak ez du erantzun. Teklak oraindik ezar ditzakezu Sistemaren ezarpenak → Lasterbideak → KWin atalean.
+Dagoeneko erabiltzen diren teklak
+%1 «%2»-k erabiltzen du.
+Honetarako nahi da: %1
+Hartu
+Hartu denak
+Utzi
+Jakitea ona da
+Atxikitze-ekintzek barraren tarte berak erabiltzen dituzte eta atxiki aurreko tamaina gogoratzen dute: «Berrezarri atxiki aurreko tamaina» aukerak itzultzen du.
+SeaQ Snap Layout: %1
+Atxiki ezkerreko erdian
+Atxiki eskuineko erdian
+Atxiki goiko erdian
+Atxiki beheko erdian
+Atxiki goiko ezkerreko laurdenean
+Atxiki goiko eskuineko laurdenean
+Atxiki beheko ezkerreko laurdenean
+Atxiki beheko eskuineko laurdenean
+Atxiki ezkerreko herenean
+Atxiki erdiko herenean
+Atxiki eskuineko herenean
+Atxiki ezkerreko bi herenetan
+Atxiki eskuineko bi herenetan
+Maximizatu edo berrezarri
+Zentratu leihoa
+Berrezarri atxiki aurreko tamaina
+Atxikitze-barra bai/ez
+Pantailaren ertzak bai/ez
+Leihoen imana bai/ez
+Probatu atxikitze-barra
+Laurdenak
+Herenak
+Leihoa
+Ctrl+Alt + tekla (lehenetsia)
+Meta+Ctrl+Alt + tekla
+Meta + tekla (KDE estiloa)
+Meta+Shift + tekla
+Ctrl+Shift+Alt + tekla
+Ctrl+Alt + zenbakizko teklatua
+Lasterbiderik ez
+Egin klik, eta gero Ados – ezarpen-editorea irekitzen da.
+Gainjartzearen aurkako erresistentzia
+Leiho bat beste baten barrura zenbat bultzatu behar den askatu aurretik. 0 = leihoak libreki gainjar daitezke.
+Berrezarri lehenetsia
+Berrezarri tekla guztiak
+Ekintza bakoitzari aukeratutako eskemaren tekla ematen dio berriro eta eskemak ez dituen teklak kentzen ditu.
+Berrezarri dena
+Ertz itsaskorrak
+Aldatu elkar ukitzen duten leihoen tamaina batera
+Leiho baten tamaina aldatzean, hura ukitzen duten leihoek ertz partekatua mugitzen dute harekin – ez da ezer gainjartzen, ez da hutsunerik sortzen.
+Mantendu pilatutako leihoak lerroan
+Bata bestearen gainean dauden leihoek ezkerreko eta eskuineko ertzak elkarrekin mantentzen dituzte; alboz albokoek goikoak eta behekoak.
+Astindu askatzeko
+Astindu sagua tamaina aldatzean eta beste leihoak atzera itzultzen dira.
+Iluntu beste leihoak
+Tamaina aldatzean, jarraitzen ez duten leihoak garden erakusten dira.
+Atxikitze-barraren aurrebista
+Leihoa non geratuko den erakusten du barrako zona bat nabarmenduta dagoen bitartean. Desaktibatuta: aurrebistarik ez.
+Pantaila-ertzen aurrebista
+Leihoa ertz edo izkina batean non geratuko den erakusten du. Desaktibatuta: aurrebistarik ez.
+Desaktibatuta: marko neutro bat – aktibatutako aurrebistetarako soilik.
+Pausatu KDEren ertz-lauzaketa eta haren aurrebista
+Desaktibatu hau KDEren ingerada nahiago baduzu – orduan desaktibatu goian pantaila-ertzen aurrebista.
+Eutsi betetzeko
+Eutsi ertzean leku librea betetzeko
+Bultzada labur batek erdia edo laurdena ematen du. Eutsi leihoari ertzean pixka bat gehiago eta hurrengo leihoraino haziko da – aurrebistak erakusten du.
+Eusteko denbora
+Zenbat denbora egon behar duen leihoak ertzean hazi aurretik.
+KDEren berezko ertz-lauzaketa
+KDEren maximizatzea eta lauzaketa pantaila-ertzetan – ingeradarekin – pausatuta daude SeaQ Snap Layout martxan dagoen bitartean, aurrebista bakarra ager dadin. Zure KDE ezarpenak ez dira aldatzen: desaktibatu hau, desgaitu edo kendu SeaQ Snap Layout eta KDEren portaera itzuliko da.
+KDEren berezko leiho-atxikitzea
+Pausatu KDEren atxikitze-zonak imana aktibo dagoen bitartean
+Iman bakar batek tira dezan leiho batetik. Zure KDE ezarpenak ez dira aldatzen: desaktibatu hau, desgaitu edo kendu SeaQ Snap Layout eta KDEren atxikitzea itzuliko da.
+Lagundu SeaQ Snap Layout
+SeaQ Snap Layout gustatzen bazaizu, bere garapena lagun dezakezu – eskerrik asko!
+Egin dohaintza PayPal bidez
+Gonbidatu kafe batera

@@ -9,8 +9,8 @@ Odstrani območje
 Naloži predlogo…
 Kliknite območje za izbor · dvoklik ga razdeli · vlecite ločilnike
 %1 od %2 območij
-KDE Snap Layout – Urejevalnik nastavitev
-za KWin · v%1
+SeaQ Snap Layout – Urejevalnik nastavitev
+za KDE · v%1
 Splošno
 Videz
 Obnašanje in animacija
@@ -82,7 +82,7 @@ Izbriši
 Kako deluje
 Primite okno za naslovno vrstico in ga povlecite navzgor. Vrstica se spusti; spustite okno na območje in zapolni natanko ta prostor. Ko ga znova izvlečete, dobi nazaj prejšnjo velikost.
 Odpiranje urejevalnika nastavitev
-Sistemske nastavitve → Upravljanje oken → Skripti KWin → ikona zobnika ob »KDE Snap Layout« → »Odpri urejevalnik nastavitev Snap Layout« → V redu.
+Sistemske nastavitve → Upravljanje oken → Skripti KWin → ikona zobnika ob »SeaQ Snap Layout« → »Odpri urejevalnik nastavitev Snap Layout« → V redu.
 Podatki
 Različica
 Avtor
@@ -102,8 +102,8 @@ Shrani
 Da
 Območje %1
 Spustite okno na območje
-KDE Snap Layout: vklop/izklop
-KDE Snap Layout: preizkusi vrstico
+SeaQ Snap Layout: vklop/izklop
+SeaQ Snap Layout: preizkusi vrstico
 Polovici
 Dve tretjini
 Trije stolpci
@@ -122,3 +122,146 @@ Odpri urejevalnik nastavitev Snap Layout
 Hitre nastavitve
 Barve vrstice:
 Vse ostale nastavitve – videz, velikost, animacijo, obnašanje in lastne razporeditve – spremenite v urejevalniku nastavitev Snap Layout.
+Nastavitve
+Brez
+Spremeni
+Običajne kombinacije
+Vaša kombinacija
+Nastavi
+Odstrani
+Vrstica za pripenjanje
+Robovi zaslona
+Več načinov pripenjanja
+Magnet oken
+Tipkovne bližnjice
+Bližnjice
+Štirje načini pripenjanja oken. Vsakega lahko vklopite in izklopite posebej.
+Funkcije
+Potisnite okno ob rob ali kot: razpni, polovice, četrtine.
+Okna se lepijo drugo na drugo in na robove zaslona.
+Pripnite dejavno okno s kombinacijami tipk.
+Predogledi
+Prikaži predoglede v poudarni barvi
+Izklopljeno: nevtralen okvir. Velja za vse predoglede.
+Razredi oken, ki se nikoli ne pripnejo, po en v vrstici.
+KDE ima lastna dejanja robov zaslona in lastno pripenjanje oken. Če je tukaj vklopljena ista funkcija, izklopite KDE-jevo: Sistemske nastavitve → Upravljanje oken → Robovi zaslona ter Vedenje oken → Premikanje.
+Potisnite okno ob rob ali kot zaslona in zapolni ta del. Deluje z vrstico ali brez nje.
+Celozaslonsko
+Zgornja polovica
+Izklopljeno
+Spodnja polovica
+Leva polovica
+Desna polovica
+Robovi in koti
+Uporabljaj robove zaslona
+Neodvisno od vrstice. Vsak rob lahko vklopite posebej.
+Zgornji rob
+Levi in desni rob: polovica zaslona
+Spodnji rob: spodnja polovica
+Koti: četrtina zaslona
+Pametno zapolnjevanje
+Prilagodi se že pripetim oknom
+Če je spodaj že okno, zgornji rob da zgornjo polovico namesto razpetja. Tudi polovice in četrtine pustijo pripeta okna prosta.
+Občutek
+Razdalja do roba
+Kako blizu roba mora priti kazalec.
+Zakasnitev pritiska
+Kako dolgo mora okno ležati ob robu – majhen sunek. 0 = takoj.
+Velikost kotov
+Del vsake stranice, ki šteje kot kot.
+KDE-jeva lastna dejanja robov zaslona so še vklopljena, zato se na isto vlečenje odzivata dva pomočnika. Izklopite »Razpni« in »Tlakuj« v Sistemske nastavitve → Upravljanje oken → Robovi zaslona.
+Medtem ko okno premikate ali mu spreminjate velikost, se njegovi robovi lepijo na bližnja okna in na robove zaslona.
+Magnet
+Uporabljaj magnet oken
+Neodvisno od vrstice in robov zaslona.
+Razdalja pripenjanja
+Kako blizu mora priti rob, preden se zaskoči.
+Lepi se na druga okna
+Lepi se na robove zaslona
+Tudi pri spreminjanju velikosti
+Ohrani razmik med okni
+Okna se ustavijo pri »Razmik med okni« s strani Splošno, namesto da bi se dotikala.
+Tudi KDE-jevo lastno pripenjanje oken je vklopljeno. Za enoten občutek nastavite njegove cone na »Brez« v Sistemske nastavitve → Upravljanje oken → Vedenje oken → Premikanje.
+Pripnite dejavno okno s tipkovnico. To so običajne globalne bližnjice KDE – najdete jih tudi v Sistemske nastavitve → Bližnjice → KWin.
+Uporabljaj tipkovne bližnjice
+Izklopljeno: tipke ostanejo dodeljene, a ne naredijo ničesar.
+Shema tipk
+Nastavi tipke vseh dejanj hkrati. Posamezne tipke lahko še vedno spremenite spodaj.
+Uveljavi
+Storitev bližnjic KDE se ni odzvala. Tipke lahko še vedno nastavite v Sistemske nastavitve → Bližnjice → KWin.
+Že uporabljene tipke
+%1 uporablja »%2«.
+Želeno za: %1
+Prevzemi
+Prevzemi vse
+Obdrži
+Dobro je vedeti
+Dejanja pripenjanja uporabljajo enake razmike kot vrstica in si zapomnijo velikost pred pripenjanjem: »Obnovi velikost pred pripenjanjem« jo vrne.
+SeaQ Snap Layout: %1
+Pripni v levo polovico
+Pripni v desno polovico
+Pripni v zgornjo polovico
+Pripni v spodnjo polovico
+Pripni v zgornjo levo četrtino
+Pripni v zgornjo desno četrtino
+Pripni v spodnjo levo četrtino
+Pripni v spodnjo desno četrtino
+Pripni v levo tretjino
+Pripni v srednjo tretjino
+Pripni v desno tretjino
+Pripni v levi dve tretjini
+Pripni v desni dve tretjini
+Razpni ali obnovi
+Postavi okno na sredino
+Obnovi velikost pred pripenjanjem
+Vrstica vklop/izklop
+Robovi zaslona vklop/izklop
+Magnet oken vklop/izklop
+Preizkusi vrstico
+Četrtine
+Tretjine
+Okno
+Ctrl+Alt + tipka (privzeto)
+Meta+Ctrl+Alt + tipka
+Meta + tipka (slog KDE)
+Meta+Shift + tipka
+Ctrl+Shift+Alt + tipka
+Ctrl+Alt + številčnica
+Brez bližnjic
+Kliknite, nato V redu – odpre se urejevalnik nastavitev.
+Upor proti prekrivanju
+Kako globoko morate okno potisniti v drugo, preden ga spusti. 0 = okna se lahko prosto prekrivajo.
+Ponastavi na privzeto
+Ponastavi vse tipke
+Vsakemu dejanju znova dodeli tipko izbrane sheme in odstrani tipke, ki jih shema nima.
+Ponastavi vse
+Lepljivi robovi
+Skupaj spreminjaj velikost oken, ki se dotikajo
+Ko spremenite velikost okna, okna, ki se ga dotikajo, premaknejo skupni rob z njim – nič se ne prekriva, ne nastane reža.
+Zložena okna naj ostanejo v liniji
+Okna drugo nad drugim držijo leve in desne robove skupaj, okna drugo ob drugem zgornje in spodnje.
+Stresite za sprostitev
+Med spreminjanjem velikosti stresite miško in druga okna skočijo nazaj.
+Zatemni druga okna
+Med spreminjanjem velikosti so okna, ki ne sledijo, prosojna.
+Predogled vrstice za pripenjanje
+Pokaže, kam pristane okno, medtem ko je območje vrstice poudarjeno. Izklopljeno: brez predogleda.
+Predogled robov zaslona
+Pokaže, kam pristane okno ob robu ali v kotu. Izklopljeno: brez predogleda.
+Izklopljeno: nevtralen okvir – samo za vklopljene predoglede.
+Začasno ustavi KDE-jevo tlakovanje robov in njegov predogled
+Izklopite, če vam je ljubši KDE-jev obris – nato zgoraj izklopite predogled robov zaslona.
+Pridrži za zapolnitev
+Pridrži ob robu za zapolnitev prostega prostora
+Kratek potisk da polovico ali četrtino. Pridržite okno ob robu malo dlje in zraste do naslednjega okna – predogled to pokaže.
+Čas pridržanja
+Kako dolgo mora okno ostati ob robu, preden zraste.
+KDE-jevo lastno tlakovanje robov
+KDE-jevo povečevanje in tlakovanje ob robovih zaslona – z obrisom – je začasno ustavljeno, dokler teče SeaQ Snap Layout, da se prikaže le en predogled. Vaše nastavitve KDE se ne spremenijo: izklopite to, onemogočite ali odstranite SeaQ Snap Layout in KDE-jevo vedenje je nazaj.
+KDE-jevo lastno pripenjanje oken
+Začasno ustavi KDE-jeva območja pripenjanja, ko je magnet vklopljen
+Da okno vleče le en magnet. Vaše nastavitve KDE se ne spremenijo: izklopite to, onemogočite ali odstranite SeaQ Snap Layout in KDE-jevo pripenjanje je nazaj.
+Podprite SeaQ Snap Layout
+Če vam je SeaQ Snap Layout všeč, lahko podprete njegov razvoj – hvala!
+Donirajte s PayPal
+Kupi mi kavo
