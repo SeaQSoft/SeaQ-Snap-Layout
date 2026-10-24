@@ -27,6 +27,20 @@
         <property name="icon"><iconset theme="configure"/></property>
         <property name="iconSize"><size><width>22</width><height>22</height></size></property>
         <property name="minimumSize"><size><width>0</width><height>46</height></size></property>
+        <property name="checkable"><bool>true</bool></property>
+        <property name="toolTip"><string>Click, then OK – the settings editor opens.</string></property>
+        <!-- Once clicked the button is filled with the system accent color. The
+             text uses the system's "selected text" color, which Plasma picks to
+             match the accent: white on dark accents, black on light ones. -->
+        <property name="styleSheet"><string notr="true">QPushButton:checked {
+  background-color: palette(highlight);
+  color: palette(highlighted-text);
+  border: 1px solid palette(highlight);
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 4px 12px;
+}
+QPushButton:checked:hover { border: 1px solid palette(highlighted-text); }</string></property>
        </widget>
       </item>
       <item>
@@ -95,9 +109,9 @@
   </connection>
   <connection>
    <sender>openButton</sender>
-   <signal>clicked()</signal>
+   <signal>toggled(bool)</signal>
    <receiver>readyHint</receiver>
-   <slot>show()</slot>
+   <slot>setVisible(bool)</slot>
   </connection>
  </connections>
 </ui>

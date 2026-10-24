@@ -2,18 +2,18 @@
     "KPlugin": {
         "Authors": [
             {
-                "Name": "Swenix-dev"
+                "Name": "SeaQ"
             }
         ],
         "Category": "Window Management",
-        "Description": "Snap layouts for KWin: drag a window to the top edge of the screen and drop it onto a zone. Custom layouts, drag & drop editor, system colors.",
+        "Description": "Snap windows the way you like: snap bar with layouts at the top edge, screen edges and corners, a window magnet with sticky edges and keyboard shortcuts – each one can be switched on its own.",
         "EnabledByDefault": false,
         "Icon": "preferences-system-windows",
         "Id": "kdesnaplayout",
         "License": "GPL-3.0-or-later",
-        "Name": "KDE Snap Layout",
-        "Version": "1.6.5",
-        "Description[de]": "Snap-Layouts für KWin: Fenster an den oberen Bildschirmrand ziehen und auf einer Zone ablegen. Eigene Layouts, Drag-&-Drop-Editor, Systemfarben.",
+        "Name": "SeaQ Snap Layout (for KDE)",
+        "Version": "1.9.0",
+        "Description[de]": "Fenster einrasten, wie du willst: Snap-Leiste mit Layouts am oberen Rand, Bildschirmkanten und Ecken, Fenster-Magnet mit klebenden Kanten und Tastenkürzel – alles einzeln schaltbar.",
         "Website": "https://github.com/Swenix-dev/KDE-Snap-Layout",
         "BugReportUrl": "https://github.com/Swenix-dev/KDE-Snap-Layout/issues"
     },

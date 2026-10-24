@@ -46,19 +46,19 @@ ColumnLayout {
     Flow {
         Layout.fillWidth: true
         spacing: 8
-        Button {
+        AccentButton {
             text: I.tr("Split side by side")
             icon.name: "view-split-left-right"
             enabled: ed.zoneCount < ed.maxZones
             onClicked: ed.splitSelected("v")
         }
-        Button {
+        AccentButton {
             text: I.tr("Split top and bottom")
             icon.name: "view-split-top-bottom"
             enabled: ed.zoneCount < ed.maxZones
             onClicked: ed.splitSelected("h")
         }
-        Button {
+        AccentButton {
             text: I.tr("Remove zone")
             icon.name: "edit-delete"
             enabled: ed.hasSelection && ed.zoneCount > 1

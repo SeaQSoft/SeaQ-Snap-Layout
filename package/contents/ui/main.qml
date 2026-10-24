@@ -1,18 +1,21 @@
 import QtQuick
 import QtCore
+import QtQml.Models
 import org.kde.kwin
 import org.kde.plasma.core as PlasmaCore
 import "../code/layouts.js" as L
 import "../code/i18n.js" as I
+import "../code/edges.js" as E
+import "../code/keys.js" as K
 
-// KDE Snap Layout
+// SeaQ Snap Layout
 // Drag a window towards the top edge, the snap bar slides down, drop the
 // window on a zone and it gets resized into place.
 Item {
     id: root
 
-    readonly property string version: "1.6.5"
-    readonly property string author: "Swenix-dev"
+    readonly property string version: "1.9.0"
+    readonly property string author: "SeaQ"
 
     property alias settings: cfg
     property alias layoutModel: layoutsList
@@ -32,11 +35,25 @@ Item {
         triggerDistance: 24, twoStage: true, peekDistance: 140,
         activationWidth: 100, showDelay: 40, hideDelay: 150, hideMargin: 56,
         slideDistance: 12, slideInDuration: 220, slideOutDuration: 150,
-        easingStyle: 0, fadeEnabled: true, editorSnapping: true
+        easingStyle: 0, fadeEnabled: true, editorSnapping: true,
+        previewAccent: true,
+        edgeEnabled: true, edgeTop: 0, edgeSides: true, edgeBottom: true, edgeCorners: true,
+        edgeSmart: true, edgePreview: true, edgeDistance: 4, edgeCornerSize: 20, edgeDelay: 60,
+        magnetEnabled: true, magnetDistance: 16, magnetWindows: true, magnetScreen: true,
+        magnetResize: true, magnetGap: false, magnetResist: 48,
+        stickyEnabled: true, stickyAligned: true, stickyShake: true, stickyDim: true,
+        edgeFill: true, edgeFillDelay: 700, kdeEdgesOff: true, kdeSnapOff: true,
+        keysEnabled: true, keyScheme: "ctrlalt"
     })
     readonly property var groupGeneral: ["snapEnabled", "showPreview", "restoreSize", "windowGap", "edgeMargin"]
     readonly property var groupAppearance: ["themeMode", "useSystemAccent", "customAccent", "barOpacity",
-        "barScale", "thumbWidth", "cornerRadius", "perRow", "showLayoutName"]
+        "barScale", "thumbWidth", "cornerRadius", "perRow", "showLayoutName", "previewAccent"]
+    readonly property var groupEdges: ["edgeEnabled", "edgeTop", "edgeSides", "edgeBottom", "edgeCorners",
+        "edgeSmart", "edgePreview", "edgeDistance", "edgeCornerSize", "edgeDelay",
+        "edgeFill", "edgeFillDelay", "kdeEdgesOff"]
+    readonly property var groupMagnet: ["magnetEnabled", "magnetDistance", "magnetWindows", "magnetScreen",
+        "magnetResize", "magnetGap", "magnetResist",
+        "stickyEnabled", "stickyAligned", "stickyShake", "stickyDim", "kdeSnapOff"]
     readonly property var groupBehavior: ["triggerDistance", "twoStage", "peekDistance", "activationWidth",
         "showDelay", "hideDelay", "hideMargin", "slideDistance", "slideInDuration", "slideOutDuration",
         "easingStyle", "fadeEnabled"]
@@ -83,6 +100,40 @@ Item {
         property bool fadeEnabled: true
 
         property bool editorSnapping: true
+        property bool previewAccent: true    // previews in the accent color, or neutral
+
+        // screen edges: push a window against an edge or corner
+        property bool edgeEnabled: true
+        property int edgeTop: 0              // 0 maximize, 1 fullscreen, 2 top half, 3 nothing
+        property bool edgeSides: true
+        property bool edgeBottom: true
+        property bool edgeCorners: true
+        property bool edgeSmart: true
+        property bool edgePreview: true
+        property int edgeDistance: 4
+        property int edgeCornerSize: 20      // percent of the screen side
+        property int edgeDelay: 60
+
+        // window magnet: edges stick to other windows and the screen edge
+        property bool magnetEnabled: true
+        property int magnetDistance: 16
+        property bool magnetWindows: true
+        property bool magnetScreen: true
+        property bool magnetResize: true
+        property bool magnetGap: false
+        property int magnetResist: 48        // px a window has to be pushed into another one
+        property bool stickyEnabled: true    // touching windows resize together
+        property bool stickyAligned: true    // stacked windows keep their edges in line
+        property bool stickyShake: true      // shake the mouse to let them go
+        property bool stickyDim: true        // fade the windows that do not follow
+        property bool edgeFill: true         // held longer at an edge: grow up to the next window
+        property int edgeFillDelay: 700
+        property bool kdeEdgesOff: true      // KDE's own edge tiling is paused while this script runs
+        property bool kdeSnapOff: true       // KDE's own snap zones are paused while the magnet is on
+
+        property bool keysEnabled: true
+        property string keyScheme: "ctrlalt"   // last scheme applied in the editor
+
         property string layoutsJson: ""
         property bool lastOpenFlag: false
         property int lastGearTheme: -1
@@ -118,6 +169,7 @@ Item {
         readonly property color text: sysPal.windowText
         readonly property color accent: sysPal.highlight
         readonly property color accentText: sysPal.highlightedText
+        readonly property color negative: "#da4453"           // Breeze's negative text color
         readonly property color card: Qt.tint(sysPal.window, Qt.rgba(sysPal.windowText.r, sysPal.windowText.g, sysPal.windowText.b, 0.045))
         readonly property color sidebar: Qt.tint(sysPal.window, Qt.rgba(sysPal.windowText.r, sysPal.windowText.g, sysPal.windowText.b, 0.025))
         readonly property color line: Qt.rgba(sysPal.windowText.r, sysPal.windowText.g, sysPal.windowText.b, 0.12)
@@ -200,6 +252,25 @@ Item {
     property rect pendingRect: Qt.rect(0, 0, 0, 0)
     property int reapplyCount: 0
 
+    // screen edges and window magnet
+    property string edgePending: ""          // edge under the cursor, waiting for edgeDelay
+    property string edgeActive: ""           // edge that will be used on drop
+    property int edgeStage: 1                // 2 = held long enough to fill the free space
+    property var fillOthers: []              // rects of the other windows (hold to fill)
+    property var dragOthers: []              // rects of the other windows (magnet)
+    property var dragBlockers: []            // rects of tiled windows (smart fill)
+    property var lastMagnet: null            // last rect the magnet produced
+    property var resizeWin: null
+    property var resizeStart: null
+    property var resizeLast: null            // last rect KWin reported while resizing
+
+    // sticky edges: windows that follow the one being resized
+    property var stickyLinks: []             // [{ w, orig, req, link, opacity, id }]
+    property var stickyFaded: []             // [{ w, opacity }]
+    property var stickyMoved: ({ l: false, r: false, t: false, b: false })
+    property var stickyShakeW: null
+    property var stickyShakeH: null
+
     // ---------------------------------------------------------------- geometry
     function refreshVirtual() {
         const s = Workspace.screens;
@@ -252,6 +323,242 @@ Item {
         return !isExcluded(w);
     }
 
+    function rectOf(g) { return E.rect(g.x, g.y, g.width, g.height); }
+
+    function onCurrentDesktop(w) {
+        if (w.onAllDesktops) return true;
+        const list = w.desktops;
+        if (!list || list.length === undefined || list.length === 0) return true;
+        const cur = Workspace.currentDesktop;
+        for (let i = 0; i < list.length; i++) {
+            if (list[i] === cur) return true;
+            try { if (cur && list[i] && list[i].id === cur.id) return true; } catch (e) {}
+        }
+        return false;
+    }
+
+    function areaOf(w) {
+        const out = w && w.output ? w.output : curOutput;
+        const a = Workspace.clientArea(KWin.MaximizeArea, out, Workspace.currentDesktop);
+        return E.rect(a.x, a.y, a.width, a.height);
+    }
+
+    // windows the magnet can stick to
+    function otherRects(w, skip) {
+        const out = [];
+        const list = Workspace.stackingOrder || [];
+        for (let i = 0; i < list.length; i++) {
+            const o = list[i];
+            if (!o || o === w || !o.normalWindow || o.minimized || o.fullScreen || !onCurrentDesktop(o)) continue;
+            if (skip && skip.indexOf(o) >= 0) continue;
+            out.push(rectOf(o.frameGeometry));
+        }
+        return out;
+    }
+
+    // Windows that are tiled on this screen: snapped by us and still in place,
+    // or sitting against at least two edges of the free area (e.g. quick tiled).
+    function dockedRects(w) {
+        const out = [];
+        const area = areaGeo;
+        const list = Workspace.stackingOrder || [];
+        for (let i = 0; i < list.length; i++) {
+            const o = list[i];
+            if (!o || o === w || !o.normalWindow || o.minimized || o.fullScreen || !onCurrentDesktop(o)) continue;
+            if (o.output && curOutput && o.output !== curOutput) continue;
+            const g = o.frameGeometry;
+            const rec = snapped[String(o.internalId)];
+            if (rec && sameRect(g, rec.rect)) { out.push(rectOf(g)); continue; }
+            if (sameRect(g, area)) continue;                       // maximized: not a tile
+            const tol = 4;
+            const touches = (Math.abs(g.x - area.x) <= tol ? 1 : 0)
+                          + (Math.abs(g.y - area.y) <= tol ? 1 : 0)
+                          + (Math.abs(g.x + g.width - area.x - area.width) <= tol ? 1 : 0)
+                          + (Math.abs(g.y + g.height - area.y - area.height) <= tol ? 1 : 0);
+            if (touches >= 2) out.push(rectOf(g));
+        }
+        return out;
+    }
+
+    // edges where another screen continues: the cursor passes over there
+    function blockedEdges(p) {
+        const b = { left: false, right: false, top: false, bottom: false };
+        const s = Workspace.screens || [];
+        for (let i = 0; i < s.length; i++) {
+            const g = s[i].geometry;
+            if (g.x === scrGeo.x && g.y === scrGeo.y && g.width === scrGeo.width && g.height === scrGeo.height) continue;
+            const inY = p.y >= g.y && p.y < g.y + g.height;
+            const inX = p.x >= g.x && p.x < g.x + g.width;
+            if (inY && Math.abs(g.x + g.width - scrGeo.x) <= 2) b.left = true;
+            if (inY && Math.abs(g.x - (scrGeo.x + scrGeo.width)) <= 2) b.right = true;
+            if (inX && Math.abs(g.y + g.height - scrGeo.y) <= 2) b.top = true;
+            if (inX && Math.abs(g.y - (scrGeo.y + scrGeo.height)) <= 2) b.bottom = true;
+        }
+        return b;
+    }
+
+    function currentEdge(p) {
+        return E.edgeAt(p, rectOf(scrGeo), {
+            distance: cfg.edgeDistance, cornerPercent: cfg.edgeCornerSize,
+            top: cfg.edgeTop !== 3, sides: cfg.edgeSides, bottom: cfg.edgeBottom, corners: cfg.edgeCorners
+        }, blockedEdges(p));
+    }
+
+    // What dropping on an edge does: { kind: "max" | "full" | "rect", rect }
+    function edgePlan(edge) {
+        if (!edge) return null;
+        let name = edge;
+        if (edge === "top") {
+            if (cfg.edgeTop === 1) return { kind: "full", rect: rectOf(scrGeo) };
+            if (cfg.edgeTop === 3) return null;
+            name = cfg.edgeTop === 2 ? "top" : "max";
+        }
+        const area = rectOf(areaGeo);
+        let r = name === "max" ? area : L.targetRect(area, E.zoneFor(name), cfg.windowGap, cfg.edgeMargin);
+        r = E.rect(r.x, r.y, r.width, r.height);
+        let kind = name === "max" ? "max" : "rect";
+        if (cfg.edgeSmart && dragBlockers.length > 0) {
+            const fitted = E.fitFree(r, edge, dragBlockers, area);
+            if (!sameRect(fitted, r)) { r = fitted; kind = "rect"; }
+        }
+        if (edgeStage === 2 && cfg.edgeFill && kind === "rect") {
+            const m = cfg.edgeMargin;
+            const bounds = E.rect(area.x + m, area.y + m, area.width - 2 * m, area.height - 2 * m);
+            r = E.fillFree(edge, r, fillOthers, bounds, cfg.windowGap);
+        }
+        return { kind: kind, rect: r };
+    }
+
+    function setEdge(edge) {
+        if (edge === edgePending) return;
+        edgePending = edge;
+        edgeTimer.stop();
+        fillTimer.stop();
+        edgeStage = 1;
+        if (!edge) { edgeActive = ""; updatePreview(); return; }
+        if (cfg.edgeDelay <= 0) { edgeActive = edge; updatePreview(); startFillTimer(); }
+        else { edgeActive = ""; updatePreview(); edgeTimer.restart(); }
+    }
+
+    function magnetOptions() {
+        return { distance: cfg.magnetDistance, windows: cfg.magnetWindows, screen: cfg.magnetScreen,
+                 gap: cfg.magnetGap ? cfg.windowGap : 0, resist: cfg.magnetResist };
+    }
+
+    // geometry KWin reports with the step; frameGeometry can lag behind on Wayland
+    function stepRect(w, r) {
+        if (r && r.width > 0 && r.height > 0) return E.rect(r.x, r.y, r.width, r.height);
+        return rectOf(w.frameGeometry);
+    }
+
+    function applyMagnet(w, edges, cur) {
+        const g = cur || rectOf(w.frameGeometry);
+        const r = E.magnet(g, dragOthers, areaOf(w), magnetOptions(), edges);
+        lastMagnet = r;
+        if (Math.abs(r.x - g.x) >= 1 || Math.abs(r.y - g.y) >= 1 || Math.abs(r.width - g.width) >= 1 || Math.abs(r.height - g.height) >= 1)
+            w.frameGeometry = Qt.rect(r.x, r.y, r.width, r.height);
+    }
+
+    function onStepped(w, r) {
+        if (w === dragWin) {
+            updateDrag();
+            const busy = edgePending !== "" || (barState === 2 && hoverZone >= 0);
+            if (cfg.magnetEnabled && !busy) applyMagnet(w, { l: true, r: true, t: true, b: true }, stepRect(w, r));
+            else lastMagnet = null;
+        } else if (w === resizeWin && resizeStart) {
+            const cur = stepRect(w, r);
+            resizeLast = cur;
+            // The window being resized belongs to KWin until the button is let go;
+            // the magnet result is only applied then. The neighbours follow live.
+            if (cfg.magnetEnabled && cfg.magnetResize) {
+                const edges = E.resizedEdges(resizeStart, cur);
+                lastMagnet = (edges.l || edges.r || edges.t || edges.b)
+                    ? E.magnet(cur, dragOthers, areaOf(w), magnetOptions(), edges) : null;
+            }
+            if (stickyLinks.length) stickyStep(w, cur);
+        }
+    }
+
+    // ------------------------------------------------------------ sticky edges
+    function stickyStart(w) {
+        stickyLinks = []; stickyFaded = [];
+        stickyMoved = { l: false, r: false, t: false, b: false };
+        const a = rectOf(w.frameGeometry);
+        stickyShakeW = { val: a.width, turnVal: a.width, dir: 0, count: 0 };
+        stickyShakeH = { val: a.height, turnVal: a.height, dir: 0, count: 0 };
+        const area = areaOf(w);
+        const opts = { tol: Math.max(0, cfg.windowGap) + 6, aligned: cfg.stickyAligned, area: area };
+        const links = [], faded = [];
+        const list = Workspace.stackingOrder || [];
+        for (let i = 0; i < list.length; i++) {
+            const o = list[i];
+            if (!o || o === w || !o.normalWindow || o.minimized || !onCurrentDesktop(o)) continue;
+            if (o.output && w.output && o.output !== w.output) continue;
+            const b = rectOf(o.frameGeometry);
+            const big = o.fullScreen || sameRect(o.frameGeometry, area);
+            const link = (big || !o.resizeable || isExcluded(o)) ? null : E.stickyLink(a, b, opts);
+            if (link) links.push({ w: o, orig: b, req: b, link: link, opacity: o.opacity, id: String(o.internalId) });
+            else faded.push({ w: o, opacity: o.opacity, done: false });
+        }
+        stickyLinks = links;
+        stickyFaded = links.length ? faded : [];
+    }
+
+    function stickyLimits(o, orig, area) {
+        let minW = 50, minH = 50, maxW = 1e6, maxH = 1e6;
+        try { if (o.minSize) { minW = Math.max(o.minSize.width || 0, Math.min(50, orig.width)); minH = Math.max(o.minSize.height || 0, Math.min(50, orig.height)); } } catch (e) {}
+        try { if (o.maxSize && o.maxSize.width > 0) { maxW = o.maxSize.width; maxH = o.maxSize.height; } } catch (e) {}
+        return { minW: minW, minH: minH, maxW: Math.max(minW, maxW), maxH: Math.max(minH, maxH), area: area };
+    }
+
+    function stickyStep(w, cur) {
+        const s0 = resizeStart;
+        stickyMoved = {
+            l: stickyMoved.l || Math.abs(cur.x - s0.x) >= 1,
+            r: stickyMoved.r || Math.abs(cur.x + cur.width - s0.x - s0.width) >= 1,
+            t: stickyMoved.t || Math.abs(cur.y - s0.y) >= 1,
+            b: stickyMoved.b || Math.abs(cur.y + cur.height - s0.y - s0.height) >= 1
+        };
+        if (cfg.stickyShake) {
+            const turns = Math.max(E.shakeStep(stickyShakeW, cur.width, 200), E.shakeStep(stickyShakeH, cur.height, 200));
+            if (turns >= 4) { stickyEnd(true); return; }
+        }
+        const area = areaOf(w);
+        for (let i = 0; i < stickyLinks.length; i++) {
+            const k = stickyLinks[i];
+            const g = E.stickyRect(k.orig, k.link, cur, stickyMoved, stickyLimits(k.w, k.orig, area));
+            if (g.x !== k.req.x || g.y !== k.req.y || g.width !== k.req.width || g.height !== k.req.height) {
+                k.req = g;
+                k.w.frameGeometry = Qt.rect(g.x, g.y, g.width, g.height);
+            }
+        }
+        if (cfg.stickyDim) {
+            for (let j = 0; j < stickyFaded.length; j++) {
+                const f = stickyFaded[j];
+                if (!f.done) { f.done = true; try { f.w.opacity = f.opacity * 0.45; } catch (e) {} }
+            }
+        }
+    }
+
+    // undo: put the neighbours back (shaken loose)
+    function stickyEnd(undo) {
+        for (let i = 0; i < stickyLinks.length; i++) {
+            const k = stickyLinks[i];
+            if (undo) k.w.frameGeometry = Qt.rect(k.orig.x, k.orig.y, k.orig.width, k.orig.height);
+            else {
+                // a window we snapped stays "snapped" in its new place
+                const rec = snapped[k.id];
+                if (rec && sameRect(Qt.rect(k.orig.x, k.orig.y, k.orig.width, k.orig.height), rec.rect))
+                    rec.rect = { x: k.req.x, y: k.req.y, width: k.req.width, height: k.req.height };
+            }
+        }
+        for (let j = 0; j < stickyFaded.length; j++) {
+            const f = stickyFaded[j];
+            if (f.done) { try { f.w.opacity = f.opacity; } catch (e) {} }
+        }
+        stickyLinks = []; stickyFaded = [];
+    }
+
     // ----------------------------------------------------------- window hooks
     // Handlers are kept per window and disconnected when the script unloads.
     // Otherwise windows keep calling into a destroyed script after a reload.
@@ -265,7 +572,7 @@ Item {
         const fns = {
             w: w,
             started: function () { if (root) root.onMoveStarted(w); },
-            stepped: function () { if (root && root.dragWin === w) root.updateDrag(); },
+            stepped: function (r) { if (root) root.onStepped(w, r); },
             finished: function () { if (root) root.onMoveFinished(w); }
         };
         hookFns[id] = fns;
@@ -287,10 +594,26 @@ Item {
         hooked = ({});
     }
 
-    Component.onDestruction: unhookAll()
+    Component.onDestruction: { restoreKdeOptions(); unhookAll(); }
 
     function onMoveStarted(w) {
-        if (!cfg.snapEnabled || !w.move || !isEligible(w)) return;
+        if (!w || !isEligible(w)) return;
+        if (!w.move) {
+            // resizing: the magnet and the sticky edges take part
+            const mag = cfg.magnetEnabled && cfg.magnetResize;
+            if (w.resize && (mag || cfg.stickyEnabled)) {
+                resizeWin = w;
+                resizeStart = rectOf(w.frameGeometry);
+                resizeLast = null;
+                lastMagnet = null;
+                if (cfg.stickyEnabled) stickyStart(w); else stickyLinks = [];
+                // windows that follow the resize are no magnet targets
+                const skip = stickyLinks.map(function (k) { return k.w; });
+                dragOthers = mag ? otherRects(w, skip) : [];
+            }
+            return;
+        }
+        if (!cfg.snapEnabled && !cfg.edgeEnabled && !cfg.magnetEnabled) return;
         reapplyTimer.stop();
         pendingWin = null;
         demoStep.stop();
@@ -312,26 +635,62 @@ Item {
         dragStartSize = { w: startW, h: startH };
 
         dragWin = w;
+        refreshScreen(outputAt(Workspace.cursorPos));
+        dragOthers = cfg.magnetEnabled ? otherRects(w) : [];
+        dragBlockers = cfg.edgeEnabled && cfg.edgeSmart ? dockedRects(w) : [];
+        fillOthers = cfg.edgeEnabled && cfg.edgeFill ? otherRects(w) : [];
+        edgeStage = 1;
+        lastMagnet = null;
+        edgePending = ""; edgeActive = "";
         setHover(-1, -1);
         barState = 0;
-        refreshScreen(outputAt(Workspace.cursorPos));
-        overlayShow();
+        if (cfg.snapEnabled || cfg.edgeEnabled) overlayShow();
         updateDrag();
     }
 
     function onMoveFinished(w) {
+        if (w === resizeWin) {
+            const m = lastMagnet;
+            if (m && !sameRect(resizeLast || w.frameGeometry, m)) {
+                w.frameGeometry = Qt.rect(m.x, m.y, m.width, m.height);
+                if (stickyLinks.length) stickyStep(w, m);
+            }
+            stickyEnd(false);
+            resizeWin = null; resizeStart = null; resizeLast = null; lastMagnet = null;
+            return;
+        }
         if (w !== dragWin) return;
         const li = hoverLayout, zi = hoverZone;
         const area = Qt.rect(areaGeo.x, areaGeo.y, areaGeo.width, areaGeo.height);
-        const z = (barState === 2 && zi >= 0 && li >= 0 && li < barLayouts.length) ? barLayouts[li].zones[zi] : null;
+        const z = (cfg.snapEnabled && barState === 2 && zi >= 0 && li >= 0 && li < barLayouts.length) ? barLayouts[li].zones[zi] : null;
+        const plan = !z && edgeActive ? edgePlan(edgeActive) : null;
+        const mag = cfg.magnetEnabled ? lastMagnet : null;
         endDrag();
         if (z) snapWindow(w, z, area);
+        else if (plan) applyPlan(w, plan);
+        else if (mag && !sameRect(w.frameGeometry, mag)) w.frameGeometry = Qt.rect(mag.x, mag.y, mag.width, mag.height);
+    }
+
+    function applyPlan(w, plan) {
+        if (plan.kind === "full") {
+            try { w.fullScreen = true; } catch (e) {}
+        } else if (plan.kind === "max") {
+            try { w.setMaximize(true, true); } catch (e) {}
+        } else {
+            snapWindowRect(w, plan.rect, dragStartSize);
+        }
     }
 
     function endDrag() {
         dragWin = null;
         showTimer.stop();
         hideTimer.stop();
+        edgeTimer.stop();
+        fillTimer.stop();
+        edgeStage = 1;
+        edgePending = "";
+        edgeActive = "";
+        lastMagnet = null;
         barState = 0;
         setHover(-1, -1);
         closeTimer.restart();
@@ -339,10 +698,16 @@ Item {
 
     function snapWindow(w, z, area) {
         const r = L.targetRect(area, z, cfg.windowGap, cfg.edgeMargin);
-        const rect = Qt.rect(r.x, r.y, r.width, r.height);
+        snapWindowRect(w, r, dragStartSize);
+    }
+
+    // Puts a window into place and remembers its free size for later.
+    function snapWindowRect(w, r, pre) {
+        const rect = Qt.rect(Math.round(r.x), Math.round(r.y), Math.round(r.width), Math.round(r.height));
+        try { if (w.tile) w.tile = null; } catch (e) {}
         try { if (w.maximizable) w.setMaximize(false, false); } catch (e) {}
         w.frameGeometry = rect;
-        const pre = dragStartSize || { w: rect.width, h: rect.height };
+        pre = pre || { w: rect.width, h: rect.height };
         snapped[String(w.internalId)] = { w: pre.w, h: pre.h, rect: { x: rect.x, y: rect.y, width: rect.width, height: rect.height } };
         // KWin's own top-edge maximize or quick tiling can kick in right after
         // the drop. Re-apply our geometry a few times to win that race.
@@ -359,10 +724,18 @@ Item {
         const out = outputAt(p);
         if (out !== curOutput) refreshScreen(out);
 
+        const edge = dragWin && cfg.edgeEnabled ? currentEdge(p) : "";
+        setEdge(edge);
+        if (cfg.snapEnabled || demoMode) updateBar(p, edge);
+    }
+
+    function updateBar(p, edge) {
         const relY = p.y - areaGeo.y;
         const relX = p.x - scrGeo.x;
         const half = scrGeo.width * cfg.activationWidth / 200;
-        const inX = Math.abs(relX - scrGeo.width / 2) <= half;
+        // a corner belongs to the screen edges, the bar stays out of it
+        const inCorner = edge.length === 2;
+        const inX = Math.abs(relX - scrGeo.width / 2) <= half && !inCorner;
 
         if (barState === 2) {
             const bx = scrGeo.x + (scrGeo.width - snapBar.fullW) / 2;
@@ -399,8 +772,20 @@ Item {
         if (li === hoverLayout && zi === hoverZone) return;
         hoverLayout = li;
         hoverZone = zi;
-        if (zi >= 0 && li >= 0 && li < barLayouts.length && cfg.showPreview) {
-            const r = L.targetRect(areaGeo, barLayouts[li].zones[zi], cfg.windowGap, cfg.edgeMargin);
+        updatePreview();
+    }
+
+    // One preview for everything: a hovered bar zone wins over a screen edge.
+    function updatePreview() {
+        let r = null;
+        const li = hoverLayout, zi = hoverZone;
+        if (zi >= 0 && li >= 0 && li < barLayouts.length) {
+            if (cfg.showPreview) r = L.targetRect(areaGeo, barLayouts[li].zones[zi], cfg.windowGap, cfg.edgeMargin);
+        } else if (edgeActive && cfg.edgePreview) {
+            const plan = edgePlan(edgeActive);
+            if (plan) r = plan.rect;
+        }
+        if (r) {
             previewRect = Qt.rect(r.x - scrGeo.x, r.y - scrGeo.y, r.width, r.height);
             previewVisible = true;
         } else {
@@ -472,12 +857,12 @@ Item {
     // was tried: KWin never activates its own internal windows, so the
     // decoration stays grey (inactive) and offers no maximize. Drawing the
     // buttons ourselves from the active decoration theme looks better.
-    property int dlgW: 1000
-    property int dlgH: 720
+    property int dlgW: 1200
+    property int dlgH: 880
     property bool dlgMaximized: false
     property var dlgSaved: null
     property var dlgDrag: null
-    readonly property int dlgMinW: 760
+    readonly property int dlgMinW: 820
     readonly property int dlgMinH: 480
 
     function openSettings() {
@@ -488,11 +873,12 @@ Item {
         }
         refreshScreen(outputAt(Workspace.cursorPos));
         dlgMaximized = false;
-        dlgW = Math.min(areaGeo.width, Math.max(dlgMinW, Math.min(1040, Math.round(areaGeo.width * 0.9))));
-        dlgH = Math.min(areaGeo.height, Math.max(dlgMinH, Math.min(760, Math.round(areaGeo.height * 0.9))));
+        dlgW = Math.min(areaGeo.width, Math.max(dlgMinW, Math.min(1200, Math.round(areaGeo.width * 0.92))));
+        dlgH = Math.min(areaGeo.height, Math.max(dlgMinH, Math.min(880, Math.round(areaGeo.height * 0.92))));
         layoutsDialog.x = Math.round(areaGeo.x + (areaGeo.width - dlgW) / 2);
         layoutsDialog.y = Math.round(areaGeo.y + (areaGeo.height - dlgH) / 2);
         layoutsDialog.visible = true;
+        shortcutService.readAll(K.ACTIONS, shortcutText);
         try { layoutsDialog.raise(); layoutsDialog.requestActivate(); } catch (e) {}
     }
 
@@ -590,10 +976,119 @@ Item {
         const before = [lib === decoLibrary, th === decoTheme, bl === buttonsLeft, br === buttonsRight].every(Boolean)
                        ? [titleBarHeight, decoButtonH, decoMaxW, decoCloseW, titleAlign, titleFont.toString()].join() : "";
         decoLibrary = lib; decoTheme = th; buttonsLeft = bl; buttonsRight = br;
-        readMetrics();   // button size or font can change without the theme changing
+        readMetrics();
+        readKdeOptions();   // button size or font can change without the theme changing
         if (quiet && before === [titleBarHeight, decoButtonH, decoMaxW, decoCloseW, titleAlign, titleFont.toString()].join()) return;
         console.info("[kdesnaplayout] decoration:", lib, th || "(no theme)", "left:", bl, "right:", br,
                      "title bar:", titleBarHeight, "buttons:", decoMaxW + "/" + decoCloseW + "x" + decoButtonH);
+    }
+
+    // ---------------------------------------------- KDE's own drag helpers
+    // KWin can maximize/tile windows at screen edges and snap them by itself.
+    // The editor points that out, because both then react to the same drag.
+    property bool kdeMaximizeTop: true
+    property bool kdeQuickTile: true
+    property int kdeWindowSnap: 10
+    property int kdeBorderSnap: 10
+    Settings { id: kwUser;     location: "file://" + root.configHome + "/kwinrc" }
+    Settings { id: kwDefaults; location: "file://" + root.configHome + "/kdedefaults/kwinrc" }
+    Settings { id: kwSystem;   location: "file:///etc/xdg/kwinrc" }
+    // ---------------------------------------- KDE's own edge tiling and snapping
+    // KWin's Options can be changed at runtime without touching kwinrc. While
+    // this script runs, KDE's quick tiling (with its outline) and its snap
+    // zones are paused; switched off, unloaded or removed, KDE's own values
+    // are back - KWin reads them from kwinrc again at the next start anyway.
+    property var kdeSaved: null
+    property bool kdeApplying: false
+
+    function kdeWanted() {
+        const edges = cfg.kdeEdgesOff && (cfg.snapEnabled || cfg.edgeEnabled);
+        const snap = cfg.kdeSnapOff && cfg.magnetEnabled;
+        return {
+            max: edges ? false : kdeSaved.max,
+            tile: edges ? false : kdeSaved.tile,
+            win: snap ? 0 : kdeSaved.win,
+            border: snap ? 0 : kdeSaved.border,
+            center: snap ? 0 : kdeSaved.center
+        };
+    }
+
+    function applyKdeOverrides() {
+        if (typeof Options === "undefined" || !Options) return;
+        try {
+            if (!kdeSaved) kdeSaved = {
+                max: Options.electricBorderMaximize, tile: Options.electricBorderTiling,
+                win: Options.windowSnapZone, border: Options.borderSnapZone, center: Options.centerSnapZone
+            };
+            const v = kdeWanted();
+            kdeApplying = true;
+            if (Options.electricBorderMaximize !== v.max) Options.electricBorderMaximize = v.max;
+            if (Options.electricBorderTiling !== v.tile) Options.electricBorderTiling = v.tile;
+            if (Options.windowSnapZone !== v.win) Options.windowSnapZone = v.win;
+            if (Options.borderSnapZone !== v.border) Options.borderSnapZone = v.border;
+            if (Options.centerSnapZone !== v.center) Options.centerSnapZone = v.center;
+        } catch (e) {
+            console.log("[kdesnaplayout] could not change KDE's options:", e);
+        }
+        kdeApplying = false;
+    }
+
+    function restoreKdeOptions() {
+        if (!kdeSaved || typeof Options === "undefined" || !Options) return;
+        try {
+            kdeApplying = true;
+            Options.electricBorderMaximize = kdeSaved.max;
+            Options.electricBorderTiling = kdeSaved.tile;
+            Options.windowSnapZone = kdeSaved.win;
+            Options.borderSnapZone = kdeSaved.border;
+            Options.centerSnapZone = kdeSaved.center;
+        } catch (e) {}
+        kdeApplying = false;
+    }
+
+    // KWin reloaded its settings (e.g. changed in System Settings): those are
+    // the user's real values now, keep them and pause them again
+    Timer {
+        id: kdeReapply
+        interval: 200
+        onTriggered: {
+            if (root.kdeSaved && typeof Options !== "undefined" && Options) {
+                const v = root.kdeWanted();
+                if (Options.electricBorderMaximize !== v.max) root.kdeSaved.max = Options.electricBorderMaximize;
+                if (Options.electricBorderTiling !== v.tile) root.kdeSaved.tile = Options.electricBorderTiling;
+                if (Options.windowSnapZone !== v.win) root.kdeSaved.win = Options.windowSnapZone;
+                if (Options.borderSnapZone !== v.border) root.kdeSaved.border = Options.borderSnapZone;
+                if (Options.centerSnapZone !== v.center) root.kdeSaved.center = Options.centerSnapZone;
+            }
+            root.applyKdeOverrides();
+        }
+    }
+    Connections {
+        target: typeof Options !== "undefined" ? Options : null
+        ignoreUnknownSignals: true
+        function onElectricBorderMaximizeChanged() { if (!root.kdeApplying) kdeReapply.restart(); }
+        function onElectricBorderTilingChanged() { if (!root.kdeApplying) kdeReapply.restart(); }
+        function onWindowSnapZoneChanged() { if (!root.kdeApplying) kdeReapply.restart(); }
+        function onBorderSnapZoneChanged() { if (!root.kdeApplying) kdeReapply.restart(); }
+        function onCenterSnapZoneChanged() { if (!root.kdeApplying) kdeReapply.restart(); }
+    }
+    Connections {
+        target: cfg
+        function onKdeEdgesOffChanged() { root.applyKdeOverrides(); }
+        function onKdeSnapOffChanged() { root.applyKdeOverrides(); }
+        function onSnapEnabledChanged() { root.applyKdeOverrides(); }
+        function onEdgeEnabledChanged() { root.applyKdeOverrides(); }
+        function onMagnetEnabledChanged() { root.applyKdeOverrides(); }
+    }
+
+    function readKdeOptions() {
+        const l = [kwUser, kwDefaults, kwSystem];
+        l.forEach(function (r) { try { r.sync(); } catch (e) {} });
+        const yes = function (v) { return String(v).toLowerCase() !== "false"; };
+        kdeMaximizeTop = yes(readFrom(l, "Windows/ElectricBorderMaximize", "true"));
+        kdeQuickTile = yes(readFrom(l, "Windows/ElectricBorderTiling", "true"));
+        kdeWindowSnap = parseInt(readFrom(l, "Windows/WindowSnapZone", "10")) || 0;
+        kdeBorderSnap = parseInt(readFrom(l, "Windows/BorderSnapZone", "10")) || 0;
     }
 
     // ------------------------------------------------ title bar measurements
@@ -775,6 +1270,22 @@ Item {
         }
     }
     Timer {
+        id: edgeTimer
+        interval: Math.max(0, cfg.edgeDelay)
+        onTriggered: if (root.dragWin && root.edgePending) {
+            root.edgeActive = root.edgePending; root.updatePreview(); root.startFillTimer();
+        }
+    }
+    // second stage: still at the edge after edgeFillDelay
+    Timer {
+        id: fillTimer
+        interval: Math.max(100, cfg.edgeFillDelay)
+        onTriggered: if (root.dragWin && root.edgeActive && root.edgeActive === root.edgePending) {
+            root.edgeStage = 2; root.updatePreview();
+        }
+    }
+    function startFillTimer() { if (cfg.edgeFill) fillTimer.restart(); }
+    Timer {
         id: closeTimer
         interval: Math.max(cfg.slideOutDuration, 0) + 80
         onTriggered: if (!root.dragWin && !root.demoMode) {
@@ -836,22 +1347,85 @@ Item {
             delete root.snapped[id];
             if (root.pendingWin === w) root.pendingWin = null;
             if (root.dragWin === w) root.endDrag();
+            if (root.resizeWin === w) { root.stickyEnd(false); root.resizeWin = null; root.resizeStart = null; }
+            root.stickyLinks = root.stickyLinks.filter(function (k) { return k.w !== w; });
+            root.stickyFaded = root.stickyFaded.filter(function (f) { return f.w !== w; });
         }
         function onCursorPosChanged() { if (root.dragWin) root.updateDrag(); }
         function onScreensChanged() { root.refreshVirtual(); }
     }
 
-    ShortcutHandler {
-        name: "KDESnapLayoutToggle"
-        text: I.tr("KDE Snap Layout: turn on/off")
-        sequence: ""
-        onActivated: { cfg.snapEnabled = !cfg.snapEnabled; try { cfg.sync(); } catch (e) {} }
+    // ------------------------------------------------------- keyboard shortcuts
+    // Every action is a KWin global shortcut. The sequence here is only the
+    // default; KDE keeps the user's choice (System Settings → Shortcuts, or the
+    // Keyboard page of the editor, which talks to kglobalaccel directly).
+    function shortcutText(a) { return I.tr("SeaQ Snap Layout: %1", I.tr(a.text)); }
+
+    Instantiator {
+        model: K.ACTIONS
+        delegate: ShortcutHandler {
+            required property var modelData
+            name: modelData.id
+            text: root.shortcutText(modelData)
+            sequence: K.defaultText(modelData)
+            onActivated: root.runAction(modelData.id)
+        }
     }
-    ShortcutHandler {
-        name: "KDESnapLayoutDemo"
-        text: I.tr("KDE Snap Layout: test the snap bar")
-        sequence: ""
-        onActivated: root.demoBar()
+
+    property alias shortcuts: shortcutService
+    ShortcutService { id: shortcutService }
+
+    function toggleSetting(key) {
+        cfg[key] = !cfg[key];
+        try { cfg.sync(); } catch (e) {}
+    }
+
+    function isMaximized(w, area) {
+        return sameRect(w.frameGeometry, area);
+    }
+
+    function runAction(id) {
+        if (!cfg.keysEnabled) return;
+        if (id === "KDESnapLayoutToggle") return toggleSetting("snapEnabled");
+        if (id === "KDESnapLayoutToggleEdges") return toggleSetting("edgeEnabled");
+        if (id === "KDESnapLayoutToggleMagnet") return toggleSetting("magnetEnabled");
+        if (id === "KDESnapLayoutDemo") return demoBar();
+
+        const w = Workspace.activeWindow;
+        if (!isEligible(w)) return;
+        // a geometry still being re-applied from an earlier snap must not
+        // undo what this key does
+        if (pendingWin === w) { reapplyTimer.stop(); pendingWin = null; }
+        const area = areaOf(w);
+        const g = w.frameGeometry;
+        const key = String(w.internalId);
+        const rec = snapped[key];
+        const inPlace = rec && sameRect(g, rec.rect);
+        // the size to come back to: the one before the first snap
+        const pre = inPlace ? { w: rec.w, h: rec.h } : (isMaximized(w, area) ? null : { w: g.width, h: g.height });
+
+        if (K.ZONES[id]) {
+            snapWindowRect(w, L.targetRect(area, K.ZONES[id], cfg.windowGap, cfg.edgeMargin), pre);
+        } else if (id === "KDESnapLayoutMaximize") {
+            try { w.setMaximize(!isMaximized(w, area), !isMaximized(w, area)); } catch (e) {}
+        } else if (id === "KDESnapLayoutCenter") {
+            let cw = g.width, ch = g.height;
+            if (cw > area.width * 0.9 || ch > area.height * 0.9) { cw = Math.round(area.width * 2 / 3); ch = Math.round(area.height * 2 / 3); }
+            try { if (isMaximized(w, area)) w.setMaximize(false, false); } catch (e) {}
+            w.frameGeometry = Qt.rect(Math.round(area.x + (area.width - cw) / 2), Math.round(area.y + (area.height - ch) / 2), cw, ch);
+            delete snapped[key];
+        } else if (id === "KDESnapLayoutRestore") {
+            if (inPlace) {
+                const cx = g.x + g.width / 2, cy = g.y + g.height / 2;
+                let x = Math.round(cx - rec.w / 2), y = Math.round(cy - rec.h / 2);
+                x = Math.max(area.x, Math.min(x, area.x + area.width - rec.w));
+                y = Math.max(area.y, Math.min(y, area.y + area.height - rec.h));
+                w.frameGeometry = Qt.rect(x, y, rec.w, rec.h);
+                delete snapped[key];
+            } else if (isMaximized(w, area)) {
+                try { w.setMaximize(false, false); } catch (e) {}
+            }
+        }
     }
 
     Component.onCompleted: {
@@ -863,6 +1437,7 @@ Item {
         for (let i = 0; i < list.length; i++) hookWindow(list[i]);
         if (checkOpenRequest()) openTimer.start();
         checkGearTheme();
+        applyKdeOverrides();
         kwinrcWatch.start();
     }
 
@@ -888,7 +1463,7 @@ Item {
     // Click-through layer above everything, covering all screens.
     PlasmaCore.Dialog {
         id: overlay
-        title: "KDE Snap Layout"
+        title: "SeaQ Snap Layout"
         location: PlasmaCore.Types.Desktop
         type: PlasmaCore.Dialog.OnScreenDisplay
         backgroundHints: PlasmaCore.Types.NoBackground
@@ -918,9 +1493,11 @@ Item {
                     width: root.previewRect.width
                     height: root.previewRect.height
                     radius: 8
-                    color: Qt.rgba(theme.accent.r, theme.accent.g, theme.accent.b, 0.22)
+                    // accent colored, or neutral when the user turned the accent off
+                    readonly property color tint: cfg.previewAccent ? theme.accent : (theme.dark ? "#ffffff" : "#202020")
+                    color: Qt.rgba(tint.r, tint.g, tint.b, cfg.previewAccent ? 0.22 : 0.14)
                     border.width: 2
-                    border.color: Qt.rgba(theme.accent.r, theme.accent.g, theme.accent.b, 0.85)
+                    border.color: Qt.rgba(tint.r, tint.g, tint.b, cfg.previewAccent ? 0.85 : 0.45)
                     opacity: root.previewVisible ? 1 : 0
                     Behavior on opacity { NumberAnimation { duration: 120 } }
                     Behavior on x      { enabled: preview.opacity > 0.05; NumberAnimation { duration: 140; easing.type: Easing.OutCubic } }
@@ -960,7 +1537,7 @@ Item {
     // ----------------------------------------------------------- editor window
     PlasmaCore.Dialog {
         id: layoutsDialog
-        title: I.tr("KDE Snap Layout – Settings editor")
+        title: I.tr("SeaQ Snap Layout – Settings editor")
         location: PlasmaCore.Types.Floating
         type: PlasmaCore.Dialog.Normal
         backgroundHints: PlasmaCore.Types.NoBackground
