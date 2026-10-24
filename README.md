@@ -4,6 +4,8 @@
 
 # SeaQ Snap Layout
 
+🇬🇧 English · 🇩🇪 [Deutsch](README.de.md)
+
 **Snap layouts for KDE Plasma 6. Drag a window to the top edge of the screen, a bar with layouts slides down – drop the window onto a zone and it fills exactly that area.**
 
 **Four ways to snap:** snap bar, screen edges with smart fill, a window magnet with sticky edges and 20 keyboard shortcuts – each one can be switched on and off on its own.
@@ -31,13 +33,9 @@ A pure KWin script: no extra program, no background service, nothing to compile.
 
 <div align="center">
 
+<a href="docs/video/seaq-snap-layout-intro.mp4"><img src="docs/images/video-thumbnail.png" alt="Play the 34-second intro video" width="720"></a>
 
-
-https://github.com/user-attachments/assets/4543a088-fe45-4532-b647-d708a3e0d0ff
-
-
-
-<sub>34 seconds · snapping two windows, the settings editor and the color options</sub>
+<sub>34 seconds · snapping two windows, the four ways to snap and the color options</sub>
 
 </div>
 
@@ -124,7 +122,7 @@ The idea comes from the KWin script [Sticky Window Snapping](https://store.kde.o
 **KDE's own helpers are paused automatically:** KDE's quick tiling at the screen edges (with its outline) and its window snap zones would react to the same drag. SeaQ Snap Layout pauses them while it runs – without changing your KDE settings. Switch the option off, disable or remove the script, and KDE's own behavior is back (it is never written to `kwinrc`).
 
 > [!TIP]
-> Plasma has its own edge actions and snap zones. Turn them off so they don't react to the same drag: *System Settings* → *Window Management* → *Screen Edges* (Maximize, Tile) and *Window Behavior* → *Movement* (snap zones → None). The editor shows an orange hint as long as they are on.
+> Both pause switches are on by default. If you switch them off, Plasma's own edge tiling and snap zones react to the same drag again – the editor then shows an orange hint.
 
 ---
 
@@ -220,8 +218,8 @@ qdbus6 org.kde.KWin /KWin reconfigure
 **Option D – from source**
 
 ```bash
-git clone https://github.com/Swenix-dev/KDE-Snap-Layout.git
-cd KDE-Snap-Layout
+git clone https://github.com/Swenix-dev/SeaQ-Snap-Layout.git
+cd SeaQ-Snap-Layout
 ./build.sh                       # → dist/kdesnaplayout-<version>.kwinscript
 ./install.sh                     # optional: clean install for development
 ```
@@ -230,7 +228,7 @@ cd KDE-Snap-Layout
 > KWin keeps a loaded script in memory. **After an update, log out and back in once.** The version is shown on the *About & Help* page of the settings editor.
 
 > [!TIP]
-> Plasma has its own edge actions. For the smoothest snapping, turn off *Maximize* and *Tile* under *System Settings* → *Window Management* → *Screen Edges*, and set the snap zones under *Window Behavior* → *Movement* to *None*.
+> Plasma's own edge tiling and snap zones are paused automatically while SeaQ Snap Layout runs – there is nothing to change in System Settings.
 
 <details>
 <summary><b>Uninstall</b></summary>
@@ -261,7 +259,9 @@ A complete, illustrated manual covers every page and every setting – with anno
 
 ### [📥 Download the manual (PDF, 23 pages)](docs/manual/SeaQ-Snap-Layout-Manual.pdf)
 
-<sub>The HTML source is in [`docs/manual/manual.html`](docs/manual/manual.html).</sub>
+🇩🇪 [Deutsche Anleitung (PDF)](docs/manual/SeaQ-Snap-Layout-Anleitung.pdf)
+
+<sub>The HTML sources are in [`docs/manual/`](docs/manual/).</sub>
 
 </div>
 
@@ -371,7 +371,7 @@ All keys: see [Keyboard shortcuts](#%EF%B8%8F-keyboard-shortcuts).
 ## 🗂️ Project structure
 
 ```
-KDE-Snap-Layout/
+SeaQ-Snap-Layout/
 ├── package/                    the KWin script (what gets installed)
 │   ├── metadata.json
 │   └── contents/
@@ -381,7 +381,8 @@ KDE-Snap-Layout/
 │       ├── locale/             .mo files for the quick menu (generated)
 │       └── icons/
 ├── i18n/                       one text file per language + build.py
-├── docs/                       images, video, manual (PDF + HTML)
+├── docs/                       images, video, manuals (English + German, PDF + HTML)
+├── README.de.md                German README
 ├── build.sh                    builds dist/kdesnaplayout-<version>.kwinscript
 └── install.sh                  clean install for development
 ```
@@ -414,7 +415,7 @@ Check that the script is ticked in *KWin Scripts* and that *Active* is on in the
 <details>
 <summary><b>Two things happen when I drag a window to an edge.</b></summary>
 
-Plasma's own edge actions or snap zones are still on – turn them off (see the tip under [More ways to snap](#-more-ways-to-snap)).
+Plasma's own edge tiling or snap zones are active. Switch on *Pause KDE's edge tiling and its preview* (Screen edges page) and *Pause KDE's snap zones while the magnet is on* (Window magnet page) – both are on by default.
 </details>
 
 <details>
