@@ -14,8 +14,8 @@
         "Name": "SeaQ Snap Layout (for KDE)",
         "Version": "1.9.0",
         "Description[de]": "Fenster einrasten, wie du willst: Snap-Leiste mit Layouts am oberen Rand, Bildschirmkanten und Ecken, Fenster-Magnet mit klebenden Kanten und Tastenkürzel – alles einzeln schaltbar.",
-        "Website": "https://github.com/Swenix-dev/SeaQ-Snap-Layout",
-        "BugReportUrl": "https://github.com/Swenix-dev/SeaQ-Snap-Layout/issues"
+        "Website": "https://github.com/SeaQSoft/SeaQ-Snap-Layout",
+        "BugReportUrl": "https://github.com/SeaQSoft/SeaQ-Snap-Layout/issues"
     },
     "KPackageStructure": "KWin/Script",
     "X-Plasma-API": "declarativescript",
