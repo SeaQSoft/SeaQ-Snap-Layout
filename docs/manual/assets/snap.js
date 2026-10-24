@@ -70,7 +70,8 @@ function snapBar(st) {
   if (st.showName) {
     const t = document.createElement("div");
     const L = layouts[st.hoverL];
-    t.textContent = L ? L.name + (st.hoverZ >= 0 ? "  ·  Zone " + (st.hoverZ + 1) : "") : "Drop the window onto a zone";
+    const TX = (typeof window !== "undefined" && window.SNAP_TEXT) || { zone: "Zone", drop: "Drop the window onto a zone" };
+    t.textContent = L ? L.name + (st.hoverZ >= 0 ? "  ·  " + TX.zone + " " + (st.hoverZ + 1) : "") : TX.drop;
     Object.assign(t.style, { position: "absolute", left: 0, right: 0, bottom: Math.round(pad * 0.6) - 1 + "px", textAlign: "center",
       color: th.text, opacity: .85, font: `${Math.round(12 * s)}px Inter, sans-serif`, whiteSpace: "pre" });
     el.appendChild(t);

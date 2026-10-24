@@ -34,7 +34,7 @@ Turn off Plasma's own edge actions (System Settings → Window Management → Sc
 After updating, log out and back in once – KWin keeps loaded scripts in memory.
 
 Manual (PDF), video and source code:
-https://github.com/Swenix-dev/KDE-Snap-Layout
+https://github.com/Swenix-dev/SeaQ-Snap-Layout
 
 Support: paypal.me/SeaQSoft · buymeacoffee.com/seaq
 

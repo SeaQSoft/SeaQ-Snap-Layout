@@ -1,0 +1,932 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>SeaQ Snap Layout – Anleitung</title>
+<script>window.SNAP_TEXT = { zone: "Zone", drop: "Fenster auf eine Zone ziehen" };</script>
+<script src="assets/snap.js"></script>
+<script>(function () {
+  const n = { "Halves": "Hälften", "Two thirds": "Zwei Drittel", "Three columns": "Drei Spalten", "Main + stack": "Haupt + Stapel",
+              "Four quarters": "Vier Viertel", "Center focus": "Fokus Mitte" };
+  LAYOUTS.forEach(l => { if (n[l.name]) l.name = n[l.name]; });
+})();</script>
+<style>
+@page { size: A4; margin: 0; }
+:root {
+  --ink: #1d2330; --muted: #5d6675; --line: #e2e6ec; --soft: #f4f6f9;
+  --blue: #2a7fd4; --sky: #3daee9; --navy: #14224f; --violet: #6a4fd8;
+  --tip: #e8f6ee; --tipb: #2f9e5f; --note: #eaf3fc; --noteb: #2a7fd4; --warn: #fff4e5; --warnb: #e8590c;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: #d9dde3; font-family: Inter, "Noto Sans", sans-serif; color: var(--ink); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.page { width: 210mm; height: 297mm; margin: 10mm auto; background: #fff; position: relative; overflow: hidden; padding: 20mm 18mm 18mm; page-break-after: always; box-shadow: 0 4px 24px rgba(0,0,0,.12); }
+@media print { html, body { background: #fff; } .page { margin: 0; box-shadow: none; } }
+.page:last-child { page-break-after: auto; }
+
+/* running header / footer */
+.hdr { position: absolute; left: 18mm; right: 18mm; top: 9mm; display: flex; justify-content: space-between; font-size: 8pt; color: var(--muted); letter-spacing: .3px; }
+.hdr b { color: var(--ink); font-weight: 600; }
+.ftr { position: absolute; left: 18mm; right: 18mm; bottom: 8mm; display: flex; justify-content: space-between; align-items: center; font-size: 8pt; color: var(--muted); }
+.ftr .pn { width: 7mm; height: 7mm; border-radius: 50%; background: var(--navy); color: #fff; display: grid; place-items: center; font-weight: 700; font-size: 8pt; }
+
+/* type */
+h1 { font-size: 26pt; letter-spacing: -.8px; margin: 0 0 3mm; line-height: 1.1; }
+h2 { font-size: 14pt; margin: 6mm 0 2.5mm; letter-spacing: -.3px; }
+h3 { font-size: 11pt; margin: 4mm 0 1.5mm; }
+p, li { font-size: 9.6pt; line-height: 1.55; color: #2b3240; }
+p { margin: 0 0 2.6mm; }
+ul, ol { margin: 0 0 3mm; padding-left: 5mm; }
+li { margin-bottom: 1mm; }
+.lead { font-size: 11pt; color: var(--muted); margin-bottom: 5mm; line-height: 1.5; }
+.chap { display: flex; align-items: center; gap: 4mm; margin-bottom: 2mm; }
+.chap .no { width: 13mm; height: 13mm; border-radius: 3.5mm; background: linear-gradient(135deg, var(--sky), var(--blue)); color: #fff; font-weight: 800; font-size: 16pt; display: grid; place-items: center; box-shadow: 0 3px 10px rgba(42,127,212,.35); }
+.chap .k { font-size: 8pt; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--blue); }
+kbd, .ui { font-family: inherit; font-size: 8.8pt; font-weight: 600; background: var(--soft); border: 1px solid var(--line); border-radius: 1.2mm; padding: .2mm 1.4mm; white-space: nowrap; color: var(--ink); }
+code { font-family: "JetBrains Mono", "DejaVu Sans Mono", monospace; font-size: 8.4pt; background: var(--soft); border: 1px solid var(--line); border-radius: 1mm; padding: .1mm 1.2mm; }
+pre { font-family: "JetBrains Mono", "DejaVu Sans Mono", monospace; font-size: 8.4pt; background: #141a2a; color: #e6ecf5; border-radius: 2.5mm; padding: 3.5mm 4mm; margin: 0 0 3mm; line-height: 1.6; white-space: pre-wrap; }
+pre .c { color: #7f8ba3; }
+
+/* boxes */
+.box { border-radius: 2.5mm; padding: 3mm 4mm 3mm 13mm; margin: 0 0 3.5mm; position: relative; font-size: 9.2pt; line-height: 1.5; }
+.box:before { position: absolute; left: 3.6mm; top: 3mm; width: 6mm; height: 6mm; border-radius: 50%; color: #fff; display: grid; place-items: center; font-weight: 800; font-size: 9pt; }
+.box b.t { display: block; margin-bottom: .6mm; }
+.tip { background: var(--tip); border-left: 1.2mm solid var(--tipb); } .tip:before { content: "✓"; background: var(--tipb); }
+.note { background: var(--note); border-left: 1.2mm solid var(--noteb); } .note:before { content: "i"; background: var(--noteb); font-family: Georgia, serif; }
+.warn { background: var(--warn); border-left: 1.2mm solid var(--warnb); } .warn:before { content: "!"; background: var(--warnb); }
+
+/* annotated screenshots */
+.shot { position: relative; margin: 0 6mm 4mm; }
+.shot img { width: 100%; display: block; border-radius: 2mm; box-shadow: 0 2mm 6mm rgba(20,30,60,.18), 0 0 0 .25mm rgba(0,0,0,.08); }
+.b { position: absolute; width: 6.4mm; height: 6.4mm; margin: -3.2mm 0 0 -3.2mm; border-radius: 50%; background: #e8590c; color: #fff; font-weight: 800; font-size: 8.6pt;
+     display: grid; place-items: center; box-shadow: 0 1mm 2.5mm rgba(0,0,0,.35), 0 0 0 .6mm #fff; z-index: 2; }
+.legend { display: grid; grid-template-columns: 1fr 1fr; gap: 1.4mm 6mm; margin: 0 0 4mm; }
+.legend div { display: flex; gap: 2.4mm; font-size: 9pt; line-height: 1.45; align-items: flex-start; }
+.legend i { flex: none; width: 5.2mm; height: 5.2mm; border-radius: 50%; background: #e8590c; color: #fff; font-style: normal; font-weight: 800; font-size: 7.6pt; display: grid; place-items: center; margin-top: .2mm; }
+.legend.one { grid-template-columns: 1fr; }
+
+/* tables */
+table { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 8.8pt; margin: 0 0 4mm; border: 1px solid var(--line); border-radius: 2.5mm; overflow: hidden; }
+th { background: var(--navy); color: #fff; text-align: left; font-weight: 600; padding: 2mm 3mm; font-size: 8.4pt; }
+td { padding: 1.9mm 3mm; border-top: 1px solid var(--line); vertical-align: top; line-height: 1.45; color: #2b3240; }
+tr:nth-child(even) td { background: #fafbfc; }
+td:first-child { font-weight: 600; color: var(--ink); width: 34%; }
+td.d, th.d { width: 15%; white-space: nowrap; }
+td.r, th.r { width: 17%; white-space: nowrap; color: var(--muted); }
+.n { display: inline-grid; place-items: center; width: 4.6mm; height: 4.6mm; border-radius: 50%; background: #e8590c; color: #fff; font-size: 7pt; font-weight: 800; margin-right: 1.5mm; vertical-align: .2mm; }
+
+/* misc */
+.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; }
+.steps { counter-reset: s; list-style: none; padding: 0; }
+.steps > li { counter-increment: s; position: relative; padding-left: 10mm; margin-bottom: 2.4mm; }
+.steps > li:before { content: counter(s); position: absolute; left: 0; top: -.3mm; width: 6.4mm; height: 6.4mm; border-radius: 50%; background: var(--blue); color: #fff; font-weight: 800; font-size: 8.6pt; display: grid; place-items: center; }
+.card { border: 1px solid var(--line); border-radius: 3mm; padding: 4mm; background: #fff; }
+.feat { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; margin: 0 0 4mm; }
+.feat div { border: 1px solid var(--line); border-radius: 3mm; padding: 3mm 3.5mm; background: linear-gradient(180deg,#fff,#f8fafc); }
+.feat b { display: block; font-size: 9.6pt; margin-bottom: .8mm; }
+.feat span { font-size: 8.8pt; color: var(--muted); line-height: 1.45; display: block; }
+.feat em { font-style: normal; display: inline-grid; place-items: center; width: 7mm; height: 7mm; border-radius: 2mm; background: linear-gradient(135deg,var(--sky),var(--blue)); color: #fff; font-size: 10pt; margin-bottom: 1.6mm; }
+.img { width: 100%; display: block; border-radius: 3mm; margin: 0 0 4mm; box-shadow: 0 2mm 6mm rgba(20,30,60,.15); }
+.dark { background: linear-gradient(135deg, #0d1b3a, #1d3a7a); border-radius: 3mm; padding: 6mm; color: #fff; position: relative; }
+.toc { list-style: none; padding: 0; margin: 0; }
+.toc li { display: flex; align-items: baseline; gap: 2mm; padding: 1.5mm 0; border-bottom: 1px dashed var(--line); font-size: 10.5pt; }
+.toc li .nb { width: 9mm; font-weight: 800; color: var(--blue); }
+.toc li .dots { flex: 1; }
+.toc li .pg { font-weight: 600; color: var(--muted); }
+.toc li.sub { padding: 1.2mm 0 1.2mm 9mm; font-size: 9.4pt; color: var(--muted); border-bottom: none; }
+.faq h3 { display: flex; gap: 2mm; align-items: baseline; }
+.faq h3:before { content: "Q"; flex: none; width: 5.6mm; height: 5.6mm; border-radius: 1.5mm; background: var(--navy); color: #fff; font-size: 8pt; display: grid; place-items: center; }
+.curve { display: grid; grid-template-columns: repeat(6, 1fr); gap: 2.5mm; margin: 0 0 4mm; }
+.curve div { border: 1px solid var(--line); border-radius: 2.5mm; padding: 2mm; text-align: center; font-size: 8.4pt; font-weight: 600; }
+.curve div span { display: block; font-weight: 400; color: var(--muted); font-size: 7.6pt; }
+
+/* 1.9.0 figures */
+.scr { position: relative; background: linear-gradient(135deg,#1b3d6e,#2d6aa8); border-radius: 2.5mm; }
+.scr .z { position: absolute; border: .35mm solid rgba(255,255,255,.55); background: rgba(255,255,255,.12); border-radius: 1.2mm;
+          color: #fff; font-size: 8pt; font-weight: 600; display: grid; place-items: center; text-align: center; line-height: 1.2; }
+.scr .w { position: absolute; background: #eef1f5; border-radius: 1mm; box-shadow: 0 1mm 2mm rgba(0,0,0,.25); }
+.scr .w:before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 2.2mm; background: #b9c2cf; border-radius: 1mm 1mm 0 0; }
+.scr .pv { position: absolute; border: .5mm solid #7cd0ff; background: rgba(61,174,233,.35); border-radius: 1mm; }
+.scr .cur { position: absolute; font-size: 11pt; color: #fff; text-shadow: 0 0 1mm #000; }
+.figcap { font-size: 8.4pt; color: var(--muted); text-align: center; margin: 1.5mm 0 0; }
+.keys td:first-child { width: 40%; }
+.keys td { padding: .8mm 3mm; font-size: 8pt; }
+.keys kbd { font-size: 8pt; padding: 0 1.2mm; }
+.grp td { background: var(--soft) !important; font-weight: 700; color: var(--blue) !important; font-size: 7.4pt; letter-spacing: 1px; text-transform: uppercase; padding: .6mm 3mm; }
+.tight td { padding: 1.1mm 2.5mm; font-size: 8.2pt; }
+.tight th { padding: 1.4mm 2.5mm; }
+.dv td:first-child { width: 60%; }
+td { padding: 1.5mm 3mm; } .keys td { padding: .6mm 3mm; }
+td { padding: 1.35mm 3mm; } .toc li { padding: 1.1mm 0; } .keys td { padding: .55mm 3mm; } .page .tip, .page .note { margin-top: 3mm; }
+</style>
+</head>
+<body>
+
+<!-- ======================================================== COVER -->
+<section class="page" style="padding:0;background:#0f1b46">
+  <div style="position:absolute;inset:0;background:
+    radial-gradient(120mm 90mm at 10% 100%, #3d6cff 0%, transparent 70%),
+    radial-gradient(130mm 100mm at 90% 15%, #1d99f3 0%, transparent 70%),
+    radial-gradient(110mm 90mm at 100% 100%, #7b5cff 0%, transparent 70%),
+    linear-gradient(160deg,#1b2a7a 0%,#141d4d 55%,#163a6e 100%)"></div>
+  <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:8mm 8mm"></div>
+  <div style="position:absolute;left:20mm;top:26mm;display:flex;align-items:center;gap:4mm;color:rgba(255,255,255,.8);font-size:9pt;letter-spacing:2px;text-transform:uppercase;font-weight:700">
+    <span style="width:10mm;height:.6mm;background:#7cd0ff"></span>Anleitung</div>
+  <div style="position:absolute;left:20mm;top:44mm;width:34mm;height:34mm;border-radius:9mm;background:rgba(255,255,255,.12);display:grid;place-items:center;box-shadow:0 6mm 16mm rgba(0,0,0,.35)">
+    <img src="assets/icon.svg" style="width:28mm"></div>
+  <h1 style="position:absolute;left:20mm;top:88mm;color:#fff;font-size:44pt;letter-spacing:-2px;margin:0">SeaQ Snap<br>Layout</h1>
+  <p style="position:absolute;left:20mm;top:136mm;width:120mm;color:rgba(255,255,255,.85);font-size:14pt;line-height:1.45;margin:0">Snap-Layouts für KDE Plasma 6.<br>Snap-Leiste, Bildschirmkanten, Fenster-Magnet und Tastenkürzel.</p>
+  <div id="coverbar" style="position:absolute;left:20mm;right:20mm;top:172mm;height:82mm;border-radius:5mm;overflow:hidden;box-shadow:0 8mm 20mm rgba(0,0,0,.45);border:.3mm solid rgba(255,255,255,.18)">
+    <img src="assets/hero.png" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block"></div>
+  <div style="position:absolute;left:20mm;right:20mm;bottom:16mm;display:flex;justify-content:space-between;align-items:flex-end;color:rgba(255,255,255,.8);font-size:9pt;line-height:1.6">
+    <div><b style="color:#fff">Version 1.9.0</b><br>KWin-Skript für Plasma 6 · Wayland &amp; X11</div>
+    <div style="text-align:right"><b style="color:#fff">SeaQ</b><br>github.com/Swenix-dev/SeaQ-Snap-Layout</div></div>
+</section>
+
+<!-- ======================================================== CONTENTS -->
+<section class="page">
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · Anleitung</span><span>Inhalt</span></div>
+  <h1>Inhalt</h1>
+  <p class="lead">Alles, was SeaQ Snap Layout kann, Seite für Seite – vom ersten Einrasten bis zu eigenen Layouts.</p>
+  <ul class="toc">
+    <li><span class="nb">1</span>Einführung<span class="dots"></span><span class="pg">3</span></li>
+    <li><span class="nb">2</span>Die Snap-Leiste im Überblick<span class="dots"></span><span class="pg">4</span></li>
+    <li><span class="nb">3</span>Installation<span class="dots"></span><span class="pg">5</span></li>
+    <li><span class="nb">4</span>Schnellstart – dein erstes Einrasten<span class="dots"></span><span class="pg">6</span></li>
+    <li><span class="nb">5</span>Einstellungen öffnen<span class="dots"></span><span class="pg">7</span></li>
+    <li><span class="nb">6</span>Der Einstellungseditor<span class="dots"></span><span class="pg">8</span></li>
+    <li class="sub">6.1 Allgemein · 6.2 Aussehen · 6.3 Verhalten &amp; Animation · 6.4 Layouts · 6.5 Layout-Designer</li>
+    <li class="sub">6.6 Bildschirmkanten · 6.7 Fenster-Magnet · 6.8 Tastenkürzel · 6.9 Info &amp; Hilfe</li>
+    <li><span class="nb">7</span>Tastenübersicht<span class="dots"></span><span class="pg">19</span></li>
+    <li><span class="nb">8</span>Sprachen<span class="dots"></span><span class="pg">20</span></li>
+    <li><span class="nb">9</span>Empfohlene Werte<span class="dots"></span><span class="pg">21</span></li>
+    <li><span class="nb">10</span>Probleme &amp; FAQ<span class="dots"></span><span class="pg">22</span></li>
+    <li><span class="nb">11</span>Dateien, Deinstallation &amp; Lizenz<span class="dots"></span><span class="pg">23</span></li>
+  </ul>
+  <h2 style="margin-top:12mm">So liest du diese Anleitung</h2>
+  <div class="cols">
+    <div>
+      <p><span class="n">1</span>Orange Zahlen in einem Bildschirmfoto zeigen auf ein Bedienelement. Die Liste unter dem Bild erklärt jedes davon.</p>
+      <p><span class="ui">Knopf</span> Graue Beschriftungen sind Text, den du auf dem Bildschirm siehst: Knöpfe, Schalter, Menüeinträge.</p>
+      <p><code>befehl</code> Text in Festbreitenschrift wird in ein Terminal eingegeben.</p>
+    </div>
+    <div>
+      <div class="box tip"><b class="t">Tipp</b>Ideen, die den Alltag schneller machen.</div>
+      <div class="box note"><b class="t">Hinweis</b>Hintergrundwissen, das sich lohnt.</div>
+      <div class="box warn"><b class="t">Wichtig</b>Lies das, bevor du weitermachst.</div>
+    </div>
+  </div>
+  <div class="box note" style="margin-top:4mm"><b class="t">Bildschirmfotos</b>Die Bilder zeigen das helle Breeze-Farbschema auf Deutsch. Auf deinem Desktop nutzt SeaQ Snap Layout deine eigenen Farben und deine Systemsprache.</div>
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">2</span></div>
+</section>
+
+<!-- ======================================================== 1 INTRO -->
+<section class="page">
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · Anleitung</span><span>1 · Einführung</span></div>
+  <div class="chap"><div class="no">1</div><div><div class="k">Kapitel 1</div><h1 style="margin:0">Einführung</h1></div></div>
+  <p class="lead">SeaQ Snap Layout bringt Snap-Layouts auf KDE Plasma 6. Zieh ein Fenster zum oberen Bildschirmrand, eine Leiste mit Layouts fährt herunter, und du legst das Fenster auf der Zone ab, wo es hin soll. Dazu kommen drei weitere Wege zum Einrasten – jeder lässt sich einzeln ein- und ausschalten.</p>
+  <img class="img" src="assets/hero.png">
+  <div class="feat">
+    <div><em>⇡</em><b>Ziehen, ablegen, fertig</b><span>Keine Tastenkürzel nötig – es funktioniert mit der Mausbewegung, die du schon kennst.</span></div>
+    <div><em>▦</em><b>Eigene Layouts</b><span>Sechs fertige Layouts und ein Designer für jede beliebige Aufteilung – bis zu 16 Zonen.</span></div>
+    <div><em>◐</em><b>Passt zu deinem Desktop</b><span>System-, helle oder dunkle Farben, jede Akzentfarbe. Der Editor nutzt dein Farbschema, deine Dekoration und Sprache.</span></div>
+    <div><em>⏱</em><b>Fühlt sich richtig an</b><span>Abstände, Verzögerungen, Geschwindigkeit und sechs Bewegungskurven – ein herausgezogenes Fenster bekommt seine alte Größe zurück.</span></div>
+    <div><em>⇲</em><b>Bildschirmkanten</b><span>Fenster gegen eine Kante oder Ecke drücken: maximieren, Hälften, Viertel – passend um bereits eingerastete Fenster herum.</span></div>
+    <div><em>⊟</em><b>Fenster-Magnet</b><span>Fenster haften beim Verschieben und Größe-Ändern aneinander und an den Bildschirmrändern.</span></div>
+    <div><em>⌨</em><b>Tastenkürzel</b><span>20 Aktionen – Hälften, Viertel, Drittel, maximieren, zentrieren. Fertige Tastenschemata oder eigene Tasten.</span></div>
+    <div><em>⚙</em><b>Reines KWin-Skript</b><span>Kein zusätzliches Programm im Hintergrund. Mit zwei Klicks aus dem KDE Store installiert.</span></div>
+  </div>
+  <div class="box note"><b class="t">Was ist eine „Zone“?</b>Ein Layout teilt den Bildschirm in Bereiche, zum Beispiel zwei Hälften oder drei Spalten. Jeder Bereich ist eine Zone. Die Snap-Leiste zeigt jedes Layout als kleines Bild des Bildschirms; jedes Rechteck darin ist eine Zone, auf der du ein Fenster ablegen kannst.</div>
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">3</span></div>
+</section>
+
+<!-- ======================================================== 2 ANATOMY -->
+<section class="page">
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · Anleitung</span><span>2 · Die Snap-Leiste im Überblick</span></div>
+  <div class="chap"><div class="no">2</div><div><div class="k">Kapitel 2</div><h1 style="margin:0">Die Snap-Leiste im Überblick</h1></div></div>
+  <p class="lead">Die Snap-Leiste erscheint nur, während du ein Fenster verschiebst. Sonst nimmt sie keinen Platz auf dem Bildschirm ein.</p>
+  <div class="dark" id="anatomy" style="height:74mm;margin-bottom:3mm"></div>
+  <div class="legend">
+    <div><i>1</i><span><b>Griff</b> – eine kleine Pille, die zuerst erscheint, wenn das Fenster dem oberen Rand nahe kommt. Sie zeigt, dass die Leiste bereit ist.</span></div>
+    <div><i>2</i><span><b>Snap-Leiste</b> – fährt herunter, sobald der Mauszeiger den oberen Rand erreicht. Sie erscheint immer auf dem Bildschirm, auf dem du arbeitest.</span></div>
+    <div><i>3</i><span><b>Layout</b> – ein kleines Bild deines Bildschirms. Die Leiste zeigt alle Layouts mit Haken bei <span class="ui">In Leiste</span>.</span></div>
+    <div><i>4</i><span><b>Zone</b> – ein Bereich eines Layouts. Fahr mit der Maus darüber, um ihn zu wählen.</span></div>
+    <div><i>5</i><span><b>Markierte Zone</b> – in der Akzentfarbe. Lässt du jetzt die Maus los, rastet das Fenster hier ein.</span></div>
+    <div><i>6</i><span><b>Namenszeile</b> (optional) – zeigt Layout- und Zonennamen, z. B. „Vier Viertel · Zone 3“.</span></div>
+  </div>
+  <h2 style="margin-top:3mm">Die Landevorschau</h2>
+  <p>Solange eine Zone markiert ist, zeigt ein durchscheinendes Rechteck in der Akzentfarbe auf dem Desktop genau, wo das Fenster landet – inklusive Abständen und Leisten. Entfernst du dich von der Leiste, verschwindet die Vorschau.</p>
+  <h2>Mitgelieferte Layouts</h2>
+  <img class="img" src="assets/de/out_gallery.png" style="width:86%;margin:0 auto 2mm">
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">4</span></div>
+</section>
+
+<!-- ======================================================== 3 INSTALL -->
+<section class="page">
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · Anleitung</span><span>3 · Installation</span></div>
+  <div class="chap"><div class="no">3</div><div><div class="k">Kapitel 3</div><h1 style="margin:0">Installation</h1></div></div>
+  <p class="lead">SeaQ Snap Layout ist ein KWin-Skript. Es wird in deinen Home-Ordner installiert, braucht keine Administratorrechte und fügt kein Hintergrundprogramm hinzu.</p>
+  <table>
+    <tr><th>Voraussetzung</th><th>Details</th></tr>
+    <tr><td>Desktop</td><td>KDE Plasma 6 (KWin 6) – Wayland oder X11</td></tr>
+    <tr><td>Distribution</td><td>Beliebig: Fedora, Arch, openSUSE, KDE neon, Kubuntu, Debian …</td></tr>
+    <tr><td>Zusätzliche Pakete</td><td>Keine – alles Nötige ist in Plasma enthalten</td></tr>
+  </table>
+  <h2>Variante A – KDE Store (empfohlen)</h2>
+  <ol class="steps">
+    <li>Öffne <span class="ui">Systemeinstellungen</span> → <span class="ui">Fensterverwaltung</span> → <span class="ui">KWin-Skripte</span>.</li>
+    <li>Klicke oben rechts auf <span class="ui">Neue holen …</span>, suche nach <b>SeaQ Snap Layout</b> und klicke auf <span class="ui">Installieren</span>.</li>
+    <li>Setze den Haken neben <b>SeaQ Snap Layout</b> und klicke auf <span class="ui">Anwenden</span>.</li>
+  </ol>
+  <h2>Variante B – Datei von GitHub</h2>
+  <ol class="steps">
+    <li>Lade <code>kdesnaplayout-&lt;version&gt;.kwinscript</code> von der Seite <b>Releases</b> herunter.</li>
+    <li>Klicke in <span class="ui">KWin-Skripte</span> auf <span class="ui">Aus Datei installieren …</span> und wähle die Datei.</li>
+    <li>Setze den Haken bei <b>SeaQ Snap Layout</b> und klicke auf <span class="ui">Anwenden</span>.</li>
+  </ol>
+  <h2>Variante C – Terminal</h2>
+<pre><span class="c"># installieren</span>
+kpackagetool6 --type KWin/Script --install kdesnaplayout-1.9.0.kwinscript
+<span class="c"># auf eine neuere Version aktualisieren</span>
+kpackagetool6 --type KWin/Script --upgrade kdesnaplayout-1.9.0.kwinscript
+<span class="c"># einschalten</span>
+kwriteconfig6 --file kwinrc --group Plugins --key kdesnaplayoutEnabled true
+qdbus6 org.kde.KWin /KWin reconfigure</pre>
+  <div class="box warn"><b class="t">Nach einem Update: einmal abmelden</b>KWin behält ein geladenes Skript im Speicher. Melde dich nach der Installation einer neuen Version einmal ab und wieder an, damit die neuen Dateien verwendet werden. Die Version siehst du im Einstellungseditor auf der Seite <span class="ui">Info &amp; Hilfe</span>.</div>
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">5</span></div>
+</section>
+
+<!-- ======================================================== 4 QUICK START -->
+<section class="page">
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · Anleitung</span><span>4 · Schnellstart</span></div>
+  <div class="chap"><div class="no">4</div><div><div class="k">Kapitel 4</div><h1 style="margin:0">Schnellstart – dein erstes Einrasten</h1></div></div>
+  <p class="lead">Drei Bewegungen, etwa zwei Sekunden.</p>
+  <img class="img" src="assets/de/out_steps.png">
+  <ol class="steps">
+    <li><b>Fass ein Fenster</b> an der Titelleiste und halte die linke Maustaste gedrückt.</li>
+    <li><b>Zieh es nach oben.</b> Etwa 140 px unter dem oberen Rand erscheint ein kleiner Griff. Weiter, bis der Mauszeiger den oberen Rand berührt – die Snap-Leiste fährt herunter.</li>
+    <li><b>Zeig auf eine Zone.</b> Sie leuchtet in deiner Akzentfarbe auf, und eine Vorschau auf dem Desktop zeigt, wo das Fenster landet.</li>
+    <li><b>Lass los.</b> Das Fenster füllt genau diese Zone.</li>
+  </ol>
+  <div class="cols">
+    <div>
+      <h3>Doch nicht?</h3>
+      <p>Bewege den Mauszeiger von der Leiste weg oder lass das Fenster irgendwo außerhalb los. Nichts rastet ein, und die Leiste fährt wieder hoch.</p>
+      <h3>Die alte Größe zurückbekommen</h3>
+      <p>Fass ein eingerastetes Fenster und zieh es weg – es bekommt die Größe zurück, die es vor dem Einrasten hatte. Abschalten kannst du das auf der Seite <span class="ui">Allgemein</span>.</p>
+    </div>
+    <div>
+      <h3>Welche Fenster können einrasten?</h3>
+      <p>Normale, in der Größe veränderbare Fenster. Dialoge, Vollbildfenster und Programme auf deiner Ausnahmeliste zeigen nie die Snap-Leiste.</p>
+      <h3>Mehrere Bildschirme?</h3>
+      <p>Die Leiste öffnet sich auf dem Bildschirm unter dem Mauszeiger, und die Zonen füllen dessen freien Bereich – Leisten bleiben frei.</p>
+    </div>
+  </div>
+  <div class="box tip"><b class="t">Kein doppeltes Einrasten</b>Plasma hat eigene Kanten-Kacheln und Einrastzonen. SeaQ Snap Layout pausiert sie automatisch, solange es läuft, sodass nur ein Helfer reagiert – in den Systemeinstellungen musst du nichts ändern, und deine KDE-Einstellungen bleiben, wie sie sind.</div>
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">6</span></div>
+</section>
+
+<!-- ======================================================== 5 OPEN SETTINGS -->
+<section class="page">
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · Anleitung</span><span>5 · Einstellungen öffnen</span></div>
+  <div class="chap"><div class="no">5</div><div><div class="k">Kapitel 5</div><h1 style="margin:0">Einstellungen öffnen</h1></div></div>
+  <p class="lead">Ein KWin-Skript hat kein eigenes Programmsymbol. Seine Einstellungen erreichst du über das Zahnrad in den Systemeinstellungen, das ein kleines Schnellmenü öffnet.</p>
+  <img class="img" src="assets/de/out_quick.png">
+  <ol class="steps">
+    <li>Öffne <span class="ui">Systemeinstellungen</span> → <span class="ui">Fensterverwaltung</span> → <span class="ui">KWin-Skripte</span> und klicke auf das <b>Zahnrad</b> <span class="n" style="margin:0 .5mm">1</span> neben <b>SeaQ Snap Layout</b>.</li>
+    <li>Klicke auf <span class="ui">Snap Layout Einstellungseditor öffnen</span> <span class="n" style="margin:0 .5mm">2</span>. Der Knopf wird in deiner Akzentfarbe gefüllt, und der Hinweis „Bereit – jetzt auf OK klicken, um den Einstellungseditor zu öffnen.“ erscheint.</li>
+    <li>Klicke auf <span class="ui">OK</span>. Der Einstellungseditor öffnet sich innerhalb etwa einer Sekunde.</li>
+  </ol>
+  <h2>Quick-Einstellungen</h2>
+  <p><span class="n">3</span><span class="ui">Farben der Snap-Leiste</span> schaltet die Snap-Leiste zwischen <b>System</b>, <b>Hell</b> und <b>Dunkel</b> um, ohne den Editor zu öffnen. Alles andere – Aussehen, Größe, Animation, Verhalten und eigene Layouts – stellst du im Einstellungseditor ein.</p>
+  <div class="box note"><b class="t">Warum der zusätzliche Klick?</b>Die Systemeinstellungen speichern das Schnellmenü erst, wenn du <span class="ui">OK</span> oder <span class="ui">Anwenden</span> drückst. SeaQ Snap Layout bemerkt den gespeicherten Knopfdruck und öffnet seinen Editor. Der Knopf lässt sich beliebig oft benutzen.</div>
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">7</span></div>
+</section>
+
+<!-- ======================================================== 6 EDITOR OVERVIEW -->
+<section class="page">
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · Anleitung</span><span>6 · Der Einstellungseditor</span></div>
+  <div class="chap"><div class="no">6</div><div><div class="k">Kapitel 6</div><h1 style="margin:0">Der Einstellungseditor</h1></div></div>
+  <p class="lead">Ein Fenster, acht Seiten. Jede Änderung wird sofort gespeichert und angewendet – es gibt keinen Anwenden-Knopf.</p>
+  <div class="shot">
+    <img src="assets/de/editor-general-light.png">
+    <span class="b" style="left:33%;top:2.1%">1</span>
+    <span class="b" style="left:97.6%;top:2.1%">2</span>
+    <span class="b" style="left:-1.5%;top:8%">3</span>
+    <span class="b" style="left:-1.5%;top:19.5%">4</span>
+    <span class="b" style="left:-1.5%;top:37%">5</span>
+    <span class="b" style="left:-1.5%;top:88.6%">6</span>
+    <span class="b" style="left:25%;top:16.8%">7</span>
+  </div>
+  <div class="legend">
+    <div><i>1</i><span><b>Titelleiste</b> – ziehen verschiebt das Fenster, Doppelklick maximiert. Höhe, Schrift und Ausrichtung folgen deiner Fensterdekoration.</span></div>
+    <div><i>2</i><span><b>Fensterknöpfe</b> – maximieren/wiederherstellen und schließen, in Reihenfolge und Stil deiner Dekoration.</span></div>
+    <div><i>3</i><span><b>Name und Version</b> des installierten Skripts.</span></div>
+    <div><i>4</i><span><b>Snap-Leiste</b> – Aussehen, Verhalten &amp; Animation und Layouts der Leiste am oberen Rand.</span></div>
+    <div><i>5</i><span><b>Weitere Wege zum Einrasten</b> – Bildschirmkanten, Fenster-Magnet und Tastenkürzel.</span></div>
+    <div><i>6</i><span><b>Funktionsschalter</b> – Snap-Leiste, Bildschirmkanten, Fenster-Magnet und Kürzel mit einem Klick ein- oder ausschalten.</span></div>
+    <div><i>7</i><span><b>Seitenbereich</b> – die Einstellungen sind in Karten gruppiert. <span class="ui">Empfohlene Werte</span> unten auf einer Seite setzt diese Seite zurück.</span></div>
+  </div>
+  <div class="box note"><b class="t">Passt zu deinem System</b>Der Editor nutzt dein Farbschema, deine Akzentfarbe, Fensterdekoration und Systemsprache – und folgt Änderungen live, solange er offen ist. Knöpfe, Schalter und Schieberegler erscheinen in deiner Akzentfarbe.</div>
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">8</span></div>
+</section>
+
+<!-- ======================================================== 6.1 GENERAL -->
+<section class="page">
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · Anleitung</span><span>6.1 · Allgemein</span></div>
+  <div class="chap"><div class="no" style="font-size:12pt">6.1</div><div><div class="k">Einstellungseditor</div><h1 style="margin:0">Allgemein</h1></div></div>
+  <p class="lead">Wähle, welche Wege zum Einrasten du willst, steuere die Vorschauen und lass Platz zwischen den Fenstern.</p>
+  <div class="shot" style="margin:0 34mm 3mm">
+    <img src="assets/de/editor-general-light.png">
+    <span class="b" style="left:100.6%;top:16.8%">1</span>
+    <span class="b" style="left:100.6%;top:44.5%">2</span>
+    <span class="b" style="left:100.6%;top:72.5%">3</span>
+  </div>
+  <table>
+    <tr><th>Einstellung</th><th>Was sie bewirkt</th><th class="d">Standard</th></tr>
+    <tr><td><span class="n">1</span>Funktionen</td><td>Vier unabhängige Schalter: <b>Snap-Leiste</b>, <b>Bildschirmkanten</b>, <b>Fenster-Magnet</b>, <b>Tastenkürzel</b>. Der Pfeil daneben öffnet jeweils die passende Seite. Dieselben Schalter sitzen unten in der Seitenleiste.</td><td class="d">alle an</td></tr>
+    <tr><td><span class="n">2</span>Vorschauen</td><td><b>Vorschau der Snap-Leiste</b> und <b>Vorschau der Bildschirmkanten</b>, jeweils einzeln – aus bedeutet gar keine Vorschau. <b>Akzentfarbe</b> – aus zeichnet einen neutralen Rahmen. <b>KDEs Kanten-Kacheln pausieren</b> blendet KDEs eigenen Umriss aus.</td><td class="d">alle an</td></tr>
+    <tr><td><span class="n">3</span>Ursprüngliche Größe beim Herausziehen wiederherstellen</td><td>Ein eingerastetes Fenster, das du wegziehst, bekommt seine frühere Größe zurück – auch nach dem Einrasten über Kanten oder Tastatur.</td><td class="d">An</td></tr>
+    <tr><td>Abstand zwischen Fenstern</td><td>Platz zwischen benachbarten Zonen (0 – 48 px). Gilt für Leiste, Kanten, Tastenkürzel und – wenn du willst – den Magnet.</td><td class="d">0 px</td></tr>
+    <tr><td>Abstand zum Bildschirmrand</td><td>Platz zwischen den Zonen und den Rändern des freien Bildschirmbereichs (0 – 48 px).</td><td class="d">0 px</td></tr>
+    <tr><td>Ausgenommene Anwendungen</td><td>Fensterklassen, die nie einrasten – eine pro Zeile (Kommas und Semikolons gehen auch). Groß-/Kleinschreibung egal.</td><td class="d">leer</td></tr>
+  </table>
+  <div class="box tip"><b class="t">Fensterklasse herausfinden</b>Öffne <span class="ui">Systemeinstellungen</span> → <span class="ui">Fensterverwaltung</span> → <span class="ui">Fensterregeln</span> → <span class="ui">Neu hinzufügen …</span> → <span class="ui">Fenstereigenschaften ermitteln</span> und klicke auf das Programmfenster. Der Wert unter <b>Fensterklasse</b> (zum Beispiel <code>krita</code> oder <code>steam</code>) ist das, was du hier einträgst.</div>
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">9</span></div>
+</section>
+
+<!-- ======================================================== 6.2 APPEARANCE -->
+<section class="page">
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · Anleitung</span><span>6.2 · Aussehen</span></div>
+  <div class="chap"><div class="no" style="font-size:12pt">6.2</div><div><div class="k">Einstellungseditor</div><h1 style="margin:0">Aussehen</h1></div></div>
+  <p class="lead">Farben, Größe und Form der Snap-Leiste. Die Live-Vorschau oben zeigt jede Änderung sofort.</p>
+  <div class="shot" style="margin:0 26mm 3mm">
+    <img src="assets/de/editor-appearance-light.png">
+    <span class="b" style="left:100.6%;top:17.4%">1</span>
+    <span class="b" style="left:53%;top:40.1%">2</span>
+    <span class="b" style="left:100.6%;top:53.4%">3</span>
+    <span class="b" style="left:26.2%;top:58.7%">4</span>
+    <span class="b" style="left:78.4%;top:58.7%">5</span>
+    <span class="b" style="left:100.6%;top:75.2%">6</span>
+    <span class="b" style="left:100.6%;top:86.8%">7</span>
+    <span class="b" style="left:100.6%;top:92.3%">8</span>
+    <span class="b" style="left:72%;top:99.3%">9</span>
+  </div>
+  <div class="legend">
+    <div><i>1</i><span><b>Vorschau</b> der Snap-Leiste mit deinen aktuellen Einstellungen.</span></div>
+    <div><i>2</i><span><b>Farbschema</b> – <b>System</b> folgt deinen Plasma-Farben; <b>Hell</b> und <b>Dunkel</b> sind fest. Standard: System.</span></div>
+    <div><i>3</i><span><b>Akzentfarbe des Systems verwenden</b> – markiert Zonen in deiner Plasma-Akzentfarbe. Standard: an.</span></div>
+    <div><i>4</i><span><b>Farbfelder</b> – zwölf fertige Akzentfarben. Vorher ③ ausschalten.</span></div>
+    <div><i>5</i><span><b>Eigene Farbe</b> – der Regenbogenkreis öffnet eine Farbauswahl (siehe unten).</span></div>
+    <div><i>6</i><span><b>Größe &amp; Form</b> – vier Schieberegler, siehe Tabelle.</span></div>
+    <div><i>7</i><span><b>Layouts pro Reihe</b> – 0 zeigt alle Layouts in einer Reihe; jede andere Zahl verteilt die Leiste auf mehrere Reihen.</span></div>
+    <div><i>8</i><span><b>Layout- und Zonennamen anzeigen</b> unter den Vorschaubildern. Standard: aus.</span></div>
+    <div><i>9</i><span><b>Auf dem Bildschirm testen</b> spielt die Snap-Leiste auf deinem Desktop ab, damit du das Ergebnis beurteilen kannst.</span></div>
+  </div>
+  <table>
+    <tr><th>Größe &amp; Form</th><th>Was sie bewirkt</th><th class="d">Standard</th><th class="r">Bereich</th></tr>
+    <tr><td>Größe der Snap-Leiste</td><td>Skaliert die ganze Leiste – praktisch auf hochauflösenden Bildschirmen.</td><td class="d">100 %</td><td class="r">60 – 200 %</td></tr>
+    <tr><td>Breite der Vorschaubilder</td><td>Breite jedes Layout-Bildes; die Höhe folgt dem Seitenverhältnis deines Bildschirms.</td><td class="d">72 px</td><td class="r">48 – 160 px</td></tr>
+    <tr><td>Eckenradius</td><td>Rundung der Leiste. 0 ergibt eckige Ecken.</td><td class="d">8 px</td><td class="r">0 – 24 px</td></tr>
+    <tr><td>Deckkraft des Hintergrunds</td><td>Wie durchsichtig der Leistenhintergrund ist.</td><td class="d">96 %</td><td class="r">40 – 100 %</td></tr>
+  </table>
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">10</span></div>
+</section>
+
+<!-- ======================================================== 6.2b COLORS -->
+<section class="page">
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · Anleitung</span><span>6.2 · Aussehen – Farben</span></div>
+  <h1 style="font-size:20pt">Farben und Stile</h1>
+  <p class="lead">Ein paar Kombinationen der Aussehen-Einstellungen.</p>
+  <img class="img" src="assets/de/out_themes.png">
+  <h2>Eine eigene Akzentfarbe wählen</h2>
+  <div class="cols">
+    <div>
+      <ol class="steps">
+        <li>Schalte <span class="ui">Akzentfarbe des Systems verwenden</span> aus.</li>
+        <li>Klicke auf den <b>Regenbogenkreis</b> am Ende der Farbfelder. Darunter öffnet sich die Farbauswahl.</li>
+        <li>Wähle den Farbton auf dem <b>Streifen</b>, dann Helligkeit und Sättigung im <b>Quadrat</b>.</li>
+        <li>Oder gib einen genauen Wert wie <code>#3daee9</code> in das <b>Hex-Feld</b> ein.</li>
+      </ol>
+    </div>
+    <div class="card" style="display:flex;flex-direction:column;gap:3mm;align-items:center">
+      <div style="display:flex;gap:2mm">
+        <span style="width:7mm;height:7mm;border-radius:50%;background:#0078d4"></span><span style="width:7mm;height:7mm;border-radius:50%;background:#00b294"></span>
+        <span style="width:7mm;height:7mm;border-radius:50%;background:#ffb900"></span><span style="width:7mm;height:7mm;border-radius:50%;background:#e81123"></span>
+        <span style="width:7mm;height:7mm;border-radius:50%;background:#c239b3"></span>
+        <span style="width:7mm;height:7mm;border-radius:50%;background:conic-gradient(red,magenta,blue,cyan,lime,yellow,red);box-shadow:0 0 0 .6mm #fff,0 0 0 1.1mm #e8590c"></span></div>
+      <div style="display:flex;gap:2.5mm">
+        <div style="width:42mm;height:30mm;border-radius:2mm;background:linear-gradient(to top,#000,transparent),linear-gradient(to right,#fff,hsl(200,100%,50%));position:relative">
+          <span style="position:absolute;left:70%;top:25%;width:3.5mm;height:3.5mm;border-radius:50%;border:.6mm solid #fff;box-shadow:0 0 0 .3mm #000;transform:translate(-50%,-50%)"></span></div>
+        <div style="width:5mm;height:30mm;border-radius:1.5mm;background:linear-gradient(red,yellow,lime,cyan,blue,magenta,red)"></div></div>
+      <div style="display:flex;gap:2mm;align-items:center;font-size:8.6pt"><span style="width:6mm;height:6mm;border-radius:1.5mm;background:#3daee9"></span><code>#3daee9</code></div>
+    </div>
+  </div>
+  <div class="box note"><b class="t">Farben der Leiste vs. des Editors</b>Farbschema und Akzentfarbe auf dieser Seite ändern nur die <b>Snap-Leiste</b>. Der Einstellungseditor selbst nutzt immer deine Systemfarben.</div>
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">11</span></div>
+</section>
+
+<!-- ======================================================== 6.3 BEHAVIOR -->
+<section class="page">
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · Anleitung</span><span>6.3 · Verhalten &amp; Animation</span></div>
+  <div class="chap"><div class="no" style="font-size:12pt">6.3</div><div><div class="k">Einstellungseditor</div><h1 style="margin:0">Verhalten &amp; Animation</h1></div></div>
+  <p class="lead">Wann die Leiste erscheint, wann sie wieder verschwindet und wie sie sich bewegt. Die Standardwerte orientieren sich an Windows 11.</p>
+  <div class="dark" style="height:72mm;padding:0;overflow:hidden;margin-bottom:4mm" id="dist"></div>
+  <table>
+    <tr><th>Einblenden</th><th>Was sie bewirkt</th><th class="d">Standard</th><th class="r">Bereich</th></tr>
+    <tr><td><span class="n" style="background:#3daee9">A</span>Auslöseabstand zum oberen Rand</td><td>Wie nah der Mauszeiger dem oberen Rand kommen muss, bevor die ganze Leiste öffnet.</td><td class="d">24 px</td><td class="r">2 – 200 px</td></tr>
+    <tr><td>Zuerst einen kleinen Griff zeigen</td><td>Zeigt den Griff auf dem Weg nach oben, damit die Leiste nie überraschend aufspringt.</td><td class="d">An</td><td class="r">An / Aus</td></tr>
+    <tr><td><span class="n" style="background:#9b7bff">B</span>Abstand, ab dem der Griff erscheint</td><td>Abstand zum oberen Rand, ab dem der Griff erscheint.</td><td class="d">140 px</td><td class="r">20 – 400 px</td></tr>
+    <tr><td><span class="n" style="background:#2fbf71">C</span>Aktive Breite am oberen Rand</td><td>Nur dieser mittige Teil des oberen Rands reagiert. 100 % = die ganze Breite.</td><td class="d">100 %</td><td class="r">10 – 100 %</td></tr>
+    <tr><td>Verzögerung bis zum Ausfahren</td><td>Wartezeit, bevor die Leiste öffnet. Verhindert das Öffnen beim Vorbeifahren.</td><td class="d">40 ms</td><td class="r">0 – 600 ms</td></tr>
+  </table>
+  <table>
+    <tr><th>Ausblenden</th><th>Was sie bewirkt</th><th class="d">Standard</th><th class="r">Bereich</th></tr>
+    <tr><td><span class="n" style="background:#ffb900">D</span>Abstand, bis die Leiste wieder einfährt</td><td>Wie weit du dich unter die Leiste bewegen kannst, bevor sie schließt – ein Sicherheitsabstand.</td><td class="d">56 px</td><td class="r">0 – 300 px</td></tr>
+    <tr><td>Verzögerung bis zum Einfahren</td><td>Wartezeit nach dem Verlassen dieses Bereichs, bevor die Leiste hochfährt.</td><td class="d">150 ms</td><td class="r">0 – 1000 ms</td></tr>
+  </table>
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">12</span></div>
+</section>
+
+<!-- ======================================================== 6.3b ANIMATION -->
+<section class="page">
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · Anleitung</span><span>6.3 · Verhalten &amp; Animation</span></div>
+  <div class="shot" style="margin:0 34mm 3mm">
+    <img src="assets/de/editor-behavior-light.png">
+    <span class="b" style="left:100.6%;top:18.6%">1</span>
+    <span class="b" style="left:100.6%;top:46.5%">2</span>
+    <span class="b" style="left:100.6%;top:61.6%">3</span>
+    <span class="b" style="left:72%;top:89%">4</span>
+  </div>
+  <div class="legend">
+    <div><i>1</i><span><b>Einblenden</b> – siehe Tabelle auf der vorigen Seite.</span></div>
+    <div><i>2</i><span><b>Ausblenden</b> – siehe Tabelle auf der vorigen Seite.</span></div>
+    <div><i>3</i><span><b>Animation</b> – siehe unten.</span></div>
+    <div><i>4</i><span><b>Animation testen</b> spielt die Leiste mit den aktuellen Werten ab.</span></div>
+  </div>
+  <table>
+    <tr><th>Animation</th><th>Was sie bewirkt</th><th class="d">Standard</th><th class="r">Bereich</th></tr>
+    <tr><td><span class="n" style="background:#ff6b8a">E</span>Wie weit die Leiste herunterfährt</td><td>Abstand zwischen dem oberen Rand des freien Bildschirmbereichs und der geöffneten Leiste.</td><td class="d">12 px</td><td class="r">0 – 150 px</td></tr>
+    <tr><td>Dauer beim Herunterfahren</td><td>Wie lange die Leiste zum Herunterfahren braucht.</td><td class="d">220 ms</td><td class="r">0 – 1000 ms</td></tr>
+    <tr><td>Dauer beim Zurückfahren</td><td>Wie lange das Hochfahren dauert. Kürzer wirkt flotter.</td><td class="d">150 ms</td><td class="r">0 – 1000 ms</td></tr>
+    <tr><td>Bewegungskurve</td><td>Der Charakter der Bewegung – siehe Kurven unten.</td><td class="d">Sanft</td><td class="r">6 Kurven</td></tr>
+    <tr><td>Beim Ein- und Ausfahren überblenden</td><td>Blendet die Leiste während der Bewegung ein und aus.</td><td class="d">An</td><td class="r">An / Aus</td></tr>
+  </table>
+  <h2>Bewegungskurven</h2>
+  <p>Jede Kurve hat ein passendes Gegenstück fürs Hochfahren – Ausblenden fühlt sich an wie rückwärts abgespieltes Einblenden.</p>
+  <div class="curve" id="curves"></div>
+  <div class="box tip"><b class="t">Langsamer PC oder Fernzugriff?</b>Setze beide Dauern auf 0 ms und schalte das Überblenden aus – dann erscheint die Leiste sofort.</div>
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">13</span></div>
+</section>
+
+<!-- ======================================================== 6.4 LAYOUTS -->
+<section class="page">
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · Anleitung</span><span>6.4 · Layouts</span></div>
+  <div class="chap"><div class="no" style="font-size:12pt">6.4</div><div><div class="k">Einstellungseditor</div><h1 style="margin:0">Layouts</h1></div></div>
+  <p class="lead">Wähle, welche Layouts in der Snap-Leiste erscheinen und in welcher Reihenfolge.</p>
+  <div class="shot" style="margin:0 10mm 4mm">
+    <img src="assets/de/editor-layouts-light.png">
+    <span class="b" style="left:36.6%;top:17.1%">1</span>
+    <span class="b" style="left:80.4%;top:17.1%">2</span>
+    <span class="b" style="left:37.8%;top:29%">3</span>
+    <span class="b" style="left:26%;top:37.3%">4</span>
+    <span class="b" style="left:50.4%;top:37.3%">5</span>
+    <span class="b" style="left:35.2%;top:41.1%">6</span>
+    <span class="b" style="left:41.3%;top:44.6%">7</span>
+    <span class="b" style="left:67.7%;top:44.6%">8</span>
+    <span class="b" style="left:94.2%;top:44.6%">9</span>
+  </div>
+  <div class="legend">
+    <div><i>1</i><span><b>Neues Layout</b> – legt ein Layout an und öffnet den Designer.</span></div>
+    <div><i>2</i><span><b>Standard-Layouts wiederherstellen</b> – holt die sechs mitgelieferten Layouts zurück. Fragt vorher, weil eigene Layouts und Reihenfolge verloren gehen.</span></div>
+    <div><i>3</i><span><b>Layout-Karte</b> – ein Bild des Layouts. <b>Doppelklick</b> zum Bearbeiten.</span></div>
+    <div><i>4</i><span><b>Ziehgriff ⠿</b> – zieh eine Karte an eine andere Stelle, um die Reihenfolge in der Leiste zu ändern.</span></div>
+    <div><i>5</i><span><b>Position</b> in der Snap-Leiste (1 = links).</span></div>
+    <div><i>6</i><span><b>In Leiste</b> – Haken entfernen, um ein Layout aus der Leiste auszublenden, ohne es zu löschen.</span></div>
+    <div><i>7</i><span><b>Bearbeiten ✎</b> – öffnet den Layout-Designer (bei Karte 1 gezeigt).</span></div>
+    <div><i>8</i><span><b>Duplizieren</b> – kopiert das Layout als Ausgangspunkt für eine Variante (Karte 2).</span></div>
+    <div><i>9</i><span><b>Löschen</b> – entfernt das Layout nach einer Rückfrage (Karte 3).</span></div>
+  </div>
+  <h3>Reihenfolge ändern</h3>
+  <ol class="steps">
+    <li>Drück die Maustaste auf einer Karte und halte sie.</li>
+    <li>Zieh sie an die gewünschte Position – die anderen Karten weichen aus.</li>
+    <li>Loslassen. Die neue Reihenfolge wird gespeichert und beim nächsten Öffnen der Leiste verwendet.</li>
+  </ol>
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">14</span></div>
+</section>
+
+<!-- ======================================================== 6.5 DESIGNER -->
+<section class="page">
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · Anleitung</span><span>6.5 · Layout-Designer</span></div>
+  <div class="chap"><div class="no" style="font-size:12pt">6.5</div><div><div class="k">Einstellungseditor</div><h1 style="margin:0">Layout-Designer</h1></div></div>
+  <p class="lead">Teile den Bildschirm, wie du willst – bis zu 16 Zonen pro Layout.</p>
+  <div class="shot" style="margin:0 12mm 4mm">
+    <img src="assets/de/designer-light.png">
+    <span class="b" style="left:97.6%;top:10.3%">1</span>
+    <span class="b" style="left:15.8%;top:14.8%">2</span>
+    <span class="b" style="left:30.5%;top:14.8%">3</span>
+    <span class="b" style="left:41.5%;top:14.8%">4</span>
+    <span class="b" style="left:63.3%;top:14.8%">5</span>
+    <span class="b" style="left:26.8%;top:44%">6</span>
+    <span class="b" style="left:50%;top:52.5%">7</span>
+    <span class="b" style="left:49.4%;top:89.4%">8</span>
+    <span class="b" style="left:22%;top:93.5%">9</span>
+    <span class="b" style="left:78.6%;top:93.6%">10</span>
+  </div>
+  <div class="legend">
+    <div><i>1</i><span><b>Name</b> des Layouts, angezeigt auf der Karte und in der Namenszeile.</span></div>
+    <div><i>2</i><span><b>Nebeneinander teilen</b> – teilt die gewählte Zone in eine linke und eine rechte Hälfte.</span></div>
+    <div><i>3</i><span><b>Übereinander teilen</b> – teilt die gewählte Zone waagerecht.</span></div>
+    <div><i>4</i><span><b>Zone entfernen</b> – löscht die gewählte Zone; ihr Nachbar übernimmt den Platz.</span></div>
+    <div><i>5</i><span><b>Vorlage laden …</b> – startet mit einem von elf fertigen Layouts.</span></div>
+    <div><i>6</i><span><b>Gewählte Zone</b> – Zone anklicken zum Auswählen. Nummer und Größe in % stehen darin. <b>Doppelklick</b> teilt sie entlang der längeren Seite.</span></div>
+    <div><i>7</i><span><b>Teiler</b> – ziehen ändert die Größe der Zonen auf beiden Seiten.</span></div>
+    <div><i>8</i><span><b>Zonenzähler</b> – zeigt, wie viele der 16 möglichen Zonen belegt sind.</span></div>
+    <div><i>9</i><span><b>Teiler einrasten</b> – Teiler rasten bei ¼, ⅓, ½, ⅔ und ¾ ein.</span></div>
+    <div><i>10</i><span><b>Abbrechen / Speichern</b> – Änderungen verwerfen oder behalten.</span></div>
+  </div>
+  <h3>Beispiel: ein großer Hauptbereich mit zwei kleinen Zonen rechts</h3>
+  <ol class="steps">
+    <li>Klicke auf der Seite Layouts auf <span class="ui">Neues Layout</span> und gib einen Namen ein, z. B. <i>Fokus + 2</i>.</li>
+    <li>Klicke auf <span class="ui">Nebeneinander teilen</span> und zieh den Teiler auf ⅔.</li>
+    <li>Wähle die rechte Zone und klicke auf <span class="ui">Übereinander teilen</span>. Dann <span class="ui">Speichern</span>.</li>
+  </ol>
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">15</span></div>
+</section>
+
+<!-- ======================================================== 6.6 SCREEN EDGES -->
+<section class="page">
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · Anleitung</span><span>6.6 · Bildschirmkanten</span></div>
+  <div class="chap"><div class="no" style="font-size:12pt">6.6</div><div><div class="k">Weitere Wege zum Einrasten</div><h1 style="margin:0">Bildschirmkanten</h1></div></div>
+  <p class="lead">Drück ein Fenster gegen eine Kante oder Ecke des Bildschirms, und es füllt diesen Teil aus. Funktioniert mit oder ohne Snap-Leiste.</p>
+
+  <div class="cols" style="grid-template-columns:1.25fr 1fr;align-items:center;margin-bottom:3mm">
+    <div class="scr" style="height:38mm">
+      <div class="z" style="left:2%;top:3%;width:15%;height:17%">¼</div>
+      <div class="z" style="left:19%;top:3%;width:62%;height:17%">Obere Kante<br>maximieren</div>
+      <div class="z" style="left:83%;top:3%;width:15%;height:17%">¼</div>
+      <div class="z" style="left:2%;top:22%;width:15%;height:56%">Linke<br>Hälfte</div>
+      <div class="z" style="left:83%;top:22%;width:15%;height:56%">Rechte<br>Hälfte</div>
+      <div class="z" style="left:2%;top:80%;width:15%;height:17%">¼</div>
+      <div class="z" style="left:19%;top:80%;width:62%;height:17%">Untere Hälfte</div>
+      <div class="z" style="left:83%;top:80%;width:15%;height:17%">¼</div>
+    </div>
+    <div>
+      <p><b>Kanten</b> – die Mitte der linken oder rechten Kante gibt eine Hälfte, die untere Kante die untere Hälfte, die obere Kante maximiert (oder was du wählst).</p>
+      <p><b>Ecken</b> – der äußere Teil jeder Kante (standardmäßig 20 %) gibt das Viertel in dieser Ecke.</p>
+      <p><b>Ein kleiner Stoß</b> – das Fenster muss 60 ms an der Kante anliegen, damit bloßes Vorbeifahren nichts auslöst.</p>
+    </div>
+  </div>
+  <h2 style="margin-top:1mm">Intelligentes Füllen</h2>
+  <p>Die Kanten berücksichtigen immer, was schon eingerastet ist. Hälften und Viertel überdecken nie ein eingerastetes Fenster, und die obere Kante füllt nur den freien Platz darüber.</p>
+
+  <div class="cols" style="gap:5mm;margin-bottom:1mm">
+    <div><div class="scr" style="height:19mm">
+      <div class="pv" style="left:2%;top:4%;width:96%;height:92%"></div>
+      <div class="cur" style="left:48%;top:-2%">⬆</div></div>
+      <p class="figcap">Unten nichts eingerastet → die obere Kante maximiert.</p></div>
+    <div><div class="scr" style="height:19mm">
+      <div class="w" style="left:2%;top:52%;width:47%;height:44%"></div>
+      <div class="pv" style="left:2%;top:4%;width:96%;height:45%"></div>
+      <div class="cur" style="left:48%;top:-2%">⬆</div></div>
+      <p class="figcap">Unten liegt ein Viertel → nur die obere Hälfte wird gefüllt.</p></div>
+  </div>
+  <table class="tight">
+    <tr><th>Einstellung</th><th>Was sie bewirkt</th><th class="d">Standard</th><th class="r">Bereich</th></tr>
+    <tr><td>Bildschirmkanten verwenden</td><td>Hauptschalter, unabhängig von der Leiste.</td><td class="d">An</td><td class="r">An / Aus</td></tr>
+    <tr><td>Obere Kante</td><td>Was die obere Kante tut.</td><td class="d">Maximieren</td><td class="r">Maximieren · Vollbild ·<br>Obere Hälfte · Aus</td></tr>
+    <tr><td>Linke und rechte Kante</td><td>Halber Bildschirm.</td><td class="d">An</td><td class="r">An / Aus</td></tr>
+    <tr><td>Untere Kante</td><td>Untere Hälfte.</td><td class="d">An</td><td class="r">An / Aus</td></tr>
+    <tr><td>Ecken</td><td>Viertel des Bildschirms.</td><td class="d">An</td><td class="r">An / Aus</td></tr>
+    <tr><td>Intelligentes Füllen</td><td>Rücksicht auf eingerastete Fenster.</td><td class="d">An</td><td class="r">An / Aus</td></tr>
+    <tr><td>Abstand zur Kante</td><td>Nähe des Zeigers zur Kante.</td><td class="d">4 px</td><td class="r">1 – 40 px</td></tr>
+    <tr><td>Andruck-Verzögerung</td><td>Anliegezeit an der Kante, 0 = sofort.</td><td class="d">60 ms</td><td class="r">0 – 600 ms</td></tr>
+    <tr><td>Eckengröße</td><td>Seitenanteil, der als Ecke zählt.</td><td class="d">20 %</td><td class="r">5 – 40 %</td></tr>
+    <tr><td>Halten zum Auffüllen</td><td>Wächst bis zum nächsten Fenster.</td><td class="d">An · 700 ms</td><td class="r">200 – 2000 ms</td></tr>
+  </table>
+  <div class="box tip"><b class="t">Halten zum Auffüllen · KDEs Kacheln</b>Halte das Fenster 0,7 s länger an der Kante – es wächst bis zum nächsten Fenster. KDEs Kanten-Kacheln pausieren solange, deine KDE-Einstellungen bleiben unverändert.</div>
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">16</span></div>
+</section>
+
+<!-- ======================================================== 6.7 MAGNET -->
+<section class="page">
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · Anleitung</span><span>6.7 · Fenster-Magnet</span></div>
+  <div class="chap"><div class="no" style="font-size:12pt">6.7</div><div><div class="k">Weitere Wege zum Einrasten</div><h1 style="margin:0">Fenster-Magnet</h1></div></div>
+  <p class="lead">Während du ein Fenster verschiebst oder seine Größe änderst, haften seine Kanten an nahen Fenstern und an den Bildschirmrändern. Funktioniert ohne Snap-Leiste und ohne Bildschirmkanten.</p>
+  
+  <table class="tight">
+    <tr><th>Einstellung</th><th>Was sie bewirkt</th><th class="d">Standard</th><th class="r">Bereich</th></tr>
+    <tr><td>Fenster-Magnet verwenden</td><td>Hauptschalter.</td><td class="d">An</td><td class="r">An / Aus</td></tr>
+    <tr><td>Einrastabstand</td><td>Wie nah eine Kante kommen muss, bevor sie einrastet. Größer = stärkerer Magnet.</td><td class="d">16 px</td><td class="r">2 – 64 px</td></tr>
+    <tr><td>Widerstand gegen Überlappen</td><td>Ein Fenster bleibt an der Kante eines anderen stehen und löst sich erst, wenn du es so weit hineinschiebst. 0 = Fenster dürfen frei überlappen.</td><td class="d">48 px</td><td class="r">0 – 200 px</td></tr>
+    <tr><td>An anderen Fenstern haften</td><td>Kanten richten sich an den Kanten anderer sichtbarer Fenster auf demselben Bildschirm aus.</td><td class="d">An</td><td class="r">An / Aus</td></tr>
+    <tr><td>An den Bildschirmrändern haften</td><td>Kanten richten sich am freien Bildschirmbereich aus (Leisten werden berücksichtigt).</td><td class="d">An</td><td class="r">An / Aus</td></tr>
+    <tr><td>Auch beim Ändern der Größe</td><td>Auch die gezogene Kante haftet – die anderen Kanten bleiben, wo sie sind.</td><td class="d">An</td><td class="r">An / Aus</td></tr>
+    <tr><td>Abstand zwischen Fenstern beibehalten</td><td>Fenster halten den <span class="ui">Abstand zwischen Fenstern</span> von der Seite Allgemein ein, statt sich zu berühren.</td><td class="d">Aus</td><td class="r">An / Aus</td></tr>
+  </table>
+  <h2 style="margin-top:2mm">Klebende Kanten</h2>
+  <p>Fenster, die sich berühren, teilen sich ihre Kante. Änderst du die Größe eines davon, folgen die anderen live – nichts überlappt, keine Lücke entsteht, und der Abstand zwischen ihnen bleibt, wie er war.</p>
+  <table class="tight">
+    <tr><th>Einstellung</th><th>Was sie bewirkt</th><th class="d">Standard</th></tr>
+    <tr><td>Berührende Fenster gemeinsam in der Größe ändern</td><td>Die gemeinsame Kante jedes Fensters, das dem veränderten gegenüberliegt, wandert mit. Kanten am Bildschirmrand werden nie gekoppelt.</td><td class="d">An</td></tr>
+    <tr><td>Gestapelte Fenster in einer Linie halten</td><td>Fenster übereinander halten ihre linken und rechten Kanten zusammen, Fenster nebeneinander ihre oberen und unteren.</td><td class="d">An</td></tr>
+    <tr><td>Schütteln zum Lösen</td><td>Schüttle beim Größe-Ändern die Maus, und die anderen Fenster springen zurück.</td><td class="d">An</td></tr>
+    <tr><td>Andere Fenster ausblenden</td><td>Beim Größe-Ändern werden Fenster, die nicht mitgehen, durchsichtig angezeigt.</td><td class="d">An</td></tr>
+  </table>
+  <div class="box note"><b class="t">Plasma hat auch einen Magnet</b>Solange der Magnet an ist, pausiert SeaQ Snap Layout Plasmas eigene Einrastzonen, damit nur ein Magnet an einem Fenster zieht (<span class="ui">KDEs Einrastzonen pausieren, solange der Magnet an ist</span>). Deine KDE-Einstellungen werden nicht geändert – schalte es aus, deaktiviere oder entferne das Skript, und Plasmas Einrasten ist wieder da.</div>
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">17</span></div>
+</section>
+
+<!-- ======================================================== 6.8 KEYBOARD -->
+<section class="page">
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · Anleitung</span><span>6.8 · Tastenkürzel</span></div>
+  <div class="chap"><div class="no" style="font-size:12pt">6.8</div><div><div class="k">Weitere Wege zum Einrasten</div><h1 style="margin:0">Tastenkürzel</h1></div></div>
+  <p class="lead">Das aktive Fenster mit der Tastatur einrasten. Das sind normale globale KDE-Kurzbefehle – du findest sie auch unter Systemeinstellungen → Kurzbefehle → KWin.</p>
+  <div class="shot" style="margin:0 36mm 2mm">
+    <img src="assets/de/editor-keys-light.png">
+    <span class="b" style="left:100.6%;top:21%">1</span>
+    <span class="b" style="left:100.6%;top:26.4%">2</span>
+    <span class="b" style="left:100.6%;top:31.4%">3</span>
+    <span class="b" style="left:100.6%;top:43.5%">4</span>
+  </div>
+  <div class="legend one">
+    <div><i>1</i><span><b>Tastenkürzel verwenden</b> – aus lässt die Tasten belegt, sie tun aber nichts. Der Schalter <span class="ui">Kürzel</span> in der Seitenleiste ist derselbe.</span></div>
+    <div><i>2</i><span><b>Tastenschema</b> – wähle einen fertigen Satz und klicke auf <span class="ui">Anwenden</span>: Alle 16 Einrast-Aktionen bekommen ihre Tasten auf einmal (siehe Kapitel 7).</span></div>
+    <div><i>3</i><span><b>Alle zurücksetzen</b> – gibt jeder Aktion wieder die Taste des gewählten Schemas.</span></div>
+    <div><i>4</i><span><b>Eine Zeile pro Aktion</b> – zeigt die Tasten als Tastenkappen. Der Stift öffnet den Editor; der Pfeil <span class="ui">↶</span> erscheint, wenn eine Taste vom Schema abweicht, und setzt sie zurück.</span></div>
+  </div>
+  <h2>Eine einzelne Taste ändern</h2>
+  <ol class="steps">
+    <li>Klicke auf die Aktion, z. B. <i>In die linke Hälfte</i>. Darunter öffnet sich ein Editor.</li>
+    <li><b>Übliche Kombinationen</b> – ein Klick wählt dieselbe Taste mit den Zusatztasten jedes Schemas, z. B. <kbd>Ctrl+Alt+Left</kbd>, <kbd>Meta+Left</kbd>, <kbd>Meta+Shift+Left</kbd>.</li>
+    <li><b>Eigene Kombination</b> – schalte <kbd>Meta</kbd> <kbd>Ctrl</kbd> <kbd>Alt</kbd> <kbd>Shift</kbd> um, wähle die Taste aus der Liste (Buchstaben, Ziffern, Pfeile, F1–F12, Ziffernblock …) und klicke auf <span class="ui">Setzen</span>.</li>
+    <li><span class="ui">Auf Standard zurücksetzen</span> holt die Taste des gewählten Schemas zurück, <span class="ui">Entfernen</span> löscht die Taste dieser Aktion.</li>
+  </ol>
+  <h2>Wenn eine Taste schon belegt ist</h2>
+  <p>SeaQ Snap Layout fragt KDEs Kurzbefehl-Dienst, bevor es eine Taste setzt. Hat eine andere Aktion sie schon, nennt eine orange Karte den Besitzer – zum Beispiel <i>„Ctrl+Alt+F wird von „Kalender anzeigen“ verwendet“</i>:</p>
+  <ul><li><span class="ui">Übernehmen</span> – nimmt der anderen Aktion die Taste weg und gibt sie SeaQ Snap Layout.</li>
+    <li><span class="ui">Alle übernehmen</span> – macht das für jeden Konflikt in der Liste.</li>
+    <li><span class="ui">Behalten</span> – lässt alles, wie es ist; diese Aktion bleibt ohne Taste.</li></ul>
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">18</span></div>
+</section>
+
+<!-- ======================================================== 7 KEY REFERENCE -->
+<section class="page">
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · Anleitung</span><span>7 · Tastenübersicht</span></div>
+  <div class="chap"><div class="no">7</div><div><div class="k">Kapitel 7</div><h1 style="margin:0">Tastenübersicht</h1></div></div>
+  <p class="lead">Die 16 Einrast-Aktionen mit ihren Tasten im Standardschema und im Ziffernblock-Schema. Die vier An/Aus-Aktionen haben standardmäßig keine Taste (Seite 20). Die Tasten stehen so da, wie KDE sie speichert: <kbd>Ctrl</kbd> = Strg, <kbd>Shift</kbd> = Umschalt, <kbd>Return</kbd> = Eingabe.</p>
+  <table class="keys tight">
+    <tr><th>Aktion</th><th>Standard – Strg+Alt</th><th>Ziffernblock</th></tr>
+    <tr class="grp"><td colspan="3">Hälften</td></tr>
+    <tr><td>In die linke Hälfte</td><td><kbd>Ctrl+Alt+Left</kbd></td><td><kbd>Ctrl+Alt+Num+4</kbd></td></tr>
+    <tr><td>In die rechte Hälfte</td><td><kbd>Ctrl+Alt+Right</kbd></td><td><kbd>Ctrl+Alt+Num+6</kbd></td></tr>
+    <tr><td>In die obere Hälfte</td><td><kbd>Ctrl+Alt+Up</kbd></td><td><kbd>Ctrl+Alt+Num+8</kbd></td></tr>
+    <tr><td>In die untere Hälfte</td><td><kbd>Ctrl+Alt+Down</kbd></td><td><kbd>Ctrl+Alt+Num+2</kbd></td></tr>
+    <tr class="grp"><td colspan="3">Viertel</td></tr>
+    <tr><td>Ins Viertel oben links</td><td><kbd>Ctrl+Alt+U</kbd></td><td><kbd>Ctrl+Alt+Num+7</kbd></td></tr>
+    <tr><td>Ins Viertel oben rechts</td><td><kbd>Ctrl+Alt+I</kbd></td><td><kbd>Ctrl+Alt+Num+9</kbd></td></tr>
+    <tr><td>Ins Viertel unten links</td><td><kbd>Ctrl+Alt+J</kbd></td><td><kbd>Ctrl+Alt+Num+1</kbd></td></tr>
+    <tr><td>Ins Viertel unten rechts</td><td><kbd>Ctrl+Alt+K</kbd></td><td><kbd>Ctrl+Alt+Num+3</kbd></td></tr>
+    <tr class="grp"><td colspan="3">Drittel</td></tr>
+    <tr><td>Ins linke Drittel</td><td><kbd>Ctrl+Alt+D</kbd></td><td><span style="color:var(--muted)">–</span></td></tr>
+    <tr><td>Ins mittlere Drittel</td><td><kbd>Ctrl+Alt+F</kbd></td><td><span style="color:var(--muted)">–</span></td></tr>
+    <tr><td>Ins rechte Drittel</td><td><kbd>Ctrl+Alt+G</kbd></td><td><span style="color:var(--muted)">–</span></td></tr>
+    <tr><td>In die linken zwei Drittel</td><td><kbd>Ctrl+Alt+E</kbd></td><td><span style="color:var(--muted)">–</span></td></tr>
+    <tr><td>In die rechten zwei Drittel</td><td><kbd>Ctrl+Alt+Y</kbd></td><td><span style="color:var(--muted)">–</span></td></tr>
+    <tr class="grp"><td colspan="3">Fenster</td></tr>
+    <tr><td>Maximieren oder wiederherstellen</td><td><kbd>Ctrl+Alt+Return</kbd></td><td><kbd>Ctrl+Alt+Num+5</kbd></td></tr>
+    <tr><td>Fenster zentrieren</td><td><kbd>Ctrl+Alt+C</kbd></td><td><kbd>Ctrl+Alt+Num+0</kbd></td></tr>
+    <tr><td>Größe von vor dem Einrasten wiederherstellen</td><td><kbd>Ctrl+Alt+-</kbd></td><td><span style="color:var(--muted)">–</span></td></tr>
+    </table>
+  <h2 style="margin-top:3mm">Andere Schemata</h2>
+  <p>Dieselben Tasten, andere Zusatztasten – gezeigt für <i>In die linke Hälfte</i>. <span class="ui">Keine Kürzel</span> entfernt alle Tasten.</p>
+  <table class="tight">
+    <tr><th>Schema</th><th>Beispiel</th></tr>
+    <tr><td>Meta+Strg+Alt + Taste</td><td><kbd>Meta+Ctrl+Alt+Left</kbd></td></tr>
+    <tr><td>Meta + Taste (KDE-Stil)</td><td><kbd>Meta+Left</kbd> – ersetzt Plasmas eigene Kacheltasten</td></tr>
+    <tr><td>Meta+Umschalt + Taste</td><td><kbd>Meta+Shift+Left</kbd></td></tr>
+    <tr><td>Strg+Umschalt+Alt + Taste</td><td><kbd>Ctrl+Shift+Alt+Left</kbd></td></tr>
+    <tr><td>Strg+Alt + Ziffernblock</td><td><kbd>Ctrl+Alt+Num+4</kbd> – Drittel und Wiederherstellen bekommen keine Taste</td></tr>
+  </table>
+  <div class="box tip"><b class="t">Leicht zu merken</b>Pfeiltasten geben Hälften. <kbd>U</kbd> <kbd>I</kbd> / <kbd>J</kbd> <kbd>K</kbd> liegen auf der Tastatur wie die vier Viertel; <kbd>D</kbd> <kbd>F</kbd> <kbd>G</kbd> sind die drei Drittel von links nach rechts, <kbd>E</kbd> und <kbd>Y</kbd> die zwei Drittel. Auf dem Ziffernblock zeigt jede Taste dorthin, wo das Fenster hingeht.</div>
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">19</span></div>
+</section>
+
+
+<!-- ======================================================== 6.9 ABOUT + 8 -->
+<section class="page">
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · Anleitung</span><span>6.9 · Info &amp; Hilfe · 8 · Sprachen</span></div>
+  <div class="chap"><div class="no" style="font-size:12pt">6.9</div><div><div class="k">Einstellungseditor</div><h1 style="margin:0">Info &amp; Hilfe</h1></div></div>
+  <div class="cols" style="grid-template-columns:1.1fr 1fr;align-items:start;margin-top:5mm">
+    <div class="shot" style="margin:0"><img src="assets/de/editor-about-light.png"></div>
+    <div><p><b>Unterstützen</b> – <span class="ui">Mit PayPal spenden</span> (paypal.me/SeaQSoft) und <span class="ui">Buy me a coffee</span> (buymeacoffee.com/seaq) öffnen deinen Browser. Darunter: wie das Einrasten funktioniert, die weiteren Wege, wie man den Editor öffnet, und:</p>
+      <ul><li><b>Version</b> – die installierte Version. Nach einem Update prüfen.</li><li><b>Autor</b> – SeaQ</li><li><b>Lizenz</b> – GPL-3.0-or-later</li><li><b>Einstellungsdatei</b> – wo deine Einstellungen und Layouts gespeichert sind.</li></ul></div>
+  </div>
+  <h2>Kürzel für die Funktionen</h2>
+  <p>Vier weitere Aktionen haben standardmäßig keine Taste und kommen so nie deinen eigenen Kürzeln in die Quere. Gib ihnen eine Taste auf der Seite <span class="ui">Tastenkürzel</span> oder unter <span class="ui">Systemeinstellungen</span> → <span class="ui">Kurzbefehle</span> → <span class="ui">KWin</span> (Suche „Snap Layout“).</p>
+  <table>
+    <tr><th>Aktion</th><th>Was sie bewirkt</th></tr>
+    <tr><td>Snap-Leiste an/aus</td><td>Pausiert die Snap-Leiste oder setzt sie fort – wie ihr Schalter in der Seitenleiste.</td></tr>
+    <tr><td>Bildschirmkanten an/aus</td><td>Pausiert die Bildschirmkanten oder setzt sie fort.</td></tr>
+    <tr><td>Fenster-Magnet an/aus</td><td>Pausiert den Fenster-Magnet oder setzt ihn fort.</td></tr>
+    <tr><td>Snap-Leiste testen</td><td>Spielt die Snap-Leiste auf dem aktuellen Bildschirm ab.</td></tr>
+  </table>
+  <div class="chap" style="margin-top:6mm"><div class="no">8</div><div><div class="k">Kapitel 8</div><h1 style="margin:0">Sprachen</h1></div></div>
+  <p>Einstellungseditor, Schnellmenü, Kürzelnamen und Layoutnamen folgen deiner Systemsprache (<span class="ui">Systemeinstellungen</span> → <span class="ui">Region &amp; Sprache</span>). 62 Sprachen sind enthalten – alle europäischen Sprachen sowie Chinesisch (vereinfacht und traditionell), Japanisch, Koreanisch, Hindi, Bengalisch, Tamil, Telugu, Marathi, Gujarati, Punjabi, Urdu, Arabisch, Hebräisch, Persisch, Indonesisch, Malaiisch, Vietnamesisch, Thai, Filipino, Georgisch, Armenisch und mehr. Sprachen, die von rechts nach links laufen, werden automatisch gespiegelt.</p>
+  <div class="box note"><b class="t">Beim Übersetzen helfen</b>Jede Sprache ist eine einfache Textdatei im Ordner <code>i18n</code> des Repositorys – eine Zeile pro Text. Korrekturen und neue Sprachen sind als Pull Requests willkommen.</div>
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">20</span></div>
+</section>
+
+<!-- ======================================================== 8 DEFAULTS -->
+<section class="page">
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · Anleitung</span><span>9 · Empfohlene Werte</span></div>
+  <div class="chap"><div class="no">9</div><div><div class="k">Kapitel 9</div><h1 style="margin:0">Empfohlene Werte</h1></div></div>
+  <p class="lead">Alle Standardwerte auf einen Blick. <span class="ui">Empfohlene Werte</span> auf jeder Seite stellt sie für diese Seite wieder her.</p>
+  <div class="cols" style="gap:4mm;grid-template-columns:1fr 1fr 1fr">
+    <table class="tight dv">
+      <tr><th colspan="2">Allgemein</th></tr>
+      <tr><td>Snap-Leiste · Kanten · Magnet · Kürzel</td><td>alle an</td></tr>
+      <tr><td>Vorschauen (Leiste, Kanten)</td><td>An</td></tr>
+      <tr><td>Vorschauen in Akzentfarbe</td><td>An</td></tr>
+      <tr><td>Ursprüngliche Größe zurück</td><td>An</td></tr>
+      <tr><td>Abstand zwischen Fenstern</td><td>0 px</td></tr>
+      <tr><td>Abstand zum Bildschirmrand</td><td>0 px</td></tr>
+      <tr><td>Ausgenommene Anwendungen</td><td>keine</td></tr>
+      <tr><th colspan="2">Aussehen</th></tr>
+      <tr><td>Farbschema</td><td>System</td></tr>
+      <tr><td>Akzentfarbe des Systems</td><td>An</td></tr>
+      <tr><td>Größe der Snap-Leiste</td><td>100 %</td></tr>
+      <tr><td>Breite der Vorschaubilder</td><td>72 px</td></tr>
+      <tr><td>Eckenradius</td><td>8 px</td></tr>
+      <tr><td>Deckkraft des Hintergrunds</td><td>96 %</td></tr>
+      <tr><td>Layouts pro Reihe</td><td>0 (eine Reihe)</td></tr>
+      <tr><td>Layout- und Zonennamen</td><td>Aus</td></tr>
+    </table>
+    <table class="tight dv">
+      <tr><th colspan="2">Verhalten</th></tr>
+      <tr><td>Auslöseabstand</td><td>24 px</td></tr>
+      <tr><td>Zuerst kleiner Griff</td><td>An</td></tr>
+      <tr><td>Griffabstand</td><td>140 px</td></tr>
+      <tr><td>Aktive Breite</td><td>100 %</td></tr>
+      <tr><td>Verzögerung Ausfahren</td><td>40 ms</td></tr>
+      <tr><td>Abstand Einfahren</td><td>56 px</td></tr>
+      <tr><td>Verzögerung Einfahren</td><td>150 ms</td></tr>
+      <tr><th colspan="2">Animation</th></tr>
+      <tr><td>Ausfahrweg</td><td>12 px</td></tr>
+      <tr><td>Dauer Herunterfahren</td><td>220 ms</td></tr>
+      <tr><td>Dauer Zurückfahren</td><td>150 ms</td></tr>
+      <tr><td>Bewegungskurve</td><td>Sanft</td></tr>
+      <tr><td>Überblenden</td><td>An</td></tr>
+      <tr><th colspan="2">Layouts in der Leiste</th></tr>
+      <tr><td colspan="2" style="width:auto;font-weight:400">Hälften · Zwei Drittel · Drei Spalten · Haupt + Stapel · Vier Viertel · Fokus Mitte</td></tr>
+    </table>
+    <table class="tight dv">
+      <tr><th colspan="2">Bildschirmkanten</th></tr>
+      <tr><td>Obere Kante</td><td>Maximieren</td></tr>
+      <tr><td>Seiten · unten · Ecken</td><td>An</td></tr>
+      <tr><td>Intelligentes Füllen</td><td>An</td></tr>
+      <tr><td>Abstand · Andruck · Ecke</td><td>4 px · 60 ms · 20 %</td></tr>
+      <tr><th colspan="2">Fenster-Magnet</th></tr>
+      <tr><td>Einrastabstand</td><td>16 px</td></tr>
+      <tr><td>Fenster · Ränder · Größe ändern</td><td>An</td></tr>
+      <tr><td>Abstand beibehalten</td><td>Aus</td></tr>
+      <tr><td>Widerstand</td><td>48 px</td></tr>
+      <tr><td>Klebende Kanten · Linie · Schütteln · Ausblenden</td><td>An</td></tr>
+      <tr><th colspan="2">Tastatur</th></tr>
+      <tr><td>Tastenschema</td><td>Strg+Alt + Taste</td></tr>
+    </table>
+  </div>
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">21</span></div>
+</section>
+
+<!-- ======================================================== 9 FAQ -->
+<section class="page faq">
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · Anleitung</span><span>10 · Probleme &amp; FAQ</span></div>
+  <div class="chap"><div class="no">10</div><div><div class="k">Kapitel 10</div><h1 style="margin:0">Probleme &amp; FAQ</h1></div></div>
+  <h3>Die Snap-Leiste erscheint nicht.</h3>
+  <p>Prüfe, ob das Skript unter <span class="ui">KWin-Skripte</span> angehakt ist und der Schalter <span class="ui">Snap-Leiste</span> im Editor an ist. Das Programm darf nicht auf deiner Ausnahmeliste stehen, und du musst ein normales, in der Größe veränderbares Fenster an der Titelleiste ziehen. Liegt <span class="ui">Aktive Breite am oberen Rand</span> unter 100 %, fahr zur Mitte des oberen Rands.</p>
+  <h3>Beim Ziehen an eine Kante passieren zwei Dinge.</h3>
+  <p>Plasmas eigene Kanten-Aktionen oder Einrastzonen sind noch aktiv. Schalte <span class="ui">KDEs Kanten-Kacheln und dessen Vorschau pausieren</span> (Seite Bildschirmkanten) und <span class="ui">KDEs Einrastzonen pausieren, solange der Magnet an ist</span> (Seite Fenster-Magnet) ein – beide sind standardmäßig an.</p>
+  <h3>Ein Tastenkürzel tut nichts.</h3>
+  <p>Prüfe den Schalter <span class="ui">Kürzel</span> und ob die Taste auf der Seite angezeigt wird. Schnappt sich ein anderes Programm die Taste zuerst, wähle ein anderes Schema oder eine andere Taste.</p>
+  <h3>Ich habe ein Update installiert, aber die alte Version läuft noch.</h3>
+  <p>KWin behält geladene Skripte im Speicher. Melde dich einmal ab und wieder an. Die Seite <span class="ui">Info &amp; Hilfe</span> zeigt die laufende Version.</p>
+  <h3>Der Knopf im Schnellmenü tut nichts.</h3>
+  <p>Nach <span class="ui">Snap Layout Einstellungseditor öffnen</span> musst du auf <span class="ui">OK</span> (oder <span class="ui">Anwenden</span>) klicken. Der Editor erscheint etwa eine Sekunde später.</p>
+  <h3>„Could not locate package metadata“ in den KWin-Skripten.</h3>
+  <p>Der Skriptordner wurde entfernt, während KWin ihn noch aufgelistet hatte. Installiere die <code>.kwinscript</code>-Datei erneut und melde dich ab und wieder an.</p>
+  <h3>Funktioniert es mit mehreren Bildschirmen?</h3>
+  <p>Ja. Die Leiste öffnet sich auf dem Bildschirm unter dem Mauszeiger, und die Zonen werden für diesen Bildschirm berechnet.</p>
+  <h3>Es stimmt immer noch etwas nicht – wie melde ich es?</h3>
+  <p>Sammle das Protokoll und öffne ein Issue auf GitHub:</p>
+<pre>journalctl --user -b | grep kdesnaplayout | tail -n 30</pre>
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">22</span></div>
+</section>
+
+<!-- ======================================================== 10 FILES -->
+<section class="page">
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · Anleitung</span><span>11 · Dateien, Deinstallation &amp; Lizenz</span></div>
+  <div class="chap"><div class="no">11</div><div><div class="k">Kapitel 11</div><h1 style="margin:0">Dateien, Deinstallation &amp; Lizenz</h1></div></div>
+  <h2>Wo alles gespeichert ist</h2>
+  <table>
+    <tr><th>Pfad</th><th>Inhalt</th></tr>
+    <tr><td><code>~/.config/kde-snaplayout.ini</code></td><td>Alle Einstellungen des Editors und deine Layouts. Kopiere die Datei, um deine Einrichtung auf einen anderen PC mitzunehmen.</td></tr>
+    <tr><td><code>~/.config/kglobalshortcutsrc</code> → <code>[kwin]</code></td><td>Die Tasten der Kürzel (von KDE verwaltet).</tr>
+    <tr><td><code>~/.config/kwinrc</code> → <code>[Script-kdesnaplayout]</code></td><td>Die zwei Werte des Schnellmenüs (Editor-Knopf, Farben der Snap-Leiste).</td></tr>
+    <tr><td><code>~/.local/share/kwin/scripts/kdesnaplayout</code></td><td>Das installierte Skript.</td></tr>
+  </table>
+  <div class="box note"><b class="t">Datenschutz</b>SeaQ Snap Layout arbeitet komplett offline. Es sendet keine Daten und liest Fensterpositionen nur, während du ein Fenster ziehst. Die Spenden-Knöpfe öffnen lediglich deinen Browser.</div>
+  <h2>Deinstallieren</h2>
+  <p>Klicke in <span class="ui">KWin-Skripte</span> auf den Papierkorb neben <b>SeaQ Snap Layout</b> und dann auf <span class="ui">Anwenden</span>. Oder im Terminal:</p>
+<pre>kpackagetool6 --type KWin/Script --remove kdesnaplayout
+rm ~/.config/kde-snaplayout.ini        <span class="c"># optional: Einstellungen löschen</span></pre>
+  <h2>Lizenz</h2>
+  <p>SeaQ Snap Layout ist freie Software: Du kannst sie unter den Bedingungen der GNU General Public License, Version 3 oder (nach deiner Wahl) jeder späteren Version, weitergeben und/oder verändern. Sie wird in der Hoffnung verbreitet, dass sie nützlich ist, aber ohne jede Gewährleistung.</p>
+  <div class="dark" style="margin-top:10mm;display:flex;align-items:center;gap:6mm;padding:7mm">
+    <img src="assets/icon.svg" style="width:22mm">
+    <div><div style="font-size:16pt;font-weight:800;letter-spacing:-.4px">SeaQ Snap Layout</div>
+      <div style="font-size:9.5pt;color:rgba(255,255,255,.8);line-height:1.6;margin-top:1mm">Gemacht von <b style="color:#fff">SeaQ</b><br>Quellcode &amp; Issues: github.com/Swenix-dev/SeaQ-Snap-Layout<br>Auch im KDE Store</div></div>
+  </div>
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">23</span></div>
+</section>
+
+<script>
+// anatomy figure
+(function () {
+  const host = document.getElementById("anatomy");
+  const W = host.clientWidth, H = host.clientHeight;
+  host.style.background = WALL;
+  const bar = snapBar({ s: 1.05, hoverL: 4, hoverZ: 2, showName: true, accent: "#3daee9" });
+  bar.style.left = Math.round((W - bar._w) / 2) + "px"; bar.style.top = "64px"; host.appendChild(bar);
+  const pill = document.createElement("div");
+  Object.assign(pill.style, { position: "absolute", left: Math.round((W - 140) / 2) + "px", top: "16px", width: "140px", height: "17px", borderRadius: "9px", background: "rgba(43,43,43,.96)", border: "1px solid rgba(255,255,255,.1)" });
+  pill.innerHTML = '<div style="position:absolute;left:50%;top:50%;width:38px;height:4px;border-radius:2px;background:#575757;transform:translate(-50%,-50%)"></div>';
+  host.appendChild(pill);
+  const bx = (W - bar._w) / 2, by = 64;
+  const hz = bar._hits.find(h => h.li === 4 && h.zi === 2), z0 = bar._hits.find(h => h.li === 1 && h.zi === 1), l0 = bar._hits.find(h => h.li === 2 && h.zi === 0);
+  const mk = (n, x, y) => { const b = document.createElement("span"); b.className = "b"; b.textContent = n; b.style.left = x + "px"; b.style.top = y + "px"; host.appendChild(b); };
+  mk(1, W / 2 + 84, 24); mk(2, bx - 14, by + 20);
+  mk(3, bx + l0.x + l0.w / 2, by - 12);
+  mk(4, bx + z0.x + z0.w / 2, by + z0.y - 10);
+  mk(5, bx + hz.x + hz.w + 14, by + hz.y - 6);
+  mk(6, W / 2 + 92, by + bar._h - 15);
+  // desktop hint: preview + window
+  const pv = document.createElement("div");
+  Object.assign(pv.style, { position: "absolute", left: (W / 2) + "px", top: (H * 0.5) + "px", width: (W / 2 - 14) + "px", height: (H * 0.5 - 14) + "px", borderRadius: "8px", background: "rgba(61,174,233,.22)", border: "2px solid #3daee9" });
+  host.insertBefore(pv, host.firstChild);
+  const lab = document.createElement("div"); lab.textContent = "Landevorschau für „Zone 3“";
+  Object.assign(lab.style, { position: "absolute", left: (W * 0.75 - 90) + "px", top: (H * 0.75 - 8) + "px", width: "180px", textAlign: "center", color: "#cfe9ff", font: "600 11px Inter" });
+  host.appendChild(lab);
+})();
+// distances figure
+(function () {
+  const host = document.getElementById("dist");
+  const W = host.clientWidth, H = host.clientHeight;
+  host.style.background = WALL;
+  const k = 1.35;                         // screen px -> figure px
+  const add = (html) => host.insertAdjacentHTML("beforeend", html);
+  const lab = (x, y, col, t, extra = "") => add(`<div style="position:absolute;left:${x}px;top:${y}px;color:${col};font:700 10px Inter;white-space:nowrap;${extra}">${t}</div>`);
+  // C: active width
+  add(`<div style="position:absolute;left:${W * .14}px;width:${W * .72}px;top:0;height:5px;background:#2fbf71;border-radius:0 0 3px 3px"></div>`);
+  lab(W * .14, 8, "#9ff0c4", "C · aktive Breite (hier 60 %)");
+  // A, B lines
+  const trig = 24 * k, peek = 140 * k;
+  const line = (y, col) => add(`<div style="position:absolute;left:0;right:0;top:${y}px;border-top:1.5px dashed ${col}"></div>`);
+  line(trig, "#3daee9"); lab(10, trig + 4, "#8fd3ff", "A · Auslöseabstand 24 px – die Leiste öffnet");
+  line(peek, "#9b7bff"); lab(10, peek + 4, "#c9b8ff", "B · Griffabstand 140 px – der Griff erscheint");
+  // bar + slide distance + hide area
+  const bar = snapBar({ s: .55, hoverL: 0, hoverZ: 0 });
+  const bTop = 12 * k, bLeft = W - bar._w - 18;
+  bar.style.left = bLeft + "px"; bar.style.top = bTop + "px"; host.appendChild(bar);
+  add(`<div style="position:absolute;left:${bLeft - 8}px;top:0;height:${bTop}px;width:2px;background:#ff6b8a"></div>`);
+  lab(bLeft - 66, 1, "#ffb3c4", "E · 12 px");
+  const bBot = bTop + bar._h, hideY = bBot + 56 * k;
+  add(`<div style="position:absolute;left:${bLeft}px;width:${bar._w}px;top:${bBot}px;height:${hideY - bBot}px;background:repeating-linear-gradient(45deg,rgba(255,185,0,.18) 0 6px,transparent 6px 12px);border:1.5px dashed #ffb900;border-top:none;border-radius:0 0 6px 6px"></div>`);
+  lab(bLeft, hideY + 4, "#ffd970", "D · Abstand 56 px – darin bleibt die Leiste offen", `width:${bar._w}px;text-align:center;white-space:normal`);
+  // cursor
+  const cx = W * .34, cy = peek + 34;
+  add(`<div style="position:absolute;left:${cx + 3}px;top:${trig + 2}px;width:2px;height:${cy - trig}px;background:linear-gradient(#ffffff00,#ffffffaa)"></div>
+       <svg style="position:absolute;left:${cx}px;top:${cy}px" width="18" height="22" viewBox="0 0 22 26"><path d="M2 2 L2 21 L7 16 L10.5 24 L14 22.5 L10.5 15 L17 15 Z" fill="#fff" stroke="#111" stroke-width="1.3"/></svg>`);
+  lab(cx + 22, cy + 4, "#fff", "Fenster wird nach oben gezogen", "font-weight:600");
+  lab(W - 170, H - 18, "rgba(255,255,255,.55)", "Oberer Bildschirmrand · skaliert", "font-weight:500;width:160px;text-align:right");
+})();
+// motion curves
+(function () {
+  const c1 = 1.70158, c3 = c1 + 1;
+  const curves = [
+    ["Sanft", "Standard · kubisch", t => 1 - Math.pow(1 - t, 3)],
+    ["Zügig", "quartisch", t => 1 - Math.pow(1 - t, 4)],
+    ["Federnd", "leichtes Überschwingen", t => 1 + c3 * Math.pow(t - 1, 3) + c1 * Math.pow(t - 1, 2)],
+    ["Dynamisch", "exponentiell", t => t === 1 ? 1 : 1 - Math.pow(2, -10 * t)],
+    ["Weich", "sanft rein und raus", t => t < .5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2],
+    ["Linear", "gleichmäßig", t => t],
+  ];
+  const host = document.getElementById("curves");
+  curves.forEach(([n, d, f]) => {
+    let p = ""; for (let i = 0; i <= 40; i++) { const t = i / 40; p += (i ? "L" : "M") + (6 + t * 68).toFixed(1) + " " + (62 - f(t) * 48).toFixed(1); }
+    host.insertAdjacentHTML("beforeend", `<div><svg width="80" height="68" viewBox="0 0 80 68"><rect x="6" y="14" width="68" height="48" fill="#f4f6f9" rx="3"/><line x1="6" y1="14" x2="74" y2="14" stroke="#d5dae2" stroke-dasharray="2 2"/><path d="${p}" fill="none" stroke="#2a7fd4" stroke-width="2.4" stroke-linecap="round"/></svg>${n}<span>${d}</span></div>`);
+  });
+})();
+</script>
+</body>
+</html>
