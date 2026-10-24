@@ -33,11 +33,7 @@ A pure KWin script: no extra program, no background service, nothing to compile.
 
 <div align="center">
 
-
-
-https://github.com/user-attachments/assets/7a840276-6b00-4617-9c98-f83ca077bde5
-
-
+<a href="docs/video/seaq-snap-layout-intro.mp4"><img src="docs/images/video-thumbnail.png" alt="Play the 34-second intro video" width="720"></a>
 
 <sub>34 seconds · snapping two windows, the four ways to snap and the color options</sub>
 
@@ -222,7 +218,7 @@ qdbus6 org.kde.KWin /KWin reconfigure
 **Option D – from source**
 
 ```bash
-git clone https://github.com/Swenix-dev/SeaQ-Snap-Layout.git
+git clone https://github.com/SeaQSoft/SeaQ-Snap-Layout.git
 cd SeaQ-Snap-Layout
 ./build.sh                       # → dist/kdesnaplayout-<version>.kwinscript
 ./install.sh                     # optional: clean install for development
@@ -469,7 +465,7 @@ SeaQ Snap Layout is free software, licensed under the [GNU General Public Licens
 
 <div align="center">
 <br>
-Made with ❤️ for KDE by <a href="https://github.com/Swenix-dev"><b>SeaQ</b></a>
+Made with ❤️ for KDE by <a href="https://github.com/SeaQSoft"><b>SeaQ</b></a>
 <br><br>
 <sub>If SeaQ Snap Layout makes your day a little tidier, a ⭐ on GitHub helps others find it.</sub>
 </div>

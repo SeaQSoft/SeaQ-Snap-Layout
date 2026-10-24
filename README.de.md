@@ -222,7 +222,7 @@ qdbus6 org.kde.KWin /KWin reconfigure
 **Variante D – aus dem Quellcode**
 
 ```bash
-git clone https://github.com/Swenix-dev/SeaQ-Snap-Layout.git
+git clone https://github.com/SeaQSoft/SeaQ-Snap-Layout.git
 cd SeaQ-Snap-Layout
 ./build.sh                       # → dist/kdesnaplayout-<version>.kwinscript
 ./install.sh                     # optional: saubere Installation für die Entwicklung
@@ -472,7 +472,7 @@ SeaQ Snap Layout ist freie Software unter der [GNU General Public License v3.0 o
 
 <div align="center">
 <br>
-Mit ❤️ für KDE gemacht von <a href="https://github.com/Swenix-dev"><b>SeaQ</b></a>
+Mit ❤️ für KDE gemacht von <a href="https://github.com/SeaQSoft"><b>SeaQ</b></a>
 <br><br>
 <sub>Wenn SeaQ Snap Layout deinen Tag ein bisschen aufgeräumter macht, hilft ein ⭐ auf GitHub anderen, es zu finden.</sub>
 </div>
