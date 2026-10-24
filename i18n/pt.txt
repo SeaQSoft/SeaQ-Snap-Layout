@@ -9,8 +9,8 @@ Remover zona
 Carregar modelo…
 Clique numa zona para a selecionar · duplo clique para a dividir · arraste os divisores
 %1 de %2 zonas
-KDE Snap Layout – Editor de definições
-para KWin · v%1
+SeaQ Snap Layout – Editor de definições
+para KDE · v%1
 Geral
 Aspeto
 Comportamento e animação
@@ -82,7 +82,7 @@ Eliminar
 Como funciona
 Agarre uma janela pela barra de título e arraste-a para cima. A barra desce; largue a janela numa zona e ela ocupa exatamente essa área. Ao arrastá-la de novo para fora, recupera o tamanho anterior.
 Abrir o editor de definições
-Definições do sistema → Gestão de janelas → Scripts do KWin → ícone de roda dentada junto a «KDE Snap Layout» → «Abrir o editor de definições do Snap Layout» → OK.
+Definições do sistema → Gestão de janelas → Scripts do KWin → ícone de roda dentada junto a «SeaQ Snap Layout» → «Abrir o editor de definições do Snap Layout» → OK.
 Informações
 Versão
 Autor
@@ -102,8 +102,8 @@ Guardar
 Sim
 Zona %1
 Largue a janela numa zona
-KDE Snap Layout: ativar/desativar
-KDE Snap Layout: testar a barra
+SeaQ Snap Layout: ativar/desativar
+SeaQ Snap Layout: testar a barra
 Metades
 Dois terços
 Três colunas
@@ -122,3 +122,146 @@ Abrir o editor de definições do Snap Layout
 Definições rápidas
 Cores da barra:
 Todas as outras definições – aspeto, tamanho, animação, comportamento e as suas disposições – são alteradas no editor de definições do Snap Layout.
+Definições
+Nenhum
+Alterar
+Combinações habituais
+A sua combinação
+Definir
+Remover
+Barra de encaixe
+Margens do ecrã
+Mais formas de encaixar
+Íman de janelas
+Atalhos de teclado
+Atalhos
+Quatro formas de encaixar janelas. Cada uma liga e desliga à parte.
+Funcionalidades
+Empurre uma janela contra uma margem ou um canto: maximizar, metades, quartos.
+As janelas colam-se umas às outras e às margens do ecrã.
+Encaixe a janela ativa com combinações de teclas.
+Pré-visualizações
+Mostrar as pré-visualizações na cor de destaque
+Desligado: uma moldura neutra. Aplica-se a todas as pré-visualizações.
+Classes de janela que nunca são encaixadas, uma por linha.
+O KDE tem as suas próprias ações de margem do ecrã e o seu próprio encaixe de janelas. Se a mesma função estiver ligada aqui, desligue a do KDE: Definições do Sistema → Gestão de Janelas → Margens do Ecrã, e Comportamento das Janelas → Movimento.
+Empurre uma janela contra uma margem ou um canto do ecrã e ela preenche essa parte. Funciona com ou sem a barra de encaixe.
+Ecrã completo
+Metade superior
+Desligado
+Metade inferior
+Metade esquerda
+Metade direita
+Margens e cantos
+Usar as margens do ecrã
+Independente da barra de encaixe. Cada margem liga-se à parte.
+Margem superior
+Margens esquerda e direita: metade do ecrã
+Margem inferior: metade inferior
+Cantos: um quarto do ecrã
+Preenchimento inteligente
+Ajustar às janelas já encaixadas
+Se houver uma janela em baixo, a margem superior dá a metade superior em vez de maximizar. Metades e quartos também deixam livres as janelas encaixadas.
+Sensação
+Distância à margem
+Quanto o cursor tem de se aproximar da margem.
+Atraso do empurrão
+Quanto tempo a janela tem de ficar encostada à margem – um pequeno empurrão. 0 = de imediato.
+Tamanho dos cantos
+Parte de cada lado que conta como canto.
+As ações de margem do ecrã do KDE continuam ligadas, por isso dois assistentes reagem ao mesmo arrasto. Desligue «Maximizar» e «Mosaico» em Definições do Sistema → Gestão de Janelas → Margens do Ecrã.
+Enquanto move ou redimensiona uma janela, as suas margens colam-se às janelas próximas e às margens do ecrã.
+Íman
+Usar o íman de janelas
+Independente da barra de encaixe e das margens do ecrã.
+Distância de encaixe
+Quanto uma margem tem de se aproximar antes de encaixar.
+Colar a outras janelas
+Colar às margens do ecrã
+Também ao redimensionar
+Manter o espaço entre janelas
+As janelas param no «Espaço entre janelas» da página Geral em vez de se tocarem.
+O encaixe de janelas do KDE também está ligado. Para uma sensação uniforme, defina as suas zonas como «Nenhuma» em Definições do Sistema → Gestão de Janelas → Comportamento das Janelas → Movimento.
+Encaixe a janela ativa com o teclado. São atalhos globais normais do KDE – também os encontra em Definições do Sistema → Atalhos → KWin.
+Usar atalhos de teclado
+Desligado: as teclas continuam atribuídas mas não fazem nada.
+Esquema de teclas
+Define as teclas de todas as ações de uma vez. Pode continuar a alterar teclas individuais abaixo.
+Aplicar
+O serviço de atalhos do KDE não respondeu. Ainda pode definir as teclas em Definições do Sistema → Atalhos → KWin.
+Teclas já em uso
+%1 é usado por «%2».
+Pretendido para: %1
+Ficar com ela
+Ficar com todas
+Mantê-las
+Bom saber
+As ações de encaixe usam os mesmos espaços que a barra e lembram o tamanho anterior ao encaixe: «Repor o tamanho anterior ao encaixe» recupera-o.
+SeaQ Snap Layout: %1
+Encaixar na metade esquerda
+Encaixar na metade direita
+Encaixar na metade superior
+Encaixar na metade inferior
+Encaixar no quarto superior esquerdo
+Encaixar no quarto superior direito
+Encaixar no quarto inferior esquerdo
+Encaixar no quarto inferior direito
+Encaixar no terço esquerdo
+Encaixar no terço central
+Encaixar no terço direito
+Encaixar nos dois terços à esquerda
+Encaixar nos dois terços à direita
+Maximizar ou repor
+Centrar a janela
+Repor o tamanho anterior ao encaixe
+Barra de encaixe ligar/desligar
+Margens do ecrã ligar/desligar
+Íman de janelas ligar/desligar
+Testar a barra de encaixe
+Quartos
+Terços
+Janela
+Ctrl+Alt + tecla (predefinido)
+Meta+Ctrl+Alt + tecla
+Meta + tecla (estilo KDE)
+Meta+Shift + tecla
+Ctrl+Shift+Alt + tecla
+Ctrl+Alt + teclado numérico
+Sem atalhos
+Clique e depois em OK – o editor de definições abre-se.
+Resistência à sobreposição
+Quanto é preciso empurrar uma janela para dentro de outra antes de ela soltar. 0 = as janelas podem sobrepor-se livremente.
+Repor predefinição
+Repor todas as teclas
+Volta a dar a cada ação a tecla do esquema escolhido e remove as teclas que o esquema não tem.
+Repor tudo
+Margens aderentes
+Redimensionar em conjunto as janelas que se tocam
+Ao redimensionar uma janela, as que lhe tocam movem a margem partilhada com ela – nada se sobrepõe, não fica espaço.
+Manter janelas empilhadas alinhadas
+Janelas umas sobre as outras mantêm juntas as margens esquerda e direita; janelas lado a lado, as de cima e de baixo.
+Abanar para soltar
+Abane o rato durante o redimensionamento e as outras janelas voltam ao lugar.
+Esbater as outras janelas
+Durante o redimensionamento, as janelas que não acompanham aparecem transparentes.
+Pré-visualização da barra
+Mostra onde a janela fica enquanto uma zona da barra está realçada. Desligado: nenhuma pré-visualização.
+Pré-visualização das margens
+Mostra onde a janela fica numa margem ou num canto. Desligado: nenhuma pré-visualização.
+Desligado: uma moldura neutra – só para as pré-visualizações ligadas.
+Pausar o mosaico das margens do KDE e a sua pré-visualização
+Desligue isto se preferir o contorno do KDE – depois desligue acima a pré-visualização das margens.
+Manter para preencher
+Manter na margem para preencher o espaço livre
+Um empurrão curto dá a metade ou o quarto. Mantenha a janela um pouco mais na margem e ela cresce até à janela seguinte – a pré-visualização mostra-o.
+Tempo de espera
+Quanto tempo a janela tem de ficar na margem antes de crescer.
+Mosaico das margens do próprio KDE
+O maximizar e o mosaico do KDE nas margens do ecrã – com o seu contorno – ficam em pausa enquanto o SeaQ Snap Layout corre, para aparecer só uma pré-visualização. As suas definições do KDE não mudam: desligue isto, desative ou remova o SeaQ Snap Layout e o comportamento do KDE volta.
+Encaixe de janelas do próprio KDE
+Pausar as zonas de encaixe do KDE enquanto o íman está ligado
+Para que só um íman puxe uma janela. As suas definições do KDE não mudam: desligue isto, desative ou remova o SeaQ Snap Layout e o encaixe do KDE volta.
+Apoiar o SeaQ Snap Layout
+Se gosta do SeaQ Snap Layout, pode apoiar o seu desenvolvimento – obrigado!
+Doar com PayPal
+Pague-me um café

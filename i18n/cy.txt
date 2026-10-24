@@ -9,8 +9,8 @@ Tynnu’r parth
 Llwytho templed…
 Cliciwch ar barth i’w ddewis · clic dwbl i’w rannu · llusgwch y rhanwyr
 %1 o %2 parth
-KDE Snap Layout – Golygydd gosodiadau
-ar gyfer KWin · v%1
+SeaQ Snap Layout – Golygydd gosodiadau
+ar gyfer KDE · v%1
 Cyffredinol
 Golwg
 Ymddygiad ac animeiddio
@@ -82,7 +82,7 @@ Dileu
 Sut mae’n gweithio
 Gafaelwch mewn ffenestr wrth ei bar teitl a’i llusgo i fyny. Mae’r bar yn llithro i lawr; gollyngwch y ffenestr ar barth a bydd yn llenwi’r union ardal honno. Llusgwch hi allan eto ac fe gaiff ei hen faint yn ôl.
 Agor y golygydd gosodiadau
-Gosodiadau’r System → Rheoli Ffenestri → Sgriptiau KWin → eicon cocsen wrth ymyl “KDE Snap Layout” → “Agor golygydd gosodiadau Snap Layout” → Iawn.
+Gosodiadau’r System → Rheoli Ffenestri → Sgriptiau KWin → eicon cocsen wrth ymyl “SeaQ Snap Layout” → “Agor golygydd gosodiadau Snap Layout” → Iawn.
 Gwybodaeth
 Fersiwn
 Awdur
@@ -102,8 +102,8 @@ Cadw
 Iawn
 Parth %1
 Gollyngwch y ffenestr ar barth
-KDE Snap Layout: troi ymlaen/diffodd
-KDE Snap Layout: profi’r bar
+SeaQ Snap Layout: troi ymlaen/diffodd
+SeaQ Snap Layout: profi’r bar
 Haneri
 Dwy ran o dair
 Tair colofn
@@ -122,3 +122,146 @@ Agor golygydd gosodiadau Snap Layout
 Gosodiadau cyflym
 Lliwiau’r bar:
 Mae pob gosodiad arall – golwg, maint, animeiddio, ymddygiad a’ch cynlluniau eich hun – yn cael ei newid yng ngolygydd gosodiadau Snap Layout.
+Gosodiadau
+Dim
+Newid
+Cyfuniadau arferol
+Eich cyfuniad eich hun
+Gosod
+Tynnu
+Bar snapio
+Ymylon y sgrin
+Rhagor o ffyrdd o snapio
+Magnet ffenestri
+Llwybrau byr y bysellfwrdd
+Llwybrau byr
+Pedair ffordd o snapio ffenestri. Gellir troi pob un ymlaen ac i ffwrdd ar wahân.
+Nodweddion
+Gwthiwch ffenestr yn erbyn ymyl neu gornel: mwyafu, hanerau, chwarteri.
+Mae ffenestri’n glynu wrth ei gilydd ac wrth ymylon y sgrin.
+Snapiwch y ffenestr weithredol gyda chyfuniadau bysellau.
+Rhagolygon
+Dangos rhagolygon yn y lliw acen
+I ffwrdd: ffrâm niwtral. Yn berthnasol i bob rhagolwg.
+Dosbarthiadau ffenestr na chânt byth eu snapio, un i bob llinell.
+Mae gan KDE ei weithredoedd ymyl sgrin ei hun a’i snapio ffenestri ei hun. Os yw’r un nodwedd ymlaen yma, trowch un KDE i ffwrdd: Gosodiadau’r System → Rheoli Ffenestri → Ymylon y Sgrin, ac Ymddygiad Ffenestri → Symud.
+Gwthiwch ffenestr yn erbyn ymyl neu gornel y sgrin ac mae’n llenwi’r rhan honno. Yn gweithio gyda’r bar neu hebddo.
+Sgrin lawn
+Hanner uchaf
+I ffwrdd
+Hanner isaf
+Hanner chwith
+Hanner de
+Ymylon a chorneli
+Defnyddio ymylon y sgrin
+Yn annibynnol ar y bar. Gellir troi pob ymyl ymlaen ar wahân.
+Ymyl uchaf
+Ymyl chwith a de: hanner y sgrin
+Ymyl isaf: hanner isaf
+Corneli: chwarter y sgrin
+Llenwi clyfar
+Addasu o gwmpas ffenestri sydd eisoes wedi’u snapio
+Os oes ffenestr ar y gwaelod eisoes, mae’r ymyl uchaf yn rhoi’r hanner uchaf yn lle mwyafu. Mae hanerau a chwarteri hefyd yn gadael ffenestri wedi’u snapio yn rhydd.
+Teimlad
+Pellter o’r ymyl
+Pa mor agos at yr ymyl y mae’n rhaid i’r cyrchwr ddod.
+Oedi gwthio
+Pa mor hir y mae’n rhaid i’r ffenestr aros yn erbyn yr ymyl – gwthiad bach. 0 = ar unwaith.
+Maint y corneli
+Y rhan o bob ochr sy’n cyfrif fel cornel.
+Mae gweithredoedd ymyl sgrin KDE ei hun yn dal ymlaen, felly mae dau gynorthwyydd yn ymateb i’r un llusgo. Trowch “Mwyafu” a “Theilio” i ffwrdd yn Gosodiadau’r System → Rheoli Ffenestri → Ymylon y Sgrin.
+Wrth i chi symud neu newid maint ffenestr, mae ei hymylon yn glynu wrth ffenestri cyfagos ac wrth ymylon y sgrin.
+Magnet
+Defnyddio’r magnet ffenestri
+Yn annibynnol ar y bar ac ymylon y sgrin.
+Pellter snapio
+Pa mor agos y mae’n rhaid i ymyl ddod cyn clicio i’w le.
+Glynu wrth ffenestri eraill
+Glynu wrth ymylon y sgrin
+Hefyd wrth newid maint
+Cadw’r bwlch rhwng ffenestri
+Mae ffenestri’n stopio wrth “Bwlch rhwng ffenestri” o’r dudalen Cyffredinol yn lle cyffwrdd.
+Mae snapio ffenestri KDE ei hun ymlaen hefyd. Am deimlad cyson, gosodwch ei barthau i “Dim” yn Gosodiadau’r System → Rheoli Ffenestri → Ymddygiad Ffenestri → Symud.
+Snapiwch y ffenestr weithredol gyda’r bysellfwrdd. Llwybrau byr byd-eang arferol KDE yw’r rhain – fe’u cewch hefyd yn Gosodiadau’r System → Llwybrau Byr → KWin.
+Defnyddio llwybrau byr y bysellfwrdd
+I ffwrdd: mae’r bysellau’n aros wedi’u neilltuo ond yn gwneud dim.
+Cynllun bysellau
+Yn gosod bysellau pob gweithred ar unwaith. Gallwch newid bysellau unigol isod o hyd.
+Gweithredu
+Ni atebodd gwasanaeth llwybrau byr KDE. Gallwch osod y bysellau o hyd yn Gosodiadau’r System → Llwybrau Byr → KWin.
+Bysellau sydd eisoes ar waith
+Mae %1 yn cael ei ddefnyddio gan “%2”.
+Ei angen ar gyfer: %1
+Ei gymryd
+Cymryd y cyfan
+Eu cadw
+Da gwybod
+Mae’r gweithredoedd snapio’n defnyddio’r un bylchau â’r bar ac yn cofio’r maint cyn snapio: mae “Adfer y maint cyn snapio” yn dod ag ef yn ôl.
+SeaQ Snap Layout: %1
+Snapio i’r hanner chwith
+Snapio i’r hanner de
+Snapio i’r hanner uchaf
+Snapio i’r hanner isaf
+Snapio i’r chwarter chwith uchaf
+Snapio i’r chwarter de uchaf
+Snapio i’r chwarter chwith isaf
+Snapio i’r chwarter de isaf
+Snapio i’r traean chwith
+Snapio i’r traean canol
+Snapio i’r traean de
+Snapio i’r ddau draean chwith
+Snapio i’r ddau draean de
+Mwyafu neu adfer
+Canoli’r ffenestr
+Adfer y maint cyn snapio
+Bar snapio ymlaen/i ffwrdd
+Ymylon y sgrin ymlaen/i ffwrdd
+Magnet ffenestri ymlaen/i ffwrdd
+Profi’r bar snapio
+Chwarteri
+Traeanau
+Ffenestr
+Ctrl+Alt + bysell (rhagosodiad)
+Meta+Ctrl+Alt + bysell
+Meta + bysell (arddull KDE)
+Meta+Shift + bysell
+Ctrl+Shift+Alt + bysell
+Ctrl+Alt + bysellbad rhifau
+Dim llwybrau byr
+Cliciwch, yna Iawn – mae'r golygydd gosodiadau'n agor.
+Gwrthiant rhag gorgyffwrdd
+Pa mor bell sydd rhaid gwthio ffenestr i mewn i un arall cyn iddi ollwng. 0 = gall ffenestri orgyffwrdd yn rhydd.
+Ailosod i'r rhagosodiad
+Ailosod pob bysell
+Yn rhoi bysell y cynllun a ddewiswyd i bob gweithred eto ac yn tynnu bysellau nad ydynt yn y cynllun.
+Ailosod y cyfan
+Ymylon gludiog
+Newid maint ffenestri sy'n cyffwrdd gyda'i gilydd
+Pan fyddwch yn newid maint ffenestr, mae ffenestri sy'n ei chyffwrdd yn symud yr ymyl a rennir gyda hi – does dim yn gorgyffwrdd, does dim bwlch.
+Cadw ffenestri wedi'u pentyrru mewn llinell
+Mae ffenestri uwchben ei gilydd yn cadw'u hymylon chwith a de gyda'i gilydd, a ffenestri ochr yn ochr eu hymylon top a gwaelod.
+Ysgwyd i ollwng
+Ysgydwch y llygoden wrth newid maint ac mae'r ffenestri eraill yn neidio'n ôl.
+Pylu'r ffenestri eraill
+Wrth newid maint, mae ffenestri nad ydynt yn dilyn yn cael eu dangos yn dryloyw.
+Rhagolwg y bar snapio
+Yn dangos ble mae'r ffenestr yn glanio tra bo parth o'r bar wedi'i amlygu. I ffwrdd: dim rhagolwg o gwbl.
+Rhagolwg ymylon y sgrin
+Yn dangos ble mae'r ffenestr yn glanio wrth ymyl neu gornel. I ffwrdd: dim rhagolwg o gwbl.
+I ffwrdd: ffrâm niwtral – dim ond ar gyfer y rhagolygon sydd ymlaen.
+Oedi teilsio ymylon KDE a'i ragolwg
+Diffoddwch hwn os yw'n well gennych amlinell KDE – yna diffoddwch ragolwg ymylon y sgrin uchod.
+Dal i lenwi
+Dal wrth yr ymyl i lenwi'r gofod rhydd
+Mae gwthiad byr yn rhoi'r hanner neu'r chwarter. Daliwch y ffenestr wrth yr ymyl ychydig yn hirach ac mae'n tyfu hyd at y ffenestr nesaf – mae'r rhagolwg yn ei ddangos.
+Amser dal
+Pa mor hir mae'n rhaid i'r ffenestr aros wrth yr ymyl cyn iddi dyfu.
+Teilsio ymylon KDE ei hun
+Mae uchafu a theilsio KDE wrth ymylon y sgrin – gyda'r amlinell – wedi'u hoedi tra bo SeaQ Snap Layout yn rhedeg, fel mai dim ond un rhagolwg sy'n ymddangos. Nid yw eich gosodiadau KDE yn newid: diffoddwch hwn, analluogwch neu dynnwch SeaQ Snap Layout ac mae ymddygiad KDE yn ôl.
+Snapio ffenestri KDE ei hun
+Oedi parthau snapio KDE tra bo'r magnet ymlaen
+Fel mai dim ond un magnet sy'n tynnu ffenestr. Nid yw eich gosodiadau KDE yn newid: diffoddwch hwn, analluogwch neu dynnwch SeaQ Snap Layout ac mae snapio KDE yn ôl.
+Cefnogi SeaQ Snap Layout
+Os ydych chi'n hoffi SeaQ Snap Layout, gallwch gefnogi ei ddatblygiad – diolch!
+Rhoi gyda PayPal
+Prynwch goffi i mi

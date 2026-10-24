@@ -9,8 +9,8 @@ Hiq zonën
 Ngarko model…
 Klikoni një zonë për ta përzgjedhur · klikim i dyfishtë e ndan · tërhiqni ndarëset
 %1 nga %2 zona
-KDE Snap Layout – Redaktori i rregullimeve
-për KWin · v%1
+SeaQ Snap Layout – Redaktori i rregullimeve
+për KDE · v%1
 Të përgjithshme
 Pamja
 Sjellja dhe animacioni
@@ -82,7 +82,7 @@ Fshi
 Si funksionon
 Kapni një dritare nga shiriti i titullit dhe tërhiqeni lart. Shiriti zbret; lëshojeni dritaren mbi një zonë dhe ajo mbush saktësisht atë hapësirë. Kur e tërhiqni sërish jashtë, merr përsëri madhësinë e vjetër.
 Hapja e redaktorit të rregullimeve
-Rregullimet e sistemit → Administrimi i dritareve → Skriptet KWin → ikona e ingranazhit pranë “KDE Snap Layout” → “Hap redaktorin e rregullimeve të Snap Layout” → OK.
+Rregullimet e sistemit → Administrimi i dritareve → Skriptet KWin → ikona e ingranazhit pranë “SeaQ Snap Layout” → “Hap redaktorin e rregullimeve të Snap Layout” → OK.
 Informacion
 Versioni
 Autori
@@ -102,8 +102,8 @@ Ruaje
 Po
 Zona %1
 Lëshojeni dritaren mbi një zonë
-KDE Snap Layout: aktivizo/çaktivizo
-KDE Snap Layout: provo shiritin
+SeaQ Snap Layout: aktivizo/çaktivizo
+SeaQ Snap Layout: provo shiritin
 Gjysma
 Dy të tretat
 Tri shtylla
@@ -122,3 +122,146 @@ Hap redaktorin e rregullimeve të Snap Layout
 Rregullime të shpejta
 Ngjyrat e shiritit:
 Të gjitha rregullimet e tjera – pamja, madhësia, animacioni, sjellja dhe skemat tuaja – ndryshohen te redaktori i rregullimeve të Snap Layout.
+Cilësimet
+Asnjë
+Ndrysho
+Kombinime të zakonshme
+Kombinimi juaj
+Cakto
+Hiq
+Shiriti i ngjitjes
+Skajet e ekranit
+Më shumë mënyra ngjitjeje
+Magneti i dritareve
+Shkurtore tastiere
+Shkurtore
+Katër mënyra për të ngjitur dritaret. Secila ndizet dhe fiket më vete.
+Veçori
+Shtyjeni një dritare drejt një skaji ose cepi: maksimizo, gjysma, çerekë.
+Dritaret ngjiten me njëra-tjetrën dhe me skajet e ekranit.
+Ngjiteni dritaren aktive me kombinime tastesh.
+Parapamje
+Shfaq parapamjet me ngjyrën theksuese
+Fikur: një kornizë neutrale. Vlen për të gjitha parapamjet.
+Klasa dritaresh që nuk ngjiten kurrë, një për rresht.
+KDE ka veprimet e veta për skajet e ekranit dhe ngjitjen e vet të dritareve. Nëse e njëjta veçori është ndezur këtu, fikni atë të KDE-së: Rregullime sistemi → Administrim dritaresh → Skajet e ekranit, dhe Sjellje dritaresh → Lëvizje.
+Shtyjeni një dritare drejt një skaji ose cepi të ekranit dhe ajo e mbush atë pjesë. Punon me ose pa shiritin.
+Ekran i plotë
+Gjysma e sipërme
+Fikur
+Gjysma e poshtme
+Gjysma e majtë
+Gjysma e djathtë
+Skaje dhe cepa
+Përdor skajet e ekranit
+I pavarur nga shiriti. Çdo skaj ndizet më vete.
+Skaji i sipërm
+Skaji i majtë dhe i djathtë: gjysma e ekranit
+Skaji i poshtëm: gjysma e poshtme
+Cepat: çereku i ekranit
+Mbushje e zgjuar
+Përshtatu me dritaret tashmë të ngjitura
+Nëse poshtë ka tashmë një dritare, skaji i sipërm jep gjysmën e sipërme në vend që të maksimizojë. Edhe gjysmat dhe çerekët i lënë të lira dritaret e ngjitura.
+Ndjesia
+Largësia nga skaji
+Sa afër skajit duhet të vijë kursori.
+Vonesa e shtytjes
+Sa gjatë duhet të qëndrojë dritarja pranë skajit – një shtytje e vogël. 0 = menjëherë.
+Madhësia e cepave
+Pjesa e çdo ane që llogaritet si cep.
+Veprimet e KDE-së për skajet e ekranit janë ende të ndezura, prandaj dy ndihmës reagojnë ndaj të njëjtës tërheqje. Fikni „Maksimizo” dhe „Pllakëzo” te Rregullime sistemi → Administrim dritaresh → Skajet e ekranit.
+Ndërsa lëvizni ose ripërmasoni një dritare, skajet e saj ngjiten me dritaret pranë dhe me skajet e ekranit.
+Magnet
+Përdor magnetin e dritareve
+I pavarur nga shiriti dhe skajet e ekranit.
+Largësia e ngjitjes
+Sa afër duhet të vijë një skaj para se të kërcejë në vend.
+Ngjitu me dritare të tjera
+Ngjitu me skajet e ekranit
+Edhe gjatë ripërmasimit
+Ruaj hapësirën mes dritareve
+Dritaret ndalen te „Hapësira mes dritareve” nga faqja Të përgjithshme në vend që të prekin njëra-tjetrën.
+Edhe ngjitja e dritareve e vetë KDE-së është ndezur. Për një ndjesi të njëtrajtshme, vendosni zonat e saj në „Asnjë” te Rregullime sistemi → Administrim dritaresh → Sjellje dritaresh → Lëvizje.
+Ngjiteni dritaren aktive me tastierë. Këto janë shkurtore të zakonshme globale të KDE-së – i gjeni edhe te Rregullime sistemi → Shkurtore → KWin.
+Përdor shkurtore tastiere
+Fikur: tastet mbeten të caktuara, por nuk bëjnë asgjë.
+Skema e tasteve
+Cakton tastet e të gjitha veprimeve njëherësh. Taste të veçanta mund t’i ndryshoni ende më poshtë.
+Zbato
+Shërbimi i shkurtoreve të KDE-së nuk u përgjigj. Tastet mund t’i caktoni ende te Rregullime sistemi → Shkurtore → KWin.
+Taste që përdoren tashmë
+%1 përdoret nga „%2”.
+E dëshiruar për: %1
+Merre
+Merri të gjitha
+Mbaji
+Mirë të dihet
+Veprimet e ngjitjes përdorin të njëjtat hapësira si shiriti dhe mbajnë mend madhësinë para ngjitjes: „Rikthe madhësinë para ngjitjes” e sjell mbrapsht.
+SeaQ Snap Layout: %1
+Ngjite në gjysmën e majtë
+Ngjite në gjysmën e djathtë
+Ngjite në gjysmën e sipërme
+Ngjite në gjysmën e poshtme
+Ngjite në çerekun lart majtas
+Ngjite në çerekun lart djathtas
+Ngjite në çerekun poshtë majtas
+Ngjite në çerekun poshtë djathtas
+Ngjite në të tretën e majtë
+Ngjite në të tretën e mesit
+Ngjite në të tretën e djathtë
+Ngjite në dy të tretat e majta
+Ngjite në dy të tretat e djathta
+Maksimizo ose rikthe
+Vendose dritaren në qendër
+Rikthe madhësinë para ngjitjes
+Shiriti ndez/fik
+Skajet e ekranit ndez/fik
+Magneti i dritareve ndez/fik
+Provo shiritin
+Çerekë
+Të treta
+Dritare
+Ctrl+Alt + tast (parazgjedhje)
+Meta+Ctrl+Alt + tast
+Meta + tast (stil KDE)
+Meta+Shift + tast
+Ctrl+Shift+Alt + tast
+Ctrl+Alt + blloku numerik
+Pa shkurtore
+Klikoni, pastaj OK – hapet redaktori i cilësimeve.
+Rezistencë ndaj mbivendosjes
+Sa thellë duhet shtyrë një dritare në një tjetër para se ta lërë. 0 = dritaret mund të mbivendosen lirisht.
+Rikthe parazgjedhjen
+Rivendos të gjithë tastet
+I jep sërish çdo veprimi tastin e skemës së zgjedhur dhe heq tastet që skema nuk i ka.
+Rivendos të gjitha
+Skaje ngjitëse
+Ndrysho madhësinë e dritareve që preken së bashku
+Kur ndryshoni madhësinë e një dritareje, dritaret që e prekin lëvizin skajin e përbashkët me të – asgjë nuk mbivendoset, nuk hapet boshllëk.
+Mbaji dritaret e mbivendosura në një vijë
+Dritaret njëra mbi tjetrën mbajnë skajet majtas dhe djathtas bashkë, dritaret krah për krah ato sipër dhe poshtë.
+Shkundni për ta lëshuar
+Shkundni miun gjatë ndryshimit të madhësisë dhe dritaret e tjera kthehen mbrapsht.
+Zbeh dritaret e tjera
+Gjatë ndryshimit të madhësisë, dritaret që nuk ndjekin shfaqen të tejdukshme.
+Pamja paraprake e shiritit të ngjitjes
+Tregon ku do të vendoset dritarja ndërsa një zonë e shiritit është e theksuar. Joaktive: asnjë pamje paraprake.
+Pamja paraprake e skajeve të ekranit
+Tregon ku do të vendoset dritarja në një skaj ose kënd. Joaktive: asnjë pamje paraprake.
+Joaktive: një kornizë neutrale – vetëm për pamjet paraprake të aktivizuara.
+Ndalo përkohësisht shtrimin në skaje të KDE dhe pamjen e tij
+Çaktivizojeni nëse preferoni konturin e KDE – pastaj çaktivizoni më sipër pamjen e skajeve.
+Mbaj për ta mbushur
+Mbaj në skaj për të mbushur hapësirën e lirë
+Një shtytje e shkurtër jep gjysmën ose çerekun. Mbajeni dritaren pak më gjatë në skaj dhe ajo rritet deri te dritarja tjetër – pamja paraprake e tregon.
+Koha e mbajtjes
+Sa gjatë duhet të qëndrojë dritarja në skaj para se të rritet.
+Shtrimi në skaje i vetë KDE
+Maksimizimi dhe shtrimi i KDE në skajet e ekranit – me konturin – ndalen përkohësisht ndërsa punon SeaQ Snap Layout, që të shfaqet vetëm një pamje paraprake. Cilësimet tuaja të KDE nuk ndryshojnë: çaktivizoni këtë, çaktivizoni ose hiqni SeaQ Snap Layout dhe sjellja e KDE kthehet.
+Ngjitja e dritareve e vetë KDE
+Ndalo përkohësisht zonat e ngjitjes së KDE ndërsa magneti është aktiv
+Që vetëm një magnet të tërheqë një dritare. Cilësimet tuaja të KDE nuk ndryshojnë: çaktivizoni këtë, çaktivizoni ose hiqni SeaQ Snap Layout dhe ngjitja e KDE kthehet.
+Mbështetni SeaQ Snap Layout
+Nëse ju pëlqen SeaQ Snap Layout, mund të mbështetni zhvillimin e tij – faleminderit!
+Dhuro me PayPal
+Më bli një kafe

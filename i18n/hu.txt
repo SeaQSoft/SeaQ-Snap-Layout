@@ -9,8 +9,8 @@ Zóna eltávolítása
 Sablon betöltése…
 Kattintson egy zónára a kijelöléshez · dupla kattintással felosztja · húzza az elválasztókat
 %2 zónából %1
-KDE Snap Layout – Beállításszerkesztő
-KWinhez · v%1
+SeaQ Snap Layout – Beállításszerkesztő
+KDEhez · v%1
 Általános
 Megjelenés
 Viselkedés és animáció
@@ -82,7 +82,7 @@ Törlés
 Hogyan működik
 Fogja meg az ablakot a címsoránál, és húzza felfelé. A sáv lecsúszik; engedje el az ablakot egy zónán, és pontosan azt a területet tölti ki. Ha újra elhúzza, visszakapja korábbi méretét.
 A beállításszerkesztő megnyitása
-Rendszerbeállítások → Ablakkezelés → KWin parancsfájlok → fogaskerék ikon a „KDE Snap Layout” mellett → „Snap Layout beállításszerkesztő megnyitása” → OK.
+Rendszerbeállítások → Ablakkezelés → KWin parancsfájlok → fogaskerék ikon a „SeaQ Snap Layout” mellett → „Snap Layout beállításszerkesztő megnyitása” → OK.
 Információ
 Verzió
 Szerző
@@ -102,8 +102,8 @@ Mentés
 Igen
 %1. zóna
 Engedje el az ablakot egy zónán
-KDE Snap Layout: be/ki
-KDE Snap Layout: sáv kipróbálása
+SeaQ Snap Layout: be/ki
+SeaQ Snap Layout: sáv kipróbálása
 Felezés
 Kétharmad
 Három oszlop
@@ -122,3 +122,146 @@ Snap Layout beállításszerkesztő megnyitása
 Gyorsbeállítások
 A sáv színei:
 Minden további beállítást – megjelenés, méret, animáció, viselkedés és saját elrendezések – a Snap Layout beállításszerkesztőben módosíthat.
+Beállítások
+Nincs
+Módosítás
+Szokásos kombinációk
+Saját kombináció
+Beállítás
+Eltávolítás
+Illesztősáv
+Képernyőszélek
+További illesztési módok
+Ablakmágnes
+Billentyűparancsok
+Parancsok
+Négyféleképpen illesztheti az ablakokat. Mindegyik külön be- és kikapcsolható.
+Funkciók
+Nyomja az ablakot egy szélhez vagy sarokhoz: teljes méret, felek, negyedek.
+Az ablakok egymáshoz és a képernyő széleihez tapadnak.
+Illessze az aktív ablakot billentyűkombinációval.
+Előnézetek
+Előnézetek a kiemelőszínnel
+Ki: semleges keret. Minden előnézetre érvényes.
+Ablakosztályok, amelyek soha nem illesztődnek, soronként egy.
+A KDE-nek saját képernyőszél-műveletei és saját ablakillesztése van. Ha itt ugyanaz a funkció be van kapcsolva, kapcsolja ki a KDE-ét: Rendszerbeállítások → Ablakkezelés → Képernyőszélek, valamint Ablakviselkedés → Mozgatás.
+Nyomja az ablakot a képernyő egy széléhez vagy sarkához, és kitölti azt a részt. Az illesztősávval vagy anélkül is működik.
+Teljes képernyő
+Felső fele
+Ki
+Alsó fele
+Bal fele
+Jobb fele
+Szélek és sarkok
+Képernyőszélek használata
+Független az illesztősávtól. Minden szél külön kapcsolható.
+Felső szél
+Bal és jobb szél: a képernyő fele
+Alsó szél: alsó fele
+Sarkok: a képernyő negyede
+Okos kitöltés
+Igazodás a már illesztett ablakokhoz
+Ha alul már van egy ablak, a felső szél a felső felet adja teljes méret helyett. A felek és negyedek is szabadon hagyják az illesztett ablakokat.
+Érzet
+Távolság a széltől
+Milyen közel kell a mutatónak a szélhez érnie.
+Nyomási késleltetés
+Mennyi ideig kell az ablaknak a szélnél maradnia – egy kis lökés. 0 = azonnal.
+Sarokméret
+Az egyes oldalak sarokként számító része.
+A KDE saját képernyőszél-műveletei még be vannak kapcsolva, így két segéd reagál ugyanarra a húzásra. Kapcsolja ki a „Teljes méret” és a „Csempézés” lehetőséget: Rendszerbeállítások → Ablakkezelés → Képernyőszélek.
+Ablak mozgatása vagy átméretezése közben a szélei a közeli ablakokhoz és a képernyő széleihez tapadnak.
+Mágnes
+Ablakmágnes használata
+Független az illesztősávtól és a képernyőszélektől.
+Illesztési távolság
+Milyen közel kell egy szélnek kerülnie, mielőtt bepattan.
+Tapadás más ablakokhoz
+Tapadás a képernyő széleihez
+Átméretezéskor is
+Térköz megtartása az ablakok között
+Az ablakok az Általános oldal „Térköz az ablakok között” értékénél megállnak, ahelyett hogy összeérnének.
+A KDE saját ablakillesztése is be van kapcsolva. Az egységes érzethez állítsa a zónáit „Nincs” értékre: Rendszerbeállítások → Ablakkezelés → Ablakviselkedés → Mozgatás.
+Illessze az aktív ablakot a billentyűzettel. Ezek szokásos globális KDE-billentyűparancsok – a Rendszerbeállítások → Billentyűparancsok → KWin alatt is megtalálja őket.
+Billentyűparancsok használata
+Ki: a billentyűk hozzárendelve maradnak, de nem csinálnak semmit.
+Billentyűséma
+Egyszerre állítja be az összes művelet billentyűit. Az egyes billentyűket lent továbbra is módosíthatja.
+Alkalmaz
+A KDE billentyűparancs-szolgáltatása nem válaszolt. A billentyűket a Rendszerbeállítások → Billentyűparancsok → KWin alatt is beállíthatja.
+Már használt billentyűk
+A(z) %1 billentyűt ez használja: „%2”.
+Ehhez kellene: %1
+Átvétel
+Mind átvétele
+Megtartás
+Jó tudni
+Az illesztő műveletek ugyanazokat a térközöket használják, mint a sáv, és megjegyzik az illesztés előtti méretet: a „Méret visszaállítása az illesztés előttire” visszahozza.
+SeaQ Snap Layout: %1
+Illesztés a bal félre
+Illesztés a jobb félre
+Illesztés a felső félre
+Illesztés az alsó félre
+Illesztés a bal felső negyedbe
+Illesztés a jobb felső negyedbe
+Illesztés a bal alsó negyedbe
+Illesztés a jobb alsó negyedbe
+Illesztés a bal harmadba
+Illesztés a középső harmadba
+Illesztés a jobb harmadba
+Illesztés a bal kétharmadba
+Illesztés a jobb kétharmadba
+Teljes méret vagy visszaállítás
+Ablak középre helyezése
+Méret visszaállítása az illesztés előttire
+Illesztősáv be/ki
+Képernyőszélek be/ki
+Ablakmágnes be/ki
+Illesztősáv kipróbálása
+Negyedek
+Harmadok
+Ablak
+Ctrl+Alt + billentyű (alapértelmezett)
+Meta+Ctrl+Alt + billentyű
+Meta + billentyű (KDE-stílus)
+Meta+Shift + billentyű
+Ctrl+Shift+Alt + billentyű
+Ctrl+Alt + számbillentyűzet
+Nincs billentyűparancs
+Kattintson, majd OK – megnyílik a beállításszerkesztő.
+Átfedés elleni ellenállás
+Milyen mélyen kell betolni egy ablakot a másikba, mielőtt elengedi. 0 = az ablakok szabadon átfedhetik egymást.
+Alapértelmezés visszaállítása
+Minden billentyű visszaállítása
+Minden műveletnek újra a választott séma billentyűjét adja, és eltávolítja azokat, amelyek a sémában nincsenek.
+Összes visszaállítása
+Tapadó szélek
+Az egymáshoz érő ablakok együttes átméretezése
+Ha átméretez egy ablakot, a hozzá érő ablakok vele mozgatják a közös szélt – semmi sem fedi át egymást, nem keletkezik rés.
+Egymás alatti ablakok egy vonalban
+Az egymás feletti ablakok együtt tartják bal és jobb szélüket, az egymás melletti ablakok a felsőt és az alsót.
+Rázás az elengedéshez
+Rázza meg az egeret átméretezés közben, és a többi ablak visszaugrik.
+A többi ablak halványítása
+Átméretezés közben a nem követő ablakok átlátszóan jelennek meg.
+Az illesztősáv előnézete
+Megmutatja, hová kerül az ablak, amíg a sáv egy zónája ki van emelve. Ki: semmilyen előnézet.
+A képernyőszélek előnézete
+Megmutatja, hová kerül az ablak egy szélen vagy sarokban. Ki: semmilyen előnézet.
+Ki: semleges keret – csak a bekapcsolt előnézetekhez.
+A KDE szélmozaikjának és előnézetének szüneteltetése
+Kapcsolja ki, ha a KDE saját körvonala jobban tetszik – ekkor kapcsolja ki fent a képernyőszélek előnézetét.
+Tartás a kitöltéshez
+Tartás a szélnél a szabad hely kitöltéséhez
+Egy rövid lökés felet vagy negyedet ad. Tartsa az ablakot kicsit tovább a szélnél, és megnő a következő ablakig – az előnézet mutatja.
+Tartási idő
+Mennyi ideig kell az ablaknak a szélnél maradnia, mielőtt megnő.
+A KDE saját szélmozaikja
+A KDE saját maximalizálása és mozaikozása a képernyőszéleken – körvonallal – szünetel, amíg a SeaQ Snap Layout fut, így csak egy előnézet jelenik meg. A KDE-beállításai nem változnak: kapcsolja ki ezt, tiltsa le vagy távolítsa el a SeaQ Snap Layoutot, és a KDE viselkedése visszatér.
+A KDE saját ablakillesztése
+A KDE illesztési zónáinak szüneteltetése, amíg a mágnes be van kapcsolva
+Hogy csak egy mágnes húzza az ablakot. A KDE-beállításai nem változnak: kapcsolja ki ezt, tiltsa le vagy távolítsa el a SeaQ Snap Layoutot, és a KDE illesztése visszatér.
+A SeaQ Snap Layout támogatása
+Ha tetszik a SeaQ Snap Layout, támogathatja a fejlesztését – köszönöm!
+Adományozás PayPallal
+Hívj meg egy kávéra

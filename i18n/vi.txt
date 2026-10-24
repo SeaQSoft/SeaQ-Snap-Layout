@@ -9,8 +9,8 @@ Xóa vùng
 Tải mẫu…
 Nhấp vào vùng để chọn · nhấp đúp để chia · kéo các đường phân cách
 %1 trên %2 vùng
-KDE Snap Layout – Trình chỉnh sửa cài đặt
-cho KWin · v%1
+SeaQ Snap Layout – Trình chỉnh sửa cài đặt
+cho KDE · v%1
 Chung
 Giao diện
 Hành vi & hoạt ảnh
@@ -82,7 +82,7 @@ Xóa
 Cách hoạt động
 Nắm cửa sổ ở thanh tiêu đề rồi kéo lên. Thanh trượt xuống; thả cửa sổ vào một vùng và nó sẽ lấp đúng vùng đó. Kéo nó ra lần nữa thì cửa sổ trở lại kích thước cũ.
 Mở trình chỉnh sửa cài đặt
-Thiết lập hệ thống → Quản lý cửa sổ → Tập lệnh KWin → biểu tượng bánh răng cạnh “KDE Snap Layout” → “Mở trình chỉnh sửa cài đặt Snap Layout” → OK.
+Thiết lập hệ thống → Quản lý cửa sổ → Tập lệnh KWin → biểu tượng bánh răng cạnh “SeaQ Snap Layout” → “Mở trình chỉnh sửa cài đặt Snap Layout” → OK.
 Thông tin
 Phiên bản
 Tác giả
@@ -102,8 +102,8 @@ Lưu
 Có
 Vùng %1
 Thả cửa sổ vào một vùng
-KDE Snap Layout: bật/tắt
-KDE Snap Layout: thử thanh
+SeaQ Snap Layout: bật/tắt
+SeaQ Snap Layout: thử thanh
 Hai nửa
 Hai phần ba
 Ba cột
@@ -122,3 +122,146 @@ Mở trình chỉnh sửa cài đặt Snap Layout
 Cài đặt nhanh
 Màu của thanh:
 Mọi cài đặt khác – giao diện, kích thước, hoạt ảnh, hành vi và bố cục của riêng bạn – được thay đổi trong trình chỉnh sửa cài đặt Snap Layout.
+Cài đặt
+Không có
+Thay đổi
+Tổ hợp thông dụng
+Tổ hợp của riêng bạn
+Đặt
+Xoá
+Thanh gắn
+Cạnh màn hình
+Thêm cách gắn cửa sổ
+Nam châm cửa sổ
+Phím tắt bàn phím
+Phím tắt
+Bốn cách gắn cửa sổ. Mỗi cách có thể bật và tắt riêng.
+Tính năng
+Đẩy cửa sổ vào cạnh hoặc góc: phóng to, nửa, phần tư.
+Các cửa sổ dính vào nhau và vào cạnh màn hình.
+Gắn cửa sổ đang dùng bằng tổ hợp phím.
+Xem trước
+Hiện xem trước bằng màu nhấn
+Tắt: một khung trung tính. Áp dụng cho mọi bản xem trước.
+Lớp cửa sổ không bao giờ được gắn, mỗi dòng một lớp.
+KDE có các hành động cạnh màn hình riêng và cơ chế gắn cửa sổ riêng. Nếu tính năng tương tự đang bật ở đây, hãy tắt tính năng của KDE: Thiết lập hệ thống → Quản lý cửa sổ → Cạnh màn hình, và Hành vi cửa sổ → Di chuyển.
+Đẩy cửa sổ vào cạnh hoặc góc màn hình và nó sẽ lấp đầy phần đó. Hoạt động có hoặc không có thanh gắn.
+Toàn màn hình
+Nửa trên
+Tắt
+Nửa dưới
+Nửa trái
+Nửa phải
+Cạnh và góc
+Dùng cạnh màn hình
+Độc lập với thanh gắn. Mỗi cạnh có thể bật riêng.
+Cạnh trên
+Cạnh trái và phải: nửa màn hình
+Cạnh dưới: nửa dưới
+Góc: một phần tư màn hình
+Lấp đầy thông minh
+Thích ứng với cửa sổ đã được gắn
+Nếu bên dưới đã có cửa sổ, cạnh trên sẽ cho nửa trên thay vì phóng to. Các nửa và phần tư cũng chừa các cửa sổ đã gắn.
+Cảm giác
+Khoảng cách tới cạnh
+Con trỏ phải đến gần cạnh bao nhiêu.
+Độ trễ đẩy
+Cửa sổ phải tì vào cạnh bao lâu – một cú đẩy nhẹ. 0 = ngay lập tức.
+Kích thước góc
+Phần của mỗi cạnh được tính là góc.
+Các hành động cạnh màn hình của KDE vẫn đang bật, nên hai công cụ cùng phản ứng với một lần kéo. Hãy tắt “Phóng to” và “Lát” trong Thiết lập hệ thống → Quản lý cửa sổ → Cạnh màn hình.
+Khi bạn di chuyển hoặc đổi cỡ cửa sổ, các cạnh của nó dính vào cửa sổ gần đó và cạnh màn hình.
+Nam châm
+Dùng nam châm cửa sổ
+Độc lập với thanh gắn và cạnh màn hình.
+Khoảng cách hút
+Cạnh phải đến gần bao nhiêu trước khi khớp vào chỗ.
+Dính vào cửa sổ khác
+Dính vào cạnh màn hình
+Cả khi đổi cỡ
+Giữ khoảng cách giữa các cửa sổ
+Cửa sổ dừng ở “Khoảng cách giữa các cửa sổ” trong trang Chung thay vì chạm nhau.
+Cơ chế gắn cửa sổ của KDE cũng đang bật. Để cảm giác nhất quán, hãy đặt các vùng của nó thành “Không có” trong Thiết lập hệ thống → Quản lý cửa sổ → Hành vi cửa sổ → Di chuyển.
+Gắn cửa sổ đang dùng bằng bàn phím. Đây là các phím tắt toàn cục bình thường của KDE – bạn cũng tìm thấy chúng trong Thiết lập hệ thống → Phím tắt → KWin.
+Dùng phím tắt bàn phím
+Tắt: phím vẫn được gán nhưng không làm gì.
+Sơ đồ phím
+Đặt phím cho mọi hành động cùng lúc. Bạn vẫn có thể đổi từng phím ở bên dưới.
+Áp dụng
+Dịch vụ phím tắt của KDE không trả lời. Bạn vẫn có thể đặt phím trong Thiết lập hệ thống → Phím tắt → KWin.
+Phím đã được dùng
+%1 đang được “%2” dùng.
+Cần cho: %1
+Lấy lại
+Lấy lại tất cả
+Giữ nguyên
+Nên biết
+Các hành động gắn dùng cùng khoảng cách như thanh gắn và nhớ kích thước trước khi gắn: “Khôi phục kích thước trước khi gắn” sẽ đưa nó trở lại.
+SeaQ Snap Layout: %1
+Gắn vào nửa trái
+Gắn vào nửa phải
+Gắn vào nửa trên
+Gắn vào nửa dưới
+Gắn vào phần tư trên trái
+Gắn vào phần tư trên phải
+Gắn vào phần tư dưới trái
+Gắn vào phần tư dưới phải
+Gắn vào một phần ba bên trái
+Gắn vào một phần ba ở giữa
+Gắn vào một phần ba bên phải
+Gắn vào hai phần ba bên trái
+Gắn vào hai phần ba bên phải
+Phóng to hoặc khôi phục
+Đặt cửa sổ vào giữa
+Khôi phục kích thước trước khi gắn
+Bật/tắt thanh gắn
+Bật/tắt cạnh màn hình
+Bật/tắt nam châm cửa sổ
+Thử thanh gắn
+Phần tư
+Phần ba
+Cửa sổ
+Ctrl+Alt + phím (mặc định)
+Meta+Ctrl+Alt + phím
+Meta + phím (kiểu KDE)
+Meta+Shift + phím
+Ctrl+Shift+Alt + phím
+Ctrl+Alt + bàn phím số
+Không có phím tắt
+Bấm, rồi OK – trình sửa cài đặt sẽ mở ra.
+Lực cản chồng lấn
+Phải đẩy cửa sổ vào cửa sổ khác sâu bao nhiêu trước khi nó buông ra. 0 = các cửa sổ có thể chồng lên nhau tự do.
+Khôi phục mặc định
+Đặt lại tất cả phím
+Gán lại cho mỗi hành động phím của sơ đồ đã chọn và xóa các phím mà sơ đồ không có.
+Đặt lại tất cả
+Cạnh dính
+Đổi kích thước các cửa sổ chạm nhau cùng lúc
+Khi bạn đổi kích thước một cửa sổ, các cửa sổ chạm vào nó dời cạnh chung theo – không gì chồng lên nhau, không có khe hở.
+Giữ các cửa sổ xếp chồng thẳng hàng
+Cửa sổ chồng lên nhau giữ cạnh trái và phải cùng nhau, cửa sổ cạnh nhau giữ cạnh trên và dưới.
+Lắc để thả
+Lắc chuột khi đổi kích thước và các cửa sổ khác trở về chỗ cũ.
+Làm mờ các cửa sổ khác
+Khi đổi kích thước, các cửa sổ không đi theo được hiển thị trong suốt.
+Xem trước thanh bám
+Cho thấy cửa sổ sẽ nằm ở đâu khi một vùng của thanh được tô sáng. Tắt: không có xem trước.
+Xem trước cạnh màn hình
+Cho thấy cửa sổ sẽ nằm ở đâu tại một cạnh hoặc góc. Tắt: không có xem trước.
+Tắt: khung trung tính – chỉ cho các xem trước đang bật.
+Tạm dừng xếp ô ở cạnh của KDE và xem trước của nó
+Tắt mục này nếu bạn thích viền của KDE hơn – rồi tắt xem trước cạnh màn hình ở trên.
+Giữ để lấp đầy
+Giữ ở cạnh để lấp đầy chỗ trống
+Một cú đẩy ngắn cho nửa hoặc một phần tư. Giữ cửa sổ ở cạnh lâu hơn một chút và nó lớn ra tới cửa sổ kế tiếp – xem trước sẽ cho thấy.
+Thời gian giữ
+Cửa sổ phải ở cạnh bao lâu trước khi lớn ra.
+Xếp ô ở cạnh của chính KDE
+Phóng to và xếp ô của KDE ở các cạnh màn hình – cùng viền – tạm dừng khi SeaQ Snap Layout chạy, để chỉ một xem trước xuất hiện. Cài đặt KDE của bạn không bị đổi: tắt mục này, vô hiệu hóa hoặc gỡ SeaQ Snap Layout là hành vi của KDE trở lại.
+Bám cửa sổ của chính KDE
+Tạm dừng vùng bám của KDE khi nam châm bật
+Để chỉ một nam châm kéo cửa sổ. Cài đặt KDE của bạn không bị đổi: tắt mục này, vô hiệu hóa hoặc gỡ SeaQ Snap Layout là chức năng bám của KDE trở lại.
+Ủng hộ SeaQ Snap Layout
+Nếu bạn thích SeaQ Snap Layout, bạn có thể ủng hộ việc phát triển – cảm ơn!
+Quyên góp qua PayPal
+Mời tôi một ly cà phê

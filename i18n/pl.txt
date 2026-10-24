@@ -9,8 +9,8 @@ Usuń strefę
 Wczytaj szablon…
 Kliknij strefę, aby ją zaznaczyć · kliknij dwukrotnie, aby podzielić · przeciągaj separatory
 %1 z %2 stref
-KDE Snap Layout – Edytor ustawień
-dla KWin · v%1
+SeaQ Snap Layout – Edytor ustawień
+dla KDE · v%1
 Ogólne
 Wygląd
 Zachowanie i animacja
@@ -82,7 +82,7 @@ Usuń
 Jak to działa
 Chwyć okno za pasek tytułu i przeciągnij je w górę. Pasek zjeżdża w dół; upuść okno na strefę, a wypełni dokładnie ten obszar. Gdy je znowu wyciągniesz, odzyska poprzedni rozmiar.
 Otwieranie edytora ustawień
-Ustawienia systemowe → Zarządzanie oknami → Skrypty KWin → ikona koła zębatego przy „KDE Snap Layout” → „Otwórz edytor ustawień Snap Layout” → OK.
+Ustawienia systemowe → Zarządzanie oknami → Skrypty KWin → ikona koła zębatego przy „SeaQ Snap Layout” → „Otwórz edytor ustawień Snap Layout” → OK.
 Informacje
 Wersja
 Autor
@@ -102,8 +102,8 @@ Zapisz
 Tak
 Strefa %1
 Upuść okno na strefę
-KDE Snap Layout: włącz/wyłącz
-KDE Snap Layout: testuj pasek
+SeaQ Snap Layout: włącz/wyłącz
+SeaQ Snap Layout: testuj pasek
 Połówki
 Dwie trzecie
 Trzy kolumny
@@ -122,3 +122,146 @@ Otwórz edytor ustawień Snap Layout
 Szybkie ustawienia
 Kolory paska:
 Wszystkie pozostałe ustawienia – wygląd, rozmiar, animację, zachowanie i własne układy – zmieniasz w edytorze ustawień Snap Layout.
+Ustawienia
+Brak
+Zmień
+Typowe kombinacje
+Własna kombinacja
+Ustaw
+Usuń
+Pasek przyciągania
+Krawędzie ekranu
+Więcej sposobów przyciągania
+Magnes okien
+Skróty klawiszowe
+Skróty
+Cztery sposoby przyciągania okien. Każdy można włączyć i wyłączyć osobno.
+Funkcje
+Dociśnij okno do krawędzi lub rogu: maksymalizacja, połowy, ćwiartki.
+Okna przyklejają się do siebie i do krawędzi ekranu.
+Przyciągaj aktywne okno kombinacjami klawiszy.
+Podglądy
+Pokazuj podglądy w kolorze akcentu
+Wyłączone: neutralna ramka. Dotyczy wszystkich podglądów.
+Klasy okien, które nigdy nie są przyciągane, jedna w wierszu.
+KDE ma własne akcje krawędzi ekranu i własne przyciąganie okien. Jeśli ta sama funkcja jest włączona tutaj, wyłącz tę z KDE: Ustawienia systemowe → Zarządzanie oknami → Krawędzie ekranu oraz Zachowanie okien → Przesuwanie.
+Dociśnij okno do krawędzi lub rogu ekranu, a wypełni tę część. Działa z paskiem przyciągania lub bez niego.
+Pełny ekran
+Górna połowa
+Wyłączone
+Dolna połowa
+Lewa połowa
+Prawa połowa
+Krawędzie i rogi
+Używaj krawędzi ekranu
+Niezależne od paska przyciągania. Każdą krawędź można włączyć osobno.
+Górna krawędź
+Lewa i prawa krawędź: połowa ekranu
+Dolna krawędź: dolna połowa
+Rogi: ćwiartka ekranu
+Inteligentne wypełnianie
+Dopasuj do już przyciągniętych okien
+Jeśli na dole jest już okno, górna krawędź daje górną połowę zamiast maksymalizacji. Połowy i ćwiartki też omijają przyciągnięte okna.
+Odczucie
+Odległość od krawędzi
+Jak blisko krawędzi musi znaleźć się kursor.
+Opóźnienie docisku
+Jak długo okno musi przylegać do krawędzi – małe pchnięcie. 0 = od razu.
+Rozmiar rogów
+Część każdego boku liczona jako róg.
+Własne akcje krawędzi ekranu KDE są nadal włączone, więc na to samo przeciąganie reagują dwa mechanizmy. Wyłącz „Maksymalizuj” i „Kafelkuj” w Ustawienia systemowe → Zarządzanie oknami → Krawędzie ekranu.
+Podczas przesuwania lub zmiany rozmiaru okna jego krawędzie przyklejają się do pobliskich okien i krawędzi ekranu.
+Magnes
+Używaj magnesu okien
+Niezależny od paska przyciągania i krawędzi ekranu.
+Odległość przyciągania
+Jak blisko musi podejść krawędź, zanim się zatrzaśnie.
+Przyklejaj do innych okien
+Przyklejaj do krawędzi ekranu
+Także przy zmianie rozmiaru
+Zachowaj odstęp między oknami
+Okna zatrzymują się na „Odstępie między oknami” ze strony Ogólne zamiast się stykać.
+Własne przyciąganie okien KDE też jest włączone. Dla spójnego działania ustaw jego strefy na „Brak” w Ustawienia systemowe → Zarządzanie oknami → Zachowanie okien → Przesuwanie.
+Przyciągaj aktywne okno klawiaturą. To zwykłe globalne skróty KDE – znajdziesz je też w Ustawienia systemowe → Skróty → KWin.
+Używaj skrótów klawiszowych
+Wyłączone: klawisze pozostają przypisane, ale nic nie robią.
+Schemat klawiszy
+Ustawia klawisze wszystkich akcji naraz. Pojedyncze klawisze nadal zmienisz poniżej.
+Zastosuj
+Usługa skrótów KDE nie odpowiedziała. Klawisze nadal możesz ustawić w Ustawienia systemowe → Skróty → KWin.
+Klawisze już zajęte
+%1 jest używany przez „%2”.
+Potrzebny dla: %1
+Przejmij
+Przejmij wszystkie
+Zostaw je
+Dobrze wiedzieć
+Akcje przyciągania używają tych samych odstępów co pasek i zapamiętują rozmiar sprzed przyciągnięcia: „Przywróć rozmiar sprzed przyciągnięcia” go przywraca.
+SeaQ Snap Layout: %1
+Przyciągnij do lewej połowy
+Przyciągnij do prawej połowy
+Przyciągnij do górnej połowy
+Przyciągnij do dolnej połowy
+Przyciągnij do lewej górnej ćwiartki
+Przyciągnij do prawej górnej ćwiartki
+Przyciągnij do lewej dolnej ćwiartki
+Przyciągnij do prawej dolnej ćwiartki
+Przyciągnij do lewej jednej trzeciej
+Przyciągnij do środkowej jednej trzeciej
+Przyciągnij do prawej jednej trzeciej
+Przyciągnij do lewych dwóch trzecich
+Przyciągnij do prawych dwóch trzecich
+Maksymalizuj lub przywróć
+Wyśrodkuj okno
+Przywróć rozmiar sprzed przyciągnięcia
+Pasek przyciągania wł./wył.
+Krawędzie ekranu wł./wył.
+Magnes okien wł./wył.
+Wypróbuj pasek przyciągania
+Ćwiartki
+Trzecie
+Okno
+Ctrl+Alt + klawisz (domyślnie)
+Meta+Ctrl+Alt + klawisz
+Meta + klawisz (styl KDE)
+Meta+Shift + klawisz
+Ctrl+Shift+Alt + klawisz
+Ctrl+Alt + klawiatura numeryczna
+Bez skrótów
+Kliknij, a potem OK – otworzy się edytor ustawień.
+Opór przed nakładaniem
+Jak głęboko trzeba wepchnąć okno w inne, zanim je puści. 0 = okna mogą swobodnie na siebie nachodzić.
+Przywróć domyślne
+Przywróć wszystkie klawisze
+Ponownie daje każdej akcji klawisz z wybranego schematu i usuwa klawisze, których schemat nie ma.
+Przywróć wszystko
+Lepkie krawędzie
+Zmieniaj rozmiar stykających się okien razem
+Gdy zmieniasz rozmiar okna, okna, które go dotykają, przesuwają wspólną krawędź razem z nim – nic na siebie nie nachodzi, nie powstaje szczelina.
+Utrzymuj okna w stosie w jednej linii
+Okna jedno nad drugim trzymają razem lewe i prawe krawędzie, okna obok siebie górne i dolne.
+Potrząśnij, aby puścić
+Potrząśnij myszą podczas zmiany rozmiaru, a pozostałe okna wrócą na miejsce.
+Przyciemnij pozostałe okna
+Podczas zmiany rozmiaru okna, które nie podążają, są wyświetlane jako przezroczyste.
+Podgląd paska przyciągania
+Pokazuje, gdzie wyląduje okno, gdy strefa paska jest podświetlona. Wyłączone: brak podglądu.
+Podgląd krawędzi ekranu
+Pokazuje, gdzie wyląduje okno przy krawędzi lub w rogu. Wyłączone: brak podglądu.
+Wyłączone: neutralna ramka – tylko dla włączonych podglądów.
+Wstrzymaj kafelkowanie krawędzi KDE i jego podgląd
+Wyłącz to, jeśli wolisz obrys KDE – wtedy wyłącz powyżej podgląd krawędzi ekranu.
+Przytrzymaj, aby wypełnić
+Przytrzymaj przy krawędzi, aby wypełnić wolne miejsce
+Krótkie pchnięcie daje połowę lub ćwiartkę. Przytrzymaj okno trochę dłużej przy krawędzi, a urośnie do następnego okna – podgląd to pokaże.
+Czas przytrzymania
+Jak długo okno musi pozostać przy krawędzi, zanim urośnie.
+Własne kafelkowanie krawędzi KDE
+Maksymalizacja i kafelkowanie KDE przy krawędziach ekranu – z obrysem – są wstrzymane, dopóki działa SeaQ Snap Layout, aby pojawiał się tylko jeden podgląd. Twoje ustawienia KDE nie zmieniają się: wyłącz to, wyłącz lub usuń SeaQ Snap Layout, a zachowanie KDE wróci.
+Własne przyciąganie okien KDE
+Wstrzymaj strefy przyciągania KDE, gdy magnes jest włączony
+Aby tylko jeden magnes ciągnął okno. Twoje ustawienia KDE nie zmieniają się: wyłącz to, wyłącz lub usuń SeaQ Snap Layout, a przyciąganie KDE wróci.
+Wesprzyj SeaQ Snap Layout
+Jeśli lubisz SeaQ Snap Layout, możesz wesprzeć jego rozwój – dziękuję!
+Wesprzyj przez PayPal
+Postaw mi kawę

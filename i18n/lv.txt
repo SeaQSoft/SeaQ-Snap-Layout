@@ -9,8 +9,8 @@ Noņemt zonu
 Ielādēt veidni…
 Noklikšķiniet uz zonas, lai to atlasītu · dubultklikšķis to sadala · velciet atdalītājus
 %1 no %2 zonām
-KDE Snap Layout – Iestatījumu redaktors
-KWin · v%1
+SeaQ Snap Layout – Iestatījumu redaktors
+KDE · v%1
 Vispārīgi
 Izskats
 Uzvedība un animācija
@@ -82,7 +82,7 @@ Dzēst
 Kā tas darbojas
 Satveriet logu aiz virsrakstjoslas un velciet to augšup. Josla nolaižas; nometiet logu uz zonas, un tas aizņems tieši šo laukumu. Ja to atkal izvelkat, tas atgūst iepriekšējo izmēru.
 Iestatījumu redaktora atvēršana
-Sistēmas iestatījumi → Logu pārvaldība → KWin skripti → zobrata ikona pie “KDE Snap Layout” → “Atvērt Snap Layout iestatījumu redaktoru” → Labi.
+Sistēmas iestatījumi → Logu pārvaldība → KWin skripti → zobrata ikona pie “SeaQ Snap Layout” → “Atvērt Snap Layout iestatījumu redaktoru” → Labi.
 Informācija
 Versija
 Autors
@@ -102,8 +102,8 @@ Saglabāt
 Jā
 Zona %1
 Nometiet logu uz zonas
-KDE Snap Layout: ieslēgt/izslēgt
-KDE Snap Layout: pārbaudīt joslu
+SeaQ Snap Layout: ieslēgt/izslēgt
+SeaQ Snap Layout: pārbaudīt joslu
 Puses
 Divas trešdaļas
 Trīs kolonnas
@@ -122,3 +122,146 @@ Atvērt Snap Layout iestatījumu redaktoru
 Ātrie iestatījumi
 Joslas krāsas:
 Visus pārējos iestatījumus – izskatu, izmēru, animāciju, uzvedību un savus izkārtojumus – maina Snap Layout iestatījumu redaktorā.
+Iestatījumi
+Nav
+Mainīt
+Ierastās kombinācijas
+Jūsu kombinācija
+Iestatīt
+Noņemt
+Piestiprināšanas josla
+Ekrāna malas
+Vairāk piestiprināšanas veidu
+Logu magnēts
+Īsinājumtaustiņi
+Īsceļi
+Četri veidi, kā piestiprināt logus. Katru var ieslēgt un izslēgt atsevišķi.
+Funkcijas
+Piespiediet logu pie malas vai stūra: maksimizēt, puses, ceturtdaļas.
+Logi pielīp cits citam un ekrāna malām.
+Piestipriniet aktīvo logu ar taustiņu kombinācijām.
+Priekšskatījumi
+Rādīt priekšskatījumus akcenta krāsā
+Izslēgts: neitrāls rāmis. Attiecas uz visiem priekšskatījumiem.
+Logu klases, kas nekad netiek piestiprinātas, pa vienai rindā.
+KDE ir savas ekrāna malu darbības un sava logu piestiprināšana. Ja šeit ir ieslēgta tā pati funkcija, izslēdziet KDE funkciju: Sistēmas iestatījumi → Logu pārvaldība → Ekrāna malas, kā arī Logu uzvedība → Pārvietošana.
+Piespiediet logu pie ekrāna malas vai stūra, un tas aizpildīs šo daļu. Darbojas ar joslu vai bez tās.
+Pilnekrāns
+Augšējā puse
+Izslēgts
+Apakšējā puse
+Kreisā puse
+Labā puse
+Malas un stūri
+Izmantot ekrāna malas
+Neatkarīgi no joslas. Katru malu var ieslēgt atsevišķi.
+Augšmala
+Kreisā un labā mala: puse ekrāna
+Apakšmala: apakšējā puse
+Stūri: ceturtdaļa ekrāna
+Gudrā aizpilde
+Pielāgoties jau piestiprinātiem logiem
+Ja apakšā jau ir logs, augšmala dod augšējo pusi, nevis maksimizē. Arī puses un ceturtdaļas atstāj piestiprinātos logus brīvus.
+Sajūta
+Attālums līdz malai
+Cik tuvu malai jānonāk kursoram.
+Piespiešanas aizture
+Cik ilgi logam jāatrodas pie malas – neliels grūdiens. 0 = uzreiz.
+Stūra izmērs
+Katras malas daļa, kas skaitās kā stūris.
+KDE pašas ekrāna malu darbības joprojām ir ieslēgtas, tāpēc uz to pašu vilkšanu reaģē divi palīgi. Izslēdziet “Maksimizēt” un “Flīzēt” sadaļā Sistēmas iestatījumi → Logu pārvaldība → Ekrāna malas.
+Kamēr pārvietojat logu vai maināt tā izmēru, tā malas pielīp tuvējiem logiem un ekrāna malām.
+Magnēts
+Izmantot logu magnētu
+Neatkarīgi no joslas un ekrāna malām.
+Piestiprināšanas attālums
+Cik tuvu jānonāk malai, pirms tā nofiksējas.
+Pielipt citiem logiem
+Pielipt ekrāna malām
+Arī mainot izmēru
+Saglabāt atstarpi starp logiem
+Logi apstājas pie “Atstarpe starp logiem” no lapas Vispārīgi, nevis saskaras.
+Arī KDE pašas logu piestiprināšana ir ieslēgta. Vienotai sajūtai iestatiet tās zonas uz “Nav” sadaļā Sistēmas iestatījumi → Logu pārvaldība → Logu uzvedība → Pārvietošana.
+Piestipriniet aktīvo logu ar tastatūru. Tie ir parasti KDE globālie īsceļi – tos atradīsiet arī sadaļā Sistēmas iestatījumi → Īsceļi → KWin.
+Izmantot īsinājumtaustiņus
+Izslēgts: taustiņi paliek piešķirti, bet neko nedara.
+Taustiņu shēma
+Iestata visu darbību taustiņus uzreiz. Atsevišķus taustiņus joprojām varat mainīt zemāk.
+Lietot
+KDE īsceļu pakalpojums neatbildēja. Taustiņus joprojām varat iestatīt sadaļā Sistēmas iestatījumi → Īsceļi → KWin.
+Jau izmantoti taustiņi
+%1 izmanto “%2”.
+Vēlams darbībai: %1
+Pārņemt
+Pārņemt visus
+Paturēt
+Labi zināt
+Piestiprināšanas darbības izmanto tās pašas atstarpes kā josla un atceras izmēru pirms piestiprināšanas: “Atjaunot izmēru pirms piestiprināšanas” to atgriež.
+SeaQ Snap Layout: %1
+Piestiprināt kreisajā pusē
+Piestiprināt labajā pusē
+Piestiprināt augšējā pusē
+Piestiprināt apakšējā pusē
+Piestiprināt augšējā kreisajā ceturtdaļā
+Piestiprināt augšējā labajā ceturtdaļā
+Piestiprināt apakšējā kreisajā ceturtdaļā
+Piestiprināt apakšējā labajā ceturtdaļā
+Piestiprināt kreisajā trešdaļā
+Piestiprināt vidējā trešdaļā
+Piestiprināt labajā trešdaļā
+Piestiprināt kreisajās divās trešdaļās
+Piestiprināt labajās divās trešdaļās
+Maksimizēt vai atjaunot
+Centrēt logu
+Atjaunot izmēru pirms piestiprināšanas
+Josla ieslēgt/izslēgt
+Ekrāna malas ieslēgt/izslēgt
+Logu magnēts ieslēgt/izslēgt
+Izmēģināt joslu
+Ceturtdaļas
+Trešdaļas
+Logs
+Ctrl+Alt + taustiņš (noklusējums)
+Meta+Ctrl+Alt + taustiņš
+Meta + taustiņš (KDE stils)
+Meta+Shift + taustiņš
+Ctrl+Shift+Alt + taustiņš
+Ctrl+Alt + ciparu bloks
+Bez īsceļiem
+Noklikšķiniet, tad Labi – atveras iestatījumu redaktors.
+Pretestība pārklāšanai
+Cik dziļi logs jāiebīda citā, pirms tas atlaiž. 0 = logi var brīvi pārklāties.
+Atjaunot noklusējumu
+Atiestatīt visus taustiņus
+Katrai darbībai atkal piešķir izvēlētās shēmas taustiņu un noņem taustiņus, kuru shēmā nav.
+Atiestatīt visu
+Lipīgās malas
+Mainīt savstarpēji saskarošos logu izmēru kopā
+Mainot loga izmēru, logi, kas tam pieskaras, pārvieto kopīgo malu līdzi – nekas nepārklājas, sprauga nerodas.
+Turēt sakrautos logus vienā līnijā
+Logi viens virs otra tur kreiso un labo malu kopā, logi blakus – augšējo un apakšējo.
+Sakratīt, lai atlaistu
+Mainot izmēru, sakratiet peli, un pārējie logi atlec atpakaļ.
+Aptumšot pārējos logus
+Mainot izmēru, logi, kas neseko, tiek rādīti caurspīdīgi.
+Piesaistes joslas priekšskatījums
+Rāda, kur logs nonāks, kamēr joslas zona ir izcelta. Izslēgts: nekāda priekšskatījuma.
+Ekrāna malu priekšskatījums
+Rāda, kur logs nonāks pie malas vai stūrī. Izslēgts: nekāda priekšskatījuma.
+Izslēgts: neitrāls rāmis – tikai ieslēgtajiem priekšskatījumiem.
+Pauzēt KDE malu flīzēšanu un tās priekšskatījumu
+Izslēdziet, ja jums labāk patīk KDE kontūra – tad augstāk izslēdziet ekrāna malu priekšskatījumu.
+Turēt, lai aizpildītu
+Turēt pie malas, lai aizpildītu brīvo vietu
+Īss grūdiens dod pusi vai ceturtdaļu. Paturiet logu pie malas mazliet ilgāk, un tas izaug līdz nākamajam logam – priekšskatījums to rāda.
+Turēšanas laiks
+Cik ilgi logam jāpaliek pie malas, pirms tas izaug.
+KDE pašas malu flīzēšana
+KDE pašas maksimizēšana un flīzēšana pie ekrāna malām – ar kontūru – ir pauzēta, kamēr darbojas SeaQ Snap Layout, lai parādītos tikai viens priekšskatījums. Jūsu KDE iestatījumi netiek mainīti: izslēdziet šo, atspējojiet vai noņemiet SeaQ Snap Layout, un KDE uzvedība atgriežas.
+KDE pašas logu piesaiste
+Pauzēt KDE piesaistes zonas, kamēr magnēts ir ieslēgts
+Lai logu vilktu tikai viens magnēts. Jūsu KDE iestatījumi netiek mainīti: izslēdziet šo, atspējojiet vai noņemiet SeaQ Snap Layout, un KDE piesaiste atgriežas.
+Atbalstīt SeaQ Snap Layout
+Ja jums patīk SeaQ Snap Layout, varat atbalstīt tā izstrādi – paldies!
+Ziedot ar PayPal
+Uzsauc man kafiju

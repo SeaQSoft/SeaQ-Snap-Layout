@@ -9,8 +9,8 @@ Remover zona
 Carregar modelo…
 Clique em uma zona para selecioná-la · clique duplo para dividir · arraste os divisores
 %1 de %2 zonas
-KDE Snap Layout – Editor de configurações
-para KWin · v%1
+SeaQ Snap Layout – Editor de configurações
+para KDE · v%1
 Geral
 Aparência
 Comportamento e animação
@@ -82,7 +82,7 @@ Excluir
 Como funciona
 Pegue uma janela pela barra de título e arraste-a para cima. A barra desce; solte a janela em uma zona e ela ocupa exatamente essa área. Ao arrastá-la para fora de novo, ela volta ao tamanho anterior.
 Abrir o editor de configurações
-Configurações do sistema → Gerenciamento de janelas → Scripts do KWin → ícone de engrenagem ao lado de “KDE Snap Layout” → “Abrir o editor de configurações do Snap Layout” → OK.
+Configurações do sistema → Gerenciamento de janelas → Scripts do KWin → ícone de engrenagem ao lado de “SeaQ Snap Layout” → “Abrir o editor de configurações do Snap Layout” → OK.
 Informações
 Versão
 Autor
@@ -102,8 +102,8 @@ Salvar
 Sim
 Zona %1
 Solte a janela em uma zona
-KDE Snap Layout: ativar/desativar
-KDE Snap Layout: testar a barra
+SeaQ Snap Layout: ativar/desativar
+SeaQ Snap Layout: testar a barra
 Metades
 Dois terços
 Três colunas
@@ -122,3 +122,146 @@ Abrir o editor de configurações do Snap Layout
 Configurações rápidas
 Cores da barra:
 Todas as outras configurações – aparência, tamanho, animação, comportamento e seus próprios layouts – são alteradas no editor de configurações do Snap Layout.
+Configurações
+Nenhum
+Alterar
+Combinações comuns
+Sua própria combinação
+Definir
+Remover
+Barra de encaixe
+Bordas da tela
+Mais formas de encaixar
+Ímã de janelas
+Atalhos de teclado
+Atalhos
+Quatro formas de encaixar janelas. Cada uma pode ser ligada e desligada separadamente.
+Recursos
+Empurre uma janela contra uma borda ou um canto: maximizar, metades, quartos.
+As janelas grudam umas nas outras e nas bordas da tela.
+Encaixe a janela ativa com combinações de teclas.
+Prévias
+Mostrar as prévias na cor de destaque
+Desligado: uma moldura neutra. Vale para todas as prévias.
+Classes de janela que nunca são encaixadas, uma por linha.
+O KDE tem suas próprias ações de borda da tela e seu próprio encaixe de janelas. Se a mesma função estiver ligada aqui, desligue a do KDE: Configurações do sistema → Gerenciamento de janelas → Bordas da tela, e Comportamento das janelas → Movimento.
+Empurre uma janela contra uma borda ou um canto da tela e ela preenche essa parte. Funciona com ou sem a barra de encaixe.
+Tela cheia
+Metade de cima
+Desligado
+Metade de baixo
+Metade esquerda
+Metade direita
+Bordas e cantos
+Usar as bordas da tela
+Independente da barra de encaixe. Cada borda pode ser ligada separadamente.
+Borda superior
+Bordas esquerda e direita: metade da tela
+Borda inferior: metade de baixo
+Cantos: um quarto da tela
+Preenchimento inteligente
+Ajustar às janelas já encaixadas
+Se houver uma janela embaixo, a borda superior dá a metade de cima em vez de maximizar. Metades e quartos também deixam livres as janelas encaixadas.
+Sensação
+Distância até a borda
+Quanto o cursor precisa chegar perto da borda.
+Atraso do empurrão
+Quanto tempo a janela precisa ficar encostada na borda – um pequeno empurrão. 0 = na hora.
+Tamanho dos cantos
+Parte de cada lado que conta como canto.
+As ações de borda da tela do KDE ainda estão ligadas, então dois ajudantes reagem ao mesmo arrasto. Desligue “Maximizar” e “Lado a lado” em Configurações do sistema → Gerenciamento de janelas → Bordas da tela.
+Enquanto você move ou redimensiona uma janela, as bordas dela grudam nas janelas próximas e nas bordas da tela.
+Ímã
+Usar o ímã de janelas
+Independente da barra de encaixe e das bordas da tela.
+Distância de encaixe
+Quanto uma borda precisa chegar perto antes de encaixar.
+Grudar em outras janelas
+Grudar nas bordas da tela
+Também ao redimensionar
+Manter o espaço entre janelas
+As janelas param no “Espaço entre janelas” da página Geral em vez de se tocarem.
+O encaixe de janelas do próprio KDE também está ligado. Para uma sensação uniforme, defina as zonas dele como “Nenhuma” em Configurações do sistema → Gerenciamento de janelas → Comportamento das janelas → Movimento.
+Encaixe a janela ativa com o teclado. São atalhos globais normais do KDE – você também os encontra em Configurações do sistema → Atalhos → KWin.
+Usar atalhos de teclado
+Desligado: as teclas continuam atribuídas, mas não fazem nada.
+Esquema de teclas
+Define as teclas de todas as ações de uma vez. Você ainda pode mudar teclas individuais abaixo.
+Aplicar
+O serviço de atalhos do KDE não respondeu. Você ainda pode definir as teclas em Configurações do sistema → Atalhos → KWin.
+Teclas já em uso
+%1 é usado por “%2”.
+Desejado para: %1
+Assumir
+Assumir todas
+Manter
+Bom saber
+As ações de encaixe usam os mesmos espaços da barra e lembram o tamanho antes do encaixe: “Restaurar o tamanho antes do encaixe” o traz de volta.
+SeaQ Snap Layout: %1
+Encaixar na metade esquerda
+Encaixar na metade direita
+Encaixar na metade de cima
+Encaixar na metade de baixo
+Encaixar no quarto superior esquerdo
+Encaixar no quarto superior direito
+Encaixar no quarto inferior esquerdo
+Encaixar no quarto inferior direito
+Encaixar no terço esquerdo
+Encaixar no terço central
+Encaixar no terço direito
+Encaixar nos dois terços à esquerda
+Encaixar nos dois terços à direita
+Maximizar ou restaurar
+Centralizar a janela
+Restaurar o tamanho antes do encaixe
+Barra de encaixe liga/desliga
+Bordas da tela liga/desliga
+Ímã de janelas liga/desliga
+Testar a barra de encaixe
+Quartos
+Terços
+Janela
+Ctrl+Alt + tecla (padrão)
+Meta+Ctrl+Alt + tecla
+Meta + tecla (estilo KDE)
+Meta+Shift + tecla
+Ctrl+Shift+Alt + tecla
+Ctrl+Alt + teclado numérico
+Sem atalhos
+Clique e depois em OK – o editor de configurações abre.
+Resistência à sobreposição
+Quanto é preciso empurrar uma janela para dentro de outra antes que ela solte. 0 = as janelas podem se sobrepor livremente.
+Restaurar padrão
+Redefinir todas as teclas
+Dá novamente a cada ação a tecla do esquema escolhido e remove as teclas que o esquema não tem.
+Redefinir tudo
+Bordas grudentas
+Redimensionar juntas as janelas que se tocam
+Ao redimensionar uma janela, as que a tocam movem a borda compartilhada junto – nada se sobrepõe, não fica espaço.
+Manter janelas empilhadas alinhadas
+Janelas uma sobre a outra mantêm juntas as bordas esquerda e direita; janelas lado a lado, as de cima e de baixo.
+Sacudir para soltar
+Sacuda o mouse durante o redimensionamento e as outras janelas voltam ao lugar.
+Esmaecer as outras janelas
+Durante o redimensionamento, as janelas que não acompanham aparecem transparentes.
+Prévia da barra
+Mostra onde a janela vai parar enquanto uma zona da barra está destacada. Desligado: nenhuma prévia.
+Prévia das bordas da tela
+Mostra onde a janela vai parar numa borda ou num canto. Desligado: nenhuma prévia.
+Desligado: uma moldura neutra – só para as prévias ligadas.
+Pausar o mosaico de bordas do KDE e sua prévia
+Desligue isto se preferir o contorno do KDE – então desligue acima a prévia das bordas.
+Segurar para preencher
+Segurar na borda para preencher o espaço livre
+Um empurrão curto dá a metade ou o quarto. Segure a janela um pouco mais na borda e ela cresce até a próxima janela – a prévia mostra.
+Tempo de espera
+Quanto tempo a janela precisa ficar na borda antes de crescer.
+Mosaico de bordas do próprio KDE
+O maximizar e o mosaico do KDE nas bordas da tela – com seu contorno – ficam pausados enquanto o SeaQ Snap Layout roda, para aparecer só uma prévia. Suas configurações do KDE não mudam: desligue isto, desative ou remova o SeaQ Snap Layout e o comportamento do KDE volta.
+Encaixe de janelas do próprio KDE
+Pausar as zonas de encaixe do KDE enquanto o ímã está ligado
+Para que só um ímã puxe uma janela. Suas configurações do KDE não mudam: desligue isto, desative ou remova o SeaQ Snap Layout e o encaixe do KDE volta.
+Apoiar o SeaQ Snap Layout
+Se você gosta do SeaQ Snap Layout, pode apoiar o desenvolvimento – obrigado!
+Doar com PayPal
+Me pague um café

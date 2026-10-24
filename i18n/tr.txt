@@ -9,8 +9,8 @@ Bölgeyi kaldır
 Şablon yükle…
 Seçmek için bir bölgeye tıklayın · bölmek için çift tıklayın · ayırıcıları sürükleyin
 %1 / %2 bölge
-KDE Snap Layout – Ayar düzenleyicisi
-KWin için · v%1
+SeaQ Snap Layout – Ayar düzenleyicisi
+KDE için · v%1
 Genel
 Görünüm
 Davranış ve animasyon
@@ -82,7 +82,7 @@ Sil
 Nasıl çalışır
 Bir pencereyi başlık çubuğundan tutun ve yukarı sürükleyin. Çubuk aşağı kayar; pencereyi bir bölgeye bırakın, tam o alanı kaplar. Yeniden dışarı çektiğinizde eski boyutuna döner.
 Ayar düzenleyicisini açma
-Sistem Ayarları → Pencere Yönetimi → KWin Betikleri → “KDE Snap Layout” yanındaki dişli simgesi → “Snap Layout ayar düzenleyicisini aç” → Tamam.
+Sistem Ayarları → Pencere Yönetimi → KWin Betikleri → “SeaQ Snap Layout” yanındaki dişli simgesi → “Snap Layout ayar düzenleyicisini aç” → Tamam.
 Bilgi
 Sürüm
 Yazar
@@ -102,8 +102,8 @@ Kaydet
 Evet
 Bölge %1
 Pencereyi bir bölgeye bırakın
-KDE Snap Layout: aç/kapat
-KDE Snap Layout: çubuğu dene
+SeaQ Snap Layout: aç/kapat
+SeaQ Snap Layout: çubuğu dene
 Yarımlar
 Üçte iki
 Üç sütun
@@ -122,3 +122,146 @@ Snap Layout ayar düzenleyicisini aç
 Hızlı ayarlar
 Çubuk renkleri:
 Diğer tüm ayarlar – görünüm, boyut, animasyon, davranış ve kendi yerleşimleriniz – Snap Layout ayar düzenleyicisinde değiştirilir.
+Ayarlar
+Yok
+Değiştir
+Yaygın kombinasyonlar
+Kendi kombinasyonunuz
+Ata
+Kaldır
+Yaslama çubuğu
+Ekran kenarları
+Daha fazla yaslama yolu
+Pencere mıknatısı
+Klavye kısayolları
+Kısayollar
+Pencereleri yaslamanın dört yolu. Her biri ayrı ayrı açılıp kapatılabilir.
+Özellikler
+Bir pencereyi kenara veya köşeye bastırın: büyüt, yarımlar, çeyrekler.
+Pencereler birbirine ve ekran kenarlarına yapışır.
+Etkin pencereyi tuş kombinasyonlarıyla yaslayın.
+Önizlemeler
+Önizlemeleri vurgu renginde göster
+Kapalı: nötr bir çerçeve. Tüm önizlemeler için geçerlidir.
+Hiç yaslanmayan pencere sınıfları, her satıra bir tane.
+KDE’nin kendi ekran kenarı eylemleri ve kendi pencere yaslaması vardır. Aynı özellik burada açıksa KDE’ninkini kapatın: Sistem Ayarları → Pencere Yönetimi → Ekran Kenarları ve Pencere Davranışı → Taşıma.
+Bir pencereyi ekranın kenarına veya köşesine bastırın, o bölümü doldursun. Yaslama çubuğuyla veya onsuz çalışır.
+Tam ekran
+Üst yarı
+Kapalı
+Alt yarı
+Sol yarı
+Sağ yarı
+Kenarlar ve köşeler
+Ekran kenarlarını kullan
+Yaslama çubuğundan bağımsız. Her kenar ayrı ayrı açılabilir.
+Üst kenar
+Sol ve sağ kenar: ekranın yarısı
+Alt kenar: alt yarı
+Köşeler: ekranın çeyreği
+Akıllı doldurma
+Zaten yaslanmış pencerelere uyum sağla
+Altta zaten bir pencere varsa üst kenar büyütmek yerine üst yarıyı verir. Yarımlar ve çeyrekler de yaslanmış pencereleri açıkta bırakır.
+His
+Kenara uzaklık
+İmlecin kenara ne kadar yaklaşması gerektiği.
+İtme gecikmesi
+Pencerenin kenarda ne kadar durması gerektiği – küçük bir itiş. 0 = hemen.
+Köşe boyutu
+Her kenarın köşe sayılan kısmı.
+KDE’nin kendi ekran kenarı eylemleri hâlâ açık, bu yüzden aynı sürüklemeye iki yardımcı tepki veriyor. Sistem Ayarları → Pencere Yönetimi → Ekran Kenarları altında “Büyüt” ve “Döşe” seçeneklerini kapatın.
+Bir pencereyi taşırken veya boyutlandırırken kenarları yakındaki pencerelere ve ekran kenarlarına yapışır.
+Mıknatıs
+Pencere mıknatısını kullan
+Yaslama çubuğundan ve ekran kenarlarından bağımsız.
+Yapışma mesafesi
+Bir kenarın yerine oturmadan önce ne kadar yaklaşması gerektiği.
+Diğer pencerelere yapış
+Ekran kenarlarına yapış
+Boyutlandırırken de
+Pencereler arası boşluğu koru
+Pencereler birbirine değmek yerine Genel sayfasındaki “Pencereler arası boşluk” değerinde durur.
+KDE’nin kendi pencere yaslaması da açık. Tutarlı bir his için bölgelerini Sistem Ayarları → Pencere Yönetimi → Pencere Davranışı → Taşıma altında “Yok” yapın.
+Etkin pencereyi klavyeyle yaslayın. Bunlar normal KDE genel kısayollarıdır – Sistem Ayarları → Kısayollar → KWin altında da bulabilirsiniz.
+Klavye kısayollarını kullan
+Kapalı: tuşlar atanmış kalır ama hiçbir şey yapmaz.
+Tuş düzeni
+Tüm eylemlerin tuşlarını tek seferde ayarlar. Tek tek tuşları aşağıda değiştirmeye devam edebilirsiniz.
+Uygula
+KDE kısayol hizmeti yanıt vermedi. Tuşları yine de Sistem Ayarları → Kısayollar → KWin altında ayarlayabilirsiniz.
+Zaten kullanılan tuşlar
+%1, “%2” tarafından kullanılıyor.
+İstenen eylem: %1
+Devral
+Hepsini devral
+Kalsınlar
+Bilmekte fayda var
+Yaslama eylemleri çubukla aynı boşlukları kullanır ve yaslamadan önceki boyutu hatırlar: “Yaslamadan önceki boyutu geri yükle” onu geri getirir.
+SeaQ Snap Layout: %1
+Sol yarıya yasla
+Sağ yarıya yasla
+Üst yarıya yasla
+Alt yarıya yasla
+Sol üst çeyreğe yasla
+Sağ üst çeyreğe yasla
+Sol alt çeyreğe yasla
+Sağ alt çeyreğe yasla
+Sol üçte bire yasla
+Orta üçte bire yasla
+Sağ üçte bire yasla
+Sol üçte ikiye yasla
+Sağ üçte ikiye yasla
+Büyüt veya geri yükle
+Pencereyi ortala
+Yaslamadan önceki boyutu geri yükle
+Yaslama çubuğu aç/kapat
+Ekran kenarları aç/kapat
+Pencere mıknatısı aç/kapat
+Yaslama çubuğunu dene
+Çeyrekler
+Üçte birler
+Pencere
+Ctrl+Alt + tuş (varsayılan)
+Meta+Ctrl+Alt + tuş
+Meta + tuş (KDE tarzı)
+Meta+Shift + tuş
+Ctrl+Shift+Alt + tuş
+Ctrl+Alt + sayısal tuş takımı
+Kısayol yok
+Tıklayın, ardından Tamam – ayar düzenleyicisi açılır.
+Örtüşmeye karşı direnç
+Bir pencerenin bırakmadan önce diğerinin içine ne kadar itilmesi gerektiği. 0 = pencereler serbestçe örtüşebilir.
+Varsayılana sıfırla
+Tüm tuşları sıfırla
+Her eyleme seçilen şemanın tuşunu yeniden verir ve şemada olmayan tuşları kaldırır.
+Tümünü sıfırla
+Yapışkan kenarlar
+Birbirine değen pencereleri birlikte boyutlandır
+Bir pencereyi boyutlandırdığınızda ona değen pencereler ortak kenarı onunla birlikte taşır – hiçbir şey örtüşmez, boşluk oluşmaz.
+Üst üste pencereleri hizada tut
+Üst üste duran pencereler sol ve sağ kenarlarını, yan yana duranlar üst ve alt kenarlarını birlikte tutar.
+Bırakmak için salla
+Boyutlandırırken fareyi sallayın, diğer pencereler geri döner.
+Diğer pencereleri soldur
+Boyutlandırma sırasında birlikte hareket etmeyen pencereler saydam gösterilir.
+Yapışma çubuğu önizlemesi
+Çubuğun bir bölgesi vurgulanırken pencerenin nereye yerleşeceğini gösterir. Kapalı: hiç önizleme yok.
+Ekran kenarları önizlemesi
+Pencerenin bir kenarda veya köşede nereye yerleşeceğini gösterir. Kapalı: hiç önizleme yok.
+Kapalı: nötr bir çerçeve – yalnızca açık önizlemeler için.
+KDE'nin kenar döşemesini ve önizlemesini duraklat
+KDE'nin kendi çerçevesini tercih ediyorsanız bunu kapatın – ardından yukarıdaki ekran kenarları önizlemesini kapatın.
+Doldurmak için tut
+Boş alanı doldurmak için kenarda tut
+Kısa bir itiş yarımı veya çeyreği verir. Pencereyi kenarda biraz daha uzun tutun, sonraki pencereye kadar büyür – önizleme bunu gösterir.
+Tutma süresi
+Pencerenin büyümeden önce kenarda ne kadar kalması gerektiği.
+KDE'nin kendi kenar döşemesi
+KDE'nin ekran kenarlarındaki büyütme ve döşemesi – çerçevesiyle birlikte – SeaQ Snap Layout çalışırken duraklatılır, böylece yalnızca bir önizleme görünür. KDE ayarlarınız değişmez: bunu kapatın, SeaQ Snap Layout'u devre dışı bırakın veya kaldırın, KDE'nin davranışı geri gelir.
+KDE'nin kendi pencere yapışması
+Mıknatıs açıkken KDE'nin yapışma bölgelerini duraklat
+Bir pencereyi yalnızca bir mıknatıs çeksin diye. KDE ayarlarınız değişmez: bunu kapatın, SeaQ Snap Layout'u devre dışı bırakın veya kaldırın, KDE'nin yapışması geri gelir.
+SeaQ Snap Layout'u destekle
+SeaQ Snap Layout'u beğendiyseniz geliştirmesini destekleyebilirsiniz – teşekkürler!
+PayPal ile bağış yap
+Bana bir kahve ısmarla

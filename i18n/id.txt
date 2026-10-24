@@ -9,8 +9,8 @@ Hapus zona
 Muat templat…
 Klik zona untuk memilihnya · klik ganda untuk membaginya · seret pembatasnya
 %1 dari %2 zona
-KDE Snap Layout – Penyunting pengaturan
-untuk KWin · v%1
+SeaQ Snap Layout – Penyunting pengaturan
+untuk KDE · v%1
 Umum
 Tampilan
 Perilaku & animasi
@@ -82,7 +82,7 @@ Hapus
 Cara kerjanya
 Pegang jendela pada bilah judulnya lalu seret ke atas. Bilah akan turun; lepaskan jendela di sebuah zona dan jendela akan mengisi tepat area itu. Seret keluar lagi dan ukurannya kembali seperti semula.
 Membuka penyunting pengaturan
-Pengaturan Sistem → Manajemen Jendela → Skrip KWin → ikon roda gigi di samping “KDE Snap Layout” → “Buka penyunting pengaturan Snap Layout” → OK.
+Pengaturan Sistem → Manajemen Jendela → Skrip KWin → ikon roda gigi di samping “SeaQ Snap Layout” → “Buka penyunting pengaturan Snap Layout” → OK.
 Informasi
 Versi
 Pembuat
@@ -102,8 +102,8 @@ Simpan
 Ya
 Zona %1
 Lepaskan jendela di sebuah zona
-KDE Snap Layout: hidup/mati
-KDE Snap Layout: uji bilah
+SeaQ Snap Layout: hidup/mati
+SeaQ Snap Layout: uji bilah
 Separuh
 Dua pertiga
 Tiga kolom
@@ -122,3 +122,146 @@ Buka penyunting pengaturan Snap Layout
 Pengaturan cepat
 Warna bilah:
 Semua pengaturan lainnya – tampilan, ukuran, animasi, perilaku, dan tata letak buatan Anda – diubah di penyunting pengaturan Snap Layout.
+Pengaturan
+Tidak ada
+Ubah
+Kombinasi umum
+Kombinasi sendiri
+Atur
+Hapus
+Bilah tempel
+Tepi layar
+Cara lain untuk menempel
+Magnet jendela
+Pintasan keyboard
+Pintasan
+Empat cara menempelkan jendela. Masing-masing bisa dinyalakan dan dimatikan sendiri.
+Fitur
+Dorong jendela ke tepi atau sudut: maksimalkan, separuh, seperempat.
+Jendela saling menempel dan menempel ke tepi layar.
+Tempelkan jendela aktif dengan kombinasi tombol.
+Pratinjau
+Tampilkan pratinjau dengan warna aksen
+Mati: bingkai netral. Berlaku untuk semua pratinjau.
+Kelas jendela yang tidak pernah ditempelkan, satu per baris.
+KDE punya aksi tepi layar sendiri dan penempelan jendela sendiri. Jika fitur yang sama aktif di sini, matikan milik KDE: Pengaturan Sistem → Manajemen Jendela → Tepi Layar, serta Perilaku Jendela → Pemindahan.
+Dorong jendela ke tepi atau sudut layar dan jendela itu mengisi bagian tersebut. Berfungsi dengan atau tanpa bilah tempel.
+Layar penuh
+Separuh atas
+Mati
+Separuh bawah
+Separuh kiri
+Separuh kanan
+Tepi dan sudut
+Gunakan tepi layar
+Terpisah dari bilah tempel. Setiap tepi bisa dinyalakan sendiri.
+Tepi atas
+Tepi kiri dan kanan: separuh layar
+Tepi bawah: separuh bawah
+Sudut: seperempat layar
+Isi cerdas
+Menyesuaikan dengan jendela yang sudah ditempel
+Jika sudah ada jendela di bawah, tepi atas memberi separuh atas alih-alih memaksimalkan. Separuh dan seperempat juga membiarkan jendela yang ditempel tetap terlihat.
+Rasa
+Jarak ke tepi
+Seberapa dekat kursor harus mencapai tepi.
+Jeda dorongan
+Berapa lama jendela harus menempel di tepi – dorongan kecil. 0 = langsung.
+Ukuran sudut
+Bagian setiap sisi yang dihitung sebagai sudut.
+Aksi tepi layar milik KDE masih aktif, jadi dua pembantu bereaksi pada seretan yang sama. Matikan “Maksimalkan” dan “Ubin” di Pengaturan Sistem → Manajemen Jendela → Tepi Layar.
+Saat Anda memindahkan atau mengubah ukuran jendela, tepinya menempel ke jendela terdekat dan ke tepi layar.
+Magnet
+Gunakan magnet jendela
+Terpisah dari bilah tempel dan tepi layar.
+Jarak tempel
+Seberapa dekat tepi harus datang sebelum terkunci di tempatnya.
+Menempel ke jendela lain
+Menempel ke tepi layar
+Juga saat mengubah ukuran
+Pertahankan jarak antarjendela
+Jendela berhenti di “Jarak antarjendela” dari halaman Umum alih-alih saling bersentuhan.
+Penempelan jendela milik KDE juga aktif. Agar terasa seragam, atur zonanya ke “Tidak ada” di Pengaturan Sistem → Manajemen Jendela → Perilaku Jendela → Pemindahan.
+Tempelkan jendela aktif dengan keyboard. Ini pintasan global KDE biasa – Anda juga bisa menemukannya di Pengaturan Sistem → Pintasan → KWin.
+Gunakan pintasan keyboard
+Mati: tombol tetap ditetapkan tetapi tidak melakukan apa pun.
+Skema tombol
+Mengatur tombol semua aksi sekaligus. Tombol satuan masih bisa diubah di bawah.
+Terapkan
+Layanan pintasan KDE tidak menjawab. Anda tetap bisa mengatur tombol di Pengaturan Sistem → Pintasan → KWin.
+Tombol yang sudah dipakai
+%1 dipakai oleh “%2”.
+Diinginkan untuk: %1
+Ambil alih
+Ambil alih semua
+Biarkan
+Baik untuk diketahui
+Aksi penempelan memakai jarak yang sama dengan bilah dan mengingat ukuran sebelum ditempel: “Kembalikan ukuran sebelum ditempel” mengembalikannya.
+SeaQ Snap Layout: %1
+Tempel ke separuh kiri
+Tempel ke separuh kanan
+Tempel ke separuh atas
+Tempel ke separuh bawah
+Tempel ke seperempat kiri atas
+Tempel ke seperempat kanan atas
+Tempel ke seperempat kiri bawah
+Tempel ke seperempat kanan bawah
+Tempel ke sepertiga kiri
+Tempel ke sepertiga tengah
+Tempel ke sepertiga kanan
+Tempel ke dua pertiga kiri
+Tempel ke dua pertiga kanan
+Maksimalkan atau kembalikan
+Tengahkan jendela
+Kembalikan ukuran sebelum ditempel
+Bilah tempel nyala/mati
+Tepi layar nyala/mati
+Magnet jendela nyala/mati
+Coba bilah tempel
+Seperempat
+Sepertiga
+Jendela
+Ctrl+Alt + tombol (bawaan)
+Meta+Ctrl+Alt + tombol
+Meta + tombol (gaya KDE)
+Meta+Shift + tombol
+Ctrl+Shift+Alt + tombol
+Ctrl+Alt + papan angka
+Tanpa pintasan
+Klik, lalu OK – penyunting pengaturan terbuka.
+Hambatan terhadap tumpang tindih
+Seberapa jauh jendela harus didorong ke jendela lain sebelum terlepas. 0 = jendela bebas bertumpang tindih.
+Kembalikan ke bawaan
+Atur ulang semua tombol
+Memberi setiap aksi tombol dari skema yang dipilih lagi dan menghapus tombol yang tidak ada di skema.
+Atur ulang semua
+Tepi lengket
+Ubah ukuran jendela yang bersentuhan bersama-sama
+Saat Anda mengubah ukuran jendela, jendela yang menyentuhnya ikut menggeser tepi bersama – tidak ada yang tumpang tindih, tidak ada celah.
+Jaga jendela bertumpuk tetap sejajar
+Jendela yang bertumpuk menjaga tepi kiri dan kanannya bersama, jendela bersebelahan tepi atas dan bawahnya.
+Goyangkan untuk melepas
+Goyangkan tetikus saat mengubah ukuran dan jendela lain kembali ke tempatnya.
+Pudarkan jendela lain
+Saat mengubah ukuran, jendela yang tidak ikut ditampilkan transparan.
+Pratinjau bilah snap
+Menunjukkan tempat jendela mendarat selama zona bilah disorot. Mati: tidak ada pratinjau sama sekali.
+Pratinjau tepi layar
+Menunjukkan tempat jendela mendarat di tepi atau sudut. Mati: tidak ada pratinjau sama sekali.
+Mati: bingkai netral – hanya untuk pratinjau yang dinyalakan.
+Jeda ubin tepi KDE dan pratinjaunya
+Matikan ini jika Anda lebih suka garis luar KDE – lalu matikan pratinjau tepi layar di atas.
+Tahan untuk mengisi
+Tahan di tepi untuk mengisi ruang kosong
+Dorongan singkat memberi setengah atau seperempat. Tahan jendela sedikit lebih lama di tepi dan jendela membesar sampai jendela berikutnya – pratinjau menunjukkannya.
+Waktu tahan
+Berapa lama jendela harus tetap di tepi sebelum membesar.
+Ubin tepi milik KDE
+Maksimalkan dan ubin KDE di tepi layar – beserta garis luarnya – dijeda selama SeaQ Snap Layout berjalan, sehingga hanya satu pratinjau yang muncul. Pengaturan KDE Anda tidak diubah: matikan ini, nonaktifkan atau hapus SeaQ Snap Layout dan perilaku KDE kembali.
+Snap jendela milik KDE
+Jeda zona snap KDE selama magnet menyala
+Agar hanya satu magnet yang menarik jendela. Pengaturan KDE Anda tidak diubah: matikan ini, nonaktifkan atau hapus SeaQ Snap Layout dan snap KDE kembali.
+Dukung SeaQ Snap Layout
+Jika Anda menyukai SeaQ Snap Layout, Anda bisa mendukung pengembangannya – terima kasih!
+Donasi dengan PayPal
+Traktir saya kopi

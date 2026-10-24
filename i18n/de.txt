@@ -9,8 +9,8 @@ Zone entfernen
 Vorlage laden …
 Zone anklicken zum Auswählen · Doppelklick teilt sie · Teiler mit der Maus ziehen
 %1 von %2 Zonen
-KDE Snap Layout – Einstellungseditor
-für KWin · v%1
+SeaQ Snap Layout – Einstellungseditor
+für KDE · v%1
 Allgemein
 Aussehen
 Verhalten & Animation
@@ -82,7 +82,7 @@ Löschen
 So funktioniert’s
 Fenster an der Titelleiste greifen und nach oben ziehen. Die Snap-Leiste fährt herunter; das Fenster auf einer Zone ablegen und es füllt genau diesen Bereich. Wieder wegziehen, und es bekommt seine alte Größe zurück.
 Einstellungseditor öffnen
-Systemeinstellungen → Fensterverwaltung → KWin-Skripte → Zahnrad bei „KDE Snap Layout“ → „Snap Layout Einstellungseditor öffnen“ → OK.
+Systemeinstellungen → Fensterverwaltung → KWin-Skripte → Zahnrad bei „SeaQ Snap Layout“ → „Snap Layout Einstellungseditor öffnen“ → OK.
 Informationen
 Version
 Autor
@@ -102,8 +102,8 @@ Speichern
 Ja
 Zone %1
 Fenster auf einer Zone ablegen
-KDE Snap Layout: ein-/ausschalten
-KDE Snap Layout: Snap-Leiste testen
+SeaQ Snap Layout: ein-/ausschalten
+SeaQ Snap Layout: Snap-Leiste testen
 Hälften
 Zwei Drittel
 Drei Spalten
@@ -122,3 +122,146 @@ Snap Layout Einstellungseditor öffnen
 Quick-Einstellungen
 Farben der Snap-Leiste:
 Alle weiteren Einstellungen – Aussehen, Größe, Animation, Verhalten und eigene Layouts – nimmst du im Snap Layout Einstellungseditor vor.
+Einstellungen
+Keine
+Ändern
+Übliche Kombinationen
+Eigene Kombination
+Setzen
+Entfernen
+Snap-Leiste
+Bildschirmkanten
+Weitere Wege zum Einrasten
+Fenster-Magnet
+Tastenkürzel
+Kürzel
+Vier Wege, Fenster einzurasten. Jeder lässt sich einzeln ein- und ausschalten.
+Funktionen
+Fenster gegen eine Kante oder Ecke drücken: maximieren, Hälften, Viertel.
+Fenster haften aneinander und an den Bildschirmrändern.
+Das aktive Fenster per Tastenkombination einrasten.
+Vorschauen
+Vorschauen in der Akzentfarbe zeigen
+Aus: ein neutraler Rahmen. Gilt für alle Vorschauen.
+Fensterklassen, die nie eingerastet werden, eine pro Zeile.
+KDE hat eigene Bildschirmkanten-Aktionen und ein eigenes Fenster-Einrasten. Wenn hier dieselbe Funktion an ist, schalte die von KDE aus: Systemeinstellungen → Fensterverwaltung → Bildschirmränder sowie Fensterverhalten → Verschieben.
+Drück ein Fenster gegen eine Kante oder Ecke des Bildschirms, und es füllt diesen Teil aus. Funktioniert mit oder ohne Snap-Leiste.
+Vollbild
+Obere Hälfte
+Aus
+Untere Hälfte
+Linke Hälfte
+Rechte Hälfte
+Kanten und Ecken
+Bildschirmkanten verwenden
+Unabhängig von der Snap-Leiste. Jede Kante lässt sich einzeln schalten.
+Obere Kante
+Linke und rechte Kante: halber Bildschirm
+Untere Kante: untere Hälfte
+Ecken: Viertel des Bildschirms
+Intelligentes Füllen
+An bereits eingerastete Fenster anpassen
+Liegt unten schon ein Fenster, gibt die obere Kante die obere Hälfte statt zu maximieren. Auch Hälften und Viertel lassen eingerastete Fenster frei.
+Gefühl
+Abstand zur Kante
+Wie nah der Mauszeiger an die Kante kommen muss.
+Andruck-Verzögerung
+Wie lange das Fenster an der Kante anliegen muss – ein kleiner Stoß. 0 = sofort.
+Eckengröße
+Anteil jeder Seite, der als Ecke zählt.
+Die eigenen Bildschirmkanten-Aktionen von KDE sind noch an, dann reagieren zwei Helfer auf dasselbe Ziehen. Schalte „Maximieren“ und „Kacheln“ aus unter Systemeinstellungen → Fensterverwaltung → Bildschirmränder.
+Während du ein Fenster verschiebst oder seine Größe änderst, haften seine Kanten an nahen Fenstern und an den Bildschirmrändern.
+Magnet
+Fenster-Magnet verwenden
+Unabhängig von der Snap-Leiste und den Bildschirmkanten.
+Einrastabstand
+Wie nah eine Kante kommen muss, bevor sie einrastet.
+An anderen Fenstern haften
+An den Bildschirmrändern haften
+Auch beim Ändern der Größe
+Abstand zwischen Fenstern beibehalten
+Fenster halten den „Abstand zwischen Fenstern“ von der Seite Allgemein ein, statt sich zu berühren.
+Das eigene Fenster-Einrasten von KDE ist ebenfalls an. Für ein einheitliches Gefühl stell seine Einrastzonen auf „Keine“ unter Systemeinstellungen → Fensterverwaltung → Fensterverhalten → Verschieben.
+Das aktive Fenster mit der Tastatur einrasten. Das sind normale globale KDE-Kurzbefehle – du findest sie auch unter Systemeinstellungen → Kurzbefehle → KWin.
+Tastenkürzel verwenden
+Aus: Die Tasten bleiben belegt, tun aber nichts.
+Tastenschema
+Setzt die Tasten aller Aktionen auf einmal. Einzelne Tasten kannst du unten weiterhin ändern.
+Anwenden
+Der KDE-Kurzbefehldienst hat nicht geantwortet. Du kannst die Tasten weiterhin unter Systemeinstellungen → Kurzbefehle → KWin festlegen.
+Bereits belegte Tasten
+%1 wird von „%2“ verwendet.
+Gewünscht für: %1
+Übernehmen
+Alle übernehmen
+Behalten
+Gut zu wissen
+Die Einrast-Aktionen nutzen dieselben Abstände wie die Snap-Leiste und merken sich die Größe vor dem Einrasten: „Größe von vor dem Einrasten wiederherstellen“ holt sie zurück.
+SeaQ Snap Layout: %1
+In die linke Hälfte
+In die rechte Hälfte
+In die obere Hälfte
+In die untere Hälfte
+Ins Viertel oben links
+Ins Viertel oben rechts
+Ins Viertel unten links
+Ins Viertel unten rechts
+Ins linke Drittel
+Ins mittlere Drittel
+Ins rechte Drittel
+In die linken zwei Drittel
+In die rechten zwei Drittel
+Maximieren oder wiederherstellen
+Fenster zentrieren
+Größe von vor dem Einrasten wiederherstellen
+Snap-Leiste an/aus
+Bildschirmkanten an/aus
+Fenster-Magnet an/aus
+Snap-Leiste testen
+Viertel
+Drittel
+Fenster
+Strg+Alt + Taste (Standard)
+Meta+Strg+Alt + Taste
+Meta + Taste (KDE-Stil)
+Meta+Umschalt + Taste
+Strg+Umschalt+Alt + Taste
+Strg+Alt + Ziffernblock
+Keine Kürzel
+Klicken, dann OK – der Einstellungseditor öffnet sich.
+Widerstand gegen Überlappen
+Wie weit du ein Fenster in ein anderes schieben musst, bevor es loslässt. 0 = Fenster dürfen sich frei überlappen.
+Auf Standard zurücksetzen
+Alle Tasten zurücksetzen
+Gibt jeder Aktion wieder die Taste des gewählten Schemas und entfernt Tasten, die das Schema nicht hat.
+Alle zurücksetzen
+Klebende Kanten
+Berührende Fenster gemeinsam in der Größe ändern
+Wenn du ein Fenster in der Größe änderst, schieben Fenster, die es berühren, die gemeinsame Kante mit – nichts überlappt, keine Lücke entsteht.
+Gestapelte Fenster in einer Linie halten
+Fenster übereinander halten ihre linken und rechten Kanten zusammen, Fenster nebeneinander ihre oberen und unteren.
+Schütteln zum Lösen
+Schüttle die Maus beim Größe-Ändern, und die anderen Fenster springen zurück.
+Andere Fenster ausblenden
+Beim Größe-Ändern werden Fenster, die nicht mitgehen, durchsichtig angezeigt.
+Vorschau der Snap-Leiste
+Zeigt, wo das Fenster landet, solange eine Zone der Snap-Leiste markiert ist. Aus: gar keine Vorschau.
+Vorschau der Bildschirmkanten
+Zeigt, wo das Fenster an einer Kante oder Ecke landet. Aus: gar keine Vorschau.
+Aus: ein neutraler Rahmen – nur für die Vorschauen, die eingeschaltet sind.
+KDEs Kanten-Kacheln und dessen Vorschau pausieren
+Schalte das aus, wenn dir KDEs eigener Umriss lieber ist – dann schalte oben die Vorschau der Bildschirmkanten aus.
+Halten zum Auffüllen
+An der Kante halten, um den freien Platz zu füllen
+Ein kurzer Stoß gibt die Hälfte oder das Viertel. Hältst du das Fenster etwas länger an der Kante, wächst es bis zum nächsten Fenster – die Vorschau zeigt es an.
+Haltezeit
+Wie lange das Fenster an der Kante bleiben muss, bevor es wächst.
+KDEs eigenes Kanten-Kacheln
+KDEs eigenes Maximieren und Kacheln an den Bildschirmkanten – samt Umriss – pausiert, solange SeaQ Snap Layout läuft, damit nur eine Vorschau erscheint. Deine KDE-Einstellungen werden nicht geändert: Schalte das aus, deaktiviere oder entferne SeaQ Snap Layout, und KDEs eigenes Verhalten ist wieder da.
+KDEs eigenes Fenster-Einrasten
+KDEs Einrastzonen pausieren, solange der Magnet an ist
+Damit nur ein Magnet an einem Fenster zieht. Deine KDE-Einstellungen werden nicht geändert: Schalte das aus, deaktiviere oder entferne SeaQ Snap Layout, und KDEs eigenes Einrasten ist wieder da.
+SeaQ Snap Layout unterstützen
+Wenn dir SeaQ Snap Layout gefällt, kannst du die Entwicklung unterstützen – danke!
+Mit PayPal spenden
+Buy me a coffee

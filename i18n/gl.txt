@@ -9,8 +9,8 @@ Retirar a zona
 Cargar un modelo…
 Prema nunha zona para seleccionala · dobre clic para dividila · arrastre os separadores
 %1 de %2 zonas
-KDE Snap Layout – Editor de configuración
-para KWin · v%1
+SeaQ Snap Layout – Editor de configuración
+para KDE · v%1
 Xeral
 Aparencia
 Comportamento e animación
@@ -82,7 +82,7 @@ Eliminar
 Como funciona
 Colla unha xanela pola barra de título e arrástrea cara arriba. A barra baixa; solte a xanela sobre unha zona e ocupará exactamente esa área. Se a volve sacar, recupera o tamaño anterior.
 Abrir o editor de configuración
-Configuración do sistema → Xestión de xanelas → Scripts de KWin → icona de engrenaxe xunto a «KDE Snap Layout» → «Abrir o editor de configuración de Snap Layout» → Aceptar.
+Configuración do sistema → Xestión de xanelas → Scripts de KWin → icona de engrenaxe xunto a «SeaQ Snap Layout» → «Abrir o editor de configuración de Snap Layout» → Aceptar.
 Información
 Versión
 Autor
@@ -102,8 +102,8 @@ Gardar
 Si
 Zona %1
 Solte a xanela sobre unha zona
-KDE Snap Layout: activar/desactivar
-KDE Snap Layout: probar a barra
+SeaQ Snap Layout: activar/desactivar
+SeaQ Snap Layout: probar a barra
 Metades
 Dous terzos
 Tres columnas
@@ -122,3 +122,146 @@ Abrir o editor de configuración de Snap Layout
 Configuración rápida
 Cores da barra:
 O resto da configuración – aparencia, tamaño, animación, comportamento e as súas disposicións – cámbiase no editor de configuración de Snap Layout.
+Configuración
+Ningún
+Cambiar
+Combinacións habituais
+A túa combinación
+Asignar
+Quitar
+Barra de axuste
+Bordos da pantalla
+Máis xeitos de axustar
+Imán de xanelas
+Atallos de teclado
+Atallos
+Catro xeitos de axustar xanelas. Cada un actívase e desactívase por separado.
+Funcións
+Empurra unha xanela contra un bordo ou unha esquina: maximizar, metades, cuartos.
+As xanelas pegan entre si e aos bordos da pantalla.
+Axusta a xanela activa con combinacións de teclas.
+Vistas previas
+Amosar as vistas previas na cor de realce
+Desactivado: un marco neutro. Aplícase a todas as vistas previas.
+Clases de xanela que nunca se axustan, unha por liña.
+O KDE ten as súas propias accións de bordo da pantalla e o seu propio axuste de xanelas. Se a mesma función está activa aquí, desactiva a do KDE: Configuración do sistema → Xestión de xanelas → Bordos da pantalla, e Comportamento das xanelas → Movemento.
+Empurra unha xanela contra un bordo ou unha esquina da pantalla e encherá esa parte. Funciona coa barra de axuste ou sen ela.
+Pantalla completa
+Metade superior
+Desactivado
+Metade inferior
+Metade esquerda
+Metade dereita
+Bordos e esquinas
+Usar os bordos da pantalla
+Independente da barra de axuste. Cada bordo actívase por separado.
+Bordo superior
+Bordos esquerdo e dereito: media pantalla
+Bordo inferior: metade inferior
+Esquinas: un cuarto da pantalla
+Enchido intelixente
+Adaptarse ás xanelas xa axustadas
+Se xa hai unha xanela abaixo, o bordo superior dá a metade superior en vez de maximizar. As metades e os cuartos tamén deixan libres as xanelas axustadas.
+Sensación
+Distancia ao bordo
+Canto se ten que achegar o cursor ao bordo.
+Atraso do empurrón
+Canto tempo ten que estar a xanela contra o bordo: un pequeno empurrón. 0 = ao momento.
+Tamaño das esquinas
+Parte de cada lado que conta como esquina.
+As accións de bordo da pantalla do KDE seguen activas, así que dous axudantes reaccionan ao mesmo arrastre. Desactiva «Maximizar» e «Mosaico» en Configuración do sistema → Xestión de xanelas → Bordos da pantalla.
+Mentres moves ou redimensionas unha xanela, os seus bordos pegan ás xanelas próximas e aos bordos da pantalla.
+Imán
+Usar o imán de xanelas
+Independente da barra de axuste e dos bordos da pantalla.
+Distancia de enganche
+Canto se ten que achegar un bordo antes de encaixar.
+Pegar a outras xanelas
+Pegar aos bordos da pantalla
+Tamén ao redimensionar
+Manter o espazo entre xanelas
+As xanelas detéñense no «Espazo entre xanelas» da páxina Xeral en vez de tocarse.
+O axuste de xanelas propio do KDE tamén está activo. Para unha sensación uniforme, pon as súas zonas en «Ningunha» en Configuración do sistema → Xestión de xanelas → Comportamento das xanelas → Movemento.
+Axusta a xanela activa co teclado. Son atallos globais normais do KDE: tamén os atopas en Configuración do sistema → Atallos → KWin.
+Usar atallos de teclado
+Desactivado: as teclas seguen asignadas pero non fan nada.
+Esquema de teclas
+Asigna as teclas de todas as accións dunha vez. Podes seguir cambiando teclas soltas abaixo.
+Aplicar
+O servizo de atallos do KDE non respondeu. Aínda podes asignar as teclas en Configuración do sistema → Atallos → KWin.
+Teclas xa en uso
+%1 úsaa «%2».
+Desexada para: %1
+Quedar con ela
+Quedar con todas
+Deixalas
+Bo saber
+As accións de axuste usan os mesmos espazos ca a barra e lembran o tamaño anterior ao axuste: «Restaurar o tamaño anterior ao axuste» recupérao.
+SeaQ Snap Layout: %1
+Axustar á metade esquerda
+Axustar á metade dereita
+Axustar á metade superior
+Axustar á metade inferior
+Axustar ao cuarto superior esquerdo
+Axustar ao cuarto superior dereito
+Axustar ao cuarto inferior esquerdo
+Axustar ao cuarto inferior dereito
+Axustar ao terzo esquerdo
+Axustar ao terzo central
+Axustar ao terzo dereito
+Axustar aos dous terzos esquerdos
+Axustar aos dous terzos dereitos
+Maximizar ou restaurar
+Centrar a xanela
+Restaurar o tamaño anterior ao axuste
+Barra de axuste si/non
+Bordos da pantalla si/non
+Imán de xanelas si/non
+Probar a barra de axuste
+Cuartos
+Terzos
+Xanela
+Ctrl+Alt + tecla (predeterminado)
+Meta+Ctrl+Alt + tecla
+Meta + tecla (estilo KDE)
+Meta+Maiús + tecla
+Ctrl+Maiús+Alt + tecla
+Ctrl+Alt + teclado numérico
+Sen atallos
+Preme e despois Aceptar: ábrese o editor de configuración.
+Resistencia á superposición
+Canto hai que empurrar unha xanela dentro doutra antes de que a solte. 0 = as xanelas poden superpoñerse libremente.
+Restabelecer o predeterminado
+Restabelecer todas as teclas
+Volve dar a cada acción a tecla do esquema escollido e quita as teclas que o esquema non ten.
+Restabelecer todo
+Bordos pegañentos
+Redimensionar xuntas as xanelas que se tocan
+Ao cambiar o tamaño dunha xanela, as que a tocan moven o bordo compartido con ela: nada se superpón, non queda oco.
+Manter aliñadas as xanelas apiladas
+As xanelas unha enriba doutra manteñen xuntos os bordos esquerdo e dereito; as xanelas lado a lado, os superiores e inferiores.
+Axitar para soltar
+Axita o rato mentres redimensionas e as demais xanelas volven atrás.
+Atenuar as demais xanelas
+Mentres redimensionas, as xanelas que non seguen móstranse transparentes.
+Vista previa da barra
+Mostra onde vai a xanela mentres unha zona da barra está resaltada. Desactivado: ningunha vista previa.
+Vista previa dos bordos
+Mostra onde vai a xanela nun bordo ou nunha esquina. Desactivado: ningunha vista previa.
+Desactivado: un marco neutro – só para as vistas previas activadas.
+Pausar o mosaico de bordos de KDE e a súa vista previa
+Desactívao se prefires o contorno de KDE; entón desactiva arriba a vista previa dos bordos.
+Manter para encher
+Manter no bordo para encher o espazo libre
+Un empurrón curto dá a metade ou o cuarto. Mantén a xanela un pouco máis no bordo e crece ata a seguinte xanela; a vista previa amósao.
+Tempo de espera
+Canto tempo debe quedar a xanela no bordo antes de crecer.
+Mosaico de bordos propio de KDE
+O maximizar e o mosaico de KDE nos bordos da pantalla –co seu contorno– párase mentres SeaQ Snap Layout está activo, para que apareza só unha vista previa. A túa configuración de KDE non cambia: desactiva isto, desactiva ou elimina SeaQ Snap Layout e volve o comportamento de KDE.
+Axuste de xanelas propio de KDE
+Pausar as zonas de axuste de KDE mentres o imán está activo
+Para que só un imán tire dunha xanela. A túa configuración de KDE non cambia: desactiva isto, desactiva ou elimina SeaQ Snap Layout e volve o axuste de KDE.
+Apoiar SeaQ Snap Layout
+Se che gusta SeaQ Snap Layout, podes apoiar o seu desenvolvemento. Grazas!
+Doar con PayPal
+Convídame a un café

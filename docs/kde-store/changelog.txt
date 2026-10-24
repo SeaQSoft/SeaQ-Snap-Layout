@@ -1,8 +1,8 @@
-KDE Snap Layout 1.6.5 – First release on the KDE Store
+SeaQ Snap Layout 1.9.0
 
-- Snap bar at the top edge with six layouts, landing preview and size restore
-- Settings editor: General, Appearance, Behavior & Animation, Layouts, About & Help
-- Layout designer with up to 16 zones, eleven templates, divider snapping
-- Colors: system / light / dark, system accent, swatches or color wheel
-- Six motion curves, separate slide-in and slide-out durations
-- Editor follows the system colors, window decoration and language (62 languages)
+- Hold to fill: held a moment longer at an edge, the window grows up to the next window
+- KDE's own edge tiling (with its outline) and snap zones pause while the script runs – your KDE settings stay untouched and are back when the script is off or removed
+- Separate previews for snap bar and screen edges; off means no preview at all
+- Buttons, switches and sliders in the system accent color
+- Donate with PayPal / Buy me a coffee buttons in About & Help
+- New texts in all 62 languages

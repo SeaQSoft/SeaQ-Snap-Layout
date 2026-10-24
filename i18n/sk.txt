@@ -9,8 +9,8 @@ Odstrániť zónu
 Načítať šablónu…
 Kliknutím zónu vyberiete · dvojklikom ju rozdelíte · ťahajte oddeľovače
 %1 z %2 zón
-KDE Snap Layout – Editor nastavení
-pre KWin · v%1
+SeaQ Snap Layout – Editor nastavení
+pre KDE · v%1
 Všeobecné
 Vzhľad
 Správanie a animácia
@@ -82,7 +82,7 @@ Odstrániť
 Ako to funguje
 Chyťte okno za titulkový pruh a ťahajte ho nahor. Lišta zíde nadol; pustite okno na zónu a vyplní presne túto oblasť. Keď ho znova odtiahnete, získa späť pôvodnú veľkosť.
 Otvorenie editora nastavení
-Nastavenia systému → Správa okien → Skripty KWin → ikona ozubeného kolesa pri „KDE Snap Layout“ → „Otvoriť editor nastavení Snap Layout“ → OK.
+Nastavenia systému → Správa okien → Skripty KWin → ikona ozubeného kolesa pri „SeaQ Snap Layout“ → „Otvoriť editor nastavení Snap Layout“ → OK.
 Informácie
 Verzia
 Autor
@@ -102,8 +102,8 @@ Uložiť
 Áno
 Zóna %1
 Pustite okno na zónu
-KDE Snap Layout: zapnúť/vypnúť
-KDE Snap Layout: vyskúšať lištu
+SeaQ Snap Layout: zapnúť/vypnúť
+SeaQ Snap Layout: vyskúšať lištu
 Polovice
 Dve tretiny
 Tri stĺpce
@@ -122,3 +122,146 @@ Otvoriť editor nastavení Snap Layout
 Rýchle nastavenia
 Farby lišty:
 Všetky ostatné nastavenia – vzhľad, veľkosť, animáciu, správanie a vlastné rozloženia – meníte v editore nastavení Snap Layout.
+Nastavenia
+Žiadna
+Zmeniť
+Bežné kombinácie
+Vlastná kombinácia
+Nastaviť
+Odstrániť
+Lišta prichytávania
+Okraje obrazovky
+Ďalšie spôsoby prichytávania
+Magnet okien
+Klávesové skratky
+Skratky
+Štyri spôsoby, ako prichytiť okná. Každý sa dá zapnúť a vypnúť samostatne.
+Funkcie
+Pritlačte okno k okraju alebo rohu: maximalizácia, polovice, štvrtiny.
+Okná sa prichytávajú k sebe navzájom a k okrajom obrazovky.
+Prichyťte aktívne okno kombináciou klávesov.
+Náhľady
+Zobrazovať náhľady vo farbe zvýraznenia
+Vypnuté: neutrálny rámik. Platí pre všetky náhľady.
+Triedy okien, ktoré sa nikdy neprichytávajú, jedna na riadok.
+KDE má vlastné akcie okrajov obrazovky a vlastné prichytávanie okien. Ak je tu zapnutá rovnaká funkcia, vypnite tú v KDE: Nastavenia systému → Správa okien → Okraje obrazovky a Správanie okien → Presun.
+Pritlačte okno k okraju alebo rohu obrazovky a vyplní túto časť. Funguje s lištou prichytávania aj bez nej.
+Celá obrazovka
+Horná polovica
+Vypnuté
+Dolná polovica
+Ľavá polovica
+Pravá polovica
+Okraje a rohy
+Používať okraje obrazovky
+Nezávislé od lišty prichytávania. Každý okraj sa dá zapnúť samostatne.
+Horný okraj
+Ľavý a pravý okraj: polovica obrazovky
+Dolný okraj: dolná polovica
+Rohy: štvrtina obrazovky
+Inteligentné vyplnenie
+Prispôsobiť sa už prichyteným oknám
+Ak je dole už okno, horný okraj dá hornú polovicu namiesto maximalizácie. Polovice a štvrtiny tiež nechajú prichytené okná voľné.
+Pocit
+Vzdialenosť od okraja
+Ako blízko k okraju sa musí dostať kurzor.
+Oneskorenie pritlačenia
+Ako dlho musí okno zostať pri okraji – malé postrčenie. 0 = hneď.
+Veľkosť rohov
+Časť každej strany, ktorá sa počíta ako roh.
+Vlastné akcie okrajov obrazovky v KDE sú stále zapnuté, takže na rovnaké ťahanie reagujú dvaja pomocníci. Vypnite „Maximalizovať“ a „Dlaždice“ v Nastavenia systému → Správa okien → Okraje obrazovky.
+Pri presune alebo zmene veľkosti okna sa jeho okraje prichytávajú k okolitým oknám a k okrajom obrazovky.
+Magnet
+Používať magnet okien
+Nezávislý od lišty prichytávania a okrajov obrazovky.
+Vzdialenosť prichytenia
+Ako blízko sa musí okraj dostať, kým zacvakne.
+Prichytávať k ostatným oknám
+Prichytávať k okrajom obrazovky
+Aj pri zmene veľkosti
+Zachovať medzeru medzi oknami
+Okná sa zastavia na „Medzere medzi oknami“ zo stránky Všeobecné namiesto toho, aby sa dotýkali.
+Vlastné prichytávanie okien v KDE je tiež zapnuté. Pre jednotný pocit nastavte jeho zóny na „Žiadna“ v Nastavenia systému → Správa okien → Správanie okien → Presun.
+Prichyťte aktívne okno klávesnicou. Sú to bežné globálne skratky KDE – nájdete ich aj v Nastavenia systému → Skratky → KWin.
+Používať klávesové skratky
+Vypnuté: klávesy zostanú priradené, ale nič nerobia.
+Schéma klávesov
+Nastaví klávesy všetkých akcií naraz. Jednotlivé klávesy môžete ďalej meniť nižšie.
+Použiť
+Služba skratiek KDE neodpovedala. Klávesy môžete stále nastaviť v Nastavenia systému → Skratky → KWin.
+Už použité klávesy
+%1 používa „%2“.
+Požadované pre: %1
+Prevziať
+Prevziať všetky
+Ponechať
+Dobré vedieť
+Akcie prichytávania používajú rovnaké medzery ako lišta a pamätajú si veľkosť pred prichytením: „Obnoviť veľkosť pred prichytením“ ju vráti.
+SeaQ Snap Layout: %1
+Prichytiť do ľavej polovice
+Prichytiť do pravej polovice
+Prichytiť do hornej polovice
+Prichytiť do dolnej polovice
+Prichytiť do ľavej hornej štvrtiny
+Prichytiť do pravej hornej štvrtiny
+Prichytiť do ľavej dolnej štvrtiny
+Prichytiť do pravej dolnej štvrtiny
+Prichytiť do ľavej tretiny
+Prichytiť do strednej tretiny
+Prichytiť do pravej tretiny
+Prichytiť do ľavých dvoch tretín
+Prichytiť do pravých dvoch tretín
+Maximalizovať alebo obnoviť
+Vycentrovať okno
+Obnoviť veľkosť pred prichytením
+Lišta prichytávania zap./vyp.
+Okraje obrazovky zap./vyp.
+Magnet okien zap./vyp.
+Vyskúšať lištu prichytávania
+Štvrtiny
+Tretiny
+Okno
+Ctrl+Alt + kláves (predvolené)
+Meta+Ctrl+Alt + kláves
+Meta + kláves (štýl KDE)
+Meta+Shift + kláves
+Ctrl+Shift+Alt + kláves
+Ctrl+Alt + numerická klávesnica
+Bez skratiek
+Kliknite a potom OK – otvorí sa editor nastavení.
+Odpor proti prekrývaniu
+Ako ďaleko musíte okno zatlačiť do iného, kým ho pustí. 0 = okná sa môžu voľne prekrývať.
+Obnoviť predvolené
+Obnoviť všetky klávesy
+Dá každej akcii znova kláves zvolenej schémy a odstráni klávesy, ktoré schéma nemá.
+Obnoviť všetko
+Lepivé okraje
+Meniť veľkosť dotýkajúcich sa okien spoločne
+Keď meníte veľkosť okna, okná, ktoré sa ho dotýkajú, posúvajú spoločný okraj s ním – nič sa neprekrýva, nevzniká medzera.
+Držať okná nad sebou v jednej línii
+Okná nad sebou držia ľavé a pravé okraje spolu, okná vedľa seba horné a dolné.
+Zatriasť na uvoľnenie
+Zatraste myšou počas zmeny veľkosti a ostatné okná skočia späť.
+Stlmiť ostatné okná
+Počas zmeny veľkosti sú okná, ktoré nenasledujú, priehľadné.
+Náhľad lišty prichytávania
+Ukazuje, kam okno dopadne, kým je zóna lišty zvýraznená. Vypnuté: žiadny náhľad.
+Náhľad okrajov obrazovky
+Ukazuje, kam okno dopadne pri okraji alebo v rohu. Vypnuté: žiadny náhľad.
+Vypnuté: neutrálny rámik – len pre zapnuté náhľady.
+Pozastaviť dlaždicovanie okrajov KDE a jeho náhľad
+Vypnite, ak uprednostňujete obrys KDE – potom hore vypnite náhľad okrajov obrazovky.
+Podržať na vyplnenie
+Podržať pri okraji na vyplnenie voľného miesta
+Krátke postrčenie dá polovicu alebo štvrtinu. Podržte okno pri okraji o chvíľu dlhšie a zväčší sa až k ďalšiemu oknu – náhľad to ukáže.
+Čas podržania
+Ako dlho musí okno zostať pri okraji, kým sa zväčší.
+Vlastné dlaždicovanie okrajov KDE
+Maximalizácia a dlaždicovanie KDE pri okrajoch obrazovky – aj s obrysom – sú pozastavené, kým beží SeaQ Snap Layout, aby sa zobrazil len jeden náhľad. Vaše nastavenia KDE sa nemenia: vypnite to, deaktivujte alebo odstráňte SeaQ Snap Layout a správanie KDE je späť.
+Vlastné prichytávanie okien KDE
+Pozastaviť zóny prichytenia KDE, kým je magnet zapnutý
+Aby za okno ťahal len jeden magnet. Vaše nastavenia KDE sa nemenia: vypnite to, deaktivujte alebo odstráňte SeaQ Snap Layout a prichytávanie KDE je späť.
+Podporiť SeaQ Snap Layout
+Ak sa vám SeaQ Snap Layout páči, môžete podporiť jeho vývoj – ďakujem!
+Prispieť cez PayPal
+Kúp mi kávu

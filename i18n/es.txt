@@ -9,8 +9,8 @@ Quitar zona
 Cargar plantilla…
 Haz clic en una zona para seleccionarla · doble clic para dividirla · arrastra los divisores
 %1 de %2 zonas
-KDE Snap Layout – Editor de ajustes
-para KWin · v%1
+SeaQ Snap Layout – Editor de ajustes
+para KDE · v%1
 General
 Apariencia
 Comportamiento y animación
@@ -82,7 +82,7 @@ Eliminar
 Cómo funciona
 Agarra una ventana por la barra de título y arrástrala hacia arriba. La barra baja; suelta la ventana sobre una zona y ocupará exactamente ese espacio. Si vuelves a sacarla, recupera su tamaño anterior.
 Abrir el editor de ajustes
-Preferencias del sistema → Gestión de ventanas → Scripts de KWin → icono de engranaje junto a «KDE Snap Layout» → «Abrir el editor de ajustes de Snap Layout» → Aceptar.
+Preferencias del sistema → Gestión de ventanas → Scripts de KWin → icono de engranaje junto a «SeaQ Snap Layout» → «Abrir el editor de ajustes de Snap Layout» → Aceptar.
 Información
 Versión
 Autor
@@ -102,8 +102,8 @@ Guardar
 Sí
 Zona %1
 Suelta la ventana sobre una zona
-KDE Snap Layout: activar/desactivar
-KDE Snap Layout: probar la barra
+SeaQ Snap Layout: activar/desactivar
+SeaQ Snap Layout: probar la barra
 Mitades
 Dos tercios
 Tres columnas
@@ -122,3 +122,146 @@ Abrir el editor de ajustes de Snap Layout
 Ajustes rápidos
 Colores de la barra:
 Todos los demás ajustes – apariencia, tamaño, animación, comportamiento y tus propios diseños – se cambian en el editor de ajustes de Snap Layout.
+Ajustes
+Ninguno
+Cambiar
+Combinaciones habituales
+Tu propia combinación
+Asignar
+Quitar
+Barra de acople
+Bordes de la pantalla
+Más formas de acoplar
+Imán de ventanas
+Atajos de teclado
+Atajos
+Cuatro formas de acoplar ventanas. Cada una se activa y desactiva por separado.
+Funciones
+Empuja una ventana contra un borde o una esquina: maximizar, mitades, cuartos.
+Las ventanas se adhieren entre sí y a los bordes de la pantalla.
+Acopla la ventana activa con combinaciones de teclas.
+Vistas previas
+Mostrar las vistas previas en el color de acento
+Desactivado: un marco neutro. Se aplica a todas las vistas previas.
+Clases de ventana que nunca se acoplan, una por línea.
+KDE tiene sus propias acciones de borde de pantalla y su propio acople de ventanas. Si la misma función está activa aquí, desactiva la de KDE: Preferencias del sistema → Gestión de ventanas → Bordes de la pantalla, y Comportamiento de las ventanas → Movimiento.
+Empuja una ventana contra un borde o una esquina de la pantalla y ocupará esa parte. Funciona con o sin la barra de acople.
+Pantalla completa
+Mitad superior
+Desactivado
+Mitad inferior
+Mitad izquierda
+Mitad derecha
+Bordes y esquinas
+Usar los bordes de la pantalla
+Independiente de la barra de acople. Cada borde se activa por separado.
+Borde superior
+Bordes izquierdo y derecho: media pantalla
+Borde inferior: mitad inferior
+Esquinas: un cuarto de la pantalla
+Relleno inteligente
+Ajustarse a las ventanas ya acopladas
+Si hay una ventana abajo, el borde superior da la mitad superior en lugar de maximizar. Las mitades y los cuartos también dejan libres las ventanas acopladas.
+Sensación
+Distancia al borde
+Cuánto debe acercarse el cursor al borde.
+Retardo de empuje
+Cuánto tiempo debe quedarse la ventana contra el borde: un pequeño empujón. 0 = al instante.
+Tamaño de las esquinas
+Parte de cada lado que cuenta como esquina.
+Las acciones de borde de pantalla de KDE siguen activas, así que dos ayudantes reaccionan al mismo arrastre. Desactiva «Maximizar» y «Mosaico» en Preferencias del sistema → Gestión de ventanas → Bordes de la pantalla.
+Mientras mueves o cambias el tamaño de una ventana, sus bordes se adhieren a las ventanas cercanas y a los bordes de la pantalla.
+Imán
+Usar el imán de ventanas
+Independiente de la barra de acople y de los bordes de la pantalla.
+Distancia de enganche
+Cuánto debe acercarse un borde antes de encajar.
+Adherirse a otras ventanas
+Adherirse a los bordes de la pantalla
+También al cambiar el tamaño
+Mantener el espacio entre ventanas
+Las ventanas se detienen en la «Separación entre ventanas» de la página General en lugar de tocarse.
+El acople de ventanas propio de KDE también está activo. Para un comportamiento uniforme, pon sus zonas en «Ninguna» en Preferencias del sistema → Gestión de ventanas → Comportamiento de las ventanas → Movimiento.
+Acopla la ventana activa con el teclado. Son atajos globales normales de KDE: también los encuentras en Preferencias del sistema → Atajos → KWin.
+Usar atajos de teclado
+Desactivado: las teclas siguen asignadas pero no hacen nada.
+Esquema de teclas
+Asigna las teclas de todas las acciones a la vez. Abajo puedes seguir cambiando teclas sueltas.
+Aplicar
+El servicio de atajos de KDE no respondió. Aún puedes asignar las teclas en Preferencias del sistema → Atajos → KWin.
+Teclas ya en uso
+%1 lo usa «%2».
+Se quería para: %1
+Quedármela
+Quedármelas todas
+Dejarlas
+Bueno saber
+Las acciones de acople usan los mismos espacios que la barra y recuerdan el tamaño anterior al acople: «Restaurar el tamaño anterior al acople» lo recupera.
+SeaQ Snap Layout: %1
+Acoplar a la mitad izquierda
+Acoplar a la mitad derecha
+Acoplar a la mitad superior
+Acoplar a la mitad inferior
+Acoplar al cuarto superior izquierdo
+Acoplar al cuarto superior derecho
+Acoplar al cuarto inferior izquierdo
+Acoplar al cuarto inferior derecho
+Acoplar al tercio izquierdo
+Acoplar al tercio central
+Acoplar al tercio derecho
+Acoplar a los dos tercios izquierdos
+Acoplar a los dos tercios derechos
+Maximizar o restaurar
+Centrar la ventana
+Restaurar el tamaño anterior al acople
+Barra de acople sí/no
+Bordes de la pantalla sí/no
+Imán de ventanas sí/no
+Probar la barra de acople
+Cuartos
+Tercios
+Ventana
+Ctrl+Alt + tecla (predeterminado)
+Meta+Ctrl+Alt + tecla
+Meta + tecla (estilo KDE)
+Meta+Mayús + tecla
+Ctrl+Mayús+Alt + tecla
+Ctrl+Alt + teclado numérico
+Sin atajos
+Haz clic y después en Aceptar: se abre el editor de configuración.
+Resistencia a la superposición
+Cuánto hay que empujar una ventana dentro de otra antes de que la suelte. 0 = las ventanas pueden superponerse libremente.
+Restablecer predeterminado
+Restablecer todas las teclas
+Vuelve a dar a cada acción la tecla del esquema elegido y quita las teclas que el esquema no tiene.
+Restablecer todo
+Bordes pegajosos
+Redimensionar juntas las ventanas que se tocan
+Al cambiar el tamaño de una ventana, las que la tocan mueven el borde compartido con ella: nada se superpone, no queda hueco.
+Mantener alineadas las ventanas apiladas
+Las ventanas una encima de otra mantienen juntos sus bordes izquierdo y derecho; las ventanas de lado, los superiores e inferiores.
+Agitar para soltar
+Agita el ratón mientras redimensionas y las demás ventanas vuelven atrás.
+Atenuar las demás ventanas
+Mientras redimensionas, las ventanas que no siguen se muestran transparentes.
+Vista previa de la barra
+Muestra dónde cae la ventana mientras una zona de la barra está resaltada. Desactivado: ninguna vista previa.
+Vista previa de los bordes
+Muestra dónde cae la ventana en un borde o una esquina. Desactivado: ninguna vista previa.
+Desactivado: un marco neutro – solo para las vistas previas activadas.
+Pausar el mosaico de bordes de KDE y su vista previa
+Desactívalo si prefieres el contorno de KDE; entonces desactiva arriba la vista previa de los bordes.
+Mantener para rellenar
+Mantener en el borde para rellenar el espacio libre
+Un empujón corto da la mitad o el cuarto. Mantén la ventana un poco más en el borde y crece hasta la siguiente ventana; la vista previa lo muestra.
+Tiempo de espera
+Cuánto tiempo debe quedarse la ventana en el borde antes de crecer.
+Mosaico de bordes propio de KDE
+El maximizar y el mosaico de KDE en los bordes de la pantalla –con su contorno– se pausan mientras SeaQ Snap Layout está activo, para que solo aparezca una vista previa. Tu configuración de KDE no cambia: desactiva esto, desactiva o elimina SeaQ Snap Layout y vuelve el comportamiento de KDE.
+Ajuste de ventanas propio de KDE
+Pausar las zonas de ajuste de KDE mientras el imán está activo
+Para que solo un imán tire de una ventana. Tu configuración de KDE no cambia: desactiva esto, desactiva o elimina SeaQ Snap Layout y vuelve el ajuste de KDE.
+Apoyar SeaQ Snap Layout
+Si te gusta SeaQ Snap Layout, puedes apoyar su desarrollo. ¡Gracias!
+Donar con PayPal
+Invítame a un café

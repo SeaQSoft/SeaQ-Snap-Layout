@@ -1,8 +1,17 @@
-KDE Snap Layout – snap layouts for KDE Plasma 6
+SeaQ Snap Layout – snap layouts for KDE Plasma 6
 
 Drag a window to the top edge of the screen: a bar with layouts slides down. Drop the window onto a zone and it fills exactly that area. Drag it away again and it gets its old size back.
 
 A pure KWin script – no extra program, no background service.
+
+MORE WAYS TO SNAP (each one can be switched on and off on its own)
+• Screen edges: push a window against an edge or corner – top = maximize, left/right = halves, bottom = bottom half, corners = quarters
+• Hold to fill: held a moment longer at an edge, the window grows up to the next window
+• KDE's own edge tiling and snap zones pause while the script runs (nothing changed in your settings)
+• Smart fill: if a window already sits at the bottom, the top edge fills only the space above it
+• Window magnet: windows stick to each other and to the screen edges instead of sliding over, adjustable snap distance and resistance
+• Sticky edges: resize a window and the windows touching it follow – no overlap, no gap; shake the mouse to let go
+• Keyboard shortcuts: 20 actions, six key schemes (default Ctrl+Alt + key: arrows = halves, U I J K = quarters, D F G = thirds, E Y = two thirds, Return = maximize, C = center, - = restore) or your own keys; keys already in use are shown and can be taken over
 
 FEATURES
 • Six layouts in the bar, eleven templates in the designer
@@ -17,14 +26,16 @@ FEATURES
 • Settings editor uses your color scheme, window decoration and system language (62 languages)
 
 OPENING THE SETTINGS
-System Settings → Window Management → KWin Scripts → gear icon next to "KDE Snap Layout" → "Open Snap Layout settings editor" → OK.
+System Settings → Window Management → KWin Scripts → gear icon next to "SeaQ Snap Layout" → "Open Snap Layout settings editor" → OK.
 
 TIP
-Turn off Plasma's own "maximize when dragged to the top edge" under System Settings → Window Management → Screen Edges for the smoothest snapping.
+Turn off Plasma's own edge actions (System Settings → Window Management → Screen Edges: Maximize, Tile) and snap zones (Window Behavior → Movement → None) so they don't react to the same drag.
 
 After updating, log out and back in once – KWin keeps loaded scripts in memory.
 
 Manual (PDF), video and source code:
 https://github.com/Swenix-dev/KDE-Snap-Layout
 
-License: GPL-3.0-or-later · Author: Swenix-dev
+Support: paypal.me/SeaQSoft · buymeacoffee.com/seaq
+
+License: GPL-3.0-or-later · Author: SeaQ

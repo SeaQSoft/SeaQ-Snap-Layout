@@ -9,8 +9,8 @@ Ta bort zon
 Läs in mall…
 Klicka på en zon för att markera den · dubbelklicka för att dela · dra i avdelarna
 %1 av %2 zoner
-KDE Snap Layout – Inställningsredigerare
-för KWin · v%1
+SeaQ Snap Layout – Inställningsredigerare
+för KDE · v%1
 Allmänt
 Utseende
 Beteende & animering
@@ -82,7 +82,7 @@ Ta bort
 Så fungerar det
 Ta tag i ett fönster i namnlisten och dra det uppåt. Fästlisten glider ner; släpp fönstret på en zon så fyller det exakt det området. Drar du ut det igen får det tillbaka sin gamla storlek.
 Öppna inställningsredigeraren
-Systeminställningar → Fönsterhantering → KWin-skript → kugghjulsikonen bredvid ”KDE Snap Layout” → ”Öppna Snap Layouts inställningsredigerare” → OK.
+Systeminställningar → Fönsterhantering → KWin-skript → kugghjulsikonen bredvid ”SeaQ Snap Layout” → ”Öppna Snap Layouts inställningsredigerare” → OK.
 Information
 Version
 Upphovsperson
@@ -102,8 +102,8 @@ Spara
 Ja
 Zon %1
 Släpp fönstret på en zon
-KDE Snap Layout: på/av
-KDE Snap Layout: testa fästlisten
+SeaQ Snap Layout: på/av
+SeaQ Snap Layout: testa fästlisten
 Halvor
 Två tredjedelar
 Tre kolumner
@@ -122,3 +122,146 @@ Inställningsredigerare
 Snabbinställningar
 Fästlistens färger:
 Alla övriga inställningar – utseende, storlek, animering, beteende och egna layouter – ändras i Snap Layouts inställningsredigerare.
+Inställningar
+Ingen
+Ändra
+Vanliga kombinationer
+Egen kombination
+Ange
+Ta bort
+Fästlist
+Skärmkanter
+Fler sätt att fästa
+Fönstermagnet
+Kortkommandon
+Genvägar
+Fyra sätt att fästa fönster. Vart och ett kan slås på och av för sig.
+Funktioner
+Tryck ett fönster mot en kant eller ett hörn: maximera, halvor, fjärdedelar.
+Fönster fäster mot varandra och mot skärmkanterna.
+Fäst det aktiva fönstret med tangentkombinationer.
+Förhandsvisningar
+Visa förhandsvisningar i accentfärgen
+Av: en neutral ram. Gäller alla förhandsvisningar.
+Fönsterklasser som aldrig fästs, en per rad.
+KDE har egna skärmkantsåtgärder och egen fönsterfästning. Om samma funktion är på här, stäng av KDE:s: Systeminställningar → Fönsterhantering → Skärmkanter, samt Fönsterbeteende → Förflyttning.
+Tryck ett fönster mot en kant eller ett hörn av skärmen så fyller det den delen. Fungerar med eller utan fästlisten.
+Helskärm
+Övre halvan
+Av
+Nedre halvan
+Vänstra halvan
+Högra halvan
+Kanter och hörn
+Använd skärmkanter
+Oberoende av fästlisten. Varje kant kan slås på för sig.
+Överkant
+Vänster och höger kant: halva skärmen
+Nederkant: nedre halvan
+Hörn: en fjärdedel av skärmen
+Smart fyllning
+Anpassa efter redan fästa fönster
+Finns det redan ett fönster längst ner ger överkanten övre halvan i stället för att maximera. Halvor och fjärdedelar lämnar också fästa fönster fria.
+Känsla
+Avstånd till kanten
+Hur nära kanten markören måste komma.
+Tryckfördröjning
+Hur länge fönstret måste ligga mot kanten – en liten knuff. 0 = direkt.
+Hörnstorlek
+Del av varje sida som räknas som hörn.
+KDE:s egna skärmkantsåtgärder är fortfarande på, så två hjälpare reagerar på samma dragning. Stäng av ”Maximera” och ”Sida vid sida” i Systeminställningar → Fönsterhantering → Skärmkanter.
+Medan du flyttar eller ändrar storlek på ett fönster fäster dess kanter mot närliggande fönster och mot skärmkanterna.
+Magnet
+Använd fönstermagneten
+Oberoende av fästlisten och skärmkanterna.
+Fästavstånd
+Hur nära en kant måste komma innan den snäpper fast.
+Fäst mot andra fönster
+Fäst mot skärmkanterna
+Även vid storleksändring
+Behåll avståndet mellan fönster
+Fönster stannar vid ”Avstånd mellan fönster” från sidan Allmänt i stället för att röra varandra.
+KDE:s egen fönsterfästning är också på. För en enhetlig känsla, ställ in dess zoner på ”Ingen” i Systeminställningar → Fönsterhantering → Fönsterbeteende → Förflyttning.
+Fäst det aktiva fönstret med tangentbordet. Det är vanliga globala KDE-genvägar – du hittar dem också i Systeminställningar → Genvägar → KWin.
+Använd kortkommandon
+Av: tangenterna förblir tilldelade men gör ingenting.
+Tangentschema
+Ställer in tangenterna för alla åtgärder på en gång. Enskilda tangenter kan du fortfarande ändra nedan.
+Verkställ
+KDE:s genvägstjänst svarade inte. Du kan fortfarande ange tangenterna i Systeminställningar → Genvägar → KWin.
+Tangenter som redan används
+%1 används av ”%2”.
+Önskad för: %1
+Ta över
+Ta över alla
+Behåll dem
+Bra att veta
+Fäståtgärderna använder samma avstånd som fästlisten och minns storleken före fästningen: ”Återställ storleken före fästning” tar tillbaka den.
+SeaQ Snap Layout: %1
+Fäst i vänstra halvan
+Fäst i högra halvan
+Fäst i övre halvan
+Fäst i nedre halvan
+Fäst i övre vänstra fjärdedelen
+Fäst i övre högra fjärdedelen
+Fäst i nedre vänstra fjärdedelen
+Fäst i nedre högra fjärdedelen
+Fäst i vänstra tredjedelen
+Fäst i mittersta tredjedelen
+Fäst i högra tredjedelen
+Fäst i vänstra två tredjedelarna
+Fäst i högra två tredjedelarna
+Maximera eller återställ
+Centrera fönstret
+Återställ storleken före fästning
+Fästlist på/av
+Skärmkanter på/av
+Fönstermagnet på/av
+Testa fästlisten
+Fjärdedelar
+Tredjedelar
+Fönster
+Ctrl+Alt + tangent (standard)
+Meta+Ctrl+Alt + tangent
+Meta + tangent (KDE-stil)
+Meta+Skift + tangent
+Ctrl+Skift+Alt + tangent
+Ctrl+Alt + numeriskt tangentbord
+Inga kortkommandon
+Klicka, och sedan OK – inställningsredigeraren öppnas.
+Motstånd mot överlappning
+Hur långt du måste skjuta in ett fönster i ett annat innan det släpper. 0 = fönster kan överlappa fritt.
+Återställ till standard
+Återställ alla tangenter
+Ger varje åtgärd tangenten från det valda schemat igen och tar bort tangenter som schemat saknar.
+Återställ alla
+Klistriga kanter
+Ändra storlek på fönster som rör varandra tillsammans
+När du ändrar storlek på ett fönster flyttar fönster som rör det den gemensamma kanten med – inget överlappar, ingen glipa uppstår.
+Håll staplade fönster i linje
+Fönster ovanför varandra håller ihop vänster- och högerkanter, fönster bredvid varandra över- och underkanter.
+Skaka för att släppa
+Skaka musen medan du ändrar storlek så hoppar de andra fönstren tillbaka.
+Tona ned de andra fönstren
+Medan du ändrar storlek visas fönster som inte följer med genomskinliga.
+Förhandsvisning för fästlisten
+Visar var fönstret hamnar medan en zon i listen är markerad. Av: ingen förhandsvisning alls.
+Förhandsvisning för skärmkanterna
+Visar var fönstret hamnar vid en kant eller ett hörn. Av: ingen förhandsvisning alls.
+Av: en neutral ram – bara för de förhandsvisningar som är på.
+Pausa KDE:s kantplattor och dess förhandsvisning
+Stäng av detta om du föredrar KDE:s egen kontur – stäng då av förhandsvisningen för skärmkanterna ovan.
+Håll för att fylla
+Håll vid kanten för att fylla det lediga utrymmet
+En kort knuff ger halvan eller kvarten. Håll fönstret lite längre vid kanten så växer det fram till nästa fönster – förhandsvisningen visar det.
+Hålltid
+Hur länge fönstret måste stanna vid kanten innan det växer.
+KDE:s egna kantplattor
+KDE:s egen maximering och plattsättning vid skärmkanterna – med kontur – pausas medan SeaQ Snap Layout körs, så att bara en förhandsvisning syns. Dina KDE-inställningar ändras inte: stäng av detta, inaktivera eller ta bort SeaQ Snap Layout så är KDE:s eget beteende tillbaka.
+KDE:s egen fönsterfästning
+Pausa KDE:s fästzoner medan magneten är på
+Så att bara en magnet drar i ett fönster. Dina KDE-inställningar ändras inte: stäng av detta, inaktivera eller ta bort SeaQ Snap Layout så är KDE:s egen fästning tillbaka.
+Stöd SeaQ Snap Layout
+Om du gillar SeaQ Snap Layout kan du stödja utvecklingen – tack!
+Donera med PayPal
+Bjud mig på en kaffe

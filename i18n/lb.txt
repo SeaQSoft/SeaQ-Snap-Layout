@@ -9,8 +9,8 @@ Zon ewechhuelen
 Virlag lueden…
 Klickt op eng Zon fir se ze wielen · Duebelklick deelt se · Trennlinnen mat der Maus zéien
 %1 vun %2 Zonen
-KDE Snap Layout – Astellungseditor
-fir KWin · v%1
+SeaQ Snap Layout – Astellungseditor
+fir KDE · v%1
 Allgemeng
 Ausgesinn
 Verhalen & Animatioun
@@ -82,7 +82,7 @@ Läschen
 Esou funktionéiert et
 Gräift eng Fënster un der Titelleescht a zitt se no uewen. D’Leescht fiert erof; leet d’Fënster op eng Zon of an si fëllt genee dee Beräich. Zitt se erëm ewech, da kritt se hir al Gréisst zréck.
 Astellungseditor opmaachen
-Systemastellungen → Fënsterverwaltung → KWin-Skripter → Zännrad bei „KDE Snap Layout“ → „Snap Layout Astellungseditor opmaachen“ → OK.
+Systemastellungen → Fënsterverwaltung → KWin-Skripter → Zännrad bei „SeaQ Snap Layout“ → „Snap Layout Astellungseditor opmaachen“ → OK.
 Informatiounen
 Versioun
 Auteur
@@ -102,8 +102,8 @@ Späicheren
 Jo
 Zon %1
 Fënster op eng Zon ofleeën
-KDE Snap Layout: un/aus
-KDE Snap Layout: Snap-Leescht testen
+SeaQ Snap Layout: un/aus
+SeaQ Snap Layout: Snap-Leescht testen
 Hallefen
 Zwee Drëttel
 Dräi Kolonnen
@@ -122,3 +122,146 @@ Snap Layout Astellungseditor opmaachen
 Quick-Astellungen
 Faarwen vun der Leescht:
 All aner Astellungen – Ausgesinn, Gréisst, Animatioun, Verhalen an eege Layouten – mécht een am Snap Layout Astellungseditor.
+Astellungen
+Keng
+Änneren
+Üblech Kombinatiounen
+Eegen Kombinatioun
+Setzen
+Ewechhuelen
+Snap-Leescht
+Bildschierm-Kanten
+Méi Weeër fir anzerasten
+Fënster-Magnéit
+Tastekombinatiounen
+Kierzelen
+Véier Weeër, Fënsteren anzerasten. All eenzel léisst sech eleng an- an ausschalten.
+Funktiounen
+Dréck eng Fënster géint eng Kant oder en Eck: maximéieren, Hälften, Véierelen.
+Fënsteren halen openeen an un de Bildschierm-Kanten.
+Déi aktiv Fënster mat Tastekombinatiounen arasten.
+Virschauen
+Virschauen an der Akzentfaarf weisen
+Aus: en neutrale Rumm. Gëllt fir all Virschauen.
+Fënsterklassen, déi ni agerast ginn, eng pro Linn.
+KDE huet seng eege Bildschierm-Kanten-Aktiounen an säin eegent Arasten. Wann déiselwecht Funktioun hei un ass, schalt déi vu KDE aus: Systemastellungen → Fënsterverwaltung → Bildschierm-Kanten, an Fënsterverhalen → Réckelen.
+Dréck eng Fënster géint eng Kant oder en Eck vum Bildschierm, an si fëllt deen Deel aus. Geet mat oder ouni Snap-Leescht.
+Vollbild
+Iewescht Hällef
+Aus
+Ënnescht Hällef
+Lénks Hällef
+Riets Hällef
+Kanten an Ecken
+Bildschierm-Kanten benotzen
+Onofhängeg vun der Snap-Leescht. All Kant léisst sech eleng schalten.
+Iewescht Kant
+Lénks a riets Kant: halwe Bildschierm
+Ënnescht Kant: ënnescht Hällef
+Ecken: e Véierel vum Bildschierm
+Intelligent Fëllen
+U Fënsteren upassen, déi schonn agerast sinn
+Läit ënnen schonn eng Fënster, gëtt déi iewescht Kant déi iewescht Hällef amplaz ze maximéieren. Och Hälften a Véierele loossen agerast Fënstere fräi.
+Gefill
+Ofstand zur Kant
+Wéi no de Mauszeiger un d’Kant komme muss.
+Dréck-Verzögerung
+Wéi laang d’Fënster un der Kant leie muss – e klenge Stouss. 0 = direkt.
+Eckgréisst
+Deel vun all Säit, deen als Eck zielt.
+Déi eege Bildschierm-Kanten-Aktioune vu KDE sinn nach un, sou datt zwee Hëllefer op datselwecht Zéien reagéieren. Schalt „Maximéieren“ an „Kachelen“ aus ënner Systemastellungen → Fënsterverwaltung → Bildschierm-Kanten.
+Wärend s du eng Fënster réckels oder hir Gréisst änners, halen hir Kanten un nooste Fënsteren an un de Bildschierm-Kanten.
+Magnéit
+Fënster-Magnéit benotzen
+Onofhängeg vun der Snap-Leescht an de Bildschierm-Kanten.
+Arast-Ofstand
+Wéi no eng Kant komme muss, ier se aklickt.
+Un anere Fënsteren halen
+Un de Bildschierm-Kanten halen
+Och beim Gréisstänneren
+Ofstand tëscht Fënsteren halen
+Fënsteren halen um „Ofstand tëscht Fënsteren“ vun der Säit Allgemeng, amplaz sech ze beréieren.
+Dat eegent Arasten vu KDE ass och un. Fir en eenheetlecht Gefill stell seng Zonen op „Keng“ ënner Systemastellungen → Fënsterverwaltung → Fënsterverhalen → Réckelen.
+Déi aktiv Fënster mat der Tastatur arasten. Dat sinn normal global KDE-Kierzelen – du fënns se och ënner Systemastellungen → Kierzelen → KWin.
+Tastekombinatioune benotzen
+Aus: D’Taste bleiwen zougewisen, maachen awer näischt.
+Tasteschema
+Setzt d’Taste vun allen Aktiounen op eemol. Eenzel Taste kanns du ënnen nach ëmmer änneren.
+Uwenden
+De KDE-Kierzelendéngscht huet net geäntwert. Du kanns d’Taste nach ëmmer ënner Systemastellungen → Kierzelen → KWin setzen.
+Taste schonn am Gebrauch
+%1 gëtt vu „%2“ benotzt.
+Gewënscht fir: %1
+Iwwerhuelen
+All iwwerhuelen
+Halen
+Gutt ze wëssen
+D’Arast-Aktioune benotzen déiselwecht Ofstänn wéi d’Snap-Leescht a mierken sech d’Gréisst vu virum Arasten: „Gréisst vu virum Arasten zrécksetzen“ bréngt se zréck.
+SeaQ Snap Layout: %1
+An déi lénks Hällef
+An déi riets Hällef
+An déi iewescht Hällef
+An déi ënnescht Hällef
+An de Véierel uewe lénks
+An de Véierel uewe riets
+An de Véierel ënne lénks
+An de Véierel ënne riets
+An dat lénkst Drëttel
+An dat mëttelst Drëttel
+An dat rietst Drëttel
+An déi lénks zwee Drëttel
+An déi riets zwee Drëttel
+Maximéieren oder zrécksetzen
+Fënster zentréieren
+Gréisst vu virum Arasten zrécksetzen
+Snap-Leescht un/aus
+Bildschierm-Kanten un/aus
+Fënster-Magnéit un/aus
+Snap-Leescht testen
+Véierelen
+Drëttelen
+Fënster
+Strg+Alt + Tast (Standard)
+Meta+Strg+Alt + Tast
+Meta + Tast (KDE-Stil)
+Meta+Shift + Tast
+Strg+Shift+Alt + Tast
+Strg+Alt + Zifferblock
+Keng Kierzelen
+Klickt, dann OK – den Astellungseditor gëtt opgemaach.
+Widderstand géint Iwwerlappen
+Wéi wäit Dir eng Fënster an eng aner drécke musst, ier se lassléisst. 0 = Fënstere kënne sech fräi iwwerlappen.
+Op Standard zerécksetzen
+All Tasten zerécksetzen
+Gëtt all Aktioun erëm d'Tast vum gewielte Schema a läscht Tasten, déi d'Schema net huet.
+Alles zerécksetzen
+Pechend Kanten
+Fënsteren, déi sech beréieren, zesummen an der Gréisst änneren
+Wann Dir eng Fënster an der Gréisst ännert, réckelen d'Fënsteren, déi se beréieren, déi gemeinsam Kant mat – näischt iwwerlappt, keng Lück entsteet.
+Gestapelt Fënsteren an enger Linn halen
+Fënsteren iwwerteneen halen hir lénks a riets Kanten zesummen, Fënsteren nieftenee hir iewescht an ënnescht.
+Rësele fir ze léisen
+Rëselt d'Maus beim Gréisst-Änneren, an déi aner Fënstere sprange zréck.
+Aner Fënsteren ausblenden
+Beim Gréisst-Änneren ginn Fënsteren, déi net matginn, duerchsichteg gewisen.
+Virschau vun der Snap-Leescht
+Weist, wou d'Fënster landt, soulaang eng Zon vun der Leescht markéiert ass. Aus: guer keng Virschau.
+Virschau vun de Schiermkanten
+Weist, wou d'Fënster un enger Kant oder engem Eck landt. Aus: guer keng Virschau.
+Aus: e neutrale Rumm – nëmme fir d'Virschauen, déi un sinn.
+KDE säi Kante-Kachelen a seng Virschau pauséieren
+Schalt dat aus, wann Dir KDE säin eegene Contour léiwer hutt – schalt dann uewen d'Virschau vun de Schiermkanten aus.
+Halen zum Fëllen
+Un der Kant halen, fir de fräie Plaz ze fëllen
+E kuerze Stouss gëtt d'Halschent oder de Véierel. Halt d'Fënster e bësse méi laang un der Kant, a si wiisst bis bei déi nächst Fënster – d'Virschau weist et.
+Halzäit
+Wéi laang d'Fënster un der Kant bleiwe muss, ier se wiisst.
+KDE säin eegent Kante-Kachelen
+KDE säin eegent Maximéieren a Kachelen un de Schiermkanten – mam Contour – paus, soulaang SeaQ Snap Layout leeft, fir datt nëmmen eng Virschau erschéngt. Är KDE-Astellunge ginn net geännert: schalt dat aus, desaktivéiert oder läscht SeaQ Snap Layout, an d'Verhale vu KDE ass erëm do.
+KDE säin eegent Fënster-Aklacken
+KDE seng Aklack-Zonen pauséieren, soulaang de Magnéit un ass
+Fir datt nëmmen ee Magnéit un enger Fënster zitt. Är KDE-Astellunge ginn net geännert: schalt dat aus, desaktivéiert oder läscht SeaQ Snap Layout, an d'Aklacke vu KDE ass erëm do.
+SeaQ Snap Layout ënnerstëtzen
+Wann Iech SeaQ Snap Layout gefält, kënnt Dir d'Entwécklung ënnerstëtzen – merci!
+Mat PayPal spenden
+Buy me a coffee

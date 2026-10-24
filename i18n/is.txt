@@ -9,8 +9,8 @@ Fjarlægja svæði
 Hlaða sniðmáti…
 Smelltu á svæði til að velja það · tvísmelltu til að skipta því · dragðu skilin
 %1 af %2 svæðum
-KDE Snap Layout – Stillingaritill
-fyrir KWin · v%1
+SeaQ Snap Layout – Stillingaritill
+fyrir KDE · v%1
 Almennt
 Útlit
 Hegðun og hreyfingar
@@ -82,7 +82,7 @@ Eyða
 Svona virkar þetta
 Gríptu glugga í titilstikuna og dragðu hann upp. Stikan rennur niður; slepptu glugganum á svæði og hann fyllir nákvæmlega það svæði. Ef þú dregur hann út aftur fær hann fyrri stærð sína.
 Opna stillingaritilinn
-Kerfisstillingar → Gluggastjórnun → KWin-skriftur → tannhjólstákn við „KDE Snap Layout“ → „Opna stillingaritil Snap Layout“ → Í lagi.
+Kerfisstillingar → Gluggastjórnun → KWin-skriftur → tannhjólstákn við „SeaQ Snap Layout“ → „Opna stillingaritil Snap Layout“ → Í lagi.
 Upplýsingar
 Útgáfa
 Höfundur
@@ -102,8 +102,8 @@ Vista
 Já
 Svæði %1
 Slepptu glugganum á svæði
-KDE Snap Layout: kveikja/slökkva
-KDE Snap Layout: prófa stikuna
+SeaQ Snap Layout: kveikja/slökkva
+SeaQ Snap Layout: prófa stikuna
 Helmingar
 Tveir þriðju
 Þrír dálkar
@@ -122,3 +122,146 @@ Opna stillingaritil Snap Layout
 Flýtistillingar
 Litir stikunnar:
 Allar aðrar stillingar – útlit, stærð, hreyfingar, hegðun og eigin uppsetningar – eru gerðar í stillingaritli Snap Layout.
+Stillingar
+Ekkert
+Breyta
+Algengar samsetningar
+Þín eigin samsetning
+Setja
+Fjarlægja
+Festistika
+Skjábrúnir
+Fleiri leiðir til að festa
+Gluggasegull
+Flýtilyklar
+Flýtileiðir
+Fjórar leiðir til að festa glugga. Hverja má kveikja og slökkva á sér.
+Eiginleikar
+Ýttu glugga að brún eða horni: hámarka, helmingar, fjórðungar.
+Gluggar loða hver við annan og við skjábrúnirnar.
+Festu virka gluggann með lyklasamsetningum.
+Forskoðanir
+Sýna forskoðanir í áherslulitnum
+Af: hlutlaus rammi. Gildir um allar forskoðanir.
+Gluggaflokkar sem eru aldrei festir, einn í hverja línu.
+KDE hefur sínar eigin skjábrúnaaðgerðir og sína eigin gluggafestingu. Ef sami eiginleiki er virkur hér, slökktu á KDE-útgáfunni: Kerfisstillingar → Gluggastjórnun → Skjábrúnir, og Hegðun glugga → Færsla.
+Ýttu glugga að brún eða horni skjásins og hann fyllir þann hluta. Virkar með eða án festistikunnar.
+Heilskjár
+Efri helmingur
+Af
+Neðri helmingur
+Vinstri helmingur
+Hægri helmingur
+Brúnir og horn
+Nota skjábrúnir
+Óháð festistikunni. Hverja brún má kveikja á sér.
+Efri brún
+Vinstri og hægri brún: hálfur skjár
+Neðri brún: neðri helmingur
+Horn: fjórðungur skjásins
+Snjöll fylling
+Laga sig að gluggum sem þegar eru festir
+Ef gluggi er þegar neðst gefur efri brúnin efri helminginn í stað þess að hámarka. Helmingar og fjórðungar skilja festa glugga líka eftir lausa.
+Tilfinning
+Fjarlægð frá brún
+Hversu nálægt brúninni bendillinn þarf að koma.
+Ýtitöf
+Hversu lengi glugginn þarf að liggja að brúninni – lítið ýt. 0 = strax.
+Hornastærð
+Hluti hverrar hliðar sem telst horn.
+Eigin skjábrúnaaðgerðir KDE eru enn virkar, svo tveir hjálparar bregðast við sama drætti. Slökktu á „Hámarka“ og „Flísaleggja“ í Kerfisstillingar → Gluggastjórnun → Skjábrúnir.
+Á meðan þú færir glugga eða breytir stærð hans loða brúnir hans við nálæga glugga og skjábrúnirnar.
+Segull
+Nota gluggasegulinn
+Óháð festistikunni og skjábrúnunum.
+Festifjarlægð
+Hversu nálægt brún þarf að koma áður en hún smellur á sinn stað.
+Loða við aðra glugga
+Loða við skjábrúnirnar
+Líka við stærðarbreytingu
+Halda bilinu milli glugga
+Gluggar stöðvast við „Bil milli glugga“ af síðunni Almennt í stað þess að snertast.
+Eigin gluggafesting KDE er líka virk. Fyrir samræmda tilfinningu skaltu setja svæði hennar á „Ekkert“ í Kerfisstillingar → Gluggastjórnun → Hegðun glugga → Færsla.
+Festu virka gluggann með lyklaborðinu. Þetta eru venjulegar víðværar flýtileiðir KDE – þú finnur þær líka í Kerfisstillingar → Flýtileiðir → KWin.
+Nota flýtilykla
+Af: lyklarnir haldast úthlutaðir en gera ekkert.
+Lyklaskema
+Setur lykla allra aðgerða í einu. Staka lykla geturðu áfram breytt hér fyrir neðan.
+Virkja
+Flýtileiðaþjónusta KDE svaraði ekki. Þú getur samt sett lyklana í Kerfisstillingar → Flýtileiðir → KWin.
+Lyklar sem þegar eru í notkun
+%1 er notaður af „%2“.
+Óskað fyrir: %1
+Taka yfir
+Taka alla yfir
+Halda þeim
+Gott að vita
+Festiaðgerðirnar nota sömu bil og stikan og muna stærðina fyrir festingu: „Endurheimta stærðina fyrir festingu“ sækir hana aftur.
+SeaQ Snap Layout: %1
+Festa í vinstri helming
+Festa í hægri helming
+Festa í efri helming
+Festa í neðri helming
+Festa í efri vinstri fjórðung
+Festa í efri hægri fjórðung
+Festa í neðri vinstri fjórðung
+Festa í neðri hægri fjórðung
+Festa í vinstri þriðjung
+Festa í miðþriðjung
+Festa í hægri þriðjung
+Festa í vinstri tvo þriðju
+Festa í hægri tvo þriðju
+Hámarka eða endurheimta
+Miðjusetja gluggann
+Endurheimta stærðina fyrir festingu
+Festistika af/á
+Skjábrúnir af/á
+Gluggasegull af/á
+Prófa festistikuna
+Fjórðungar
+Þriðjungar
+Gluggi
+Ctrl+Alt + lykill (sjálfgefið)
+Meta+Ctrl+Alt + lykill
+Meta + lykill (KDE-stíll)
+Meta+Shift + lykill
+Ctrl+Shift+Alt + lykill
+Ctrl+Alt + talnaborð
+Engir flýtilyklar
+Smelltu, síðan Í lagi – stillingaritillinn opnast.
+Viðnám gegn skörun
+Hversu langt þarf að ýta glugga inn í annan áður en hann sleppir. 0 = gluggar mega skarast frjálst.
+Endurstilla á sjálfgefið
+Endurstilla alla lykla
+Gefur hverri aðgerð aftur lykil valins skema og fjarlægir lykla sem skemað hefur ekki.
+Endurstilla allt
+Límandi brúnir
+Breyta stærð glugga sem snertast saman
+Þegar þú breytir stærð glugga færa gluggar sem snerta hann sameiginlegu brúnina með – ekkert skarast, ekkert bil myndast.
+Halda staflaðum gluggum í línu
+Gluggar hver yfir öðrum halda vinstri og hægri brúnum saman, gluggar hlið við hlið efri og neðri brúnum.
+Hrista til að sleppa
+Hristu músina meðan þú breytir stærð og hinir gluggarnir stökkva til baka.
+Deyfa hina gluggana
+Meðan stærð er breytt eru gluggar sem fylgja ekki sýndir gegnsæir.
+Forskoðun festistikunnar
+Sýnir hvar glugginn lendir á meðan svæði í stikunni er auðkennt. Af: engin forskoðun.
+Forskoðun skjábrúna
+Sýnir hvar glugginn lendir við brún eða horn. Af: engin forskoðun.
+Af: hlutlaus rammi – aðeins fyrir forskoðanir sem eru á.
+Gera hlé á brúnaflísum KDE og forskoðun þeirra
+Slökktu á þessu ef þú vilt frekar útlínur KDE – slökktu þá á forskoðun skjábrúna hér að ofan.
+Halda til að fylla
+Halda við brúnina til að fylla laust pláss
+Stutt ýting gefur helming eða fjórðung. Haltu glugganum aðeins lengur við brúnina og hann stækkar að næsta glugga – forskoðunin sýnir það.
+Haldtími
+Hversu lengi glugginn þarf að vera við brúnina áður en hann stækkar.
+Brúnaflísar KDE
+Hámörkun og flísalögn KDE við skjábrúnir – með útlínum – eru í hléi meðan SeaQ Snap Layout keyrir, svo aðeins ein forskoðun birtist. KDE-stillingum þínum er ekki breytt: slökktu á þessu, gerðu SeaQ Snap Layout óvirkt eða fjarlægðu það og hegðun KDE kemur aftur.
+Gluggafesting KDE
+Gera hlé á festisvæðum KDE meðan segullinn er á
+Svo aðeins einn segull togi í glugga. KDE-stillingum þínum er ekki breytt: slökktu á þessu, gerðu SeaQ Snap Layout óvirkt eða fjarlægðu það og festing KDE kemur aftur.
+Styðja SeaQ Snap Layout
+Ef þér líkar SeaQ Snap Layout geturðu stutt þróunina – takk!
+Gefa með PayPal
+Gefðu mér kaffibolla

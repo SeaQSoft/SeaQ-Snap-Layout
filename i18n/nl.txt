@@ -9,8 +9,8 @@ Zone verwijderen
 Sjabloon laden…
 Klik op een zone om te selecteren · dubbelklik om te splitsen · sleep de scheidingslijnen
 %1 van %2 zones
-KDE Snap Layout – Instellingeneditor
-voor KWin · v%1
+SeaQ Snap Layout – Instellingeneditor
+voor KDE · v%1
 Algemeen
 Uiterlijk
 Gedrag & animatie
@@ -82,7 +82,7 @@ Verwijderen
 Zo werkt het
 Pak een venster bij de titelbalk en sleep het omhoog. De snapbalk schuift naar beneden; zet het venster neer op een zone en het vult precies dat gebied. Sleep het weer weg en het krijgt zijn oude grootte terug.
 De instellingeneditor openen
-Systeeminstellingen → Vensterbeheer → KWin-scripts → tandwielpictogram naast ‘KDE Snap Layout’ → ‘Snap Layout-instellingeneditor openen’ → OK.
+Systeeminstellingen → Vensterbeheer → KWin-scripts → tandwielpictogram naast ‘SeaQ Snap Layout’ → ‘Snap Layout-instellingeneditor openen’ → OK.
 Informatie
 Versie
 Auteur
@@ -102,8 +102,8 @@ Opslaan
 Ja
 Zone %1
 Zet het venster neer op een zone
-KDE Snap Layout: aan/uit
-KDE Snap Layout: snapbalk testen
+SeaQ Snap Layout: aan/uit
+SeaQ Snap Layout: snapbalk testen
 Helften
 Twee derde
 Drie kolommen
@@ -122,3 +122,146 @@ Snap Layout-instellingeneditor openen
 Snelle instellingen
 Kleuren van de snapbalk:
 Alle overige instellingen – uiterlijk, grootte, animatie, gedrag en je eigen indelingen – wijzig je in de Snap Layout-instellingeneditor.
+Instellingen
+Geen
+Wijzigen
+Gangbare combinaties
+Eigen combinatie
+Instellen
+Verwijderen
+Snapbalk
+Schermranden
+Meer manieren om te snappen
+Venstermagneet
+Sneltoetsen
+Sneltoetsen
+Vier manieren om vensters te snappen. Elke manier is apart aan en uit te zetten.
+Functies
+Duw een venster tegen een rand of hoek: maximaliseren, helften, kwarten.
+Vensters plakken aan elkaar en aan de schermranden.
+Snap het actieve venster met toetscombinaties.
+Voorbeelden
+Voorbeelden in de accentkleur tonen
+Uit: een neutraal kader. Geldt voor alle voorbeelden.
+Vensterklassen die nooit worden gesnapt, één per regel.
+KDE heeft eigen schermrandacties en een eigen vensteruitlijning. Staat dezelfde functie hier aan, zet die van KDE dan uit: Systeeminstellingen → Vensterbeheer → Schermranden, en Venstergedrag → Verplaatsen.
+Duw een venster tegen een rand of hoek van het scherm en het vult dat deel. Werkt met of zonder de snapbalk.
+Volledig scherm
+Bovenste helft
+Uit
+Onderste helft
+Linkerhelft
+Rechterhelft
+Randen en hoeken
+Schermranden gebruiken
+Los van de snapbalk. Elke rand is apart in te schakelen.
+Bovenrand
+Linker- en rechterrand: half scherm
+Onderrand: onderste helft
+Hoeken: kwart van het scherm
+Slim vullen
+Rekening houden met al gesnapte vensters
+Staat er onderaan al een venster, dan geeft de bovenrand de bovenste helft in plaats van te maximaliseren. Ook helften en kwarten laten gesnapte vensters vrij.
+Gevoel
+Afstand tot de rand
+Hoe dicht de cursor bij de rand moet komen.
+Duwvertraging
+Hoe lang het venster tegen de rand moet blijven – een klein duwtje. 0 = direct.
+Hoekgrootte
+Deel van elke zijde dat als hoek telt.
+De eigen schermrandacties van KDE staan nog aan, dus reageren twee hulpmiddelen op hetzelfde slepen. Zet „Maximaliseren” en „Tegelen” uit in Systeeminstellingen → Vensterbeheer → Schermranden.
+Terwijl je een venster verplaatst of van grootte verandert, plakken de randen aan nabije vensters en aan de schermranden.
+Magneet
+Venstermagneet gebruiken
+Los van de snapbalk en de schermranden.
+Kleefafstand
+Hoe dicht een rand moet komen voordat hij vastklikt.
+Aan andere vensters plakken
+Aan de schermranden plakken
+Ook bij het van grootte veranderen
+Ruimte tussen vensters behouden
+Vensters stoppen op de „Ruimte tussen vensters” van de pagina Algemeen in plaats van elkaar te raken.
+De eigen vensteruitlijning van KDE staat ook aan. Voor een consistent gevoel zet je de zones op „Geen” in Systeeminstellingen → Vensterbeheer → Venstergedrag → Verplaatsen.
+Snap het actieve venster met het toetsenbord. Dit zijn gewone globale KDE-sneltoetsen – je vindt ze ook in Systeeminstellingen → Sneltoetsen → KWin.
+Sneltoetsen gebruiken
+Uit: de toetsen blijven toegewezen maar doen niets.
+Toetsenschema
+Stelt de toetsen van alle acties in één keer in. Losse toetsen kun je hieronder nog wijzigen.
+Toepassen
+De sneltoetsdienst van KDE reageerde niet. Je kunt de toetsen nog instellen in Systeeminstellingen → Sneltoetsen → KWin.
+Toetsen al in gebruik
+%1 wordt gebruikt door „%2”.
+Gewenst voor: %1
+Overnemen
+Alles overnemen
+Laten staan
+Goed om te weten
+De snapacties gebruiken dezelfde ruimtes als de snapbalk en onthouden de grootte van vóór het snappen: „Grootte van vóór het snappen herstellen” zet die terug.
+SeaQ Snap Layout: %1
+Naar de linkerhelft snappen
+Naar de rechterhelft snappen
+Naar de bovenste helft snappen
+Naar de onderste helft snappen
+Naar het kwart linksboven snappen
+Naar het kwart rechtsboven snappen
+Naar het kwart linksonder snappen
+Naar het kwart rechtsonder snappen
+Naar het linkerderde snappen
+Naar het middelste derde snappen
+Naar het rechterderde snappen
+Naar de linker twee derde snappen
+Naar de rechter twee derde snappen
+Maximaliseren of herstellen
+Venster centreren
+Grootte van vóór het snappen herstellen
+Snapbalk aan/uit
+Schermranden aan/uit
+Venstermagneet aan/uit
+Snapbalk testen
+Kwarten
+Derden
+Venster
+Ctrl+Alt + toets (standaard)
+Meta+Ctrl+Alt + toets
+Meta + toets (KDE-stijl)
+Meta+Shift + toets
+Ctrl+Shift+Alt + toets
+Ctrl+Alt + numeriek toetsenblok
+Geen sneltoetsen
+Klik, en dan OK – de instellingeneditor gaat open.
+Weerstand tegen overlappen
+Hoe ver je een venster in een ander moet duwen voordat het loslaat. 0 = vensters mogen vrij overlappen.
+Standaard herstellen
+Alle toetsen herstellen
+Geeft elke actie weer de toets van het gekozen schema en verwijdert toetsen die het schema niet heeft.
+Alles herstellen
+Plakkende randen
+Vensters die elkaar raken samen van grootte veranderen
+Als je een venster van grootte verandert, schuiven vensters die het raken de gedeelde rand mee – niets overlapt, er ontstaat geen kier.
+Gestapelde vensters op één lijn houden
+Vensters boven elkaar houden hun linker- en rechterrand bij elkaar, vensters naast elkaar hun boven- en onderrand.
+Schudden om los te laten
+Schud de muis tijdens het vergroten of verkleinen en de andere vensters springen terug.
+Andere vensters vervagen
+Tijdens het vergroten of verkleinen worden vensters die niet meegaan doorzichtig getoond.
+Voorbeeld van de snapbalk
+Toont waar het venster terechtkomt zolang een zone van de balk gemarkeerd is. Uit: helemaal geen voorbeeld.
+Voorbeeld van de schermranden
+Toont waar het venster terechtkomt aan een rand of hoek. Uit: helemaal geen voorbeeld.
+Uit: een neutraal kader – alleen voor de voorbeelden die aan staan.
+KDE's randtegels en het voorbeeld ervan pauzeren
+Zet dit uit als je KDE's eigen omtrek liever hebt – zet dan hierboven het voorbeeld van de schermranden uit.
+Vasthouden om te vullen
+Aan de rand vasthouden om de vrije ruimte te vullen
+Een korte duw geeft de helft of het kwart. Houd het venster iets langer aan de rand en het groeit tot het volgende venster – het voorbeeld laat het zien.
+Houdtijd
+Hoe lang het venster aan de rand moet blijven voordat het groeit.
+KDE's eigen randtegels
+KDE's eigen maximaliseren en tegelen aan de schermranden – met de omtrek – pauzeert zolang SeaQ Snap Layout draait, zodat er maar één voorbeeld verschijnt. Je KDE-instellingen worden niet veranderd: zet dit uit, schakel SeaQ Snap Layout uit of verwijder het, en KDE's eigen gedrag is terug.
+KDE's eigen venstersnappen
+KDE's snapzones pauzeren zolang de magneet aan staat
+Zodat maar één magneet aan een venster trekt. Je KDE-instellingen worden niet veranderd: zet dit uit, schakel SeaQ Snap Layout uit of verwijder het, en KDE's eigen snappen is terug.
+SeaQ Snap Layout steunen
+Als je SeaQ Snap Layout fijn vindt, kun je de ontwikkeling steunen – bedankt!
+Doneren met PayPal
+Trakteer me op een koffie

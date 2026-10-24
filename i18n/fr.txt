@@ -9,8 +9,8 @@ Supprimer la zone
 Charger un modèle…
 Cliquez sur une zone pour la sélectionner · double-clic pour la diviser · faites glisser les séparateurs
 %1 zones sur %2
-KDE Snap Layout – Éditeur de réglages
-pour KWin · v%1
+SeaQ Snap Layout – Éditeur de réglages
+pour KDE · v%1
 Général
 Apparence
 Comportement & animation
@@ -82,7 +82,7 @@ Supprimer
 Fonctionnement
 Saisissez une fenêtre par sa barre de titre et faites-la glisser vers le haut. La barre descend ; déposez la fenêtre sur une zone et elle occupe exactement cet espace. Écartez-la à nouveau et elle retrouve sa taille d’origine.
 Ouvrir l’éditeur de réglages
-Configuration du système → Gestion des fenêtres → Scripts KWin → icône d’engrenage à côté de « KDE Snap Layout » → « Ouvrir l’éditeur de réglages Snap Layout » → OK.
+Configuration du système → Gestion des fenêtres → Scripts KWin → icône d’engrenage à côté de « SeaQ Snap Layout » → « Ouvrir l’éditeur de réglages Snap Layout » → OK.
 Informations
 Version
 Auteur
@@ -102,8 +102,8 @@ Enregistrer
 Oui
 Zone %1
 Déposez la fenêtre sur une zone
-KDE Snap Layout : activer/désactiver
-KDE Snap Layout : tester la barre
+SeaQ Snap Layout : activer/désactiver
+SeaQ Snap Layout : tester la barre
 Moitiés
 Deux tiers
 Trois colonnes
@@ -122,3 +122,146 @@ Ouvrir l’éditeur de réglages Snap Layout
 Réglages rapides
 Couleurs de la barre :
 Tous les autres réglages – apparence, taille, animation, comportement et vos propres dispositions – se font dans l’éditeur de réglages Snap Layout.
+Paramètres
+Aucun
+Modifier
+Combinaisons usuelles
+Votre propre combinaison
+Définir
+Supprimer
+Barre d’ancrage
+Bords de l’écran
+Autres façons d’ancrer
+Aimant de fenêtres
+Raccourcis clavier
+Raccourcis
+Quatre façons d’ancrer les fenêtres. Chacune s’active et se désactive séparément.
+Fonctions
+Poussez une fenêtre contre un bord ou un coin : agrandir, moitiés, quarts.
+Les fenêtres s’attachent entre elles et aux bords de l’écran.
+Ancrez la fenêtre active avec des combinaisons de touches.
+Aperçus
+Afficher les aperçus dans la couleur d’accentuation
+Désactivé : un cadre neutre. S’applique à tous les aperçus.
+Classes de fenêtres qui ne sont jamais ancrées, une par ligne.
+KDE possède ses propres actions de bord d’écran et son propre ancrage des fenêtres. Si la même fonction est active ici, désactivez celle de KDE : Configuration du système → Gestion des fenêtres → Bords de l’écran, et Comportement des fenêtres → Déplacement.
+Poussez une fenêtre contre un bord ou un coin de l’écran et elle remplit cette partie. Fonctionne avec ou sans la barre d’ancrage.
+Plein écran
+Moitié haute
+Désactivé
+Moitié basse
+Moitié gauche
+Moitié droite
+Bords et coins
+Utiliser les bords de l’écran
+Indépendant de la barre d’ancrage. Chaque bord s’active séparément.
+Bord supérieur
+Bords gauche et droit : moitié de l’écran
+Bord inférieur : moitié basse
+Coins : quart de l’écran
+Remplissage intelligent
+S’adapter aux fenêtres déjà ancrées
+Si une fenêtre occupe le bas, le bord supérieur donne la moitié haute au lieu d’agrandir. Les moitiés et les quarts laissent aussi les fenêtres ancrées visibles.
+Sensation
+Distance au bord
+À quelle distance du bord le curseur doit arriver.
+Délai de poussée
+Combien de temps la fenêtre doit rester contre le bord – une petite poussée. 0 = immédiatement.
+Taille des coins
+Part de chaque côté qui compte comme coin.
+Les actions de bord d’écran de KDE sont encore actives : deux outils réagissent au même glissement. Désactivez « Agrandir » et « Mosaïque » dans Configuration du système → Gestion des fenêtres → Bords de l’écran.
+Pendant que vous déplacez ou redimensionnez une fenêtre, ses bords s’attachent aux fenêtres proches et aux bords de l’écran.
+Aimant
+Utiliser l’aimant de fenêtres
+Indépendant de la barre d’ancrage et des bords de l’écran.
+Distance d’accroche
+À quelle distance un bord doit arriver avant de s’accrocher.
+S’attacher aux autres fenêtres
+S’attacher aux bords de l’écran
+Aussi lors du redimensionnement
+Garder l’espace entre les fenêtres
+Les fenêtres s’arrêtent à l’« Écart entre les fenêtres » de la page Général au lieu de se toucher.
+L’ancrage des fenêtres de KDE est aussi actif. Pour un comportement cohérent, réglez ses zones sur « Aucune » dans Configuration du système → Gestion des fenêtres → Comportement des fenêtres → Déplacement.
+Ancrez la fenêtre active au clavier. Ce sont des raccourcis globaux KDE normaux – vous les trouvez aussi dans Configuration du système → Raccourcis → KWin.
+Utiliser les raccourcis clavier
+Désactivé : les touches restent attribuées mais ne font rien.
+Schéma de touches
+Définit les touches de toutes les actions d’un coup. Vous pouvez toujours modifier chaque touche ci-dessous.
+Appliquer
+Le service de raccourcis de KDE n’a pas répondu. Vous pouvez toujours définir les touches dans Configuration du système → Raccourcis → KWin.
+Touches déjà utilisées
+%1 est utilisé par « %2 ».
+Voulu pour : %1
+Reprendre
+Tout reprendre
+Les garder
+Bon à savoir
+Les actions d’ancrage utilisent les mêmes espaces que la barre et mémorisent la taille d’avant l’ancrage : « Restaurer la taille d’avant l’ancrage » la rétablit.
+SeaQ Snap Layout : %1
+Ancrer à la moitié gauche
+Ancrer à la moitié droite
+Ancrer à la moitié haute
+Ancrer à la moitié basse
+Ancrer au quart haut gauche
+Ancrer au quart haut droit
+Ancrer au quart bas gauche
+Ancrer au quart bas droit
+Ancrer au tiers gauche
+Ancrer au tiers central
+Ancrer au tiers droit
+Ancrer aux deux tiers gauches
+Ancrer aux deux tiers droits
+Agrandir ou restaurer
+Centrer la fenêtre
+Restaurer la taille d’avant l’ancrage
+Barre d’ancrage activée/désactivée
+Bords de l’écran activés/désactivés
+Aimant de fenêtres activé/désactivé
+Tester la barre d’ancrage
+Quarts
+Tiers
+Fenêtre
+Ctrl+Alt + touche (par défaut)
+Meta+Ctrl+Alt + touche
+Meta + touche (style KDE)
+Meta+Maj + touche
+Ctrl+Maj+Alt + touche
+Ctrl+Alt + pavé numérique
+Aucun raccourci
+Cliquez, puis OK – l'éditeur de paramètres s'ouvre.
+Résistance au chevauchement
+Jusqu'où il faut pousser une fenêtre dans une autre avant qu'elle ne lâche. 0 = les fenêtres peuvent se chevaucher librement.
+Rétablir la valeur par défaut
+Réinitialiser toutes les touches
+Redonne à chaque action la touche du schéma choisi et supprime les touches que le schéma n'a pas.
+Tout réinitialiser
+Bords collants
+Redimensionner ensemble les fenêtres qui se touchent
+Quand vous redimensionnez une fenêtre, celles qui la touchent déplacent le bord commun avec elle – rien ne se chevauche, aucun espace ne se crée.
+Garder les fenêtres empilées alignées
+Les fenêtres l'une au-dessus de l'autre gardent leurs bords gauche et droit ensemble, les fenêtres côte à côte leurs bords haut et bas.
+Secouer pour détacher
+Secouez la souris pendant le redimensionnement et les autres fenêtres reviennent en place.
+Estomper les autres fenêtres
+Pendant le redimensionnement, les fenêtres qui ne suivent pas sont affichées en transparence.
+Aperçu de la barre d'ancrage
+Montre où la fenêtre arrive tant qu'une zone de la barre est surlignée. Désactivé : aucun aperçu.
+Aperçu des bords de l'écran
+Montre où la fenêtre arrive sur un bord ou un coin. Désactivé : aucun aperçu.
+Désactivé : un cadre neutre – seulement pour les aperçus activés.
+Mettre en pause la mosaïque de KDE et son aperçu
+Désactivez ceci si vous préférez le contour de KDE – désactivez alors l'aperçu des bords ci-dessus.
+Maintenir pour remplir
+Maintenir au bord pour remplir l'espace libre
+Une courte poussée donne la moitié ou le quart. Gardez la fenêtre un peu plus longtemps au bord et elle s'agrandit jusqu'à la fenêtre suivante – l'aperçu le montre.
+Durée de maintien
+Combien de temps la fenêtre doit rester au bord avant de s'agrandir.
+La mosaïque de bord de KDE
+L'agrandissement et la mosaïque de KDE aux bords de l'écran – avec leur contour – sont en pause tant que SeaQ Snap Layout tourne, pour qu'un seul aperçu apparaisse. Vos réglages KDE ne sont pas modifiés : désactivez ceci, désactivez ou supprimez SeaQ Snap Layout et le comportement de KDE revient.
+L'aimantation des fenêtres de KDE
+Mettre en pause les zones d'aimantation de KDE tant que l'aimant est actif
+Pour qu'un seul aimant tire sur une fenêtre. Vos réglages KDE ne sont pas modifiés : désactivez ceci, désactivez ou supprimez SeaQ Snap Layout et l'aimantation de KDE revient.
+Soutenir SeaQ Snap Layout
+Si SeaQ Snap Layout vous plaît, vous pouvez soutenir son développement – merci !
+Faire un don avec PayPal
+Offrez-moi un café

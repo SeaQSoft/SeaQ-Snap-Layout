@@ -9,8 +9,8 @@ Buang zon
 Muatkan templat…
 Klik zon untuk memilihnya · klik dua kali untuk membahagi · seret pemisah
 %1 daripada %2 zon
-KDE Snap Layout – Editor tetapan
-untuk KWin · v%1
+SeaQ Snap Layout – Editor tetapan
+untuk KDE · v%1
 Umum
 Penampilan
 Kelakuan & animasi
@@ -82,7 +82,7 @@ Padam
 Cara ia berfungsi
 Pegang tetingkap pada bar tajuknya dan seret ke atas. Bar akan turun; lepaskan tetingkap pada zon dan ia mengisi tepat kawasan itu. Seret keluar semula dan saiz lamanya kembali.
 Membuka editor tetapan
-Tetapan Sistem → Pengurusan Tetingkap → Skrip KWin → ikon gear di sebelah “KDE Snap Layout” → “Buka editor tetapan Snap Layout” → OK.
+Tetapan Sistem → Pengurusan Tetingkap → Skrip KWin → ikon gear di sebelah “SeaQ Snap Layout” → “Buka editor tetapan Snap Layout” → OK.
 Maklumat
 Versi
 Pengarang
@@ -102,8 +102,8 @@ Simpan
 Ya
 Zon %1
 Lepaskan tetingkap pada zon
-KDE Snap Layout: hidup/mati
-KDE Snap Layout: uji bar
+SeaQ Snap Layout: hidup/mati
+SeaQ Snap Layout: uji bar
 Separuh
 Dua pertiga
 Tiga lajur
@@ -122,3 +122,146 @@ Buka editor tetapan Snap Layout
 Tetapan pantas
 Warna bar:
 Semua tetapan lain – penampilan, saiz, animasi, kelakuan dan susun atur anda sendiri – ditukar dalam editor tetapan Snap Layout.
+Tetapan
+Tiada
+Ubah
+Gabungan biasa
+Gabungan sendiri
+Tetapkan
+Buang
+Bar lekap
+Tepi skrin
+Lebih banyak cara melekap
+Magnet tetingkap
+Pintasan papan kekunci
+Pintasan
+Empat cara untuk melekap tetingkap. Setiap satu boleh dihidupkan dan dimatikan sendiri.
+Ciri
+Tolak tetingkap ke tepi atau penjuru: maksimumkan, separuh, suku.
+Tetingkap melekat antara satu sama lain dan pada tepi skrin.
+Lekap tetingkap aktif dengan gabungan kekunci.
+Pratonton
+Tunjukkan pratonton dalam warna aksen
+Mati: bingkai neutral. Berlaku untuk semua pratonton.
+Kelas tetingkap yang tidak pernah dilekap, satu setiap baris.
+KDE ada tindakan tepi skrin sendiri dan pelekapan tetingkap sendiri. Jika ciri yang sama hidup di sini, matikan ciri KDE: Tetapan Sistem → Pengurusan Tetingkap → Tepi Skrin, dan Kelakuan Tetingkap → Pergerakan.
+Tolak tetingkap ke tepi atau penjuru skrin dan ia mengisi bahagian itu. Berfungsi dengan atau tanpa bar lekap.
+Skrin penuh
+Separuh atas
+Mati
+Separuh bawah
+Separuh kiri
+Separuh kanan
+Tepi dan penjuru
+Guna tepi skrin
+Bebas daripada bar lekap. Setiap tepi boleh dihidupkan sendiri.
+Tepi atas
+Tepi kiri dan kanan: separuh skrin
+Tepi bawah: separuh bawah
+Penjuru: suku skrin
+Isian pintar
+Sesuaikan dengan tetingkap yang sudah dilekap
+Jika sudah ada tetingkap di bawah, tepi atas memberi separuh atas dan bukan memaksimumkan. Separuh dan suku juga membiarkan tetingkap yang dilekap kekal kelihatan.
+Rasa
+Jarak ke tepi
+Sedekat mana kursor perlu sampai ke tepi.
+Lengah tolakan
+Berapa lama tetingkap perlu berada pada tepi – tolakan kecil. 0 = serta-merta.
+Saiz penjuru
+Bahagian setiap sisi yang dikira sebagai penjuru.
+Tindakan tepi skrin KDE sendiri masih hidup, jadi dua pembantu bertindak balas pada seretan yang sama. Matikan “Maksimumkan” dan “Jubin” dalam Tetapan Sistem → Pengurusan Tetingkap → Tepi Skrin.
+Semasa anda mengalih atau mengubah saiz tetingkap, tepinya melekat pada tetingkap berdekatan dan pada tepi skrin.
+Magnet
+Guna magnet tetingkap
+Bebas daripada bar lekap dan tepi skrin.
+Jarak lekap
+Sedekat mana tepi perlu datang sebelum ia terkunci di tempatnya.
+Lekat pada tetingkap lain
+Lekat pada tepi skrin
+Juga semasa mengubah saiz
+Kekalkan jarak antara tetingkap
+Tetingkap berhenti pada “Jarak antara tetingkap” dari halaman Umum dan bukan bersentuhan.
+Pelekapan tetingkap KDE sendiri juga hidup. Untuk rasa yang seragam, tetapkan zonnya kepada “Tiada” dalam Tetapan Sistem → Pengurusan Tetingkap → Kelakuan Tetingkap → Pergerakan.
+Lekap tetingkap aktif dengan papan kekunci. Ini pintasan global KDE biasa – anda juga boleh mencarinya dalam Tetapan Sistem → Pintasan → KWin.
+Guna pintasan papan kekunci
+Mati: kekunci kekal ditetapkan tetapi tidak berbuat apa-apa.
+Skema kekunci
+Menetapkan kekunci semua tindakan sekali gus. Kekunci tunggal masih boleh diubah di bawah.
+Guna
+Perkhidmatan pintasan KDE tidak menjawab. Anda masih boleh menetapkan kekunci dalam Tetapan Sistem → Pintasan → KWin.
+Kekunci yang sudah digunakan
+%1 digunakan oleh “%2”.
+Dikehendaki untuk: %1
+Ambil alih
+Ambil alih semua
+Biarkan
+Bagus untuk tahu
+Tindakan lekap menggunakan jarak yang sama dengan bar dan mengingati saiz sebelum dilekap: “Pulihkan saiz sebelum dilekap” mengembalikannya.
+SeaQ Snap Layout: %1
+Lekap ke separuh kiri
+Lekap ke separuh kanan
+Lekap ke separuh atas
+Lekap ke separuh bawah
+Lekap ke suku kiri atas
+Lekap ke suku kanan atas
+Lekap ke suku kiri bawah
+Lekap ke suku kanan bawah
+Lekap ke satu pertiga kiri
+Lekap ke satu pertiga tengah
+Lekap ke satu pertiga kanan
+Lekap ke dua pertiga kiri
+Lekap ke dua pertiga kanan
+Maksimumkan atau pulihkan
+Tengahkan tetingkap
+Pulihkan saiz sebelum dilekap
+Bar lekap hidup/mati
+Tepi skrin hidup/mati
+Magnet tetingkap hidup/mati
+Cuba bar lekap
+Suku
+Satu pertiga
+Tetingkap
+Ctrl+Alt + kekunci (lalai)
+Meta+Ctrl+Alt + kekunci
+Meta + kekunci (gaya KDE)
+Meta+Shift + kekunci
+Ctrl+Shift+Alt + kekunci
+Ctrl+Alt + pad nombor
+Tiada pintasan
+Klik, kemudian OK – penyunting tetapan dibuka.
+Rintangan terhadap pertindihan
+Sejauh mana tetingkap perlu ditolak ke dalam tetingkap lain sebelum ia terlepas. 0 = tetingkap bebas bertindih.
+Set semula ke lalai
+Set semula semua kekunci
+Memberi setiap tindakan kekunci skema yang dipilih semula dan membuang kekunci yang tiada dalam skema.
+Set semula semua
+Tepi melekit
+Ubah saiz tetingkap yang bersentuhan bersama-sama
+Apabila anda mengubah saiz tetingkap, tetingkap yang menyentuhnya turut mengalihkan tepi yang dikongsi – tiada pertindihan, tiada ruang kosong.
+Kekalkan tetingkap bertindan sejajar
+Tetingkap bertindan mengekalkan tepi kiri dan kanan bersama, tetingkap bersebelahan tepi atas dan bawah.
+Goncang untuk melepaskan
+Goncang tetikus semasa mengubah saiz dan tetingkap lain kembali semula.
+Malapkan tetingkap lain
+Semasa mengubah saiz, tetingkap yang tidak mengikut dipaparkan lut sinar.
+Pratonton bar snap
+Menunjukkan tempat tetingkap mendarat semasa zon bar diserlahkan. Mati: tiada pratonton langsung.
+Pratonton tepi skrin
+Menunjukkan tempat tetingkap mendarat di tepi atau sudut. Mati: tiada pratonton langsung.
+Mati: bingkai neutral – hanya untuk pratonton yang dihidupkan.
+Jeda jubin tepi KDE dan pratontonnya
+Matikan ini jika anda lebih suka garis luar KDE – kemudian matikan pratonton tepi skrin di atas.
+Tahan untuk mengisi
+Tahan di tepi untuk mengisi ruang kosong
+Tolakan pendek memberi separuh atau suku. Tahan tetingkap di tepi lebih lama sedikit dan ia membesar hingga tetingkap seterusnya – pratonton menunjukkannya.
+Masa tahan
+Berapa lama tetingkap perlu kekal di tepi sebelum membesar.
+Jubin tepi milik KDE
+Maksimumkan dan jubin KDE di tepi skrin – dengan garis luarnya – dijeda semasa SeaQ Snap Layout berjalan, supaya hanya satu pratonton muncul. Tetapan KDE anda tidak diubah: matikan ini, nyahdayakan atau buang SeaQ Snap Layout dan kelakuan KDE kembali.
+Snap tetingkap milik KDE
+Jeda zon snap KDE semasa magnet dihidupkan
+Supaya hanya satu magnet menarik tetingkap. Tetapan KDE anda tidak diubah: matikan ini, nyahdayakan atau buang SeaQ Snap Layout dan snap KDE kembali.
+Sokong SeaQ Snap Layout
+Jika anda suka SeaQ Snap Layout, anda boleh menyokong pembangunannya – terima kasih!
+Derma dengan PayPal
+Belanja saya kopi

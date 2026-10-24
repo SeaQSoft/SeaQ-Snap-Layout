@@ -9,8 +9,8 @@ Neħħi ż-żona
 Tella’ mudell…
 Ikklikkja fuq żona biex tagħżilha · ikklikkja darbtejn biex taqsamha · kaxkar id-diviżorji
 %1 minn %2 żoni
-KDE Snap Layout – Editur tas-settings
-għal KWin · v%1
+SeaQ Snap Layout – Editur tas-settings
+għal KDE · v%1
 Ġenerali
 Dehra
 Imġiba u animazzjoni
@@ -82,7 +82,7 @@ Ikkopja
 Kif jaħdem
 Aqbad tieqa mill-istrixxa tat-titlu u kaxkarha ’l fuq. L-istrixxa tinżel; itlaq it-tieqa fuq żona u timla eżattament dik iż-żona. Jekk terġa’ toħroġha, terġa’ tieħu d-daqs ta’ qabel.
 Kif tiftaħ l-editur tas-settings
-Settings tas-Sistema → Ġestjoni tat-Twieqi → Skripts ta’ KWin → ikona tal-irkaptu ħdejn “KDE Snap Layout” → “Iftaħ l-editur tas-settings ta’ Snap Layout” → OK.
+Settings tas-Sistema → Ġestjoni tat-Twieqi → Skripts ta’ KWin → ikona tal-irkaptu ħdejn “SeaQ Snap Layout” → “Iftaħ l-editur tas-settings ta’ Snap Layout” → OK.
 Informazzjoni
 Verżjoni
 Awtur
@@ -102,8 +102,8 @@ Issejvja
 Iva
 Żona %1
 Itlaq it-tieqa fuq żona
-KDE Snap Layout: ixgħel/itfi
-KDE Snap Layout: ipprova l-istrixxa
+SeaQ Snap Layout: ixgħel/itfi
+SeaQ Snap Layout: ipprova l-istrixxa
 Nofsijiet
 Żewġ terzi
 Tliet kolonni
@@ -122,3 +122,146 @@ Iftaħ l-editur tas-settings ta’ Snap Layout
 Settings veloċi
 Kuluri tal-istrixxa:
 Is-settings l-oħra kollha – dehra, daqs, animazzjoni, imġiba u t-tqassimiet tiegħek – jinbidlu fl-editur tas-settings ta’ Snap Layout.
+Settings
+Xejn
+Ibdel
+Kombinazzjonijiet komuni
+Il-kombinazzjoni tiegħek
+Issettja
+Neħħi
+Strixxa tal-qbid
+Truf tal-iskrin
+Aktar modi kif taqbad
+Kalamita tat-twieqi
+Shortcuts tat-tastiera
+Shortcuts
+Erba’ modi kif taqbad it-twieqi. Kull wieħed jinxtegħel u jintefa għalih.
+Funzjonijiet
+Imbotta tieqa ma’ tarf jew kantuniera: immassimizza, nofsijiet, kwarti.
+It-twieqi jeħlu ma’ xulxin u mat-truf tal-iskrin.
+Aqbad it-tieqa attiva b’kombinazzjonijiet ta’ tasti.
+Previews
+Uri l-previews bil-kulur tal-enfasi
+Mitfi: qafas newtrali. Japplika għall-previews kollha.
+Klassijiet ta’ twieqi li qatt ma jinqabdu, waħda kull linja.
+KDE għandu l-azzjonijiet tiegħu għat-truf tal-iskrin u l-qbid tat-twieqi tiegħu. Jekk l-istess funzjoni hija mixgħula hawn, itfi dik ta’ KDE: Settings tas-Sistema → Ġestjoni tat-Twieqi → Truf tal-Iskrin, u Imġiba tat-Twieqi → Ċaqliq.
+Imbotta tieqa ma’ tarf jew kantuniera tal-iskrin u timla dik il-parti. Taħdem bl-istrixxa jew mingħajrha.
+Skrin sħiħ
+Nofs ta’ fuq
+Mitfi
+Nofs t’isfel
+Nofs tax-xellug
+Nofs tal-lemin
+Truf u kantunieri
+Uża t-truf tal-iskrin
+Indipendenti mill-istrixxa. Kull tarf jinxtegħel għalih.
+Tarf ta’ fuq
+Tarf tax-xellug u tal-lemin: nofs l-iskrin
+Tarf t’isfel: nofs t’isfel
+Kantunieri: kwart tal-iskrin
+Mili intelliġenti
+Adatta għat-twieqi diġà maqbuda
+Jekk diġà hemm tieqa isfel, it-tarf ta’ fuq jagħti n-nofs ta’ fuq minflok jimmassimizza. In-nofsijiet u l-kwarti wkoll iħallu t-twieqi maqbuda ħielsa.
+Sensazzjoni
+Distanza mit-tarf
+Kemm irid jersaq il-kursur lejn it-tarf.
+Dewmien tal-imbuttatura
+Kemm trid tibqa’ t-tieqa mat-tarf – imbuttatura żgħira. 0 = minnufih.
+Daqs tal-kantunieri
+Parti minn kull naħa li tgħodd bħala kantuniera.
+L-azzjonijiet ta’ KDE għat-truf tal-iskrin għadhom mixgħula, għalhekk żewġ għajnuniet jirreaġixxu għall-istess kaxkir. Itfi “Immassimizza” u “Madum” f’Settings tas-Sistema → Ġestjoni tat-Twieqi → Truf tal-Iskrin.
+Waqt li tiċċaqlaq jew tibdel id-daqs ta’ tieqa, it-truf tagħha jeħlu mat-twieqi qrib u mat-truf tal-iskrin.
+Kalamita
+Uża l-kalamita tat-twieqi
+Indipendenti mill-istrixxa u mit-truf tal-iskrin.
+Distanza tal-qbid
+Kemm irid jersaq tarf qabel ma jidħol f’postu.
+Waħħal ma’ twieqi oħra
+Waħħal mat-truf tal-iskrin
+Anke meta tibdel id-daqs
+Żomm l-ispazju bejn it-twieqi
+It-twieqi jieqfu fl-“Ispazju bejn it-twieqi” tal-paġna Ġenerali minflok imissu ma’ xulxin.
+Il-qbid tat-twieqi ta’ KDE stess huwa mixgħul ukoll. Għal sensazzjoni konsistenti, issettja ż-żoni tiegħu għal “Xejn” f’Settings tas-Sistema → Ġestjoni tat-Twieqi → Imġiba tat-Twieqi → Ċaqliq.
+Aqbad it-tieqa attiva bit-tastiera. Dawn huma shortcuts globali normali ta’ KDE – issibhom ukoll f’Settings tas-Sistema → Shortcuts → KWin.
+Uża shortcuts tat-tastiera
+Mitfi: it-tasti jibqgħu assenjati iżda ma jagħmlu xejn.
+Skema tat-tasti
+Tissettja t-tasti tal-azzjonijiet kollha f’daqqa. Tasti waħdiet għadek tista’ tibdilhom hawn taħt.
+Applika
+Is-servizz tas-shortcuts ta’ KDE ma weġibx. Xorta tista’ tissettja t-tasti f’Settings tas-Sistema → Shortcuts → KWin.
+Tasti diġà fl-użu
+%1 qed jintuża minn “%2”.
+Mixtieq għal: %1
+Ħudu
+Ħudhom kollha
+Ħallihom
+Tajjeb li tkun taf
+L-azzjonijiet tal-qbid jużaw l-istess spazji tal-istrixxa u jiftakru d-daqs ta’ qabel il-qbid: “Irrestawra d-daqs ta’ qabel il-qbid” iġibu lura.
+SeaQ Snap Layout: %1
+Aqbad fin-nofs tax-xellug
+Aqbad fin-nofs tal-lemin
+Aqbad fin-nofs ta’ fuq
+Aqbad fin-nofs t’isfel
+Aqbad fil-kwart ta’ fuq xellug
+Aqbad fil-kwart ta’ fuq lemin
+Aqbad fil-kwart t’isfel xellug
+Aqbad fil-kwart t’isfel lemin
+Aqbad fit-terz tax-xellug
+Aqbad fit-terz tan-nofs
+Aqbad fit-terz tal-lemin
+Aqbad fiż-żewġ terzi tax-xellug
+Aqbad fiż-żewġ terzi tal-lemin
+Immassimizza jew irrestawra
+Iċċentra t-tieqa
+Irrestawra d-daqs ta’ qabel il-qbid
+Strixxa mixgħula/mitfija
+Truf tal-iskrin mixgħula/mitfija
+Kalamita mixgħula/mitfija
+Ipprova l-istrixxa
+Kwarti
+Terzi
+Tieqa
+Ctrl+Alt + tast (default)
+Meta+Ctrl+Alt + tast
+Meta + tast (stil KDE)
+Meta+Shift + tast
+Ctrl+Shift+Alt + tast
+Ctrl+Alt + tastiera numerika
+Ebda shortcut
+Ikklikkja, imbagħad OK – jinfetaħ l-editur tal-issettjar.
+Reżistenza kontra s-sovrapożizzjoni
+Kemm trid timbotta tieqa ġo oħra qabel ma titlaqha. 0 = it-twieqi jistgħu jissovrapponu liberament.
+Irrisettja għall-predefinit
+Irrisettja t-tasti kollha
+Jerġa' jagħti lil kull azzjoni t-tast tal-iskema magħżula u jneħħi t-tasti li l-iskema m'għandhiex.
+Irrisettja kollox
+Truf li jeħlu
+Ibdel id-daqs tat-twieqi li jmissu flimkien
+Meta tibdel id-daqs ta' tieqa, it-twieqi li jmissuha jċaqilqu t-tarf komuni magħha – xejn ma jissovrapponi, ma jinfetaħ l-ebda vojt.
+Żomm it-twieqi f'munzell f'linja waħda
+It-twieqi waħda fuq l-oħra jżommu t-truf tax-xellug u tal-lemin flimkien, it-twieqi ħdejn xulxin dawk ta' fuq u t'isfel.
+Ħawwad biex tħalli
+Ħawwad il-maws waqt li tibdel id-daqs u t-twieqi l-oħra jaqbżu lura.
+Attenwa t-twieqi l-oħra
+Waqt li jinbidel id-daqs, it-twieqi li ma jsegwux jidhru trasparenti.
+Previżjoni tal-bar tal-qbid
+Turi fejn tasal it-tieqa waqt li żona tal-bar hija enfasizzata. Mitfi: l-ebda previżjoni.
+Previżjoni tat-truf tal-iskrin
+Turi fejn tasal it-tieqa f'tarf jew kantuniera. Mitfi: l-ebda previżjoni.
+Mitfi: qafas newtrali – biss għall-previżjonijiet mixgħula.
+Waqqaf temporanjament it-tqegħid fit-truf ta' KDE u l-previżjoni tiegħu
+Itfi dan jekk tippreferi l-kontorn ta' KDE – imbagħad itfi l-previżjoni tat-truf hawn fuq.
+Żomm biex timla
+Żomm fit-tarf biex timla l-ispazju ħieles
+Imbuttatura qasira tagħti nofs jew kwart. Żomm it-tieqa fit-tarf ftit aktar u tikber sat-tieqa li jmiss – il-previżjoni turiha.
+Ħin taż-żamma
+Kemm għandha tibqa' t-tieqa fit-tarf qabel ma tikber.
+It-tqegħid fit-truf ta' KDE stess
+Il-massimizzar u t-tqegħid ta' KDE fit-truf tal-iskrin – bil-kontorn – jieqfu temporanjament waqt li SeaQ Snap Layout ikun qed jaħdem, biex tidher previżjoni waħda biss. L-issettjar ta' KDE ma jinbidilx: itfi dan, iddiżattiva jew neħħi SeaQ Snap Layout u l-imġiba ta' KDE terġa' lura.
+Il-qbid tat-twieqi ta' KDE stess
+Waqqaf iż-żoni tal-qbid ta' KDE waqt li l-kalamita tkun mixgħula
+Biex kalamita waħda biss tiġbed tieqa. L-issettjar ta' KDE ma jinbidilx: itfi dan, iddiżattiva jew neħħi SeaQ Snap Layout u l-qbid ta' KDE jerġa' lura.
+Appoġġja lil SeaQ Snap Layout
+Jekk togħġbok SeaQ Snap Layout, tista' tappoġġja l-iżvilupp tiegħu – grazzi!
+Agħti donazzjoni b'PayPal
+Ixtrili kafè

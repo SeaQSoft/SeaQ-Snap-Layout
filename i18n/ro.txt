@@ -9,8 +9,8 @@ Elimină zona
 Încarcă un șablon…
 Clic pe o zonă pentru a o selecta · dublu clic pentru a o împărți · trage separatoarele
 %1 din %2 zone
-KDE Snap Layout – Editor de setări
-pentru KWin · v%1
+SeaQ Snap Layout – Editor de setări
+pentru KDE · v%1
 General
 Aspect
 Comportament și animație
@@ -82,7 +82,7 @@ Duplică
 Cum funcționează
 Prinde o fereastră de bara de titlu și trage-o în sus. Bara coboară; las-o pe o zonă și fereastra ocupă exact acea suprafață. Când o tragi din nou afară, își recapătă dimensiunea anterioară.
 Deschiderea editorului de setări
-Configurări de sistem → Gestionarea ferestrelor → Scripturi KWin → pictograma roată dințată de lângă „KDE Snap Layout” → „Deschide editorul de setări Snap Layout” → OK.
+Configurări de sistem → Gestionarea ferestrelor → Scripturi KWin → pictograma roată dințată de lângă „SeaQ Snap Layout” → „Deschide editorul de setări Snap Layout” → OK.
 Informații
 Versiune
 Autor
@@ -102,8 +102,8 @@ Salvează
 Da
 Zona %1
 Lasă fereastra pe o zonă
-KDE Snap Layout: pornește/oprește
-KDE Snap Layout: testează bara
+SeaQ Snap Layout: pornește/oprește
+SeaQ Snap Layout: testează bara
 Jumătăți
 Două treimi
 Trei coloane
@@ -122,3 +122,146 @@ Deschide editorul de setări Snap Layout
 Setări rapide
 Culorile barei:
 Toate celelalte setări – aspect, dimensiune, animație, comportament și aranjamentele tale – se modifică în editorul de setări Snap Layout.
+Setări
+Niciuna
+Schimbă
+Combinații uzuale
+Combinația ta
+Setează
+Elimină
+Bara de fixare
+Marginile ecranului
+Alte moduri de fixare
+Magnetul ferestrelor
+Scurtături de tastatură
+Scurtături
+Patru moduri de a fixa ferestrele. Fiecare se pornește și se oprește separat.
+Funcții
+Împinge o fereastră spre o margine sau un colț: maximizare, jumătăți, sferturi.
+Ferestrele se lipesc între ele și de marginile ecranului.
+Fixează fereastra activă cu combinații de taste.
+Previzualizări
+Arată previzualizările în culoarea de accent
+Oprit: un cadru neutru. Se aplică tuturor previzualizărilor.
+Clase de ferestre care nu sunt fixate niciodată, câte una pe rând.
+KDE are propriile acțiuni pentru marginile ecranului și propria aliniere a ferestrelor. Dacă aceeași funcție este pornită aici, oprește-o pe cea din KDE: Configurări de sistem → Gestionarea ferestrelor → Marginile ecranului, și Comportamentul ferestrelor → Mutare.
+Împinge o fereastră spre o margine sau un colț al ecranului și va umple acea parte. Merge cu sau fără bara de fixare.
+Ecran complet
+Jumătatea de sus
+Oprit
+Jumătatea de jos
+Jumătatea stângă
+Jumătatea dreaptă
+Margini și colțuri
+Folosește marginile ecranului
+Independent de bara de fixare. Fiecare margine se pornește separat.
+Marginea de sus
+Marginile stângă și dreaptă: jumătate de ecran
+Marginea de jos: jumătatea de jos
+Colțuri: un sfert din ecran
+Umplere inteligentă
+Adaptează-te la ferestrele deja fixate
+Dacă jos există deja o fereastră, marginea de sus dă jumătatea de sus în loc să maximizeze. Și jumătățile și sferturile lasă libere ferestrele fixate.
+Senzație
+Distanța față de margine
+Cât de aproape de margine trebuie să ajungă cursorul.
+Întârzierea împingerii
+Cât timp trebuie să stea fereastra lipită de margine – o mică împingere. 0 = imediat.
+Mărimea colțurilor
+Partea din fiecare latură care contează drept colț.
+Acțiunile proprii KDE pentru marginile ecranului sunt încă pornite, așa că doi asistenți reacționează la aceeași tragere. Oprește „Maximizează” și „Pavează” în Configurări de sistem → Gestionarea ferestrelor → Marginile ecranului.
+Când muți sau redimensionezi o fereastră, marginile ei se lipesc de ferestrele apropiate și de marginile ecranului.
+Magnet
+Folosește magnetul ferestrelor
+Independent de bara de fixare și de marginile ecranului.
+Distanța de fixare
+Cât de aproape trebuie să vină o margine înainte să se fixeze.
+Lipește de alte ferestre
+Lipește de marginile ecranului
+Și la redimensionare
+Păstrează spațiul dintre ferestre
+Ferestrele se opresc la „Spațiu între ferestre” din pagina General în loc să se atingă.
+Alinierea proprie a ferestrelor din KDE este și ea pornită. Pentru o senzație unitară, setează-i zonele la „Niciuna” în Configurări de sistem → Gestionarea ferestrelor → Comportamentul ferestrelor → Mutare.
+Fixează fereastra activă cu tastatura. Sunt scurtături globale KDE obișnuite – le găsești și în Configurări de sistem → Scurtături → KWin.
+Folosește scurtăturile de tastatură
+Oprit: tastele rămân atribuite, dar nu fac nimic.
+Schema de taste
+Setează tastele tuturor acțiunilor deodată. Poți schimba în continuare taste individuale mai jos.
+Aplică
+Serviciul de scurtături KDE nu a răspuns. Poți seta tastele și în Configurări de sistem → Scurtături → KWin.
+Taste deja folosite
+%1 este folosită de „%2”.
+Dorită pentru: %1
+Preia-o
+Preia-le pe toate
+Păstrează-le
+Bine de știut
+Acțiunile de fixare folosesc aceleași spații ca bara și rețin mărimea dinainte de fixare: „Restabilește mărimea dinainte de fixare” o readuce.
+SeaQ Snap Layout: %1
+Fixează în jumătatea stângă
+Fixează în jumătatea dreaptă
+Fixează în jumătatea de sus
+Fixează în jumătatea de jos
+Fixează în sfertul din stânga sus
+Fixează în sfertul din dreapta sus
+Fixează în sfertul din stânga jos
+Fixează în sfertul din dreapta jos
+Fixează în treimea stângă
+Fixează în treimea din mijloc
+Fixează în treimea dreaptă
+Fixează în cele două treimi din stânga
+Fixează în cele două treimi din dreapta
+Maximizează sau restabilește
+Centrează fereastra
+Restabilește mărimea dinainte de fixare
+Bara de fixare pornit/oprit
+Marginile ecranului pornit/oprit
+Magnetul ferestrelor pornit/oprit
+Testează bara de fixare
+Sferturi
+Treimi
+Fereastră
+Ctrl+Alt + tastă (implicit)
+Meta+Ctrl+Alt + tastă
+Meta + tastă (stil KDE)
+Meta+Shift + tastă
+Ctrl+Shift+Alt + tastă
+Ctrl+Alt + tastatura numerică
+Fără scurtături
+Faceți clic, apoi OK – se deschide editorul de setări.
+Rezistență la suprapunere
+Cât de adânc trebuie împinsă o fereastră în alta până să fie eliberată. 0 = ferestrele se pot suprapune liber.
+Revenire la implicit
+Resetează toate tastele
+Dă din nou fiecărei acțiuni tasta din schema aleasă și elimină tastele pe care schema nu le are.
+Resetează tot
+Margini lipicioase
+Redimensionează împreună ferestrele care se ating
+Când redimensionați o fereastră, ferestrele care o ating mută marginea comună odată cu ea – nimic nu se suprapune, nu apare niciun gol.
+Păstrează ferestrele stivuite aliniate
+Ferestrele una peste alta își păstrează marginile stânga și dreapta împreună, cele alăturate marginile de sus și de jos.
+Scuturați pentru a desprinde
+Scuturați mausul în timpul redimensionării și celelalte ferestre revin la loc.
+Estompează celelalte ferestre
+În timpul redimensionării, ferestrele care nu urmează sunt afișate transparent.
+Previzualizarea barei de ancorare
+Arată unde ajunge fereastra cât timp o zonă a barei este evidențiată. Dezactivat: nicio previzualizare.
+Previzualizarea marginilor ecranului
+Arată unde ajunge fereastra la o margine sau un colț. Dezactivat: nicio previzualizare.
+Dezactivat: un cadru neutru – doar pentru previzualizările activate.
+Pune pe pauză aranjarea pe margini a KDE și previzualizarea ei
+Dezactivați dacă preferați conturul KDE – apoi dezactivați mai sus previzualizarea marginilor.
+Ține pentru umplere
+Ține la margine pentru a umple spațiul liber
+O împingere scurtă dă jumătatea sau sfertul. Țineți fereastra puțin mai mult la margine și crește până la fereastra următoare – previzualizarea arată asta.
+Timp de ținere
+Cât timp trebuie să rămână fereastra la margine înainte să crească.
+Aranjarea proprie pe margini a KDE
+Maximizarea și aranjarea KDE la marginile ecranului – cu contur – sunt puse pe pauză cât rulează SeaQ Snap Layout, ca să apară o singură previzualizare. Setările KDE nu se schimbă: dezactivați asta, dezactivați sau eliminați SeaQ Snap Layout și comportamentul KDE revine.
+Ancorarea proprie a ferestrelor KDE
+Pune pe pauză zonele de ancorare KDE cât magnetul este activ
+Ca un singur magnet să tragă de o fereastră. Setările KDE nu se schimbă: dezactivați asta, dezactivați sau eliminați SeaQ Snap Layout și ancorarea KDE revine.
+Susține SeaQ Snap Layout
+Dacă vă place SeaQ Snap Layout, puteți susține dezvoltarea – mulțumesc!
+Donează cu PayPal
+Cumpără-mi o cafea

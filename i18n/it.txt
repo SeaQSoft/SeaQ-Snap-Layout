@@ -9,8 +9,8 @@ Rimuovi zona
 Carica modello…
 Clic su una zona per selezionarla · doppio clic per dividerla · trascina i divisori
 %1 di %2 zone
-KDE Snap Layout – Editor delle impostazioni
-per KWin · v%1
+SeaQ Snap Layout – Editor delle impostazioni
+per KDE · v%1
 Generale
 Aspetto
 Comportamento e animazione
@@ -82,7 +82,7 @@ Elimina
 Come funziona
 Afferra una finestra dalla barra del titolo e trascinala verso l’alto. La barra scende; rilascia la finestra su una zona e occuperà esattamente quell’area. Trascinala di nuovo via e riprende la sua dimensione precedente.
 Aprire l’editor delle impostazioni
-Impostazioni di sistema → Gestione delle finestre → Script KWin → icona a ingranaggio accanto a «KDE Snap Layout» → «Apri l’editor delle impostazioni di Snap Layout» → OK.
+Impostazioni di sistema → Gestione delle finestre → Script KWin → icona a ingranaggio accanto a «SeaQ Snap Layout» → «Apri l’editor delle impostazioni di Snap Layout» → OK.
 Informazioni
 Versione
 Autore
@@ -102,8 +102,8 @@ Salva
 Sì
 Zona %1
 Rilascia la finestra su una zona
-KDE Snap Layout: attiva/disattiva
-KDE Snap Layout: prova la barra
+SeaQ Snap Layout: attiva/disattiva
+SeaQ Snap Layout: prova la barra
 Metà
 Due terzi
 Tre colonne
@@ -122,3 +122,146 @@ Apri l’editor delle impostazioni di Snap Layout
 Impostazioni rapide
 Colori della barra:
 Tutte le altre impostazioni – aspetto, dimensione, animazione, comportamento e i tuoi layout – si modificano nell’editor delle impostazioni di Snap Layout.
+Impostazioni
+Nessuna
+Modifica
+Combinazioni comuni
+La tua combinazione
+Imposta
+Rimuovi
+Barra di aggancio
+Bordi dello schermo
+Altri modi per agganciare
+Magnete delle finestre
+Scorciatoie da tastiera
+Scorciatoie
+Quattro modi per agganciare le finestre. Ognuno si attiva e disattiva da solo.
+Funzioni
+Spingi una finestra contro un bordo o un angolo: massimizza, metà, quarti.
+Le finestre si attaccano tra loro e ai bordi dello schermo.
+Aggancia la finestra attiva con combinazioni di tasti.
+Anteprime
+Mostra le anteprime nel colore di risalto
+Disattivato: una cornice neutra. Vale per tutte le anteprime.
+Classi di finestre che non vengono mai agganciate, una per riga.
+KDE ha le sue azioni dei bordi dello schermo e il suo aggancio delle finestre. Se qui è attiva la stessa funzione, disattiva quella di KDE: Impostazioni di sistema → Gestione delle finestre → Bordi dello schermo e Comportamento delle finestre → Spostamento.
+Spingi una finestra contro un bordo o un angolo dello schermo e riempirà quella parte. Funziona con o senza la barra di aggancio.
+Schermo intero
+Metà superiore
+Disattivato
+Metà inferiore
+Metà sinistra
+Metà destra
+Bordi e angoli
+Usa i bordi dello schermo
+Indipendente dalla barra di aggancio. Ogni bordo si attiva da solo.
+Bordo superiore
+Bordi sinistro e destro: metà schermo
+Bordo inferiore: metà inferiore
+Angoli: un quarto dello schermo
+Riempimento intelligente
+Adattati alle finestre già agganciate
+Se c’è una finestra in basso, il bordo superiore dà la metà superiore invece di massimizzare. Anche metà e quarti lasciano libere le finestre agganciate.
+Sensazione
+Distanza dal bordo
+Quanto il cursore deve avvicinarsi al bordo.
+Ritardo di spinta
+Quanto a lungo la finestra deve restare contro il bordo: una piccola spinta. 0 = subito.
+Dimensione degli angoli
+Parte di ogni lato che conta come angolo.
+Le azioni dei bordi dello schermo di KDE sono ancora attive, quindi due aiuti reagiscono allo stesso trascinamento. Disattiva «Massimizza» e «Affianca» in Impostazioni di sistema → Gestione delle finestre → Bordi dello schermo.
+Mentre sposti o ridimensioni una finestra, i suoi bordi si attaccano alle finestre vicine e ai bordi dello schermo.
+Magnete
+Usa il magnete delle finestre
+Indipendente dalla barra di aggancio e dai bordi dello schermo.
+Distanza di aggancio
+Quanto deve avvicinarsi un bordo prima di scattare in posizione.
+Attacca alle altre finestre
+Attacca ai bordi dello schermo
+Anche durante il ridimensionamento
+Mantieni lo spazio tra le finestre
+Le finestre si fermano allo «Spazio tra le finestre» della pagina Generale invece di toccarsi.
+Anche l’aggancio delle finestre di KDE è attivo. Per un comportamento uniforme, imposta le sue zone su «Nessuna» in Impostazioni di sistema → Gestione delle finestre → Comportamento delle finestre → Spostamento.
+Aggancia la finestra attiva con la tastiera. Sono normali scorciatoie globali di KDE: le trovi anche in Impostazioni di sistema → Scorciatoie → KWin.
+Usa le scorciatoie da tastiera
+Disattivato: i tasti restano assegnati ma non fanno nulla.
+Schema dei tasti
+Imposta i tasti di tutte le azioni in una volta. Sotto puoi ancora cambiare i singoli tasti.
+Applica
+Il servizio delle scorciatoie di KDE non ha risposto. Puoi comunque impostare i tasti in Impostazioni di sistema → Scorciatoie → KWin.
+Tasti già in uso
+%1 è usato da «%2».
+Richiesto per: %1
+Prendilo
+Prendili tutti
+Lasciali
+Buono a sapersi
+Le azioni di aggancio usano gli stessi spazi della barra e ricordano la dimensione prima dell’aggancio: «Ripristina la dimensione prima dell’aggancio» la riporta.
+SeaQ Snap Layout: %1
+Aggancia alla metà sinistra
+Aggancia alla metà destra
+Aggancia alla metà superiore
+Aggancia alla metà inferiore
+Aggancia al quarto in alto a sinistra
+Aggancia al quarto in alto a destra
+Aggancia al quarto in basso a sinistra
+Aggancia al quarto in basso a destra
+Aggancia al terzo sinistro
+Aggancia al terzo centrale
+Aggancia al terzo destro
+Aggancia ai due terzi a sinistra
+Aggancia ai due terzi a destra
+Massimizza o ripristina
+Centra la finestra
+Ripristina la dimensione prima dell’aggancio
+Barra di aggancio sì/no
+Bordi dello schermo sì/no
+Magnete delle finestre sì/no
+Prova la barra di aggancio
+Quarti
+Terzi
+Finestra
+Ctrl+Alt + tasto (predefinito)
+Meta+Ctrl+Alt + tasto
+Meta + tasto (stile KDE)
+Meta+Maiusc + tasto
+Ctrl+Maiusc+Alt + tasto
+Ctrl+Alt + tastierino numerico
+Nessuna scorciatoia
+Fai clic, poi OK – si apre l'editor delle impostazioni.
+Resistenza alla sovrapposizione
+Quanto devi spingere una finestra dentro un'altra prima che la lasci andare. 0 = le finestre possono sovrapporsi liberamente.
+Ripristina predefinito
+Ripristina tutti i tasti
+Ridà a ogni azione il tasto dello schema scelto e rimuove i tasti che lo schema non ha.
+Ripristina tutto
+Bordi adesivi
+Ridimensiona insieme le finestre che si toccano
+Quando ridimensioni una finestra, quelle che la toccano spostano il bordo in comune con lei – nulla si sovrappone, nessuno spazio vuoto.
+Mantieni allineate le finestre impilate
+Le finestre una sopra l'altra tengono insieme i bordi sinistro e destro, quelle affiancate i bordi superiore e inferiore.
+Scuoti per staccare
+Scuoti il mouse durante il ridimensionamento e le altre finestre tornano indietro.
+Attenua le altre finestre
+Durante il ridimensionamento, le finestre che non seguono sono mostrate trasparenti.
+Anteprima della barra
+Mostra dove arriva la finestra mentre una zona della barra è evidenziata. Disattivato: nessuna anteprima.
+Anteprima dei bordi dello schermo
+Mostra dove arriva la finestra su un bordo o un angolo. Disattivato: nessuna anteprima.
+Disattivato: una cornice neutra – solo per le anteprime attivate.
+Sospendi l'affiancamento ai bordi di KDE e la sua anteprima
+Disattivalo se preferisci il contorno di KDE – poi disattiva sopra l'anteprima dei bordi.
+Tieni premuto per riempire
+Tieni al bordo per riempire lo spazio libero
+Una breve spinta dà la metà o il quarto. Tieni la finestra al bordo un po' più a lungo e cresce fino alla finestra successiva – l'anteprima lo mostra.
+Tempo di attesa
+Quanto a lungo la finestra deve restare al bordo prima di crescere.
+Affiancamento ai bordi di KDE
+Massimizza e affianca di KDE ai bordi dello schermo – con il suo contorno – sono sospesi mentre SeaQ Snap Layout è attivo, così appare una sola anteprima. Le impostazioni di KDE non cambiano: disattiva questa opzione, disattiva o rimuovi SeaQ Snap Layout e torna il comportamento di KDE.
+Aggancio delle finestre di KDE
+Sospendi le zone di aggancio di KDE mentre il magnete è attivo
+Così un solo magnete tira una finestra. Le impostazioni di KDE non cambiano: disattiva questa opzione, disattiva o rimuovi SeaQ Snap Layout e torna l'aggancio di KDE.
+Sostieni SeaQ Snap Layout
+Se ti piace SeaQ Snap Layout, puoi sostenerne lo sviluppo – grazie!
+Dona con PayPal
+Offrimi un caffè

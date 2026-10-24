@@ -9,8 +9,8 @@ Ukloni zonu
 Učitaj predložak…
 Kliknite zonu za odabir · dvostruki klik je dijeli · povucite razdjelnike
 %1 od %2 zona
-KDE Snap Layout – Uređivač postavki
-za KWin · v%1
+SeaQ Snap Layout – Uređivač postavki
+za KDE · v%1
 Općenito
 Izgled
 Ponašanje i animacija
@@ -82,7 +82,7 @@ Izbriši
 Kako radi
 Uhvatite prozor za naslovnu traku i povucite ga prema gore. Traka se spušta; ispustite prozor na zonu i on ispuni točno to područje. Kad ga ponovno izvučete, vraća mu se stara veličina.
 Otvaranje uređivača postavki
-Postavke sustava → Upravljanje prozorima → KWin skripte → ikona zupčanika pored „KDE Snap Layout” → „Otvori uređivač postavki Snap Layouta” → U redu.
+Postavke sustava → Upravljanje prozorima → KWin skripte → ikona zupčanika pored „SeaQ Snap Layout” → „Otvori uređivač postavki Snap Layouta” → U redu.
 Informacije
 Verzija
 Autor
@@ -102,8 +102,8 @@ Spremi
 Da
 Zona %1
 Ispustite prozor na zonu
-KDE Snap Layout: uključi/isključi
-KDE Snap Layout: isprobaj traku
+SeaQ Snap Layout: uključi/isključi
+SeaQ Snap Layout: isprobaj traku
 Polovice
 Dvije trećine
 Tri stupca
@@ -122,3 +122,146 @@ Otvori uređivač postavki Snap Layouta
 Brze postavke
 Boje trake:
 Sve ostale postavke – izgled, veličinu, animaciju, ponašanje i vlastite rasporede – mijenjate u uređivaču postavki Snap Layouta.
+Postavke
+Nijedna
+Promijeni
+Uobičajene kombinacije
+Vlastita kombinacija
+Postavi
+Ukloni
+Traka za prianjanje
+Rubovi zaslona
+Više načina prianjanja
+Magnet prozora
+Tipkovnički prečaci
+Prečaci
+Četiri načina za prianjanje prozora. Svaki se može zasebno uključiti i isključiti.
+Značajke
+Pritisnite prozor uz rub ili kut: maksimiziraj, polovice, četvrtine.
+Prozori se lijepe jedan uz drugi i uz rubove zaslona.
+Prilijepite aktivni prozor kombinacijama tipki.
+Pretpregledi
+Prikaži pretpreglede u boji isticanja
+Isključeno: neutralan okvir. Vrijedi za sve pretpreglede.
+Klase prozora koje se nikad ne prilijepe, jedna po retku.
+KDE ima vlastite radnje rubova zaslona i vlastito prianjanje prozora. Ako je ovdje uključena ista značajka, isključite KDE-ovu: Postavke sustava → Upravljanje prozorima → Rubovi zaslona te Ponašanje prozora → Pomicanje.
+Pritisnite prozor uz rub ili kut zaslona i on ispuni taj dio. Radi s trakom ili bez nje.
+Cijeli zaslon
+Gornja polovica
+Isključeno
+Donja polovica
+Lijeva polovica
+Desna polovica
+Rubovi i kutovi
+Koristi rubove zaslona
+Neovisno o traci. Svaki rub može se zasebno uključiti.
+Gornji rub
+Lijevi i desni rub: pola zaslona
+Donji rub: donja polovica
+Kutovi: četvrtina zaslona
+Pametno popunjavanje
+Prilagodi se već prilijepljenim prozorima
+Ako je dolje već prozor, gornji rub daje gornju polovicu umjesto maksimiziranja. I polovice i četvrtine ostavljaju prilijepljene prozore slobodnima.
+Osjećaj
+Udaljenost od ruba
+Koliko blizu rubu pokazivač mora doći.
+Odgoda pritiska
+Koliko dugo prozor mora biti uz rub – mali potisak. 0 = odmah.
+Veličina kutova
+Dio svake stranice koji se računa kao kut.
+KDE-ove vlastite radnje rubova zaslona još su uključene pa na isto povlačenje reagiraju dva pomoćnika. Isključite „Maksimiziraj” i „Popločaj” u Postavke sustava → Upravljanje prozorima → Rubovi zaslona.
+Dok pomičete prozor ili mu mijenjate veličinu, njegovi se rubovi lijepe uz obližnje prozore i rubove zaslona.
+Magnet
+Koristi magnet prozora
+Neovisno o traci i rubovima zaslona.
+Udaljenost prianjanja
+Koliko blizu rub mora doći prije nego što sjedne na mjesto.
+Lijepi se uz druge prozore
+Lijepi se uz rubove zaslona
+I pri promjeni veličine
+Zadrži razmak između prozora
+Prozori se zaustave na „Razmak između prozora” sa stranice Općenito umjesto da se dodiruju.
+I KDE-ovo vlastito prianjanje prozora je uključeno. Za ujednačen osjećaj postavite njegove zone na „Nijedna” u Postavke sustava → Upravljanje prozorima → Ponašanje prozora → Pomicanje.
+Prilijepite aktivni prozor tipkovnicom. To su obični globalni KDE prečaci – nalaze se i u Postavke sustava → Prečaci → KWin.
+Koristi tipkovničke prečace
+Isključeno: tipke ostaju dodijeljene, ali ništa ne rade.
+Shema tipki
+Postavlja tipke svih radnji odjednom. Pojedinačne tipke i dalje možete mijenjati ispod.
+Primijeni
+KDE-ova usluga prečaca nije odgovorila. Tipke i dalje možete postaviti u Postavke sustava → Prečaci → KWin.
+Tipke koje se već koriste
+%1 koristi „%2”.
+Željeno za: %1
+Preuzmi
+Preuzmi sve
+Zadrži ih
+Dobro je znati
+Radnje prianjanja koriste iste razmake kao traka i pamte veličinu prije prianjanja: „Vrati veličinu prije prianjanja” je vraća.
+SeaQ Snap Layout: %1
+Prilijepi u lijevu polovicu
+Prilijepi u desnu polovicu
+Prilijepi u gornju polovicu
+Prilijepi u donju polovicu
+Prilijepi u gornju lijevu četvrtinu
+Prilijepi u gornju desnu četvrtinu
+Prilijepi u donju lijevu četvrtinu
+Prilijepi u donju desnu četvrtinu
+Prilijepi u lijevu trećinu
+Prilijepi u srednju trećinu
+Prilijepi u desnu trećinu
+Prilijepi u lijeve dvije trećine
+Prilijepi u desne dvije trećine
+Maksimiziraj ili vrati
+Centriraj prozor
+Vrati veličinu prije prianjanja
+Traka uklj./isklj.
+Rubovi zaslona uklj./isklj.
+Magnet prozora uklj./isklj.
+Isprobaj traku
+Četvrtine
+Trećine
+Prozor
+Ctrl+Alt + tipka (zadano)
+Meta+Ctrl+Alt + tipka
+Meta + tipka (KDE stil)
+Meta+Shift + tipka
+Ctrl+Shift+Alt + tipka
+Ctrl+Alt + numerička tipkovnica
+Bez prečaca
+Kliknite, zatim U redu – otvara se uređivač postavki.
+Otpor preklapanju
+Koliko duboko morate gurnuti prozor u drugi prije nego što ga pusti. 0 = prozori se mogu slobodno preklapati.
+Vrati na zadano
+Vrati sve tipke
+Svakoj radnji ponovno daje tipku odabrane sheme i uklanja tipke koje shema nema.
+Vrati sve
+Ljepljivi rubovi
+Mijenjaj veličinu prozora koji se dodiruju zajedno
+Kada mijenjate veličinu prozora, prozori koji ga dodiruju pomiču zajednički rub s njim – ništa se ne preklapa, ne nastaje praznina.
+Drži složene prozore u liniji
+Prozori jedan iznad drugoga drže lijeve i desne rubove zajedno, prozori jedan uz drugi gornje i donje.
+Protresi za otpuštanje
+Protresite miš tijekom promjene veličine i ostali prozori se vraćaju.
+Zatamni ostale prozore
+Tijekom promjene veličine prozori koji ne prate prikazuju se prozirno.
+Pregled trake za pričvršćivanje
+Pokazuje gdje prozor slijeće dok je zona trake istaknuta. Isključeno: nikakav pregled.
+Pregled rubova zaslona
+Pokazuje gdje prozor slijeće na rubu ili u kutu. Isključeno: nikakav pregled.
+Isključeno: neutralan okvir – samo za uključene preglede.
+Pauziraj KDE-ovo slaganje uz rubove i njegov pregled
+Isključite ako vam je draži KDE-ov obris – tada gore isključite pregled rubova zaslona.
+Drži za popunjavanje
+Drži uz rub za popunjavanje slobodnog prostora
+Kratko guranje daje polovicu ili četvrtinu. Zadržite prozor uz rub malo duže i naraste do sljedećeg prozora – pregled to pokazuje.
+Vrijeme držanja
+Koliko dugo prozor mora ostati uz rub prije nego naraste.
+KDE-ovo vlastito slaganje uz rubove
+KDE-ovo maksimiziranje i slaganje uz rubove zaslona – s obrisom – pauzira dok radi SeaQ Snap Layout, pa se pojavljuje samo jedan pregled. Vaše KDE postavke se ne mijenjaju: isključite ovo, onemogućite ili uklonite SeaQ Snap Layout i KDE-ovo ponašanje se vraća.
+KDE-ovo vlastito pričvršćivanje prozora
+Pauziraj KDE-ove zone pričvršćivanja dok je magnet uključen
+Da samo jedan magnet vuče prozor. Vaše KDE postavke se ne mijenjaju: isključite ovo, onemogućite ili uklonite SeaQ Snap Layout i KDE-ovo pričvršćivanje se vraća.
+Podržite SeaQ Snap Layout
+Ako vam se sviđa SeaQ Snap Layout, možete podržati njegov razvoj – hvala!
+Donirajte putem PayPala
+Častite me kavom

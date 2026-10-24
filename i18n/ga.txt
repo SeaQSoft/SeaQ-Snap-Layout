@@ -9,8 +9,8 @@ Bain an crios
 Luchtaigh teimpléad…
 Cliceáil ar chrios chun é a roghnú · cliceáil faoi dhó chun é a roinnt · tarraing na deighilteoirí
 %1 as %2 crios
-KDE Snap Layout – Eagarthóir socruithe
-do KWin · v%1
+SeaQ Snap Layout – Eagarthóir socruithe
+do KDE · v%1
 Ginearálta
 Cuma
 Iompar agus beochan
@@ -82,7 +82,7 @@ Scrios
 Conas a oibríonn sé
 Beir ar fhuinneog ag a barra teidil agus tarraing suas í. Sleamhnaíonn an barra síos; scaoil an fhuinneog ar chrios agus líonfaidh sí an limistéar sin go díreach. Má tharraingíonn tú amach arís í, gheobhaidh sí a seanmhéid ar ais.
 An t-eagarthóir socruithe a oscailt
-Socruithe an Chórais → Bainistíocht Fuinneog → Scripteanna KWin → deilbhín an fhearais in aice le “KDE Snap Layout” → “Oscail eagarthóir socruithe Snap Layout” → OK.
+Socruithe an Chórais → Bainistíocht Fuinneog → Scripteanna KWin → deilbhín an fhearais in aice le “SeaQ Snap Layout” → “Oscail eagarthóir socruithe Snap Layout” → OK.
 Faisnéis
 Leagan
 Údar
@@ -102,8 +102,8 @@ Sábháil
 Tá
 Crios %1
 Scaoil an fhuinneog ar chrios
-KDE Snap Layout: cas air/as
-KDE Snap Layout: tástáil an barra
+SeaQ Snap Layout: cas air/as
+SeaQ Snap Layout: tástáil an barra
 Leatha
 Dhá thrian
 Trí cholún
@@ -122,3 +122,146 @@ Oscail eagarthóir socruithe Snap Layout
 Socruithe tapa
 Dathanna an bharra:
 Athraítear gach socrú eile – cuma, méid, beochan, iompar agus do leagain amach féin – in eagarthóir socruithe Snap Layout.
+Socruithe
+Dada
+Athraigh
+Teaglaim choitianta
+Do theaglaim féin
+Socraigh
+Bain
+Barra greamaithe
+Imill an scáileáin
+Tuilleadh bealaí le greamú
+Maighnéad fuinneog
+Aicearraí méarchláir
+Aicearraí
+Ceithre bhealach le fuinneoga a ghreamú. Is féidir gach ceann a chasadh air agus as ar leith.
+Gnéithe
+Brúigh fuinneog in aghaidh imill nó cúinne: uasmhéadú, leatha, ceathrúna.
+Greamaíonn fuinneoga dá chéile agus d’imill an scáileáin.
+Greamaigh an fhuinneog ghníomhach le teaglaim eochracha.
+Réamhamhairc
+Taispeáin réamhamhairc sa dath aibhsithe
+As: fráma neodrach. Baineann sé le gach réamhamharc.
+Aicmí fuinneog nach ngreamaítear riamh, ceann amháin in aghaidh na líne.
+Tá a ghníomhartha féin d’imill an scáileáin agus a ghreamú fuinneog féin ag KDE. Má tá an ghné chéanna air anseo, cas as gné KDE: Socruithe an Chórais → Bainistíocht Fuinneog → Imill an Scáileáin, agus Iompar Fuinneog → Bogadh.
+Brúigh fuinneog in aghaidh imill nó cúinne den scáileán agus líonfaidh sí an chuid sin. Oibríonn sé leis an mbarra greamaithe nó gan é.
+Lánscáileán
+An leath uachtarach
+As
+An leath íochtarach
+An leath clé
+An leath dheis
+Imill agus cúinní
+Úsáid imill an scáileáin
+Neamhspleách ar an mbarra greamaithe. Is féidir gach imeall a chasadh air ar leith.
+Imeall uachtarach
+Imeall clé agus deas: leath an scáileáin
+Imeall íochtarach: an leath íochtarach
+Cúinní: ceathrú den scáileán
+Líonadh cliste
+Oiriúnaigh do fhuinneoga atá greamaithe cheana
+Má tá fuinneog ag an mbun cheana, tugann an t-imeall uachtarach an leath uachtarach in ionad uasmhéadú. Fágann leatha agus ceathrúna fuinneoga greamaithe saor freisin.
+Mothú
+Fad ón imeall
+Cé chomh gar don imeall a chaithfidh an cúrsóir teacht.
+Moill bhrú
+Cé chomh fada a chaithfidh an fhuinneog fanacht leis an imeall – brú beag. 0 = láithreach.
+Méid na gcúinní
+An chuid de gach taobh a chomhairtear mar chúinne.
+Tá gníomhartha imill scáileáin KDE féin fós air, mar sin freagraíonn dhá chúntóir don tarraingt chéanna. Cas as „Uasmhéadaigh” agus „Tíl” in Socruithe an Chórais → Bainistíocht Fuinneog → Imill an Scáileáin.
+Fad is a bhogann tú nó a athraíonn tú méid fuinneoige, greamaíonn a himill d’fhuinneoga in aice láimhe agus d’imill an scáileáin.
+Maighnéad
+Úsáid an maighnéad fuinneog
+Neamhspleách ar an mbarra greamaithe agus ar imill an scáileáin.
+Fad greamaithe
+Cé chomh gar a chaithfidh imeall teacht sula léimeann sé ina áit.
+Greamaigh d’fhuinneoga eile
+Greamaigh d’imill an scáileáin
+Agus méid á athrú freisin
+Coinnigh an bhearna idir fuinneoga
+Stopann fuinneoga ag „Bearna idir fuinneoga” ón leathanach Ginearálta in ionad teagmháil a dhéanamh.
+Tá greamú fuinneog KDE féin air freisin. Le haghaidh mothú comhsheasmhach, socraigh a chriosanna go „Dada” in Socruithe an Chórais → Bainistíocht Fuinneog → Iompar Fuinneog → Bogadh.
+Greamaigh an fhuinneog ghníomhach leis an méarchlár. Is gnáth-aicearraí domhanda KDE iad seo – gheobhaidh tú iad freisin in Socruithe an Chórais → Aicearraí → KWin.
+Úsáid aicearraí méarchláir
+As: fanann na heochracha sannta ach ní dhéanann siad faic.
+Scéim eochracha
+Socraíonn sé eochracha gach gnímh in éineacht. Is féidir leat eochracha aonair a athrú thíos fós.
+Cuir i bhfeidhm
+Níor fhreagair seirbhís aicearraí KDE. Is féidir leat na heochracha a shocrú fós in Socruithe an Chórais → Aicearraí → KWin.
+Eochracha in úsáid cheana
+Tá %1 in úsáid ag „%2”.
+Teastaíonn sé do: %1
+Glac é
+Glac iad go léir
+Fág iad
+Is maith a fhios
+Úsáideann na gníomhartha greamaithe na bearnaí céanna leis an mbarra agus cuimhníonn siad ar an méid roimh an ngreamú: tugann „Athchóirigh an méid roimh ghreamú” ar ais é.
+SeaQ Snap Layout: %1
+Greamaigh sa leath clé
+Greamaigh sa leath dheis
+Greamaigh sa leath uachtarach
+Greamaigh sa leath íochtarach
+Greamaigh sa cheathrú uachtarach chlé
+Greamaigh sa cheathrú uachtarach dheis
+Greamaigh sa cheathrú íochtarach chlé
+Greamaigh sa cheathrú íochtarach dheis
+Greamaigh sa trian clé
+Greamaigh sa trian láir
+Greamaigh sa trian deas
+Greamaigh sa dá thrian ar chlé
+Greamaigh sa dá thrian ar dheis
+Uasmhéadaigh nó athchóirigh
+Láraigh an fhuinneog
+Athchóirigh an méid roimh ghreamú
+Barra greamaithe air/as
+Imill an scáileáin air/as
+Maighnéad fuinneog air/as
+Tástáil an barra greamaithe
+Ceathrúna
+Trianta
+Fuinneog
+Ctrl+Alt + eochair (réamhshocrú)
+Meta+Ctrl+Alt + eochair
+Meta + eochair (stíl KDE)
+Meta+Shift + eochair
+Ctrl+Shift+Alt + eochair
+Ctrl+Alt + eochaircheap uimhriúil
+Gan aicearraí
+Cliceáil, ansin OK – osclaítear eagarthóir na socruithe.
+Friotaíocht in aghaidh forluí
+Cé chomh fada is gá fuinneog a bhrú isteach i gceann eile sula scaoileann sí. 0 = is féidir le fuinneoga forluí go saor.
+Athshocraigh go réamhshocrú
+Athshocraigh na heochracha go léir
+Tugann sé eochair na scéime roghnaithe do gach gníomh arís agus baineann sé eochracha nach bhfuil sa scéim.
+Athshocraigh gach rud
+Imill ghreamaitheacha
+Athraigh méid na bhfuinneog a theagmhaíonn le chéile in éineacht
+Nuair a athraíonn tú méid fuinneoige, bogann na fuinneoga a theagmhaíonn léi an t-imeall comhroinnte léi – ní fhorluíonn aon rud, ní osclaítear bearna.
+Coinnigh fuinneoga cruachta ar líne
+Coinníonn fuinneoga os cionn a chéile a n-imill chlé agus dheis le chéile, agus fuinneoga taobh le taobh a n-imill bharr agus bhun.
+Croith chun scaoileadh
+Croith an luch agus an méid á athrú agus léimeann na fuinneoga eile ar ais.
+Maolaigh na fuinneoga eile
+Agus an méid á athrú, taispeántar go trédhearcach fuinneoga nach leanann.
+Réamhamharc an bharra ghreamaithe
+Taispeánann sé cá dtiocfaidh an fhuinneog fad atá crios den bharra aibhsithe. As: gan réamhamharc ar bith.
+Réamhamharc imill an scáileáin
+Taispeánann sé cá dtiocfaidh an fhuinneog ag imeall nó cúinne. As: gan réamhamharc ar bith.
+As: fráma neodrach – do na réamhamhairc atá ar siúl amháin.
+Cuir tíleáil imill KDE agus a réamhamharc ar sos
+Múch é seo más fearr leat imlíne KDE féin – ansin múch réamhamharc imill an scáileáin thuas.
+Coinnigh chun líonadh
+Coinnigh ag an imeall chun an spás saor a líonadh
+Tugann brú gearr an leath nó an ceathrú. Coinnigh an fhuinneog ag an imeall beagán níos faide agus fásann sí go dtí an chéad fhuinneog eile – taispeánann an réamhamharc é.
+Am coinneála
+Cé chomh fada is gá don fhuinneog fanacht ag an imeall sula bhfásann sí.
+Tíleáil imill KDE féin
+Tá uasmhéadú agus tíleáil KDE ag imill an scáileáin – lena n-imlíne – ar sos fad atá SeaQ Snap Layout ag rith, ionas nach dtaispeántar ach réamhamharc amháin. Ní athraítear do shocruithe KDE: múch é seo, díchumasaigh nó bain SeaQ Snap Layout agus tá iompar KDE ar ais.
+Greamú fuinneog KDE féin
+Cuir criosanna greamaithe KDE ar sos fad atá an maighnéad ar siúl
+Ionas nach dtarraingíonn ach maighnéad amháin fuinneog. Ní athraítear do shocruithe KDE: múch é seo, díchumasaigh nó bain SeaQ Snap Layout agus tá greamú KDE ar ais.
+Tacaigh le SeaQ Snap Layout
+Más maith leat SeaQ Snap Layout, is féidir leat tacú lena fhorbairt – go raibh maith agat!
+Deonaigh le PayPal
+Ceannaigh caife dom

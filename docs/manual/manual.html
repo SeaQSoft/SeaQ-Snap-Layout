@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>KDE Snap Layout – User Manual</title>
+<title>SeaQ Snap Layout – User Manual</title>
 <script src="assets/snap.js"></script>
 <style>
 @page { size: A4; margin: 0; }
@@ -92,6 +92,23 @@ td.r, th.r { width: 17%; white-space: nowrap; color: var(--muted); }
 .curve { display: grid; grid-template-columns: repeat(6, 1fr); gap: 2.5mm; margin: 0 0 4mm; }
 .curve div { border: 1px solid var(--line); border-radius: 2.5mm; padding: 2mm; text-align: center; font-size: 8.4pt; font-weight: 600; }
 .curve div span { display: block; font-weight: 400; color: var(--muted); font-size: 7.6pt; }
+
+/* 1.9.0 figures */
+.scr { position: relative; background: linear-gradient(135deg,#1b3d6e,#2d6aa8); border-radius: 2.5mm; }
+.scr .z { position: absolute; border: .35mm solid rgba(255,255,255,.55); background: rgba(255,255,255,.12); border-radius: 1.2mm;
+          color: #fff; font-size: 8pt; font-weight: 600; display: grid; place-items: center; text-align: center; line-height: 1.2; }
+.scr .w { position: absolute; background: #eef1f5; border-radius: 1mm; box-shadow: 0 1mm 2mm rgba(0,0,0,.25); }
+.scr .w:before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 2.2mm; background: #b9c2cf; border-radius: 1mm 1mm 0 0; }
+.scr .pv { position: absolute; border: .5mm solid #7cd0ff; background: rgba(61,174,233,.35); border-radius: 1mm; }
+.scr .cur { position: absolute; font-size: 11pt; color: #fff; text-shadow: 0 0 1mm #000; }
+.figcap { font-size: 8.4pt; color: var(--muted); text-align: center; margin: 1.5mm 0 0; }
+.keys td:first-child { width: 40%; }
+.keys td { padding: .8mm 3mm; font-size: 8pt; }
+.keys kbd { font-size: 8pt; padding: 0 1.2mm; }
+.grp td { background: var(--soft) !important; font-weight: 700; color: var(--blue) !important; font-size: 7.4pt; letter-spacing: 1px; text-transform: uppercase; padding: .6mm 3mm; }
+.tight td { padding: 1.1mm 2.5mm; font-size: 8.2pt; }
+.tight th { padding: 1.4mm 2.5mm; }
+.dv td:first-child { width: 60%; }
 </style>
 </head>
 <body>
@@ -108,20 +125,20 @@ td.r, th.r { width: 17%; white-space: nowrap; color: var(--muted); }
     <span style="width:10mm;height:.6mm;background:#7cd0ff"></span>User manual</div>
   <div style="position:absolute;left:20mm;top:44mm;width:34mm;height:34mm;border-radius:9mm;background:rgba(255,255,255,.12);display:grid;place-items:center;box-shadow:0 6mm 16mm rgba(0,0,0,.35)">
     <img src="assets/icon.svg" style="width:28mm"></div>
-  <h1 style="position:absolute;left:20mm;top:88mm;color:#fff;font-size:44pt;letter-spacing:-2px;margin:0">KDE Snap<br>Layout</h1>
-  <p style="position:absolute;left:20mm;top:136mm;width:120mm;color:rgba(255,255,255,.85);font-size:14pt;line-height:1.45;margin:0">Snap layouts for KDE Plasma 6.<br>Drag a window to the top edge, drop it onto a zone – done.</p>
+  <h1 style="position:absolute;left:20mm;top:88mm;color:#fff;font-size:44pt;letter-spacing:-2px;margin:0">SeaQ Snap<br>Layout</h1>
+  <p style="position:absolute;left:20mm;top:136mm;width:120mm;color:rgba(255,255,255,.85);font-size:14pt;line-height:1.45;margin:0">Snap layouts for KDE Plasma 6.<br>Snap bar, screen edges, window magnet and keyboard shortcuts.</p>
   <div id="coverbar" style="position:absolute;left:20mm;right:20mm;top:172mm;height:82mm;border-radius:5mm;overflow:hidden;box-shadow:0 8mm 20mm rgba(0,0,0,.45);border:.3mm solid rgba(255,255,255,.18)">
     <img src="assets/hero.png" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block"></div>
   <div style="position:absolute;left:20mm;right:20mm;bottom:16mm;display:flex;justify-content:space-between;align-items:flex-end;color:rgba(255,255,255,.8);font-size:9pt;line-height:1.6">
-    <div><b style="color:#fff">Version 1.6.5</b><br>KWin script for Plasma 6 · Wayland &amp; X11</div>
-    <div style="text-align:right"><b style="color:#fff">Swenix-dev</b><br>github.com/Swenix-dev/KDE-Snap-Layout</div></div>
+    <div><b style="color:#fff">Version 1.9.0</b><br>KWin script for Plasma 6 · Wayland &amp; X11</div>
+    <div style="text-align:right"><b style="color:#fff">SeaQ</b><br>github.com/Swenix-dev/KDE-Snap-Layout</div></div>
 </section>
 
 <!-- ======================================================== CONTENTS -->
 <section class="page">
-  <div class="hdr"><span><b>KDE Snap Layout</b> · User manual</span><span>Contents</span></div>
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · User manual</span><span>Contents</span></div>
   <h1>Contents</h1>
-  <p class="lead">Everything KDE Snap Layout can do, page by page – from the first snap to your own layouts.</p>
+  <p class="lead">Everything SeaQ Snap Layout can do, page by page – from the first snap to your own layouts.</p>
   <ul class="toc">
     <li><span class="nb">1</span>Introduction<span class="dots"></span><span class="pg">3</span></li>
     <li><span class="nb">2</span>The snap bar at a glance<span class="dots"></span><span class="pg">4</span></li>
@@ -129,12 +146,13 @@ td.r, th.r { width: 17%; white-space: nowrap; color: var(--muted); }
     <li><span class="nb">4</span>Quick start – your first snap<span class="dots"></span><span class="pg">6</span></li>
     <li><span class="nb">5</span>Opening the settings<span class="dots"></span><span class="pg">7</span></li>
     <li><span class="nb">6</span>The settings editor<span class="dots"></span><span class="pg">8</span></li>
-    <li class="sub">6.1 General · 6.2 Appearance · 6.3 Behavior &amp; Animation</li>
-    <li class="sub">6.4 Layouts · 6.5 Layout designer · 6.6 About &amp; Help</li>
-    <li><span class="nb">7</span>Shortcuts &amp; languages<span class="dots"></span><span class="pg">16</span></li>
-    <li><span class="nb">8</span>Recommended values<span class="dots"></span><span class="pg">17</span></li>
-    <li><span class="nb">9</span>Troubleshooting &amp; FAQ<span class="dots"></span><span class="pg">18</span></li>
-    <li><span class="nb">10</span>Files, uninstalling &amp; license<span class="dots"></span><span class="pg">19</span></li>
+    <li class="sub">6.1 General · 6.2 Appearance · 6.3 Behavior &amp; Animation · 6.4 Layouts · 6.5 Layout designer</li>
+    <li class="sub">6.6 Screen edges · 6.7 Window magnet · 6.8 Keyboard shortcuts · 6.9 About &amp; Help</li>
+    <li><span class="nb">7</span>Key reference<span class="dots"></span><span class="pg">19</span></li>
+    <li><span class="nb">8</span>Languages<span class="dots"></span><span class="pg">20</span></li>
+    <li><span class="nb">9</span>Recommended values<span class="dots"></span><span class="pg">21</span></li>
+    <li><span class="nb">10</span>Troubleshooting &amp; FAQ<span class="dots"></span><span class="pg">22</span></li>
+    <li><span class="nb">11</span>Files, uninstalling &amp; license<span class="dots"></span><span class="pg">23</span></li>
   </ul>
   <h2 style="margin-top:12mm">How to read this manual</h2>
   <div class="cols">
@@ -149,31 +167,33 @@ td.r, th.r { width: 17%; white-space: nowrap; color: var(--muted); }
       <div class="box warn"><b class="t">Important</b>Read this before you continue.</div>
     </div>
   </div>
-  <div class="box note" style="margin-top:4mm"><b class="t">Screenshots</b>The pictures show the light Breeze color scheme in English. KDE Snap Layout always uses your own colors, window decoration and system language, so it may look slightly different on your desktop.</div>
-  <div class="ftr"><span>KDE Snap Layout 1.6.5</span><span class="pn">2</span></div>
+  <div class="box note" style="margin-top:4mm"><b class="t">Screenshots</b>The pictures show the light Breeze color scheme in English. SeaQ Snap Layout always uses your own colors, window decoration and system language, so it may look slightly different on your desktop.</div>
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">2</span></div>
 </section>
 
 <!-- ======================================================== 1 INTRO -->
 <section class="page">
-  <div class="hdr"><span><b>KDE Snap Layout</b> · User manual</span><span>1 · Introduction</span></div>
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · User manual</span><span>1 · Introduction</span></div>
   <div class="chap"><div class="no">1</div><div><div class="k">Chapter 1</div><h1 style="margin:0">Introduction</h1></div></div>
-  <p class="lead">KDE Snap Layout brings snap layouts to KDE Plasma 6. Drag a window towards the top edge of the screen, a bar with layouts slides down, and you drop the window onto the zone where it should go.</p>
+  <p class="lead">SeaQ Snap Layout brings snap layouts to KDE Plasma 6. Drag a window towards the top edge of the screen, a bar with layouts slides down, and you drop the window onto the zone where it should go. Since version 1.7 there are three more ways to snap – each one can be switched on and off on its own.</p>
   <img class="img" src="assets/hero.png">
   <div class="feat">
     <div><em>⇡</em><b>Drag, drop, done</b><span>No shortcuts to learn – it works with the mouse movement you already know.</span></div>
     <div><em>▦</em><b>Your own layouts</b><span>Six layouts ready to go, plus a designer for any split you like – up to 16 zones.</span></div>
     <div><em>◐</em><b>Fits your desktop</b><span>System, light or dark colors, any accent. The editor uses your color scheme, decoration and language.</span></div>
-    <div><em>⏱</em><b>Feels right</b><span>Distances, delays, slide speed and six motion curves – every detail can be tuned.</span></div>
-    <div><em>↺</em><b>Gets out of the way</b><span>Drag a snapped window out and it gets its old size back. Exclude apps you never want to snap.</span></div>
+    <div><em>⏱</em><b>Feels right</b><span>Distances, delays, slide speed and six motion curves – drag a snapped window out and it gets its old size back.</span></div>
+    <div><em>⇲</em><b>Screen edges</b><span>Push a window against an edge or corner: maximize, halves, quarters – and it fits around windows that are already snapped.</span></div>
+    <div><em>⊟</em><b>Window magnet</b><span>Windows stick to each other and to the screen edges while you move or resize them.</span></div>
+    <div><em>⌨</em><b>Keyboard shortcuts</b><span>20 actions – halves, quarters, thirds, maximize, center. Ready-made key schemes or your own keys.</span></div>
     <div><em>⚙</em><b>Pure KWin script</b><span>No extra program running in the background. Install from the KDE Store with two clicks.</span></div>
   </div>
   <div class="box note"><b class="t">What is a “zone”?</b>A layout splits the screen into areas, for example two halves or three columns. Each area is a zone. The snap bar shows every layout as a small picture of the screen; each rectangle in it is a zone you can drop a window onto.</div>
-  <div class="ftr"><span>KDE Snap Layout 1.6.5</span><span class="pn">3</span></div>
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">3</span></div>
 </section>
 
 <!-- ======================================================== 2 ANATOMY -->
 <section class="page">
-  <div class="hdr"><span><b>KDE Snap Layout</b> · User manual</span><span>2 · The snap bar at a glance</span></div>
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · User manual</span><span>2 · The snap bar at a glance</span></div>
   <div class="chap"><div class="no">2</div><div><div class="k">Chapter 2</div><h1 style="margin:0">The snap bar at a glance</h1></div></div>
   <p class="lead">The snap bar only appears while you move a window. It never takes space on your screen otherwise.</p>
   <div class="dark" id="anatomy" style="height:74mm;margin-bottom:3mm"></div>
@@ -189,14 +209,14 @@ td.r, th.r { width: 17%; white-space: nowrap; color: var(--muted); }
   <p>While a zone is highlighted, a translucent rectangle in the accent color shows on the desktop exactly where the window will land – including gaps and panels. Move away from the bar and the preview disappears.</p>
   <h2>Built-in layouts</h2>
   <img class="img" src="assets/out_gallery.png" style="width:86%;margin:0 auto 2mm">
-  <div class="ftr"><span>KDE Snap Layout 1.6.5</span><span class="pn">4</span></div>
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">4</span></div>
 </section>
 
 <!-- ======================================================== 3 INSTALL -->
 <section class="page">
-  <div class="hdr"><span><b>KDE Snap Layout</b> · User manual</span><span>3 · Installation</span></div>
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · User manual</span><span>3 · Installation</span></div>
   <div class="chap"><div class="no">3</div><div><div class="k">Chapter 3</div><h1 style="margin:0">Installation</h1></div></div>
-  <p class="lead">KDE Snap Layout is a KWin script. It installs into your home folder, needs no administrator rights and adds no background program.</p>
+  <p class="lead">SeaQ Snap Layout is a KWin script. It installs into your home folder, needs no administrator rights and adds no background program.</p>
   <table>
     <tr><th>Requirement</th><th>Details</th></tr>
     <tr><td>Desktop</td><td>KDE Plasma 6 (KWin 6) – Wayland or X11</td></tr>
@@ -206,30 +226,30 @@ td.r, th.r { width: 17%; white-space: nowrap; color: var(--muted); }
   <h2>Option A – KDE Store (recommended)</h2>
   <ol class="steps">
     <li>Open <span class="ui">System Settings</span> → <span class="ui">Window Management</span> → <span class="ui">KWin Scripts</span>.</li>
-    <li>Click <span class="ui">Get New…</span> at the top right, search for <b>KDE Snap Layout</b> and click <span class="ui">Install</span>.</li>
-    <li>Tick the checkbox next to <b>KDE Snap Layout</b> and click <span class="ui">Apply</span>.</li>
+    <li>Click <span class="ui">Get New…</span> at the top right, search for <b>SeaQ Snap Layout</b> and click <span class="ui">Install</span>.</li>
+    <li>Tick the checkbox next to <b>SeaQ Snap Layout</b> and click <span class="ui">Apply</span>.</li>
   </ol>
   <h2>Option B – file from GitHub</h2>
   <ol class="steps">
     <li>Download <code>kdesnaplayout-&lt;version&gt;.kwinscript</code> from the <b>Releases</b> page.</li>
     <li>In <span class="ui">KWin Scripts</span> click <span class="ui">Install from File…</span> and choose the file.</li>
-    <li>Tick <b>KDE Snap Layout</b> and click <span class="ui">Apply</span>.</li>
+    <li>Tick <b>SeaQ Snap Layout</b> and click <span class="ui">Apply</span>.</li>
   </ol>
   <h2>Option C – terminal</h2>
 <pre><span class="c"># install</span>
-kpackagetool6 --type KWin/Script --install kdesnaplayout-1.6.5.kwinscript
+kpackagetool6 --type KWin/Script --install kdesnaplayout-1.9.0.kwinscript
 <span class="c"># update to a newer version</span>
-kpackagetool6 --type KWin/Script --upgrade kdesnaplayout-1.6.5.kwinscript
+kpackagetool6 --type KWin/Script --upgrade kdesnaplayout-1.9.0.kwinscript
 <span class="c"># switch it on</span>
 kwriteconfig6 --file kwinrc --group Plugins --key kdesnaplayoutEnabled true
 qdbus6 org.kde.KWin /KWin reconfigure</pre>
   <div class="box warn"><b class="t">After an update: log out once</b>KWin keeps a loaded script in memory. After installing a new version, log out and back in so the new files are used. You can check the version on the <span class="ui">About &amp; Help</span> page of the settings editor.</div>
-  <div class="ftr"><span>KDE Snap Layout 1.6.5</span><span class="pn">5</span></div>
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">5</span></div>
 </section>
 
 <!-- ======================================================== 4 QUICK START -->
 <section class="page">
-  <div class="hdr"><span><b>KDE Snap Layout</b> · User manual</span><span>4 · Quick start</span></div>
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · User manual</span><span>4 · Quick start</span></div>
   <div class="chap"><div class="no">4</div><div><div class="k">Chapter 4</div><h1 style="margin:0">Quick start – your first snap</h1></div></div>
   <p class="lead">Three movements, about two seconds.</p>
   <img class="img" src="assets/out_steps.png">
@@ -253,88 +273,82 @@ qdbus6 org.kde.KWin /KWin reconfigure</pre>
       <p>The bar opens on the screen under the cursor, and zones fill that screen’s free area – panels are left uncovered.</p>
     </div>
   </div>
-  <div class="box tip"><b class="t">Smoother snapping</b>Plasma maximizes a window that is dragged to the top edge. For the best experience, turn that off: <span class="ui">System Settings</span> → <span class="ui">Window Management</span> → <span class="ui">Screen Edges</span> → untick <span class="ui">Maximize: Windows dragged to top edge</span> (the exact name can vary slightly between Plasma versions).</div>
-  <div class="ftr"><span>KDE Snap Layout 1.6.5</span><span class="pn">6</span></div>
+  <div class="box tip"><b class="t">Smoother snapping</b>Plasma has its own edge actions. SeaQ Snap Layout does the same and more, so turn Plasma’s off: <span class="ui">System Settings</span> → <span class="ui">Window Management</span> → <span class="ui">Screen Edges</span> → untick <span class="ui">Maximize</span> and <span class="ui">Tile</span> for windows dragged to the edges (names vary slightly between Plasma versions). The editor shows an orange hint as long as they are on.</div>
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">6</span></div>
 </section>
 
 <!-- ======================================================== 5 OPEN SETTINGS -->
 <section class="page">
-  <div class="hdr"><span><b>KDE Snap Layout</b> · User manual</span><span>5 · Opening the settings</span></div>
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · User manual</span><span>5 · Opening the settings</span></div>
   <div class="chap"><div class="no">5</div><div><div class="k">Chapter 5</div><h1 style="margin:0">Opening the settings</h1></div></div>
   <p class="lead">A KWin script has no app icon of its own. Its settings are reached through the gear icon in System Settings, which opens a small quick menu.</p>
   <img class="img" src="assets/out_quick.png">
   <ol class="steps">
-    <li>Open <span class="ui">System Settings</span> → <span class="ui">Window Management</span> → <span class="ui">KWin Scripts</span> and click the <b>gear icon</b> <span class="n" style="margin:0 .5mm">1</span> next to <b>KDE Snap Layout</b>.</li>
+    <li>Open <span class="ui">System Settings</span> → <span class="ui">Window Management</span> → <span class="ui">KWin Scripts</span> and click the <b>gear icon</b> <span class="n" style="margin:0 .5mm">1</span> next to <b>SeaQ Snap Layout</b>.</li>
     <li>Click <span class="ui">Open Snap Layout settings editor</span> <span class="n" style="margin:0 .5mm">2</span>. The hint “Ready – click OK to open the settings editor.” appears.</li>
     <li>Click <span class="ui">OK</span>. The settings editor opens within about a second.</li>
   </ol>
   <h2>Quick settings</h2>
   <p><span class="n">3</span><span class="ui">Snap bar colors</span> switches the snap bar between <b>System</b>, <b>Light</b> and <b>Dark</b> without opening the editor. Everything else – appearance, size, animation, behavior and your own layouts – lives in the settings editor.</p>
-  <div class="box note"><b class="t">Why the extra click?</b>System Settings only saves the quick menu when you press <span class="ui">OK</span> or <span class="ui">Apply</span>. KDE Snap Layout notices the saved button press and opens its editor. The button can be used as often as you like.</div>
-  <div class="ftr"><span>KDE Snap Layout 1.6.5</span><span class="pn">7</span></div>
+  <div class="box note"><b class="t">Why the extra click?</b>System Settings only saves the quick menu when you press <span class="ui">OK</span> or <span class="ui">Apply</span>. SeaQ Snap Layout notices the saved button press and opens its editor. The button can be used as often as you like.</div>
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">7</span></div>
 </section>
 
 <!-- ======================================================== 6 EDITOR OVERVIEW -->
 <section class="page">
-  <div class="hdr"><span><b>KDE Snap Layout</b> · User manual</span><span>6 · The settings editor</span></div>
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · User manual</span><span>6 · The settings editor</span></div>
   <div class="chap"><div class="no">6</div><div><div class="k">Chapter 6</div><h1 style="margin:0">The settings editor</h1></div></div>
-  <p class="lead">One window, five pages. Every change is saved and applied immediately – there is no Apply button.</p>
+  <p class="lead">One window, eight pages. Every change is saved and applied immediately – there is no Apply button.</p>
   <div class="shot">
     <img src="assets/editor-general-light.png">
     <span class="b" style="left:33%;top:2.1%">1</span>
     <span class="b" style="left:97.6%;top:2.1%">2</span>
-    <span class="b" style="left:-1.5%;top:9.5%">3</span>
-    <span class="b" style="left:-1.5%;top:26%">4</span>
-    <span class="b" style="left:-1.5%;top:95%">5</span>
-    <span class="b" style="left:23.2%;top:13%">6</span>
-    <span class="b" style="left:100.6%;top:94.2%">7</span>
+    <span class="b" style="left:-1.5%;top:8%">3</span>
+    <span class="b" style="left:-1.5%;top:19.5%">4</span>
+    <span class="b" style="left:-1.5%;top:37%">5</span>
+    <span class="b" style="left:-1.5%;top:88.6%">6</span>
+    <span class="b" style="left:25%;top:16.8%">7</span>
   </div>
   <div class="legend">
     <div><i>1</i><span><b>Title bar</b> – drag to move the window, double-click to maximize. Height, font and alignment follow your window decoration.</span></div>
     <div><i>2</i><span><b>Window buttons</b> – maximize/restore and close, in the order and style of your decoration.</span></div>
     <div><i>3</i><span><b>Name and version</b> of the installed script.</span></div>
-    <div><i>4</i><span><b>Pages</b> – General, Appearance, Behavior &amp; Animation, Layouts, About &amp; Help.</span></div>
-    <div><i>5</i><span><b>Active</b> – pauses or resumes the snap bar everywhere. Shows <span class="ui">Paused</span> while off.</span></div>
-    <div><i>6</i><span><b>Page area</b> – settings are grouped in cards.</span></div>
-    <div><i>7</i><span><b>Recommended values</b> – resets the settings of the current page to their defaults.</span></div>
+    <div><i>4</i><span><b>Snap bar</b> – Appearance, Behavior &amp; Animation and Layouts of the bar at the top edge.</span></div>
+    <div><i>5</i><span><b>More ways to snap</b> – Screen edges, Window magnet and Keyboard shortcuts.</span></div>
+    <div><i>6</i><span><b>Feature switches</b> – turn the snap bar, screen edges, window magnet and shortcuts on or off with one click.</span></div>
+    <div><i>7</i><span><b>Page area</b> – settings are grouped in cards. <span class="ui">Recommended values</span> at the bottom of a page resets that page.</span></div>
   </div>
-  <div class="box tip"><b class="t">Resize it</b>Drag the right edge, the bottom edge or the bottom-right corner to make the window larger or smaller. Size and position are kept while the session runs.</div>
   <div class="box note"><b class="t">Matches your system</b>The editor uses your color scheme, accent color, window decoration and system language – and follows changes live while it is open.</div>
-  <div class="ftr"><span>KDE Snap Layout 1.6.5</span><span class="pn">8</span></div>
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">8</span></div>
 </section>
 
 <!-- ======================================================== 6.1 GENERAL -->
 <section class="page">
-  <div class="hdr"><span><b>KDE Snap Layout</b> · User manual</span><span>6.1 · General</span></div>
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · User manual</span><span>6.1 · General</span></div>
   <div class="chap"><div class="no" style="font-size:12pt">6.1</div><div><div class="k">Settings editor</div><h1 style="margin:0">General</h1></div></div>
-  <p class="lead">Switch snapping on or off, control the preview and leave room between windows.</p>
-  <div class="shot" style="margin:0 30mm 3mm">
+  <p class="lead">Choose which ways to snap you want, control the previews and leave room between windows.</p>
+  <div class="shot" style="margin:0 34mm 3mm">
     <img src="assets/editor-general-light.png">
-    <span class="b" style="left:100.6%;top:23.2%">1</span>
-    <span class="b" style="left:100.6%;top:28.4%">2</span>
-    <span class="b" style="left:100.6%;top:33.6%">3</span>
-    <span class="b" style="left:100.6%;top:45.2%">4</span>
-    <span class="b" style="left:100.6%;top:50.6%">5</span>
-    <span class="b" style="left:100.6%;top:69.5%">6</span>
-    <span class="b" style="left:100.6%;top:85%">7</span>
+    <span class="b" style="left:100.6%;top:16.8%">1</span>
+    <span class="b" style="left:100.6%;top:44.5%">2</span>
+    <span class="b" style="left:100.6%;top:72.5%">3</span>
   </div>
   <table>
-    <tr><th>Setting</th><th>What it does</th><th class="d">Default</th><th class="r">Range</th></tr>
-    <tr><td><span class="n">1</span>Show the snap bar when dragging a window to the top edge</td><td>Main switch. Same as <span class="ui">Active</span> in the sidebar.</td><td class="d">On</td><td class="r">On / Off</td></tr>
-    <tr><td><span class="n">2</span>Preview where the window will land</td><td>Shows the translucent landing rectangle while a zone is highlighted.</td><td class="d">On</td><td class="r">On / Off</td></tr>
-    <tr><td><span class="n">3</span>Restore the original size when dragging a window out</td><td>A snapped window that you drag away gets its earlier size back.</td><td class="d">On</td><td class="r">On / Off</td></tr>
-    <tr><td><span class="n">4</span>Gap between windows</td><td>Space between neighbouring zones. Use it for a tiling look.</td><td class="d">0 px</td><td class="r">0 – 48 px</td></tr>
-    <tr><td><span class="n">5</span>Gap to the screen edge</td><td>Space between the zones and the edges of the free screen area.</td><td class="d">0 px</td><td class="r">0 – 48 px</td></tr>
-    <tr><td><span class="n">6</span>Excluded applications</td><td>Window classes that never show the snap bar – one per line (commas and semicolons work too). Not case-sensitive.</td><td class="d">empty</td><td class="r">any text</td></tr>
-    <tr><td><span class="n">7</span>Tip</td><td>Reminder to turn off Plasma’s own maximize-at-top (see chapter 4).</td><td class="d">–</td><td class="r">–</td></tr>
+    <tr><th>Setting</th><th>What it does</th><th class="d">Default</th></tr>
+    <tr><td><span class="n">1</span>Features</td><td>Four independent switches: <b>Snap bar</b>, <b>Screen edges</b>, <b>Window magnet</b>, <b>Keyboard shortcuts</b>. The arrow next to each one opens its page. The same switches sit at the bottom of the sidebar.</td><td class="d">all on</td></tr>
+    <tr><td><span class="n">2</span>Previews</td><td><b>Snap bar preview</b> and <b>Screen edges preview</b>, each on its own – off means no preview at all. <b>Accent color</b> – off draws a neutral frame. <b>Pause KDE's edge tiling</b> hides KDE's own outline.</td><td class="d">all on</td></tr>
+    <tr><td><span class="n">3</span>Restore the original size when dragging a window out</td><td>A snapped window that you drag away gets its earlier size back – also after snapping with the edges or the keyboard.</td><td class="d">On</td></tr>
+    <tr><td>Gap between windows</td><td>Space between neighbouring zones (0 – 48 px). Used by the bar, the edges, the shortcuts and – if you like – the magnet.</td><td class="d">0 px</td></tr>
+    <tr><td>Gap to the screen edge</td><td>Space between the zones and the edges of the free screen area (0 – 48 px).</td><td class="d">0 px</td></tr>
+    <tr><td>Excluded applications</td><td>Window classes that are never snapped – one per line (commas and semicolons work too). Not case-sensitive.</td><td class="d">empty</td></tr>
   </table>
   <div class="box tip"><b class="t">Finding a window class</b>Open <span class="ui">System Settings</span> → <span class="ui">Window Management</span> → <span class="ui">Window Rules</span> → <span class="ui">Add New…</span> → <span class="ui">Detect Window Properties</span> and click the app window. The value under <b>Window class</b> (for example <code>krita</code> or <code>steam</code>) is what you enter here.</div>
-  <div class="ftr"><span>KDE Snap Layout 1.6.5</span><span class="pn">9</span></div>
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">9</span></div>
 </section>
 
 <!-- ======================================================== 6.2 APPEARANCE -->
 <section class="page">
-  <div class="hdr"><span><b>KDE Snap Layout</b> · User manual</span><span>6.2 · Appearance</span></div>
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · User manual</span><span>6.2 · Appearance</span></div>
   <div class="chap"><div class="no" style="font-size:12pt">6.2</div><div><div class="k">Settings editor</div><h1 style="margin:0">Appearance</h1></div></div>
   <p class="lead">Colors, size and shape of the snap bar. The live preview at the top shows every change at once.</p>
   <div class="shot" style="margin:0 26mm 3mm">
@@ -367,12 +381,12 @@ qdbus6 org.kde.KWin /KWin reconfigure</pre>
     <tr><td>Corner radius</td><td>Roundness of the bar. 0 gives square corners.</td><td class="d">8 px</td><td class="r">0 – 24 px</td></tr>
     <tr><td>Background opacity</td><td>How see-through the bar background is.</td><td class="d">96 %</td><td class="r">40 – 100 %</td></tr>
   </table>
-  <div class="ftr"><span>KDE Snap Layout 1.6.5</span><span class="pn">10</span></div>
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">10</span></div>
 </section>
 
 <!-- ======================================================== 6.2b COLORS -->
 <section class="page">
-  <div class="hdr"><span><b>KDE Snap Layout</b> · User manual</span><span>6.2 · Appearance – colors</span></div>
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · User manual</span><span>6.2 · Appearance – colors</span></div>
   <h1 style="font-size:20pt">Colors and styles</h1>
   <p class="lead">A few combinations of the appearance settings.</p>
   <img class="img" src="assets/out_themes.png">
@@ -400,12 +414,12 @@ qdbus6 org.kde.KWin /KWin reconfigure</pre>
     </div>
   </div>
   <div class="box note"><b class="t">Snap bar vs. editor colors</b>The color scheme and accent on this page only change the <b>snap bar</b>. The settings editor itself always uses your system colors.</div>
-  <div class="ftr"><span>KDE Snap Layout 1.6.5</span><span class="pn">11</span></div>
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">11</span></div>
 </section>
 
 <!-- ======================================================== 6.3 BEHAVIOR -->
 <section class="page">
-  <div class="hdr"><span><b>KDE Snap Layout</b> · User manual</span><span>6.3 · Behavior &amp; Animation</span></div>
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · User manual</span><span>6.3 · Behavior &amp; Animation</span></div>
   <div class="chap"><div class="no" style="font-size:12pt">6.3</div><div><div class="k">Settings editor</div><h1 style="margin:0">Behavior &amp; Animation</h1></div></div>
   <p class="lead">When the bar appears, when it hides again and how it moves. The default values are based on Windows 11.</p>
   <div class="dark" style="height:72mm;padding:0;overflow:hidden;margin-bottom:4mm" id="dist"></div>
@@ -422,12 +436,12 @@ qdbus6 org.kde.KWin /KWin reconfigure</pre>
     <tr><td><span class="n" style="background:#ffb900">D</span>Distance before the bar hides again</td><td>How far you can move below the bar before it closes – a safety margin.</td><td class="d">56 px</td><td class="r">0 – 300 px</td></tr>
     <tr><td>Delay before hiding</td><td>Waiting time after leaving that area before the bar slides up.</td><td class="d">150 ms</td><td class="r">0 – 1000 ms</td></tr>
   </table>
-  <div class="ftr"><span>KDE Snap Layout 1.6.5</span><span class="pn">12</span></div>
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">12</span></div>
 </section>
 
 <!-- ======================================================== 6.3b ANIMATION -->
 <section class="page">
-  <div class="hdr"><span><b>KDE Snap Layout</b> · User manual</span><span>6.3 · Behavior &amp; Animation</span></div>
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · User manual</span><span>6.3 · Behavior &amp; Animation</span></div>
   <div class="shot" style="margin:0 34mm 3mm">
     <img src="assets/editor-behavior-light.png">
     <span class="b" style="left:100.6%;top:18.6%">1</span>
@@ -453,12 +467,12 @@ qdbus6 org.kde.KWin /KWin reconfigure</pre>
   <p>Each curve has a matching reverse for sliding back up, so hiding feels like showing played backwards.</p>
   <div class="curve" id="curves"></div>
   <div class="box tip"><b class="t">Slow PC or remote desktop?</b>Set both durations to 0 ms and turn off fading – the bar then appears instantly.</div>
-  <div class="ftr"><span>KDE Snap Layout 1.6.5</span><span class="pn">13</span></div>
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">13</span></div>
 </section>
 
 <!-- ======================================================== 6.4 LAYOUTS -->
 <section class="page">
-  <div class="hdr"><span><b>KDE Snap Layout</b> · User manual</span><span>6.4 · Layouts</span></div>
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · User manual</span><span>6.4 · Layouts</span></div>
   <div class="chap"><div class="no" style="font-size:12pt">6.4</div><div><div class="k">Settings editor</div><h1 style="margin:0">Layouts</h1></div></div>
   <p class="lead">Choose which layouts appear in the snap bar and in which order.</p>
   <div class="shot" style="margin:0 10mm 4mm">
@@ -490,12 +504,12 @@ qdbus6 org.kde.KWin /KWin reconfigure</pre>
     <li>Drag it onto the position where it should go – the other cards move aside.</li>
     <li>Release. The new order is saved and used the next time the bar opens.</li>
   </ol>
-  <div class="ftr"><span>KDE Snap Layout 1.6.5</span><span class="pn">14</span></div>
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">14</span></div>
 </section>
 
 <!-- ======================================================== 6.5 DESIGNER -->
 <section class="page">
-  <div class="hdr"><span><b>KDE Snap Layout</b> · User manual</span><span>6.5 · Layout designer</span></div>
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · User manual</span><span>6.5 · Layout designer</span></div>
   <div class="chap"><div class="no" style="font-size:12pt">6.5</div><div><div class="k">Settings editor</div><h1 style="margin:0">Layout designer</h1></div></div>
   <p class="lead">Split the screen any way you like – up to 16 zones per layout.</p>
   <div class="shot" style="margin:0 12mm 4mm">
@@ -529,43 +543,203 @@ qdbus6 org.kde.KWin /KWin reconfigure</pre>
     <li>Click <span class="ui">Split side by side</span>, then drag the divider to ⅔.</li>
     <li>Select the right zone and click <span class="ui">Split top and bottom</span>. Click <span class="ui">Save</span>.</li>
   </ol>
-  <div class="ftr"><span>KDE Snap Layout 1.6.5</span><span class="pn">15</span></div>
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">15</span></div>
 </section>
 
-<!-- ======================================================== 6.6 ABOUT + 7 -->
+<!-- ======================================================== 6.6 SCREEN EDGES -->
 <section class="page">
-  <div class="hdr"><span><b>KDE Snap Layout</b> · User manual</span><span>6.6 · About &amp; Help · 7 · Shortcuts &amp; languages</span></div>
-  <div class="chap"><div class="no" style="font-size:12pt">6.6</div><div><div class="k">Settings editor</div><h1 style="margin:0">About &amp; Help</h1></div></div>
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · User manual</span><span>6.6 · Screen edges</span></div>
+  <div class="chap"><div class="no" style="font-size:12pt">6.6</div><div><div class="k">More ways to snap</div><h1 style="margin:0">Screen edges</h1></div></div>
+  <p class="lead">Push a window against an edge or a corner of the screen and it fills that part. Works with or without the snap bar.</p>
+
+  <div class="cols" style="grid-template-columns:1.25fr 1fr;align-items:center;margin-bottom:3mm">
+    <div class="scr" style="height:38mm">
+      <div class="z" style="left:2%;top:3%;width:15%;height:17%">¼</div>
+      <div class="z" style="left:19%;top:3%;width:62%;height:17%">Top edge<br>maximize</div>
+      <div class="z" style="left:83%;top:3%;width:15%;height:17%">¼</div>
+      <div class="z" style="left:2%;top:22%;width:15%;height:56%">Left<br>half</div>
+      <div class="z" style="left:83%;top:22%;width:15%;height:56%">Right<br>half</div>
+      <div class="z" style="left:2%;top:80%;width:15%;height:17%">¼</div>
+      <div class="z" style="left:19%;top:80%;width:62%;height:17%">Bottom half</div>
+      <div class="z" style="left:83%;top:80%;width:15%;height:17%">¼</div>
+    </div>
+    <div>
+      <p><b>Edges</b> – the middle of the left or right edge gives a half, the bottom edge the bottom half, the top edge maximizes (or what you choose).</p>
+      <p><b>Corners</b> – the outer part of each edge (20 % by default) gives the quarter in that corner.</p>
+      <p><b>A small push</b> – the window has to rest against the edge for 60 ms, so passing by does nothing.</p>
+    </div>
+  </div>
+  <h2 style="margin-top:1mm">Smart fill</h2>
+  <p>The edges always look at what is already snapped. Halves and quarters never cover a snapped window, and the top edge only fills the free space above it.</p>
+
+  <div class="cols" style="gap:5mm;margin-bottom:1mm">
+    <div><div class="scr" style="height:19mm">
+      <div class="pv" style="left:2%;top:4%;width:96%;height:92%"></div>
+      <div class="cur" style="left:48%;top:-2%">⬆</div></div>
+      <p class="figcap">Nothing snapped below → the top edge maximizes.</p></div>
+    <div><div class="scr" style="height:19mm">
+      <div class="w" style="left:2%;top:52%;width:47%;height:44%"></div>
+      <div class="pv" style="left:2%;top:4%;width:96%;height:45%"></div>
+      <div class="cur" style="left:48%;top:-2%">⬆</div></div>
+      <p class="figcap">A quarter sits at the bottom → only the top half is filled.</p></div>
+  </div>
+  <table class="tight">
+    <tr><th>Setting</th><th>What it does</th><th class="d">Default</th><th class="r">Range</th></tr>
+    <tr><td>Use screen edges</td><td>Main switch, independent of the snap bar.</td><td class="d">On</td><td class="r">On / Off</td></tr>
+    <tr><td>Top edge</td><td>What the top edge does.</td><td class="d">Maximize</td><td class="r">Maximize · Fullscreen ·<br>Top half · Off</td></tr>
+    <tr><td>Left and right edge</td><td>Half of the screen.</td><td class="d">On</td><td class="r">On / Off</td></tr>
+    <tr><td>Bottom edge</td><td>Bottom half.</td><td class="d">On</td><td class="r">On / Off</td></tr>
+    <tr><td>Corners</td><td>Quarter of the screen.</td><td class="d">On</td><td class="r">On / Off</td></tr>
+    <tr><td>Smart fill</td><td>Fit around windows that are already snapped.</td><td class="d">On</td><td class="r">On / Off</td></tr>
+    <tr><td>Distance to the edge</td><td>How close the cursor has to get to the edge.</td><td class="d">4 px</td><td class="r">1 – 40 px</td></tr>
+    <tr><td>Push delay</td><td>How long the window has to rest against the edge. 0 = at once.</td><td class="d">60 ms</td><td class="r">0 – 600 ms</td></tr>
+    <tr><td>Corner size</td><td>Part of each side that counts as corner.</td><td class="d">20 %</td><td class="r">5 – 40 %</td></tr>
+    <tr><td>Hold to fill</td><td>Held longer at the edge, grow up to the next window.</td><td class="d">On · 700 ms</td><td class="r">200 – 2000 ms</td></tr>
+  </table>
+  <div class="box tip"><b class="t">Hold to fill · KDE's own tiling</b>Keep the window 0.7 s longer at the edge and it grows up to the next window. KDE's own edge tiling pauses meanwhile – your KDE settings stay unchanged.</div>
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">16</span></div>
+</section>
+
+<!-- ======================================================== 6.7 MAGNET -->
+<section class="page">
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · User manual</span><span>6.7 · Window magnet</span></div>
+  <div class="chap"><div class="no" style="font-size:12pt">6.7</div><div><div class="k">More ways to snap</div><h1 style="margin:0">Window magnet</h1></div></div>
+  <p class="lead">While you move or resize a window, its edges stick to nearby windows and to the screen edges. Works without the snap bar and without the screen edges.</p>
+  
+  <table class="tight">
+    <tr><th>Setting</th><th>What it does</th><th class="d">Default</th><th class="r">Range</th></tr>
+    <tr><td>Use the window magnet</td><td>Main switch.</td><td class="d">On</td><td class="r">On / Off</td></tr>
+    <tr><td>Snap distance</td><td>How close an edge has to come before it clicks into place. Larger = stronger magnet.</td><td class="d">16 px</td><td class="r">2 – 64 px</td></tr>
+    <tr><td>Resistance against overlapping</td><td>A window stops at the edge of another one and only lets go once you push it this far in. 0 = windows can overlap freely.</td><td class="d">48 px</td><td class="r">0 – 200 px</td></tr>
+    <tr><td>Stick to other windows</td><td>Edges line up with the edges of other visible windows on the same screen.</td><td class="d">On</td><td class="r">On / Off</td></tr>
+    <tr><td>Stick to the screen edges</td><td>Edges line up with the free screen area (panels are respected).</td><td class="d">On</td><td class="r">On / Off</td></tr>
+    <tr><td>Also while resizing</td><td>The edge you drag sticks too – the other edges stay where they are.</td><td class="d">On</td><td class="r">On / Off</td></tr>
+    <tr><td>Keep the gap between windows</td><td>Windows stop at <span class="ui">Gap between windows</span> from the General page instead of touching.</td><td class="d">Off</td><td class="r">On / Off</td></tr>
+  </table>
+  <h2 style="margin-top:2mm">Sticky edges</h2>
+  <p>Windows that touch share their edge. Resize one of them and the others follow live – nothing overlaps, no gap opens, and the gap between them stays as it was.</p>
+  <table class="tight">
+    <tr><th>Setting</th><th>What it does</th><th class="d">Default</th></tr>
+    <tr><td>Resize touching windows together</td><td>The shared edge of every window that faces the resized one moves along. Edges on the screen border are never linked.</td><td class="d">On</td></tr>
+    <tr><td>Keep stacked windows in line</td><td>Windows above each other keep their left and right edges together, windows side by side their top and bottom edges.</td><td class="d">On</td></tr>
+    <tr><td>Shake to let go</td><td>Shake the mouse while resizing and the other windows jump back.</td><td class="d">On</td></tr>
+    <tr><td>Fade the other windows</td><td>While resizing, windows that do not follow are shown transparent.</td><td class="d">On</td></tr>
+  </table>
+  <div class="box note"><b class="t">Plasma has a magnet too</b>While the magnet is on, SeaQ Snap Layout pauses Plasma’s own snap zones so only one magnet pulls at a window (<span class="ui">Pause KDE's snap zones while the magnet is on</span>). Your KDE settings are not changed – switch it off, disable or remove the script and Plasma’s snapping is back.</div>
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">17</span></div>
+</section>
+
+<!-- ======================================================== 6.8 KEYBOARD -->
+<section class="page">
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · User manual</span><span>6.8 · Keyboard shortcuts</span></div>
+  <div class="chap"><div class="no" style="font-size:12pt">6.8</div><div><div class="k">More ways to snap</div><h1 style="margin:0">Keyboard shortcuts</h1></div></div>
+  <p class="lead">Snap the active window with the keyboard. These are normal KDE global shortcuts – you also find them in System Settings → Shortcuts → KWin.</p>
+  <div class="shot" style="margin:0 36mm 2mm">
+    <img src="assets/editor-keys-light.png">
+    <span class="b" style="left:100.6%;top:21%">1</span>
+    <span class="b" style="left:100.6%;top:26.4%">2</span>
+    <span class="b" style="left:100.6%;top:31.4%">3</span>
+    <span class="b" style="left:100.6%;top:43.5%">4</span>
+  </div>
+  <div class="legend one">
+    <div><i>1</i><span><b>Use keyboard shortcuts</b> – off leaves the keys assigned but they do nothing. The sidebar switch <span class="ui">Shortcuts</span> is the same.</span></div>
+    <div><i>2</i><span><b>Key scheme</b> – choose a ready-made set and click <span class="ui">Apply</span>: all 16 snapping actions get their keys at once (see chapter 7).</span></div>
+    <div><i>3</i><span><b>Reset all</b> – gives every action the key of the chosen scheme again.</span></div>
+    <div><i>4</i><span><b>One row per action</b> – shows the keys as key caps. The pencil opens the editor; the arrow <span class="ui">↶</span> appears when a key differs from the scheme and resets it.</span></div>
+  </div>
+  <h2>Changing a single key</h2>
+  <ol class="steps">
+    <li>Click the action, e.g. <i>Snap to the left half</i>. An editor opens below it.</li>
+    <li><b>Usual combinations</b> – one click picks the same key with the modifiers of every scheme, e.g. <kbd>Ctrl+Alt+Left</kbd>, <kbd>Meta+Left</kbd>, <kbd>Meta+Shift+Left</kbd>.</li>
+    <li><b>Your own combination</b> – toggle <kbd>Meta</kbd> <kbd>Ctrl</kbd> <kbd>Alt</kbd> <kbd>Shift</kbd>, choose the key from the list (letters, digits, arrows, F1–F12, number block …) and click <span class="ui">Set</span>.</li>
+    <li><span class="ui">Reset to default</span> brings back the key of the chosen scheme, <span class="ui">Remove</span> clears the key of that action.</li>
+  </ol>
+  <h2>When a key is already in use</h2>
+  <p>SeaQ Snap Layout asks KDE’s shortcut service before it sets a key. If another action already has it, an orange card names the owner – for example <i>“Ctrl+Alt+F is used by Show Calendar”</i>:</p>
+  <ul><li><span class="ui">Take it over</span> – removes the key from the other action and gives it to SeaQ Snap Layout.</li>
+    <li><span class="ui">Take over all</span> – does that for every conflict in the list.</li>
+    <li><span class="ui">Keep them</span> – leaves everything as it is; that action keeps no key.</li></ul>
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">18</span></div>
+</section>
+
+<!-- ======================================================== 7 KEY REFERENCE -->
+<section class="page">
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · User manual</span><span>7 · Key reference</span></div>
+  <div class="chap"><div class="no">7</div><div><div class="k">Chapter 7</div><h1 style="margin:0">Key reference</h1></div></div>
+  <p class="lead">The 16 snapping actions with their keys in the default scheme and in the number-block scheme. The four on/off actions have no key by default (page 20).</p>
+  <table class="keys tight">
+    <tr><th>Action</th><th>Default – Ctrl+Alt</th><th>Number block</th></tr>
+    <tr class="grp"><td colspan="3">Halves</td></tr>
+    <tr><td>Snap to the left half</td><td><kbd>Ctrl+Alt+Left</kbd></td><td><kbd>Ctrl+Alt+Num+4</kbd></td></tr>
+    <tr><td>Snap to the right half</td><td><kbd>Ctrl+Alt+Right</kbd></td><td><kbd>Ctrl+Alt+Num+6</kbd></td></tr>
+    <tr><td>Snap to the top half</td><td><kbd>Ctrl+Alt+Up</kbd></td><td><kbd>Ctrl+Alt+Num+8</kbd></td></tr>
+    <tr><td>Snap to the bottom half</td><td><kbd>Ctrl+Alt+Down</kbd></td><td><kbd>Ctrl+Alt+Num+2</kbd></td></tr>
+    <tr class="grp"><td colspan="3">Quarters</td></tr>
+    <tr><td>Snap to the top-left quarter</td><td><kbd>Ctrl+Alt+U</kbd></td><td><kbd>Ctrl+Alt+Num+7</kbd></td></tr>
+    <tr><td>Snap to the top-right quarter</td><td><kbd>Ctrl+Alt+I</kbd></td><td><kbd>Ctrl+Alt+Num+9</kbd></td></tr>
+    <tr><td>Snap to the bottom-left quarter</td><td><kbd>Ctrl+Alt+J</kbd></td><td><kbd>Ctrl+Alt+Num+1</kbd></td></tr>
+    <tr><td>Snap to the bottom-right quarter</td><td><kbd>Ctrl+Alt+K</kbd></td><td><kbd>Ctrl+Alt+Num+3</kbd></td></tr>
+    <tr class="grp"><td colspan="3">Thirds</td></tr>
+    <tr><td>Snap to the left third</td><td><kbd>Ctrl+Alt+D</kbd></td><td><span style="color:var(--muted)">–</span></td></tr>
+    <tr><td>Snap to the center third</td><td><kbd>Ctrl+Alt+F</kbd></td><td><span style="color:var(--muted)">–</span></td></tr>
+    <tr><td>Snap to the right third</td><td><kbd>Ctrl+Alt+G</kbd></td><td><span style="color:var(--muted)">–</span></td></tr>
+    <tr><td>Snap to the left two thirds</td><td><kbd>Ctrl+Alt+E</kbd></td><td><span style="color:var(--muted)">–</span></td></tr>
+    <tr><td>Snap to the right two thirds</td><td><kbd>Ctrl+Alt+Y</kbd></td><td><span style="color:var(--muted)">–</span></td></tr>
+    <tr class="grp"><td colspan="3">Window</td></tr>
+    <tr><td>Maximize or restore</td><td><kbd>Ctrl+Alt+Return</kbd></td><td><kbd>Ctrl+Alt+Num+5</kbd></td></tr>
+    <tr><td>Center the window</td><td><kbd>Ctrl+Alt+C</kbd></td><td><kbd>Ctrl+Alt+Num+0</kbd></td></tr>
+    <tr><td>Restore the size before snapping</td><td><kbd>Ctrl+Alt+-</kbd></td><td><span style="color:var(--muted)">–</span></td></tr>
+    </table>
+  <h2 style="margin-top:3mm">Other schemes</h2>
+  <p>Same keys, other modifiers – shown for <i>Snap to the left half</i>. <span class="ui">No shortcuts</span> removes all keys.</p>
+  <table class="tight">
+    <tr><th>Scheme</th><th>Example</th></tr>
+    <tr><td>Meta+Ctrl+Alt + key</td><td><kbd>Meta+Ctrl+Alt+Left</kbd></td></tr>
+    <tr><td>Meta + key (KDE style)</td><td><kbd>Meta+Left</kbd> – replaces Plasma’s own quick tiling keys</td></tr>
+    <tr><td>Meta+Shift + key</td><td><kbd>Meta+Shift+Left</kbd></td></tr>
+    <tr><td>Ctrl+Shift+Alt + key</td><td><kbd>Ctrl+Shift+Alt+Left</kbd></td></tr>
+    <tr><td>Ctrl+Alt + number block</td><td><kbd>Ctrl+Alt+Num+4</kbd> – thirds and Restore get no key</td></tr>
+  </table>
+  <div class="box tip"><b class="t">Easy to remember</b>Arrows give halves. <kbd>U</kbd> <kbd>I</kbd> / <kbd>J</kbd> <kbd>K</kbd> sit like the four quarters on the keyboard; <kbd>D</kbd> <kbd>F</kbd> <kbd>G</kbd> are the three thirds from left to right, <kbd>E</kbd> and <kbd>Y</kbd> the two-thirds. On the number block, each key points where the window goes.</div>
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">19</span></div>
+</section>
+
+
+<!-- ======================================================== 6.9 ABOUT + 8 -->
+<section class="page">
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · User manual</span><span>6.9 · About &amp; Help · 8 · Languages</span></div>
+  <div class="chap"><div class="no" style="font-size:12pt">6.9</div><div><div class="k">Settings editor</div><h1 style="margin:0">About &amp; Help</h1></div></div>
   <div class="cols" style="grid-template-columns:1.1fr 1fr;align-items:start;margin-top:5mm">
     <div class="shot" style="margin:0"><img src="assets/editor-about-light.png"></div>
-    <div><p>A short reminder of how snapping works and how to open the editor, plus:</p>
-      <ul><li><b>Version</b> – the installed version. Check it after an update.</li><li><b>Author</b> – Swenix-dev</li><li><b>License</b> – GPL-3.0-or-later</li><li><b>Settings file</b> – where your settings and layouts are stored.</li></ul></div>
+    <div><p><b>Support</b> – <span class="ui">Donate with PayPal</span> (paypal.me/SeaQSoft) and <span class="ui">Buy me a coffee</span> (buymeacoffee.com/seaq) open your browser. Below: how snapping works, the other ways to snap, how to open the editor, plus:</p>
+      <ul><li><b>Version</b> – the installed version. Check it after an update.</li><li><b>Author</b> – SeaQ</li><li><b>License</b> – GPL-3.0-or-later</li><li><b>Settings file</b> – where your settings and layouts are stored.</li></ul></div>
   </div>
-  <div class="chap" style="margin-top:8mm"><div class="no">7</div><div><div class="k">Chapter 7</div><h1 style="margin:0">Shortcuts &amp; languages</h1></div></div>
-  <h2>Keyboard shortcuts</h2>
-  <p>KDE Snap Layout registers two actions with KWin. They have no key assigned by default, so they never clash with your own shortcuts.</p>
+  <h2>Feature shortcuts</h2>
+  <p>Four more actions have no key by default, so they never clash with your own shortcuts. Give them a key on the <span class="ui">Keyboard shortcuts</span> page or in <span class="ui">System Settings</span> → <span class="ui">Shortcuts</span> → <span class="ui">KWin</span> (search for “Snap Layout”).</p>
   <table>
     <tr><th>Action</th><th>What it does</th></tr>
-    <tr><td>KDE Snap Layout: turn on/off</td><td>Pauses or resumes snapping – the same as the <span class="ui">Active</span> switch.</td></tr>
-    <tr><td>KDE Snap Layout: test the snap bar</td><td>Plays the snap bar on the current screen.</td></tr>
+    <tr><td>Snap bar on/off</td><td>Pauses or resumes the snap bar – the same as its switch in the sidebar.</td></tr>
+    <tr><td>Screen edges on/off</td><td>Pauses or resumes the screen edges.</td></tr>
+    <tr><td>Window magnet on/off</td><td>Pauses or resumes the window magnet.</td></tr>
+    <tr><td>Test the snap bar</td><td>Plays the snap bar on the current screen.</td></tr>
   </table>
-  <p>To assign keys: <span class="ui">System Settings</span> → <span class="ui">Keyboard</span> → <span class="ui">Shortcuts</span> → <span class="ui">KWin</span>, search for “Snap Layout”, select an action and press the new key combination.</p>
-  <h2>Languages</h2>
-  <p>The settings editor, the quick menu and the layout names follow your system language (<span class="ui">System Settings</span> → <span class="ui">Region &amp; Language</span>). 62 languages are included – all European languages plus Chinese (simplified and traditional), Japanese, Korean, Hindi, Bengali, Tamil, Telugu, Marathi, Gujarati, Punjabi, Urdu, Arabic, Hebrew, Persian, Indonesian, Malay, Vietnamese, Thai, Filipino, Georgian, Armenian and more. Right-to-left languages are mirrored automatically.</p>
+  <div class="chap" style="margin-top:6mm"><div class="no">8</div><div><div class="k">Chapter 8</div><h1 style="margin:0">Languages</h1></div></div>
+  <p>The settings editor, the quick menu, the shortcut names and the layout names follow your system language (<span class="ui">System Settings</span> → <span class="ui">Region &amp; Language</span>). 62 languages are included – all European languages plus Chinese (simplified and traditional), Japanese, Korean, Hindi, Bengali, Tamil, Telugu, Marathi, Gujarati, Punjabi, Urdu, Arabic, Hebrew, Persian, Indonesian, Malay, Vietnamese, Thai, Filipino, Georgian, Armenian and more. Right-to-left languages are mirrored automatically.</p>
   <div class="box note"><b class="t">Help translate</b>Each language is a plain text file in the <code>i18n</code> folder of the repository – one line per text. Corrections and new languages are welcome as pull requests.</div>
-  <div class="ftr"><span>KDE Snap Layout 1.6.5</span><span class="pn">16</span></div>
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">20</span></div>
 </section>
 
 <!-- ======================================================== 8 DEFAULTS -->
 <section class="page">
-  <div class="hdr"><span><b>KDE Snap Layout</b> · User manual</span><span>8 · Recommended values</span></div>
-  <div class="chap"><div class="no">8</div><div><div class="k">Chapter 8</div><h1 style="margin:0">Recommended values</h1></div></div>
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · User manual</span><span>9 · Recommended values</span></div>
+  <div class="chap"><div class="no">9</div><div><div class="k">Chapter 9</div><h1 style="margin:0">Recommended values</h1></div></div>
   <p class="lead">All defaults at a glance. <span class="ui">Recommended values</span> on each page restores them for that page.</p>
-  <div class="cols" style="gap:5mm">
-    <table>
+  <div class="cols" style="gap:4mm;grid-template-columns:1fr 1fr 1fr">
+    <table class="tight dv">
       <tr><th colspan="2">General</th></tr>
-      <tr><td>Show the snap bar</td><td>On</td></tr>
-      <tr><td>Landing preview</td><td>On</td></tr>
+      <tr><td>Snap bar · Screen edges · Window magnet · Shortcuts</td><td>all on</td></tr>
+      <tr><td>Previews (bar, edges)</td><td>On</td></tr>
+      <tr><td>Previews in the accent color</td><td>On</td></tr>
       <tr><td>Restore original size</td><td>On</td></tr>
       <tr><td>Gap between windows</td><td>0 px</td></tr>
       <tr><td>Gap to the screen edge</td><td>0 px</td></tr>
@@ -580,7 +754,7 @@ qdbus6 org.kde.KWin /KWin reconfigure</pre>
       <tr><td>Layouts per row</td><td>0 (one row)</td></tr>
       <tr><td>Layout and zone names</td><td>Off</td></tr>
     </table>
-    <table>
+    <table class="tight dv">
       <tr><th colspan="2">Behavior</th></tr>
       <tr><td>Trigger distance</td><td>24 px</td></tr>
       <tr><td>Small handle first</td><td>On</td></tr>
@@ -598,58 +772,74 @@ qdbus6 org.kde.KWin /KWin reconfigure</pre>
       <tr><th colspan="2">Layouts in the bar</th></tr>
       <tr><td colspan="2" style="width:auto;font-weight:400">Halves · Two thirds · Three columns · Main + stack · Four quarters · Center focus</td></tr>
     </table>
+    <table class="tight dv">
+      <tr><th colspan="2">Screen edges</th></tr>
+      <tr><td>Top edge</td><td>Maximize</td></tr>
+      <tr><td>Sides · bottom · corners</td><td>On</td></tr>
+      <tr><td>Smart fill</td><td>On</td></tr>
+      <tr><td>Distance · push delay · corner</td><td>4 px · 60 ms · 20 %</td></tr>
+      <tr><th colspan="2">Window magnet</th></tr>
+      <tr><td>Snap distance</td><td>16 px</td></tr>
+      <tr><td>Windows · screen edges · resizing</td><td>On</td></tr>
+      <tr><td>Keep the gap</td><td>Off</td></tr>
+      <tr><td>Resistance</td><td>48 px</td></tr>
+      <tr><td>Sticky edges · in line · shake · fade</td><td>On</td></tr>
+      <tr><th colspan="2">Keyboard</th></tr>
+      <tr><td>Key scheme</td><td>Ctrl+Alt + key</td></tr>
+    </table>
   </div>
-  <div class="ftr"><span>KDE Snap Layout 1.6.5</span><span class="pn">17</span></div>
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">21</span></div>
 </section>
 
 <!-- ======================================================== 9 FAQ -->
 <section class="page faq">
-  <div class="hdr"><span><b>KDE Snap Layout</b> · User manual</span><span>9 · Troubleshooting &amp; FAQ</span></div>
-  <div class="chap"><div class="no">9</div><div><div class="k">Chapter 9</div><h1 style="margin:0">Troubleshooting &amp; FAQ</h1></div></div>
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · User manual</span><span>10 · Troubleshooting &amp; FAQ</span></div>
+  <div class="chap"><div class="no">10</div><div><div class="k">Chapter 10</div><h1 style="margin:0">Troubleshooting &amp; FAQ</h1></div></div>
   <h3>The snap bar does not appear.</h3>
   <p>Check that the script is ticked in <span class="ui">KWin Scripts</span> and that <span class="ui">Active</span> is on in the editor. Make sure the app is not on your exclusion list and that you drag a normal, resizable window by its title bar. If <span class="ui">Active width along the top edge</span> is below 100 %, move towards the middle of the top edge.</p>
-  <h3>The window gets maximized instead of snapped.</h3>
-  <p>That is Plasma’s own top-edge maximize. Turn it off under <span class="ui">Screen Edges</span> (see chapter 4).</p>
+  <h3>Two things happen when I drag a window to an edge.</h3>
+  <p>Plasma’s own edge actions or snap zones are still active. Switch on <span class="ui">Pause KDE's edge tiling and its preview</span> (Screen edges page) and <span class="ui">Pause KDE's snap zones while the magnet is on</span> (Window magnet page) – both are on by default.</p>
+  <h3>A keyboard shortcut does nothing.</h3>
+  <p>Check the <span class="ui">Shortcuts</span> switch and that the key is shown on the page. If another program grabs the key first, choose a different scheme or key.</p>
   <h3>I installed an update, but the old version is still running.</h3>
   <p>KWin keeps loaded scripts in memory. Log out and back in once. The <span class="ui">About &amp; Help</span> page shows the running version.</p>
   <h3>The quick menu button does nothing.</h3>
   <p>After <span class="ui">Open Snap Layout settings editor</span> you have to click <span class="ui">OK</span> (or <span class="ui">Apply</span>). The editor appears about one second later.</p>
   <h3>“Could not locate package metadata” in KWin Scripts.</h3>
   <p>The script folder was removed while KWin still listed it. Install the <code>.kwinscript</code> file again, then log out and back in.</p>
-  <h3>The bar opens too easily / not easily enough.</h3>
-  <p>Lower the <span class="ui">Trigger distance</span> and raise <span class="ui">Delay before showing</span> to make it harder to open by accident – or the other way round.</p>
   <h3>Can I use it with several monitors?</h3>
   <p>Yes. The bar opens on the screen under the cursor and zones are calculated for that screen.</p>
   <h3>Something is still wrong – how do I report it?</h3>
   <p>Collect the log and open an issue on GitHub:</p>
 <pre>journalctl --user -b | grep kdesnaplayout | tail -n 30</pre>
-  <div class="ftr"><span>KDE Snap Layout 1.6.5</span><span class="pn">18</span></div>
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">22</span></div>
 </section>
 
 <!-- ======================================================== 10 FILES -->
 <section class="page">
-  <div class="hdr"><span><b>KDE Snap Layout</b> · User manual</span><span>10 · Files, uninstalling &amp; license</span></div>
-  <div class="chap"><div class="no">10</div><div><div class="k">Chapter 10</div><h1 style="margin:0">Files, uninstalling &amp; license</h1></div></div>
+  <div class="hdr"><span><b>SeaQ Snap Layout</b> · User manual</span><span>11 · Files, uninstalling &amp; license</span></div>
+  <div class="chap"><div class="no">11</div><div><div class="k">Chapter 11</div><h1 style="margin:0">Files, uninstalling &amp; license</h1></div></div>
   <h2>Where things are stored</h2>
   <table>
     <tr><th>Path</th><th>Contents</th></tr>
     <tr><td><code>~/.config/kde-snaplayout.ini</code></td><td>All settings of the editor and your layouts. Copy it to move your setup to another PC.</td></tr>
+    <tr><td><code>~/.config/kglobalshortcutsrc</code> → <code>[kwin]</code></td><td>The keys of the shortcuts (managed by KDE).</tr>
     <tr><td><code>~/.config/kwinrc</code> → <code>[Script-kdesnaplayout]</code></td><td>The two quick-menu values (editor button, snap bar colors).</td></tr>
     <tr><td><code>~/.local/share/kwin/scripts/kdesnaplayout</code></td><td>The installed script.</td></tr>
   </table>
-  <div class="box note"><b class="t">Privacy</b>KDE Snap Layout works completely offline. It sends no data anywhere and only reads window positions while you drag a window.</div>
+  <div class="box note"><b class="t">Privacy</b>SeaQ Snap Layout works completely offline. It sends no data anywhere and only reads window positions while you drag a window.</div>
   <h2>Uninstalling</h2>
-  <p>In <span class="ui">KWin Scripts</span>, click the trash icon next to <b>KDE Snap Layout</b> and then <span class="ui">Apply</span>. Or in a terminal:</p>
+  <p>In <span class="ui">KWin Scripts</span>, click the trash icon next to <b>SeaQ Snap Layout</b> and then <span class="ui">Apply</span>. Or in a terminal:</p>
 <pre>kpackagetool6 --type KWin/Script --remove kdesnaplayout
 rm ~/.config/kde-snaplayout.ini        <span class="c"># optional: delete your settings</span></pre>
   <h2>License</h2>
-  <p>KDE Snap Layout is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License, version 3 or (at your option) any later version. It is distributed in the hope that it will be useful, but without any warranty.</p>
+  <p>SeaQ Snap Layout is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License, version 3 or (at your option) any later version. It is distributed in the hope that it will be useful, but without any warranty.</p>
   <div class="dark" style="margin-top:10mm;display:flex;align-items:center;gap:6mm;padding:7mm">
     <img src="assets/icon.svg" style="width:22mm">
-    <div><div style="font-size:16pt;font-weight:800;letter-spacing:-.4px">KDE Snap Layout</div>
-      <div style="font-size:9.5pt;color:rgba(255,255,255,.8);line-height:1.6;margin-top:1mm">Made by <b style="color:#fff">Swenix-dev</b><br>Source &amp; issues: github.com/Swenix-dev/KDE-Snap-Layout<br>Also on the KDE Store</div></div>
+    <div><div style="font-size:16pt;font-weight:800;letter-spacing:-.4px">SeaQ Snap Layout</div>
+      <div style="font-size:9.5pt;color:rgba(255,255,255,.8);line-height:1.6;margin-top:1mm">Made by <b style="color:#fff">SeaQ</b><br>Source &amp; issues: github.com/Swenix-dev/KDE-Snap-Layout<br>Also on the KDE Store</div></div>
   </div>
-  <div class="ftr"><span>KDE Snap Layout 1.6.5</span><span class="pn">19</span></div>
+  <div class="ftr"><span>SeaQ Snap Layout 1.9.0</span><span class="pn">23</span></div>
 </section>
 
 <script>
