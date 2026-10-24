@@ -33,7 +33,11 @@ A pure KWin script: no extra program, no background service, nothing to compile.
 
 <div align="center">
 
-<a href="docs/video/seaq-snap-layout-intro.mp4"><img src="docs/images/video-thumbnail.png" alt="Play the 34-second intro video" width="720"></a>
+
+
+https://github.com/user-attachments/assets/41ef363f-cafd-4872-9eb6-b543fca575f5
+
+
 
 <sub>34 seconds · snapping two windows, the four ways to snap and the color options</sub>
 
