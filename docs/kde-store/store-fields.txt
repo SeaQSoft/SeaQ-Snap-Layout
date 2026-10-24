@@ -1,0 +1,37 @@
+KDE STORE – FIELDS
+==================
+
+Name:          SeaQ Snap Layout (for KDE)
+Category:      KWin Scripts  (Plasma 6)
+Version:       1.9.0
+License:       GPL-3.0-or-later  (GPLv3)
+Logo:          logo-256.png
+Tags:          kwin, kwin-script, plasma6, snap, snap-layouts, tiling, window-management, windows11, wayland, x11
+
+Summary (short text, if the form asks for one):
+Windows 11-style snap layouts for KDE Plasma 6 – drag a window to the top edge and drop it onto a zone. Plus screen edges, window magnet, sticky edges and keyboard shortcuts.
+
+Links:
+  Homepage / Source:  https://github.com/SeaQSoft/SeaQ-Snap-Layout
+  Bug reports:        https://github.com/SeaQSoft/SeaQ-Snap-Layout/issues
+  Donation (PayPal):  https://paypal.me/SeaQSoft
+  Buy me a coffee:    https://buymeacoffee.com/seaq
+
+Description:   description.txt  (English) – optionally add description.de.txt below it
+Changelog:     changelog.txt
+
+File:          kdesnaplayout-1.9.0.kwinscript
+  Version field: 1.9.0
+  File description: KWin script for Plasma 6 – install with
+                    kpackagetool6 --type KWin/Script --install kdesnaplayout-1.9.0.kwinscript
+
+Gallery (in this order):
+  1  gallery-1-snap-bar.png
+  2  gallery-2-how-it-works.png
+  3  gallery-3-settings-editor.png
+  4  gallery-6-screen-edges.png
+  5  gallery-8-window-magnet.png
+  6  gallery-7-keyboard-shortcuts.png
+  7  gallery-4-layout-designer.png
+  8  gallery-5-styles.png
+  9  gallery-9-support.png

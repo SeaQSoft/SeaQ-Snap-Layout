@@ -7,7 +7,7 @@ A pure KWin script – no extra program, no background service.
 MORE WAYS TO SNAP (each one can be switched on and off on its own)
 • Screen edges: push a window against an edge or corner – top = maximize, left/right = halves, bottom = bottom half, corners = quarters
 • Hold to fill: held a moment longer at an edge, the window grows up to the next window
-• KDE's own edge tiling and snap zones pause while the script runs (nothing changed in your settings)
+• No double previews: KDE's own edge tiling and snap zones pause while the script runs
 • Smart fill: if a window already sits at the bottom, the top edge fills only the space above it
 • Window magnet: windows stick to each other and to the screen edges instead of sliding over, adjustable snap distance and resistance
 • Sticky edges: resize a window and the windows touching it follow – no overlap, no gap; shake the mouse to let go
@@ -28,14 +28,20 @@ FEATURES
 OPENING THE SETTINGS
 System Settings → Window Management → KWin Scripts → gear icon next to "SeaQ Snap Layout" → "Open Snap Layout settings editor" → OK.
 
-TIP
-Turn off Plasma's own edge actions (System Settings → Window Management → Screen Edges: Maximize, Tile) and snap zones (Window Behavior → Movement → None) so they don't react to the same drag.
+GOOD TO KNOW
+Plasma's own edge tiling and snap zones are paused automatically while SeaQ Snap Layout runs, so only one preview appears. Nothing is changed in your KDE settings – switch the script off or remove it and Plasma behaves as before.
 
 After updating, log out and back in once – KWin keeps loaded scripts in memory.
 
-Manual (PDF), video and source code:
-https://github.com/Swenix-dev/SeaQ-Snap-Layout
+Manual (PDF, English and German), video and source code:
+https://github.com/SeaQSoft/SeaQ-Snap-Layout
 
-Support: paypal.me/SeaQSoft · buymeacoffee.com/seaq
+SUPPORT
+If you like SeaQ Snap Layout, you can support its development – thank you!
+
+[url=https://paypal.me/SeaQSoft][img]https://raw.githubusercontent.com/SeaQSoft/SeaQ-Snap-Layout/main/docs/images/btn-paypal.png[/img][/url]  [url=https://buymeacoffee.com/seaq][img]https://raw.githubusercontent.com/SeaQSoft/SeaQ-Snap-Layout/main/docs/images/btn-coffee.png[/img][/url]
+
+PayPal: https://paypal.me/SeaQSoft
+Buy me a coffee: https://buymeacoffee.com/seaq
 
 License: GPL-3.0-or-later · Author: SeaQ

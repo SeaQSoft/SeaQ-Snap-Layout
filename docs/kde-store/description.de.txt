@@ -1,0 +1,12 @@
+DEUTSCH
+
+Zieh ein Fenster an den oberen Bildschirmrand: Eine Leiste mit Layouts fährt herunter. Lass das Fenster auf einer Zone los, und es füllt genau diesen Bereich. Ziehst du es wieder weg, bekommt es seine alte Größe zurück.
+
+• Bildschirmkanten: Fenster an Kante oder Ecke drücken – Hälfte, Viertel oder maximieren; länger halten füllt bis zum nächsten Fenster
+• Fenster-Magnet und klebende Kanten: Fenster haften aneinander und wachsen gemeinsam mit
+• 20 Tastenkürzel mit sechs fertigen Schemata oder eigenen Tasten
+• Layout-Designer mit bis zu 16 Zonen
+• Einstellungseditor in deinem Farbschema und deiner Sprache (62 Sprachen)
+• KDEs eigenes Kanten-Kacheln pausiert automatisch – keine doppelte Vorschau
+
+Deutsche Anleitung (PDF): https://github.com/SeaQSoft/SeaQ-Snap-Layout
