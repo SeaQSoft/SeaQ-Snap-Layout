@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# KDE Snap Layout – KWin script for Plasma 6
+# SeaQ Snap Layout – KWin script for Plasma 6
 #   bash install.sh                     install or update
 #   bash install.sh --no-top-maximize   also turn off KDE's "maximize when dragged to the top"
 #   bash install.sh --uninstall         remove
@@ -56,6 +56,6 @@ kwriteconfig6 --file kwinrc --group Plugins --key "${ID}Enabled" true
 reload_kwin
 
 VER="$(grep -o '"Version": *"[^"]*"' "$DIR/metadata.json" | grep -o '[0-9.]*')"
-echo "✓ KDE Snap Layout $VER installed."
+echo "✓ SeaQ Snap Layout $VER installed."
 echo "  KWin keeps already loaded script files in memory – log out and back in once."
-echo "  Settings: System Settings → KWin Scripts → gear icon next to KDE Snap Layout."
+echo "  Settings: System Settings → KWin Scripts → gear icon next to SeaQ Snap Layout."

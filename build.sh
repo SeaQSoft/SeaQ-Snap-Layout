@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# SPDX-FileCopyrightText: 2026 Swenix-dev
+# SPDX-FileCopyrightText: 2026 SeaQ
 # SPDX-License-Identifier: GPL-3.0-or-later
 #
 # Builds the installable package → dist/kdesnaplayout-<version>.kwinscript
