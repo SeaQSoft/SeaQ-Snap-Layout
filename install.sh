@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-# SeaQ Snap Layout – KWin script for Plasma 6
+# KSnapUnity – KWin script for Plasma 6
 #   bash install.sh                     install or update
 #   bash install.sh --no-top-maximize   also turn off KDE's "maximize when dragged to the top"
 #   bash install.sh --uninstall         remove
 # Without a terminal: System Settings → KWin Scripts → "Install from File…"
-# and pick kdesnaplayout.kwinscript.
+# and pick ksnapunity-<version>.kwinscript.
 set -euo pipefail
 
 ID="kdesnaplayout"
@@ -56,6 +56,6 @@ kwriteconfig6 --file kwinrc --group Plugins --key "${ID}Enabled" true
 reload_kwin
 
 VER="$(grep -o '"Version": *"[^"]*"' "$DIR/metadata.json" | grep -o '[0-9.]*')"
-echo "✓ SeaQ Snap Layout $VER installed."
+echo "✓ KSnapUnity $VER installed."
 echo "  KWin keeps already loaded script files in memory – log out and back in once."
-echo "  Settings: System Settings → KWin Scripts → gear icon next to SeaQ Snap Layout."
+echo "  Settings: System Settings → KWin Scripts → gear icon next to KSnapUnity."

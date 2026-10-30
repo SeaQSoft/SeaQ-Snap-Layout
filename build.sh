@@ -2,12 +2,12 @@
 # SPDX-FileCopyrightText: 2026 SeaQ
 # SPDX-License-Identifier: GPL-3.0-or-later
 #
-# Builds the installable package → dist/kdesnaplayout-<version>.kwinscript
+# Builds the installable package → dist/ksnapunity-<version>.kwinscript
 set -euo pipefail
 cd "$(dirname "$0")"
 
 VERSION=$(python3 -c "import json;print(json.load(open('package/metadata.json'))['KPlugin']['Version'])")
-OUT="dist/kdesnaplayout-${VERSION}.kwinscript"
+OUT="dist/ksnapunity-${VERSION}.kwinscript"
 
 # regenerate translations.js and the .mo files from i18n/*.txt
 python3 i18n/build.py >/dev/null

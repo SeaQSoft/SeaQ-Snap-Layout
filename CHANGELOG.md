@@ -1,5 +1,29 @@
 # Changelog
 
+## 2.3.4 – KSnapUnity
+- Renamed to **KSnapUnity** – *Snap Smarter. Work Better.* The script id stays `kdesnaplayout`, so updates keep your settings, layouts and keys
+- **Two modes:** mode 1 = snap bar and screen edges, mode 2 = automatic tiling. **Ctrl+Alt+A** switches (moved once from Ctrl+Alt+Space; a key you chose yourself stays)
+- **Automatic tiling, much extended** (best of Krohnkite and Polonium): dwindle layout, own layouts from the layout builder, layout by number of windows, main area left or right, where new windows join, centered single window, always-floating applications, more/fewer main windows by key
+- **Smooth animation:** windows glide to their place – the size changes once, only the position glides; new and restored windows appear directly in place
+- No more gaps after closing a window (closing windows no longer keep their tile)
+- **Swap windows** by dropping one window onto another, in both modes; the swap button on borders was removed
+- **Live previews** on the pages Screen edges, Window magnet, Automatic tiling and Swap windows – animated, with your own settings
+- **Quick settings** redesigned: switches, mode switch, the real mode key; changes sync both ways with the settings editor
+- Settings editor: resizable on all edges, stacks like a normal window, compact mode badge, no scroll bar in the sidebar, lists never cut off, U.N.I.T.Y. on the About page, support buttons
+- Removed: window switcher, excluded applications, Meta+Alt+S
+- All new texts in 62 languages
+
+## 2.0.0 – SnapMagic for KWin
+- Renamed to **SnapMagic for KWin** with a new logo – the script id stays `kdesnaplayout`, so updates keep your settings, layouts and keys
+- **Window magnet holds on fast moves:** an edge that runs into another window stays there, also when the mouse jumps far past it in one step. It lets go only when you shake the mouse, keep pushing for a moment or pull back
+- **Sticky edges chain through all windows:** every window that touches a moving edge – directly or through other windows – follows, in all directions. A big window next to two small ones no longer leaves one behind
+- **Automatic tiling** (like Krohnkite): main and stack, main in the middle, columns, rows, grid, spiral, one at a time; size of the main area, number of main windows, new windows first; float a window to take it out
+- **Swap windows:** drop a window onto another one, click the *Swap* button on their shared border, or press Ctrl+Alt+Shift+arrow
+- **Window switcher:** all windows as live previews, pick one with the arrow keys, by typing or with the mouse (Ctrl+Alt+Tab)
+- 12 new shortcuts for swapping, tiling and the switcher; **Meta+Alt+S** opens the settings directly
+- The dialog behind the gear icon now only opens the settings; the settings editor is now simply called **Settings**
+- New texts in all 62 languages
+
 ## 1.9.0
 - **Hold to fill:** a short push at an edge gives the half or quarter; held a moment longer, the window grows up to the next window (all edges and corners, adjustable hold time). The windows then touch, so sticky edges keep them together
 - **KDE's own edge tiling and its outline are paused** while SeaQ Snap Layout runs, so only one preview appears; KDE's snap zones pause while the magnet is on. Nothing is written to `kwinrc` – switched off, disabled or removed, KDE's behavior is back
