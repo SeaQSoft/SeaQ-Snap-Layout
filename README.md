@@ -33,7 +33,11 @@ Drag a window to the top edge and drop it onto a zone of the snap bar – or let
 
 <div align="center">
 
-<a href="docs/video/ksnapunity-intro-en.mp4"><img src="docs/images/video-thumbnail.png" alt="Play the intro video" width="720"></a>
+
+
+https://github.com/user-attachments/assets/1777d77f-b5f0-4997-ae7f-a3260bd680aa
+
+
 
 <sub>45 seconds · snap bar, mode switch, automatic tiling, swapping and the settings editor</sub><br>
 <sub>🇩🇪 <a href="docs/video/ksnapunity-intro-de.mp4">German version</a></sub>
