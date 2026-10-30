@@ -33,7 +33,11 @@ Zieh ein Fenster an den oberen Rand und leg es auf einer Zone der Snap-Leiste ab
 
 <div align="center">
 
-<a href="docs/video/ksnapunity-intro-de.mp4"><img src="docs/images/video-thumbnail-de.png" alt="Intro-Video abspielen" width="720"></a>
+
+
+https://github.com/user-attachments/assets/625b5630-7e4a-4024-bd61-137414b49925
+
+
 
 <sub>45 Sekunden · Snap-Leiste, Moduswechsel, automatisches Anordnen, Tauschen und der Einstellungseditor</sub><br>
 <sub>🇬🇧 <a href="docs/video/ksnapunity-intro-en.mp4">Englische Version</a></sub>
