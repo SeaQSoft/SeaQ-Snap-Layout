@@ -1,35 +1,25 @@
 Itxi
 Leheneratu
 Maximizatu
-Zabaldu
-Tolestu
 Zatitu alboz albo
 Zatitu goian eta behean
 Kendu eremua
 Kargatu txantiloia…
 Egin klik eremu batean hautatzeko · klik bikoitzak zatitzen du · arrastatu bereizleak
 %1 / %2 eremu
-SeaQ Snap Layout – Ezarpen-editorea
-KDE-erako · v%1
 Orokorra
 Itxura
 Portaera eta animazioa
 Diseinuak
 Honi buruz eta laguntza
 Aktibo
-Pausatuta
 Arrastatu leiho bat pantailaren goiko ertzera eta askatu eremu baten gainean.
 Atxikitzea
-Erakutsi barra leiho bat goiko ertzera arrastatzean
-Erakutsi leihoa non geratuko den
 Leheneratu jatorrizko tamaina leihoa ateratzean
 Tarteak
 Leihoen arteko tartea
 Pantailaren ertzerainoko tartea
-Baztertutako aplikazioak
-Barra inoiz erakusten ez duten leiho-klaseak, bat lerro bakoitzeko.
 Aholkua
-KDEk maximizatu egiten ditu goiko ertzera arrastatutako leihoak. Atxikitze leunagoa nahi baduzu, desaktibatu Sistemaren ezarpenak → Pantailaren ertzak atalean.
 Gomendatutako balioak
 Barraren koloreak, tamaina eta forma.
 Aurrebista
@@ -81,8 +71,6 @@ Bikoiztu
 Ezabatu
 Nola dabilen
 Heldu leiho bati titulu-barratik eta arrastatu gora. Barra jaisten da; askatu leihoa eremu batean eta eremu hori bera beteko du. Berriro ateratzen baduzu, lehengo tamaina berreskuratzen du.
-Ezarpen-editorea irekitzea
-Sistemaren ezarpenak → Leiho-kudeaketa → KWin scriptak → engranaje-ikonoa «SeaQ Snap Layout»-en ondoan → «Ireki Snap Layout-en ezarpen-editorea» → Ados.
 Informazioa
 Bertsioa
 Egilea
@@ -102,8 +90,6 @@ Gorde
 Bai
 %1. eremua
 Askatu leihoa eremu batean
-SeaQ Snap Layout: aktibatu/desaktibatu
-SeaQ Snap Layout: probatu barra
 Erdiak
 Bi heren
 Hiru zutabe
@@ -115,13 +101,6 @@ Goian / behean
 Pila + nagusia
 Sei lauza
 Alboko barra + sareta
-Arrastatu leihoak pantailaren goiko ertzera eta askatu eremu baten gainean.
-Ezarpen-editorea
-Ireki Snap Layout-en ezarpen-editorea
-✔ Prest – egin klik Ados botoian ezarpen-editorea irekitzeko.
-Ezarpen azkarrak
-Barraren koloreak:
-Gainerako ezarpen guztiak – itxura, tamaina, animazioa, portaera eta zure diseinuak – Snap Layout-en ezarpen-editorean aldatzen dira.
 Ezarpenak
 Bat ere ez
 Aldatu
@@ -131,27 +110,21 @@ Ezarri
 Kendu
 Atxikitze-barra
 Pantailaren ertzak
-Atxikitzeko modu gehiago
+Modu gehiago
 Leihoen imana
 Teklatuko lasterbideak
 Lasterbideak
-Leihoak atxikitzeko lau modu. Bakoitza bere aldetik aktibatu eta desaktibatzen da.
 Eginbideak
 Bultzatu leiho bat ertz edo izkina baten kontra: maximizatu, erdiak, laurdenak.
 Leihoak elkarri eta pantailaren ertzei itsasten zaizkie.
 Atxiki leiho aktiboa tekla-konbinazioekin.
 Aurrebistak
 Erakutsi aurrebistak nabarmentze-kolorean
-Desaktibatuta: marko neutroa. Aurrebista guztiei aplikatzen zaie.
-Inoiz atxikitzen ez diren leiho-klaseak, bat lerro bakoitzeko.
 KDEk pantaila-ertzetarako bere ekintzak eta leihoak atxikitzeko bere sistema ditu. Funtzio bera hemen aktibatuta badago, desaktibatu KDErena: Sistemaren ezarpenak → Leiho-kudeaketa → Pantailaren ertzak, eta Leihoen portaera → Mugimendua.
 Bultzatu leiho bat pantailaren ertz edo izkina baten kontra eta zati hori beteko du. Atxikitze-barrarekin edo gabe dabil.
 Pantaila osoa
 Goiko erdia
 Desaktibatuta
-Beheko erdia
-Ezkerreko erdia
-Eskuineko erdia
 Ertzak eta izkinak
 Erabili pantailaren ertzak
 Atxikitze-barratik aparte. Ertz bakoitza bere aldetik aktibatzen da.
@@ -197,7 +170,6 @@ Hartu denak
 Utzi
 Jakitea ona da
 Atxikitze-ekintzek barraren tarte berak erabiltzen dituzte eta atxiki aurreko tamaina gogoratzen dute: «Berrezarri atxiki aurreko tamaina» aukerak itzultzen du.
-SeaQ Snap Layout: %1
 Atxiki ezkerreko erdian
 Atxiki eskuineko erdian
 Atxiki goiko erdian
@@ -228,9 +200,7 @@ Meta+Shift + tekla
 Ctrl+Shift+Alt + tekla
 Ctrl+Alt + zenbakizko teklatua
 Lasterbiderik ez
-Egin klik, eta gero Ados – ezarpen-editorea irekitzen da.
 Gainjartzearen aurkako erresistentzia
-Leiho bat beste baten barrura zenbat bultzatu behar den askatu aurretik. 0 = leihoak libreki gainjar daitezke.
 Berrezarri lehenetsia
 Berrezarri tekla guztiak
 Ekintza bakoitzari aukeratutako eskemaren tekla ematen dio berriro eta eskemak ez dituen teklak kentzen ditu.
@@ -241,7 +211,6 @@ Leiho baten tamaina aldatzean, hura ukitzen duten leihoek ertz partekatua mugitz
 Mantendu pilatutako leihoak lerroan
 Bata bestearen gainean dauden leihoek ezkerreko eta eskuineko ertzak elkarrekin mantentzen dituzte; alboz albokoek goikoak eta behekoak.
 Astindu askatzeko
-Astindu sagua tamaina aldatzean eta beste leihoak atzera itzultzen dira.
 Iluntu beste leihoak
 Tamaina aldatzean, jarraitzen ez duten leihoak garden erakusten dira.
 Atxikitze-barraren aurrebista
@@ -257,11 +226,156 @@ Bultzada labur batek erdia edo laurdena ematen du. Eutsi leihoari ertzean pixka 
 Eusteko denbora
 Zenbat denbora egon behar duen leihoak ertzean hazi aurretik.
 KDEren berezko ertz-lauzaketa
-KDEren maximizatzea eta lauzaketa pantaila-ertzetan – ingeradarekin – pausatuta daude SeaQ Snap Layout martxan dagoen bitartean, aurrebista bakarra ager dadin. Zure KDE ezarpenak ez dira aldatzen: desaktibatu hau, desgaitu edo kendu SeaQ Snap Layout eta KDEren portaera itzuliko da.
 KDEren berezko leiho-atxikitzea
 Pausatu KDEren atxikitze-zonak imana aktibo dagoen bitartean
-Iman bakar batek tira dezan leiho batetik. Zure KDE ezarpenak ez dira aldatzen: desaktibatu hau, desgaitu edo kendu SeaQ Snap Layout eta KDEren atxikitzea itzuliko da.
-Lagundu SeaQ Snap Layout
-SeaQ Snap Layout gustatzen bazaizu, bere garapena lagun dezakezu – eskerrik asko!
 Egin dohaintza PayPal bidez
 Gonbidatu kafe batera
+KWin-erako · v%1
+Lauza automatikoak
+Leihoak antolatu
+Leihoak trukatu
+Funtzio bakoitza bere aldetik aktiba eta desaktiba daiteke.
+Leiho bakoitzak bere lekua berez hartzen du, lauza-leiho kudeatzaile batean bezala.
+Leiho bat beste baten ertzean gelditzen da, azkar mugitzen baduzu ere. Astindu sagua edo jarraitu une batez bultzatzen askatzeko. 0 = leihoak askatasunez gainjar daitezke.
+Tamaina aldatzean astindu sagua azkar aurrera eta atzera, eta beste leihoak atzera egingo dute. Norabide bakarreko tira azkar batek ez ditu inoiz askatzen.
+Leiho bakoitzak pantailan bere lekua berez hartzen du. Leiho berriak gehitu egiten dira, itxitakoek tokia uzten diete besteei.
+Lauzak
+Leihoak automatikoki antolatu
+Desaktibatuta: leihoak jartzen dituzun lekuan geratzen dira. Beste funtzioek berdin funtzionatzen dute.
+Diseinua
+Leiho nagusia
+Eremu nagusiaren tamaina
+Leiho nagusiaren tamaina eskuz aldatzean ere aldatzen da.
+Leiho nagusiak
+Zenbat leihok partekatzen duten eremu nagusia («Nagusia eta pila» diseinua).
+Trukatu
+Leiho bat beste baten gainean askatu
+Teklak
+Aldatu Teklatuko lasterbideak orrian. Lauza automatikoekin, leihoek ordenako lekua ere trukatzen dute.
+Trukatu ezkerreko leihoarekin
+Trukatu eskuineko leihoarekin
+Trukatu goiko leihoarekin
+Trukatu beheko leihoarekin
+Lauza automatikoak aktibatu/desaktibatu
+Hurrengo lauza-diseinua
+Leiho nagusi bihurtu
+Leihoa flotatzen utzi (lauzetatik irten)
+Eremu nagusia handiagoa
+Eremu nagusia txikiagoa
+Nagusia eta pila
+Nagusia erdian
+Zutabeak
+Errenkadak
+Sareta
+Espirala
+Banan-banan
+Aldatu modua (atxikitzea / lauzak)
+Leiho nagusi bat gehiago
+Leiho nagusi bat gutxiago
+Mugitu leihoa leku bat aurrera
+Mugitu leihoa leku bat atzera
+Moduak
+Barrurako espirala
+Minimizatu
+Zuzeneko aurrebista
+Desaktibatuta
+Goiko ertza: pantaila osoa
+Goiko ertza: goiko erdia
+Goiko ertza: maximizatu
+Arrastatu leiho bat ertz batera…
+Ezkerreko ertza: ezkerreko erdia
+Izkina: laurden bat
+Mugitu leiho bat besteengana…
+Gertu, ertzak elkarri itsasten zaizkio
+Tamaina aldatzean ere atxikitzen da – hemen altuera osora
+Arrastatu ertz partekatu bat…
+…ondokoak harekin hazi eta txikitzen dira
+…norabide guztietan
+Leiho bat
+Leiho berri bat gehitzen da
+Bat ixten da – besteek hutsunea betetzen dute
+Heldu A leihoari…
+…arrastatu B leihoaren gainera…
+…askatu: tokiak trukatzen dituzte
+Barrak eta pantailaren ertzek lauza automatikoak oztopatzen dituzte. Horregatik bi modu dira – aldatu lasterbidearekin edo hemen.
+1. modua – Atxikitze-barra eta pantailaren ertzak
+Atxikitze-barra, pantailaren ertzak, leihoen imana, lasterbideak eta leihoen trukea.
+2. modua – Lauza automatikoak
+Lauza automatikoak, leihoen trukea, lasterbideak eta imana leiho flotatzaileentzat.
+Lauza automatikoak desaktibatuta – 1. modua bakarrik dabil eta moduaren lasterbideak ez du ezer egiten.
+Barra eta ertzak desaktibatuta – 2. modua bakarrik dabil eta moduaren lasterbideak ez du ezer egiten.
+Aldatu modua
+Teklarik ez
+Aldatu tekla
+KSnapUnity – Ezarpenen editorea
+Modu aktiboa
+Atxikitze-barra eta pantailaren ertzak
+Egin klik edo sakatu %1 modua aldatzeko.
+Modu bakarra dago aktibatuta.
+Bi leihok tokiak trukatzen dituzte: askatu bat bestearen gainean, edo teklaz.
+KDEren maximizatzea eta lauzak ertzetan – bere ingeradarekin – pausatuta daude KSnapUnity dabilen bitartean, aurrebista bakarra ager dadin. KDEren ezarpenak ez dira aldatzen: desaktibatu hau, desgaitu edo kendu KSnapUnity eta KDEren portaera itzultzen da.
+Horrela imana bakarrak tiratzen du leihotik. KDEren ezarpenak ez dira aldatzen: desaktibatu hau, desgaitu edo kendu KSnapUnity eta KDEren atxikitzea itzultzen da.
+Snap Smarter. Work Better.
+K KWin-erako · Snap atxikitze azkarragorako · Unity dena sistema bakarrean
+Unified
+Leihoen funtzio guztiak sistema bakarrean.
+Natural
+Leihoen portaera intuitibo eta naturala.
+Intelligent
+Antolaketa eta detekzio adimentsuak.
+Atxikitze-diseinuak eta lauza automatikoak.
+Your Workflow
+Zure lan egiteko erara egokitzen da.
+Atxikitzea eta lauza automatikoak bi modu dira – lasterbide batek bien artean aldatzen du.
+Lagundu KSnapUnity
+KSnapUnity gustuko baduzu, haren garapena lagun dezakezu – eskerrik asko!
+Diseinu propioak
+Diseinuak orrian sortzen duzun diseinu orok leihoak ere antola ditzake – goian agertzen da. 1. leihoak 1. eremua hartzen du eta abar; gainerakoek azken eremua partekatzen dute. Eremuak baino leiho gutxiago badaude, «Nagusia eta pila» erabiltzen da, zulorik gera ez dadin.
+Ireki diseinu-sortzailea
+Diseinua leiho kopuruaren arabera
+Aldatu diseinua berez
+Adibidea: bi leiho alboz albo, hirutik aurrera nagusia eta pila, bostetik aurrera sareta. Araurik gabe goian aukeratutako diseinua erabiltzen da.
+Hemendik
+leiho:
+Kendu araua
+Gehitu araua
+Eremu nagusia eskuinean
+Diseinua ispilatzen du: leiho nagusia eskuinean, besteak ezkerrean.
+Leiho berriak
+Amaieran sartzen dira
+Leku nagusia hartzen dute
+Leiho aktiboaren ondoan
+Leiho bakar bat
+Zabalera
+100 %-tik behera leiho bakarra erdian geratzen da – polita pantaila zabaletan.
+Kanpoko marjinarik ez
+Leiho bakarrak pantaila osoa erabiltzen du, marjina ezarrita egon arren.
+Leihoak lerratu egiten dira beren lekura
+Leiho bat ireki, itxi edo trukatzean, besteak leunki mugitzen dira salto egin beharrean.
+Iraupena
+Beti flotatzaile
+Aplikazio hauek ez dira inoiz antolatzen eta beren lekua gordetzen dute. Elkarrizketa-koadroak beti flotatzen dute.
+Bat ere ez oraindik.
+Gehitu aplikazio ireki bat
+Ireki aplikazioa lehenik, eta aukeratu hemen.
+Aukeratu…
+Ez dago beste leihorik irekita
+Arrastatu leiho bat beste baten gainera trukatzeko. Barran edo pantailaren ertzean askatuz gero, aske flotatzen du; «Leihoa flotatzen utzi» itzultzen du. Tarteak Orokorra orritik datoz.
+Bi leihok tokiak trukatzen dituzte – askatu bat bestearen gainean edo erabili teklak.
+Etengailu nagusia arrastatzeko eta teklentzat.
+Arrastatu leiho bat beste baten erdiaren gainera – aurrebistak bi gezi erakusten ditu – eta askatu. Lauza automatikoekin nahikoa da beste leihoaren edozein tokitan.
+Leiho nagusiak: %1
+KSnapUnity: %1
+Lauza automatikoak aktibatuta
+Lauza automatikoak desaktibatuta
+Ireki ezarpenen editorea
+Egin klik, gero Ados – ezarpenen editorea irekitzen da.
+✔ Prest – egin klik Ados-en ezarpenen editorea irekitzeko.
+Modua
+<b>1. modua</b><br/>Atxikitze-barra eta pantailaren ertzak
+Desaktibatuta = 1. modua, aktibatuta = 2. modua
+<b>2. modua</b><br/>Lauza automatikoak
+Aldatu modua honekin:
+Tekla ezarpenen editorean aldatzen da. Bi moduek lauza automatikoak eta barra edo pantailaren ertzak behar dituzte.
+Ezarpen azkarrak
+Barraren koloreak:

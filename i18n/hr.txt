@@ -1,35 +1,25 @@
 Zatvori
 Vrati
 Maksimiziraj
-Proširi
-Sažmi
 Podijeli jedno pokraj drugog
 Podijeli gore i dolje
 Ukloni zonu
 Učitaj predložak…
 Kliknite zonu za odabir · dvostruki klik je dijeli · povucite razdjelnike
 %1 od %2 zona
-SeaQ Snap Layout – Uređivač postavki
-za KDE · v%1
 Općenito
 Izgled
 Ponašanje i animacija
 Rasporedi
 O programu i pomoć
 Aktivno
-Pauzirano
 Povucite prozor do gornjeg ruba zaslona i ispustite ga na zonu.
 Prianjanje
-Prikaži traku pri povlačenju prozora do gornjeg ruba
-Prikaži gdje će prozor završiti
 Vrati izvornu veličinu pri izvlačenju prozora
 Razmaci
 Razmak između prozora
 Razmak do ruba zaslona
-Izuzete aplikacije
-Klase prozora za koje se traka nikad ne prikazuje, jedna po retku.
 Savjet
-KDE maksimizira prozore povučene do gornjeg ruba. Za glađe prianjanje isključite to u Postavke sustava → Rubovi zaslona.
 Preporučene vrijednosti
 Boje, veličina i oblik trake.
 Pregled
@@ -81,8 +71,6 @@ Dupliciraj
 Izbriši
 Kako radi
 Uhvatite prozor za naslovnu traku i povucite ga prema gore. Traka se spušta; ispustite prozor na zonu i on ispuni točno to područje. Kad ga ponovno izvučete, vraća mu se stara veličina.
-Otvaranje uređivača postavki
-Postavke sustava → Upravljanje prozorima → KWin skripte → ikona zupčanika pored „SeaQ Snap Layout” → „Otvori uređivač postavki Snap Layouta” → U redu.
 Informacije
 Verzija
 Autor
@@ -102,8 +90,6 @@ Spremi
 Da
 Zona %1
 Ispustite prozor na zonu
-SeaQ Snap Layout: uključi/isključi
-SeaQ Snap Layout: isprobaj traku
 Polovice
 Dvije trećine
 Tri stupca
@@ -115,13 +101,6 @@ Gore / dolje
 Hrpa + glavni
 Šest pločica
 Bočna traka + mreža
-Povlačite prozore do gornjeg ruba zaslona i ispuštajte ih na zonu.
-Uređivač postavki
-Otvori uređivač postavki Snap Layouta
-✔ Spremno – kliknite U redu za otvaranje uređivača postavki.
-Brze postavke
-Boje trake:
-Sve ostale postavke – izgled, veličinu, animaciju, ponašanje i vlastite rasporede – mijenjate u uređivaču postavki Snap Layouta.
 Postavke
 Nijedna
 Promijeni
@@ -131,27 +110,21 @@ Postavi
 Ukloni
 Traka za prianjanje
 Rubovi zaslona
-Više načina prianjanja
+Više načina
 Magnet prozora
 Tipkovnički prečaci
 Prečaci
-Četiri načina za prianjanje prozora. Svaki se može zasebno uključiti i isključiti.
 Značajke
 Pritisnite prozor uz rub ili kut: maksimiziraj, polovice, četvrtine.
 Prozori se lijepe jedan uz drugi i uz rubove zaslona.
 Prilijepite aktivni prozor kombinacijama tipki.
 Pretpregledi
 Prikaži pretpreglede u boji isticanja
-Isključeno: neutralan okvir. Vrijedi za sve pretpreglede.
-Klase prozora koje se nikad ne prilijepe, jedna po retku.
 KDE ima vlastite radnje rubova zaslona i vlastito prianjanje prozora. Ako je ovdje uključena ista značajka, isključite KDE-ovu: Postavke sustava → Upravljanje prozorima → Rubovi zaslona te Ponašanje prozora → Pomicanje.
 Pritisnite prozor uz rub ili kut zaslona i on ispuni taj dio. Radi s trakom ili bez nje.
 Cijeli zaslon
 Gornja polovica
 Isključeno
-Donja polovica
-Lijeva polovica
-Desna polovica
 Rubovi i kutovi
 Koristi rubove zaslona
 Neovisno o traci. Svaki rub može se zasebno uključiti.
@@ -197,7 +170,6 @@ Preuzmi sve
 Zadrži ih
 Dobro je znati
 Radnje prianjanja koriste iste razmake kao traka i pamte veličinu prije prianjanja: „Vrati veličinu prije prianjanja” je vraća.
-SeaQ Snap Layout: %1
 Prilijepi u lijevu polovicu
 Prilijepi u desnu polovicu
 Prilijepi u gornju polovicu
@@ -228,9 +200,7 @@ Meta+Shift + tipka
 Ctrl+Shift+Alt + tipka
 Ctrl+Alt + numerička tipkovnica
 Bez prečaca
-Kliknite, zatim U redu – otvara se uređivač postavki.
 Otpor preklapanju
-Koliko duboko morate gurnuti prozor u drugi prije nego što ga pusti. 0 = prozori se mogu slobodno preklapati.
 Vrati na zadano
 Vrati sve tipke
 Svakoj radnji ponovno daje tipku odabrane sheme i uklanja tipke koje shema nema.
@@ -241,7 +211,6 @@ Kada mijenjate veličinu prozora, prozori koji ga dodiruju pomiču zajednički r
 Drži složene prozore u liniji
 Prozori jedan iznad drugoga drže lijeve i desne rubove zajedno, prozori jedan uz drugi gornje i donje.
 Protresi za otpuštanje
-Protresite miš tijekom promjene veličine i ostali prozori se vraćaju.
 Zatamni ostale prozore
 Tijekom promjene veličine prozori koji ne prate prikazuju se prozirno.
 Pregled trake za pričvršćivanje
@@ -257,11 +226,156 @@ Kratko guranje daje polovicu ili četvrtinu. Zadržite prozor uz rub malo duže 
 Vrijeme držanja
 Koliko dugo prozor mora ostati uz rub prije nego naraste.
 KDE-ovo vlastito slaganje uz rubove
-KDE-ovo maksimiziranje i slaganje uz rubove zaslona – s obrisom – pauzira dok radi SeaQ Snap Layout, pa se pojavljuje samo jedan pregled. Vaše KDE postavke se ne mijenjaju: isključite ovo, onemogućite ili uklonite SeaQ Snap Layout i KDE-ovo ponašanje se vraća.
 KDE-ovo vlastito pričvršćivanje prozora
 Pauziraj KDE-ove zone pričvršćivanja dok je magnet uključen
-Da samo jedan magnet vuče prozor. Vaše KDE postavke se ne mijenjaju: isključite ovo, onemogućite ili uklonite SeaQ Snap Layout i KDE-ovo pričvršćivanje se vraća.
-Podržite SeaQ Snap Layout
-Ako vam se sviđa SeaQ Snap Layout, možete podržati njegov razvoj – hvala!
 Donirajte putem PayPala
 Častite me kavom
+za KWin · v%1
+Automatsko popločavanje
+Raspoređivanje prozora
+Zamjena prozora
+Svaka se funkcija može zasebno uključiti i isključiti.
+Svaki prozor sam pronalazi svoje mjesto, kao u upravitelju prozora s popločavanjem.
+Prozor se zaustavlja na rubu drugog, i kad ga brzo pomičeš. Protresi miš ili guraj još trenutak da ga otpustiš. 0 = prozori se smiju slobodno preklapati.
+Dok mijenjaš veličinu, brzo protresi miš naprijed-natrag i ostali prozori skoče natrag. Brzi potez u jednom smjeru nikad ih ne otpušta.
+Svaki prozor sam pronalazi svoje mjesto na zaslonu. Novi prozori se pridružuju, zatvoreni oslobađaju mjesto ostalima.
+Popločavanje
+Automatski rasporedi prozore
+Isključeno: prozori ostaju gdje ih staviš. Ostale funkcije rade svejedno.
+Raspored
+Glavni prozor
+Veličina glavnog područja
+Mijenja se i kad ručno promijeniš veličinu glavnog prozora.
+Glavni prozori
+Koliko prozora dijeli glavno područje (raspored „Glavni i hrpa”).
+Zamijeni
+Ispusti prozor na drugi
+Tipke
+Promijeni ih na stranici Tipkovnički prečaci. Uz automatsko popločavanje prozori mijenjaju i mjesto u redoslijedu.
+Zamijeni s prozorom lijevo
+Zamijeni s prozorom desno
+Zamijeni s prozorom iznad
+Zamijeni s prozorom ispod
+Automatsko popločavanje uklj./isklj.
+Sljedeći raspored popločavanja
+Učini glavnim prozorom
+Pusti prozor da lebdi (napusti popločavanje)
+Veće glavno područje
+Manje glavno područje
+Glavni i hrpa
+Glavni u sredini
+Stupci
+Retci
+Mreža
+Spirala
+Jedan po jedan
+Promijeni način (prianjanje / popločavanje)
+Jedan glavni prozor više
+Jedan glavni prozor manje
+Pomakni prozor jedno mjesto naprijed
+Pomakni prozor jedno mjesto natrag
+Načini
+Spirala prema unutra
+Minimiziraj
+Pregled uživo
+Isključeno
+Gornji rub: cijeli zaslon
+Gornji rub: gornja polovica
+Gornji rub: maksimiziraj
+Povuci prozor prema rubu…
+Lijevi rub: lijeva polovica
+Kut: četvrtina
+Pomakni prozor prema drugima…
+U blizini se rubovi slijepe
+I promjena veličine prianja – ovdje do pune visine
+Povuci zajednički rub…
+…susjedi rastu i smanjuju se s njim
+…u svakom smjeru
+Jedan prozor
+Dolazi novi prozor
+Jedan se zatvara – ostali popune prazninu
+Uhvati prozor A…
+…povuci ga na prozor B…
+…pusti: zamijene mjesta
+Traka i rubovi zaslona smetaju automatskom popločavanju. Zato rade kao dva načina – mijenjaj prečacem ili ovdje.
+Način 1 – traka za prianjanje i rubovi zaslona
+Traka za prianjanje, rubovi zaslona, magnet prozora, prečaci i zamjena prozora.
+Način 2 – automatsko popločavanje
+Automatsko popločavanje, zamjena prozora, prečaci i magnet za slobodne prozore.
+Automatsko popločavanje je isključeno – radi samo način 1, a prečac načina ne radi ništa.
+Traka i rubovi su isključeni – radi samo način 2, a prečac načina ne radi ništa.
+Promijeni način
+Nema tipke
+Promijeni tipku
+KSnapUnity – uređivač postavki
+Aktivni način
+Traka za prianjanje i rubovi zaslona
+Klikni ili pritisni %1 za promjenu načina.
+Uključen je samo jedan način.
+Dva prozora mijenjaju mjesta: spusti jedan na drugi ili tipkom.
+KDE-ovo maksimiziranje i popločavanje na rubovima – s obrisom – pauzira dok radi KSnapUnity, pa se vidi samo jedan pregled. Postavke KDE-a se ne mijenjaju: isključi ovo, deaktiviraj ili ukloni KSnapUnity i KDE-ovo ponašanje se vraća.
+Tako samo jedan magnet vuče prozor. Postavke KDE-a se ne mijenjaju: isključi ovo, deaktiviraj ili ukloni KSnapUnity i KDE-ovo prianjanje se vraća.
+Snap Smarter. Work Better.
+K za KWin · Snap za pametnije prianjanje · Unity za sve u jednom sustavu
+Unified
+Sve funkcije prozora u jednom sustavu.
+Natural
+Intuitivno, prirodno ponašanje prozora.
+Intelligent
+Pametno raspoređivanje i prepoznavanje.
+Rasporedi za prianjanje i automatsko popločavanje.
+Your Workflow
+Prilagođava se tvom načinu rada.
+Prianjanje i automatsko popločavanje rade kao dva načina – jedan prečac ih mijenja.
+Podrži KSnapUnity
+Ako ti se sviđa KSnapUnity, možeš podržati razvoj – hvala!
+Vlastiti rasporedi
+Svaki raspored sa stranice Rasporedi može i raspoređivati prozore – pojavljuje se iznad. Prozor 1 dobiva zonu 1 i tako dalje; dodatni prozori dijele zadnju zonu. Ako je prozora manje od zona, koristi se „Glavni i hrpa”, da ne bude rupa.
+Otvori graditelj rasporeda
+Raspored prema broju prozora
+Sam mijenjaj raspored
+Primjer: dva prozora jedan uz drugi, od tri glavni i hrpa, od pet mreža. Bez odgovarajućeg pravila vrijedi gore odabrani raspored.
+Od
+prozora:
+Ukloni pravilo
+Dodaj pravilo
+Glavno područje desno
+Zrcali raspored: glavni prozor desno, ostali lijevo.
+Novi prozori
+Idu na kraj
+Uzimaju glavno mjesto
+Uz aktivni prozor
+Jedan prozor
+Širina
+Ispod 100 % samostalni prozor ostaje u sredini – lijepo na širokim zaslonima.
+Bez vanjskog razmaka
+Samostalni prozor zauzima cijeli zaslon, čak i uz zadani razmak.
+Prozori klize na svoje mjesto
+Kad se prozor otvori, zatvori ili zamijeni, ostali se pomiču glatko umjesto da skaču.
+Trajanje
+Uvijek slobodni
+Ove se aplikacije nikad ne raspoređuju i zadržavaju svoje mjesto. Dijalozi su uvijek slobodni.
+Još ništa.
+Dodaj otvorenu aplikaciju
+Najprije otvori aplikaciju, zatim je odaberi ovdje.
+Odaberi…
+Nema drugog otvorenog prozora
+Povuci prozor na drugi da ih zamijeniš. Spušten na traku ili rub zaslona, lebdi slobodno; „Pusti prozor da lebdi” ga vraća. Razmaci dolaze sa stranice Općenito.
+Dva prozora mijenjaju mjesta – spusti jedan na drugi ili koristi tipke.
+Glavni prekidač za povlačenje i tipke.
+Povuci prozor preko sredine drugog – pregled pokazuje dvije strelice – i pusti. Kod automatskog popločavanja dovoljno je bilo gdje iznad drugog prozora.
+Glavni prozori: %1
+KSnapUnity: %1
+Automatsko popločavanje uključeno
+Automatsko popločavanje isključeno
+Otvori uređivač postavki
+Klikni, zatim U redu – otvara se uređivač postavki.
+✔ Spremno – klikni U redu za otvaranje uređivača postavki.
+Način
+<b>Način 1</b><br/>Traka za prianjanje i rubovi zaslona
+Isklj. = način 1, uklj. = način 2
+<b>Način 2</b><br/>Automatsko popločavanje
+Promjena načina:
+Tipku mijenjaš u uređivaču postavki. Oba načina trebaju automatsko popločavanje i traku ili rubove zaslona.
+Brze postavke
+Boje trake:

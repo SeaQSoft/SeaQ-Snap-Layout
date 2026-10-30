@@ -1,35 +1,25 @@
 Bezárás
 Visszaállítás
 Teljes méret
-Kinyitás
-Összecsukás
 Felosztás egymás mellé
 Felosztás felül és alul
 Zóna eltávolítása
 Sablon betöltése…
 Kattintson egy zónára a kijelöléshez · dupla kattintással felosztja · húzza az elválasztókat
 %2 zónából %1
-SeaQ Snap Layout – Beállításszerkesztő
-KDEhez · v%1
 Általános
 Megjelenés
 Viselkedés és animáció
 Elrendezések
 Névjegy és súgó
 Aktív
-Szüneteltetve
 Húzzon egy ablakot a képernyő felső széléhez, és engedje el egy zónán.
 Illesztés
-Az illesztősáv megjelenítése, amikor egy ablakot a felső szélhez húz
-Megmutatja, hová kerül az ablak
 Eredeti méret visszaállítása az ablak kihúzásakor
 Térközök
 Térköz az ablakok között
 Térköz a képernyő szélétől
-Kizárt alkalmazások
-Ablakosztályok, amelyeknél a sáv sosem jelenik meg, soronként egy.
 Tipp
-A KDE teljes méretűre nagyítja a felső szélhez húzott ablakokat. A gördülékenyebb illesztéshez kapcsolja ki ezt a Rendszerbeállítások → Képernyőszélek alatt.
 Ajánlott értékek
 Az illesztősáv színei, mérete és formája.
 Előnézet
@@ -81,8 +71,6 @@ Kettőzés
 Törlés
 Hogyan működik
 Fogja meg az ablakot a címsoránál, és húzza felfelé. A sáv lecsúszik; engedje el az ablakot egy zónán, és pontosan azt a területet tölti ki. Ha újra elhúzza, visszakapja korábbi méretét.
-A beállításszerkesztő megnyitása
-Rendszerbeállítások → Ablakkezelés → KWin parancsfájlok → fogaskerék ikon a „SeaQ Snap Layout” mellett → „Snap Layout beállításszerkesztő megnyitása” → OK.
 Információ
 Verzió
 Szerző
@@ -102,8 +90,6 @@ Mentés
 Igen
 %1. zóna
 Engedje el az ablakot egy zónán
-SeaQ Snap Layout: be/ki
-SeaQ Snap Layout: sáv kipróbálása
 Felezés
 Kétharmad
 Három oszlop
@@ -115,13 +101,6 @@ Fent / lent
 Köteg + fő
 Hat csempe
 Oldalsáv + rács
-Húzza az ablakokat a képernyő felső széléhez, és engedje el őket egy zónán.
-Beállításszerkesztő
-Snap Layout beállításszerkesztő megnyitása
-✔ Kész – kattintson az OK gombra a beállításszerkesztő megnyitásához.
-Gyorsbeállítások
-A sáv színei:
-Minden további beállítást – megjelenés, méret, animáció, viselkedés és saját elrendezések – a Snap Layout beállításszerkesztőben módosíthat.
 Beállítások
 Nincs
 Módosítás
@@ -131,27 +110,21 @@ Beállítás
 Eltávolítás
 Illesztősáv
 Képernyőszélek
-További illesztési módok
+További módok
 Ablakmágnes
 Billentyűparancsok
 Parancsok
-Négyféleképpen illesztheti az ablakokat. Mindegyik külön be- és kikapcsolható.
 Funkciók
 Nyomja az ablakot egy szélhez vagy sarokhoz: teljes méret, felek, negyedek.
 Az ablakok egymáshoz és a képernyő széleihez tapadnak.
 Illessze az aktív ablakot billentyűkombinációval.
 Előnézetek
 Előnézetek a kiemelőszínnel
-Ki: semleges keret. Minden előnézetre érvényes.
-Ablakosztályok, amelyek soha nem illesztődnek, soronként egy.
 A KDE-nek saját képernyőszél-műveletei és saját ablakillesztése van. Ha itt ugyanaz a funkció be van kapcsolva, kapcsolja ki a KDE-ét: Rendszerbeállítások → Ablakkezelés → Képernyőszélek, valamint Ablakviselkedés → Mozgatás.
 Nyomja az ablakot a képernyő egy széléhez vagy sarkához, és kitölti azt a részt. Az illesztősávval vagy anélkül is működik.
 Teljes képernyő
 Felső fele
 Ki
-Alsó fele
-Bal fele
-Jobb fele
 Szélek és sarkok
 Képernyőszélek használata
 Független az illesztősávtól. Minden szél külön kapcsolható.
@@ -197,7 +170,6 @@ Mind átvétele
 Megtartás
 Jó tudni
 Az illesztő műveletek ugyanazokat a térközöket használják, mint a sáv, és megjegyzik az illesztés előtti méretet: a „Méret visszaállítása az illesztés előttire” visszahozza.
-SeaQ Snap Layout: %1
 Illesztés a bal félre
 Illesztés a jobb félre
 Illesztés a felső félre
@@ -228,9 +200,7 @@ Meta+Shift + billentyű
 Ctrl+Shift+Alt + billentyű
 Ctrl+Alt + számbillentyűzet
 Nincs billentyűparancs
-Kattintson, majd OK – megnyílik a beállításszerkesztő.
 Átfedés elleni ellenállás
-Milyen mélyen kell betolni egy ablakot a másikba, mielőtt elengedi. 0 = az ablakok szabadon átfedhetik egymást.
 Alapértelmezés visszaállítása
 Minden billentyű visszaállítása
 Minden műveletnek újra a választott séma billentyűjét adja, és eltávolítja azokat, amelyek a sémában nincsenek.
@@ -241,7 +211,6 @@ Ha átméretez egy ablakot, a hozzá érő ablakok vele mozgatják a közös sz�
 Egymás alatti ablakok egy vonalban
 Az egymás feletti ablakok együtt tartják bal és jobb szélüket, az egymás melletti ablakok a felsőt és az alsót.
 Rázás az elengedéshez
-Rázza meg az egeret átméretezés közben, és a többi ablak visszaugrik.
 A többi ablak halványítása
 Átméretezés közben a nem követő ablakok átlátszóan jelennek meg.
 Az illesztősáv előnézete
@@ -257,11 +226,156 @@ Egy rövid lökés felet vagy negyedet ad. Tartsa az ablakot kicsit tovább a sz
 Tartási idő
 Mennyi ideig kell az ablaknak a szélnél maradnia, mielőtt megnő.
 A KDE saját szélmozaikja
-A KDE saját maximalizálása és mozaikozása a képernyőszéleken – körvonallal – szünetel, amíg a SeaQ Snap Layout fut, így csak egy előnézet jelenik meg. A KDE-beállításai nem változnak: kapcsolja ki ezt, tiltsa le vagy távolítsa el a SeaQ Snap Layoutot, és a KDE viselkedése visszatér.
 A KDE saját ablakillesztése
 A KDE illesztési zónáinak szüneteltetése, amíg a mágnes be van kapcsolva
-Hogy csak egy mágnes húzza az ablakot. A KDE-beállításai nem változnak: kapcsolja ki ezt, tiltsa le vagy távolítsa el a SeaQ Snap Layoutot, és a KDE illesztése visszatér.
-A SeaQ Snap Layout támogatása
-Ha tetszik a SeaQ Snap Layout, támogathatja a fejlesztését – köszönöm!
 Adományozás PayPallal
 Hívj meg egy kávéra
+KWinhez · v%1
+Automatikus csempézés
+Ablakok elrendezése
+Ablakok cseréje
+Minden funkció külön be- és kikapcsolható.
+Minden ablak magától megtalálja a helyét, mint egy csempéző ablakkezelőben.
+Egy ablak megáll egy másik szélén, akkor is, ha gyorsan mozgatod. Rázd meg az egeret, vagy told még egy pillanatig az elengedéshez. 0 = az ablakok szabadon átfedhetik egymást.
+Átméretezés közben rázd gyorsan oda-vissza az egeret, és a többi ablak visszaugrik. Egy gyors rántás egy irányba soha nem engedi el őket.
+Minden ablak magától megtalálja a helyét a képernyőn. Az új ablakok beállnak a sorba, a bezártak helyet adnak a többinek.
+Csempézés
+Ablakok automatikus elrendezése
+Ki: az ablakok ott maradnak, ahová teszed őket. A többi funkció így is működik.
+Elrendezés
+Fő ablak
+A fő terület mérete
+Akkor is változik, ha kézzel méretezed át a fő ablakot.
+Fő ablakok
+Hány ablak osztozik a fő területen („Fő és halom” elrendezés).
+Csere
+Ablak ejtése egy másikra
+Billentyűk
+A Billentyűparancsok oldalon módosíthatod őket. Automatikus csempézésnél az ablakok a sorrendben is helyet cserélnek.
+Csere a bal oldali ablakkal
+Csere a jobb oldali ablakkal
+Csere a fölötte lévő ablakkal
+Csere az alatta lévő ablakkal
+Automatikus csempézés be/ki
+Következő csempeelrendezés
+Legyen ez a fő ablak
+Ablak lebegtetése (kilépés a csempézésből)
+Nagyobb fő terület
+Kisebb fő terület
+Fő és halom
+Fő középen
+Oszlopok
+Sorok
+Rács
+Spirál
+Egyszerre egy
+Mód váltása (illesztés / csempézés)
+Eggyel több főablak
+Eggyel kevesebb főablak
+Ablak eggyel előrébb
+Ablak eggyel hátrébb
+Módok
+Befelé tekeredő
+Kis méret
+Élő előnézet
+Kikapcsolva
+Felső szél: teljes képernyő
+Felső szél: felső fele
+Felső szél: teljes méret
+Húzz egy ablakot a szélhez…
+Bal szél: bal fele
+Sarok: negyed
+Vigyél egy ablakot a többiekhez…
+Közel érve a szélek összetapadnak
+Az átméretezés is illeszt – itt teljes magasságra
+Húzz egy közös szélt…
+…a szomszédok vele nőnek és zsugorodnak
+…minden irányban
+Egy ablak
+Új ablak érkezik
+Egy bezárul – a többiek kitöltik a rést
+Fogd meg az A ablakot…
+…húzd a B ablakra…
+…engedd el: helyet cserélnek
+Az illesztősáv és a képernyőszélek zavarják az automatikus csempézést. Ezért két módként futnak – válts billentyűparanccsal vagy itt.
+1. mód – illesztősáv és képernyőszélek
+Illesztősáv, képernyőszélek, ablakmágnes, billentyűparancsok és ablakcsere.
+2. mód – automatikus csempézés
+Automatikus csempézés, ablakcsere, billentyűparancsok és a mágnes lebegő ablakokhoz.
+Az automatikus csempézés ki van kapcsolva – csak az 1. mód fut, és a módváltó billentyű nem csinál semmit.
+A sáv és a szélek ki vannak kapcsolva – csak a 2. mód fut, és a módváltó billentyű nem csinál semmit.
+Mód váltása
+Nincs billentyű
+Billentyű módosítása
+KSnapUnity – beállításszerkesztő
+Aktív mód
+Illesztősáv és képernyőszélek
+Kattints vagy nyomd meg: %1 a módváltáshoz.
+Csak egy mód van bekapcsolva.
+Két ablak helyet cserél: ejtsd az egyiket a másikra, vagy billentyűvel.
+A KDE saját teljes méretre állítása és csempézése a széleken – körvonalával – szünetel, amíg a KSnapUnity fut, így csak egy előnézet látszik. A KDE-beállításaid nem változnak: kapcsold ki ezt, tiltsd le vagy távolítsd el a KSnapUnityt, és visszatér a KDE viselkedése.
+Így csak egy mágnes húz egy ablakot. A KDE-beállításaid nem változnak: kapcsold ki ezt, tiltsd le vagy távolítsd el a KSnapUnityt, és visszatér a KDE illesztése.
+Snap Smarter. Work Better.
+K mint KWin · Snap mint okosabb illesztés · Unity mint minden egy rendszerben
+Unified
+Minden ablakfunkció egy rendszerben.
+Natural
+Intuitív, természetes ablakviselkedés.
+Intelligent
+Okos elrendezés és felismerés.
+Illesztési elrendezések és automatikus csempézés.
+Your Workflow
+Illeszkedik a munkamódszeredhez.
+Az illesztés és az automatikus csempézés két mód – egy billentyűparancs vált köztük.
+Támogasd a KSnapUnityt
+Ha tetszik a KSnapUnity, támogathatod a fejlesztését – köszönjük!
+Saját elrendezések
+Minden elrendezés, amit az Elrendezések oldalon építesz, ablakokat is el tud rendezni – fent jelenik meg. Az 1. ablak az 1. zónát kapja és így tovább; a további ablakok osztoznak az utolsó zónán. Ha kevesebb az ablak, mint a zóna, a „Fő és halom” kerül használatra, hogy ne maradjanak lyukak.
+Elrendezésépítő megnyitása
+Elrendezés az ablakok száma szerint
+Elrendezés váltása magától
+Példa: két ablak egymás mellett, háromtól fő és halom, öttől rács. Illő szabály nélkül a fent választott elrendezés érvényes.
+Ennyitől:
+ablak:
+Szabály törlése
+Szabály hozzáadása
+Fő terület jobbra
+Tükrözi az elrendezést: a főablak jobbra, a többi balra.
+Új ablakok
+A végére kerülnek
+Elfoglalják a fő helyet
+Az aktív ablak mellé
+Egyetlen ablak
+Szélesség
+100 % alatt az egyetlen ablak középen marad – szép széles képernyőn.
+Nincs külső margó
+Az egyetlen ablak az egész képernyőt használja, még beállított margóval is.
+Az ablakok a helyükre siklanak
+Ha egy ablak nyílik, bezárul vagy cserél, a többi ugrás helyett finoman mozdul.
+Időtartam
+Mindig lebegő
+Ezek az alkalmazások soha nincsenek elrendezve, és megtartják a helyüket. A párbeszédablakok mindig lebegnek.
+Még nincs.
+Nyitott alkalmazás hozzáadása
+Először nyisd meg az alkalmazást, aztán itt válaszd ki.
+Válassz…
+Nincs más nyitott ablak
+Húzz egy ablakot egy másikra a cseréhez. A sávra vagy képernyőszélre ejtve szabadon lebeg; az „Ablak lebegtetése” visszahozza. A térközök az Általános oldalról jönnek.
+Két ablak helyet cserél – ejtsd az egyiket a másikra, vagy használd a billentyűket.
+Főkapcsoló a húzáshoz és a billentyűkhöz.
+Húzz egy ablakot egy másik közepe fölé – az előnézet két nyilat mutat – és engedd el. Automatikus csempézésnél a másik ablak bármely pontja elég.
+Főablakok: %1
+KSnapUnity: %1
+Automatikus csempézés be
+Automatikus csempézés ki
+Beállításszerkesztő megnyitása
+Kattints, majd OK – megnyílik a beállításszerkesztő.
+✔ Kész – kattints az OK gombra a beállításszerkesztő megnyitásához.
+Mód
+<b>1. mód</b><br/>Illesztősáv és képernyőszélek
+Ki = 1. mód, be = 2. mód
+<b>2. mód</b><br/>Automatikus csempézés
+Módváltás ezzel:
+A billentyűt a beállításszerkesztőben módosíthatod. Mindkét módhoz kell az automatikus csempézés és a sáv vagy a képernyőszélek.
+Gyorsbeállítások
+A sáv színei:

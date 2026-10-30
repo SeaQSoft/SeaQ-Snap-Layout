@@ -1,35 +1,25 @@
 Zavrieť
 Obnoviť
 Maximalizovať
-Rozbaliť
-Zbaliť
 Rozdeliť vedľa seba
 Rozdeliť hore a dole
 Odstrániť zónu
 Načítať šablónu…
 Kliknutím zónu vyberiete · dvojklikom ju rozdelíte · ťahajte oddeľovače
 %1 z %2 zón
-SeaQ Snap Layout – Editor nastavení
-pre KDE · v%1
 Všeobecné
 Vzhľad
 Správanie a animácia
 Rozloženia
 O aplikácii a pomocník
 Aktívne
-Pozastavené
 Potiahnite okno k hornému okraju obrazovky a pustite ho na zónu.
 Prichytávanie
-Zobraziť lištu pri ťahaní okna k hornému okraju
-Ukázať, kam sa okno umiestni
 Obnoviť pôvodnú veľkosť pri vytiahnutí okna
 Medzery
 Medzera medzi oknami
 Medzera od okraja obrazovky
-Vylúčené aplikácie
-Triedy okien, pri ktorých sa lišta nikdy nezobrazí, jedna na riadok.
 Tip
-KDE maximalizuje okná potiahnuté k hornému okraju. Pre plynulejšie prichytávanie to vypnite v Nastaveniach systému → Okraje obrazovky.
 Odporúčané hodnoty
 Farby, veľkosť a tvar lišty.
 Náhľad
@@ -81,8 +71,6 @@ Duplikovať
 Odstrániť
 Ako to funguje
 Chyťte okno za titulkový pruh a ťahajte ho nahor. Lišta zíde nadol; pustite okno na zónu a vyplní presne túto oblasť. Keď ho znova odtiahnete, získa späť pôvodnú veľkosť.
-Otvorenie editora nastavení
-Nastavenia systému → Správa okien → Skripty KWin → ikona ozubeného kolesa pri „SeaQ Snap Layout“ → „Otvoriť editor nastavení Snap Layout“ → OK.
 Informácie
 Verzia
 Autor
@@ -102,8 +90,6 @@ Uložiť
 Áno
 Zóna %1
 Pustite okno na zónu
-SeaQ Snap Layout: zapnúť/vypnúť
-SeaQ Snap Layout: vyskúšať lištu
 Polovice
 Dve tretiny
 Tri stĺpce
@@ -115,13 +101,6 @@ Hore / dole
 Kôpka + hlavné
 Šesť dlaždíc
 Bočný panel + mriežka
-Ťahajte okná k hornému okraju obrazovky a púšťajte ich na zónu.
-Editor nastavení
-Otvoriť editor nastavení Snap Layout
-✔ Pripravené – kliknite na OK a otvorí sa editor nastavení.
-Rýchle nastavenia
-Farby lišty:
-Všetky ostatné nastavenia – vzhľad, veľkosť, animáciu, správanie a vlastné rozloženia – meníte v editore nastavení Snap Layout.
 Nastavenia
 Žiadna
 Zmeniť
@@ -131,27 +110,21 @@ Nastaviť
 Odstrániť
 Lišta prichytávania
 Okraje obrazovky
-Ďalšie spôsoby prichytávania
+Ďalšie spôsoby
 Magnet okien
 Klávesové skratky
 Skratky
-Štyri spôsoby, ako prichytiť okná. Každý sa dá zapnúť a vypnúť samostatne.
 Funkcie
 Pritlačte okno k okraju alebo rohu: maximalizácia, polovice, štvrtiny.
 Okná sa prichytávajú k sebe navzájom a k okrajom obrazovky.
 Prichyťte aktívne okno kombináciou klávesov.
 Náhľady
 Zobrazovať náhľady vo farbe zvýraznenia
-Vypnuté: neutrálny rámik. Platí pre všetky náhľady.
-Triedy okien, ktoré sa nikdy neprichytávajú, jedna na riadok.
 KDE má vlastné akcie okrajov obrazovky a vlastné prichytávanie okien. Ak je tu zapnutá rovnaká funkcia, vypnite tú v KDE: Nastavenia systému → Správa okien → Okraje obrazovky a Správanie okien → Presun.
 Pritlačte okno k okraju alebo rohu obrazovky a vyplní túto časť. Funguje s lištou prichytávania aj bez nej.
 Celá obrazovka
 Horná polovica
 Vypnuté
-Dolná polovica
-Ľavá polovica
-Pravá polovica
 Okraje a rohy
 Používať okraje obrazovky
 Nezávislé od lišty prichytávania. Každý okraj sa dá zapnúť samostatne.
@@ -197,7 +170,6 @@ Prevziať všetky
 Ponechať
 Dobré vedieť
 Akcie prichytávania používajú rovnaké medzery ako lišta a pamätajú si veľkosť pred prichytením: „Obnoviť veľkosť pred prichytením“ ju vráti.
-SeaQ Snap Layout: %1
 Prichytiť do ľavej polovice
 Prichytiť do pravej polovice
 Prichytiť do hornej polovice
@@ -228,9 +200,7 @@ Meta+Shift + kláves
 Ctrl+Shift+Alt + kláves
 Ctrl+Alt + numerická klávesnica
 Bez skratiek
-Kliknite a potom OK – otvorí sa editor nastavení.
 Odpor proti prekrývaniu
-Ako ďaleko musíte okno zatlačiť do iného, kým ho pustí. 0 = okná sa môžu voľne prekrývať.
 Obnoviť predvolené
 Obnoviť všetky klávesy
 Dá každej akcii znova kláves zvolenej schémy a odstráni klávesy, ktoré schéma nemá.
@@ -241,7 +211,6 @@ Keď meníte veľkosť okna, okná, ktoré sa ho dotýkajú, posúvajú spoločn
 Držať okná nad sebou v jednej línii
 Okná nad sebou držia ľavé a pravé okraje spolu, okná vedľa seba horné a dolné.
 Zatriasť na uvoľnenie
-Zatraste myšou počas zmeny veľkosti a ostatné okná skočia späť.
 Stlmiť ostatné okná
 Počas zmeny veľkosti sú okná, ktoré nenasledujú, priehľadné.
 Náhľad lišty prichytávania
@@ -257,11 +226,156 @@ Krátke postrčenie dá polovicu alebo štvrtinu. Podržte okno pri okraji o chv
 Čas podržania
 Ako dlho musí okno zostať pri okraji, kým sa zväčší.
 Vlastné dlaždicovanie okrajov KDE
-Maximalizácia a dlaždicovanie KDE pri okrajoch obrazovky – aj s obrysom – sú pozastavené, kým beží SeaQ Snap Layout, aby sa zobrazil len jeden náhľad. Vaše nastavenia KDE sa nemenia: vypnite to, deaktivujte alebo odstráňte SeaQ Snap Layout a správanie KDE je späť.
 Vlastné prichytávanie okien KDE
 Pozastaviť zóny prichytenia KDE, kým je magnet zapnutý
-Aby za okno ťahal len jeden magnet. Vaše nastavenia KDE sa nemenia: vypnite to, deaktivujte alebo odstráňte SeaQ Snap Layout a prichytávanie KDE je späť.
-Podporiť SeaQ Snap Layout
-Ak sa vám SeaQ Snap Layout páči, môžete podporiť jeho vývoj – ďakujem!
 Prispieť cez PayPal
 Kúp mi kávu
+pre KWin · v%1
+Automatické dlaždicovanie
+Usporiadať okná
+Vymeniť okná
+Každú funkciu možno zapnúť a vypnúť samostatne.
+Každé okno si samo nájde svoje miesto, ako v dlaždicovom správcovi okien.
+Okno sa zastaví na okraji iného, aj keď ním pohybuješ rýchlo. Zatras myšou alebo chvíľu ďalej tlač, aby sa uvoľnilo. 0 = okná sa môžu voľne prekrývať.
+Pri zmene veľkosti rýchlo zatras myšou sem a tam a ostatné okná skočia späť. Rýchle trhnutie jedným smerom ich nikdy neuvoľní.
+Každé okno si samo nájde miesto na obrazovke. Nové okná sa pridajú, zatvorené uvoľnia miesto ostatným.
+Dlaždicovanie
+Usporiadať okná automaticky
+Vypnuté: okná zostanú tam, kam ich položíš. Ostatné funkcie fungujú tak či tak.
+Rozloženie
+Hlavné okno
+Veľkosť hlavnej oblasti
+Mení sa aj vtedy, keď veľkosť hlavného okna zmeníš ručne.
+Hlavné okná
+Koľko okien zdieľa hlavnú oblasť (rozloženie „Hlavné a zásobník“).
+Vymeniť
+Pustiť okno na iné
+Klávesy
+Zmeníš ich na stránke Klávesové skratky. Pri automatickom dlaždicovaní si okná vymenia aj miesto v poradí.
+Vymeniť s oknom vľavo
+Vymeniť s oknom vpravo
+Vymeniť s oknom hore
+Vymeniť s oknom dole
+Automatické dlaždicovanie zap/vyp
+Ďalšie rozloženie dlaždíc
+Urobiť hlavným oknom
+Nechať okno plávať (opustiť dlaždicovanie)
+Väčšia hlavná oblasť
+Menšia hlavná oblasť
+Hlavné a zásobník
+Hlavné v strede
+Stĺpce
+Riadky
+Mriežka
+Špirála
+Jedno po druhom
+Prepnúť režim (prichytávanie / dlaždice)
+O jedno hlavné okno viac
+O jedno hlavné okno menej
+Posunúť okno o miesto ďalej
+Posunúť okno o miesto späť
+Režimy
+Špirála dovnútra
+Minimalizovať
+Živý náhľad
+Vypnuté
+Horný okraj: celá obrazovka
+Horný okraj: horná polovica
+Horný okraj: maximalizovať
+Potiahnite okno k okraju…
+Ľavý okraj: ľavá polovica
+Roh: štvrtina
+Posuňte okno k ostatným…
+Nablízku sa okraje prilepia
+Prichytáva aj zmena veľkosti – tu na plnú výšku
+Ťahajte spoločný okraj…
+…susedia rastú a zmenšujú sa s ním
+…vo všetkých smeroch
+Jedno okno
+Pribudne nové okno
+Jedno sa zavrie – ostatné vyplnia medzeru
+Chyťte okno A…
+…pretiahnite ho na okno B…
+…pustite: vymenia si miesta
+Lišta a okraje obrazovky prekážajú automatickému dlaždicovaniu. Preto bežia ako dva režimy – prepínajte skratkou alebo tu.
+Režim 1 – lišta prichytávania a okraje obrazovky
+Lišta prichytávania, okraje obrazovky, magnet okien, skratky a výmena okien.
+Režim 2 – automatické dlaždicovanie
+Automatické dlaždicovanie, výmena okien, skratky a magnet pre plávajúce okná.
+Automatické dlaždicovanie je vypnuté – beží len režim 1 a skratka režimu nič nerobí.
+Lišta a okraje sú vypnuté – beží len režim 2 a skratka režimu nič nerobí.
+Prepnúť režim
+Žiadny kláves
+Zmeniť kláves
+KSnapUnity – editor nastavení
+Aktívny režim
+Lišta prichytávania a okraje obrazovky
+Kliknite alebo stlačte %1 na prepnutie režimu.
+Zapnutý je len jeden režim.
+Dve okná si vymenia miesta: pustite jedno na druhé, alebo klávesom.
+Vlastná maximalizácia a dlaždicovanie KDE na okrajoch – s obrysom – sa pozastavia, kým beží KSnapUnity, aby bol len jeden náhľad. Nastavenia KDE sa nemenia: vypnite to, deaktivujte alebo odstráňte KSnapUnity a správanie KDE sa vráti.
+Okno tak ťahá len jeden magnet. Nastavenia KDE sa nemenia: vypnite to, deaktivujte alebo odstráňte KSnapUnity a prichytávanie KDE sa vráti.
+Snap Smarter. Work Better.
+K ako KWin · Snap ako šikovnejšie prichytávanie · Unity ako všetko v jednom systéme
+Unified
+Všetky funkcie okien v jednom systéme.
+Natural
+Intuitívne, prirodzené správanie okien.
+Intelligent
+Inteligentné usporiadanie a rozpoznávanie.
+Rozloženia prichytávania a automatické dlaždicovanie.
+Your Workflow
+Prispôsobí sa vášmu spôsobu práce.
+Prichytávanie a automatické dlaždicovanie bežia ako dva režimy – jedna skratka medzi nimi prepína.
+Podporte KSnapUnity
+Ak sa vám KSnapUnity páči, môžete podporiť jeho vývoj – ďakujeme!
+Vlastné rozloženia
+Každé rozloženie zo stránky Rozloženia vie aj usporiadať okná – zobrazí sa vyššie. Okno 1 dostane zónu 1 atď.; ďalšie okná zdieľajú poslednú zónu. Pri menšom počte okien než zón sa použije „Hlavné a zásobník“, aby nevznikli diery.
+Otvoriť tvorcu rozložení
+Rozloženie podľa počtu okien
+Meniť rozloženie samo
+Príklad: dve okná vedľa seba, od troch hlavné a zásobník, od piatich mriežka. Bez vhodného pravidla platí rozloženie zvolené vyššie.
+Od
+okien:
+Odstrániť pravidlo
+Pridať pravidlo
+Hlavná oblasť vpravo
+Zrkadlí rozloženie: hlavné okno vpravo, ostatné vľavo.
+Nové okná
+Pridajú sa na koniec
+Zoberú hlavné miesto
+Vedľa aktívneho okna
+Jediné okno
+Šírka
+Pod 100 % zostane jediné okno v strede – pekné na širokých obrazovkách.
+Bez vonkajšieho okraja
+Jediné okno zaberie celú obrazovku, aj keď je nastavený okraj.
+Okná plynulo kĺžu na miesto
+Keď sa okno otvorí, zavrie alebo vymení, ostatné sa pohnú plynulo namiesto skoku.
+Trvanie
+Vždy plávajúce
+Tieto aplikácie sa nikdy neusporiadajú a držia si svoje miesto. Dialógy plávajú vždy.
+Zatiaľ žiadne.
+Pridať otvorenú aplikáciu
+Najprv aplikáciu otvorte, potom ju vyberte tu.
+Vyberte…
+Žiadne iné okno nie je otvorené
+Pretiahnite okno na iné a vymenia sa. Pustené na lištu alebo okraj obrazovky voľne pláva; „Nechať okno plávať“ ho vráti. Medzery sú na stránke Všeobecné.
+Dve okná si vymenia miesta – pustite jedno na druhé alebo použite klávesy.
+Hlavný vypínač pre ťahanie a klávesy.
+Pretiahnite okno nad stred iného – náhľad ukáže dve šípky – a pustite. Pri automatickom dlaždicovaní stačí kdekoľvek nad druhým oknom.
+Hlavné okná: %1
+KSnapUnity: %1
+Automatické dlaždicovanie zapnuté
+Automatické dlaždicovanie vypnuté
+Otvoriť editor nastavení
+Kliknite, potom OK – otvorí sa editor nastavení.
+✔ Pripravené – kliknite na OK a otvorí sa editor nastavení.
+Režim
+<b>Režim 1</b><br/>Lišta prichytávania a okraje obrazovky
+Vyp = režim 1, zap = režim 2
+<b>Režim 2</b><br/>Automatické dlaždicovanie
+Prepnúť režim pomocou:
+Kláves zmeníte v editore nastavení. Oba režimy potrebujú automatické dlaždicovanie a lištu alebo okraje obrazovky.
+Rýchle nastavenia
+Farby lišty:

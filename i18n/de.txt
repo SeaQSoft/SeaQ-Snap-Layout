@@ -1,35 +1,25 @@
 Schließen
 Wiederherstellen
 Maximieren
-Ausklappen
-Einklappen
 Nebeneinander teilen
 Übereinander teilen
 Zone entfernen
 Vorlage laden …
 Zone anklicken zum Auswählen · Doppelklick teilt sie · Teiler mit der Maus ziehen
 %1 von %2 Zonen
-SeaQ Snap Layout – Einstellungseditor
-für KDE · v%1
 Allgemein
 Aussehen
 Verhalten & Animation
 Layouts
 Info & Hilfe
 Aktiv
-Pausiert
 Fenster an den oberen Bildschirmrand ziehen und auf einer Zone ablegen.
 Andocken
-Snap-Leiste beim Ziehen an den oberen Rand anzeigen
-Vorschau zeigen, wo das Fenster landet
 Ursprüngliche Größe beim Herausziehen wiederherstellen
 Abstände
 Abstand zwischen Fenstern
 Abstand zum Bildschirmrand
-Ausgenommene Anwendungen
-Fensterklassen, bei denen die Snap-Leiste nie erscheint, eine pro Zeile.
 Tipp
-KDE maximiert Fenster, die an den oberen Rand gezogen werden. Für flüssigeres Andocken schalte das unter Systemeinstellungen → Bildschirmränder aus.
 Empfohlene Werte
 Farben, Größe und Form der Snap-Leiste.
 Vorschau
@@ -81,8 +71,6 @@ Duplizieren
 Löschen
 So funktioniert’s
 Fenster an der Titelleiste greifen und nach oben ziehen. Die Snap-Leiste fährt herunter; das Fenster auf einer Zone ablegen und es füllt genau diesen Bereich. Wieder wegziehen, und es bekommt seine alte Größe zurück.
-Einstellungseditor öffnen
-Systemeinstellungen → Fensterverwaltung → KWin-Skripte → Zahnrad bei „SeaQ Snap Layout“ → „Snap Layout Einstellungseditor öffnen“ → OK.
 Informationen
 Version
 Autor
@@ -102,8 +90,6 @@ Speichern
 Ja
 Zone %1
 Fenster auf einer Zone ablegen
-SeaQ Snap Layout: ein-/ausschalten
-SeaQ Snap Layout: Snap-Leiste testen
 Hälften
 Zwei Drittel
 Drei Spalten
@@ -115,13 +101,6 @@ Oben / Unten
 Stapel + Haupt
 Sechs Kacheln
 Seitenleiste + Raster
-Fenster an den oberen Bildschirmrand ziehen und auf einer Zone ablegen.
-Einstellungseditor
-Snap Layout Einstellungseditor öffnen
-✔ Bereit – jetzt auf OK klicken, um den Einstellungseditor zu öffnen.
-Quick-Einstellungen
-Farben der Snap-Leiste:
-Alle weiteren Einstellungen – Aussehen, Größe, Animation, Verhalten und eigene Layouts – nimmst du im Snap Layout Einstellungseditor vor.
 Einstellungen
 Keine
 Ändern
@@ -131,27 +110,21 @@ Setzen
 Entfernen
 Snap-Leiste
 Bildschirmkanten
-Weitere Wege zum Einrasten
+Mehrere Wege
 Fenster-Magnet
 Tastenkürzel
 Kürzel
-Vier Wege, Fenster einzurasten. Jeder lässt sich einzeln ein- und ausschalten.
 Funktionen
 Fenster gegen eine Kante oder Ecke drücken: maximieren, Hälften, Viertel.
 Fenster haften aneinander und an den Bildschirmrändern.
 Das aktive Fenster per Tastenkombination einrasten.
 Vorschauen
 Vorschauen in der Akzentfarbe zeigen
-Aus: ein neutraler Rahmen. Gilt für alle Vorschauen.
-Fensterklassen, die nie eingerastet werden, eine pro Zeile.
 KDE hat eigene Bildschirmkanten-Aktionen und ein eigenes Fenster-Einrasten. Wenn hier dieselbe Funktion an ist, schalte die von KDE aus: Systemeinstellungen → Fensterverwaltung → Bildschirmränder sowie Fensterverhalten → Verschieben.
 Drück ein Fenster gegen eine Kante oder Ecke des Bildschirms, und es füllt diesen Teil aus. Funktioniert mit oder ohne Snap-Leiste.
 Vollbild
 Obere Hälfte
 Aus
-Untere Hälfte
-Linke Hälfte
-Rechte Hälfte
 Kanten und Ecken
 Bildschirmkanten verwenden
 Unabhängig von der Snap-Leiste. Jede Kante lässt sich einzeln schalten.
@@ -197,7 +170,6 @@ Alle übernehmen
 Behalten
 Gut zu wissen
 Die Einrast-Aktionen nutzen dieselben Abstände wie die Snap-Leiste und merken sich die Größe vor dem Einrasten: „Größe von vor dem Einrasten wiederherstellen“ holt sie zurück.
-SeaQ Snap Layout: %1
 In die linke Hälfte
 In die rechte Hälfte
 In die obere Hälfte
@@ -228,9 +200,7 @@ Meta+Umschalt + Taste
 Strg+Umschalt+Alt + Taste
 Strg+Alt + Ziffernblock
 Keine Kürzel
-Klicken, dann OK – der Einstellungseditor öffnet sich.
 Widerstand gegen Überlappen
-Wie weit du ein Fenster in ein anderes schieben musst, bevor es loslässt. 0 = Fenster dürfen sich frei überlappen.
 Auf Standard zurücksetzen
 Alle Tasten zurücksetzen
 Gibt jeder Aktion wieder die Taste des gewählten Schemas und entfernt Tasten, die das Schema nicht hat.
@@ -241,7 +211,6 @@ Wenn du ein Fenster in der Größe änderst, schieben Fenster, die es berühren,
 Gestapelte Fenster in einer Linie halten
 Fenster übereinander halten ihre linken und rechten Kanten zusammen, Fenster nebeneinander ihre oberen und unteren.
 Schütteln zum Lösen
-Schüttle die Maus beim Größe-Ändern, und die anderen Fenster springen zurück.
 Andere Fenster ausblenden
 Beim Größe-Ändern werden Fenster, die nicht mitgehen, durchsichtig angezeigt.
 Vorschau der Snap-Leiste
@@ -257,11 +226,156 @@ Ein kurzer Stoß gibt die Hälfte oder das Viertel. Hältst du das Fenster etwas
 Haltezeit
 Wie lange das Fenster an der Kante bleiben muss, bevor es wächst.
 KDEs eigenes Kanten-Kacheln
-KDEs eigenes Maximieren und Kacheln an den Bildschirmkanten – samt Umriss – pausiert, solange SeaQ Snap Layout läuft, damit nur eine Vorschau erscheint. Deine KDE-Einstellungen werden nicht geändert: Schalte das aus, deaktiviere oder entferne SeaQ Snap Layout, und KDEs eigenes Verhalten ist wieder da.
 KDEs eigenes Fenster-Einrasten
 KDEs Einrastzonen pausieren, solange der Magnet an ist
-Damit nur ein Magnet an einem Fenster zieht. Deine KDE-Einstellungen werden nicht geändert: Schalte das aus, deaktiviere oder entferne SeaQ Snap Layout, und KDEs eigenes Einrasten ist wieder da.
-SeaQ Snap Layout unterstützen
-Wenn dir SeaQ Snap Layout gefällt, kannst du die Entwicklung unterstützen – danke!
 Mit PayPal spenden
 Buy me a coffee
+für KWin · v%1
+Automatisch anordnen
+Fenster anordnen
+Fenster tauschen
+Jede Funktion lässt sich einzeln ein- und ausschalten.
+Jedes Fenster bekommt seinen Platz von selbst, wie bei einem Kachel-Fenstermanager.
+Ein Fenster stoppt an der Kante eines anderen, auch wenn du es schnell bewegst. Schüttle die Maus oder drück einen Moment weiter, um es zu lösen. 0 = Fenster dürfen sich frei überlappen.
+Schüttle beim Größe-Ändern die Maus schnell hin und her, und die anderen Fenster springen zurück. Ein schneller Zug in eine Richtung löst nie.
+Jedes Fenster bekommt seinen Platz auf dem Bildschirm von selbst. Neue Fenster reihen sich ein, geschlossene machen Platz für die anderen.
+Anordnung
+Fenster automatisch anordnen
+Aus: Fenster bleiben, wo du sie hinlegst. Die anderen Funktionen gehen in beiden Fällen.
+Layout
+Hauptfenster
+Größe des Hauptbereichs
+Ändert sich auch, wenn du das Hauptfenster von Hand größer oder kleiner ziehst.
+Hauptfenster-Anzahl
+Wie viele Fenster sich den Hauptbereich teilen (Layout „Haupt und Stapel“).
+Tauschen
+Fenster auf ein anderes ziehen
+Tasten
+Ändern kannst du sie auf der Seite Tastenkürzel. Bei automatischer Anordnung tauschen die Fenster auch ihre Plätze in der Reihenfolge.
+Mit dem Fenster links tauschen
+Mit dem Fenster rechts tauschen
+Mit dem Fenster darüber tauschen
+Mit dem Fenster darunter tauschen
+Automatisch anordnen an/aus
+Nächstes Anordnungs-Layout
+Zum Hauptfenster machen
+Fenster schweben lassen (Anordnung verlassen)
+Hauptbereich größer
+Hauptbereich kleiner
+Haupt und Stapel
+Haupt in der Mitte
+Spalten
+Zeilen
+Raster
+Spirale
+Eins nach dem anderen
+Modus wechseln (Einrasten / Anordnen)
+Ein Hauptfenster mehr
+Ein Hauptfenster weniger
+Fenster einen Platz weiter
+Fenster einen Platz zurück
+Modi
+Dwindle
+Minimieren
+Live-Vorschau
+Ausgeschaltet
+Oberer Rand: Vollbild
+Oberer Rand: obere Hälfte
+Oberer Rand: maximieren
+Zieh ein Fenster gegen einen Rand …
+Linker Rand: linke Hälfte
+Ecke: ein Viertel
+Schieb ein Fenster zu anderen …
+In der Nähe kleben die Kanten zusammen
+Auch beim Größe-Ändern rastet es ein – hier auf volle Höhe
+Zieh an einer gemeinsamen Kante …
+… die Nachbarn wachsen und schrumpfen mit
+… in jede Richtung
+Ein Fenster
+Ein neues Fenster kommt dazu
+Eins schließt – die anderen füllen die Lücke
+Fenster A greifen …
+… auf Fenster B ziehen …
+… loslassen: sie tauschen die Plätze
+Snap-Leiste und Bildschirmkanten stören das automatische Anordnen. Darum laufen sie als zwei Modi – wechsle mit dem Tastenkürzel oder hier.
+Modus 1 – Snap-Leiste und Bildschirmkanten
+Snap-Leiste, Bildschirmkanten, Fenster-Magnet, Tastenkürzel und Fenster tauschen.
+Modus 2 – Automatisch anordnen
+Automatisch anordnen, Fenster tauschen, Tastenkürzel und der Fenster-Magnet für freie Fenster.
+Automatisch anordnen ist aus – nur Modus 1 läuft, und das Modus-Kürzel macht nichts.
+Snap-Leiste und Bildschirmkanten sind aus – nur Modus 2 läuft, und das Modus-Kürzel macht nichts.
+Modus wechseln
+Keine Taste
+Taste ändern
+KSnapUnity – Einstellungseditor
+Aktiver Modus
+Snap-Leiste und Bildschirmkanten
+Klick oder drück %1, um den Modus zu wechseln.
+Nur ein Modus ist eingeschaltet.
+Zwei Fenster tauschen die Plätze: eins auf das andere ziehen oder per Taste.
+KDEs eigenes Maximieren und Kacheln an den Bildschirmkanten – mit seinem Umriss – pausiert, solange KSnapUnity läuft, damit nur eine Vorschau erscheint. Deine KDE-Einstellungen bleiben unverändert: Schalte das aus, deaktiviere oder entferne KSnapUnity, und KDEs eigenes Verhalten ist zurück.
+So zieht nur ein Magnet an einem Fenster. Deine KDE-Einstellungen bleiben unverändert: Schalte das aus, deaktiviere oder entferne KSnapUnity, und KDEs eigenes Einrasten ist zurück.
+Snap Smarter. Work Better.
+K für KWin · Snap für smarteres Einrasten · Unity für alles in einem System
+Unified
+Alle Fensterfunktionen in einem System.
+Natural
+Intuitives, natürliches Fensterverhalten.
+Intelligent
+Kluges Anordnen und Erkennen.
+Snap-Layouts und automatisches Anordnen.
+Your Workflow
+Passt sich deiner Arbeitsweise an.
+Einrasten und automatisches Anordnen laufen als zwei Modi – ein Tastenkürzel wechselt zwischen ihnen.
+KSnapUnity unterstützen
+Wenn dir KSnapUnity gefällt, kannst du die Entwicklung unterstützen – danke!
+Eigene Layouts
+Jedes Layout, das du auf der Seite Layouts baust, kann auch Fenster anordnen – es erscheint oben. Fenster 1 kommt in Zone 1 und so weiter; weitere Fenster teilen sich die letzte Zone. Mit weniger Fenstern als Zonen wird „Haupt und Stapel“ benutzt, damit keine Löcher entstehen.
+Layout-Baukasten öffnen
+Layout nach Anzahl der Fenster
+Layout selbst wechseln
+Beispiel: zwei Fenster nebeneinander, ab drei Haupt und Stapel, ab fünf ein Raster. Ohne passende Regel gilt das oben gewählte Layout.
+Ab
+Fenstern:
+Regel entfernen
+Regel hinzufügen
+Hauptbereich rechts
+Spiegelt das Layout: Das Hauptfenster sitzt rechts, die anderen links.
+Neue Fenster
+Hinten anstellen
+Den Hauptplatz nehmen
+Neben das aktive Fenster
+Ein einzelnes Fenster
+Breite
+Unter 100 % bleibt ein einzelnes Fenster mittig – schön auf breiten Bildschirmen.
+Kein Außenabstand
+Ein einzelnes Fenster nutzt den ganzen Bildschirm, auch wenn ein Abstand eingestellt ist.
+Fenster gleiten an ihren Platz
+Wenn ein Fenster öffnet, schließt oder tauscht, bewegen sich die anderen sanft, statt zu springen.
+Dauer
+Immer schwebend
+Diese Programme werden nie angeordnet und behalten ihren eigenen Platz. Dialoge schweben immer.
+Noch keine.
+Geöffnetes Programm hinzufügen
+Öffne das Programm zuerst und wähle es dann hier.
+Auswählen …
+Kein anderes Fenster offen
+Zieh ein Fenster auf ein anderes, um sie zu tauschen. Lässt du es auf der Snap-Leiste oder einem Bildschirmrand los, schwebt es frei; „Fenster schweben lassen“ holt es zurück. Die Abstände kommen von der Seite Allgemein.
+Zwei Fenster tauschen die Plätze – eins auf das andere ziehen oder die Tasten nutzen.
+Hauptschalter für das Ziehen und die Tasten.
+Zieh ein Fenster über die Mitte eines anderen – die Vorschau zeigt zwei Pfeile – und lass los. Beim automatischen Anordnen genügt irgendwo über dem anderen Fenster.
+Hauptfenster: %1
+KSnapUnity: %1
+Automatisch anordnen an
+Automatisch anordnen aus
+Einstellungseditor öffnen
+Klick, dann OK – der Einstellungseditor öffnet sich.
+✔ Bereit – klick OK, um den Einstellungseditor zu öffnen.
+Modus
+<b>Modus 1</b><br/>Snap-Leiste und Bildschirmkanten
+Aus = Modus 1, an = Modus 2
+<b>Modus 2</b><br/>Automatisch anordnen
+Modus wechseln mit:
+Die Taste änderst du im Einstellungseditor. Beide Modi brauchen das automatische Anordnen und die Snap-Leiste oder die Bildschirmkanten.
+Quick-Einstellungen
+Farben der Snap-Leiste:

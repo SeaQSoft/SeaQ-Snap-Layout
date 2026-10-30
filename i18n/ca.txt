@@ -1,35 +1,25 @@
 Tanca
 Restaura
 Maximitza
-Desplega
-Plega
 Divideix un al costat de l’altre
 Divideix a dalt i a baix
 Elimina la zona
 Carrega una plantilla…
 Feu clic en una zona per seleccionar-la · doble clic per dividir-la · arrossegueu els separadors
 %1 de %2 zones
-SeaQ Snap Layout – Editor de configuració
-per a KDE · v%1
 General
 Aparença
 Comportament i animació
 Disposicions
 Quant a i ajuda
 Actiu
-En pausa
 Arrossegueu una finestra a la vora superior de la pantalla i deixeu-la anar sobre una zona.
 Acoblament
-Mostra la barra en arrossegar una finestra a la vora superior
-Mostra on quedarà la finestra
 Restaura la mida original en treure la finestra
 Espaiat
 Espai entre finestres
 Espai fins a la vora de la pantalla
-Aplicacions excloses
-Classes de finestra que no mostren mai la barra, una per línia.
 Consell
-El KDE maximitza les finestres arrossegades a la vora superior. Per a un acoblament més suau, desactiveu-ho a Arranjament del sistema → Vores de la pantalla.
 Valors recomanats
 Colors, mida i forma de la barra.
 Vista prèvia
@@ -81,8 +71,6 @@ Duplica
 Suprimeix
 Com funciona
 Agafeu una finestra per la barra de títol i arrossegueu-la cap amunt. La barra baixa; deixeu anar la finestra sobre una zona i ocuparà exactament aquell espai. Si la torneu a treure, recupera la mida anterior.
-Obrir l’editor de configuració
-Arranjament del sistema → Gestió de finestres → Scripts del KWin → icona d’engranatge al costat de «SeaQ Snap Layout» → «Obre l’editor de configuració del Snap Layout» → D’acord.
 Informació
 Versió
 Autor
@@ -102,8 +90,6 @@ Desa
 Sí
 Zona %1
 Deixeu anar la finestra sobre una zona
-SeaQ Snap Layout: activa/desactiva
-SeaQ Snap Layout: prova la barra
 Meitats
 Dos terços
 Tres columnes
@@ -115,13 +101,6 @@ A dalt / a baix
 Pila + principal
 Sis mosaics
 Barra lateral + quadrícula
-Arrossegueu les finestres a la vora superior de la pantalla i deixeu-les anar sobre una zona.
-Editor de configuració
-Obre l’editor de configuració del Snap Layout
-✔ A punt: feu clic a D’acord per obrir l’editor de configuració.
-Configuració ràpida
-Colors de la barra:
-Tota la resta de la configuració – aparença, mida, animació, comportament i les vostres disposicions – es canvia a l’editor de configuració del Snap Layout.
 Configuració
 Cap
 Canvia
@@ -131,27 +110,21 @@ Assigna
 Elimina
 Barra d’ajust
 Vores de la pantalla
-Més maneres d’ajustar
+Més maneres
 Imant de finestres
 Dreceres de teclat
 Dreceres
-Quatre maneres d’ajustar finestres. Cadascuna s’activa i es desactiva per separat.
 Funcions
 Empenyeu una finestra contra una vora o un cantó: maximitza, meitats, quarts.
 Les finestres s’enganxen entre si i a les vores de la pantalla.
 Ajusteu la finestra activa amb combinacions de tecles.
 Vistes prèvies
 Mostra les vistes prèvies amb el color d’èmfasi
-Desactivat: un marc neutre. S’aplica a totes les vistes prèvies.
-Classes de finestra que no s’ajusten mai, una per línia.
 El KDE té les seves pròpies accions de vora de pantalla i el seu propi ajust de finestres. Si la mateixa funció és activa aquí, desactiveu la del KDE: Arranjament del sistema → Gestió de finestres → Vores de la pantalla, i Comportament de les finestres → Moviment.
 Empenyeu una finestra contra una vora o un cantó de la pantalla i n’omplirà aquesta part. Funciona amb la barra d’ajust o sense.
 Pantalla completa
 Meitat superior
 Desactivat
-Meitat inferior
-Meitat esquerra
-Meitat dreta
 Vores i cantons
 Usa les vores de la pantalla
 Independent de la barra d’ajust. Cada vora s’activa per separat.
@@ -197,7 +170,6 @@ Pren-les totes
 Deixa-les
 Bo de saber
 Les accions d’ajust usen els mateixos espais que la barra i recorden la mida d’abans de l’ajust: «Restaura la mida d’abans de l’ajust» la recupera.
-SeaQ Snap Layout: %1
 Ajusta a la meitat esquerra
 Ajusta a la meitat dreta
 Ajusta a la meitat superior
@@ -228,9 +200,7 @@ Meta+Maj + tecla
 Ctrl+Maj+Alt + tecla
 Ctrl+Alt + teclat numèric
 Sense dreceres
-Feu clic i després D'acord – s'obre l'editor de configuració.
 Resistència a la superposició
-Fins on cal empènyer una finestra dins d'una altra abans que la deixi anar. 0 = les finestres es poden superposar lliurement.
 Restableix el valor per defecte
 Restableix totes les tecles
 Torna a donar a cada acció la tecla de l'esquema triat i elimina les tecles que l'esquema no té.
@@ -241,7 +211,6 @@ Quan redimensioneu una finestra, les que la toquen mouen la vora compartida amb 
 Mantén alineades les finestres apilades
 Les finestres una sobre l'altra mantenen juntes les vores esquerra i dreta; les finestres de costat, les de dalt i de baix.
 Sacseja per deixar anar
-Sacsegeu el ratolí mentre redimensioneu i les altres finestres tornen enrere.
 Esvaeix les altres finestres
 Mentre redimensioneu, les finestres que no segueixen es mostren transparents.
 Previsualització de la barra
@@ -257,11 +226,156 @@ Una empenta curta dona la meitat o el quart. Manteniu la finestra una mica més 
 Temps de manteniment
 Quanta estona ha de quedar-se la finestra a la vora abans de créixer.
 Mosaic de vores propi de KDE
-El maximitzar i el mosaic de KDE a les vores de la pantalla –amb el contorn– s'aturen mentre s'executa SeaQ Snap Layout, perquè aparegui només una previsualització. La configuració de KDE no canvia: desactiveu això, desactiveu o elimineu SeaQ Snap Layout i el comportament de KDE torna.
 Enganxament de finestres propi de KDE
 Pausa les zones d'enganxament de KDE mentre l'imant està actiu
-Perquè només un imant estiri una finestra. La configuració de KDE no canvia: desactiveu això, desactiveu o elimineu SeaQ Snap Layout i l'enganxament de KDE torna.
-Doneu suport a SeaQ Snap Layout
-Si us agrada SeaQ Snap Layout, podeu donar suport al seu desenvolupament. Gràcies!
 Feu una donació amb PayPal
 Convida'm a un cafè
+per a KWin · v%1
+Mosaic automàtic
+Organitza les finestres
+Intercanvia les finestres
+Cada funció es pot activar i desactivar per separat.
+Cada finestra troba el seu lloc tota sola, com en un gestor de finestres en mosaic.
+Una finestra s’atura a la vora d’una altra, també si la mous de pressa. Sacseja el ratolí o continua empenyent un moment per deixar-la anar. 0 = les finestres es poden superposar lliurement.
+Sacseja el ratolí de pressa endavant i enrere mentre canvies la mida i les altres finestres tornen enrere. Una estrebada ràpida en una sola direcció no les deixa anar mai.
+Cada finestra troba tota sola el seu lloc a la pantalla. Les finestres noves s’hi afegeixen i les que es tanquen deixen lloc a les altres.
+Mosaic
+Organitza les finestres automàticament
+Desactivat: les finestres es queden on les poses. Les altres funcions van igualment.
+Disposició
+Finestra principal
+Mida de l’àrea principal
+També canvia quan redimensiones la finestra principal a mà.
+Finestres principals
+Quantes finestres comparteixen l’àrea principal (disposició «Principal i pila»).
+Intercanvia
+Deixar una finestra sobre una altra
+Tecles
+Canvia-les a la pàgina Dreceres de teclat. Amb el mosaic automàtic, les finestres també intercanvien el lloc en l’ordre.
+Intercanvia amb la finestra de l’esquerra
+Intercanvia amb la finestra de la dreta
+Intercanvia amb la finestra de dalt
+Intercanvia amb la finestra de baix
+Activa/desactiva el mosaic automàtic
+Disposició següent
+Fes-la la finestra principal
+Deixa surar la finestra (surt del mosaic)
+Àrea principal més gran
+Àrea principal més petita
+Principal i pila
+Principal al mig
+Columnes
+Files
+Graella
+Espiral
+Una cada vegada
+Canvia el mode (ajust / mosaic)
+Una finestra principal més
+Una finestra principal menys
+Mou la finestra un lloc endavant
+Mou la finestra un lloc enrere
+Modes
+Espiral interior
+Minimitza
+Previsualització en directe
+Desactivat
+Vora superior: pantalla completa
+Vora superior: meitat superior
+Vora superior: maximitza
+Arrossega una finestra cap a una vora…
+Vora esquerra: meitat esquerra
+Cantonada: un quart
+Mou una finestra cap a les altres…
+A prop, les vores s’enganxen
+Redimensionar també s’ajusta – aquí a tota l’alçada
+Arrossega una vora compartida…
+…les veïnes creixen i s’encongeixen amb ella
+…en totes direccions
+Una finestra
+S’hi afegeix una finestra nova
+Una es tanca – les altres omplen el buit
+Agafa la finestra A…
+…arrossega-la sobre la finestra B…
+…deixa-la anar: intercanvien el lloc
+La barra i les vores de la pantalla destorben el mosaic automàtic. Per això funcionen com a dos modes – canvia amb la drecera o aquí.
+Mode 1 – Barra d’ajust i vores de la pantalla
+Barra d’ajust, vores de la pantalla, imant de finestres, dreceres i intercanvi de finestres.
+Mode 2 – Mosaic automàtic
+Mosaic automàtic, intercanvi de finestres, dreceres i l’imant per a finestres flotants.
+El mosaic automàtic està desactivat – només funciona el mode 1 i la drecera de mode no fa res.
+La barra i les vores estan desactivades – només funciona el mode 2 i la drecera de mode no fa res.
+Canvia el mode
+Sense tecla
+Canvia la tecla
+KSnapUnity – Editor de configuració
+Mode actiu
+Barra d’ajust i vores de la pantalla
+Fes clic o prem %1 per canviar el mode.
+Només hi ha un mode activat.
+Dues finestres intercanvien el lloc: deixa’n anar una sobre l’altra, o amb tecla.
+El maximitzar i el mosaic propis de KDE a les vores – amb el seu contorn – es posen en pausa mentre funciona KSnapUnity, perquè només hi hagi una previsualització. La configuració de KDE no canvia: desactiva això, desactiva o elimina KSnapUnity i el comportament de KDE torna.
+Així només un imant estira la finestra. La configuració de KDE no canvia: desactiva això, desactiva o elimina KSnapUnity i l’ajust de KDE torna.
+Snap Smarter. Work Better.
+K de KWin · Snap d’ajust més intel·ligent · Unity de tot en un sol sistema
+Unified
+Totes les funcions de finestres en un sol sistema.
+Natural
+Comportament intuïtiu i natural de les finestres.
+Intelligent
+Disposició i detecció intel·ligents.
+Disposicions d’ajust i mosaic automàtic.
+Your Workflow
+S’adapta a la teva manera de treballar.
+L’ajust i el mosaic automàtic funcionen com a dos modes – una drecera canvia entre ells.
+Dona suport a KSnapUnity
+Si t’agrada KSnapUnity, pots donar suport al seu desenvolupament – gràcies!
+Disposicions pròpies
+Cada disposició que creïs a la pàgina Disposicions també pot ordenar finestres – apareix a dalt. La finestra 1 ocupa la zona 1 i així successivament; les finestres de més comparteixen l’última zona. Amb menys finestres que zones s’usa «Principal i pila», perquè no quedin forats.
+Obre el constructor de disposicions
+Disposició segons el nombre de finestres
+Canvia la disposició tot sol
+Exemple: dues finestres una al costat de l’altra, a partir de tres principal i pila, a partir de cinc una graella. Sense cap regla vàlida s’usa la disposició triada a dalt.
+A partir de
+finestres:
+Elimina la regla
+Afegeix una regla
+Àrea principal a la dreta
+Emmiralla la disposició: la finestra principal a la dreta, les altres a l’esquerra.
+Finestres noves
+S’afegeixen al final
+Ocupen el lloc principal
+Al costat de la finestra activa
+Una sola finestra
+Amplada
+Per sota del 100 % una finestra sola queda centrada – bonic en pantalles amples.
+Sense marge exterior
+Una finestra sola ocupa tota la pantalla, encara que hi hagi un marge.
+Les finestres llisquen al seu lloc
+Quan una finestra s’obre, es tanca o s’intercanvia, les altres es mouen suaument en lloc de saltar.
+Durada
+Sempre flotants
+Aquestes aplicacions no s’ordenen mai i conserven el seu lloc. Els diàlegs sempre floten.
+Encara cap.
+Afegeix una aplicació oberta
+Obre primer l’aplicació i després tria-la aquí.
+Tria…
+No hi ha cap altra finestra oberta
+Arrossega una finestra sobre una altra per intercanviar-les. Si la deixes a la barra o a una vora, flota lliurement; «Deixa surar la finestra» la torna. Els espais venen de la pàgina General.
+Dues finestres intercanvien el lloc – deixa’n anar una sobre l’altra o usa les tecles.
+Interruptor principal per arrossegar i les tecles.
+Arrossega una finestra sobre el centre d’una altra – la previsualització mostra dues fletxes – i deixa-la anar. Amb el mosaic automàtic n’hi ha prou amb qualsevol punt de l’altra finestra.
+Finestres principals: %1
+KSnapUnity: %1
+Mosaic automàtic activat
+Mosaic automàtic desactivat
+Obre l’editor de configuració
+Fes clic i després D’acord – s’obre l’editor de configuració.
+✔ A punt – fes clic a D’acord per obrir l’editor de configuració.
+Mode
+<b>Mode 1</b><br/>Barra d’ajust i vores de la pantalla
+Desactivat = mode 1, activat = mode 2
+<b>Mode 2</b><br/>Mosaic automàtic
+Canvia el mode amb:
+La tecla es canvia a l’editor de configuració. Tots dos modes necessiten el mosaic automàtic i la barra o les vores de la pantalla.
+Configuració ràpida
+Colors de la barra:

@@ -1,35 +1,25 @@
 Tutup
 Pulihkan
 Maksimalkan
-Bentangkan
-Ciutkan
 Bagi berdampingan
 Bagi atas dan bawah
 Hapus zona
 Muat templat…
 Klik zona untuk memilihnya · klik ganda untuk membaginya · seret pembatasnya
 %1 dari %2 zona
-SeaQ Snap Layout – Penyunting pengaturan
-untuk KDE · v%1
 Umum
 Tampilan
 Perilaku & animasi
 Tata letak
 Tentang & bantuan
 Aktif
-Dijeda
 Seret jendela ke tepi atas layar lalu lepaskan di sebuah zona.
 Penambatan
-Tampilkan bilah saat jendela diseret ke tepi atas
-Tampilkan posisi jendela nanti
 Pulihkan ukuran asli saat jendela diseret keluar
 Jarak
 Jarak antarjendela
 Jarak ke tepi layar
-Aplikasi yang dikecualikan
-Kelas jendela yang tidak pernah menampilkan bilah, satu per baris.
 Kiat
-KDE memaksimalkan jendela yang diseret ke tepi atas. Agar penambatan lebih mulus, matikan ini di Pengaturan Sistem → Tepi Layar.
 Nilai yang disarankan
 Warna, ukuran, dan bentuk bilah.
 Pratinjau
@@ -81,8 +71,6 @@ Gandakan
 Hapus
 Cara kerjanya
 Pegang jendela pada bilah judulnya lalu seret ke atas. Bilah akan turun; lepaskan jendela di sebuah zona dan jendela akan mengisi tepat area itu. Seret keluar lagi dan ukurannya kembali seperti semula.
-Membuka penyunting pengaturan
-Pengaturan Sistem → Manajemen Jendela → Skrip KWin → ikon roda gigi di samping “SeaQ Snap Layout” → “Buka penyunting pengaturan Snap Layout” → OK.
 Informasi
 Versi
 Pembuat
@@ -102,8 +90,6 @@ Simpan
 Ya
 Zona %1
 Lepaskan jendela di sebuah zona
-SeaQ Snap Layout: hidup/mati
-SeaQ Snap Layout: uji bilah
 Separuh
 Dua pertiga
 Tiga kolom
@@ -115,13 +101,6 @@ Atas / bawah
 Tumpukan + utama
 Enam ubin
 Bilah sisi + kisi
-Seret jendela ke tepi atas layar lalu lepaskan di sebuah zona.
-Penyunting pengaturan
-Buka penyunting pengaturan Snap Layout
-✔ Siap – klik OK untuk membuka penyunting pengaturan.
-Pengaturan cepat
-Warna bilah:
-Semua pengaturan lainnya – tampilan, ukuran, animasi, perilaku, dan tata letak buatan Anda – diubah di penyunting pengaturan Snap Layout.
 Pengaturan
 Tidak ada
 Ubah
@@ -131,27 +110,21 @@ Atur
 Hapus
 Bilah tempel
 Tepi layar
-Cara lain untuk menempel
+Cara lain
 Magnet jendela
 Pintasan keyboard
 Pintasan
-Empat cara menempelkan jendela. Masing-masing bisa dinyalakan dan dimatikan sendiri.
 Fitur
 Dorong jendela ke tepi atau sudut: maksimalkan, separuh, seperempat.
 Jendela saling menempel dan menempel ke tepi layar.
 Tempelkan jendela aktif dengan kombinasi tombol.
 Pratinjau
 Tampilkan pratinjau dengan warna aksen
-Mati: bingkai netral. Berlaku untuk semua pratinjau.
-Kelas jendela yang tidak pernah ditempelkan, satu per baris.
 KDE punya aksi tepi layar sendiri dan penempelan jendela sendiri. Jika fitur yang sama aktif di sini, matikan milik KDE: Pengaturan Sistem → Manajemen Jendela → Tepi Layar, serta Perilaku Jendela → Pemindahan.
 Dorong jendela ke tepi atau sudut layar dan jendela itu mengisi bagian tersebut. Berfungsi dengan atau tanpa bilah tempel.
 Layar penuh
 Separuh atas
 Mati
-Separuh bawah
-Separuh kiri
-Separuh kanan
 Tepi dan sudut
 Gunakan tepi layar
 Terpisah dari bilah tempel. Setiap tepi bisa dinyalakan sendiri.
@@ -197,7 +170,6 @@ Ambil alih semua
 Biarkan
 Baik untuk diketahui
 Aksi penempelan memakai jarak yang sama dengan bilah dan mengingat ukuran sebelum ditempel: “Kembalikan ukuran sebelum ditempel” mengembalikannya.
-SeaQ Snap Layout: %1
 Tempel ke separuh kiri
 Tempel ke separuh kanan
 Tempel ke separuh atas
@@ -228,9 +200,7 @@ Meta+Shift + tombol
 Ctrl+Shift+Alt + tombol
 Ctrl+Alt + papan angka
 Tanpa pintasan
-Klik, lalu OK – penyunting pengaturan terbuka.
 Hambatan terhadap tumpang tindih
-Seberapa jauh jendela harus didorong ke jendela lain sebelum terlepas. 0 = jendela bebas bertumpang tindih.
 Kembalikan ke bawaan
 Atur ulang semua tombol
 Memberi setiap aksi tombol dari skema yang dipilih lagi dan menghapus tombol yang tidak ada di skema.
@@ -241,7 +211,6 @@ Saat Anda mengubah ukuran jendela, jendela yang menyentuhnya ikut menggeser tepi
 Jaga jendela bertumpuk tetap sejajar
 Jendela yang bertumpuk menjaga tepi kiri dan kanannya bersama, jendela bersebelahan tepi atas dan bawahnya.
 Goyangkan untuk melepas
-Goyangkan tetikus saat mengubah ukuran dan jendela lain kembali ke tempatnya.
 Pudarkan jendela lain
 Saat mengubah ukuran, jendela yang tidak ikut ditampilkan transparan.
 Pratinjau bilah snap
@@ -257,11 +226,156 @@ Dorongan singkat memberi setengah atau seperempat. Tahan jendela sedikit lebih l
 Waktu tahan
 Berapa lama jendela harus tetap di tepi sebelum membesar.
 Ubin tepi milik KDE
-Maksimalkan dan ubin KDE di tepi layar – beserta garis luarnya – dijeda selama SeaQ Snap Layout berjalan, sehingga hanya satu pratinjau yang muncul. Pengaturan KDE Anda tidak diubah: matikan ini, nonaktifkan atau hapus SeaQ Snap Layout dan perilaku KDE kembali.
 Snap jendela milik KDE
 Jeda zona snap KDE selama magnet menyala
-Agar hanya satu magnet yang menarik jendela. Pengaturan KDE Anda tidak diubah: matikan ini, nonaktifkan atau hapus SeaQ Snap Layout dan snap KDE kembali.
-Dukung SeaQ Snap Layout
-Jika Anda menyukai SeaQ Snap Layout, Anda bisa mendukung pengembangannya – terima kasih!
 Donasi dengan PayPal
 Traktir saya kopi
+untuk KWin · v%1
+Tata ubin otomatis
+Atur jendela
+Tukar jendela
+Setiap fitur bisa dinyalakan dan dimatikan sendiri-sendiri.
+Setiap jendela menemukan tempatnya sendiri, seperti di pengelola jendela tata ubin.
+Jendela berhenti di tepi jendela lain, juga saat Anda memindahkannya dengan cepat. Goyangkan mouse atau terus dorong sebentar untuk melepasnya. 0 = jendela boleh tumpang tindih bebas.
+Goyangkan mouse maju-mundur dengan cepat saat mengubah ukuran, dan jendela lain melompat kembali. Tarikan cepat ke satu arah tidak pernah melepasnya.
+Setiap jendela menemukan tempatnya di layar sendiri. Jendela baru ikut bergabung, yang ditutup memberi ruang bagi yang lain.
+Tata ubin
+Atur jendela secara otomatis
+Mati: jendela tetap di tempat Anda meletakkannya. Fitur lain tetap berfungsi.
+Tata letak
+Jendela utama
+Ukuran area utama
+Juga berubah saat Anda mengubah ukuran jendela utama secara manual.
+Jendela utama (jumlah)
+Berapa jendela yang berbagi area utama (tata letak “Utama dan tumpukan”).
+Tukar
+Lepaskan jendela ke jendela lain
+Tombol
+Ubah di halaman Pintasan keyboard. Dengan tata ubin otomatis, jendela juga bertukar tempat dalam urutan.
+Tukar dengan jendela di kiri
+Tukar dengan jendela di kanan
+Tukar dengan jendela di atas
+Tukar dengan jendela di bawah
+Tata ubin otomatis hidup/mati
+Tata letak ubin berikutnya
+Jadikan jendela utama
+Biarkan jendela melayang (keluar dari tata ubin)
+Area utama lebih besar
+Area utama lebih kecil
+Utama dan tumpukan
+Utama di tengah
+Kolom
+Baris
+Kisi
+Spiral
+Satu per satu
+Ganti mode (tempel / tata ubin)
+Satu jendela utama lagi
+Satu jendela utama lebih sedikit
+Geser jendela satu tempat maju
+Geser jendela satu tempat mundur
+Mode
+Spiral ke dalam
+Minimalkan
+Pratinjau langsung
+Mati
+Tepi atas: layar penuh
+Tepi atas: separuh atas
+Tepi atas: maksimalkan
+Seret jendela ke tepi…
+Tepi kiri: separuh kiri
+Sudut: seperempat
+Dekatkan jendela ke yang lain…
+Saat dekat, tepinya saling menempel
+Mengubah ukuran juga menempel – di sini ke tinggi penuh
+Seret tepi bersama…
+…tetangganya membesar dan mengecil bersamanya
+…ke segala arah
+Satu jendela
+Jendela baru bergabung
+Satu ditutup – yang lain mengisi celah
+Pegang jendela A…
+…seret ke jendela B…
+…lepaskan: keduanya bertukar tempat
+Bilah tempel dan tepi layar mengganggu tata ubin otomatis. Karena itu keduanya berjalan sebagai dua mode – ganti dengan pintasan atau di sini.
+Mode 1 – Bilah tempel dan tepi layar
+Bilah tempel, tepi layar, magnet jendela, pintasan, dan tukar jendela.
+Mode 2 – Tata ubin otomatis
+Tata ubin otomatis, tukar jendela, pintasan, dan magnet untuk jendela melayang.
+Tata ubin otomatis mati – hanya mode 1 berjalan dan pintasan mode tidak berbuat apa-apa.
+Bilah tempel dan tepi layar mati – hanya mode 2 berjalan dan pintasan mode tidak berbuat apa-apa.
+Ganti mode
+Tanpa tombol
+Ubah tombol
+KSnapUnity – Penyunting pengaturan
+Mode aktif
+Bilah tempel dan tepi layar
+Klik atau tekan %1 untuk mengganti mode.
+Hanya satu mode yang aktif.
+Dua jendela bertukar tempat: jatuhkan satu ke yang lain, atau dengan tombol.
+Maksimalkan dan tata ubin bawaan KDE di tepi layar – dengan garis tepinya – dijeda selama KSnapUnity berjalan, agar hanya satu pratinjau muncul. Pengaturan KDE Anda tidak berubah: matikan ini, nonaktifkan atau hapus KSnapUnity, dan perilaku KDE kembali.
+Jadi hanya satu magnet yang menarik jendela. Pengaturan KDE Anda tidak berubah: matikan ini, nonaktifkan atau hapus KSnapUnity, dan penempelan KDE kembali.
+Snap Smarter. Work Better.
+K untuk KWin · Snap untuk menempel lebih cerdas · Unity untuk semuanya dalam satu sistem
+Unified
+Semua fitur jendela dalam satu sistem.
+Natural
+Perilaku jendela yang intuitif dan alami.
+Intelligent
+Penataan dan deteksi cerdas.
+Tata letak tempel dan tata ubin otomatis.
+Your Workflow
+Sesuai cara kerja Anda.
+Penempelan dan tata ubin otomatis berjalan sebagai dua mode – satu pintasan berpindah di antaranya.
+Dukung KSnapUnity
+Jika Anda menyukai KSnapUnity, Anda bisa mendukung pengembangannya – terima kasih!
+Tata letak sendiri
+Setiap tata letak yang Anda buat di halaman Tata letak juga bisa menata jendela – muncul di atas. Jendela 1 mendapat zona 1 dan seterusnya; jendela tambahan berbagi zona terakhir. Jika jendela lebih sedikit dari zona, „Utama dan tumpukan“ dipakai agar tidak ada lubang.
+Buka pembuat tata letak
+Tata letak menurut jumlah jendela
+Ganti tata letak sendiri
+Contoh: dua jendela berdampingan, mulai tiga utama dan tumpukan, mulai lima kisi. Tanpa aturan yang cocok, tata letak yang dipilih di atas dipakai.
+Mulai
+jendela:
+Hapus aturan
+Tambah aturan
+Area utama di kanan
+Mencerminkan tata letak: jendela utama di kanan, yang lain di kiri.
+Jendela baru
+Bergabung di akhir
+Mengambil tempat utama
+Di samping jendela aktif
+Satu jendela saja
+Lebar
+Di bawah 100 % jendela tunggal tetap di tengah – bagus di layar lebar.
+Tanpa margin luar
+Jendela tunggal memakai seluruh layar, meski ada margin.
+Jendela meluncur ke tempatnya
+Saat jendela dibuka, ditutup, atau ditukar, yang lain bergerak halus alih-alih melompat.
+Durasi
+Selalu melayang
+Aplikasi ini tidak pernah ditata dan tetap di tempatnya. Dialog selalu melayang.
+Belum ada.
+Tambah aplikasi yang terbuka
+Buka aplikasinya dulu, lalu pilih di sini.
+Pilih…
+Tidak ada jendela lain yang terbuka
+Seret jendela ke jendela lain untuk menukarnya. Dilepas di bilah tempel atau tepi layar, jendela melayang bebas; „Biarkan jendela melayang“ mengembalikannya. Jarak diatur di halaman Umum.
+Dua jendela bertukar tempat – jatuhkan satu ke yang lain atau gunakan tombol.
+Sakelar utama untuk menyeret dan tombol.
+Seret jendela ke tengah jendela lain – pratinjau menampilkan dua panah – lalu lepaskan. Dengan tata ubin otomatis, di mana saja di atas jendela lain sudah cukup.
+Jendela utama: %1
+KSnapUnity: %1
+Tata ubin otomatis aktif
+Tata ubin otomatis mati
+Buka penyunting pengaturan
+Klik, lalu OK – penyunting pengaturan terbuka.
+✔ Siap – klik OK untuk membuka penyunting pengaturan.
+Mode
+<b>Mode 1</b><br/>Bilah tempel dan tepi layar
+Mati = mode 1, aktif = mode 2
+<b>Mode 2</b><br/>Tata ubin otomatis
+Ganti mode dengan:
+Tombolnya diubah di penyunting pengaturan. Kedua mode memerlukan tata ubin otomatis dan bilah tempel atau tepi layar.
+Pengaturan cepat
+Warna bilah tempel:

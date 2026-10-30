@@ -1,35 +1,25 @@
 Dún
 Athchóirigh
 Uasmhéadaigh
-Leathnaigh
-Laghdaigh
 Roinn taobh le taobh
 Roinn barr agus bun
 Bain an crios
 Luchtaigh teimpléad…
 Cliceáil ar chrios chun é a roghnú · cliceáil faoi dhó chun é a roinnt · tarraing na deighilteoirí
 %1 as %2 crios
-SeaQ Snap Layout – Eagarthóir socruithe
-do KDE · v%1
 Ginearálta
 Cuma
 Iompar agus beochan
 Leagain amach
 Maidir leis agus cabhair
 Gníomhach
-Ar sos
 Tarraing fuinneog go dtí barr an scáileáin agus scaoil ar chrios í.
 Greamú
-Taispeáin an barra nuair a tharraingítear fuinneog go dtí an barr
-Taispeáin cá rachaidh an fhuinneog
 Athchóirigh an bunmhéid nuair a tharraingítear an fhuinneog amach
 Spásáil
 Bearna idir fuinneoga
 Bearna go dtí imeall an scáileáin
-Feidhmchláir eisiata
-Aicmí fuinneog nach dtaispeánann an barra choíche, ceann in aghaidh an líne.
 Leid
-Uasmhéadaíonn KDE fuinneoga a tharraingítear go dtí an barr. Chun greamú níos míne a fháil, múch é seo i Socruithe an Chórais → Imill an Scáileáin.
 Luachanna molta
 Dathanna, méid agus cruth an bharra.
 Réamhamharc
@@ -81,8 +71,6 @@ Dúblaigh
 Scrios
 Conas a oibríonn sé
 Beir ar fhuinneog ag a barra teidil agus tarraing suas í. Sleamhnaíonn an barra síos; scaoil an fhuinneog ar chrios agus líonfaidh sí an limistéar sin go díreach. Má tharraingíonn tú amach arís í, gheobhaidh sí a seanmhéid ar ais.
-An t-eagarthóir socruithe a oscailt
-Socruithe an Chórais → Bainistíocht Fuinneog → Scripteanna KWin → deilbhín an fhearais in aice le “SeaQ Snap Layout” → “Oscail eagarthóir socruithe Snap Layout” → OK.
 Faisnéis
 Leagan
 Údar
@@ -102,8 +90,6 @@ Sábháil
 Tá
 Crios %1
 Scaoil an fhuinneog ar chrios
-SeaQ Snap Layout: cas air/as
-SeaQ Snap Layout: tástáil an barra
 Leatha
 Dhá thrian
 Trí cholún
@@ -115,13 +101,6 @@ Barr / bun
 Cruach + príomh
 Sé thíl
 Barra taoibh + greille
-Tarraing fuinneoga go dtí barr an scáileáin agus scaoil ar chrios iad.
-Eagarthóir socruithe
-Oscail eagarthóir socruithe Snap Layout
-✔ Réidh – cliceáil OK chun an t-eagarthóir socruithe a oscailt.
-Socruithe tapa
-Dathanna an bharra:
-Athraítear gach socrú eile – cuma, méid, beochan, iompar agus do leagain amach féin – in eagarthóir socruithe Snap Layout.
 Socruithe
 Dada
 Athraigh
@@ -131,27 +110,21 @@ Socraigh
 Bain
 Barra greamaithe
 Imill an scáileáin
-Tuilleadh bealaí le greamú
+Tuilleadh bealaí
 Maighnéad fuinneog
 Aicearraí méarchláir
 Aicearraí
-Ceithre bhealach le fuinneoga a ghreamú. Is féidir gach ceann a chasadh air agus as ar leith.
 Gnéithe
 Brúigh fuinneog in aghaidh imill nó cúinne: uasmhéadú, leatha, ceathrúna.
 Greamaíonn fuinneoga dá chéile agus d’imill an scáileáin.
 Greamaigh an fhuinneog ghníomhach le teaglaim eochracha.
 Réamhamhairc
 Taispeáin réamhamhairc sa dath aibhsithe
-As: fráma neodrach. Baineann sé le gach réamhamharc.
-Aicmí fuinneog nach ngreamaítear riamh, ceann amháin in aghaidh na líne.
 Tá a ghníomhartha féin d’imill an scáileáin agus a ghreamú fuinneog féin ag KDE. Má tá an ghné chéanna air anseo, cas as gné KDE: Socruithe an Chórais → Bainistíocht Fuinneog → Imill an Scáileáin, agus Iompar Fuinneog → Bogadh.
 Brúigh fuinneog in aghaidh imill nó cúinne den scáileán agus líonfaidh sí an chuid sin. Oibríonn sé leis an mbarra greamaithe nó gan é.
 Lánscáileán
 An leath uachtarach
 As
-An leath íochtarach
-An leath clé
-An leath dheis
 Imill agus cúinní
 Úsáid imill an scáileáin
 Neamhspleách ar an mbarra greamaithe. Is féidir gach imeall a chasadh air ar leith.
@@ -197,7 +170,6 @@ Glac iad go léir
 Fág iad
 Is maith a fhios
 Úsáideann na gníomhartha greamaithe na bearnaí céanna leis an mbarra agus cuimhníonn siad ar an méid roimh an ngreamú: tugann „Athchóirigh an méid roimh ghreamú” ar ais é.
-SeaQ Snap Layout: %1
 Greamaigh sa leath clé
 Greamaigh sa leath dheis
 Greamaigh sa leath uachtarach
@@ -228,9 +200,7 @@ Meta+Shift + eochair
 Ctrl+Shift+Alt + eochair
 Ctrl+Alt + eochaircheap uimhriúil
 Gan aicearraí
-Cliceáil, ansin OK – osclaítear eagarthóir na socruithe.
 Friotaíocht in aghaidh forluí
-Cé chomh fada is gá fuinneog a bhrú isteach i gceann eile sula scaoileann sí. 0 = is féidir le fuinneoga forluí go saor.
 Athshocraigh go réamhshocrú
 Athshocraigh na heochracha go léir
 Tugann sé eochair na scéime roghnaithe do gach gníomh arís agus baineann sé eochracha nach bhfuil sa scéim.
@@ -241,7 +211,6 @@ Nuair a athraíonn tú méid fuinneoige, bogann na fuinneoga a theagmhaíonn lé
 Coinnigh fuinneoga cruachta ar líne
 Coinníonn fuinneoga os cionn a chéile a n-imill chlé agus dheis le chéile, agus fuinneoga taobh le taobh a n-imill bharr agus bhun.
 Croith chun scaoileadh
-Croith an luch agus an méid á athrú agus léimeann na fuinneoga eile ar ais.
 Maolaigh na fuinneoga eile
 Agus an méid á athrú, taispeántar go trédhearcach fuinneoga nach leanann.
 Réamhamharc an bharra ghreamaithe
@@ -257,11 +226,156 @@ Tugann brú gearr an leath nó an ceathrú. Coinnigh an fhuinneog ag an imeall b
 Am coinneála
 Cé chomh fada is gá don fhuinneog fanacht ag an imeall sula bhfásann sí.
 Tíleáil imill KDE féin
-Tá uasmhéadú agus tíleáil KDE ag imill an scáileáin – lena n-imlíne – ar sos fad atá SeaQ Snap Layout ag rith, ionas nach dtaispeántar ach réamhamharc amháin. Ní athraítear do shocruithe KDE: múch é seo, díchumasaigh nó bain SeaQ Snap Layout agus tá iompar KDE ar ais.
 Greamú fuinneog KDE féin
 Cuir criosanna greamaithe KDE ar sos fad atá an maighnéad ar siúl
-Ionas nach dtarraingíonn ach maighnéad amháin fuinneog. Ní athraítear do shocruithe KDE: múch é seo, díchumasaigh nó bain SeaQ Snap Layout agus tá greamú KDE ar ais.
-Tacaigh le SeaQ Snap Layout
-Más maith leat SeaQ Snap Layout, is féidir leat tacú lena fhorbairt – go raibh maith agat!
 Deonaigh le PayPal
 Ceannaigh caife dom
+do KWin · v%1
+Tíliú uathoibríoch
+Fuinneoga a eagrú
+Fuinneoga a mhalartú
+Is féidir gach gné a chasadh air agus as ar leith.
+Aimsíonn gach fuinneog a háit féin, mar a dhéanann bainisteoir fuinneog tílithe.
+Stopann fuinneog ag imeall fuinneoige eile, fiú má bhogann tú go tapa í. Croith an luch nó lean ort ag brú ar feadh nóiméid chun í a scaoileadh. 0 = is féidir le fuinneoga forluí go saor.
+Croith an luch go tapa anonn is anall agus tú ag athrú méide, agus léimeann na fuinneoga eile ar ais. Ní scaoileann tarraingt thapa i dtreo amháin iad riamh.
+Aimsíonn gach fuinneog a háit ar an scáileán léi féin. Téann fuinneoga nua isteach, fágann na cinn dúnta spás do na cinn eile.
+Tíliú
+Eagraigh fuinneoga go huathoibríoch
+As: fanann fuinneoga san áit a gcuireann tú iad. Oibríonn na gnéithe eile ar aon nós.
+Leagan amach
+Príomhfhuinneog
+Méid an phríomhlimistéir
+Athraíonn sé freisin nuair a athraíonn tú méid na príomhfhuinneoige de láimh.
+Príomhfhuinneoga
+Cé mhéad fuinneog a roinneann an príomhlimistéar (leagan amach “Príomh agus cruach”).
+Malartaigh
+Scaoil fuinneog ar fhuinneog eile
+Eochracha
+Athraigh iad ar an leathanach Aicearraí méarchláir. Le tíliú uathoibríoch, malartaíonn na fuinneoga a n-áit san ord freisin.
+Malartaigh leis an bhfuinneog ar chlé
+Malartaigh leis an bhfuinneog ar dheis
+Malartaigh leis an bhfuinneog thuas
+Malartaigh leis an bhfuinneog thíos
+Tíliú uathoibríoch air/as
+An chéad leagan amach eile
+Déan príomhfhuinneog di
+Lig don fhuinneog snámh (fág an tíliú)
+Príomhlimistéar níos mó
+Príomhlimistéar níos lú
+Príomh agus cruach
+Príomh sa lár
+Colúin
+Rónna
+Greille
+Bíseach
+Ceann ar cheann
+Athraigh mód (greamú / tíliú)
+Príomhfhuinneog amháin eile
+Príomhfhuinneog amháin níos lú
+Bog an fhuinneog áit amháin ar aghaidh
+Bog an fhuinneog áit amháin siar
+Móid
+Bíseach isteach
+Íoslaghdaigh
+Réamhamharc beo
+Múchta
+Imeall barr: lánscáileán
+Imeall barr: an leath uachtair
+Imeall barr: uasmhéadaigh
+Tarraing fuinneog in aghaidh imill…
+Imeall clé: an leath chlé
+Cúinne: ceathrú
+Bog fuinneog i dtreo fuinneog eile…
+In aice láimhe, greamaíonn na himill dá chéile
+Greamaíonn athrú méide freisin – anseo go dtí an airde iomlán
+Tarraing imeall comhroinnte…
+…fásann agus crapann na comharsana leis
+…i ngach treo
+Fuinneog amháin
+Tagann fuinneog nua isteach
+Dúnann ceann – líonann na cinn eile an bhearna
+Beir ar fhuinneog A…
+…tarraing ar fhuinneog B í…
+…scaoil: athraíonn siad áit
+Cuireann an barra agus imill an scáileáin isteach ar an tíliú uathoibríoch. Mar sin is dhá mhód iad – athraigh leis an aicearra nó anseo.
+Mód 1 – Barra greamaithe agus imill an scáileáin
+Barra greamaithe, imill an scáileáin, maighnéad fuinneog, aicearraí agus malartú fuinneog.
+Mód 2 – Tíliú uathoibríoch
+Tíliú uathoibríoch, malartú fuinneog, aicearraí agus an maighnéad d’fhuinneoga ar snámh.
+Tá an tíliú uathoibríoch múchta – níl ach mód 1 ag rith agus ní dhéanann aicearra an mhóid faic.
+Tá an barra agus na himill múchta – níl ach mód 2 ag rith agus ní dhéanann aicearra an mhóid faic.
+Athraigh mód
+Gan eochair
+Athraigh eochair
+KSnapUnity – Eagarthóir socruithe
+Mód gníomhach
+Barra greamaithe agus imill an scáileáin
+Cliceáil nó brúigh %1 chun an mód a athrú.
+Níl ach mód amháin ar siúl.
+Athraíonn dhá fhuinneog áit: scaoil ceann ar an gceann eile, nó le heochair.
+Cuirtear uasmhéadú agus tíliú KDE féin ag na himill – lena imlíne – ar sos fad a ritheann KSnapUnity, ionas nach mbíonn ach réamhamharc amháin. Ní athraítear do shocruithe KDE: múch é seo, díchumasaigh nó bain KSnapUnity agus tagann iompar KDE ar ais.
+Mar sin ní tharraingíonn ach maighnéad amháin ar fhuinneog. Ní athraítear do shocruithe KDE: múch é seo, díchumasaigh nó bain KSnapUnity agus tagann greamú KDE ar ais.
+Snap Smarter. Work Better.
+K do KWin · Snap do ghreamú níos cliste · Unity do gach rud in aon chóras amháin
+Unified
+Gach gné fuinneoige in aon chóras amháin.
+Natural
+Iompar fuinneog iomasach, nádúrtha.
+Intelligent
+Socrú agus aithint chliste.
+Leagain amach greamaithe agus tíliú uathoibríoch.
+Your Workflow
+Oireann sé don chaoi a n-oibríonn tú.
+Ritheann greamú agus tíliú uathoibríoch mar dhá mhód – aicearra amháin chun athrú eatarthu.
+Tacaigh le KSnapUnity
+Má thaitníonn KSnapUnity leat, is féidir leat tacú lena fhorbairt – go raibh maith agat!
+Leagain amach féin
+Is féidir le gach leagan amach a thógann tú ar an leathanach Leagain amach fuinneoga a shocrú freisin – feictear thuas é. Faigheann fuinneog 1 crios 1 agus mar sin de; roinneann fuinneoga breise an crios deireanach. Le níos lú fuinneog ná criosanna úsáidtear „Príomh agus cruach“, ionas nach mbíonn poill.
+Oscail tógálaí na leagan amach
+Leagan amach de réir líon na bhfuinneog
+Athraigh an leagan amach leis féin
+Sampla: dhá fhuinneog taobh le taobh, ó thrí príomh agus cruach, ó chúig greille. Gan riail oiriúnach úsáidtear an leagan amach a roghnaíodh thuas.
+Ó
+fhuinneog:
+Bain an riail
+Cuir riail leis
+Príomhlimistéar ar dheis
+Scáthánaíonn sé an leagan amach: an phríomhfhuinneog ar dheis, an chuid eile ar chlé.
+Fuinneoga nua
+Téann siad go dtí an deireadh
+Glacann siad an príomháit
+In aice leis an bhfuinneog ghníomhach
+Fuinneog aonair
+Leithead
+Faoi 100 % fanann fuinneog aonair sa lár – deas ar scáileáin leathana.
+Gan imeall seachtrach
+Úsáideann fuinneog aonair an scáileán ar fad, fiú má tá imeall socraithe.
+Sleamhnaíonn fuinneoga ina n-áit
+Nuair a osclaíonn, a dhúnann nó a mhalartaíonn fuinneog, bogann an chuid eile go réidh in ionad léim.
+Fad
+Ar snámh i gcónaí
+Ní shocraítear na feidhmchláir seo riamh agus coinníonn siad a n-áit féin. Bíonn dialóga ar snámh i gcónaí.
+Dada fós.
+Cuir feidhmchlár oscailte leis
+Oscail an feidhmchlár ar dtús, ansin roghnaigh anseo é.
+Roghnaigh…
+Níl aon fhuinneog eile oscailte
+Tarraing fuinneog ar cheann eile chun iad a mhalartú. Má scaoiltear ar an mbarra nó ar imeall í, bíonn sí ar snámh; tugann „Lig don fhuinneog snámh“ ar ais í. Tagann na bearnaí ón leathanach Ginearálta.
+Athraíonn dhá fhuinneog áit – scaoil ceann ar an gceann eile nó úsáid na heochracha.
+Príomhlasc don tarraingt agus do na heochracha.
+Tarraing fuinneog thar lár fuinneoige eile – taispeánann an réamhamharc dhá shaighead – agus scaoil. Le tíliú uathoibríoch is leor áit ar bith os cionn na fuinneoige eile.
+Príomhfhuinneoga: %1
+KSnapUnity: %1
+Tíliú uathoibríoch ar siúl
+Tíliú uathoibríoch múchta
+Oscail an t-eagarthóir socruithe
+Cliceáil, ansin OK – osclaíonn an t-eagarthóir socruithe.
+✔ Réidh – cliceáil OK chun an t-eagarthóir socruithe a oscailt.
+Mód
+<b>Mód 1</b><br/>Barra greamaithe agus imill an scáileáin
+Múchta = mód 1, ar siúl = mód 2
+<b>Mód 2</b><br/>Tíliú uathoibríoch
+Athraigh mód le:
+Athraigh an eochair san eagarthóir socruithe. Teastaíonn tíliú uathoibríoch agus an barra nó imill an scáileáin ón dá mhód.
+Socruithe tapa
+Dathanna an bharra:

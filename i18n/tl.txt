@@ -1,35 +1,25 @@
 Isara
 Ibalik
 I-maximize
-Palawakin
-Itiklop
 Hatiin nang magkatabi
 Hatiin sa itaas at ibaba
 Alisin ang zone
 Mag-load ng template…
 I-click ang zone para piliin · i-double-click para hatiin · hilahin ang mga divider
 %1 sa %2 zone
-SeaQ Snap Layout – Editor ng mga setting
-para sa KDE · v%1
 Pangkalahatan
 Itsura
 Gawi at animasyon
 Mga layout
 Tungkol at tulong
 Aktibo
-Naka-pause
 Hilahin ang window sa itaas na gilid ng screen at bitawan sa isang zone.
 Pag-snap
-Ipakita ang snap bar kapag hinila ang window sa itaas na gilid
-Ipakita kung saan mapupunta ang window
 Ibalik ang orihinal na laki kapag hinila palabas ang window
 Pagitan
 Pagitan ng mga window
 Pagitan sa gilid ng screen
-Mga hindi kasamang application
-Mga window class na hindi kailanman nagpapakita ng snap bar, isa bawat linya.
 Tip
-Mina-maximize ng KDE ang mga window na hinila sa itaas na gilid. Para sa mas maayos na pag-snap, i-off ito sa System Settings → Screen Edges.
 Mga inirerekomendang value
 Mga kulay, laki at hugis ng snap bar.
 Preview
@@ -81,8 +71,6 @@ Doblehin
 Burahin
 Paano ito gumagana
 Hawakan ang window sa title bar nito at hilahin pataas. Bababa ang snap bar; bitawan ang window sa isang zone at pupunuin nito ang eksaktong lugar na iyon. Kapag hinila mo ulit palabas, babalik ang dati nitong laki.
-Pagbubukas ng editor ng mga setting
-System Settings → Window Management → KWin Scripts → icon na gear sa tabi ng “SeaQ Snap Layout” → “Buksan ang editor ng mga setting ng Snap Layout” → OK.
 Impormasyon
 Bersyon
 May-akda
@@ -102,8 +90,6 @@ I-save
 Oo
 Zone %1
 Bitawan ang window sa isang zone
-SeaQ Snap Layout: i-on/i-off
-SeaQ Snap Layout: subukan ang snap bar
 Kalahati
 Dalawang ikatlo
 Tatlong column
@@ -115,13 +101,6 @@ Itaas / ibaba
 Salansan + pangunahin
 Anim na tile
 Sidebar + grid
-Hilahin ang mga window sa itaas na gilid ng screen at bitawan sa isang zone.
-Editor ng mga setting
-Buksan ang editor ng mga setting ng Snap Layout
-✔ Handa na – i-click ang OK para buksan ang editor ng mga setting.
-Mabilis na setting
-Mga kulay ng snap bar:
-Lahat ng iba pang setting – itsura, laki, animasyon, gawi at sarili mong mga layout – ay binabago sa editor ng mga setting ng Snap Layout.
 Mga setting
 Wala
 Palitan
@@ -131,27 +110,21 @@ Itakda
 Alisin
 Snap bar
 Mga gilid ng screen
-Iba pang paraan ng pag-snap
+Iba pang paraan
 Magnet ng window
 Mga keyboard shortcut
 Mga shortcut
-Apat na paraan para i-snap ang mga window. Bawat isa ay puwedeng i-on at i-off nang hiwalay.
 Mga feature
 Itulak ang window sa gilid o sulok: i-maximize, kalahati, kapat.
 Dumidikit ang mga window sa isa’t isa at sa mga gilid ng screen.
 I-snap ang aktibong window gamit ang mga kombinasyon ng key.
 Mga preview
 Ipakita ang mga preview sa accent color
-Off: neutral na frame. Para sa lahat ng preview.
-Mga window class na hindi kailanman ini-snap, isa bawat linya.
 May sariling mga aksyon sa gilid ng screen at sariling pag-snap ng window ang KDE. Kung naka-on dito ang parehong feature, i-off ang sa KDE: System Settings → Window Management → Screen Edges, at Window Behavior → Movement.
 Itulak ang window sa gilid o sulok ng screen at pupunuin nito ang bahaging iyon. Gumagana kahit may snap bar o wala.
 Fullscreen
 Itaas na kalahati
 Off
-Ibabang kalahati
-Kaliwang kalahati
-Kanang kalahati
 Mga gilid at sulok
 Gamitin ang mga gilid ng screen
 Hiwalay sa snap bar. Bawat gilid ay puwedeng i-on nang hiwalay.
@@ -197,7 +170,6 @@ Kunin lahat
 Hayaan
 Mabuting malaman
 Ginagamit ng mga aksyon sa pag-snap ang parehong pagitan ng snap bar at natatandaan ang laki bago mag-snap: ibinabalik ito ng “Ibalik ang laki bago mag-snap”.
-SeaQ Snap Layout: %1
 I-snap sa kaliwang kalahati
 I-snap sa kanang kalahati
 I-snap sa itaas na kalahati
@@ -228,9 +200,7 @@ Meta+Shift + key
 Ctrl+Shift+Alt + key
 Ctrl+Alt + number pad
 Walang shortcut
-I-click, tapos OK – bubukas ang editor ng mga setting.
 Paglaban sa pagpapatong
-Gaano kalalim kailangang itulak ang isang window sa isa pa bago ito bumitaw. 0 = malayang makakapagpatong ang mga window.
 Ibalik sa default
 I-reset ang lahat ng key
 Ibinabalik sa bawat aksyon ang key ng napiling scheme at inaalis ang mga key na wala sa scheme.
@@ -241,7 +211,6 @@ Kapag binago mo ang laki ng window, sumasabay ang mga window na nakadikit dito s
 Panatilihing nakahanay ang mga nakasalansang window
 Ang mga window na magkapatong ay pinagsasama ang kaliwa at kanang gilid, ang magkatabi ang itaas at ibabang gilid.
 Kalugin para bitawan
-Kalugin ang mouse habang binabago ang laki at babalik ang ibang mga window.
 Palabuin ang ibang mga window
 Habang binabago ang laki, ipinapakitang malinaw ang mga window na hindi sumasabay.
 Preview ng snap bar
@@ -257,11 +226,156 @@ Ang maikling tulak ay nagbibigay ng kalahati o kapat. Hawakan nang mas matagal n
 Oras ng paghawak
 Gaano katagal dapat manatili ang window sa gilid bago ito lumaki.
 Sariling edge tiling ng KDE
-Naka-pause ang sariling maximize at tile ng KDE sa mga gilid ng screen – kasama ang outline – habang tumatakbo ang SeaQ Snap Layout, para iisang preview lang ang lumabas. Hindi binabago ang mga setting mo sa KDE: i-off ito, i-disable o alisin ang SeaQ Snap Layout at babalik ang asal ng KDE.
 Sariling snapping ng window ng KDE
 I-pause ang mga snap zone ng KDE habang naka-on ang magnet
-Para iisang magnet lang ang humila sa window. Hindi binabago ang mga setting mo sa KDE: i-off ito, i-disable o alisin ang SeaQ Snap Layout at babalik ang snapping ng KDE.
-Suportahan ang SeaQ Snap Layout
-Kung gusto mo ang SeaQ Snap Layout, puwede mong suportahan ang pagbuo nito – salamat!
 Mag-donate gamit ang PayPal
 Ilibre mo ako ng kape
+para sa KWin · v%1
+Awtomatikong pag-tile
+Ayusin ang mga window
+Pagpalitin ang mga window
+Bawat feature ay mabubuksan at maisasara nang hiwalay.
+Bawat window ay kusang nakakahanap ng puwesto, gaya sa isang tiling window manager.
+Humihinto ang window sa gilid ng isa pa, kahit mabilis mo itong igalaw. Alugin ang mouse o ituloy ang pagtulak sandali para bitawan. 0 = malayang magpatong ang mga window.
+Habang nagpapalit ng laki, alugin nang mabilis pabalik-balik ang mouse at babalik ang ibang window. Ang mabilis na hila sa iisang direksyon ay hindi kailanman bumibitaw.
+Bawat window ay kusang nakakahanap ng puwesto sa screen. Sumasali ang mga bagong window, nagbibigay-daan ang mga isinara.
+Pag-tile
+Awtomatikong ayusin ang mga window
+Naka-off: nananatili ang mga window kung saan mo inilagay. Gumagana pa rin ang ibang feature.
+Layout
+Pangunahing window
+Laki ng pangunahing bahagi
+Nagbabago rin kapag manu-mano mong pinalitan ang laki ng pangunahing window.
+Mga pangunahing window
+Ilang window ang naghahati sa pangunahing bahagi (layout na “Pangunahin at patong”).
+Pagpalitin
+Ibagsak ang window sa isa pa
+Mga key
+Palitan ang mga ito sa pahinang Mga keyboard shortcut. Sa awtomatikong pag-tile, nagpapalit din ng puwesto ang mga window sa pagkakasunod.
+Ipalit sa window sa kaliwa
+Ipalit sa window sa kanan
+Ipalit sa window sa itaas
+Ipalit sa window sa ibaba
+Awtomatikong pag-tile on/off
+Susunod na layout ng tile
+Gawing pangunahing window
+Palutangin ang window (umalis sa pag-tile)
+Mas malaking pangunahing bahagi
+Mas maliit na pangunahing bahagi
+Pangunahin at patong
+Pangunahin sa gitna
+Mga column
+Mga row
+Grid
+Spiral
+Isa-isa
+Lumipat ng mode (snap / tile)
+Isa pang pangunahing window
+Isang pangunahing window na mas kaunti
+Ilipat ang window ng isang puwesto pasulong
+Ilipat ang window ng isang puwesto pabalik
+Mga mode
+Spiral papasok
+I-minimize
+Live na preview
+Naka-off
+Itaas na gilid: buong screen
+Itaas na gilid: itaas na kalahati
+Itaas na gilid: i-maximize
+I-drag ang window sa gilid…
+Kaliwang gilid: kaliwang kalahati
+Sulok: isang kapat
+Ilapit ang window sa iba…
+Kapag malapit, nagdidikit ang mga gilid
+Kumakapit din ang pag-resize – dito hanggang buong taas
+I-drag ang pinagsasaluhang gilid…
+…lumalaki at lumiliit ang mga katabi kasabay nito
+…sa lahat ng direksyon
+Isang window
+May bagong window na sumasali
+Isa ang nagsasara – pinupunan ng iba ang puwang
+Hawakan ang window A…
+…i-drag ito sa window B…
+…bitawan: nagpapalitan sila ng puwesto
+Nakakasagabal ang snap bar at mga gilid ng screen sa awtomatikong pag-tile. Kaya tumatakbo sila bilang dalawang mode – lumipat gamit ang shortcut o dito.
+Mode 1 – Snap bar at mga gilid ng screen
+Snap bar, mga gilid ng screen, magnet ng window, mga shortcut at pagpapalit ng window.
+Mode 2 – Awtomatikong pag-tile
+Awtomatikong pag-tile, pagpapalit ng window, mga shortcut at ang magnet para sa lumulutang na window.
+Naka-off ang awtomatikong pag-tile – mode 1 lang ang tumatakbo at walang ginagawa ang shortcut ng mode.
+Naka-off ang snap bar at mga gilid – mode 2 lang ang tumatakbo at walang ginagawa ang shortcut ng mode.
+Lumipat ng mode
+Walang key
+Palitan ang key
+KSnapUnity – Editor ng mga setting
+Aktibong mode
+Snap bar at mga gilid ng screen
+I-click o pindutin ang %1 para lumipat ng mode.
+Isang mode lang ang naka-on.
+Nagpapalitan ng puwesto ang dalawang window: ihulog ang isa sa isa pa, o gamit ang key.
+Naka-pause ang sariling pag-maximize at pag-tile ng KDE sa mga gilid – kasama ang outline nito – habang tumatakbo ang KSnapUnity, para isang preview lang ang lumabas. Hindi nagbabago ang mga setting ng KDE: i-off ito, i-disable o alisin ang KSnapUnity at babalik ang kilos ng KDE.
+Kaya isang magnet lang ang humihila sa window. Hindi nagbabago ang mga setting ng KDE: i-off ito, i-disable o alisin ang KSnapUnity at babalik ang pag-snap ng KDE.
+Snap Smarter. Work Better.
+K para sa KWin · Snap para sa mas matalinong pag-snap · Unity para sa lahat sa iisang sistema
+Unified
+Lahat ng feature ng window sa iisang sistema.
+Natural
+Natural at madaling maunawaang kilos ng window.
+Intelligent
+Matalinong pag-aayos at pagtukoy.
+Mga snap layout at awtomatikong pag-tile.
+Your Workflow
+Akma sa paraan ng iyong pagtatrabaho.
+Tumatakbo ang pag-snap at awtomatikong pag-tile bilang dalawang mode – isang shortcut ang nagpapalit sa pagitan nila.
+Suportahan ang KSnapUnity
+Kung gusto mo ang KSnapUnity, puwede mong suportahan ang pag-develop nito – salamat!
+Sariling mga layout
+Bawat layout na gagawin mo sa pahinang Mga layout ay puwede ring mag-ayos ng mga window – lumalabas ito sa itaas. Ang window 1 ay napupunta sa zone 1 at iba pa; ang sobrang window ay naghahati sa huling zone. Kapag mas kaunti ang window kaysa zone, ginagamit ang „Pangunahin at patong“ para walang butas.
+Buksan ang tagabuo ng layout
+Layout ayon sa dami ng window
+Kusang palitan ang layout
+Halimbawa: dalawang window magkatabi, mula tatlo pangunahin at patong, mula lima grid. Kung walang tugmang tuntunin, ginagamit ang layout na pinili sa itaas.
+Mula
+window:
+Alisin ang tuntunin
+Magdagdag ng tuntunin
+Pangunahing lugar sa kanan
+Binabaligtad ang layout: pangunahing window sa kanan, ang iba sa kaliwa.
+Mga bagong window
+Sumasali sa dulo
+Kinukuha ang pangunahing puwesto
+Katabi ng aktibong window
+Iisang window
+Lapad
+Sa ilalim ng 100 % nananatili sa gitna ang nag-iisang window – maganda sa malalapad na screen.
+Walang panlabas na margin
+Ginagamit ng nag-iisang window ang buong screen, kahit may margin na nakatakda.
+Dumudulas sa puwesto ang mga window
+Kapag may window na nagbubukas, nagsasara o nagpapalit, maayos na gumagalaw ang iba sa halip na tumalon.
+Tagal
+Laging lumulutang
+Hindi kailanman inaayos ang mga app na ito at pinapanatili nila ang sariling puwesto. Laging lumulutang ang mga dialog.
+Wala pa.
+Magdagdag ng bukas na app
+Buksan muna ang app, saka piliin dito.
+Pumili…
+Walang ibang bukas na window
+I-drag ang window sa isa pa para palitan sila. Kapag binitawan sa snap bar o gilid ng screen, malaya itong lulutang; ibinabalik ito ng „Palutangin ang window“. Ang mga puwang ay mula sa pahinang Pangkalahatan.
+Nagpapalitan ng puwesto ang dalawang window – ihulog ang isa sa isa pa o gamitin ang mga key.
+Pangunahing switch para sa pag-drag at mga key.
+I-drag ang window sa gitna ng isa pa – nagpapakita ang preview ng dalawang arrow – at bitawan. Sa awtomatikong pag-tile, kahit saan sa ibabaw ng isa pang window ay puwede.
+Mga pangunahing window: %1
+KSnapUnity: %1
+Naka-on ang awtomatikong pag-tile
+Naka-off ang awtomatikong pag-tile
+Buksan ang editor ng mga setting
+I-click, saka OK – magbubukas ang editor ng mga setting.
+✔ Handa na – i-click ang OK para buksan ang editor ng mga setting.
+Mode
+<b>Mode 1</b><br/>Snap bar at mga gilid ng screen
+Off = mode 1, on = mode 2
+<b>Mode 2</b><br/>Awtomatikong pag-tile
+Lumipat ng mode gamit ang:
+Palitan ang key sa editor ng mga setting. Kailangan ng dalawang mode ang awtomatikong pag-tile at ang snap bar o mga gilid ng screen.
+Mabilisang setting
+Mga kulay ng snap bar:

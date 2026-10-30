@@ -1,35 +1,25 @@
 Sulje
 Palauta
 Suurenna
-Laajenna
-Pienennä palkiksi
 Jaa vierekkäin
 Jaa ylös ja alas
 Poista alue
 Lataa malli…
 Valitse alue napsauttamalla · jaa kaksoisnapsautuksella · vedä jakajia
 %1/%2 aluetta
-SeaQ Snap Layout – Asetusten muokkain
-KDEille · v%1
 Yleiset
 Ulkoasu
 Toiminta ja animaatio
 Asettelut
 Tietoja ja ohje
 Käytössä
-Tauolla
 Vedä ikkuna näytön yläreunaan ja pudota se alueelle.
 Kiinnitys
-Näytä kiinnityspalkki, kun ikkunaa vedetään yläreunaan
-Näytä, mihin ikkuna asettuu
 Palauta alkuperäinen koko, kun ikkuna vedetään pois
 Välit
 Ikkunoiden väli
 Väli näytön reunaan
-Ohitettavat sovellukset
-Ikkunaluokat, joille palkkia ei koskaan näytetä, yksi riviä kohden.
 Vinkki
-KDE suurentaa yläreunaan vedetyt ikkunat. Sujuvamman kiinnityksen saat, kun poistat tämän käytöstä kohdassa Järjestelmäasetukset → Näytön reunat.
 Suositellut arvot
 Palkin värit, koko ja muoto.
 Esikatselu
@@ -81,8 +71,6 @@ Monista
 Poista
 Näin se toimii
 Tartu ikkunaan otsikkopalkista ja vedä se ylös. Palkki liukuu alas; pudota ikkuna alueelle, niin se täyttää juuri sen kohdan. Kun vedät sen taas pois, se saa entisen kokonsa takaisin.
-Asetusten muokkaimen avaaminen
-Järjestelmäasetukset → Ikkunointi → KWin-skriptit → hammasratas ”SeaQ Snap Layout” -kohdan vieressä → ”Avaa Snap Layoutin asetusten muokkain” → OK.
 Tiedot
 Versio
 Tekijä
@@ -102,8 +90,6 @@ Tallenna
 Kyllä
 Alue %1
 Pudota ikkuna alueelle
-SeaQ Snap Layout: päälle/pois
-SeaQ Snap Layout: kokeile palkkia
 Puolikkaat
 Kaksi kolmasosaa
 Kolme saraketta
@@ -115,13 +101,6 @@ Ylä / ala
 Pino + pää
 Kuusi ruutua
 Sivupalkki + ruudukko
-Vedä ikkunat näytön yläreunaan ja pudota ne alueelle.
-Asetusten muokkain
-Avaa Snap Layoutin asetusten muokkain
-✔ Valmis – avaa asetusten muokkain napsauttamalla OK.
-Pika-asetukset
-Palkin värit:
-Kaikki muut asetukset – ulkoasu, koko, animaatio, toiminta ja omat asettelut – muutetaan Snap Layoutin asetusten muokkaimessa.
 Asetukset
 Ei mitään
 Muuta
@@ -131,27 +110,21 @@ Aseta
 Poista
 Kiinnityspalkki
 Näytön reunat
-Lisää kiinnitystapoja
+Lisää tapoja
 Ikkunamagneetti
 Pikanäppäimet
 Pikanäppäimet
-Neljä tapaa kiinnittää ikkunoita. Jokaisen voi kytkeä päälle ja pois erikseen.
 Ominaisuudet
 Paina ikkuna reunaa tai kulmaa vasten: suurenna, puolikkaat, neljännekset.
 Ikkunat tarttuvat toisiinsa ja näytön reunoihin.
 Kiinnitä aktiivinen ikkuna näppäinyhdistelmillä.
 Esikatselut
 Näytä esikatselut korostusvärillä
-Pois: neutraali kehys. Koskee kaikkia esikatseluja.
-Ikkunaluokat, joita ei koskaan kiinnitetä, yksi riviä kohden.
 KDE:llä on omat näytön reunan toiminnot ja oma ikkunoiden kiinnitys. Jos sama ominaisuus on täällä päällä, poista KDE:n oma käytöstä: Järjestelmäasetukset → Ikkunanhallinta → Näytön reunat sekä Ikkunoiden toiminta → Siirtäminen.
 Paina ikkuna näytön reunaa tai kulmaa vasten, niin se täyttää sen osan. Toimii kiinnityspalkin kanssa tai ilman.
 Koko näyttö
 Yläpuolisko
 Pois
-Alapuolisko
-Vasen puolisko
-Oikea puolisko
 Reunat ja kulmat
 Käytä näytön reunoja
 Kiinnityspalkista riippumaton. Jokaisen reunan voi kytkeä erikseen.
@@ -197,7 +170,6 @@ Ota kaikki käyttöön
 Pidä ne
 Hyvä tietää
 Kiinnitystoiminnot käyttävät samoja välejä kuin palkki ja muistavat kiinnitystä edeltävän koon: ”Palauta kiinnitystä edeltävä koko” tuo sen takaisin.
-SeaQ Snap Layout: %1
 Kiinnitä vasempaan puoliskoon
 Kiinnitä oikeaan puoliskoon
 Kiinnitä yläpuoliskoon
@@ -228,9 +200,7 @@ Meta+Vaihto + näppäin
 Ctrl+Vaihto+Alt + näppäin
 Ctrl+Alt + numeronäppäimistö
 Ei pikanäppäimiä
-Napsauta ja sitten OK – asetusten muokkain avautuu.
 Vastus päällekkäisyydelle
-Kuinka pitkälle ikkuna pitää työntää toisen sisään, ennen kuin se päästää irti. 0 = ikkunat voivat mennä vapaasti päällekkäin.
 Palauta oletus
 Palauta kaikki näppäimet
 Antaa jokaiselle toiminnolle taas valitun mallin näppäimen ja poistaa näppäimet, joita mallissa ei ole.
@@ -241,7 +211,6 @@ Kun muutat ikkunan kokoa, siihen koskevat ikkunat siirtävät yhteistä reunaa m
 Pidä pinotut ikkunat linjassa
 Päällekkäiset ikkunat pitävät vasemman ja oikean reunansa yhdessä, vierekkäiset ylä- ja alareunansa.
 Ravista irrottaaksesi
-Ravista hiirtä koon muuttamisen aikana, niin muut ikkunat palaavat takaisin.
 Himmennä muut ikkunat
 Koon muuttamisen aikana ikkunat, jotka eivät seuraa, näytetään läpinäkyvinä.
 Kiinnityspalkin esikatselu
@@ -257,11 +226,156 @@ Lyhyt työntö antaa puolikkaan tai neljänneksen. Pidä ikkunaa reunassa hieman
 Pitoaika
 Kuinka kauan ikkunan on oltava reunassa ennen kuin se kasvaa.
 KDE:n oma reunalaatoitus
-KDE:n oma suurentaminen ja laatoitus näytön reunoilla – ääriviivoineen – on tauolla, kun SeaQ Snap Layout on käynnissä, jotta näkyy vain yksi esikatselu. KDE-asetuksiasi ei muuteta: kytke tämä pois, poista SeaQ Snap Layout käytöstä tai poista se, niin KDE:n oma toiminta palaa.
 KDE:n oma ikkunoiden kiinnitys
 Keskeytä KDE:n kiinnitysalueet, kun magneetti on päällä
-Jotta vain yksi magneetti vetää ikkunaa. KDE-asetuksiasi ei muuteta: kytke tämä pois, poista SeaQ Snap Layout käytöstä tai poista se, niin KDE:n oma kiinnitys palaa.
-Tue SeaQ Snap Layoutia
-Jos pidät SeaQ Snap Layoutista, voit tukea sen kehitystä – kiitos!
 Lahjoita PayPalilla
 Tarjoa minulle kahvi
+KWinille · v%1
+Automaattinen ruudutus
+Järjestä ikkunat
+Vaihda ikkunoiden paikkaa
+Jokaisen toiminnon voi kytkeä päälle ja pois erikseen.
+Jokainen ikkuna löytää paikkansa itse, kuten ruudutetussa ikkunanhallinnassa.
+Ikkuna pysähtyy toisen reunaan, vaikka liikuttaisit sitä nopeasti. Ravista hiirtä tai jatka työntämistä hetki irrottaaksesi. 0 = ikkunat saavat mennä vapaasti päällekkäin.
+Ravista hiirtä nopeasti edestakaisin kokoa muuttaessasi, niin muut ikkunat palaavat takaisin. Nopea veto yhteen suuntaan ei irrota koskaan.
+Jokainen ikkuna löytää paikkansa näytöltä itse. Uudet ikkunat liittyvät mukaan, suljetut jättävät tilaa muille.
+Ruudutus
+Järjestä ikkunat automaattisesti
+Pois: ikkunat jäävät sinne, minne ne laitat. Muut toiminnot toimivat silti.
+Asettelu
+Pääikkuna
+Pääalueen koko
+Muuttuu myös, kun muutat pääikkunan kokoa käsin.
+Pääikkunat
+Kuinka monta ikkunaa jakaa pääalueen (asettelu ”Pää ja pino”).
+Vaihda
+Pudota ikkuna toisen päälle
+Näppäimet
+Muuta niitä Pikanäppäimet-sivulla. Automaattisessa ruudutuksessa ikkunat vaihtavat myös paikkaa järjestyksessä.
+Vaihda vasemmanpuoleisen ikkunan kanssa
+Vaihda oikeanpuoleisen ikkunan kanssa
+Vaihda yläpuolisen ikkunan kanssa
+Vaihda alapuolisen ikkunan kanssa
+Automaattinen ruudutus päälle/pois
+Seuraava ruudutusasettelu
+Tee pääikkunaksi
+Anna ikkunan kellua (poistu ruudutuksesta)
+Suurempi pääalue
+Pienempi pääalue
+Pää ja pino
+Pää keskellä
+Sarakkeet
+Rivit
+Ruudukko
+Spiraali
+Yksi kerrallaan
+Vaihda tilaa (kiinnitys / ruudutus)
+Yksi pääikkuna lisää
+Yksi pääikkuna vähemmän
+Siirrä ikkunaa paikka eteenpäin
+Siirrä ikkunaa paikka taaksepäin
+Tilat
+Sisäänpäin kiertyvä
+Pienennä
+Esikatselu livenä
+Pois päältä
+Yläreuna: koko näyttö
+Yläreuna: yläpuolisko
+Yläreuna: suurenna
+Vedä ikkuna reunaa vasten…
+Vasen reuna: vasen puolisko
+Kulma: neljännes
+Siirrä ikkunaa muita kohti…
+Lähellä reunat tarttuvat toisiinsa
+Myös koon muutos kiinnittyy – tässä täyteen korkeuteen
+Vedä yhteistä reunaa…
+…naapurit kasvavat ja kutistuvat mukana
+…joka suuntaan
+Yksi ikkuna
+Uusi ikkuna liittyy
+Yksi sulkeutuu – muut täyttävät aukon
+Tartu ikkunaan A…
+…vedä se ikkunan B päälle…
+…päästä irti: ne vaihtavat paikkaa
+Kiinnityspalkki ja näytön reunat häiritsevät automaattista ruudutusta. Siksi ne toimivat kahtena tilana – vaihda pikanäppäimellä tai tästä.
+Tila 1 – kiinnityspalkki ja näytön reunat
+Kiinnityspalkki, näytön reunat, ikkunamagneetti, pikanäppäimet ja ikkunoiden vaihto.
+Tila 2 – automaattinen ruudutus
+Automaattinen ruudutus, ikkunoiden vaihto, pikanäppäimet ja magneetti kelluville ikkunoille.
+Automaattinen ruudutus on pois päältä – vain tila 1 toimii, eikä tilan pikanäppäin tee mitään.
+Palkki ja reunat ovat pois päältä – vain tila 2 toimii, eikä tilan pikanäppäin tee mitään.
+Vaihda tilaa
+Ei näppäintä
+Vaihda näppäin
+KSnapUnity – asetuseditori
+Aktiivinen tila
+Kiinnityspalkki ja näytön reunat
+Napsauta tai paina %1 vaihtaaksesi tilaa.
+Vain yksi tila on päällä.
+Kaksi ikkunaa vaihtaa paikkaa: pudota toinen toisen päälle tai näppäimellä.
+KDE:n oma suurennus ja ruudutus reunoilla – ääriviivoineen – on tauolla KSnapUnityn toimiessa, jotta näkyy vain yksi esikatselu. KDE-asetuksesi eivät muutu: kytke tämä pois, poista KSnapUnity käytöstä tai poista se, niin KDE:n oma toiminta palaa.
+Näin ikkunaa vetää vain yksi magneetti. KDE-asetuksesi eivät muutu: kytke tämä pois, poista KSnapUnity käytöstä tai poista se, niin KDE:n kiinnitys palaa.
+Snap Smarter. Work Better.
+K niin kuin KWin · Snap niin kuin fiksumpi kiinnitys · Unity niin kuin kaikki yhdessä järjestelmässä
+Unified
+Kaikki ikkunatoiminnot yhdessä järjestelmässä.
+Natural
+Intuitiivinen, luonteva ikkunoiden käytös.
+Intelligent
+Älykäs järjestely ja tunnistus.
+Kiinnitysasettelut ja automaattinen ruudutus.
+Your Workflow
+Sopii tapaasi työskennellä.
+Kiinnitys ja automaattinen ruudutus toimivat kahtena tilana – yksi pikanäppäin vaihtaa niiden välillä.
+Tue KSnapUnitya
+Jos pidät KSnapUnitysta, voit tukea sen kehitystä – kiitos!
+Omat asettelut
+Jokainen Asettelut-sivulla tekemäsi asettelu osaa myös järjestää ikkunoita – se näkyy yllä. Ikkuna 1 saa alueen 1 ja niin edelleen; ylimääräiset jakavat viimeisen alueen. Jos ikkunoita on vähemmän kuin alueita, käytetään asettelua ”Pää ja pino”, jotta aukkoja ei jää.
+Avaa asettelujen rakentaja
+Asettelu ikkunoiden määrän mukaan
+Vaihda asettelua itsestään
+Esimerkki: kaksi ikkunaa rinnakkain, kolmesta alkaen pää ja pino, viidestä alkaen ruudukko. Ilman sopivaa sääntöä käytetään yllä valittua asettelua.
+Alkaen
+ikkunasta:
+Poista sääntö
+Lisää sääntö
+Pääalue oikealla
+Peilaa asettelun: pääikkuna oikealla, muut vasemmalla.
+Uudet ikkunat
+Menevät loppuun
+Ottavat pääpaikan
+Aktiivisen ikkunan viereen
+Yksittäinen ikkuna
+Leveys
+Alle 100 % pitää yksinäisen ikkunan keskellä – hieno leveillä näytöillä.
+Ei ulkomarginaalia
+Yksinäinen ikkuna käyttää koko näytön, vaikka marginaali on asetettu.
+Ikkunat liukuvat paikalleen
+Kun ikkuna avautuu, sulkeutuu tai vaihtaa paikkaa, muut liikkuvat pehmeästi hyppimättä.
+Kesto
+Aina kelluvat
+Näitä sovelluksia ei koskaan järjestellä ja ne pitävät oman paikkansa. Valintaikkunat kelluvat aina.
+Ei vielä yhtään.
+Lisää avoin sovellus
+Avaa sovellus ensin ja valitse se sitten tästä.
+Valitse…
+Muita ikkunoita ei ole auki
+Vedä ikkuna toisen päälle vaihtaaksesi ne. Palkille tai näytön reunalle pudotettuna se kelluu vapaasti; ”Anna ikkunan kellua” tuo sen takaisin. Välit tulevat Yleiset-sivulta.
+Kaksi ikkunaa vaihtaa paikkaa – pudota toinen toisen päälle tai käytä näppäimiä.
+Pääkytkin vetämiselle ja näppäimille.
+Vedä ikkuna toisen keskelle – esikatselu näyttää kaksi nuolta – ja päästä irti. Automaattisessa ruudutuksessa riittää mikä tahansa kohta toisen ikkunan päällä.
+Pääikkunoita: %1
+KSnapUnity: %1
+Automaattinen ruudutus päällä
+Automaattinen ruudutus pois
+Avaa asetuseditori
+Napsauta, sitten OK – asetuseditori avautuu.
+✔ Valmis – napsauta OK avataksesi asetuseditorin.
+Tila
+<b>Tila 1</b><br/>Kiinnityspalkki ja näytön reunat
+Pois = tila 1, päällä = tila 2
+<b>Tila 2</b><br/>Automaattinen ruudutus
+Vaihda tilaa näppäimellä:
+Näppäimen voit vaihtaa asetuseditorissa. Molemmat tilat tarvitsevat automaattisen ruudutuksen ja palkin tai näytön reunat.
+Pika-asetukset
+Palkin värit:

@@ -1,35 +1,25 @@
 Đóng
 Khôi phục
 Phóng to
-Mở rộng
-Thu gọn
 Chia cạnh nhau
 Chia trên và dưới
 Xóa vùng
 Tải mẫu…
 Nhấp vào vùng để chọn · nhấp đúp để chia · kéo các đường phân cách
 %1 trên %2 vùng
-SeaQ Snap Layout – Trình chỉnh sửa cài đặt
-cho KDE · v%1
 Chung
 Giao diện
 Hành vi & hoạt ảnh
 Bố cục
 Giới thiệu & trợ giúp
 Đang bật
-Tạm dừng
 Kéo cửa sổ lên mép trên màn hình rồi thả vào một vùng.
 Gắn cửa sổ
-Hiện thanh khi kéo cửa sổ lên mép trên
-Cho biết cửa sổ sẽ nằm ở đâu
 Khôi phục kích thước ban đầu khi kéo cửa sổ ra
 Khoảng cách
 Khoảng cách giữa các cửa sổ
 Khoảng cách tới mép màn hình
-Ứng dụng bị loại trừ
-Các lớp cửa sổ không bao giờ hiện thanh, mỗi dòng một lớp.
 Mẹo
-KDE phóng to các cửa sổ bị kéo lên mép trên. Để gắn mượt hơn, hãy tắt tính năng này trong Thiết lập hệ thống → Cạnh màn hình.
 Giá trị khuyến nghị
 Màu sắc, kích thước và hình dạng của thanh.
 Xem trước
@@ -81,8 +71,6 @@ Nhân bản
 Xóa
 Cách hoạt động
 Nắm cửa sổ ở thanh tiêu đề rồi kéo lên. Thanh trượt xuống; thả cửa sổ vào một vùng và nó sẽ lấp đúng vùng đó. Kéo nó ra lần nữa thì cửa sổ trở lại kích thước cũ.
-Mở trình chỉnh sửa cài đặt
-Thiết lập hệ thống → Quản lý cửa sổ → Tập lệnh KWin → biểu tượng bánh răng cạnh “SeaQ Snap Layout” → “Mở trình chỉnh sửa cài đặt Snap Layout” → OK.
 Thông tin
 Phiên bản
 Tác giả
@@ -102,8 +90,6 @@ Lưu
 Có
 Vùng %1
 Thả cửa sổ vào một vùng
-SeaQ Snap Layout: bật/tắt
-SeaQ Snap Layout: thử thanh
 Hai nửa
 Hai phần ba
 Ba cột
@@ -115,13 +101,6 @@ Trên / dưới
 Chồng + chính
 Sáu ô
 Thanh bên + lưới
-Kéo cửa sổ lên mép trên màn hình rồi thả vào một vùng.
-Trình chỉnh sửa cài đặt
-Mở trình chỉnh sửa cài đặt Snap Layout
-✔ Sẵn sàng – nhấp OK để mở trình chỉnh sửa cài đặt.
-Cài đặt nhanh
-Màu của thanh:
-Mọi cài đặt khác – giao diện, kích thước, hoạt ảnh, hành vi và bố cục của riêng bạn – được thay đổi trong trình chỉnh sửa cài đặt Snap Layout.
 Cài đặt
 Không có
 Thay đổi
@@ -131,27 +110,21 @@ Tổ hợp của riêng bạn
 Xoá
 Thanh gắn
 Cạnh màn hình
-Thêm cách gắn cửa sổ
+Cách khác
 Nam châm cửa sổ
 Phím tắt bàn phím
 Phím tắt
-Bốn cách gắn cửa sổ. Mỗi cách có thể bật và tắt riêng.
 Tính năng
 Đẩy cửa sổ vào cạnh hoặc góc: phóng to, nửa, phần tư.
 Các cửa sổ dính vào nhau và vào cạnh màn hình.
 Gắn cửa sổ đang dùng bằng tổ hợp phím.
 Xem trước
 Hiện xem trước bằng màu nhấn
-Tắt: một khung trung tính. Áp dụng cho mọi bản xem trước.
-Lớp cửa sổ không bao giờ được gắn, mỗi dòng một lớp.
 KDE có các hành động cạnh màn hình riêng và cơ chế gắn cửa sổ riêng. Nếu tính năng tương tự đang bật ở đây, hãy tắt tính năng của KDE: Thiết lập hệ thống → Quản lý cửa sổ → Cạnh màn hình, và Hành vi cửa sổ → Di chuyển.
 Đẩy cửa sổ vào cạnh hoặc góc màn hình và nó sẽ lấp đầy phần đó. Hoạt động có hoặc không có thanh gắn.
 Toàn màn hình
 Nửa trên
 Tắt
-Nửa dưới
-Nửa trái
-Nửa phải
 Cạnh và góc
 Dùng cạnh màn hình
 Độc lập với thanh gắn. Mỗi cạnh có thể bật riêng.
@@ -197,7 +170,6 @@ Lấy lại tất cả
 Giữ nguyên
 Nên biết
 Các hành động gắn dùng cùng khoảng cách như thanh gắn và nhớ kích thước trước khi gắn: “Khôi phục kích thước trước khi gắn” sẽ đưa nó trở lại.
-SeaQ Snap Layout: %1
 Gắn vào nửa trái
 Gắn vào nửa phải
 Gắn vào nửa trên
@@ -228,9 +200,7 @@ Meta+Shift + phím
 Ctrl+Shift+Alt + phím
 Ctrl+Alt + bàn phím số
 Không có phím tắt
-Bấm, rồi OK – trình sửa cài đặt sẽ mở ra.
 Lực cản chồng lấn
-Phải đẩy cửa sổ vào cửa sổ khác sâu bao nhiêu trước khi nó buông ra. 0 = các cửa sổ có thể chồng lên nhau tự do.
 Khôi phục mặc định
 Đặt lại tất cả phím
 Gán lại cho mỗi hành động phím của sơ đồ đã chọn và xóa các phím mà sơ đồ không có.
@@ -241,7 +211,6 @@ Khi bạn đổi kích thước một cửa sổ, các cửa sổ chạm vào n�
 Giữ các cửa sổ xếp chồng thẳng hàng
 Cửa sổ chồng lên nhau giữ cạnh trái và phải cùng nhau, cửa sổ cạnh nhau giữ cạnh trên và dưới.
 Lắc để thả
-Lắc chuột khi đổi kích thước và các cửa sổ khác trở về chỗ cũ.
 Làm mờ các cửa sổ khác
 Khi đổi kích thước, các cửa sổ không đi theo được hiển thị trong suốt.
 Xem trước thanh bám
@@ -257,11 +226,156 @@ Một cú đẩy ngắn cho nửa hoặc một phần tư. Giữ cửa sổ ở 
 Thời gian giữ
 Cửa sổ phải ở cạnh bao lâu trước khi lớn ra.
 Xếp ô ở cạnh của chính KDE
-Phóng to và xếp ô của KDE ở các cạnh màn hình – cùng viền – tạm dừng khi SeaQ Snap Layout chạy, để chỉ một xem trước xuất hiện. Cài đặt KDE của bạn không bị đổi: tắt mục này, vô hiệu hóa hoặc gỡ SeaQ Snap Layout là hành vi của KDE trở lại.
 Bám cửa sổ của chính KDE
 Tạm dừng vùng bám của KDE khi nam châm bật
-Để chỉ một nam châm kéo cửa sổ. Cài đặt KDE của bạn không bị đổi: tắt mục này, vô hiệu hóa hoặc gỡ SeaQ Snap Layout là chức năng bám của KDE trở lại.
-Ủng hộ SeaQ Snap Layout
-Nếu bạn thích SeaQ Snap Layout, bạn có thể ủng hộ việc phát triển – cảm ơn!
 Quyên góp qua PayPal
 Mời tôi một ly cà phê
+cho KWin · v%1
+Xếp ô tự động
+Sắp xếp cửa sổ
+Hoán đổi cửa sổ
+Mỗi tính năng có thể bật và tắt riêng.
+Mỗi cửa sổ tự tìm chỗ của mình, như trong một trình quản lý cửa sổ xếp ô.
+Cửa sổ dừng lại ở cạnh của cửa sổ khác, kể cả khi bạn di chuyển nhanh. Lắc chuột hoặc tiếp tục đẩy thêm một lúc để thả ra. 0 = cửa sổ có thể chồng lên nhau tự do.
+Khi đổi kích thước, lắc chuột nhanh qua lại và các cửa sổ khác nhảy về. Một cú kéo nhanh theo một hướng không bao giờ thả chúng ra.
+Mỗi cửa sổ tự tìm chỗ trên màn hình. Cửa sổ mới tham gia vào, cửa sổ đã đóng nhường chỗ cho các cửa sổ khác.
+Xếp ô
+Tự động sắp xếp cửa sổ
+Tắt: cửa sổ ở nguyên nơi bạn đặt. Các tính năng khác vẫn hoạt động.
+Bố cục
+Cửa sổ chính
+Kích thước vùng chính
+Cũng thay đổi khi bạn tự đổi kích thước cửa sổ chính bằng tay.
+Các cửa sổ chính
+Bao nhiêu cửa sổ chia sẻ vùng chính (bố cục “Chính và chồng”).
+Hoán đổi
+Thả cửa sổ lên cửa sổ khác
+Phím
+Đổi chúng ở trang Phím tắt. Khi xếp ô tự động, các cửa sổ cũng đổi chỗ trong thứ tự.
+Đổi với cửa sổ bên trái
+Đổi với cửa sổ bên phải
+Đổi với cửa sổ phía trên
+Đổi với cửa sổ phía dưới
+Bật/tắt xếp ô tự động
+Bố cục xếp ô tiếp theo
+Đặt làm cửa sổ chính
+Cho cửa sổ trôi (rời xếp ô)
+Vùng chính lớn hơn
+Vùng chính nhỏ hơn
+Chính và chồng
+Chính ở giữa
+Cột
+Hàng
+Lưới
+Xoắn ốc
+Từng cái một
+Chuyển chế độ (gắn / xếp ô)
+Thêm một cửa sổ chính
+Bớt một cửa sổ chính
+Dời cửa sổ lên một vị trí
+Dời cửa sổ lùi một vị trí
+Chế độ
+Xoắn vào trong
+Thu nhỏ
+Xem trước trực tiếp
+Đã tắt
+Cạnh trên: toàn màn hình
+Cạnh trên: nửa trên
+Cạnh trên: phóng to
+Kéo cửa sổ vào một cạnh…
+Cạnh trái: nửa trái
+Góc: một phần tư
+Đưa cửa sổ lại gần các cửa sổ khác…
+Khi gần, các cạnh dính vào nhau
+Đổi kích thước cũng gắn – ở đây lên hết chiều cao
+Kéo một cạnh chung…
+…các cửa sổ bên cạnh lớn lên và thu lại theo
+…theo mọi hướng
+Một cửa sổ
+Một cửa sổ mới tham gia
+Một cái đóng – các cái khác lấp chỗ trống
+Nắm cửa sổ A…
+…kéo nó lên cửa sổ B…
+…thả ra: chúng đổi chỗ
+Thanh gắn và cạnh màn hình cản trở xếp ô tự động. Vì vậy chúng chạy thành hai chế độ – chuyển bằng phím tắt hoặc tại đây.
+Chế độ 1 – Thanh gắn và cạnh màn hình
+Thanh gắn, cạnh màn hình, nam châm cửa sổ, phím tắt và hoán đổi cửa sổ.
+Chế độ 2 – Xếp ô tự động
+Xếp ô tự động, hoán đổi cửa sổ, phím tắt và nam châm cho cửa sổ trôi.
+Xếp ô tự động đang tắt – chỉ chế độ 1 chạy và phím chế độ không làm gì.
+Thanh gắn và các cạnh đang tắt – chỉ chế độ 2 chạy và phím chế độ không làm gì.
+Chuyển chế độ
+Không có phím
+Đổi phím
+KSnapUnity – Trình sửa thiết lập
+Chế độ hiện tại
+Thanh gắn và cạnh màn hình
+Nhấp hoặc nhấn %1 để chuyển chế độ.
+Chỉ có một chế độ đang bật.
+Hai cửa sổ đổi chỗ: thả cái này lên cái kia, hoặc bằng phím.
+Tính năng phóng to và xếp ô riêng của KDE ở các cạnh – kèm đường viền – tạm dừng khi KSnapUnity chạy, để chỉ có một bản xem trước. Thiết lập KDE của bạn không đổi: tắt mục này, vô hiệu hoá hoặc gỡ KSnapUnity thì hành vi của KDE quay lại.
+Nhờ đó chỉ một nam châm kéo cửa sổ. Thiết lập KDE của bạn không đổi: tắt mục này, vô hiệu hoá hoặc gỡ KSnapUnity thì tính năng gắn của KDE quay lại.
+Snap Smarter. Work Better.
+K là KWin · Snap là gắn thông minh hơn · Unity là mọi thứ trong một hệ thống
+Unified
+Mọi tính năng cửa sổ trong một hệ thống.
+Natural
+Hành vi cửa sổ trực quan và tự nhiên.
+Intelligent
+Sắp xếp và nhận biết thông minh.
+Bố cục gắn và xếp ô tự động.
+Your Workflow
+Hợp với cách bạn làm việc.
+Gắn và xếp ô tự động chạy thành hai chế độ – một phím tắt chuyển qua lại.
+Ủng hộ KSnapUnity
+Nếu bạn thích KSnapUnity, bạn có thể ủng hộ việc phát triển – cảm ơn!
+Bố cục riêng
+Mỗi bố cục bạn tạo ở trang Bố cục cũng có thể sắp xếp cửa sổ – nó hiện ở trên. Cửa sổ 1 vào vùng 1, cứ thế tiếp tục; cửa sổ dư chia nhau vùng cuối. Khi cửa sổ ít hơn số vùng, „Chính và chồng“ được dùng để không có khoảng trống.
+Mở trình tạo bố cục
+Bố cục theo số cửa sổ
+Tự đổi bố cục
+Ví dụ: hai cửa sổ cạnh nhau, từ ba là chính và chồng, từ năm là lưới. Không có quy tắc phù hợp thì dùng bố cục đã chọn ở trên.
+Từ
+cửa sổ:
+Xoá quy tắc
+Thêm quy tắc
+Vùng chính bên phải
+Lật bố cục: cửa sổ chính bên phải, các cửa sổ khác bên trái.
+Cửa sổ mới
+Vào cuối hàng
+Lấy chỗ chính
+Bên cạnh cửa sổ đang dùng
+Một cửa sổ duy nhất
+Chiều rộng
+Dưới 100 % cửa sổ duy nhất nằm giữa – đẹp trên màn hình rộng.
+Không lề ngoài
+Cửa sổ duy nhất dùng toàn màn hình, kể cả khi đã đặt lề.
+Cửa sổ lướt vào chỗ
+Khi một cửa sổ mở, đóng hoặc đổi chỗ, các cửa sổ khác di chuyển mượt thay vì nhảy.
+Thời lượng
+Luôn trôi
+Các ứng dụng này không bao giờ được sắp xếp và giữ chỗ riêng. Hộp thoại luôn trôi.
+Chưa có.
+Thêm ứng dụng đang mở
+Mở ứng dụng trước, rồi chọn nó ở đây.
+Chọn…
+Không có cửa sổ nào khác đang mở
+Kéo một cửa sổ lên cửa sổ khác để đổi chỗ. Thả lên thanh gắn hoặc cạnh màn hình thì nó trôi tự do; „Cho cửa sổ trôi“ đưa nó trở lại. Khoảng cách lấy từ trang Chung.
+Hai cửa sổ đổi chỗ – thả cái này lên cái kia hoặc dùng phím.
+Công tắc chính cho kéo và phím.
+Kéo cửa sổ lên giữa cửa sổ khác – bản xem trước hiện hai mũi tên – rồi thả. Khi xếp ô tự động, chỗ nào trên cửa sổ kia cũng được.
+Cửa sổ chính: %1
+KSnapUnity: %1
+Bật xếp ô tự động
+Tắt xếp ô tự động
+Mở trình sửa thiết lập
+Nhấp, rồi OK – trình sửa thiết lập mở ra.
+✔ Sẵn sàng – nhấp OK để mở trình sửa thiết lập.
+Chế độ
+<b>Chế độ 1</b><br/>Thanh gắn và cạnh màn hình
+Tắt = chế độ 1, bật = chế độ 2
+<b>Chế độ 2</b><br/>Xếp ô tự động
+Chuyển chế độ bằng:
+Đổi phím trong trình sửa thiết lập. Cả hai chế độ cần xếp ô tự động và thanh gắn hoặc cạnh màn hình.
+Thiết lập nhanh
+Màu thanh gắn:

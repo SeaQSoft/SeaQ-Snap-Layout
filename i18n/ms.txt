@@ -1,35 +1,25 @@
 Tutup
 Pulihkan
 Maksimumkan
-Kembangkan
-Kuncupkan
 Bahagi bersebelahan
 Bahagi atas dan bawah
 Buang zon
 Muatkan templat…
 Klik zon untuk memilihnya · klik dua kali untuk membahagi · seret pemisah
 %1 daripada %2 zon
-SeaQ Snap Layout – Editor tetapan
-untuk KDE · v%1
 Umum
 Penampilan
 Kelakuan & animasi
 Susun atur
 Perihal & bantuan
 Aktif
-Dijeda
 Seret tetingkap ke tepi atas skrin dan lepaskan pada zon.
 Lekapan
-Tunjukkan bar apabila tetingkap diseret ke tepi atas
-Tunjukkan tempat tetingkap akan diletakkan
 Pulihkan saiz asal apabila tetingkap diseret keluar
 Jarak
 Jarak antara tetingkap
 Jarak ke tepi skrin
-Aplikasi yang dikecualikan
-Kelas tetingkap yang tidak pernah menunjukkan bar, satu bagi setiap baris.
 Petua
-KDE memaksimumkan tetingkap yang diseret ke tepi atas. Untuk lekapan yang lebih lancar, matikan ini dalam Tetapan Sistem → Tepi Skrin.
 Nilai disyorkan
 Warna, saiz dan bentuk bar.
 Pratonton
@@ -81,8 +71,6 @@ Pendua
 Padam
 Cara ia berfungsi
 Pegang tetingkap pada bar tajuknya dan seret ke atas. Bar akan turun; lepaskan tetingkap pada zon dan ia mengisi tepat kawasan itu. Seret keluar semula dan saiz lamanya kembali.
-Membuka editor tetapan
-Tetapan Sistem → Pengurusan Tetingkap → Skrip KWin → ikon gear di sebelah “SeaQ Snap Layout” → “Buka editor tetapan Snap Layout” → OK.
 Maklumat
 Versi
 Pengarang
@@ -102,8 +90,6 @@ Simpan
 Ya
 Zon %1
 Lepaskan tetingkap pada zon
-SeaQ Snap Layout: hidup/mati
-SeaQ Snap Layout: uji bar
 Separuh
 Dua pertiga
 Tiga lajur
@@ -115,13 +101,6 @@ Atas / bawah
 Timbunan + utama
 Enam jubin
 Bar sisi + grid
-Seret tetingkap ke tepi atas skrin dan lepaskan pada zon.
-Editor tetapan
-Buka editor tetapan Snap Layout
-✔ Sedia – klik OK untuk membuka editor tetapan.
-Tetapan pantas
-Warna bar:
-Semua tetapan lain – penampilan, saiz, animasi, kelakuan dan susun atur anda sendiri – ditukar dalam editor tetapan Snap Layout.
 Tetapan
 Tiada
 Ubah
@@ -131,27 +110,21 @@ Tetapkan
 Buang
 Bar lekap
 Tepi skrin
-Lebih banyak cara melekap
+Lebih banyak cara
 Magnet tetingkap
 Pintasan papan kekunci
 Pintasan
-Empat cara untuk melekap tetingkap. Setiap satu boleh dihidupkan dan dimatikan sendiri.
 Ciri
 Tolak tetingkap ke tepi atau penjuru: maksimumkan, separuh, suku.
 Tetingkap melekat antara satu sama lain dan pada tepi skrin.
 Lekap tetingkap aktif dengan gabungan kekunci.
 Pratonton
 Tunjukkan pratonton dalam warna aksen
-Mati: bingkai neutral. Berlaku untuk semua pratonton.
-Kelas tetingkap yang tidak pernah dilekap, satu setiap baris.
 KDE ada tindakan tepi skrin sendiri dan pelekapan tetingkap sendiri. Jika ciri yang sama hidup di sini, matikan ciri KDE: Tetapan Sistem → Pengurusan Tetingkap → Tepi Skrin, dan Kelakuan Tetingkap → Pergerakan.
 Tolak tetingkap ke tepi atau penjuru skrin dan ia mengisi bahagian itu. Berfungsi dengan atau tanpa bar lekap.
 Skrin penuh
 Separuh atas
 Mati
-Separuh bawah
-Separuh kiri
-Separuh kanan
 Tepi dan penjuru
 Guna tepi skrin
 Bebas daripada bar lekap. Setiap tepi boleh dihidupkan sendiri.
@@ -197,7 +170,6 @@ Ambil alih semua
 Biarkan
 Bagus untuk tahu
 Tindakan lekap menggunakan jarak yang sama dengan bar dan mengingati saiz sebelum dilekap: “Pulihkan saiz sebelum dilekap” mengembalikannya.
-SeaQ Snap Layout: %1
 Lekap ke separuh kiri
 Lekap ke separuh kanan
 Lekap ke separuh atas
@@ -228,9 +200,7 @@ Meta+Shift + kekunci
 Ctrl+Shift+Alt + kekunci
 Ctrl+Alt + pad nombor
 Tiada pintasan
-Klik, kemudian OK – penyunting tetapan dibuka.
 Rintangan terhadap pertindihan
-Sejauh mana tetingkap perlu ditolak ke dalam tetingkap lain sebelum ia terlepas. 0 = tetingkap bebas bertindih.
 Set semula ke lalai
 Set semula semua kekunci
 Memberi setiap tindakan kekunci skema yang dipilih semula dan membuang kekunci yang tiada dalam skema.
@@ -241,7 +211,6 @@ Apabila anda mengubah saiz tetingkap, tetingkap yang menyentuhnya turut mengalih
 Kekalkan tetingkap bertindan sejajar
 Tetingkap bertindan mengekalkan tepi kiri dan kanan bersama, tetingkap bersebelahan tepi atas dan bawah.
 Goncang untuk melepaskan
-Goncang tetikus semasa mengubah saiz dan tetingkap lain kembali semula.
 Malapkan tetingkap lain
 Semasa mengubah saiz, tetingkap yang tidak mengikut dipaparkan lut sinar.
 Pratonton bar snap
@@ -257,11 +226,156 @@ Tolakan pendek memberi separuh atau suku. Tahan tetingkap di tepi lebih lama sed
 Masa tahan
 Berapa lama tetingkap perlu kekal di tepi sebelum membesar.
 Jubin tepi milik KDE
-Maksimumkan dan jubin KDE di tepi skrin – dengan garis luarnya – dijeda semasa SeaQ Snap Layout berjalan, supaya hanya satu pratonton muncul. Tetapan KDE anda tidak diubah: matikan ini, nyahdayakan atau buang SeaQ Snap Layout dan kelakuan KDE kembali.
 Snap tetingkap milik KDE
 Jeda zon snap KDE semasa magnet dihidupkan
-Supaya hanya satu magnet menarik tetingkap. Tetapan KDE anda tidak diubah: matikan ini, nyahdayakan atau buang SeaQ Snap Layout dan snap KDE kembali.
-Sokong SeaQ Snap Layout
-Jika anda suka SeaQ Snap Layout, anda boleh menyokong pembangunannya – terima kasih!
 Derma dengan PayPal
 Belanja saya kopi
+untuk KWin · v%1
+Tata ubin otomatis
+Atur tetingkap
+Tukar tetingkap
+Setiap fitur bisa dihidupkan dan dimatikan sendiri-sendiri.
+Setiap tetingkap menemukan tempatnya sendiri, seperti di pengelola tetingkap tata ubin.
+Tetingkap berhenti di tepi tetingkap lain, juga saat anda memindahkannya dengan pantas. Goncangkan tetikus atau terus dorong sekejap untuk melepasnya. 0 = tetingkap boleh bertindih bebas.
+Goncangkan tetikus maju-mundur dengan pantas saat mengubah ukuran, dan tetingkap lain melompat kembali. Tarikan pantas ke satu arah tidak pernah melepasnya.
+Setiap tetingkap menemukan tempatnya di layar sendiri. Tetingkap baru ikut bergabung, yang ditutup memberi ruang bagi yang lain.
+Tata ubin
+Atur tetingkap secara otomatis
+Mati: tetingkap tetap di tempat anda meletakkannya. Fitur lain tetap berfungsi.
+Tata letak
+Tetingkap utama
+Ukuran area utama
+Juga berubah saat anda mengubah ukuran tetingkap utama secara manual.
+Tetingkap utama (jumlah)
+Berapa tetingkap yang berbagi area utama (tata letak “Utama dan tumpukan”).
+Tukar
+Lepaskan tetingkap ke tetingkap lain
+Butang
+Ubah di halaman Pintasan papan kekunci. Dengan tata ubin otomatis, tetingkap juga bertukar tempat dalam urutan.
+Tukar dengan tetingkap di kiri
+Tukar dengan tetingkap di kanan
+Tukar dengan tetingkap di atas
+Tukar dengan tetingkap di bawah
+Tata ubin otomatis hidup/mati
+Tata letak ubin berikutnya
+Jadikan tetingkap utama
+Biarkan tetingkap melayang (keluar dari tata ubin)
+Area utama lebih besar
+Area utama lebih kecil
+Utama dan tumpukan
+Utama di tengah
+Kolom
+Baris
+Kisi
+Spiral
+Satu per satu
+Tukar mod (lekap / tata ubin)
+Satu tetingkap utama lagi
+Kurang satu tetingkap utama
+Alih tetingkap satu tempat ke depan
+Alih tetingkap satu tempat ke belakang
+Mod
+Lingkaran ke dalam
+Minimumkan
+Pratonton langsung
+Dimatikan
+Tepi atas: skrin penuh
+Tepi atas: separuh atas
+Tepi atas: maksimumkan
+Seret tetingkap ke tepi…
+Tepi kiri: separuh kiri
+Sudut: suku
+Dekatkan tetingkap kepada yang lain…
+Apabila dekat, tepinya melekat
+Mengubah saiz juga melekap – di sini ke ketinggian penuh
+Seret tepi yang dikongsi…
+…jirannya membesar dan mengecil bersamanya
+…ke semua arah
+Satu tetingkap
+Tetingkap baharu menyertai
+Satu ditutup – yang lain mengisi ruang
+Pegang tetingkap A…
+…seret ke tetingkap B…
+…lepaskan: ia bertukar tempat
+Bar lekap dan tepi skrin mengganggu tata ubin otomatis. Oleh itu ia berjalan sebagai dua mod – tukar dengan pintasan atau di sini.
+Mod 1 – Bar lekap dan tepi skrin
+Bar lekap, tepi skrin, magnet tetingkap, pintasan dan tukar tetingkap.
+Mod 2 – Tata ubin otomatis
+Tata ubin otomatis, tukar tetingkap, pintasan dan magnet untuk tetingkap terapung.
+Tata ubin otomatis dimatikan – hanya mod 1 berjalan dan pintasan mod tidak berbuat apa-apa.
+Bar lekap dan tepi skrin dimatikan – hanya mod 2 berjalan dan pintasan mod tidak berbuat apa-apa.
+Tukar mod
+Tiada kekunci
+Tukar kekunci
+KSnapUnity – Penyunting tetapan
+Mod aktif
+Bar lekap dan tepi skrin
+Klik atau tekan %1 untuk menukar mod.
+Hanya satu mod dihidupkan.
+Dua tetingkap bertukar tempat: jatuhkan satu ke atas yang lain, atau dengan kekunci.
+Pemaksimuman dan tata ubin KDE sendiri di tepi skrin – dengan garis luarnya – dijeda semasa KSnapUnity berjalan, supaya hanya satu pratonton muncul. Tetapan KDE anda tidak berubah: matikan ini, nyahdayakan atau buang KSnapUnity dan tingkah laku KDE kembali.
+Jadi hanya satu magnet menarik tetingkap. Tetapan KDE anda tidak berubah: matikan ini, nyahdayakan atau buang KSnapUnity dan lekapan KDE kembali.
+Snap Smarter. Work Better.
+K untuk KWin · Snap untuk lekapan lebih bijak · Unity untuk semuanya dalam satu sistem
+Unified
+Semua ciri tetingkap dalam satu sistem.
+Natural
+Tingkah laku tetingkap yang intuitif dan semula jadi.
+Intelligent
+Penyusunan dan pengesanan pintar.
+Susun atur lekap dan tata ubin otomatis.
+Your Workflow
+Sesuai dengan cara anda bekerja.
+Lekapan dan tata ubin otomatis berjalan sebagai dua mod – satu pintasan menukar antara keduanya.
+Sokong KSnapUnity
+Jika anda suka KSnapUnity, anda boleh menyokong pembangunannya – terima kasih!
+Susun atur sendiri
+Setiap susun atur yang anda bina di halaman Susun atur juga boleh menyusun tetingkap – ia muncul di atas. Tetingkap 1 mendapat zon 1 dan seterusnya; tetingkap tambahan berkongsi zon terakhir. Jika tetingkap kurang daripada zon, „Utama dan tumpukan“ digunakan supaya tiada lubang.
+Buka pembina susun atur
+Susun atur mengikut bilangan tetingkap
+Tukar susun atur sendiri
+Contoh: dua tetingkap bersebelahan, dari tiga utama dan tumpukan, dari lima kisi. Tanpa peraturan yang sepadan, susun atur yang dipilih di atas digunakan.
+Dari
+tetingkap:
+Buang peraturan
+Tambah peraturan
+Kawasan utama di kanan
+Mencerminkan susun atur: tetingkap utama di kanan, yang lain di kiri.
+Tetingkap baharu
+Menyertai di hujung
+Mengambil tempat utama
+Di sebelah tetingkap aktif
+Satu tetingkap sahaja
+Lebar
+Di bawah 100 % tetingkap tunggal kekal di tengah – cantik pada skrin lebar.
+Tiada jidar luar
+Tetingkap tunggal menggunakan seluruh skrin, walaupun jidar ditetapkan.
+Tetingkap meluncur ke tempatnya
+Apabila tetingkap dibuka, ditutup atau bertukar, yang lain bergerak lancar dan bukan melompat.
+Tempoh
+Sentiasa terapung
+Aplikasi ini tidak pernah disusun dan kekal di tempatnya. Dialog sentiasa terapung.
+Belum ada.
+Tambah aplikasi yang terbuka
+Buka aplikasi dahulu, kemudian pilih di sini.
+Pilih…
+Tiada tetingkap lain yang terbuka
+Seret tetingkap ke atas yang lain untuk menukarnya. Jika dilepaskan pada bar atau tepi skrin, ia terapung bebas; „Biarkan tetingkap melayang“ mengembalikannya. Jarak datang dari halaman Umum.
+Dua tetingkap bertukar tempat – jatuhkan satu ke atas yang lain atau guna kekunci.
+Suis utama untuk seretan dan kekunci.
+Seret tetingkap ke atas tengah tetingkap lain – pratonton menunjukkan dua anak panah – dan lepaskan. Dengan tata ubin otomatis, di mana-mana atas tetingkap lain sudah memadai.
+Tetingkap utama: %1
+KSnapUnity: %1
+Tata ubin otomatis hidup
+Tata ubin otomatis mati
+Buka penyunting tetapan
+Klik, kemudian OK – penyunting tetapan dibuka.
+✔ Sedia – klik OK untuk membuka penyunting tetapan.
+Mod
+<b>Mod 1</b><br/>Bar lekap dan tepi skrin
+Mati = mod 1, hidup = mod 2
+<b>Mod 2</b><br/>Tata ubin otomatis
+Tukar mod dengan:
+Kekunci ditukar dalam penyunting tetapan. Kedua-dua mod memerlukan tata ubin otomatis dan bar lekap atau tepi skrin.
+Tetapan pantas
+Warna bar lekap:

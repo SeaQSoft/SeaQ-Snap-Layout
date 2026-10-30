@@ -1,35 +1,25 @@
 Loka
 Endurheimta
 Hámarka
-Fella út
-Fella saman
 Skipta hlið við hlið
 Skipta efst og neðst
 Fjarlægja svæði
 Hlaða sniðmáti…
 Smelltu á svæði til að velja það · tvísmelltu til að skipta því · dragðu skilin
 %1 af %2 svæðum
-SeaQ Snap Layout – Stillingaritill
-fyrir KDE · v%1
 Almennt
 Útlit
 Hegðun og hreyfingar
 Uppsetningar
 Um og hjálp
 Virkt
-Í biðstöðu
 Dragðu glugga upp að efri brún skjásins og slepptu honum á svæði.
 Festing
-Sýna festistikuna þegar gluggi er dreginn upp að efri brún
-Sýna hvar glugginn lendir
 Endurheimta upprunalega stærð þegar glugginn er dreginn út
 Bil
 Bil milli glugga
 Bil að skjábrún
-Undanskilin forrit
-Gluggaflokkar sem sýna aldrei stikuna, einn í hverri línu.
 Ábending
-KDE hámarkar glugga sem dregnir eru upp að efri brún. Fyrir mýkri festingu skaltu slökkva á því í Kerfisstillingum → Skjábrúnir.
 Ráðlögð gildi
 Litir, stærð og lögun stikunnar.
 Forskoðun
@@ -81,8 +71,6 @@ Tvítaka
 Eyða
 Svona virkar þetta
 Gríptu glugga í titilstikuna og dragðu hann upp. Stikan rennur niður; slepptu glugganum á svæði og hann fyllir nákvæmlega það svæði. Ef þú dregur hann út aftur fær hann fyrri stærð sína.
-Opna stillingaritilinn
-Kerfisstillingar → Gluggastjórnun → KWin-skriftur → tannhjólstákn við „SeaQ Snap Layout“ → „Opna stillingaritil Snap Layout“ → Í lagi.
 Upplýsingar
 Útgáfa
 Höfundur
@@ -102,8 +90,6 @@ Vista
 Já
 Svæði %1
 Slepptu glugganum á svæði
-SeaQ Snap Layout: kveikja/slökkva
-SeaQ Snap Layout: prófa stikuna
 Helmingar
 Tveir þriðju
 Þrír dálkar
@@ -115,13 +101,6 @@ Efst / neðst
 Stafli + aðal
 Sex reitir
 Hliðarstika + net
-Dragðu glugga upp að efri brún skjásins og slepptu þeim á svæði.
-Stillingaritill
-Opna stillingaritil Snap Layout
-✔ Tilbúið – smelltu á Í lagi til að opna stillingaritilinn.
-Flýtistillingar
-Litir stikunnar:
-Allar aðrar stillingar – útlit, stærð, hreyfingar, hegðun og eigin uppsetningar – eru gerðar í stillingaritli Snap Layout.
 Stillingar
 Ekkert
 Breyta
@@ -131,27 +110,21 @@ Setja
 Fjarlægja
 Festistika
 Skjábrúnir
-Fleiri leiðir til að festa
+Fleiri leiðir
 Gluggasegull
 Flýtilyklar
 Flýtileiðir
-Fjórar leiðir til að festa glugga. Hverja má kveikja og slökkva á sér.
 Eiginleikar
 Ýttu glugga að brún eða horni: hámarka, helmingar, fjórðungar.
 Gluggar loða hver við annan og við skjábrúnirnar.
 Festu virka gluggann með lyklasamsetningum.
 Forskoðanir
 Sýna forskoðanir í áherslulitnum
-Af: hlutlaus rammi. Gildir um allar forskoðanir.
-Gluggaflokkar sem eru aldrei festir, einn í hverja línu.
 KDE hefur sínar eigin skjábrúnaaðgerðir og sína eigin gluggafestingu. Ef sami eiginleiki er virkur hér, slökktu á KDE-útgáfunni: Kerfisstillingar → Gluggastjórnun → Skjábrúnir, og Hegðun glugga → Færsla.
 Ýttu glugga að brún eða horni skjásins og hann fyllir þann hluta. Virkar með eða án festistikunnar.
 Heilskjár
 Efri helmingur
 Af
-Neðri helmingur
-Vinstri helmingur
-Hægri helmingur
 Brúnir og horn
 Nota skjábrúnir
 Óháð festistikunni. Hverja brún má kveikja á sér.
@@ -197,7 +170,6 @@ Taka alla yfir
 Halda þeim
 Gott að vita
 Festiaðgerðirnar nota sömu bil og stikan og muna stærðina fyrir festingu: „Endurheimta stærðina fyrir festingu“ sækir hana aftur.
-SeaQ Snap Layout: %1
 Festa í vinstri helming
 Festa í hægri helming
 Festa í efri helming
@@ -228,9 +200,7 @@ Meta+Shift + lykill
 Ctrl+Shift+Alt + lykill
 Ctrl+Alt + talnaborð
 Engir flýtilyklar
-Smelltu, síðan Í lagi – stillingaritillinn opnast.
 Viðnám gegn skörun
-Hversu langt þarf að ýta glugga inn í annan áður en hann sleppir. 0 = gluggar mega skarast frjálst.
 Endurstilla á sjálfgefið
 Endurstilla alla lykla
 Gefur hverri aðgerð aftur lykil valins skema og fjarlægir lykla sem skemað hefur ekki.
@@ -241,7 +211,6 @@ Breyta stærð glugga sem snertast saman
 Halda staflaðum gluggum í línu
 Gluggar hver yfir öðrum halda vinstri og hægri brúnum saman, gluggar hlið við hlið efri og neðri brúnum.
 Hrista til að sleppa
-Hristu músina meðan þú breytir stærð og hinir gluggarnir stökkva til baka.
 Deyfa hina gluggana
 Meðan stærð er breytt eru gluggar sem fylgja ekki sýndir gegnsæir.
 Forskoðun festistikunnar
@@ -257,11 +226,156 @@ Stutt ýting gefur helming eða fjórðung. Haltu glugganum aðeins lengur við 
 Haldtími
 Hversu lengi glugginn þarf að vera við brúnina áður en hann stækkar.
 Brúnaflísar KDE
-Hámörkun og flísalögn KDE við skjábrúnir – með útlínum – eru í hléi meðan SeaQ Snap Layout keyrir, svo aðeins ein forskoðun birtist. KDE-stillingum þínum er ekki breytt: slökktu á þessu, gerðu SeaQ Snap Layout óvirkt eða fjarlægðu það og hegðun KDE kemur aftur.
 Gluggafesting KDE
 Gera hlé á festisvæðum KDE meðan segullinn er á
-Svo aðeins einn segull togi í glugga. KDE-stillingum þínum er ekki breytt: slökktu á þessu, gerðu SeaQ Snap Layout óvirkt eða fjarlægðu það og festing KDE kemur aftur.
-Styðja SeaQ Snap Layout
-Ef þér líkar SeaQ Snap Layout geturðu stutt þróunina – takk!
 Gefa með PayPal
 Gefðu mér kaffibolla
+fyrir KWin · v%1
+Sjálfvirk flísalögn
+Raða gluggum
+Víxla gluggum
+Hægt er að kveikja og slökkva á hverjum eiginleika fyrir sig.
+Hver gluggi finnur sér stað sjálfur, eins og í flísalagðri gluggastjórnun.
+Gluggi stoppar við jaðar annars, líka þegar þú færir hann hratt. Hristu músina eða ýttu áfram andartak til að losa. 0 = gluggar mega skarast frjálst.
+Hristu músina hratt fram og til baka meðan þú breytir stærð og hinir gluggarnir hoppa til baka. Snöggt tog í eina átt losar aldrei.
+Hver gluggi finnur sér stað á skjánum sjálfur. Nýir gluggar bætast við, lokaðir rýma fyrir hinum.
+Flísalögn
+Raða gluggum sjálfvirkt
+Slökkt: gluggar haldast þar sem þú setur þá. Hinir eiginleikarnir virka hvort sem er.
+Uppsetning
+Aðalgluggi
+Stærð aðalsvæðis
+Breytist líka þegar þú breytir stærð aðalgluggans í höndunum.
+Aðalgluggar
+Hversu margir gluggar deila aðalsvæðinu (uppsetningin „Aðal og stafli“).
+Víxla
+Sleppa glugga á annan
+Lyklar
+Breyttu þeim á síðunni Flýtilyklar. Með sjálfvirkri flísalögn skipta gluggarnir líka um stað í röðinni.
+Víxla við gluggann til vinstri
+Víxla við gluggann til hægri
+Víxla við gluggann fyrir ofan
+Víxla við gluggann fyrir neðan
+Sjálfvirk flísalögn af/á
+Næsta flísauppsetning
+Gera að aðalglugga
+Láta gluggann svífa (hætta í flísalögn)
+Stærra aðalsvæði
+Minna aðalsvæði
+Aðal og stafli
+Aðal í miðjunni
+Dálkar
+Raðir
+Hnitanet
+Spírall
+Einn í einu
+Skipta um ham (festing / flísalögn)
+Einum aðalglugga fleiri
+Einum aðalglugga færri
+Færa gluggann um eitt sæti fram
+Færa gluggann um eitt sæti aftur
+Hamir
+Spírall inn á við
+Lágmarka
+Bein forskoðun
+Slökkt
+Efri brún: allur skjárinn
+Efri brún: efri helmingur
+Efri brún: hámarka
+Dragðu glugga að brún…
+Vinstri brún: vinstri helmingur
+Horn: fjórðungur
+Færðu glugga að öðrum…
+Nálægt festast brúnirnar saman
+Stærðarbreyting festist líka – hér í fulla hæð
+Dragðu sameiginlega brún…
+…nágrannarnir stækka og minnka með
+…í allar áttir
+Einn gluggi
+Nýr gluggi bætist við
+Einn lokast – hinir fylla í bilið
+Gríptu glugga A…
+…dragðu hann á glugga B…
+…slepptu: þeir skipta um stað
+Festistikan og skjábrúnirnar trufla sjálfvirka flísalögn. Þess vegna keyra þær sem tveir hamir – skiptu með flýtilykli eða hér.
+Hamur 1 – Festistika og skjábrúnir
+Festistika, skjábrúnir, gluggasegull, flýtilyklar og víxlun glugga.
+Hamur 2 – Sjálfvirk flísalögn
+Sjálfvirk flísalögn, víxlun glugga, flýtilyklar og segullinn fyrir fljótandi glugga.
+Slökkt er á sjálfvirkri flísalögn – aðeins hamur 1 keyrir og hamflýtilykillinn gerir ekkert.
+Slökkt er á festistiku og brúnum – aðeins hamur 2 keyrir og hamflýtilykillinn gerir ekkert.
+Skipta um ham
+Enginn lykill
+Breyta lykli
+KSnapUnity – Stillingaritill
+Virkur hamur
+Festistika og skjábrúnir
+Smelltu eða ýttu á %1 til að skipta um ham.
+Aðeins einn hamur er virkur.
+Tveir gluggar skipta um stað: slepptu öðrum á hinn, eða með lykli.
+Eigin hámörkun og flísalögn KDE við brúnirnar – með útlínu – gerir hlé meðan KSnapUnity keyrir, svo aðeins ein forskoðun birtist. KDE-stillingarnar breytast ekki: slökktu á þessu, gerðu KSnapUnity óvirkt eða fjarlægðu það og hegðun KDE kemur aftur.
+Þannig togar aðeins einn segull í glugga. KDE-stillingarnar breytast ekki: slökktu á þessu, gerðu KSnapUnity óvirkt eða fjarlægðu það og festing KDE kemur aftur.
+Snap Smarter. Work Better.
+K fyrir KWin · Snap fyrir snjallari festingu · Unity fyrir allt í einu kerfi
+Unified
+Allir gluggaeiginleikar í einu kerfi.
+Natural
+Eðlileg, innsæ hegðun glugga.
+Intelligent
+Snjöll röðun og greining.
+Festiuppsetningar og sjálfvirk flísalögn.
+Your Workflow
+Lagar sig að vinnulagi þínu.
+Festing og sjálfvirk flísalögn keyra sem tveir hamir – einn flýtilykill skiptir á milli.
+Styddu KSnapUnity
+Ef þér líkar KSnapUnity geturðu stutt þróunina – takk!
+Eigin uppsetningar
+Hver uppsetning sem þú býrð til á síðunni Uppsetningar getur líka raðað gluggum – hún birtist að ofan. Gluggi 1 fær svæði 1 og svo framvegis; fleiri gluggar deila síðasta svæðinu. Með færri gluggum en svæðum er „Aðal og stafli“ notað svo engin göt verði.
+Opna uppsetningasmiðinn
+Uppsetning eftir fjölda glugga
+Skipta um uppsetningu sjálfkrafa
+Dæmi: tveir gluggar hlið við hlið, frá þremur aðal og stafli, frá fimm hnitanet. Án viðeigandi reglu gildir uppsetningin sem valin er að ofan.
+Frá
+gluggum:
+Fjarlægja reglu
+Bæta við reglu
+Aðalsvæði hægra megin
+Speglar uppsetninguna: aðalglugginn hægra megin, hinir vinstra megin.
+Nýir gluggar
+Fara aftast
+Taka aðalsætið
+Við hlið virka gluggans
+Stakur gluggi
+Breidd
+Undir 100 % helst stakur gluggi í miðjunni – fallegt á breiðum skjám.
+Engin ytri spássía
+Stakur gluggi notar allan skjáinn, jafnvel þótt spássía sé stillt.
+Gluggar renna á sinn stað
+Þegar gluggi opnast, lokast eða skiptir um stað hreyfast hinir mjúklega í stað þess að stökkva.
+Lengd
+Alltaf fljótandi
+Þessum forritum er aldrei raðað og þau halda sínum stað. Gluggar fyrir svarglugga fljóta alltaf.
+Ekkert enn.
+Bæta við opnu forriti
+Opnaðu forritið fyrst og veldu það svo hér.
+Veldu…
+Enginn annar gluggi opinn
+Dragðu glugga á annan til að víxla þeim. Sé honum sleppt á festistikuna eða skjábrún flýtur hann frjáls; „Láta gluggann svífa“ sækir hann aftur. Bilin koma af síðunni Almennt.
+Tveir gluggar skipta um stað – slepptu öðrum á hinn eða notaðu lyklana.
+Aðalrofi fyrir drátt og lyklana.
+Dragðu glugga yfir miðju annars – forskoðunin sýnir tvær örvar – og slepptu. Með sjálfvirkri flísalögn dugar hvar sem er yfir hinum glugganum.
+Aðalgluggar: %1
+KSnapUnity: %1
+Sjálfvirk flísalögn á
+Sjálfvirk flísalögn af
+Opna stillingaritilinn
+Smelltu, svo á Í lagi – stillingaritillinn opnast.
+✔ Tilbúið – smelltu á Í lagi til að opna stillingaritilinn.
+Hamur
+<b>Hamur 1</b><br/>Festistika og skjábrúnir
+Af = hamur 1, á = hamur 2
+<b>Hamur 2</b><br/>Sjálfvirk flísalögn
+Skipta um ham með:
+Lyklinum breytirðu í stillingaritlinum. Báðir hamir þurfa sjálfvirka flísalögn og festistiku eða skjábrúnir.
+Flýtistillingar
+Litir festistikunnar:

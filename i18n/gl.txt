@@ -1,35 +1,25 @@
 Pechar
 Restaurar
 Maximizar
-Despregar
-Pregar
 Dividir en paralelo
 Dividir arriba e abaixo
 Retirar a zona
 Cargar un modelo…
 Prema nunha zona para seleccionala · dobre clic para dividila · arrastre os separadores
 %1 de %2 zonas
-SeaQ Snap Layout – Editor de configuración
-para KDE · v%1
 Xeral
 Aparencia
 Comportamento e animación
 Disposicións
 Sobre e axuda
 Activo
-En pausa
 Arrastre unha xanela ao bordo superior da pantalla e sóltea sobre unha zona.
 Acoplamento
-Amosar a barra ao arrastrar unha xanela ao bordo superior
-Amosar onde vai quedar a xanela
 Restaurar o tamaño orixinal ao sacar a xanela
 Espazado
 Espazo entre xanelas
 Espazo ata o bordo da pantalla
-Aplicacións excluídas
-Clases de xanela que nunca amosan a barra, unha por liña.
 Consello
-KDE maximiza as xanelas arrastradas ao bordo superior. Para un acoplamento máis suave, desactíveo en Configuración do sistema → Bordos da pantalla.
 Valores recomendados
 Cores, tamaño e forma da barra.
 Vista previa
@@ -81,8 +71,6 @@ Duplicar
 Eliminar
 Como funciona
 Colla unha xanela pola barra de título e arrástrea cara arriba. A barra baixa; solte a xanela sobre unha zona e ocupará exactamente esa área. Se a volve sacar, recupera o tamaño anterior.
-Abrir o editor de configuración
-Configuración do sistema → Xestión de xanelas → Scripts de KWin → icona de engrenaxe xunto a «SeaQ Snap Layout» → «Abrir o editor de configuración de Snap Layout» → Aceptar.
 Información
 Versión
 Autor
@@ -102,8 +90,6 @@ Gardar
 Si
 Zona %1
 Solte a xanela sobre unha zona
-SeaQ Snap Layout: activar/desactivar
-SeaQ Snap Layout: probar a barra
 Metades
 Dous terzos
 Tres columnas
@@ -115,13 +101,6 @@ Arriba / abaixo
 Morea + principal
 Seis mosaicos
 Barra lateral + grade
-Arrastre as xanelas ao bordo superior da pantalla e sólteas sobre unha zona.
-Editor de configuración
-Abrir o editor de configuración de Snap Layout
-✔ Listo – prema Aceptar para abrir o editor de configuración.
-Configuración rápida
-Cores da barra:
-O resto da configuración – aparencia, tamaño, animación, comportamento e as súas disposicións – cámbiase no editor de configuración de Snap Layout.
 Configuración
 Ningún
 Cambiar
@@ -131,27 +110,21 @@ Asignar
 Quitar
 Barra de axuste
 Bordos da pantalla
-Máis xeitos de axustar
+Máis xeitos
 Imán de xanelas
 Atallos de teclado
 Atallos
-Catro xeitos de axustar xanelas. Cada un actívase e desactívase por separado.
 Funcións
 Empurra unha xanela contra un bordo ou unha esquina: maximizar, metades, cuartos.
 As xanelas pegan entre si e aos bordos da pantalla.
 Axusta a xanela activa con combinacións de teclas.
 Vistas previas
 Amosar as vistas previas na cor de realce
-Desactivado: un marco neutro. Aplícase a todas as vistas previas.
-Clases de xanela que nunca se axustan, unha por liña.
 O KDE ten as súas propias accións de bordo da pantalla e o seu propio axuste de xanelas. Se a mesma función está activa aquí, desactiva a do KDE: Configuración do sistema → Xestión de xanelas → Bordos da pantalla, e Comportamento das xanelas → Movemento.
 Empurra unha xanela contra un bordo ou unha esquina da pantalla e encherá esa parte. Funciona coa barra de axuste ou sen ela.
 Pantalla completa
 Metade superior
 Desactivado
-Metade inferior
-Metade esquerda
-Metade dereita
 Bordos e esquinas
 Usar os bordos da pantalla
 Independente da barra de axuste. Cada bordo actívase por separado.
@@ -197,7 +170,6 @@ Quedar con todas
 Deixalas
 Bo saber
 As accións de axuste usan os mesmos espazos ca a barra e lembran o tamaño anterior ao axuste: «Restaurar o tamaño anterior ao axuste» recupérao.
-SeaQ Snap Layout: %1
 Axustar á metade esquerda
 Axustar á metade dereita
 Axustar á metade superior
@@ -228,9 +200,7 @@ Meta+Maiús + tecla
 Ctrl+Maiús+Alt + tecla
 Ctrl+Alt + teclado numérico
 Sen atallos
-Preme e despois Aceptar: ábrese o editor de configuración.
 Resistencia á superposición
-Canto hai que empurrar unha xanela dentro doutra antes de que a solte. 0 = as xanelas poden superpoñerse libremente.
 Restabelecer o predeterminado
 Restabelecer todas as teclas
 Volve dar a cada acción a tecla do esquema escollido e quita as teclas que o esquema non ten.
@@ -241,7 +211,6 @@ Ao cambiar o tamaño dunha xanela, as que a tocan moven o bordo compartido con e
 Manter aliñadas as xanelas apiladas
 As xanelas unha enriba doutra manteñen xuntos os bordos esquerdo e dereito; as xanelas lado a lado, os superiores e inferiores.
 Axitar para soltar
-Axita o rato mentres redimensionas e as demais xanelas volven atrás.
 Atenuar as demais xanelas
 Mentres redimensionas, as xanelas que non seguen móstranse transparentes.
 Vista previa da barra
@@ -257,11 +226,156 @@ Un empurrón curto dá a metade ou o cuarto. Mantén a xanela un pouco máis no 
 Tempo de espera
 Canto tempo debe quedar a xanela no bordo antes de crecer.
 Mosaico de bordos propio de KDE
-O maximizar e o mosaico de KDE nos bordos da pantalla –co seu contorno– párase mentres SeaQ Snap Layout está activo, para que apareza só unha vista previa. A túa configuración de KDE non cambia: desactiva isto, desactiva ou elimina SeaQ Snap Layout e volve o comportamento de KDE.
 Axuste de xanelas propio de KDE
 Pausar as zonas de axuste de KDE mentres o imán está activo
-Para que só un imán tire dunha xanela. A túa configuración de KDE non cambia: desactiva isto, desactiva ou elimina SeaQ Snap Layout e volve o axuste de KDE.
-Apoiar SeaQ Snap Layout
-Se che gusta SeaQ Snap Layout, podes apoiar o seu desenvolvemento. Grazas!
 Doar con PayPal
 Convídame a un café
+para KWin · v%1
+Mosaico automático
+Organizar as xanelas
+Intercambiar xanelas
+Cada función pódese activar e desactivar por separado.
+Cada xanela atopa o seu sitio soa, coma nun xestor de xanelas en mosaico.
+Unha xanela detense no bordo doutra, tamén se a moves rápido. Axita o rato ou segue empurrando un momento para soltala. 0 = as xanelas poden solaparse libremente.
+Axita o rato rápido adiante e atrás ao cambiar o tamaño e as outras xanelas volven atrás. Un tirón rápido nunha soa dirección nunca as solta.
+Cada xanela atopa soa o seu sitio na pantalla. As xanelas novas engádense e as pechadas deixan sitio ás outras.
+Mosaico
+Organizar as xanelas automaticamente
+Desactivado: as xanelas quedan onde as poñas. As outras funcións van igual.
+Disposición
+Xanela principal
+Tamaño da área principal
+Tamén cambia cando redimensionas a xanela principal á man.
+Xanelas principais
+Cantas xanelas comparten a área principal (disposición «Principal e pila»).
+Intercambiar
+Soltar unha xanela enriba doutra
+Teclas
+Cámbiaas na páxina Atallos de teclado. Co mosaico automático, as xanelas tamén intercambian o sitio na orde.
+Intercambiar coa xanela da esquerda
+Intercambiar coa xanela da dereita
+Intercambiar coa xanela de arriba
+Intercambiar coa xanela de abaixo
+Activar/desactivar o mosaico automático
+Seguinte disposición
+Facer xanela principal
+Deixar flotar a xanela (saír do mosaico)
+Área principal máis grande
+Área principal máis pequena
+Principal e pila
+Principal no medio
+Columnas
+Filas
+Grade
+Espiral
+Unha de cada vez
+Cambiar de modo (axuste / mosaico)
+Unha xanela principal máis
+Unha xanela principal menos
+Mover a xanela un posto adiante
+Mover a xanela un posto atrás
+Modos
+Espiral interior
+Minimizar
+Vista previa en directo
+Desactivado
+Bordo superior: pantalla completa
+Bordo superior: metade superior
+Bordo superior: maximizar
+Arrastra unha xanela contra un bordo…
+Bordo esquerdo: metade esquerda
+Esquina: un cuarto
+Achega unha xanela a outras…
+De preto, os bordos péganse
+Redimensionar tamén se axusta – aquí a toda a altura
+Arrastra un bordo compartido…
+…as veciñas medran e encollen con el
+…en todas as direccións
+Unha xanela
+Únese unha xanela nova
+Pecha unha – as outras enchen o oco
+Colle a xanela A…
+…arrástraa sobre a xanela B…
+…solta: intercambian o lugar
+A barra e os bordos da pantalla estorban o mosaico automático. Por iso funcionan como dous modos – cambia co atallo ou aquí.
+Modo 1 – Barra de axuste e bordos da pantalla
+Barra de axuste, bordos da pantalla, imán de xanelas, atallos e intercambio de xanelas.
+Modo 2 – Mosaico automático
+Mosaico automático, intercambio de xanelas, atallos e o imán para xanelas flotantes.
+O mosaico automático está desactivado – só funciona o modo 1 e o atallo de modo non fai nada.
+A barra e os bordos están desactivados – só funciona o modo 2 e o atallo de modo non fai nada.
+Cambiar de modo
+Sen tecla
+Cambiar a tecla
+KSnapUnity – Editor de axustes
+Modo activo
+Barra de axuste e bordos da pantalla
+Preme aquí ou %1 para cambiar de modo.
+Só hai un modo activado.
+Dúas xanelas intercambian o lugar: solta unha sobre a outra, ou con tecla.
+O maximizado e o mosaico propios de KDE nos bordos – co seu contorno – detéñense mentres funciona KSnapUnity, para que só apareza unha vista previa. Os teus axustes de KDE non cambian: desactiva isto, desactiva ou quita KSnapUnity e volve o comportamento de KDE.
+Así só un imán tira dunha xanela. Os teus axustes de KDE non cambian: desactiva isto, desactiva ou quita KSnapUnity e volve o axuste de KDE.
+Snap Smarter. Work Better.
+K de KWin · Snap de axuste máis intelixente · Unity de todo nun sistema
+Unified
+Todas as funcións de xanelas nun sistema.
+Natural
+Comportamento de xanelas intuitivo e natural.
+Intelligent
+Organización e detección intelixentes.
+Disposicións de axuste e mosaico automático.
+Your Workflow
+Adáptase á túa forma de traballar.
+O axuste e o mosaico automático funcionan como dous modos – un atallo cambia entre eles.
+Apoia KSnapUnity
+Se che gusta KSnapUnity, podes apoiar o seu desenvolvemento – grazas!
+Disposicións propias
+Cada disposición que crees na páxina Disposicións tamén pode organizar xanelas – aparece arriba. A xanela 1 ocupa a zona 1 e así; as demais comparten a última zona. Con menos xanelas ca zonas úsase «Principal e pila», para que non queden ocos.
+Abrir o creador de disposicións
+Disposición segundo o número de xanelas
+Cambiar a disposición só
+Exemplo: dúas xanelas lado a lado, desde tres principal e pila, desde cinco unha grade. Sen regra axeitada úsase a disposición escollida arriba.
+Desde
+xanelas:
+Quitar a regra
+Engadir regra
+Área principal á dereita
+Reflicte a disposición: a xanela principal á dereita, as demais á esquerda.
+Xanelas novas
+Póñense ao final
+Collen o lugar principal
+Xunto á xanela activa
+Unha soa xanela
+Largura
+Por baixo do 100 % unha xanela soa queda centrada – ideal en pantallas anchas.
+Sen marxe exterior
+Unha xanela soa usa toda a pantalla, aínda que haxa unha marxe.
+As xanelas esvaran ao seu lugar
+Cando unha xanela se abre, se pecha ou se intercambia, as outras móvense suavemente en vez de saltar.
+Duración
+Sempre flotantes
+Estas aplicacións nunca se organizan e manteñen o seu lugar. Os diálogos sempre flotan.
+Ningunha aínda.
+Engadir unha aplicación aberta
+Abre primeiro a aplicación e logo escóllea aquí.
+Escoller…
+Non hai outra xanela aberta
+Arrastra unha xanela sobre outra para intercambialas. Se a soltas na barra ou nun bordo, flota libremente; «Deixar flotar a xanela» devólvea. Os espazos veñen da páxina Xeral.
+Dúas xanelas intercambian o lugar – solta unha sobre a outra ou usa as teclas.
+Interruptor principal para arrastrar e as teclas.
+Arrastra unha xanela sobre o centro doutra – a vista previa mostra dúas frechas – e solta. Co mosaico automático abonda calquera punto sobre a outra xanela.
+Xanelas principais: %1
+KSnapUnity: %1
+Mosaico automático activado
+Mosaico automático desactivado
+Abrir o editor de axustes
+Preme e logo Aceptar – ábrese o editor de axustes.
+✔ Listo – preme Aceptar para abrir o editor de axustes.
+Modo
+<b>Modo 1</b><br/>Barra de axuste e bordos da pantalla
+Desactivado = modo 1, activado = modo 2
+<b>Modo 2</b><br/>Mosaico automático
+Cambiar de modo con:
+A tecla cámbiase no editor de axustes. Os dous modos precisan o mosaico automático e a barra ou os bordos da pantalla.
+Axustes rápidos
+Cores da barra:

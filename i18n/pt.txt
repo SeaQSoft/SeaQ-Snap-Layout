@@ -1,35 +1,25 @@
 Fechar
 Restaurar
 Maximizar
-Expandir
-Recolher
 Dividir lado a lado
 Dividir em cima e em baixo
 Remover zona
 Carregar modelo…
 Clique numa zona para a selecionar · duplo clique para a dividir · arraste os divisores
 %1 de %2 zonas
-SeaQ Snap Layout – Editor de definições
-para KDE · v%1
 Geral
 Aspeto
 Comportamento e animação
 Disposições
 Acerca e ajuda
 Ativo
-Em pausa
 Arraste uma janela para o limite superior do ecrã e largue-a numa zona.
 Encaixe
-Mostrar a barra ao arrastar uma janela para o limite superior
-Mostrar onde a janela vai ficar
 Restaurar o tamanho original ao retirar a janela
 Espaçamento
 Espaço entre janelas
 Espaço até ao limite do ecrã
-Aplicações excluídas
-Classes de janela que nunca mostram a barra, uma por linha.
 Dica
-O KDE maximiza as janelas arrastadas para o limite superior. Para um encaixe mais suave, desative isso em Definições do sistema → Extremos do ecrã.
 Valores recomendados
 Cores, tamanho e forma da barra.
 Pré-visualização
@@ -81,8 +71,6 @@ Duplicar
 Eliminar
 Como funciona
 Agarre uma janela pela barra de título e arraste-a para cima. A barra desce; largue a janela numa zona e ela ocupa exatamente essa área. Ao arrastá-la de novo para fora, recupera o tamanho anterior.
-Abrir o editor de definições
-Definições do sistema → Gestão de janelas → Scripts do KWin → ícone de roda dentada junto a «SeaQ Snap Layout» → «Abrir o editor de definições do Snap Layout» → OK.
 Informações
 Versão
 Autor
@@ -102,8 +90,6 @@ Guardar
 Sim
 Zona %1
 Largue a janela numa zona
-SeaQ Snap Layout: ativar/desativar
-SeaQ Snap Layout: testar a barra
 Metades
 Dois terços
 Três colunas
@@ -115,13 +101,6 @@ Cima / baixo
 Pilha + principal
 Seis mosaicos
 Barra lateral + grelha
-Arraste as janelas para o limite superior do ecrã e largue-as numa zona.
-Editor de definições
-Abrir o editor de definições do Snap Layout
-✔ Pronto – clique em OK para abrir o editor de definições.
-Definições rápidas
-Cores da barra:
-Todas as outras definições – aspeto, tamanho, animação, comportamento e as suas disposições – são alteradas no editor de definições do Snap Layout.
 Definições
 Nenhum
 Alterar
@@ -131,27 +110,21 @@ Definir
 Remover
 Barra de encaixe
 Margens do ecrã
-Mais formas de encaixar
+Mais formas
 Íman de janelas
 Atalhos de teclado
 Atalhos
-Quatro formas de encaixar janelas. Cada uma liga e desliga à parte.
 Funcionalidades
 Empurre uma janela contra uma margem ou um canto: maximizar, metades, quartos.
 As janelas colam-se umas às outras e às margens do ecrã.
 Encaixe a janela ativa com combinações de teclas.
 Pré-visualizações
 Mostrar as pré-visualizações na cor de destaque
-Desligado: uma moldura neutra. Aplica-se a todas as pré-visualizações.
-Classes de janela que nunca são encaixadas, uma por linha.
 O KDE tem as suas próprias ações de margem do ecrã e o seu próprio encaixe de janelas. Se a mesma função estiver ligada aqui, desligue a do KDE: Definições do Sistema → Gestão de Janelas → Margens do Ecrã, e Comportamento das Janelas → Movimento.
 Empurre uma janela contra uma margem ou um canto do ecrã e ela preenche essa parte. Funciona com ou sem a barra de encaixe.
 Ecrã completo
 Metade superior
 Desligado
-Metade inferior
-Metade esquerda
-Metade direita
 Margens e cantos
 Usar as margens do ecrã
 Independente da barra de encaixe. Cada margem liga-se à parte.
@@ -197,7 +170,6 @@ Ficar com todas
 Mantê-las
 Bom saber
 As ações de encaixe usam os mesmos espaços que a barra e lembram o tamanho anterior ao encaixe: «Repor o tamanho anterior ao encaixe» recupera-o.
-SeaQ Snap Layout: %1
 Encaixar na metade esquerda
 Encaixar na metade direita
 Encaixar na metade superior
@@ -228,9 +200,7 @@ Meta+Shift + tecla
 Ctrl+Shift+Alt + tecla
 Ctrl+Alt + teclado numérico
 Sem atalhos
-Clique e depois em OK – o editor de definições abre-se.
 Resistência à sobreposição
-Quanto é preciso empurrar uma janela para dentro de outra antes de ela soltar. 0 = as janelas podem sobrepor-se livremente.
 Repor predefinição
 Repor todas as teclas
 Volta a dar a cada ação a tecla do esquema escolhido e remove as teclas que o esquema não tem.
@@ -241,7 +211,6 @@ Ao redimensionar uma janela, as que lhe tocam movem a margem partilhada com ela 
 Manter janelas empilhadas alinhadas
 Janelas umas sobre as outras mantêm juntas as margens esquerda e direita; janelas lado a lado, as de cima e de baixo.
 Abanar para soltar
-Abane o rato durante o redimensionamento e as outras janelas voltam ao lugar.
 Esbater as outras janelas
 Durante o redimensionamento, as janelas que não acompanham aparecem transparentes.
 Pré-visualização da barra
@@ -257,11 +226,156 @@ Um empurrão curto dá a metade ou o quarto. Mantenha a janela um pouco mais na 
 Tempo de espera
 Quanto tempo a janela tem de ficar na margem antes de crescer.
 Mosaico das margens do próprio KDE
-O maximizar e o mosaico do KDE nas margens do ecrã – com o seu contorno – ficam em pausa enquanto o SeaQ Snap Layout corre, para aparecer só uma pré-visualização. As suas definições do KDE não mudam: desligue isto, desative ou remova o SeaQ Snap Layout e o comportamento do KDE volta.
 Encaixe de janelas do próprio KDE
 Pausar as zonas de encaixe do KDE enquanto o íman está ligado
-Para que só um íman puxe uma janela. As suas definições do KDE não mudam: desligue isto, desative ou remova o SeaQ Snap Layout e o encaixe do KDE volta.
-Apoiar o SeaQ Snap Layout
-Se gosta do SeaQ Snap Layout, pode apoiar o seu desenvolvimento – obrigado!
 Doar com PayPal
 Pague-me um café
+para KWin · v%1
+Mosaico automático
+Organizar janelas
+Trocar janelas
+Cada função pode ser ligada e desligada por si.
+Cada janela encontra o seu lugar sozinha, como num gestor de janelas em mosaico.
+Uma janela para na margem de outra, mesmo quando a move depressa. Abane o rato ou continue a empurrar um momento para a soltar. 0 = as janelas podem sobrepor-se livremente.
+Abane o rato depressa para trás e para a frente ao redimensionar e as outras janelas voltam para trás. Um puxão rápido numa só direção nunca as solta.
+Cada janela encontra sozinha o seu lugar no ecrã. As janelas novas juntam-se, as fechadas deixam espaço para as outras.
+Mosaico
+Organizar janelas automaticamente
+Desligado: as janelas ficam onde as pôs. As outras funções trabalham em qualquer caso.
+Disposição
+Janela principal
+Tamanho da área principal
+Muda também quando redimensiona a janela principal à mão.
+Janelas principais
+Quantas janelas partilham a área principal (disposição “Principal e pilha”).
+Trocar
+Largar uma janela sobre outra
+Teclas
+Altere-as na página Atalhos de teclado. Com o mosaico automático, as janelas também trocam de lugar na ordem.
+Trocar com a janela à esquerda
+Trocar com a janela à direita
+Trocar com a janela de cima
+Trocar com a janela de baixo
+Ligar/desligar mosaico automático
+Disposição seguinte
+Tornar janela principal
+Deixar a janela flutuar (sair do mosaico)
+Área principal maior
+Área principal menor
+Principal e pilha
+Principal ao centro
+Colunas
+Linhas
+Grelha
+Espiral
+Uma de cada vez
+Mudar de modo (encaixe / mosaico)
+Mais uma janela principal
+Menos uma janela principal
+Mover a janela uma posição em frente
+Mover a janela uma posição atrás
+Modos
+Espiral para dentro
+Minimizar
+Pré-visualização ao vivo
+Desligado
+Margem superior: ecrã inteiro
+Margem superior: metade superior
+Margem superior: maximizar
+Arraste uma janela contra uma margem…
+Margem esquerda: metade esquerda
+Canto: um quarto
+Aproxime uma janela das outras…
+De perto, as margens colam-se
+Redimensionar também encaixa – aqui até à altura total
+Arraste uma margem partilhada…
+…as vizinhas crescem e encolhem com ela
+…em todas as direções
+Uma janela
+Junta-se uma nova janela
+Uma fecha – as outras preenchem o espaço
+Agarre a janela A…
+…arraste-a sobre a janela B…
+…solte: trocam de lugar
+A barra e as margens do ecrã atrapalham o mosaico automático. Por isso funcionam como dois modos – mude com o atalho ou aqui.
+Modo 1 – Barra de encaixe e margens do ecrã
+Barra de encaixe, margens do ecrã, íman de janelas, atalhos e troca de janelas.
+Modo 2 – Mosaico automático
+Mosaico automático, troca de janelas, atalhos e o íman para janelas flutuantes.
+O mosaico automático está desligado – só funciona o modo 1 e o atalho de modo não faz nada.
+A barra e as margens estão desligadas – só funciona o modo 2 e o atalho de modo não faz nada.
+Mudar de modo
+Sem tecla
+Mudar tecla
+KSnapUnity – Editor de definições
+Modo ativo
+Barra de encaixe e margens do ecrã
+Clique ou prima %1 para mudar de modo.
+Só um modo está ligado.
+Duas janelas trocam de lugar: largue uma sobre a outra, ou com uma tecla.
+O maximizar e o mosaico próprios do KDE nas margens – com o seu contorno – ficam em pausa enquanto o KSnapUnity funciona, para aparecer só uma pré-visualização. As definições do KDE não mudam: desligue isto, desative ou remova o KSnapUnity e o comportamento do KDE volta.
+Assim só um íman puxa uma janela. As definições do KDE não mudam: desligue isto, desative ou remova o KSnapUnity e o encaixe do KDE volta.
+Snap Smarter. Work Better.
+K de KWin · Snap de encaixe mais inteligente · Unity de tudo num só sistema
+Unified
+Todas as funções de janelas num só sistema.
+Natural
+Comportamento das janelas intuitivo e natural.
+Intelligent
+Organização e deteção inteligentes.
+Disposições de encaixe e mosaico automático.
+Your Workflow
+Adapta-se à sua forma de trabalhar.
+O encaixe e o mosaico automático funcionam como dois modos – um atalho alterna entre eles.
+Apoie o KSnapUnity
+Se gosta do KSnapUnity, pode apoiar o seu desenvolvimento – obrigado!
+Disposições próprias
+Cada disposição criada na página Disposições também pode organizar janelas – aparece acima. A janela 1 fica com a zona 1 e assim por diante; janelas a mais partilham a última zona. Com menos janelas do que zonas usa-se «Principal e pilha», para não ficarem buracos.
+Abrir o construtor de disposições
+Disposição pelo número de janelas
+Mudar de disposição sozinho
+Exemplo: duas janelas lado a lado, a partir de três principal e pilha, a partir de cinco uma grelha. Sem regra adequada usa-se a disposição escolhida acima.
+A partir de
+janelas:
+Remover regra
+Adicionar regra
+Área principal à direita
+Espelha a disposição: a janela principal à direita, as outras à esquerda.
+Novas janelas
+Juntam-se no fim
+Ficam com o lugar principal
+Junto da janela ativa
+Uma única janela
+Largura
+Abaixo de 100 % uma janela sozinha fica ao centro – ótimo em ecrãs largos.
+Sem margem exterior
+Uma janela sozinha usa o ecrã inteiro, mesmo com uma margem definida.
+As janelas deslizam para o lugar
+Quando uma janela abre, fecha ou troca, as outras movem-se suavemente em vez de saltar.
+Duração
+Sempre flutuantes
+Estas aplicações nunca são organizadas e mantêm o seu lugar. As caixas de diálogo flutuam sempre.
+Nenhuma ainda.
+Adicionar uma aplicação aberta
+Abra primeiro a aplicação e depois escolha-a aqui.
+Escolher…
+Nenhuma outra janela aberta
+Arraste uma janela sobre outra para as trocar. Largada na barra ou numa margem do ecrã, flutua livremente; «Deixar a janela flutuar» trá-la de volta. Os espaços vêm da página Geral.
+Duas janelas trocam de lugar – largue uma sobre a outra ou use as teclas.
+Interruptor principal para arrastar e para as teclas.
+Arraste uma janela sobre o centro de outra – a pré-visualização mostra duas setas – e solte. Com o mosaico automático basta qualquer ponto sobre a outra janela.
+Janelas principais: %1
+KSnapUnity: %1
+Mosaico automático ligado
+Mosaico automático desligado
+Abrir o editor de definições
+Clique e depois OK – o editor de definições abre.
+✔ Pronto – clique em OK para abrir o editor de definições.
+Modo
+<b>Modo 1</b><br/>Barra de encaixe e margens do ecrã
+Desligado = modo 1, ligado = modo 2
+<b>Modo 2</b><br/>Mosaico automático
+Mudar de modo com:
+A tecla muda-se no editor de definições. Ambos os modos precisam do mosaico automático e da barra ou das margens do ecrã.
+Definições rápidas
+Cores da barra:

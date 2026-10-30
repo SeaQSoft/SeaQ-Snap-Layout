@@ -1,35 +1,25 @@
 Užverti
 Atkurti
 Išdidinti
-Išskleisti
-Suskleisti
 Padalyti greta
 Padalyti viršuje ir apačioje
 Pašalinti zoną
 Įkelti šabloną…
 Spustelėkite zoną, kad ją pažymėtumėte · dukart spustelėkite, kad padalytumėte · tempkite skirtukus
 %1 iš %2 zonų
-SeaQ Snap Layout – Nustatymų redaktorius
-skirta KDE · v%1
 Bendra
 Išvaizda
 Elgsena ir animacija
 Išdėstymai
 Apie ir žinynas
 Aktyvu
-Pristabdyta
 Nutempkite langą prie viršutinio ekrano krašto ir paleiskite jį ant zonos.
 Prikabinimas
-Rodyti juostą tempiant langą prie viršutinio krašto
-Rodyti, kur atsidurs langas
 Atkurti pradinį dydį ištraukiant langą
 Tarpai
 Tarpas tarp langų
 Tarpas iki ekrano krašto
-Neįtraukiamos programos
-Langų klasės, kurioms juosta niekada nerodoma, po vieną eilutėje.
 Patarimas
-KDE išdidina langus, nutemptus prie viršutinio krašto. Sklandesniam prikabinimui išjunkite tai skiltyje Sistemos nuostatos → Ekrano kraštai.
 Rekomenduojamos reikšmės
 Juostos spalvos, dydis ir forma.
 Peržiūra
@@ -81,8 +71,6 @@ Dubliuoti
 Ištrinti
 Kaip tai veikia
 Suimkite langą už antraštės juostos ir tempkite aukštyn. Juosta nusileidžia; paleiskite langą ant zonos ir jis užims būtent tą sritį. Ištraukus jį vėl, jis atgauna ankstesnį dydį.
-Nustatymų redaktoriaus atvėrimas
-Sistemos nuostatos → Langų tvarkymas → KWin scenarijai → krumpliaračio piktograma šalia „SeaQ Snap Layout“ → „Atverti Snap Layout nustatymų redaktorių“ → Gerai.
 Informacija
 Versija
 Autorius
@@ -102,8 +90,6 @@ Atsisakyti
 Taip
 Zona %1
 Paleiskite langą ant zonos
-SeaQ Snap Layout: įjungti/išjungti
-SeaQ Snap Layout: išbandyti juostą
 Pusės
 Du trečdaliai
 Trys stulpeliai
@@ -115,13 +101,6 @@ Viršus / apačia
 Krūva + pagrindinis
 Šešios plytelės
 Šoninė juosta + tinklelis
-Tempkite langus prie viršutinio ekrano krašto ir paleiskite juos ant zonos.
-Nustatymų redaktorius
-Atverti Snap Layout nustatymų redaktorių
-✔ Paruošta – spustelėkite Gerai, kad atvertumėte nustatymų redaktorių.
-Greitieji nustatymai
-Juostos spalvos:
-Visi kiti nustatymai – išvaizda, dydis, animacija, elgsena ir jūsų išdėstymai – keičiami Snap Layout nustatymų redaktoriuje.
 Nustatymai
 Nėra
 Keisti
@@ -131,27 +110,21 @@ Nustatyti
 Pašalinti
 Prilipdymo juosta
 Ekrano kraštai
-Daugiau prilipdymo būdų
+Daugiau būdų
 Langų magnetas
 Spartieji klavišai
 Spartieji klavišai
-Keturi langų prilipdymo būdai. Kiekvieną galima įjungti ir išjungti atskirai.
 Funkcijos
 Prispauskite langą prie krašto ar kampo: išdidinti, pusės, ketvirčiai.
 Langai limpa vienas prie kito ir prie ekrano kraštų.
 Prilipdykite aktyvų langą klavišų deriniais.
 Peržiūros
 Rodyti peržiūras akcento spalva
-Išjungta: neutralus rėmelis. Taikoma visoms peržiūroms.
-Langų klasės, kurie niekada neprilipdomi, po vieną eilutėje.
 KDE turi savo ekrano kraštų veiksmus ir savo langų prilipdymą. Jei čia įjungta ta pati funkcija, išjunkite KDE funkciją: Sistemos nuostatos → Langų tvarkymas → Ekrano kraštai bei Langų elgsena → Perkėlimas.
 Prispauskite langą prie ekrano krašto ar kampo ir jis užpildys tą dalį. Veikia su juosta ar be jos.
 Visas ekranas
 Viršutinė pusė
 Išjungta
-Apatinė pusė
-Kairė pusė
-Dešinė pusė
 Kraštai ir kampai
 Naudoti ekrano kraštus
 Nepriklauso nuo juostos. Kiekvieną kraštą galima įjungti atskirai.
@@ -197,7 +170,6 @@ Perimti visus
 Palikti
 Verta žinoti
 Prilipdymo veiksmai naudoja tuos pačius tarpus kaip juosta ir įsimena dydį prieš prilipdymą: „Atkurti dydį prieš prilipdymą“ jį grąžina.
-SeaQ Snap Layout: %1
 Prilipdyti kairėje pusėje
 Prilipdyti dešinėje pusėje
 Prilipdyti viršutinėje pusėje
@@ -228,9 +200,7 @@ Meta+Shift + klavišas
 Ctrl+Shift+Alt + klavišas
 Ctrl+Alt + skaitmenų klaviatūra
 Be sparčiųjų klavišų
-Spustelėkite, tada Gerai – atsivers nustatymų redaktorius.
 Pasipriešinimas persidengimui
-Kaip giliai reikia įstumti langą į kitą, kol jis paleidžia. 0 = langai gali laisvai persidengti.
 Atkurti numatytąjį
 Atkurti visus klavišus
 Kiekvienam veiksmui vėl priskiria pasirinktos schemos klavišą ir pašalina klavišus, kurių schemoje nėra.
@@ -241,7 +211,6 @@ Keičiant lango dydį, jį liečiantys langai kartu stumia bendrą kraštą – 
 Laikyti sukrautus langus vienoje linijoje
 Vienas virš kito esantys langai laiko kairįjį ir dešinįjį kraštus kartu, greta esantys – viršutinį ir apatinį.
 Pakratykite, kad atkabintumėte
-Keisdami dydį pakratykite pelę ir kiti langai grįš atgal.
 Pritemdyti kitus langus
 Keičiant dydį, nesekantys langai rodomi permatomi.
 Prikabinimo juostos peržiūra
@@ -257,11 +226,156 @@ Trumpas stumtelėjimas duoda pusę ar ketvirtį. Palaikykite langą prie krašto
 Laikymo laikas
 Kiek laiko langas turi būti prie krašto, kol išaugs.
 Paties KDE kraštų išdėstymas
-Paties KDE išdidinimas ir išdėstymas prie ekrano kraštų – su kontūru – pristabdomi, kol veikia SeaQ Snap Layout, kad būtų rodoma tik viena peržiūra. Jūsų KDE nustatymai nekeičiami: išjunkite tai, išjunkite arba pašalinkite SeaQ Snap Layout ir KDE elgsena sugrįš.
 Paties KDE langų prikabinimas
 Pristabdyti KDE prikabinimo zonas, kol magnetas įjungtas
-Kad langą trauktų tik vienas magnetas. Jūsų KDE nustatymai nekeičiami: išjunkite tai, išjunkite arba pašalinkite SeaQ Snap Layout ir KDE prikabinimas sugrįš.
-Paremti SeaQ Snap Layout
-Jei jums patinka SeaQ Snap Layout, galite paremti jo kūrimą – ačiū!
 Paaukoti per PayPal
 Nupirk man kavos
+KWin · v%1
+Automatinis išdėstymas plytelėmis
+Langų išdėstymas
+Langų sukeitimas
+Kiekvieną funkciją galima įjungti ir išjungti atskirai.
+Kiekvienas langas pats randa savo vietą, kaip plytelių langų tvarkytuvėje.
+Langas sustoja prie kito lango krašto, net jei judinate jį greitai. Papurtykite pelę arba dar akimirką stumkite, kad atleistumėte. 0 = langai gali laisvai persidengti.
+Keisdami dydį greitai papurtykite pelę pirmyn ir atgal, ir kiti langai šokteli atgal. Greitas trūktelėjimas viena kryptimi jų niekada neatleidžia.
+Kiekvienas langas pats randa savo vietą ekrane. Nauji langai prisijungia, uždaryti atlaisvina vietą kitiems.
+Plytelės
+Automatiškai išdėstyti langus
+Išjungta: langai lieka ten, kur juos padedate. Kitos funkcijos veikia bet kuriuo atveju.
+Išdėstymas
+Pagrindinis langas
+Pagrindinės srities dydis
+Keičiasi ir tada, kai rankiniu būdu keičiate pagrindinio lango dydį.
+Pagrindiniai langai
+Kiek langų dalijasi pagrindine sritimi (išdėstymas „Pagrindinis ir krūva“).
+Sukeisti
+Numesti langą ant kito
+Klavišai
+Pakeiskite juos puslapyje Spartieji klavišai. Esant automatiniam išdėstymui, langai sukeičia vietas ir eilėje.
+Sukeisti su langu kairėje
+Sukeisti su langu dešinėje
+Sukeisti su langu viršuje
+Sukeisti su langu apačioje
+Automatinis išdėstymas įj./išj.
+Kitas plytelių išdėstymas
+Padaryti pagrindiniu langu
+Leisti langui plūduriuoti (išeiti iš plytelių)
+Didesnė pagrindinė sritis
+Mažesnė pagrindinė sritis
+Pagrindinis ir krūva
+Pagrindinis viduryje
+Stulpeliai
+Eilutės
+Tinklelis
+Spiralė
+Po vieną
+Perjungti režimą (prilipdymas / plytelės)
+Vienu pagrindiniu langu daugiau
+Vienu pagrindiniu langu mažiau
+Perkelti langą viena vieta pirmyn
+Perkelti langą viena vieta atgal
+Režimai
+Spiralė į vidų
+Sumažinti
+Tiesioginė peržiūra
+Išjungta
+Viršutinis kraštas: visas ekranas
+Viršutinis kraštas: viršutinė pusė
+Viršutinis kraštas: išdidinti
+Tempkite langą prie krašto…
+Kairysis kraštas: kairė pusė
+Kampas: ketvirtis
+Patraukite langą link kitų…
+Arti kraštai prilimpa
+Keičiant dydį irgi prilimpa – čia iki viso aukščio
+Tempkite bendrą kraštą…
+…kaimynai auga ir mažėja kartu
+…visomis kryptimis
+Vienas langas
+Prisijungia naujas langas
+Vienas užsidaro – kiti užpildo tarpą
+Paimkite langą A…
+…nutempkite ant lango B…
+…paleiskite: jie susikeičia vietomis
+Juosta ir ekrano kraštai trukdo automatiniam išdėstymui. Todėl jie veikia kaip du režimai – perjunkite sparčiuoju klavišu arba čia.
+1 režimas – prilipdymo juosta ir ekrano kraštai
+Prilipdymo juosta, ekrano kraštai, langų magnetas, spartieji klavišai ir langų sukeitimas.
+2 režimas – automatinis išdėstymas plytelėmis
+Automatinis išdėstymas, langų sukeitimas, spartieji klavišai ir magnetas plūduriuojantiems langams.
+Automatinis išdėstymas išjungtas – veikia tik 1 režimas, o režimo klavišas nieko nedaro.
+Juosta ir kraštai išjungti – veikia tik 2 režimas, o režimo klavišas nieko nedaro.
+Perjungti režimą
+Nėra klavišo
+Keisti klavišą
+KSnapUnity – nustatymų redaktorius
+Aktyvus režimas
+Prilipdymo juosta ir ekrano kraštai
+Spustelėkite arba paspauskite %1, kad perjungtumėte režimą.
+Įjungtas tik vienas režimas.
+Du langai susikeičia vietomis: numeskite vieną ant kito arba klavišu.
+Paties KDE išdidinimas ir išdėstymas prie kraštų – su kontūru – sustabdomas, kol veikia KSnapUnity, kad būtų tik viena peržiūra. Jūsų KDE nustatymai nesikeičia: išjunkite tai, išjunkite ar pašalinkite KSnapUnity, ir KDE elgsena sugrįš.
+Taip langą traukia tik vienas magnetas. Jūsų KDE nustatymai nesikeičia: išjunkite tai, išjunkite ar pašalinkite KSnapUnity, ir KDE prilipdymas sugrįš.
+Snap Smarter. Work Better.
+K – KWin · Snap – protingesnis prilipdymas · Unity – viskas vienoje sistemoje
+Unified
+Visos langų funkcijos vienoje sistemoje.
+Natural
+Intuityvi, natūrali langų elgsena.
+Intelligent
+Išmanus išdėstymas ir atpažinimas.
+Prilipdymo išdėstymai ir automatinis išdėstymas plytelėmis.
+Your Workflow
+Prisitaiko prie jūsų darbo būdo.
+Prilipdymas ir automatinis išdėstymas veikia kaip du režimai – vienas klavišas perjungia tarp jų.
+Paremkite KSnapUnity
+Jei KSnapUnity jums patinka, galite paremti jo kūrimą – ačiū!
+Savi išdėstymai
+Kiekvienas puslapyje Išdėstymai sukurtas išdėstymas gali ir dėlioti langus – jis rodomas viršuje. 1 langas gauna 1 zoną ir t. t.; papildomi langai dalijasi paskutine zona. Kai langų mažiau nei zonų, naudojamas „Pagrindinis ir krūva“, kad neliktų skylių.
+Atverti išdėstymų kūrėją
+Išdėstymas pagal langų skaičių
+Keisti išdėstymą savaime
+Pavyzdys: du langai greta, nuo trijų pagrindinis ir krūva, nuo penkių tinklelis. Be tinkamos taisyklės taikomas viršuje pasirinktas išdėstymas.
+Nuo
+langų:
+Šalinti taisyklę
+Pridėti taisyklę
+Pagrindinė sritis dešinėje
+Atspindi išdėstymą: pagrindinis langas dešinėje, kiti kairėje.
+Nauji langai
+Stoja į galą
+Užima pagrindinę vietą
+Šalia aktyvaus lango
+Vienas langas
+Plotis
+Mažiau nei 100 % vienišą langą laiko centre – gražu plačiuose ekranuose.
+Be išorinės paraštės
+Vienišas langas užima visą ekraną, net jei nustatyta paraštė.
+Langai sklandžiai nuslysta į vietą
+Kai langas atsidaro, užsidaro ar susikeičia, kiti juda sklandžiai, o ne šokinėja.
+Trukmė
+Visada plūduriuojantys
+Šios programos niekada nedėliojamos ir išlaiko savo vietą. Dialogai visada plūduriuoja.
+Kol kas nėra.
+Pridėti atvertą programą
+Pirmiausia atverkite programą, tada pasirinkite ją čia.
+Pasirinkti…
+Kitų atvertų langų nėra
+Nutempkite langą ant kito, kad juos sukeistumėte. Numestas ant juostos ar ekrano krašto, jis laisvai plūduriuoja; „Leisti langui plūduriuoti“ jį grąžina. Tarpai nustatomi puslapyje Bendra.
+Du langai susikeičia vietomis – numeskite vieną ant kito arba naudokite klavišus.
+Pagrindinis jungiklis tempimui ir klavišams.
+Nutempkite langą virš kito lango vidurio – peržiūra rodo dvi rodykles – ir paleiskite. Automatinio išdėstymo metu tinka bet kuri vieta virš kito lango.
+Pagrindiniai langai: %1
+KSnapUnity: %1
+Automatinis išdėstymas įjungtas
+Automatinis išdėstymas išjungtas
+Atverti nustatymų redaktorių
+Spustelėkite, tada Gerai – atsivers nustatymų redaktorius.
+✔ Paruošta – spustelėkite Gerai, kad atvertumėte nustatymų redaktorių.
+Režimas
+<b>1 režimas</b><br/>Prilipdymo juosta ir ekrano kraštai
+Išj. = 1 režimas, įj. = 2 režimas
+<b>2 režimas</b><br/>Automatinis išdėstymas plytelėmis
+Perjungti režimą klavišu:
+Klavišą pakeisite nustatymų redaktoriuje. Abiem režimams reikia automatinio išdėstymo ir juostos arba ekrano kraštų.
+Greitieji nustatymai
+Juostos spalvos:

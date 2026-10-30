@@ -1,35 +1,25 @@
 Zapri
 Obnovi
 Razpni
-Razširi
-Strni
 Razdeli drug ob drugem
 Razdeli zgoraj in spodaj
 Odstrani območje
 Naloži predlogo…
 Kliknite območje za izbor · dvoklik ga razdeli · vlecite ločilnike
 %1 od %2 območij
-SeaQ Snap Layout – Urejevalnik nastavitev
-za KDE · v%1
 Splošno
 Videz
 Obnašanje in animacija
 Razporeditve
 O programu in pomoč
 Dejavno
-Začasno ustavljeno
 Povlecite okno k zgornjemu robu zaslona in ga spustite na območje.
 Pripenjanje
-Pokaži vrstico, ko okno vlečete k zgornjemu robu
-Pokaži, kam bo okno postavljeno
 Obnovi prvotno velikost, ko okno izvlečete
 Razmiki
 Razmik med okni
 Razmik do roba zaslona
-Izključeni programi
-Razredi oken, pri katerih se vrstica nikoli ne pokaže, po en v vrstici.
 Namig
-KDE razpne okna, ki jih povlečete k zgornjemu robu. Za bolj tekoče pripenjanje to izklopite v Sistemske nastavitve → Robovi zaslona.
 Priporočene vrednosti
 Barve, velikost in oblika vrstice.
 Predogled
@@ -81,8 +71,6 @@ Podvoji
 Izbriši
 Kako deluje
 Primite okno za naslovno vrstico in ga povlecite navzgor. Vrstica se spusti; spustite okno na območje in zapolni natanko ta prostor. Ko ga znova izvlečete, dobi nazaj prejšnjo velikost.
-Odpiranje urejevalnika nastavitev
-Sistemske nastavitve → Upravljanje oken → Skripti KWin → ikona zobnika ob »SeaQ Snap Layout« → »Odpri urejevalnik nastavitev Snap Layout« → V redu.
 Podatki
 Različica
 Avtor
@@ -102,8 +90,6 @@ Shrani
 Da
 Območje %1
 Spustite okno na območje
-SeaQ Snap Layout: vklop/izklop
-SeaQ Snap Layout: preizkusi vrstico
 Polovici
 Dve tretjini
 Trije stolpci
@@ -115,13 +101,6 @@ Zgoraj / spodaj
 Kup + glavno
 Šest ploščic
 Stranska vrstica + mreža
-Povlecite okna k zgornjemu robu zaslona in jih spustite na območje.
-Urejevalnik nastavitev
-Odpri urejevalnik nastavitev Snap Layout
-✔ Pripravljeno – kliknite V redu, da odprete urejevalnik nastavitev.
-Hitre nastavitve
-Barve vrstice:
-Vse ostale nastavitve – videz, velikost, animacijo, obnašanje in lastne razporeditve – spremenite v urejevalniku nastavitev Snap Layout.
 Nastavitve
 Brez
 Spremeni
@@ -131,27 +110,21 @@ Nastavi
 Odstrani
 Vrstica za pripenjanje
 Robovi zaslona
-Več načinov pripenjanja
+Več načinov
 Magnet oken
 Tipkovne bližnjice
 Bližnjice
-Štirje načini pripenjanja oken. Vsakega lahko vklopite in izklopite posebej.
 Funkcije
 Potisnite okno ob rob ali kot: razpni, polovice, četrtine.
 Okna se lepijo drugo na drugo in na robove zaslona.
 Pripnite dejavno okno s kombinacijami tipk.
 Predogledi
 Prikaži predoglede v poudarni barvi
-Izklopljeno: nevtralen okvir. Velja za vse predoglede.
-Razredi oken, ki se nikoli ne pripnejo, po en v vrstici.
 KDE ima lastna dejanja robov zaslona in lastno pripenjanje oken. Če je tukaj vklopljena ista funkcija, izklopite KDE-jevo: Sistemske nastavitve → Upravljanje oken → Robovi zaslona ter Vedenje oken → Premikanje.
 Potisnite okno ob rob ali kot zaslona in zapolni ta del. Deluje z vrstico ali brez nje.
 Celozaslonsko
 Zgornja polovica
 Izklopljeno
-Spodnja polovica
-Leva polovica
-Desna polovica
 Robovi in koti
 Uporabljaj robove zaslona
 Neodvisno od vrstice. Vsak rob lahko vklopite posebej.
@@ -197,7 +170,6 @@ Prevzemi vse
 Obdrži
 Dobro je vedeti
 Dejanja pripenjanja uporabljajo enake razmike kot vrstica in si zapomnijo velikost pred pripenjanjem: »Obnovi velikost pred pripenjanjem« jo vrne.
-SeaQ Snap Layout: %1
 Pripni v levo polovico
 Pripni v desno polovico
 Pripni v zgornjo polovico
@@ -228,9 +200,7 @@ Meta+Shift + tipka
 Ctrl+Shift+Alt + tipka
 Ctrl+Alt + številčnica
 Brez bližnjic
-Kliknite, nato V redu – odpre se urejevalnik nastavitev.
 Upor proti prekrivanju
-Kako globoko morate okno potisniti v drugo, preden ga spusti. 0 = okna se lahko prosto prekrivajo.
 Ponastavi na privzeto
 Ponastavi vse tipke
 Vsakemu dejanju znova dodeli tipko izbrane sheme in odstrani tipke, ki jih shema nima.
@@ -241,7 +211,6 @@ Ko spremenite velikost okna, okna, ki se ga dotikajo, premaknejo skupni rob z nj
 Zložena okna naj ostanejo v liniji
 Okna drugo nad drugim držijo leve in desne robove skupaj, okna drugo ob drugem zgornje in spodnje.
 Stresite za sprostitev
-Med spreminjanjem velikosti stresite miško in druga okna skočijo nazaj.
 Zatemni druga okna
 Med spreminjanjem velikosti so okna, ki ne sledijo, prosojna.
 Predogled vrstice za pripenjanje
@@ -257,11 +226,156 @@ Kratek potisk da polovico ali četrtino. Pridržite okno ob robu malo dlje in zr
 Čas pridržanja
 Kako dolgo mora okno ostati ob robu, preden zraste.
 KDE-jevo lastno tlakovanje robov
-KDE-jevo povečevanje in tlakovanje ob robovih zaslona – z obrisom – je začasno ustavljeno, dokler teče SeaQ Snap Layout, da se prikaže le en predogled. Vaše nastavitve KDE se ne spremenijo: izklopite to, onemogočite ali odstranite SeaQ Snap Layout in KDE-jevo vedenje je nazaj.
 KDE-jevo lastno pripenjanje oken
 Začasno ustavi KDE-jeva območja pripenjanja, ko je magnet vklopljen
-Da okno vleče le en magnet. Vaše nastavitve KDE se ne spremenijo: izklopite to, onemogočite ali odstranite SeaQ Snap Layout in KDE-jevo pripenjanje je nazaj.
-Podprite SeaQ Snap Layout
-Če vam je SeaQ Snap Layout všeč, lahko podprete njegov razvoj – hvala!
 Donirajte s PayPal
 Kupi mi kavo
+za KWin · v%1
+Samodejno tlakovanje
+Razporedi okna
+Zamenjaj okna
+Vsako funkcijo lahko vklopiš in izklopiš posebej.
+Vsako okno samo najde svoje mesto, kot v tlakovnem upravljalniku oken.
+Okno se ustavi ob robu drugega, tudi če ga premikaš hitro. Stresi miško ali še malo potiskaj, da se sprosti. 0 = okna se lahko prosto prekrivajo.
+Med spreminjanjem velikosti hitro stresi miško sem in tja in druga okna skočijo nazaj. Hiter poteg v eno smer jih nikoli ne sprosti.
+Vsako okno samo najde svoje mesto na zaslonu. Nova okna se pridružijo, zaprta naredijo prostor drugim.
+Tlakovanje
+Samodejno razporedi okna
+Izklopljeno: okna ostanejo tam, kamor jih postaviš. Druge funkcije delujejo vseeno.
+Postavitev
+Glavno okno
+Velikost glavnega območja
+Spremeni se tudi, ko velikost glavnega okna spremeniš ročno.
+Glavna okna
+Koliko oken si deli glavno območje (postavitev »Glavno in sklad«).
+Zamenjaj
+Spusti okno na drugo
+Tipke
+Spremeniš jih na strani Tipkovne bližnjice. Pri samodejnem tlakovanju okna zamenjata tudi mesto v vrstnem redu.
+Zamenjaj z oknom na levi
+Zamenjaj z oknom na desni
+Zamenjaj z oknom zgoraj
+Zamenjaj z oknom spodaj
+Samodejno tlakovanje vklop/izklop
+Naslednja postavitev tlakovanja
+Naredi za glavno okno
+Naj okno lebdi (zapusti tlakovanje)
+Večje glavno območje
+Manjše glavno območje
+Glavno in sklad
+Glavno na sredini
+Stolpci
+Vrstice
+Mreža
+Spirala
+Eno naenkrat
+Preklopi način (pripenjanje / tlakovanje)
+Eno glavno okno več
+Eno glavno okno manj
+Premakni okno za mesto naprej
+Premakni okno za mesto nazaj
+Načini
+Spirala navznoter
+Pomanjšaj
+Predogled v živo
+Izklopljeno
+Zgornji rob: celoten zaslon
+Zgornji rob: zgornja polovica
+Zgornji rob: razpni
+Povlecite okno ob rob…
+Levi rob: leva polovica
+Kot: četrtina
+Premaknite okno k drugim…
+Blizu se robovi zlepijo
+Tudi spreminjanje velikosti se pripne – tu do polne višine
+Povlecite skupni rob…
+…sosedi rastejo in se krčijo z njim
+…v vse smeri
+Eno okno
+Pridruži se novo okno
+Eno se zapre – druga zapolnijo vrzel
+Primite okno A…
+…povlecite ga na okno B…
+…izpustite: zamenjata mesti
+Vrstica in robovi zaslona motijo samodejno tlakovanje. Zato delujejo kot dva načina – preklopite z bližnjico ali tukaj.
+Način 1 – vrstica za pripenjanje in robovi zaslona
+Vrstica za pripenjanje, robovi zaslona, magnet oken, bližnjice in zamenjava oken.
+Način 2 – samodejno tlakovanje
+Samodejno tlakovanje, zamenjava oken, bližnjice in magnet za plavajoča okna.
+Samodejno tlakovanje je izklopljeno – deluje le način 1 in bližnjica za način ne naredi ničesar.
+Vrstica in robovi so izklopljeni – deluje le način 2 in bližnjica za način ne naredi ničesar.
+Preklopi način
+Brez tipke
+Spremeni tipko
+KSnapUnity – urejevalnik nastavitev
+Dejavni način
+Vrstica za pripenjanje in robovi zaslona
+Kliknite ali pritisnite %1 za preklop načina.
+Vklopljen je le en način.
+Dve okni zamenjata mesti: spustite eno na drugo ali s tipko.
+KDE-jevo lastno razpenjanje in tlakovanje ob robovih – z obrisom – je ustavljeno, dokler deluje KSnapUnity, da se prikaže le en predogled. Vaše nastavitve KDE se ne spremenijo: izklopite to, onemogočite ali odstranite KSnapUnity in vedenje KDE se vrne.
+Tako okno vleče le en magnet. Vaše nastavitve KDE se ne spremenijo: izklopite to, onemogočite ali odstranite KSnapUnity in pripenjanje KDE se vrne.
+Snap Smarter. Work Better.
+K kot KWin · Snap kot pametnejše pripenjanje · Unity kot vse v enem sistemu
+Unified
+Vse funkcije oken v enem sistemu.
+Natural
+Intuitivno, naravno vedenje oken.
+Intelligent
+Pametno razporejanje in prepoznavanje.
+Razporeditve za pripenjanje in samodejno tlakovanje.
+Your Workflow
+Prilagodi se vašemu načinu dela.
+Pripenjanje in samodejno tlakovanje delujeta kot dva načina – ena bližnjica preklaplja med njima.
+Podprite KSnapUnity
+Če vam je KSnapUnity všeč, lahko podprete njegov razvoj – hvala!
+Lastne razporeditve
+Vsaka razporeditev s strani Razporeditve lahko tudi razporeja okna – prikaže se zgoraj. Okno 1 dobi območje 1 in tako naprej; dodatna okna si delijo zadnje območje. Pri manj oknih kot območjih se uporabi »Glavno in sklad«, da ne nastanejo luknje.
+Odpri graditelja razporeditev
+Razporeditev glede na število oken
+Sama menjaj razporeditev
+Primer: dve okni drugo ob drugem, od treh glavno in sklad, od petih mreža. Brez ustreznega pravila velja zgoraj izbrana razporeditev.
+Od
+oken:
+Odstrani pravilo
+Dodaj pravilo
+Glavno območje desno
+Zrcali razporeditev: glavno okno desno, druga levo.
+Nova okna
+Pridružijo se na koncu
+Zasedejo glavno mesto
+Ob dejavnem oknu
+Eno samo okno
+Širina
+Pod 100 % ostane samotno okno na sredini – lepo na širokih zaslonih.
+Brez zunanjega roba
+Samotno okno uporabi cel zaslon, tudi če je rob nastavljen.
+Okna gladko zdrsnejo na mesto
+Ko se okno odpre, zapre ali zamenja, se druga premaknejo gladko namesto skokovito.
+Trajanje
+Vedno plavajoča
+Ti programi se nikoli ne razporejajo in obdržijo svoje mesto. Pogovorna okna vedno plavajo.
+Še nobenega.
+Dodaj odprt program
+Najprej odprite program, nato ga izberite tukaj.
+Izberite…
+Nobeno drugo okno ni odprto
+Povlecite okno na drugo, da ju zamenjate. Spuščeno na vrstico ali rob zaslona prosto plava; »Naj okno lebdi« ga vrne. Razmiki so na strani Splošno.
+Dve okni zamenjata mesti – spustite eno na drugo ali uporabite tipke.
+Glavno stikalo za vlečenje in tipke.
+Povlecite okno nad sredino drugega – predogled pokaže dve puščici – in izpustite. Pri samodejnem tlakovanju zadošča kjerkoli nad drugim oknom.
+Glavna okna: %1
+KSnapUnity: %1
+Samodejno tlakovanje vklopljeno
+Samodejno tlakovanje izklopljeno
+Odpri urejevalnik nastavitev
+Kliknite, nato V redu – odpre se urejevalnik nastavitev.
+✔ Pripravljeno – kliknite V redu, da se odpre urejevalnik nastavitev.
+Način
+<b>Način 1</b><br/>Vrstica za pripenjanje in robovi zaslona
+Izklop = način 1, vklop = način 2
+<b>Način 2</b><br/>Samodejno tlakovanje
+Preklop načina s:
+Tipko spremenite v urejevalniku nastavitev. Oba načina potrebujeta samodejno tlakovanje ter vrstico ali robove zaslona.
+Hitre nastavitve
+Barve vrstice:

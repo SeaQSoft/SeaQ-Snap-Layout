@@ -1,35 +1,25 @@
 Lukk
 Gjenopprett
 Maksimer
-Fold ut
-Fold sammen
 Del side om side
 Del øverst og nederst
 Fjern sone
 Last inn mal…
 Klikk på en sone for å velge den · dobbeltklikk for å dele · dra i skillelinjene
 %1 av %2 soner
-SeaQ Snap Layout – Innstillingsredigerer
-for KDE · v%1
 Generelt
 Utseende
 Oppførsel & animasjon
 Oppsett
 Om & hjelp
 Aktiv
-Satt på pause
 Dra et vindu til overkanten av skjermen og slipp det på en sone.
 Festing
-Vis festelinjen når et vindu dras mot overkanten
-Vis hvor vinduet havner
 Gjenopprett opprinnelig størrelse når vinduet dras ut
 Avstand
 Avstand mellom vinduer
 Avstand til skjermkanten
-Unntatte programmer
-Vindusklasser som aldri viser festelinjen, én per linje.
 Tips
-KDE maksimerer vinduer som dras mot overkanten. Slå det av under Systeminnstillinger → Skjermkanter for jevnere festing.
 Anbefalte verdier
 Farger, størrelse og form på festelinjen.
 Forhåndsvisning
@@ -81,8 +71,6 @@ Dupliser
 Slett
 Slik virker det
 Ta tak i et vindu i tittellinjen og dra det oppover. Festelinjen glir ned; slipp vinduet på en sone, så fyller det nøyaktig det området. Drar du det ut igjen, får det tilbake sin gamle størrelse.
-Åpne innstillingsredigereren
-Systeminnstillinger → Vindusbehandling → KWin-skript → tannhjulikonet ved «SeaQ Snap Layout» → «Åpne innstillingsredigereren for Snap Layout» → OK.
 Informasjon
 Versjon
 Opphavsperson
@@ -102,8 +90,6 @@ Lagre
 Ja
 Sone %1
 Slipp vinduet på en sone
-SeaQ Snap Layout: på/av
-SeaQ Snap Layout: test festelinjen
 Halvdeler
 To tredjedeler
 Tre kolonner
@@ -115,13 +101,6 @@ Fokus i midten
 Stabel + hoved
 Seks ruter
 Sidepanel + rutenett
-Dra vinduer til overkanten av skjermen og slipp dem på en sone.
-Innstillingsredigerer
-Åpne innstillingsredigereren for Snap Layout
-✔ Klar – klikk OK for å åpne innstillingsredigereren.
-Hurtiginnstillinger
-Festelinjens farger:
-Alle andre innstillinger – utseende, størrelse, animasjon, oppførsel og egne oppsett – endres i innstillingsredigereren for Snap Layout.
 Innstillinger
 Ingen
 Endre
@@ -131,27 +110,21 @@ Angi
 Fjern
 Festelinje
 Skjermkanter
-Flere måter å feste på
+Flere måter
 Vindusmagnet
 Hurtigtaster
 Snarveier
-Fire måter å feste vinduer på. Hver kan slås av og på for seg.
 Funksjoner
 Skyv et vindu mot en kant eller et hjørne: maksimer, halvdeler, kvarter.
 Vinduer fester seg til hverandre og til skjermkantene.
 Fest det aktive vinduet med tastekombinasjoner.
 Forhåndsvisninger
 Vis forhåndsvisninger i uthevingsfargen
-Av: en nøytral ramme. Gjelder alle forhåndsvisninger.
-Vindusklasser som aldri festes, én per linje.
 KDE har egne skjermkanthandlinger og egen vindusfesting. Når samme funksjon er på her, slå av KDEs: Systeminnstillinger → Vindusbehandling → Skjermkanter, og Vindusoppførsel → Flytting.
 Skyv et vindu mot en kant eller et hjørne av skjermen, så fyller det den delen. Virker med eller uten festelinjen.
 Fullskjerm
 Øvre halvdel
 Av
-Nedre halvdel
-Venstre halvdel
-Høyre halvdel
 Kanter og hjørner
 Bruk skjermkanter
 Uavhengig av festelinjen. Hver kant kan slås på for seg.
@@ -197,7 +170,6 @@ Overta alle
 Behold dem
 Greit å vite
 Festehandlingene bruker de samme avstandene som festelinjen og husker størrelsen fra før festing: «Gjenopprett størrelsen fra før festing» henter den tilbake.
-SeaQ Snap Layout: %1
 Fest i venstre halvdel
 Fest i høyre halvdel
 Fest i øvre halvdel
@@ -228,9 +200,7 @@ Meta+Shift + tast
 Ctrl+Shift+Alt + tast
 Ctrl+Alt + talltastatur
 Ingen hurtigtaster
-Klikk, og deretter OK – innstillingsredigereren åpnes.
 Motstand mot overlapping
-Hvor langt du må skyve et vindu inn i et annet før det slipper. 0 = vinduer kan overlappe fritt.
 Tilbakestill til standard
 Tilbakestill alle taster
 Gir hver handling tasten fra valgt oppsett igjen og fjerner taster oppsettet ikke har.
@@ -241,7 +211,6 @@ Når du endrer størrelsen på et vindu, flytter vinduer som berører det, den f
 Hold stablede vinduer på linje
 Vinduer over hverandre holder venstre og høyre kant sammen, vinduer ved siden av hverandre topp- og bunnkant.
 Rist for å slippe
-Rist musa mens du endrer størrelse, og de andre vinduene hopper tilbake.
 Demp de andre vinduene
 Mens du endrer størrelse, vises vinduer som ikke følger med, gjennomsiktige.
 Forhåndsvisning for festelisten
@@ -257,11 +226,156 @@ Et kort dytt gir halvdelen eller kvarten. Hold vinduet litt lenger ved kanten, s
 Holdetid
 Hvor lenge vinduet må bli ved kanten før det vokser.
 KDEs egne kantfliser
-KDEs egen maksimering og flislegging ved skjermkantene – med omriss – tar pause mens SeaQ Snap Layout kjører, så bare én forhåndsvisning vises. KDE-innstillingene dine endres ikke: slå av dette, deaktiver eller fjern SeaQ Snap Layout, så er KDEs egen oppførsel tilbake.
 KDEs egen vindusfesting
 Sett KDEs festesoner på pause mens magneten er på
-Slik at bare én magnet drar i et vindu. KDE-innstillingene dine endres ikke: slå av dette, deaktiver eller fjern SeaQ Snap Layout, så er KDEs egen festing tilbake.
-Støtt SeaQ Snap Layout
-Liker du SeaQ Snap Layout, kan du støtte utviklingen – takk!
 Doner med PayPal
 Spander en kaffe på meg
+for KWin · v%1
+Automatisk flislegging
+Ordne vinduer
+Bytt vinduer
+Hver funksjon kan slås av og på for seg.
+Hvert vindu finner plassen sin selv, som i en flisleggende vindusbehandler.
+Et vindu stopper ved kanten av et annet, også når du flytter det raskt. Rist musa eller fortsett å skyve et øyeblikk for å slippe. 0 = vinduer kan overlappe fritt.
+Rist musa raskt fram og tilbake mens du endrer størrelse, så hopper de andre vinduene tilbake. Et raskt drag i én retning slipper aldri.
+Hvert vindu finner plassen sin på skjermen selv. Nye vinduer blir med, lukkede gir plass til de andre.
+Flislegging
+Ordne vinduer automatisk
+Av: vinduer blir der du legger dem. De andre funksjonene virker uansett.
+Oppsett
+Hovedvindu
+Størrelse på hovedområdet
+Endres også når du endrer størrelsen på hovedvinduet for hånd.
+Hovedvinduer
+Hvor mange vinduer som deler hovedområdet (oppsettet «Hoved og stabel»).
+Bytt
+Slipp et vindu på et annet
+Taster
+Endre dem på siden Hurtigtaster. Med automatisk flislegging bytter vinduene også plass i rekkefølgen.
+Bytt med vinduet til venstre
+Bytt med vinduet til høyre
+Bytt med vinduet over
+Bytt med vinduet under
+Automatisk flislegging av/på
+Neste flisoppsett
+Gjør til hovedvindu
+La vinduet sveve (forlat flislegging)
+Større hovedområde
+Mindre hovedområde
+Hoved og stabel
+Hoved i midten
+Kolonner
+Rader
+Rutenett
+Spiral
+Ett om gangen
+Bytt modus (festing / flislegging)
+Ett hovedvindu til
+Ett hovedvindu mindre
+Flytt vinduet én plass fram
+Flytt vinduet én plass tilbake
+Moduser
+Spiral innover
+Minimer
+Direkte forhåndsvisning
+Slått av
+Øvre kant: fullskjerm
+Øvre kant: øvre halvdel
+Øvre kant: maksimer
+Dra et vindu mot en kant …
+Venstre kant: venstre halvdel
+Hjørne: en firedel
+Flytt et vindu mot andre …
+Nær hverandre kleber kantene seg sammen
+Også størrelsesendring fester seg – her til full høyde
+Dra i en felles kant …
+… naboene vokser og krymper med
+… i alle retninger
+Ett vindu
+Et nytt vindu blir med
+Ett lukkes – de andre fyller hullet
+Ta tak i vindu A …
+… dra det over på vindu B …
+… slipp: de bytter plass
+Festelinjen og skjermkantene er i veien for automatisk flislegging. Derfor kjører de som to moduser – bytt med snarveien eller her.
+Modus 1 – Festelinje og skjermkanter
+Festelinje, skjermkanter, vindusmagnet, hurtigtaster og bytt vinduer.
+Modus 2 – Automatisk flislegging
+Automatisk flislegging, bytt vinduer, hurtigtaster og magneten for flytende vinduer.
+Automatisk flislegging er slått av – bare modus 1 kjører, og modustasten gjør ingenting.
+Festelinjen og kantene er slått av – bare modus 2 kjører, og modustasten gjør ingenting.
+Bytt modus
+Ingen tast
+Endre tast
+KSnapUnity – Innstillingsredigering
+Aktiv modus
+Festelinje og skjermkanter
+Klikk eller trykk %1 for å bytte modus.
+Bare én modus er slått på.
+To vinduer bytter plass: slipp det ene på det andre, eller med en tast.
+KDEs egen maksimering og flislegging ved kantene – med omriss – tar pause mens KSnapUnity kjører, så bare én forhåndsvisning vises. KDE-innstillingene dine endres ikke: slå av dette, deaktiver eller fjern KSnapUnity, og KDEs egen oppførsel er tilbake.
+Slik trekker bare én magnet i et vindu. KDE-innstillingene dine endres ikke: slå av dette, deaktiver eller fjern KSnapUnity, og KDEs egen festing er tilbake.
+Snap Smarter. Work Better.
+K for KWin · Snap for smartere festing · Unity for alt i ett system
+Unified
+Alle vindusfunksjoner i ett system.
+Natural
+Intuitiv, naturlig vindusoppførsel.
+Intelligent
+Smart plassering og gjenkjenning.
+Festeoppsett og automatisk flislegging.
+Your Workflow
+Passer måten du jobber på.
+Festing og automatisk flislegging kjører som to moduser – én snarvei bytter mellom dem.
+Støtt KSnapUnity
+Liker du KSnapUnity, kan du støtte utviklingen – takk!
+Egne oppsett
+Hvert oppsett du bygger på siden Oppsett kan også ordne vinduer – det vises over. Vindu 1 får sone 1 og så videre; flere vinduer deler den siste sonen. Med færre vinduer enn soner brukes «Hoved og stabel», så det ikke blir hull.
+Åpne oppsettbyggeren
+Oppsett etter antall vinduer
+Bytt oppsett av seg selv
+Eksempel: to vinduer side om side, fra tre hoved og stabel, fra fem et rutenett. Uten passende regel brukes oppsettet valgt over.
+Fra
+vinduer:
+Fjern regel
+Legg til regel
+Hovedområde til høyre
+Speiler oppsettet: hovedvinduet til høyre, de andre til venstre.
+Nye vinduer
+Stiller seg bakerst
+Tar hovedplassen
+Ved siden av det aktive vinduet
+Ett enkelt vindu
+Bredde
+Under 100 % holder et enslig vindu i midten – fint på brede skjermer.
+Ingen ytre marg
+Et enslig vindu bruker hele skjermen, selv når en marg er satt.
+Vinduer glir på plass
+Når et vindu åpnes, lukkes eller bytter, beveger de andre seg mykt i stedet for å hoppe.
+Varighet
+Alltid flytende
+Disse programmene ordnes aldri og beholder sin egen plass. Dialoger flyter alltid.
+Ingen ennå.
+Legg til et åpent program
+Åpne programmet først, og velg det så her.
+Velg …
+Ingen andre vinduer åpne
+Dra et vindu over på et annet for å bytte dem. Slipper du det på festelinjen eller en skjermkant, flyter det fritt; «La vinduet sveve» henter det tilbake. Mellomrommene kommer fra siden Generelt.
+To vinduer bytter plass – slipp det ene på det andre eller bruk tastene.
+Hovedbryter for dra og tastene.
+Dra et vindu over midten av et annet – forhåndsvisningen viser to piler – og slipp. Med automatisk flislegging holder det hvor som helst over det andre vinduet.
+Hovedvinduer: %1
+KSnapUnity: %1
+Automatisk flislegging på
+Automatisk flislegging av
+Åpne innstillingsredigeringen
+Klikk, deretter OK – innstillingsredigeringen åpnes.
+✔ Klar – klikk OK for å åpne innstillingsredigeringen.
+Modus
+<b>Modus 1</b><br/>Festelinje og skjermkanter
+Av = modus 1, på = modus 2
+<b>Modus 2</b><br/>Automatisk flislegging
+Bytt modus med:
+Tasten endres i innstillingsredigeringen. Begge modusene trenger automatisk flislegging og festelinjen eller skjermkantene.
+Hurtiginnstillinger
+Festelinjens farger:

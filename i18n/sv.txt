@@ -1,35 +1,25 @@
 Stäng
 Återställ
 Maximera
-Fäll ut
-Fäll ihop
 Dela sida vid sida
 Dela upptill och nedtill
 Ta bort zon
 Läs in mall…
 Klicka på en zon för att markera den · dubbelklicka för att dela · dra i avdelarna
 %1 av %2 zoner
-SeaQ Snap Layout – Inställningsredigerare
-för KDE · v%1
 Allmänt
 Utseende
 Beteende & animering
 Layouter
 Om & hjälp
 Aktiv
-Pausad
 Dra ett fönster till skärmens överkant och släpp det på en zon.
 Fästning
-Visa fästlisten när ett fönster dras mot överkanten
-Visa var fönstret hamnar
 Återställ ursprunglig storlek när fönstret dras ut
 Avstånd
 Avstånd mellan fönster
 Avstånd till skärmkanten
-Undantagna program
-Fönsterklasser som aldrig visar fästlisten, en per rad.
 Tips
-KDE maximerar fönster som dras mot överkanten. Stäng av det under Systeminställningar → Skärmkanter för smidigare fästning.
 Rekommenderade värden
 Fästlistens färger, storlek och form.
 Förhandsgranskning
@@ -81,8 +71,6 @@ Duplicera
 Ta bort
 Så fungerar det
 Ta tag i ett fönster i namnlisten och dra det uppåt. Fästlisten glider ner; släpp fönstret på en zon så fyller det exakt det området. Drar du ut det igen får det tillbaka sin gamla storlek.
-Öppna inställningsredigeraren
-Systeminställningar → Fönsterhantering → KWin-skript → kugghjulsikonen bredvid ”SeaQ Snap Layout” → ”Öppna Snap Layouts inställningsredigerare” → OK.
 Information
 Version
 Upphovsperson
@@ -102,8 +90,6 @@ Spara
 Ja
 Zon %1
 Släpp fönstret på en zon
-SeaQ Snap Layout: på/av
-SeaQ Snap Layout: testa fästlisten
 Halvor
 Två tredjedelar
 Tre kolumner
@@ -115,13 +101,6 @@ Upptill / nedtill
 Stapel + huvud
 Sex rutor
 Sidopanel + rutnät
-Dra fönster till skärmens överkant och släpp dem på en zon.
-Inställningsredigerare
-Öppna Snap Layouts inställningsredigerare
-✔ Klart – klicka på OK för att öppna inställningsredigeraren.
-Snabbinställningar
-Fästlistens färger:
-Alla övriga inställningar – utseende, storlek, animering, beteende och egna layouter – ändras i Snap Layouts inställningsredigerare.
 Inställningar
 Ingen
 Ändra
@@ -131,27 +110,21 @@ Ange
 Ta bort
 Fästlist
 Skärmkanter
-Fler sätt att fästa
+Fler sätt
 Fönstermagnet
 Kortkommandon
 Genvägar
-Fyra sätt att fästa fönster. Vart och ett kan slås på och av för sig.
 Funktioner
 Tryck ett fönster mot en kant eller ett hörn: maximera, halvor, fjärdedelar.
 Fönster fäster mot varandra och mot skärmkanterna.
 Fäst det aktiva fönstret med tangentkombinationer.
 Förhandsvisningar
 Visa förhandsvisningar i accentfärgen
-Av: en neutral ram. Gäller alla förhandsvisningar.
-Fönsterklasser som aldrig fästs, en per rad.
 KDE har egna skärmkantsåtgärder och egen fönsterfästning. Om samma funktion är på här, stäng av KDE:s: Systeminställningar → Fönsterhantering → Skärmkanter, samt Fönsterbeteende → Förflyttning.
 Tryck ett fönster mot en kant eller ett hörn av skärmen så fyller det den delen. Fungerar med eller utan fästlisten.
 Helskärm
 Övre halvan
 Av
-Nedre halvan
-Vänstra halvan
-Högra halvan
 Kanter och hörn
 Använd skärmkanter
 Oberoende av fästlisten. Varje kant kan slås på för sig.
@@ -197,7 +170,6 @@ Ta över alla
 Behåll dem
 Bra att veta
 Fäståtgärderna använder samma avstånd som fästlisten och minns storleken före fästningen: ”Återställ storleken före fästning” tar tillbaka den.
-SeaQ Snap Layout: %1
 Fäst i vänstra halvan
 Fäst i högra halvan
 Fäst i övre halvan
@@ -228,9 +200,7 @@ Meta+Skift + tangent
 Ctrl+Skift+Alt + tangent
 Ctrl+Alt + numeriskt tangentbord
 Inga kortkommandon
-Klicka, och sedan OK – inställningsredigeraren öppnas.
 Motstånd mot överlappning
-Hur långt du måste skjuta in ett fönster i ett annat innan det släpper. 0 = fönster kan överlappa fritt.
 Återställ till standard
 Återställ alla tangenter
 Ger varje åtgärd tangenten från det valda schemat igen och tar bort tangenter som schemat saknar.
@@ -241,7 +211,6 @@ När du ändrar storlek på ett fönster flyttar fönster som rör det den gemen
 Håll staplade fönster i linje
 Fönster ovanför varandra håller ihop vänster- och högerkanter, fönster bredvid varandra över- och underkanter.
 Skaka för att släppa
-Skaka musen medan du ändrar storlek så hoppar de andra fönstren tillbaka.
 Tona ned de andra fönstren
 Medan du ändrar storlek visas fönster som inte följer med genomskinliga.
 Förhandsvisning för fästlisten
@@ -257,11 +226,156 @@ En kort knuff ger halvan eller kvarten. Håll fönstret lite längre vid kanten 
 Hålltid
 Hur länge fönstret måste stanna vid kanten innan det växer.
 KDE:s egna kantplattor
-KDE:s egen maximering och plattsättning vid skärmkanterna – med kontur – pausas medan SeaQ Snap Layout körs, så att bara en förhandsvisning syns. Dina KDE-inställningar ändras inte: stäng av detta, inaktivera eller ta bort SeaQ Snap Layout så är KDE:s eget beteende tillbaka.
 KDE:s egen fönsterfästning
 Pausa KDE:s fästzoner medan magneten är på
-Så att bara en magnet drar i ett fönster. Dina KDE-inställningar ändras inte: stäng av detta, inaktivera eller ta bort SeaQ Snap Layout så är KDE:s egen fästning tillbaka.
-Stöd SeaQ Snap Layout
-Om du gillar SeaQ Snap Layout kan du stödja utvecklingen – tack!
 Donera med PayPal
 Bjud mig på en kaffe
+för KWin · v%1
+Automatisk sida vid sida
+Ordna fönster
+Byt fönster
+Varje funktion kan slås på och av för sig.
+Varje fönster hittar sin plats av sig självt, som i en kaklande fönsterhanterare.
+Ett fönster stannar vid kanten av ett annat, även när du flyttar det snabbt. Skaka musen eller fortsätt trycka en stund för att släppa. 0 = fönster får överlappa fritt.
+Skaka musen snabbt fram och tillbaka medan du ändrar storlek, så hoppar de andra fönstren tillbaka. Ett snabbt drag åt ett håll släpper aldrig.
+Varje fönster hittar sin plats på skärmen av sig självt. Nya fönster ansluter, stängda lämnar plats åt de andra.
+Sida vid sida
+Ordna fönster automatiskt
+Av: fönster stannar där du lägger dem. De andra funktionerna fungerar ändå.
+Layout
+Huvudfönster
+Huvudytans storlek
+Ändras också när du ändrar huvudfönstrets storlek för hand.
+Huvudfönster (antal)
+Hur många fönster som delar huvudytan (layouten ”Huvud och stapel”).
+Byt
+Släpp ett fönster på ett annat
+Tangenter
+Ändra dem på sidan Kortkommandon. Med automatisk sida vid sida byter fönstren också plats i ordningen.
+Byt med fönstret till vänster
+Byt med fönstret till höger
+Byt med fönstret ovanför
+Byt med fönstret nedanför
+Automatisk sida vid sida på/av
+Nästa layout
+Gör till huvudfönster
+Låt fönstret sväva (lämna sida vid sida)
+Större huvudyta
+Mindre huvudyta
+Huvud och stapel
+Huvud i mitten
+Kolumner
+Rader
+Rutnät
+Spiral
+Ett i taget
+Byt läge (fästning / sida vid sida)
+Ett huvudfönster till
+Ett huvudfönster färre
+Flytta fönstret en plats framåt
+Flytta fönstret en plats bakåt
+Lägen
+Spiral inåt
+Minimera
+Liveförhandsvisning
+Avstängt
+Övre kant: helskärm
+Övre kant: övre halvan
+Övre kant: maximera
+Dra ett fönster mot en kant …
+Vänster kant: vänstra halvan
+Hörn: en fjärdedel
+Flytta ett fönster mot andra …
+Nära varandra fastnar kanterna
+Även storleksändring fäster – här till full höjd
+Dra i en gemensam kant …
+… grannarna växer och krymper med
+… åt alla håll
+Ett fönster
+Ett nytt fönster ansluter
+Ett stängs – de andra fyller luckan
+Ta tag i fönster A …
+… dra det över fönster B …
+… släpp: de byter plats
+Fästlisten och skärmkanterna står i vägen för automatisk sida vid sida. Därför körs de som två lägen – byt med kortkommandot eller här.
+Läge 1 – Fästlist och skärmkanter
+Fästlist, skärmkanter, fönstermagnet, kortkommandon och byt fönster.
+Läge 2 – Automatisk sida vid sida
+Automatisk sida vid sida, byt fönster, kortkommandon och magneten för flytande fönster.
+Automatisk sida vid sida är avstängd – bara läge 1 körs och lägeskommandot gör ingenting.
+Fästlisten och kanterna är avstängda – bara läge 2 körs och lägeskommandot gör ingenting.
+Byt läge
+Ingen tangent
+Ändra tangent
+KSnapUnity – Inställningsredigerare
+Aktivt läge
+Fästlist och skärmkanter
+Klicka eller tryck %1 för att byta läge.
+Bara ett läge är påslaget.
+Två fönster byter plats: släpp det ena på det andra, eller med en tangent.
+KDE:s egen maximering och sida vid sida vid kanterna – med kontur – pausas medan KSnapUnity körs, så att bara en förhandsvisning syns. Dina KDE-inställningar ändras inte: stäng av detta, inaktivera eller ta bort KSnapUnity så är KDE:s beteende tillbaka.
+Så drar bara en magnet i ett fönster. Dina KDE-inställningar ändras inte: stäng av detta, inaktivera eller ta bort KSnapUnity så är KDE:s fästning tillbaka.
+Snap Smarter. Work Better.
+K för KWin · Snap för smartare fästning · Unity för allt i ett system
+Unified
+Alla fönsterfunktioner i ett system.
+Natural
+Intuitivt, naturligt fönsterbeteende.
+Intelligent
+Smart placering och igenkänning.
+Fästlayouter och automatisk sida vid sida.
+Your Workflow
+Passar ditt sätt att arbeta.
+Fästning och automatisk sida vid sida körs som två lägen – ett kortkommando växlar mellan dem.
+Stöd KSnapUnity
+Om du gillar KSnapUnity kan du stödja utvecklingen – tack!
+Egna layouter
+Varje layout du bygger på sidan Layouter kan också ordna fönster – den visas ovan. Fönster 1 får zon 1 och så vidare; fler fönster delar den sista zonen. Med färre fönster än zoner används ”Huvud och stapel”, så att inga hål uppstår.
+Öppna layoutbyggaren
+Layout efter antal fönster
+Byt layout av sig själv
+Exempel: två fönster sida vid sida, från tre huvud och stapel, från fem ett rutnät. Utan passande regel gäller layouten som valts ovan.
+Från
+fönster:
+Ta bort regel
+Lägg till regel
+Huvudområde till höger
+Speglar layouten: huvudfönstret till höger, de andra till vänster.
+Nya fönster
+Ställer sig sist
+Tar huvudplatsen
+Bredvid det aktiva fönstret
+Ett enda fönster
+Bredd
+Under 100 % hålls ett ensamt fönster i mitten – snyggt på breda skärmar.
+Ingen yttre marginal
+Ett ensamt fönster använder hela skärmen, även om en marginal är satt.
+Fönster glider på plats
+När ett fönster öppnas, stängs eller byts rör sig de andra mjukt i stället för att hoppa.
+Varaktighet
+Alltid flytande
+Dessa program ordnas aldrig och behåller sin egen plats. Dialoger flyter alltid.
+Inga ännu.
+Lägg till ett öppet program
+Öppna programmet först och välj det sedan här.
+Välj …
+Inget annat fönster öppet
+Dra ett fönster över ett annat för att byta dem. Släpps det på fästlisten eller en skärmkant flyter det fritt; ”Låt fönstret sväva” hämtar tillbaka det. Avstånden kommer från sidan Allmänt.
+Två fönster byter plats – släpp det ena på det andra eller använd tangenterna.
+Huvudbrytare för dragning och tangenterna.
+Dra ett fönster över mitten av ett annat – förhandsvisningen visar två pilar – och släpp. Med automatisk sida vid sida räcker var som helst över det andra fönstret.
+Huvudfönster: %1
+KSnapUnity: %1
+Automatisk sida vid sida på
+Automatisk sida vid sida av
+Öppna inställningsredigeraren
+Klicka, sedan OK – inställningsredigeraren öppnas.
+✔ Klart – klicka på OK för att öppna inställningsredigeraren.
+Läge
+<b>Läge 1</b><br/>Fästlist och skärmkanter
+Av = läge 1, på = läge 2
+<b>Läge 2</b><br/>Automatisk sida vid sida
+Byt läge med:
+Tangenten ändras i inställningsredigeraren. Båda lägena behöver automatisk sida vid sida och fästlisten eller skärmkanterna.
+Snabbinställningar
+Fästlistens färger:

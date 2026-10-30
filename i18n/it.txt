@@ -1,35 +1,25 @@
 Chiudi
 Ripristina
 Massimizza
-Espandi
-Comprimi
 Dividi affiancato
 Dividi sopra e sotto
 Rimuovi zona
 Carica modello…
 Clic su una zona per selezionarla · doppio clic per dividerla · trascina i divisori
 %1 di %2 zone
-SeaQ Snap Layout – Editor delle impostazioni
-per KDE · v%1
 Generale
 Aspetto
 Comportamento e animazione
 Layout
 Informazioni e aiuto
 Attivo
-In pausa
 Trascina una finestra verso il bordo superiore dello schermo e rilasciala su una zona.
 Aggancio
-Mostra la barra quando trascini una finestra verso il bordo superiore
-Mostra dove verrà posizionata la finestra
 Ripristina la dimensione originale quando trascini fuori la finestra
 Spaziatura
 Spazio tra le finestre
 Spazio dal bordo dello schermo
-Applicazioni escluse
-Classi di finestre per cui la barra non compare mai, una per riga.
 Suggerimento
-KDE massimizza le finestre trascinate verso il bordo superiore. Per un aggancio più fluido, disattiva questa opzione in Impostazioni di sistema → Bordi dello schermo.
 Valori consigliati
 Colori, dimensione e forma della barra.
 Anteprima
@@ -81,8 +71,6 @@ Duplica
 Elimina
 Come funziona
 Afferra una finestra dalla barra del titolo e trascinala verso l’alto. La barra scende; rilascia la finestra su una zona e occuperà esattamente quell’area. Trascinala di nuovo via e riprende la sua dimensione precedente.
-Aprire l’editor delle impostazioni
-Impostazioni di sistema → Gestione delle finestre → Script KWin → icona a ingranaggio accanto a «SeaQ Snap Layout» → «Apri l’editor delle impostazioni di Snap Layout» → OK.
 Informazioni
 Versione
 Autore
@@ -102,8 +90,6 @@ Salva
 Sì
 Zona %1
 Rilascia la finestra su una zona
-SeaQ Snap Layout: attiva/disattiva
-SeaQ Snap Layout: prova la barra
 Metà
 Due terzi
 Tre colonne
@@ -115,13 +101,6 @@ Sopra / sotto
 Pila + principale
 Sei riquadri
 Barra laterale + griglia
-Trascina le finestre verso il bordo superiore dello schermo e rilasciale su una zona.
-Editor delle impostazioni
-Apri l’editor delle impostazioni di Snap Layout
-✔ Pronto – fai clic su OK per aprire l’editor delle impostazioni.
-Impostazioni rapide
-Colori della barra:
-Tutte le altre impostazioni – aspetto, dimensione, animazione, comportamento e i tuoi layout – si modificano nell’editor delle impostazioni di Snap Layout.
 Impostazioni
 Nessuna
 Modifica
@@ -131,27 +110,21 @@ Imposta
 Rimuovi
 Barra di aggancio
 Bordi dello schermo
-Altri modi per agganciare
+Altri modi
 Magnete delle finestre
 Scorciatoie da tastiera
 Scorciatoie
-Quattro modi per agganciare le finestre. Ognuno si attiva e disattiva da solo.
 Funzioni
 Spingi una finestra contro un bordo o un angolo: massimizza, metà, quarti.
 Le finestre si attaccano tra loro e ai bordi dello schermo.
 Aggancia la finestra attiva con combinazioni di tasti.
 Anteprime
 Mostra le anteprime nel colore di risalto
-Disattivato: una cornice neutra. Vale per tutte le anteprime.
-Classi di finestre che non vengono mai agganciate, una per riga.
 KDE ha le sue azioni dei bordi dello schermo e il suo aggancio delle finestre. Se qui è attiva la stessa funzione, disattiva quella di KDE: Impostazioni di sistema → Gestione delle finestre → Bordi dello schermo e Comportamento delle finestre → Spostamento.
 Spingi una finestra contro un bordo o un angolo dello schermo e riempirà quella parte. Funziona con o senza la barra di aggancio.
 Schermo intero
 Metà superiore
 Disattivato
-Metà inferiore
-Metà sinistra
-Metà destra
 Bordi e angoli
 Usa i bordi dello schermo
 Indipendente dalla barra di aggancio. Ogni bordo si attiva da solo.
@@ -197,7 +170,6 @@ Prendili tutti
 Lasciali
 Buono a sapersi
 Le azioni di aggancio usano gli stessi spazi della barra e ricordano la dimensione prima dell’aggancio: «Ripristina la dimensione prima dell’aggancio» la riporta.
-SeaQ Snap Layout: %1
 Aggancia alla metà sinistra
 Aggancia alla metà destra
 Aggancia alla metà superiore
@@ -228,9 +200,7 @@ Meta+Maiusc + tasto
 Ctrl+Maiusc+Alt + tasto
 Ctrl+Alt + tastierino numerico
 Nessuna scorciatoia
-Fai clic, poi OK – si apre l'editor delle impostazioni.
 Resistenza alla sovrapposizione
-Quanto devi spingere una finestra dentro un'altra prima che la lasci andare. 0 = le finestre possono sovrapporsi liberamente.
 Ripristina predefinito
 Ripristina tutti i tasti
 Ridà a ogni azione il tasto dello schema scelto e rimuove i tasti che lo schema non ha.
@@ -241,7 +211,6 @@ Quando ridimensioni una finestra, quelle che la toccano spostano il bordo in com
 Mantieni allineate le finestre impilate
 Le finestre una sopra l'altra tengono insieme i bordi sinistro e destro, quelle affiancate i bordi superiore e inferiore.
 Scuoti per staccare
-Scuoti il mouse durante il ridimensionamento e le altre finestre tornano indietro.
 Attenua le altre finestre
 Durante il ridimensionamento, le finestre che non seguono sono mostrate trasparenti.
 Anteprima della barra
@@ -257,11 +226,156 @@ Una breve spinta dà la metà o il quarto. Tieni la finestra al bordo un po' pi�
 Tempo di attesa
 Quanto a lungo la finestra deve restare al bordo prima di crescere.
 Affiancamento ai bordi di KDE
-Massimizza e affianca di KDE ai bordi dello schermo – con il suo contorno – sono sospesi mentre SeaQ Snap Layout è attivo, così appare una sola anteprima. Le impostazioni di KDE non cambiano: disattiva questa opzione, disattiva o rimuovi SeaQ Snap Layout e torna il comportamento di KDE.
 Aggancio delle finestre di KDE
 Sospendi le zone di aggancio di KDE mentre il magnete è attivo
-Così un solo magnete tira una finestra. Le impostazioni di KDE non cambiano: disattiva questa opzione, disattiva o rimuovi SeaQ Snap Layout e torna l'aggancio di KDE.
-Sostieni SeaQ Snap Layout
-Se ti piace SeaQ Snap Layout, puoi sostenerne lo sviluppo – grazie!
 Dona con PayPal
 Offrimi un caffè
+per KWin · v%1
+Affiancamento automatico
+Disporre le finestre
+Scambiare le finestre
+Ogni funzione si può attivare e disattivare da sola.
+Ogni finestra trova il suo posto da sola, come in un gestore di finestre a riquadri.
+Una finestra si ferma al bordo di un’altra, anche se la muovi velocemente. Scuoti il mouse o continua a spingere per un attimo per staccarla. 0 = le finestre possono sovrapporsi liberamente.
+Scuoti velocemente il mouse avanti e indietro mentre ridimensioni e le altre finestre tornano indietro. Uno strappo veloce in una sola direzione non le stacca mai.
+Ogni finestra trova da sola il suo posto sullo schermo. Le nuove finestre si aggiungono, quelle chiuse lasciano spazio alle altre.
+Affiancamento
+Disponi le finestre automaticamente
+Disattivato: le finestre restano dove le metti. Le altre funzioni vanno in ogni caso.
+Disposizione
+Finestra principale
+Dimensione dell’area principale
+Cambia anche quando ridimensioni a mano la finestra principale.
+Finestre principali
+Quante finestre condividono l’area principale (disposizione «Principale e pila»).
+Scambia
+Rilasciare una finestra su un’altra
+Tasti
+Si cambiano nella pagina Scorciatoie da tastiera. Con l’affiancamento automatico, le finestre si scambiano anche il posto nell’ordine.
+Scambia con la finestra a sinistra
+Scambia con la finestra a destra
+Scambia con la finestra sopra
+Scambia con la finestra sotto
+Affiancamento automatico sì/no
+Disposizione successiva
+Rendi finestra principale
+Lascia fluttuare la finestra (esci dall’affiancamento)
+Area principale più grande
+Area principale più piccola
+Principale e pila
+Principale al centro
+Colonne
+Righe
+Griglia
+Spirale
+Una alla volta
+Cambia modalità (aggancio / affiancamento)
+Una finestra principale in più
+Una finestra principale in meno
+Sposta la finestra avanti di un posto
+Sposta la finestra indietro di un posto
+Modalità
+Spirale interna
+Minimizza
+Anteprima dal vivo
+Disattivato
+Bordo superiore: schermo intero
+Bordo superiore: metà superiore
+Bordo superiore: massimizza
+Trascina una finestra contro un bordo…
+Bordo sinistro: metà sinistra
+Angolo: un quarto
+Avvicina una finestra alle altre…
+Da vicino, i bordi si attaccano
+Anche il ridimensionamento si aggancia – qui a tutta altezza
+Trascina un bordo comune…
+…le vicine crescono e si restringono con lui
+…in ogni direzione
+Una finestra
+Arriva una nuova finestra
+Una si chiude – le altre riempiono il vuoto
+Afferra la finestra A…
+…trascinala sulla finestra B…
+…rilascia: si scambiano di posto
+La barra e i bordi dello schermo ostacolano l’affiancamento automatico. Per questo funzionano come due modalità – cambia con la scorciatoia o qui.
+Modalità 1 – Barra di aggancio e bordi dello schermo
+Barra di aggancio, bordi dello schermo, magnete delle finestre, scorciatoie e scambio di finestre.
+Modalità 2 – Affiancamento automatico
+Affiancamento automatico, scambio di finestre, scorciatoie e il magnete per le finestre fluttuanti.
+L’affiancamento automatico è disattivato – funziona solo la modalità 1 e la scorciatoia di modalità non fa nulla.
+La barra e i bordi sono disattivati – funziona solo la modalità 2 e la scorciatoia di modalità non fa nulla.
+Cambia modalità
+Nessun tasto
+Cambia tasto
+KSnapUnity – Editor delle impostazioni
+Modalità attiva
+Barra di aggancio e bordi dello schermo
+Fai clic o premi %1 per cambiare modalità.
+È attiva una sola modalità.
+Due finestre si scambiano di posto: rilasciane una sull’altra, o con un tasto.
+La massimizzazione e l’affiancamento propri di KDE ai bordi – con il loro contorno – si mettono in pausa mentre KSnapUnity è attivo, così appare una sola anteprima. Le tue impostazioni di KDE non cambiano: disattiva questa opzione, disattiva o rimuovi KSnapUnity e il comportamento di KDE ritorna.
+Così un solo magnete tira una finestra. Le tue impostazioni di KDE non cambiano: disattiva questa opzione, disattiva o rimuovi KSnapUnity e l’aggancio di KDE ritorna.
+Snap Smarter. Work Better.
+K per KWin · Snap per un aggancio più furbo · Unity per tutto in un unico sistema
+Unified
+Tutte le funzioni delle finestre in un unico sistema.
+Natural
+Comportamento delle finestre intuitivo e naturale.
+Intelligent
+Disposizione e riconoscimento intelligenti.
+Layout di aggancio e affiancamento automatico.
+Your Workflow
+Si adatta al tuo modo di lavorare.
+Aggancio e affiancamento automatico funzionano come due modalità – una scorciatoia passa dall’una all’altra.
+Sostieni KSnapUnity
+Se KSnapUnity ti piace, puoi sostenerne lo sviluppo – grazie!
+Layout personali
+Ogni layout che crei nella pagina Layout può anche disporre le finestre – compare qui sopra. La finestra 1 prende la zona 1 e così via; le finestre in più condividono l’ultima zona. Con meno finestre che zone si usa «Principale e pila», così non restano buchi.
+Apri il costruttore di layout
+Layout in base al numero di finestre
+Cambia layout da solo
+Esempio: due finestre affiancate, da tre principale e pila, da cinque una griglia. Senza una regola adatta vale il layout scelto sopra.
+Da
+finestre:
+Rimuovi la regola
+Aggiungi regola
+Area principale a destra
+Rispecchia il layout: la finestra principale a destra, le altre a sinistra.
+Nuove finestre
+Si mettono in fondo
+Prendono il posto principale
+Accanto alla finestra attiva
+Una sola finestra
+Larghezza
+Sotto il 100 % una finestra da sola resta al centro – bello sugli schermi larghi.
+Nessun margine esterno
+Una finestra da sola usa tutto lo schermo, anche con un margine impostato.
+Le finestre scivolano al loro posto
+Quando una finestra si apre, si chiude o si scambia, le altre si muovono dolcemente invece di saltare.
+Durata
+Sempre fluttuanti
+Queste applicazioni non vengono mai disposte e mantengono il loro posto. Le finestre di dialogo fluttuano sempre.
+Ancora nessuna.
+Aggiungi un’applicazione aperta
+Apri prima l’applicazione, poi sceglila qui.
+Scegli…
+Nessun’altra finestra aperta
+Trascina una finestra su un’altra per scambiarle. Rilasciata sulla barra o su un bordo, fluttua liberamente; «Lascia fluttuare la finestra» la riporta indietro. Gli spazi vengono dalla pagina Generale.
+Due finestre si scambiano di posto – rilasciane una sull’altra o usa i tasti.
+Interruttore principale per il trascinamento e i tasti.
+Trascina una finestra sopra il centro di un’altra – l’anteprima mostra due frecce – e rilascia. Con l’affiancamento automatico basta un punto qualsiasi sopra l’altra finestra.
+Finestre principali: %1
+KSnapUnity: %1
+Affiancamento automatico attivo
+Affiancamento automatico disattivato
+Apri l’editor delle impostazioni
+Fai clic, poi OK – si apre l’editor delle impostazioni.
+✔ Pronto – fai clic su OK per aprire l’editor delle impostazioni.
+Modalità
+<b>Modalità 1</b><br/>Barra di aggancio e bordi dello schermo
+Disattivato = modalità 1, attivato = modalità 2
+<b>Modalità 2</b><br/>Affiancamento automatico
+Cambia modalità con:
+Il tasto si cambia nell’editor delle impostazioni. Entrambe le modalità richiedono l’affiancamento automatico e la barra o i bordi dello schermo.
+Impostazioni rapide
+Colori della barra:

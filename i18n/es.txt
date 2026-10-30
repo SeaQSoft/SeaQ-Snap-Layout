@@ -1,35 +1,25 @@
 Cerrar
 Restaurar
 Maximizar
-Desplegar
-Plegar
 Dividir en paralelo
 Dividir arriba y abajo
 Quitar zona
 Cargar plantilla…
 Haz clic en una zona para seleccionarla · doble clic para dividirla · arrastra los divisores
 %1 de %2 zonas
-SeaQ Snap Layout – Editor de ajustes
-para KDE · v%1
 General
 Apariencia
 Comportamiento y animación
 Diseños
 Acerca de y ayuda
 Activo
-En pausa
 Arrastra una ventana al borde superior de la pantalla y suéltala sobre una zona.
 Acoplar
-Mostrar la barra al arrastrar una ventana al borde superior
-Mostrar dónde quedará la ventana
 Restaurar el tamaño original al sacar la ventana
 Espaciado
 Separación entre ventanas
 Separación con el borde de la pantalla
-Aplicaciones excluidas
-Clases de ventana que nunca muestran la barra, una por línea.
 Consejo
-KDE maximiza las ventanas que se arrastran al borde superior. Para un acoplado más fluido, desactívalo en Preferencias del sistema → Bordes de la pantalla.
 Valores recomendados
 Colores, tamaño y forma de la barra.
 Vista previa
@@ -81,8 +71,6 @@ Duplicar
 Eliminar
 Cómo funciona
 Agarra una ventana por la barra de título y arrástrala hacia arriba. La barra baja; suelta la ventana sobre una zona y ocupará exactamente ese espacio. Si vuelves a sacarla, recupera su tamaño anterior.
-Abrir el editor de ajustes
-Preferencias del sistema → Gestión de ventanas → Scripts de KWin → icono de engranaje junto a «SeaQ Snap Layout» → «Abrir el editor de ajustes de Snap Layout» → Aceptar.
 Información
 Versión
 Autor
@@ -102,8 +90,6 @@ Guardar
 Sí
 Zona %1
 Suelta la ventana sobre una zona
-SeaQ Snap Layout: activar/desactivar
-SeaQ Snap Layout: probar la barra
 Mitades
 Dos tercios
 Tres columnas
@@ -115,13 +101,6 @@ Arriba / abajo
 Pila + principal
 Seis mosaicos
 Barra lateral + cuadrícula
-Arrastra las ventanas al borde superior de la pantalla y suéltalas sobre una zona.
-Editor de ajustes
-Abrir el editor de ajustes de Snap Layout
-✔ Listo: haz clic en Aceptar para abrir el editor de ajustes.
-Ajustes rápidos
-Colores de la barra:
-Todos los demás ajustes – apariencia, tamaño, animación, comportamiento y tus propios diseños – se cambian en el editor de ajustes de Snap Layout.
 Ajustes
 Ninguno
 Cambiar
@@ -131,27 +110,21 @@ Asignar
 Quitar
 Barra de acople
 Bordes de la pantalla
-Más formas de acoplar
+Más formas
 Imán de ventanas
 Atajos de teclado
 Atajos
-Cuatro formas de acoplar ventanas. Cada una se activa y desactiva por separado.
 Funciones
 Empuja una ventana contra un borde o una esquina: maximizar, mitades, cuartos.
 Las ventanas se adhieren entre sí y a los bordes de la pantalla.
 Acopla la ventana activa con combinaciones de teclas.
 Vistas previas
 Mostrar las vistas previas en el color de acento
-Desactivado: un marco neutro. Se aplica a todas las vistas previas.
-Clases de ventana que nunca se acoplan, una por línea.
 KDE tiene sus propias acciones de borde de pantalla y su propio acople de ventanas. Si la misma función está activa aquí, desactiva la de KDE: Preferencias del sistema → Gestión de ventanas → Bordes de la pantalla, y Comportamiento de las ventanas → Movimiento.
 Empuja una ventana contra un borde o una esquina de la pantalla y ocupará esa parte. Funciona con o sin la barra de acople.
 Pantalla completa
 Mitad superior
 Desactivado
-Mitad inferior
-Mitad izquierda
-Mitad derecha
 Bordes y esquinas
 Usar los bordes de la pantalla
 Independiente de la barra de acople. Cada borde se activa por separado.
@@ -197,7 +170,6 @@ Quedármelas todas
 Dejarlas
 Bueno saber
 Las acciones de acople usan los mismos espacios que la barra y recuerdan el tamaño anterior al acople: «Restaurar el tamaño anterior al acople» lo recupera.
-SeaQ Snap Layout: %1
 Acoplar a la mitad izquierda
 Acoplar a la mitad derecha
 Acoplar a la mitad superior
@@ -228,9 +200,7 @@ Meta+Mayús + tecla
 Ctrl+Mayús+Alt + tecla
 Ctrl+Alt + teclado numérico
 Sin atajos
-Haz clic y después en Aceptar: se abre el editor de configuración.
 Resistencia a la superposición
-Cuánto hay que empujar una ventana dentro de otra antes de que la suelte. 0 = las ventanas pueden superponerse libremente.
 Restablecer predeterminado
 Restablecer todas las teclas
 Vuelve a dar a cada acción la tecla del esquema elegido y quita las teclas que el esquema no tiene.
@@ -241,7 +211,6 @@ Al cambiar el tamaño de una ventana, las que la tocan mueven el borde compartid
 Mantener alineadas las ventanas apiladas
 Las ventanas una encima de otra mantienen juntos sus bordes izquierdo y derecho; las ventanas de lado, los superiores e inferiores.
 Agitar para soltar
-Agita el ratón mientras redimensionas y las demás ventanas vuelven atrás.
 Atenuar las demás ventanas
 Mientras redimensionas, las ventanas que no siguen se muestran transparentes.
 Vista previa de la barra
@@ -257,11 +226,156 @@ Un empujón corto da la mitad o el cuarto. Mantén la ventana un poco más en el
 Tiempo de espera
 Cuánto tiempo debe quedarse la ventana en el borde antes de crecer.
 Mosaico de bordes propio de KDE
-El maximizar y el mosaico de KDE en los bordes de la pantalla –con su contorno– se pausan mientras SeaQ Snap Layout está activo, para que solo aparezca una vista previa. Tu configuración de KDE no cambia: desactiva esto, desactiva o elimina SeaQ Snap Layout y vuelve el comportamiento de KDE.
 Ajuste de ventanas propio de KDE
 Pausar las zonas de ajuste de KDE mientras el imán está activo
-Para que solo un imán tire de una ventana. Tu configuración de KDE no cambia: desactiva esto, desactiva o elimina SeaQ Snap Layout y vuelve el ajuste de KDE.
-Apoyar SeaQ Snap Layout
-Si te gusta SeaQ Snap Layout, puedes apoyar su desarrollo. ¡Gracias!
 Donar con PayPal
 Invítame a un café
+para KWin · v%1
+Mosaico automático
+Organizar ventanas
+Intercambiar ventanas
+Cada función se puede activar y desactivar por separado.
+Cada ventana encuentra su sitio sola, como en un gestor de ventanas en mosaico.
+Una ventana se detiene en el borde de otra, también si la mueves rápido. Agita el ratón o sigue empujando un momento para soltarla. 0 = las ventanas pueden solaparse libremente.
+Agita el ratón rápido de un lado a otro al cambiar el tamaño y las demás ventanas vuelven. Un tirón rápido en una sola dirección nunca las suelta.
+Cada ventana encuentra su sitio en la pantalla sola. Las ventanas nuevas se suman y las que se cierran dejan sitio a las demás.
+Mosaico
+Organizar ventanas automáticamente
+Desactivado: las ventanas se quedan donde las pongas. Las demás funciones van igual.
+Diseño
+Ventana principal
+Tamaño del área principal
+También cambia cuando redimensionas la ventana principal a mano.
+Ventanas principales
+Cuántas ventanas comparten el área principal (diseño «Principal y pila»).
+Intercambiar
+Soltar una ventana sobre otra
+Teclas
+Cámbialas en la página Atajos de teclado. Con el mosaico automático, las ventanas también intercambian su lugar en el orden.
+Intercambiar con la ventana de la izquierda
+Intercambiar con la ventana de la derecha
+Intercambiar con la ventana de arriba
+Intercambiar con la ventana de abajo
+Activar/desactivar mosaico automático
+Siguiente diseño de mosaico
+Convertir en ventana principal
+Dejar flotar la ventana (salir del mosaico)
+Área principal más grande
+Área principal más pequeña
+Principal y pila
+Principal en el centro
+Columnas
+Filas
+Cuadrícula
+Espiral
+Una a la vez
+Cambiar de modo (acople / mosaico)
+Una ventana principal más
+Una ventana principal menos
+Mover la ventana un puesto adelante
+Mover la ventana un puesto atrás
+Modos
+Espiral interior
+Minimizar
+Vista previa en vivo
+Desactivado
+Borde superior: pantalla completa
+Borde superior: mitad superior
+Borde superior: maximizar
+Arrastra una ventana contra un borde…
+Borde izquierdo: mitad izquierda
+Esquina: un cuarto
+Acerca una ventana a otras…
+De cerca, los bordes se pegan
+Redimensionar también se acopla – aquí a toda la altura
+Arrastra un borde compartido…
+…las vecinas crecen y encogen con él
+…en todas las direcciones
+Una ventana
+Se une una ventana nueva
+Una se cierra – las demás llenan el hueco
+Agarra la ventana A…
+…arrástrala sobre la ventana B…
+…suelta: intercambian sus lugares
+La barra y los bordes de la pantalla estorban al mosaico automático. Por eso funcionan como dos modos – cambia con el atajo o aquí.
+Modo 1 – Barra de acople y bordes de la pantalla
+Barra de acople, bordes de la pantalla, imán de ventanas, atajos e intercambio de ventanas.
+Modo 2 – Mosaico automático
+Mosaico automático, intercambio de ventanas, atajos y el imán para ventanas flotantes.
+El mosaico automático está desactivado – solo funciona el modo 1 y el atajo de modo no hace nada.
+La barra y los bordes están desactivados – solo funciona el modo 2 y el atajo de modo no hace nada.
+Cambiar de modo
+Sin tecla
+Cambiar tecla
+KSnapUnity – Editor de ajustes
+Modo activo
+Barra de acople y bordes de la pantalla
+Haz clic o pulsa %1 para cambiar de modo.
+Solo hay un modo activado.
+Dos ventanas intercambian su lugar: suelta una sobre la otra, o con tecla.
+El maximizado y mosaico propios de KDE en los bordes – con su contorno – se pausan mientras funciona KSnapUnity, para que solo aparezca una vista previa. Tus ajustes de KDE no cambian: desactiva esto, desactiva o quita KSnapUnity y vuelve el comportamiento de KDE.
+Así solo un imán tira de una ventana. Tus ajustes de KDE no cambian: desactiva esto, desactiva o quita KSnapUnity y vuelve el acople de KDE.
+Snap Smarter. Work Better.
+K de KWin · Snap de acople más inteligente · Unity de todo en un sistema
+Unified
+Todas las funciones de ventanas en un sistema.
+Natural
+Comportamiento de ventanas intuitivo y natural.
+Intelligent
+Organización y detección inteligentes.
+Diseños de acople y mosaico automático.
+Your Workflow
+Se adapta a tu forma de trabajar.
+El acople y el mosaico automático funcionan como dos modos – un atajo cambia entre ellos.
+Apoya KSnapUnity
+Si te gusta KSnapUnity, puedes apoyar su desarrollo – ¡gracias!
+Diseños propios
+Cada diseño que crees en la página Diseños también puede organizar ventanas – aparece arriba. La ventana 1 ocupa la zona 1 y así sucesivamente; las demás comparten la última zona. Con menos ventanas que zonas se usa «Principal y pila», para que no queden huecos.
+Abrir el creador de diseños
+Diseño según el número de ventanas
+Cambiar el diseño solo
+Ejemplo: dos ventanas lado a lado, desde tres principal y pila, desde cinco una cuadrícula. Sin regla aplicable se usa el diseño elegido arriba.
+Desde
+ventanas:
+Quitar regla
+Añadir regla
+Área principal a la derecha
+Refleja el diseño: la ventana principal a la derecha, las demás a la izquierda.
+Ventanas nuevas
+Se ponen al final
+Toman el lugar principal
+Junto a la ventana activa
+Una sola ventana
+Ancho
+Por debajo del 100 % una ventana sola queda centrada – ideal en pantallas anchas.
+Sin margen exterior
+Una ventana sola usa toda la pantalla, aunque haya un margen.
+Las ventanas se deslizan a su lugar
+Cuando una ventana se abre, se cierra o se intercambia, las demás se mueven suavemente en vez de saltar.
+Duración
+Siempre flotantes
+Estas aplicaciones nunca se organizan y mantienen su lugar. Los diálogos siempre flotan.
+Ninguna todavía.
+Añadir una aplicación abierta
+Abre primero la aplicación y luego elígela aquí.
+Elegir…
+No hay otra ventana abierta
+Arrastra una ventana sobre otra para intercambiarlas. Si la sueltas en la barra o en un borde, flota libremente; «Dejar flotar la ventana» la devuelve. Los espacios vienen de la página General.
+Dos ventanas intercambian su lugar – suelta una sobre la otra o usa las teclas.
+Interruptor principal para arrastrar y las teclas.
+Arrastra una ventana sobre el centro de otra – la vista previa muestra dos flechas – y suelta. Con el mosaico automático basta cualquier punto sobre la otra ventana.
+Ventanas principales: %1
+KSnapUnity: %1
+Mosaico automático activado
+Mosaico automático desactivado
+Abrir el editor de ajustes
+Haz clic y luego Aceptar – se abre el editor de ajustes.
+✔ Listo – haz clic en Aceptar para abrir el editor de ajustes.
+Modo
+<b>Modo 1</b><br/>Barra de acople y bordes de la pantalla
+Desactivado = modo 1, activado = modo 2
+<b>Modo 2</b><br/>Mosaico automático
+Cambiar de modo con:
+La tecla se cambia en el editor de ajustes. Ambos modos necesitan el mosaico automático y la barra o los bordes de la pantalla.
+Ajustes rápidos
+Colores de la barra:

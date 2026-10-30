@@ -1,35 +1,25 @@
 Cau
 Adfer
 Mwyafu
-Ehangu
-Crebachu
 Rhannu ochr yn ochr
 Rhannu top a gwaelod
 Tynnu’r parth
 Llwytho templed…
 Cliciwch ar barth i’w ddewis · clic dwbl i’w rannu · llusgwch y rhanwyr
 %1 o %2 parth
-SeaQ Snap Layout – Golygydd gosodiadau
-ar gyfer KDE · v%1
 Cyffredinol
 Golwg
 Ymddygiad ac animeiddio
 Cynlluniau
 Ynghylch a chymorth
 Gweithredol
-Wedi oedi
 Llusgwch ffenestr i ymyl uchaf y sgrin a’i gollwng ar barth.
 Snapio
-Dangos y bar wrth lusgo ffenestr i’r ymyl uchaf
-Dangos ble bydd y ffenestr yn glanio
 Adfer y maint gwreiddiol wrth lusgo’r ffenestr allan
 Bylchau
 Bwlch rhwng ffenestri
 Bwlch i ymyl y sgrin
-Rhaglenni wedi’u heithrio
-Dosbarthiadau ffenestri na fyddant byth yn dangos y bar, un i bob llinell.
 Awgrym
-Mae KDE yn mwyafu ffenestri sy’n cael eu llusgo i’r ymyl uchaf. I snapio’n fwy llyfn, diffoddwch hyn yn Gosodiadau’r System → Ymylon y Sgrin.
 Gwerthoedd a argymhellir
 Lliwiau, maint a siâp y bar.
 Rhagolwg
@@ -81,8 +71,6 @@ Dyblygu
 Dileu
 Sut mae’n gweithio
 Gafaelwch mewn ffenestr wrth ei bar teitl a’i llusgo i fyny. Mae’r bar yn llithro i lawr; gollyngwch y ffenestr ar barth a bydd yn llenwi’r union ardal honno. Llusgwch hi allan eto ac fe gaiff ei hen faint yn ôl.
-Agor y golygydd gosodiadau
-Gosodiadau’r System → Rheoli Ffenestri → Sgriptiau KWin → eicon cocsen wrth ymyl “SeaQ Snap Layout” → “Agor golygydd gosodiadau Snap Layout” → Iawn.
 Gwybodaeth
 Fersiwn
 Awdur
@@ -102,8 +90,6 @@ Cadw
 Iawn
 Parth %1
 Gollyngwch y ffenestr ar barth
-SeaQ Snap Layout: troi ymlaen/diffodd
-SeaQ Snap Layout: profi’r bar
 Haneri
 Dwy ran o dair
 Tair colofn
@@ -115,13 +101,6 @@ Top / gwaelod
 Pentwr + prif
 Chwe teilsen
 Bar ochr + grid
-Llusgwch ffenestri i ymyl uchaf y sgrin a’u gollwng ar barth.
-Golygydd gosodiadau
-Agor golygydd gosodiadau Snap Layout
-✔ Yn barod – cliciwch Iawn i agor y golygydd gosodiadau.
-Gosodiadau cyflym
-Lliwiau’r bar:
-Mae pob gosodiad arall – golwg, maint, animeiddio, ymddygiad a’ch cynlluniau eich hun – yn cael ei newid yng ngolygydd gosodiadau Snap Layout.
 Gosodiadau
 Dim
 Newid
@@ -131,27 +110,21 @@ Gosod
 Tynnu
 Bar snapio
 Ymylon y sgrin
-Rhagor o ffyrdd o snapio
+Rhagor o ffyrdd
 Magnet ffenestri
 Llwybrau byr y bysellfwrdd
 Llwybrau byr
-Pedair ffordd o snapio ffenestri. Gellir troi pob un ymlaen ac i ffwrdd ar wahân.
 Nodweddion
 Gwthiwch ffenestr yn erbyn ymyl neu gornel: mwyafu, hanerau, chwarteri.
 Mae ffenestri’n glynu wrth ei gilydd ac wrth ymylon y sgrin.
 Snapiwch y ffenestr weithredol gyda chyfuniadau bysellau.
 Rhagolygon
 Dangos rhagolygon yn y lliw acen
-I ffwrdd: ffrâm niwtral. Yn berthnasol i bob rhagolwg.
-Dosbarthiadau ffenestr na chânt byth eu snapio, un i bob llinell.
 Mae gan KDE ei weithredoedd ymyl sgrin ei hun a’i snapio ffenestri ei hun. Os yw’r un nodwedd ymlaen yma, trowch un KDE i ffwrdd: Gosodiadau’r System → Rheoli Ffenestri → Ymylon y Sgrin, ac Ymddygiad Ffenestri → Symud.
 Gwthiwch ffenestr yn erbyn ymyl neu gornel y sgrin ac mae’n llenwi’r rhan honno. Yn gweithio gyda’r bar neu hebddo.
 Sgrin lawn
 Hanner uchaf
 I ffwrdd
-Hanner isaf
-Hanner chwith
-Hanner de
 Ymylon a chorneli
 Defnyddio ymylon y sgrin
 Yn annibynnol ar y bar. Gellir troi pob ymyl ymlaen ar wahân.
@@ -197,7 +170,6 @@ Cymryd y cyfan
 Eu cadw
 Da gwybod
 Mae’r gweithredoedd snapio’n defnyddio’r un bylchau â’r bar ac yn cofio’r maint cyn snapio: mae “Adfer y maint cyn snapio” yn dod ag ef yn ôl.
-SeaQ Snap Layout: %1
 Snapio i’r hanner chwith
 Snapio i’r hanner de
 Snapio i’r hanner uchaf
@@ -228,9 +200,7 @@ Meta+Shift + bysell
 Ctrl+Shift+Alt + bysell
 Ctrl+Alt + bysellbad rhifau
 Dim llwybrau byr
-Cliciwch, yna Iawn – mae'r golygydd gosodiadau'n agor.
 Gwrthiant rhag gorgyffwrdd
-Pa mor bell sydd rhaid gwthio ffenestr i mewn i un arall cyn iddi ollwng. 0 = gall ffenestri orgyffwrdd yn rhydd.
 Ailosod i'r rhagosodiad
 Ailosod pob bysell
 Yn rhoi bysell y cynllun a ddewiswyd i bob gweithred eto ac yn tynnu bysellau nad ydynt yn y cynllun.
@@ -241,7 +211,6 @@ Pan fyddwch yn newid maint ffenestr, mae ffenestri sy'n ei chyffwrdd yn symud yr
 Cadw ffenestri wedi'u pentyrru mewn llinell
 Mae ffenestri uwchben ei gilydd yn cadw'u hymylon chwith a de gyda'i gilydd, a ffenestri ochr yn ochr eu hymylon top a gwaelod.
 Ysgwyd i ollwng
-Ysgydwch y llygoden wrth newid maint ac mae'r ffenestri eraill yn neidio'n ôl.
 Pylu'r ffenestri eraill
 Wrth newid maint, mae ffenestri nad ydynt yn dilyn yn cael eu dangos yn dryloyw.
 Rhagolwg y bar snapio
@@ -257,11 +226,156 @@ Mae gwthiad byr yn rhoi'r hanner neu'r chwarter. Daliwch y ffenestr wrth yr ymyl
 Amser dal
 Pa mor hir mae'n rhaid i'r ffenestr aros wrth yr ymyl cyn iddi dyfu.
 Teilsio ymylon KDE ei hun
-Mae uchafu a theilsio KDE wrth ymylon y sgrin – gyda'r amlinell – wedi'u hoedi tra bo SeaQ Snap Layout yn rhedeg, fel mai dim ond un rhagolwg sy'n ymddangos. Nid yw eich gosodiadau KDE yn newid: diffoddwch hwn, analluogwch neu dynnwch SeaQ Snap Layout ac mae ymddygiad KDE yn ôl.
 Snapio ffenestri KDE ei hun
 Oedi parthau snapio KDE tra bo'r magnet ymlaen
-Fel mai dim ond un magnet sy'n tynnu ffenestr. Nid yw eich gosodiadau KDE yn newid: diffoddwch hwn, analluogwch neu dynnwch SeaQ Snap Layout ac mae snapio KDE yn ôl.
-Cefnogi SeaQ Snap Layout
-Os ydych chi'n hoffi SeaQ Snap Layout, gallwch gefnogi ei ddatblygiad – diolch!
 Rhoi gyda PayPal
 Prynwch goffi i mi
+ar gyfer KWin · v%1
+Teilsio awtomatig
+Trefnu ffenestri
+Cyfnewid ffenestri
+Gellir troi pob nodwedd ymlaen ac i ffwrdd ar ei phen ei hun.
+Mae pob ffenestr yn dod o hyd i’w lle ei hun, fel mewn rheolwr ffenestri teils.
+Mae ffenestr yn stopio wrth ymyl un arall, hyd yn oed pan fyddwch yn ei symud yn gyflym. Ysgwydwch y llygoden neu daliwch ati i wthio am eiliad i’w rhyddhau. 0 = gall ffenestri orgyffwrdd yn rhydd.
+Ysgwydwch y llygoden yn gyflym yn ôl ac ymlaen wrth newid maint ac mae’r ffenestri eraill yn neidio’n ôl. Nid yw tyniad cyflym i un cyfeiriad byth yn eu rhyddhau.
+Mae pob ffenestr yn dod o hyd i’w lle ar y sgrin ar ei phen ei hun. Mae ffenestri newydd yn ymuno, mae rhai sydd wedi cau yn gadael lle i’r lleill.
+Teilsio
+Trefnu ffenestri’n awtomatig
+I ffwrdd: mae ffenestri’n aros lle rydych yn eu rhoi. Mae’r nodweddion eraill yn gweithio beth bynnag.
+Cynllun
+Prif ffenestr
+Maint y brif ardal
+Mae’n newid hefyd pan fyddwch yn newid maint y brif ffenestr â llaw.
+Prif ffenestri
+Faint o ffenestri sy’n rhannu’r brif ardal (cynllun “Prif a phentwr”).
+Cyfnewid
+Gollwng ffenestr ar un arall
+Bysellau
+Newidiwch nhw ar y dudalen Llwybrau byr y bysellfwrdd. Gyda theilsio awtomatig, mae’r ffenestri hefyd yn cyfnewid eu lle yn y drefn.
+Cyfnewid â’r ffenestr ar y chwith
+Cyfnewid â’r ffenestr ar y dde
+Cyfnewid â’r ffenestr uwchben
+Cyfnewid â’r ffenestr islaw
+Teilsio awtomatig ymlaen/i ffwrdd
+Y cynllun teilsio nesaf
+Gwneud yn brif ffenestr
+Gadael i’r ffenestr arnofio (gadael y teilsio)
+Prif ardal fwy
+Prif ardal lai
+Prif a phentwr
+Prif yn y canol
+Colofnau
+Rhesi
+Grid
+Troell
+Un ar y tro
+Newid modd (snapio / teilsio)
+Un brif ffenestr yn rhagor
+Un brif ffenestr yn llai
+Symud y ffenestr un lle ymlaen
+Symud y ffenestr un lle yn ôl
+Moddau
+Troell i mewn
+Lleihau
+Rhagolwg byw
+Wedi’i ddiffodd
+Ymyl uchaf: sgrin lawn
+Ymyl uchaf: hanner uchaf
+Ymyl uchaf: mwyhau
+Llusgwch ffenestr at ymyl…
+Ymyl chwith: hanner chwith
+Cornel: chwarter
+Symudwch ffenestr at eraill…
+Yn agos, mae’r ymylon yn glynu
+Mae newid maint yn snapio hefyd – yma i’r uchder llawn
+Llusgwch ymyl a rennir…
+…mae’r cymdogion yn tyfu ac yn crebachu gydag ef
+…i bob cyfeiriad
+Un ffenestr
+Daw ffenestr newydd i mewn
+Mae un yn cau – mae’r lleill yn llenwi’r bwlch
+Gafaelwch yn ffenestr A…
+…llusgwch hi ar ffenestr B…
+…gollyngwch: maen nhw’n cyfnewid lle
+Mae’r bar ac ymylon y sgrin yn amharu ar deilsio awtomatig. Felly maen nhw’n rhedeg fel dau fodd – newidiwch gyda’r llwybr byr neu yma.
+Modd 1 – Bar snapio ac ymylon y sgrin
+Bar snapio, ymylon y sgrin, magnet ffenestri, llwybrau byr a chyfnewid ffenestri.
+Modd 2 – Teilsio awtomatig
+Teilsio awtomatig, cyfnewid ffenestri, llwybrau byr a’r magnet ar gyfer ffenestri arnofiol.
+Mae teilsio awtomatig wedi’i ddiffodd – dim ond modd 1 sy’n rhedeg ac nid yw’r llwybr byr modd yn gwneud dim.
+Mae’r bar a’r ymylon wedi’u diffodd – dim ond modd 2 sy’n rhedeg ac nid yw’r llwybr byr modd yn gwneud dim.
+Newid modd
+Dim allwedd
+Newid allwedd
+KSnapUnity – Golygydd gosodiadau
+Modd gweithredol
+Bar snapio ac ymylon y sgrin
+Cliciwch neu pwyswch %1 i newid modd.
+Dim ond un modd sydd ymlaen.
+Mae dwy ffenestr yn cyfnewid lle: gollwng un ar y llall, neu ag allwedd.
+Mae mwyhau a theilsio KDE ei hun ar yr ymylon – gyda’i amlinell – yn oedi tra mae KSnapUnity yn rhedeg, fel mai dim ond un rhagolwg sy’n ymddangos. Nid yw eich gosodiadau KDE yn newid: diffoddwch hyn, analluogwch neu dynnwch KSnapUnity ac mae ymddygiad KDE yn ôl.
+Felly dim ond un magnet sy’n tynnu ffenestr. Nid yw eich gosodiadau KDE yn newid: diffoddwch hyn, analluogwch neu dynnwch KSnapUnity ac mae snapio KDE yn ôl.
+Snap Smarter. Work Better.
+K am KWin · Snap am snapio callach · Unity am bopeth mewn un system
+Unified
+Holl nodweddion ffenestri mewn un system.
+Natural
+Ymddygiad ffenestri greddfol a naturiol.
+Intelligent
+Trefnu a chanfod clyfar.
+Cynlluniau snapio a theilsio awtomatig.
+Your Workflow
+Yn gweddu i’r ffordd rydych chi’n gweithio.
+Mae snapio a theilsio awtomatig yn rhedeg fel dau fodd – un llwybr byr yn newid rhyngddynt.
+Cefnogi KSnapUnity
+Os ydych chi’n hoffi KSnapUnity, gallwch gefnogi ei ddatblygiad – diolch!
+Cynlluniau eich hun
+Gall pob cynllun a adeiladwch ar y dudalen Cynlluniau drefnu ffenestri hefyd – mae’n ymddangos uchod. Mae ffenestr 1 yn cael parth 1 ac ati; mae rhagor o ffenestri yn rhannu’r parth olaf. Gyda llai o ffenestri na pharthau defnyddir „Prif a phentwr“, fel nad oes tyllau.
+Agor yr adeiladwr cynlluniau
+Cynllun yn ôl nifer y ffenestri
+Newid y cynllun ohono’i hun
+Enghraifft: dwy ffenestr ochr yn ochr, o dair prif a phentwr, o bump grid. Heb reol addas defnyddir y cynllun a ddewiswyd uchod.
+O
+ffenestr:
+Tynnu’r rheol
+Ychwanegu rheol
+Prif ardal ar y dde
+Yn adlewyrchu’r cynllun: y brif ffenestr ar y dde, y lleill ar y chwith.
+Ffenestri newydd
+Ymuno ar y diwedd
+Cymryd y prif le
+Wrth ymyl y ffenestr weithredol
+Un ffenestr unigol
+Lled
+O dan 100 % mae ffenestr unigol yn aros yn y canol – braf ar sgriniau llydan.
+Dim ymyl allanol
+Mae ffenestr unigol yn defnyddio’r sgrin gyfan, hyd yn oed gydag ymyl wedi’i gosod.
+Mae ffenestri’n llithro i’w lle
+Pan fydd ffenestr yn agor, cau neu gyfnewid, mae’r lleill yn symud yn llyfn yn lle neidio.
+Hyd
+Arnofio bob amser
+Ni chaiff yr apiau hyn eu trefnu byth ac maen nhw’n cadw eu lle. Mae deialogau’n arnofio bob amser.
+Dim eto.
+Ychwanegu ap agored
+Agorwch yr ap yn gyntaf, yna dewiswch ef yma.
+Dewis…
+Dim ffenestr arall ar agor
+Llusgwch ffenestr ar un arall i’w cyfnewid. Gollyngwch hi ar y bar neu ymyl y sgrin ac mae’n arnofio’n rhydd; mae „Gadael i’r ffenestr arnofio“ yn dod â hi’n ôl. Daw’r bylchau o’r dudalen Cyffredinol.
+Mae dwy ffenestr yn cyfnewid lle – gollwng un ar y llall neu defnyddio’r allweddi.
+Prif switsh ar gyfer llusgo a’r allweddi.
+Llusgwch ffenestr dros ganol un arall – mae’r rhagolwg yn dangos dwy saeth – a gollwng. Gyda theilsio awtomatig mae unrhyw le dros y ffenestr arall yn gwneud y tro.
+Prif ffenestri: %1
+KSnapUnity: %1
+Teilsio awtomatig ymlaen
+Teilsio awtomatig i ffwrdd
+Agor y golygydd gosodiadau
+Cliciwch, yna Iawn – mae’r golygydd gosodiadau’n agor.
+✔ Barod – cliciwch Iawn i agor y golygydd gosodiadau.
+Modd
+<b>Modd 1</b><br/>Bar snapio ac ymylon y sgrin
+I ffwrdd = modd 1, ymlaen = modd 2
+<b>Modd 2</b><br/>Teilsio awtomatig
+Newid modd gyda:
+Newidiwch yr allwedd yn y golygydd gosodiadau. Mae angen teilsio awtomatig a’r bar neu ymylon y sgrin ar y ddau fodd.
+Gosodiadau cyflym
+Lliwiau’r bar:

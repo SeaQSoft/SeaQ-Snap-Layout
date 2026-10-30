@@ -1,35 +1,25 @@
 Kapat
 Geri yükle
 Büyüt
-Genişlet
-Daralt
 Yan yana böl
 Üst ve alt olarak böl
 Bölgeyi kaldır
 Şablon yükle…
 Seçmek için bir bölgeye tıklayın · bölmek için çift tıklayın · ayırıcıları sürükleyin
 %1 / %2 bölge
-SeaQ Snap Layout – Ayar düzenleyicisi
-KDE için · v%1
 Genel
 Görünüm
 Davranış ve animasyon
 Yerleşimler
 Hakkında ve yardım
 Etkin
-Duraklatıldı
 Bir pencereyi ekranın üst kenarına sürükleyin ve bir bölgeye bırakın.
 Yaslama
-Pencere üst kenara sürüklenince yaslama çubuğunu göster
-Pencerenin nereye yerleşeceğini göster
 Pencere dışarı çekilince özgün boyutu geri yükle
 Boşluklar
 Pencereler arası boşluk
 Ekran kenarına boşluk
-Hariç tutulan uygulamalar
-Çubuğun hiç görünmeyeceği pencere sınıfları, her satıra bir tane.
 İpucu
-KDE, üst kenara sürüklenen pencereleri büyütür. Daha akıcı yaslama için bunu Sistem Ayarları → Ekran Kenarları altında kapatın.
 Önerilen değerler
 Yaslama çubuğunun renkleri, boyutu ve şekli.
 Önizleme
@@ -81,8 +71,6 @@ Düzenle
 Sil
 Nasıl çalışır
 Bir pencereyi başlık çubuğundan tutun ve yukarı sürükleyin. Çubuk aşağı kayar; pencereyi bir bölgeye bırakın, tam o alanı kaplar. Yeniden dışarı çektiğinizde eski boyutuna döner.
-Ayar düzenleyicisini açma
-Sistem Ayarları → Pencere Yönetimi → KWin Betikleri → “SeaQ Snap Layout” yanındaki dişli simgesi → “Snap Layout ayar düzenleyicisini aç” → Tamam.
 Bilgi
 Sürüm
 Yazar
@@ -102,8 +90,6 @@ Kaydet
 Evet
 Bölge %1
 Pencereyi bir bölgeye bırakın
-SeaQ Snap Layout: aç/kapat
-SeaQ Snap Layout: çubuğu dene
 Yarımlar
 Üçte iki
 Üç sütun
@@ -115,13 +101,6 @@ Tek bölge
 Yığın + ana
 Altı döşeme
 Kenar çubuğu + ızgara
-Pencereleri ekranın üst kenarına sürükleyin ve bir bölgeye bırakın.
-Ayar düzenleyicisi
-Snap Layout ayar düzenleyicisini aç
-✔ Hazır – ayar düzenleyicisini açmak için Tamam’a tıklayın.
-Hızlı ayarlar
-Çubuk renkleri:
-Diğer tüm ayarlar – görünüm, boyut, animasyon, davranış ve kendi yerleşimleriniz – Snap Layout ayar düzenleyicisinde değiştirilir.
 Ayarlar
 Yok
 Değiştir
@@ -131,27 +110,21 @@ Ata
 Kaldır
 Yaslama çubuğu
 Ekran kenarları
-Daha fazla yaslama yolu
+Diğer yollar
 Pencere mıknatısı
 Klavye kısayolları
 Kısayollar
-Pencereleri yaslamanın dört yolu. Her biri ayrı ayrı açılıp kapatılabilir.
 Özellikler
 Bir pencereyi kenara veya köşeye bastırın: büyüt, yarımlar, çeyrekler.
 Pencereler birbirine ve ekran kenarlarına yapışır.
 Etkin pencereyi tuş kombinasyonlarıyla yaslayın.
 Önizlemeler
 Önizlemeleri vurgu renginde göster
-Kapalı: nötr bir çerçeve. Tüm önizlemeler için geçerlidir.
-Hiç yaslanmayan pencere sınıfları, her satıra bir tane.
 KDE’nin kendi ekran kenarı eylemleri ve kendi pencere yaslaması vardır. Aynı özellik burada açıksa KDE’ninkini kapatın: Sistem Ayarları → Pencere Yönetimi → Ekran Kenarları ve Pencere Davranışı → Taşıma.
 Bir pencereyi ekranın kenarına veya köşesine bastırın, o bölümü doldursun. Yaslama çubuğuyla veya onsuz çalışır.
 Tam ekran
 Üst yarı
 Kapalı
-Alt yarı
-Sol yarı
-Sağ yarı
 Kenarlar ve köşeler
 Ekran kenarlarını kullan
 Yaslama çubuğundan bağımsız. Her kenar ayrı ayrı açılabilir.
@@ -197,7 +170,6 @@ Hepsini devral
 Kalsınlar
 Bilmekte fayda var
 Yaslama eylemleri çubukla aynı boşlukları kullanır ve yaslamadan önceki boyutu hatırlar: “Yaslamadan önceki boyutu geri yükle” onu geri getirir.
-SeaQ Snap Layout: %1
 Sol yarıya yasla
 Sağ yarıya yasla
 Üst yarıya yasla
@@ -228,9 +200,7 @@ Meta+Shift + tuş
 Ctrl+Shift+Alt + tuş
 Ctrl+Alt + sayısal tuş takımı
 Kısayol yok
-Tıklayın, ardından Tamam – ayar düzenleyicisi açılır.
 Örtüşmeye karşı direnç
-Bir pencerenin bırakmadan önce diğerinin içine ne kadar itilmesi gerektiği. 0 = pencereler serbestçe örtüşebilir.
 Varsayılana sıfırla
 Tüm tuşları sıfırla
 Her eyleme seçilen şemanın tuşunu yeniden verir ve şemada olmayan tuşları kaldırır.
@@ -241,7 +211,6 @@ Bir pencereyi boyutlandırdığınızda ona değen pencereler ortak kenarı onun
 Üst üste pencereleri hizada tut
 Üst üste duran pencereler sol ve sağ kenarlarını, yan yana duranlar üst ve alt kenarlarını birlikte tutar.
 Bırakmak için salla
-Boyutlandırırken fareyi sallayın, diğer pencereler geri döner.
 Diğer pencereleri soldur
 Boyutlandırma sırasında birlikte hareket etmeyen pencereler saydam gösterilir.
 Yapışma çubuğu önizlemesi
@@ -257,11 +226,156 @@ Kısa bir itiş yarımı veya çeyreği verir. Pencereyi kenarda biraz daha uzun
 Tutma süresi
 Pencerenin büyümeden önce kenarda ne kadar kalması gerektiği.
 KDE'nin kendi kenar döşemesi
-KDE'nin ekran kenarlarındaki büyütme ve döşemesi – çerçevesiyle birlikte – SeaQ Snap Layout çalışırken duraklatılır, böylece yalnızca bir önizleme görünür. KDE ayarlarınız değişmez: bunu kapatın, SeaQ Snap Layout'u devre dışı bırakın veya kaldırın, KDE'nin davranışı geri gelir.
 KDE'nin kendi pencere yapışması
 Mıknatıs açıkken KDE'nin yapışma bölgelerini duraklat
-Bir pencereyi yalnızca bir mıknatıs çeksin diye. KDE ayarlarınız değişmez: bunu kapatın, SeaQ Snap Layout'u devre dışı bırakın veya kaldırın, KDE'nin yapışması geri gelir.
-SeaQ Snap Layout'u destekle
-SeaQ Snap Layout'u beğendiyseniz geliştirmesini destekleyebilirsiniz – teşekkürler!
 PayPal ile bağış yap
 Bana bir kahve ısmarla
+KWin için · v%1
+Otomatik döşeme
+Pencereleri düzenle
+Pencereleri değiştir
+Her özellik ayrı ayrı açılıp kapatılabilir.
+Her pencere yerini kendisi bulur, döşemeli bir pencere yöneticisindeki gibi.
+Bir pencere, hızlı taşısanız bile başka birinin kenarında durur. Bırakmak için fareyi sallayın ya da bir an daha itmeye devam edin. 0 = pencereler serbestçe üst üste binebilir.
+Boyutlandırırken fareyi hızla ileri geri sallayın, diğer pencereler geri sıçrar. Tek yöne hızlı bir çekiş onları asla bırakmaz.
+Her pencere ekrandaki yerini kendisi bulur. Yeni pencereler sıraya katılır, kapananlar diğerlerine yer açar.
+Döşeme
+Pencereleri otomatik düzenle
+Kapalı: pencereler bıraktığınız yerde kalır. Diğer özellikler her durumda çalışır.
+Yerleşim
+Ana pencere
+Ana alanın boyutu
+Ana pencereyi elle boyutlandırdığınızda da değişir.
+Ana pencereler
+Ana alanı kaç pencerenin paylaştığı (“Ana ve yığın” yerleşimi).
+Değiştir
+Bir pencereyi diğerinin üzerine bırak
+Tuşlar
+Bunları Klavye kısayolları sayfasında değiştirin. Otomatik döşemede pencereler sıradaki yerlerini de değiştirir.
+Soldaki pencereyle değiştir
+Sağdaki pencereyle değiştir
+Üstteki pencereyle değiştir
+Alttaki pencereyle değiştir
+Otomatik döşeme aç/kapat
+Sonraki döşeme yerleşimi
+Ana pencere yap
+Pencereyi serbest bırak (döşemeden çık)
+Ana alanı büyüt
+Ana alanı küçült
+Ana ve yığın
+Ortada ana
+Sütunlar
+Satırlar
+Izgara
+Sarmal
+Birer birer
+Kipi değiştir (yaslama / döşeme)
+Bir ana pencere daha
+Bir ana pencere eksik
+Pencereyi bir sıra ileri al
+Pencereyi bir sıra geri al
+Kipler
+İçe doğru sarmal
+Simge durumuna küçült
+Canlı önizleme
+Kapalı
+Üst kenar: tam ekran
+Üst kenar: üst yarı
+Üst kenar: büyüt
+Bir pencereyi kenara sürükleyin…
+Sol kenar: sol yarı
+Köşe: çeyrek
+Bir pencereyi diğerlerine yaklaştırın…
+Yaklaşınca kenarlar birbirine yapışır
+Boyutlandırma da yaslanır – burada tam yüksekliğe
+Ortak bir kenarı sürükleyin…
+…komşular onunla birlikte büyür ve küçülür
+…her yönde
+Tek pencere
+Yeni bir pencere katılır
+Biri kapanır – diğerleri boşluğu doldurur
+A penceresini tutun…
+…B penceresinin üzerine sürükleyin…
+…bırakın: yer değiştirirler
+Yaslama çubuğu ve ekran kenarları otomatik döşemeyi engeller. Bu yüzden iki kip olarak çalışırlar – kısayolla veya buradan değiştirin.
+Kip 1 – Yaslama çubuğu ve ekran kenarları
+Yaslama çubuğu, ekran kenarları, pencere mıknatısı, kısayollar ve pencere değiştirme.
+Kip 2 – Otomatik döşeme
+Otomatik döşeme, pencere değiştirme, kısayollar ve serbest pencereler için mıknatıs.
+Otomatik döşeme kapalı – yalnızca kip 1 çalışır ve kip kısayolu hiçbir şey yapmaz.
+Çubuk ve kenarlar kapalı – yalnızca kip 2 çalışır ve kip kısayolu hiçbir şey yapmaz.
+Kipi değiştir
+Tuş yok
+Tuşu değiştir
+KSnapUnity – Ayar düzenleyici
+Etkin kip
+Yaslama çubuğu ve ekran kenarları
+Kipi değiştirmek için tıklayın veya %1 tuşuna basın.
+Yalnızca bir kip açık.
+İki pencere yer değiştirir: birini diğerinin üzerine bırakın veya bir tuşla.
+KDE’nin kenarlardaki kendi büyütme ve döşemesi – dış çizgisiyle – KSnapUnity çalışırken duraklatılır, böylece tek bir önizleme görünür. KDE ayarlarınız değişmez: bunu kapatın, KSnapUnity’yi devre dışı bırakın veya kaldırın; KDE’nin davranışı geri gelir.
+Böylece pencereyi yalnızca bir mıknatıs çeker. KDE ayarlarınız değişmez: bunu kapatın, KSnapUnity’yi devre dışı bırakın veya kaldırın; KDE’nin yaslaması geri gelir.
+Snap Smarter. Work Better.
+K: KWin · Snap: daha akıllı yaslama · Unity: her şey tek sistemde
+Unified
+Tüm pencere özellikleri tek bir sistemde.
+Natural
+Sezgisel, doğal pencere davranışı.
+Intelligent
+Akıllı yerleştirme ve algılama.
+Yaslama yerleşimleri ve otomatik döşeme.
+Your Workflow
+Çalışma biçiminize uyar.
+Yaslama ve otomatik döşeme iki kip olarak çalışır – tek bir kısayol aralarında geçiş yapar.
+KSnapUnity’yi destekleyin
+KSnapUnity’yi beğendiyseniz geliştirilmesini destekleyebilirsiniz – teşekkürler!
+Kendi yerleşimleriniz
+Yerleşimler sayfasında oluşturduğunuz her yerleşim pencereleri de düzenleyebilir – yukarıda görünür. Pencere 1 bölge 1’i alır ve böyle devam eder; fazla pencereler son bölgeyi paylaşır. Bölgeden az pencere varsa boşluk kalmasın diye „Ana ve yığın“ kullanılır.
+Yerleşim oluşturucuyu aç
+Pencere sayısına göre yerleşim
+Yerleşimi kendiliğinden değiştir
+Örnek: iki pencere yan yana, üçten itibaren ana ve yığın, beşten itibaren ızgara. Uygun kural yoksa yukarıda seçilen yerleşim kullanılır.
+Şu sayıdan:
+pencere:
+Kuralı kaldır
+Kural ekle
+Ana alan sağda
+Yerleşimi aynalar: ana pencere sağda, diğerleri solda.
+Yeni pencereler
+Sona eklenir
+Ana yeri alır
+Etkin pencerenin yanına
+Tek bir pencere
+Genişlik
+100 %’ün altında tek pencere ortada kalır – geniş ekranlarda hoş.
+Dış kenar boşluğu yok
+Tek pencere, kenar boşluğu ayarlı olsa bile tüm ekranı kullanır.
+Pencereler yerlerine kayar
+Bir pencere açıldığında, kapandığında veya yer değiştirdiğinde diğerleri zıplamak yerine yumuşakça hareket eder.
+Süre
+Her zaman serbest
+Bu uygulamalar asla düzenlenmez ve kendi yerlerini korur. İletişim kutuları her zaman serbesttir.
+Henüz yok.
+Açık bir uygulama ekle
+Önce uygulamayı açın, sonra buradan seçin.
+Seçin…
+Başka açık pencere yok
+Yer değiştirmek için bir pencereyi diğerinin üzerine sürükleyin. Çubuğa veya ekran kenarına bırakılırsa serbest kalır; „Pencereyi serbest bırak“ onu geri getirir. Boşluklar Genel sayfasından gelir.
+İki pencere yer değiştirir – birini diğerinin üzerine bırakın veya tuşları kullanın.
+Sürükleme ve tuşlar için ana anahtar.
+Bir pencereyi diğerinin ortasına sürükleyin – önizleme iki ok gösterir – ve bırakın. Otomatik döşemede diğer pencerenin üzerinde herhangi bir yer yeterlidir.
+Ana pencereler: %1
+KSnapUnity: %1
+Otomatik döşeme açık
+Otomatik döşeme kapalı
+Ayar düzenleyiciyi aç
+Tıklayın, sonra Tamam – ayar düzenleyici açılır.
+✔ Hazır – ayar düzenleyiciyi açmak için Tamam’a tıklayın.
+Kip
+<b>Kip 1</b><br/>Yaslama çubuğu ve ekran kenarları
+Kapalı = kip 1, açık = kip 2
+<b>Kip 2</b><br/>Otomatik döşeme
+Kip değiştirme tuşu:
+Tuşu ayar düzenleyicide değiştirirsiniz. İki kip de otomatik döşeme ile yaslama çubuğu veya ekran kenarları gerektirir.
+Hızlı ayarlar
+Çubuk renkleri:

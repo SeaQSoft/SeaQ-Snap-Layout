@@ -1,35 +1,25 @@
 Luk
 Gendan
 Maksimér
-Fold ud
-Fold sammen
 Del side om side
 Del øverst og nederst
 Fjern zone
 Indlæs skabelon…
 Klik på en zone for at vælge den · dobbeltklik for at dele · træk i skillelinjerne
 %1 af %2 zoner
-SeaQ Snap Layout – Indstillingseditor
-til KDE · v%1
 Generelt
 Udseende
 Adfærd & animation
 Layouts
 Om & hjælp
 Aktiv
-Sat på pause
 Træk et vindue til skærmens overkant og slip det på en zone.
 Fastgørelse
-Vis bjælken, når et vindue trækkes mod overkanten
-Vis hvor vinduet havner
 Gendan den oprindelige størrelse, når vinduet trækkes ud
 Afstand
 Afstand mellem vinduer
 Afstand til skærmkanten
-Udelukkede programmer
-Vinduesklasser, der aldrig viser bjælken, én pr. linje.
 Tip
-KDE maksimerer vinduer, der trækkes mod overkanten. Slå det fra under Systemindstillinger → Skærmkanter for en mere glidende fastgørelse.
 Anbefalede værdier
 Bjælkens farver, størrelse og form.
 Forhåndsvisning
@@ -81,8 +71,6 @@ Duplikér
 Slet
 Sådan virker det
 Tag fat i et vindue i titellinjen og træk det opad. Bjælken glider ned; slip vinduet på en zone, så fylder det præcis det område. Trækker du det ud igen, får det sin gamle størrelse tilbage.
-Åbn indstillingseditoren
-Systemindstillinger → Vindueshåndtering → KWin-scripts → tandhjulsikonet ved “SeaQ Snap Layout” → “Åbn Snap Layout-indstillingseditoren” → OK.
 Information
 Version
 Ophavsperson
@@ -102,8 +90,6 @@ Gem
 Ja
 Zone %1
 Slip vinduet på en zone
-SeaQ Snap Layout: til/fra
-SeaQ Snap Layout: test bjælken
 Halvdele
 To tredjedele
 Tre kolonner
@@ -115,13 +101,6 @@ Fokus i midten
 Stak + hoved
 Seks felter
 Sidepanel + gitter
-Træk vinduer til skærmens overkant og slip dem på en zone.
-Indstillingseditor
-Åbn Snap Layout-indstillingseditoren
-✔ Klar – klik på OK for at åbne indstillingseditoren.
-Hurtige indstillinger
-Bjælkens farver:
-Alle øvrige indstillinger – udseende, størrelse, animation, adfærd og dine egne layouts – ændres i Snap Layout-indstillingseditoren.
 Indstillinger
 Ingen
 Skift
@@ -131,27 +110,21 @@ Angiv
 Fjern
 Fastgørelsesbjælke
 Skærmkanter
-Flere måder at fastgøre på
+Flere måder
 Vinduesmagnet
 Tastaturgenveje
 Genveje
-Fire måder at fastgøre vinduer på. Hver kan slås til og fra for sig.
 Funktioner
 Skub et vindue mod en kant eller et hjørne: maksimér, halvdele, kvarte.
 Vinduer klæber til hinanden og til skærmkanterne.
 Fastgør det aktive vindue med tastekombinationer.
 Forhåndsvisninger
 Vis forhåndsvisninger i accentfarven
-Fra: en neutral ramme. Gælder alle forhåndsvisninger.
-Vinduesklasser, der aldrig fastgøres, én pr. linje.
 KDE har sine egne skærmkanthandlinger og sin egen vinduesfastgørelse. Når samme funktion er slået til her, så slå KDE's fra: Systemindstillinger → Vindueshåndtering → Skærmkanter samt Vinduesadfærd → Flytning.
 Skub et vindue mod en kant eller et hjørne af skærmen, så fylder det den del. Virker med eller uden bjælken.
 Fuldskærm
 Øverste halvdel
 Fra
-Nederste halvdel
-Venstre halvdel
-Højre halvdel
 Kanter og hjørner
 Brug skærmkanter
 Uafhængigt af bjælken. Hver kant kan slås til for sig.
@@ -197,7 +170,6 @@ Overtag alle
 Behold dem
 Godt at vide
 Fastgørelseshandlingerne bruger de samme afstande som bjælken og husker størrelsen fra før fastgørelsen: "Gendan størrelsen fra før fastgørelse" henter den tilbage.
-SeaQ Snap Layout: %1
 Fastgør i venstre halvdel
 Fastgør i højre halvdel
 Fastgør i øverste halvdel
@@ -228,9 +200,7 @@ Meta+Skift + tast
 Ctrl+Skift+Alt + tast
 Ctrl+Alt + numerisk tastatur
 Ingen genveje
-Klik, og derefter OK – indstillingseditoren åbnes.
 Modstand mod overlapning
-Hvor langt du skal skubbe et vindue ind i et andet, før det giver slip. 0 = vinduer kan overlappe frit.
 Nulstil til standard
 Nulstil alle taster
 Giver hver handling tasten fra det valgte skema igen og fjerner taster, som skemaet ikke har.
@@ -241,7 +211,6 @@ Når du ændrer størrelsen på et vindue, flytter vinduer, der rører det, den 
 Hold stablede vinduer på linje
 Vinduer over hinanden holder venstre og højre kant sammen, vinduer ved siden af hinanden top- og bundkant.
 Ryst for at slippe
-Ryst musen, mens du ændrer størrelse, og de andre vinduer springer tilbage.
 Ton de andre vinduer ned
 Mens du ændrer størrelse, vises vinduer, der ikke følger med, gennemsigtige.
 Forhåndsvisning for snapbjælken
@@ -257,11 +226,156 @@ Et kort skub giver halvdelen eller kvarten. Hold vinduet lidt længere ved kante
 Holdetid
 Hvor længe vinduet skal blive ved kanten, før det vokser.
 KDE's egne kantfliser
-KDE's egen maksimering og fliselægning ved skærmkanterne – med omrids – holder pause, mens SeaQ Snap Layout kører, så der kun vises én forhåndsvisning. Dine KDE-indstillinger ændres ikke: slå dette fra, deaktivér eller fjern SeaQ Snap Layout, og KDE's egen opførsel er tilbage.
 KDE's egen vinduesfastgørelse
 Sæt KDE's fastgørelseszoner på pause, mens magneten er til
-Så kun én magnet trækker i et vindue. Dine KDE-indstillinger ændres ikke: slå dette fra, deaktivér eller fjern SeaQ Snap Layout, og KDE's egen fastgørelse er tilbage.
-Støt SeaQ Snap Layout
-Hvis du kan lide SeaQ Snap Layout, kan du støtte udviklingen – tak!
 Donér med PayPal
 Køb mig en kop kaffe
+til KWin · v%1
+Automatisk fliseopdeling
+Arranger vinduer
+Byt vinduer
+Hver funktion kan slås til og fra for sig.
+Hvert vindue finder selv sin plads, som i en fliseopdelende vindueshåndtering.
+Et vindue stopper ved kanten af et andet, også når du flytter det hurtigt. Ryst musen eller bliv ved med at skubbe et øjeblik for at slippe. 0 = vinduer må overlappe frit.
+Ryst musen hurtigt frem og tilbage, mens du ændrer størrelse, så springer de andre vinduer tilbage. Et hurtigt træk i én retning slipper aldrig.
+Hvert vindue finder selv sin plads på skærmen. Nye vinduer kommer med, lukkede giver plads til de andre.
+Fliseopdeling
+Arranger vinduer automatisk
+Fra: vinduer bliver, hvor du lægger dem. De andre funktioner virker uanset.
+Layout
+Hovedvindue
+Størrelse på hovedområdet
+Ændres også, når du ændrer hovedvinduets størrelse i hånden.
+Hovedvinduer
+Hvor mange vinduer der deler hovedområdet (layoutet “Hoved og stak”).
+Byt
+Slip et vindue på et andet
+Taster
+Skift dem på siden Tastaturgenveje. Med automatisk fliseopdeling bytter vinduerne også plads i rækkefølgen.
+Byt med vinduet til venstre
+Byt med vinduet til højre
+Byt med vinduet ovenover
+Byt med vinduet nedenunder
+Automatisk fliseopdeling til/fra
+Næste fliselayout
+Gør til hovedvindue
+Lad vinduet svæve (forlad fliseopdeling)
+Større hovedområde
+Mindre hovedområde
+Hoved og stak
+Hoved i midten
+Kolonner
+Rækker
+Gitter
+Spiral
+Ét ad gangen
+Skift tilstand (fastgørelse / fliser)
+Ét hovedvindue mere
+Ét hovedvindue mindre
+Flyt vinduet én plads frem
+Flyt vinduet én plads tilbage
+Tilstande
+Spiral indad
+Minimér
+Live-forhåndsvisning
+Slået fra
+Øverste kant: fuld skærm
+Øverste kant: øverste halvdel
+Øverste kant: maksimér
+Træk et vindue mod en kant…
+Venstre kant: venstre halvdel
+Hjørne: en fjerdedel
+Flyt et vindue hen mod andre…
+Tæt på klæber kanterne sammen
+Størrelsesændring klæber også – her til fuld højde
+Træk i en fælles kant…
+…naboerne vokser og krymper med
+…i alle retninger
+Ét vindue
+Et nyt vindue kommer til
+Ét lukker – de andre fylder hullet
+Tag fat i vindue A…
+…træk det over på vindue B…
+…slip: de bytter plads
+Bjælken og skærmkanterne står i vejen for automatisk fliseopdeling. Derfor kører de som to tilstande – skift med genvejen eller her.
+Tilstand 1 – Fastgørelsesbjælke og skærmkanter
+Fastgørelsesbjælke, skærmkanter, vinduesmagnet, genveje og byt vinduer.
+Tilstand 2 – Automatisk fliseopdeling
+Automatisk fliseopdeling, byt vinduer, genveje og magneten til svævende vinduer.
+Automatisk fliseopdeling er slået fra – kun tilstand 1 kører, og tilstandsgenvejen gør intet.
+Bjælken og skærmkanterne er slået fra – kun tilstand 2 kører, og tilstandsgenvejen gør intet.
+Skift tilstand
+Ingen tast
+Skift tast
+KSnapUnity – Indstillingseditor
+Aktiv tilstand
+Fastgørelsesbjælke og skærmkanter
+Klik eller tryk %1 for at skifte tilstand.
+Kun én tilstand er slået til.
+To vinduer bytter plads: slip det ene på det andet, eller med en tast.
+KDE’s egen maksimering og fliseopdeling ved skærmkanterne – med omrids – holder pause, mens KSnapUnity kører, så der kun vises én forhåndsvisning. Dine KDE-indstillinger ændres ikke: slå dette fra, deaktivér eller fjern KSnapUnity, og KDE’s egen opførsel er tilbage.
+Så trækker kun én magnet i et vindue. Dine KDE-indstillinger ændres ikke: slå dette fra, deaktivér eller fjern KSnapUnity, og KDE’s egen fastgørelse er tilbage.
+Snap Smarter. Work Better.
+K for KWin · Snap for smartere fastgørelse · Unity for alt i ét system
+Unified
+Alle vinduesfunktioner i ét system.
+Natural
+Intuitiv, naturlig vinduesadfærd.
+Intelligent
+Smart placering og genkendelse.
+Fastgørelseslayouts og automatisk fliseopdeling.
+Your Workflow
+Passer til den måde, du arbejder på.
+Fastgørelse og automatisk fliseopdeling kører som to tilstande – én genvej skifter mellem dem.
+Støt KSnapUnity
+Kan du lide KSnapUnity, kan du støtte udviklingen – tak!
+Egne layouts
+Hvert layout, du bygger på siden Layouts, kan også arrangere vinduer – det vises ovenfor. Vindue 1 får zone 1 osv.; flere vinduer deler den sidste zone. Med færre vinduer end zoner bruges “Hoved og stak”, så der ikke opstår huller.
+Åbn layoutbyggeren
+Layout efter antal vinduer
+Skift layout af sig selv
+Eksempel: to vinduer side om side, fra tre hoved og stak, fra fem et gitter. Uden passende regel bruges layoutet valgt ovenfor.
+Fra
+vinduer:
+Fjern regel
+Tilføj regel
+Hovedområde til højre
+Spejler layoutet: hovedvinduet til højre, de andre til venstre.
+Nye vinduer
+Stiller sig bagerst
+Tager hovedpladsen
+Ved siden af det aktive vindue
+Et enkelt vindue
+Bredde
+Under 100 % holder et enligt vindue i midten – flot på brede skærme.
+Ingen ydre margen
+Et enligt vindue bruger hele skærmen, selv når en margen er sat.
+Vinduer glider på plads
+Når et vindue åbner, lukker eller bytter, flytter de andre sig blødt i stedet for at hoppe.
+Varighed
+Altid svævende
+Disse programmer arrangeres aldrig og beholder deres egen plads. Dialoger svæver altid.
+Ingen endnu.
+Tilføj et åbent program
+Åbn programmet først, og vælg det så her.
+Vælg…
+Intet andet vindue åbent
+Træk et vindue over på et andet for at bytte dem. Slipper du det på bjælken eller en skærmkant, svæver det frit; “Lad vinduet svæve” bringer det tilbage. Mellemrummene kommer fra siden Generelt.
+To vinduer bytter plads – slip det ene på det andet, eller brug tasterne.
+Hovedkontakt for træk og tasterne.
+Træk et vindue over midten af et andet – forhåndsvisningen viser to pile – og slip. Med automatisk fliseopdeling er hvor som helst over det andet vindue nok.
+Hovedvinduer: %1
+KSnapUnity: %1
+Automatisk fliseopdeling til
+Automatisk fliseopdeling fra
+Åbn indstillingseditoren
+Klik, derefter OK – indstillingseditoren åbner.
+✔ Klar – klik OK for at åbne indstillingseditoren.
+Tilstand
+<b>Tilstand 1</b><br/>Fastgørelsesbjælke og skærmkanter
+Fra = tilstand 1, til = tilstand 2
+<b>Tilstand 2</b><br/>Automatisk fliseopdeling
+Skift tilstand med:
+Tasten ændres i indstillingseditoren. Begge tilstande kræver automatisk fliseopdeling og bjælken eller skærmkanterne.
+Hurtige indstillinger
+Bjælkens farver:

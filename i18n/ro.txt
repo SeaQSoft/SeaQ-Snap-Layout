@@ -1,35 +1,25 @@
 Închide
 Restabilește
 Maximizează
-Extinde
-Restrânge
 Împarte alăturat
 Împarte sus și jos
 Elimină zona
 Încarcă un șablon…
 Clic pe o zonă pentru a o selecta · dublu clic pentru a o împărți · trage separatoarele
 %1 din %2 zone
-SeaQ Snap Layout – Editor de setări
-pentru KDE · v%1
 General
 Aspect
 Comportament și animație
 Aranjamente
 Despre și ajutor
 Activ
-În pauză
 Trage o fereastră spre marginea de sus a ecranului și las-o pe o zonă.
 Ancorare
-Arată bara când tragi o fereastră spre marginea de sus
-Arată unde va ajunge fereastra
 Restabilește dimensiunea inițială când scoți fereastra
 Spațiere
 Spațiu între ferestre
 Spațiu față de marginea ecranului
-Aplicații excluse
-Clase de ferestre pentru care bara nu apare niciodată, câte una pe rând.
 Sfat
-KDE maximizează ferestrele trase spre marginea de sus. Pentru o ancorare mai fluidă, dezactivează asta în Configurări de sistem → Marginile ecranului.
 Valori recomandate
 Culorile, dimensiunea și forma barei.
 Previzualizare
@@ -81,8 +71,6 @@ Duplică
 Șterge
 Cum funcționează
 Prinde o fereastră de bara de titlu și trage-o în sus. Bara coboară; las-o pe o zonă și fereastra ocupă exact acea suprafață. Când o tragi din nou afară, își recapătă dimensiunea anterioară.
-Deschiderea editorului de setări
-Configurări de sistem → Gestionarea ferestrelor → Scripturi KWin → pictograma roată dințată de lângă „SeaQ Snap Layout” → „Deschide editorul de setări Snap Layout” → OK.
 Informații
 Versiune
 Autor
@@ -102,8 +90,6 @@ Salvează
 Da
 Zona %1
 Lasă fereastra pe o zonă
-SeaQ Snap Layout: pornește/oprește
-SeaQ Snap Layout: testează bara
 Jumătăți
 Două treimi
 Trei coloane
@@ -115,13 +101,6 @@ Sus / jos
 Stivă + principal
 Șase dale
 Bară laterală + grilă
-Trage ferestrele spre marginea de sus a ecranului și lasă-le pe o zonă.
-Editor de setări
-Deschide editorul de setări Snap Layout
-✔ Gata – apasă OK pentru a deschide editorul de setări.
-Setări rapide
-Culorile barei:
-Toate celelalte setări – aspect, dimensiune, animație, comportament și aranjamentele tale – se modifică în editorul de setări Snap Layout.
 Setări
 Niciuna
 Schimbă
@@ -131,27 +110,21 @@ Setează
 Elimină
 Bara de fixare
 Marginile ecranului
-Alte moduri de fixare
+Alte moduri
 Magnetul ferestrelor
 Scurtături de tastatură
 Scurtături
-Patru moduri de a fixa ferestrele. Fiecare se pornește și se oprește separat.
 Funcții
 Împinge o fereastră spre o margine sau un colț: maximizare, jumătăți, sferturi.
 Ferestrele se lipesc între ele și de marginile ecranului.
 Fixează fereastra activă cu combinații de taste.
 Previzualizări
 Arată previzualizările în culoarea de accent
-Oprit: un cadru neutru. Se aplică tuturor previzualizărilor.
-Clase de ferestre care nu sunt fixate niciodată, câte una pe rând.
 KDE are propriile acțiuni pentru marginile ecranului și propria aliniere a ferestrelor. Dacă aceeași funcție este pornită aici, oprește-o pe cea din KDE: Configurări de sistem → Gestionarea ferestrelor → Marginile ecranului, și Comportamentul ferestrelor → Mutare.
 Împinge o fereastră spre o margine sau un colț al ecranului și va umple acea parte. Merge cu sau fără bara de fixare.
 Ecran complet
 Jumătatea de sus
 Oprit
-Jumătatea de jos
-Jumătatea stângă
-Jumătatea dreaptă
 Margini și colțuri
 Folosește marginile ecranului
 Independent de bara de fixare. Fiecare margine se pornește separat.
@@ -197,7 +170,6 @@ Preia-le pe toate
 Păstrează-le
 Bine de știut
 Acțiunile de fixare folosesc aceleași spații ca bara și rețin mărimea dinainte de fixare: „Restabilește mărimea dinainte de fixare” o readuce.
-SeaQ Snap Layout: %1
 Fixează în jumătatea stângă
 Fixează în jumătatea dreaptă
 Fixează în jumătatea de sus
@@ -228,9 +200,7 @@ Meta+Shift + tastă
 Ctrl+Shift+Alt + tastă
 Ctrl+Alt + tastatura numerică
 Fără scurtături
-Faceți clic, apoi OK – se deschide editorul de setări.
 Rezistență la suprapunere
-Cât de adânc trebuie împinsă o fereastră în alta până să fie eliberată. 0 = ferestrele se pot suprapune liber.
 Revenire la implicit
 Resetează toate tastele
 Dă din nou fiecărei acțiuni tasta din schema aleasă și elimină tastele pe care schema nu le are.
@@ -241,7 +211,6 @@ Când redimensionați o fereastră, ferestrele care o ating mută marginea comun
 Păstrează ferestrele stivuite aliniate
 Ferestrele una peste alta își păstrează marginile stânga și dreapta împreună, cele alăturate marginile de sus și de jos.
 Scuturați pentru a desprinde
-Scuturați mausul în timpul redimensionării și celelalte ferestre revin la loc.
 Estompează celelalte ferestre
 În timpul redimensionării, ferestrele care nu urmează sunt afișate transparent.
 Previzualizarea barei de ancorare
@@ -257,11 +226,156 @@ O împingere scurtă dă jumătatea sau sfertul. Țineți fereastra puțin mai m
 Timp de ținere
 Cât timp trebuie să rămână fereastra la margine înainte să crească.
 Aranjarea proprie pe margini a KDE
-Maximizarea și aranjarea KDE la marginile ecranului – cu contur – sunt puse pe pauză cât rulează SeaQ Snap Layout, ca să apară o singură previzualizare. Setările KDE nu se schimbă: dezactivați asta, dezactivați sau eliminați SeaQ Snap Layout și comportamentul KDE revine.
 Ancorarea proprie a ferestrelor KDE
 Pune pe pauză zonele de ancorare KDE cât magnetul este activ
-Ca un singur magnet să tragă de o fereastră. Setările KDE nu se schimbă: dezactivați asta, dezactivați sau eliminați SeaQ Snap Layout și ancorarea KDE revine.
-Susține SeaQ Snap Layout
-Dacă vă place SeaQ Snap Layout, puteți susține dezvoltarea – mulțumesc!
 Donează cu PayPal
 Cumpără-mi o cafea
+pentru KWin · v%1
+Aranjare automată
+Aranjarea ferestrelor
+Schimbarea ferestrelor
+Fiecare funcție poate fi pornită și oprită separat.
+Fiecare fereastră își găsește singură locul, ca într-un manager de ferestre cu dale.
+O fereastră se oprește la marginea alteia, chiar dacă o miști repede. Scutură mouse-ul sau mai împinge o clipă ca să o desprinzi. 0 = ferestrele se pot suprapune liber.
+Scutură repede mouse-ul înainte și înapoi în timp ce redimensionezi și celelalte ferestre sar înapoi. O smucitură rapidă într-o singură direcție nu le desprinde niciodată.
+Fiecare fereastră își găsește singură locul pe ecran. Ferestrele noi se alătură, cele închise fac loc celorlalte.
+Aranjare
+Aranjează ferestrele automat
+Oprit: ferestrele rămân unde le pui. Celelalte funcții merg oricum.
+Aranjament
+Fereastra principală
+Mărimea zonei principale
+Se schimbă și când redimensionezi de mână fereastra principală.
+Ferestre principale
+Câte ferestre împart zona principală (aranjamentul „Principală și stivă”).
+Schimbă
+Lasă o fereastră peste alta
+Taste
+Schimbă-le pe pagina Scurtături de tastatură. Cu aranjarea automată, ferestrele își schimbă și locul în ordine.
+Schimbă cu fereastra din stânga
+Schimbă cu fereastra din dreapta
+Schimbă cu fereastra de deasupra
+Schimbă cu fereastra de dedesubt
+Aranjare automată pornit/oprit
+Aranjamentul următor
+Fă-o fereastra principală
+Lasă fereastra să plutească (ieși din aranjare)
+Zonă principală mai mare
+Zonă principală mai mică
+Principală și stivă
+Principală la mijloc
+Coloane
+Rânduri
+Grilă
+Spirală
+Câte una
+Schimbă modul (fixare / aranjare)
+Încă o fereastră principală
+O fereastră principală mai puțin
+Mută fereastra un loc înainte
+Mută fereastra un loc înapoi
+Moduri
+Spirală spre interior
+Minimizează
+Previzualizare în direct
+Oprit
+Marginea de sus: ecran complet
+Marginea de sus: jumătatea de sus
+Marginea de sus: maximizează
+Trage o fereastră spre o margine…
+Marginea stângă: jumătatea stângă
+Colț: un sfert
+Apropie o fereastră de altele…
+Aproape, marginile se lipesc
+Și redimensionarea se fixează – aici pe toată înălțimea
+Trage de o margine comună…
+…vecinele cresc și se micșorează odată cu ea
+…în orice direcție
+O fereastră
+Se alătură o fereastră nouă
+Una se închide – celelalte umplu golul
+Apucă fereastra A…
+…trage-o peste fereastra B…
+…dă drumul: își schimbă locurile
+Bara și marginile ecranului încurcă aranjarea automată. De aceea funcționează ca două moduri – schimbă cu scurtătura sau aici.
+Modul 1 – Bara de fixare și marginile ecranului
+Bara de fixare, marginile ecranului, magnetul ferestrelor, scurtături și schimbarea ferestrelor.
+Modul 2 – Aranjare automată
+Aranjare automată, schimbarea ferestrelor, scurtături și magnetul pentru ferestrele plutitoare.
+Aranjarea automată e oprită – rulează doar modul 1, iar scurtătura de mod nu face nimic.
+Bara și marginile sunt oprite – rulează doar modul 2, iar scurtătura de mod nu face nimic.
+Schimbă modul
+Fără tastă
+Schimbă tasta
+KSnapUnity – Editor de setări
+Mod activ
+Bara de fixare și marginile ecranului
+Fă clic sau apasă %1 pentru a schimba modul.
+Doar un mod este pornit.
+Două ferestre își schimbă locurile: lasă una peste cealaltă, sau cu o tastă.
+Maximizarea și aranjarea proprii KDE la margini – cu conturul lor – sunt în pauză cât timp rulează KSnapUnity, ca să apară o singură previzualizare. Setările KDE nu se schimbă: oprește asta, dezactivează sau elimină KSnapUnity și comportamentul KDE revine.
+Astfel un singur magnet trage o fereastră. Setările KDE nu se schimbă: oprește asta, dezactivează sau elimină KSnapUnity și fixarea KDE revine.
+Snap Smarter. Work Better.
+K de la KWin · Snap pentru o fixare mai isteață · Unity pentru totul într-un singur sistem
+Unified
+Toate funcțiile ferestrelor într-un singur sistem.
+Natural
+Comportament intuitiv și natural al ferestrelor.
+Intelligent
+Aranjare și recunoaștere inteligente.
+Aranjamente de fixare și aranjare automată.
+Your Workflow
+Se potrivește felului în care lucrezi.
+Fixarea și aranjarea automată funcționează ca două moduri – o scurtătură comută între ele.
+Susține KSnapUnity
+Dacă îți place KSnapUnity, poți susține dezvoltarea – mulțumim!
+Aranjamente proprii
+Fiecare aranjament construit pe pagina Aranjamente poate și așeza ferestre – apare mai sus. Fereastra 1 primește zona 1 și așa mai departe; ferestrele în plus împart ultima zonă. Cu mai puține ferestre decât zone se folosește „Principală și stivă”, ca să nu rămână găuri.
+Deschide constructorul de aranjamente
+Aranjament după numărul de ferestre
+Schimbă aranjamentul singur
+Exemplu: două ferestre alăturate, de la trei principală și stivă, de la cinci o grilă. Fără o regulă potrivită se folosește aranjamentul ales mai sus.
+De la
+ferestre:
+Elimină regula
+Adaugă regulă
+Zona principală în dreapta
+Oglindește aranjamentul: fereastra principală în dreapta, celelalte în stânga.
+Ferestre noi
+Intră la sfârșit
+Iau locul principal
+Lângă fereastra activă
+O singură fereastră
+Lățime
+Sub 100 % o fereastră singură rămâne centrată – frumos pe ecrane late.
+Fără margine exterioară
+O fereastră singură folosește tot ecranul, chiar dacă e setată o margine.
+Ferestrele alunecă la locul lor
+Când o fereastră se deschide, se închide sau se schimbă, celelalte se mișcă lin în loc să sară.
+Durată
+Mereu plutitoare
+Aceste aplicații nu sunt niciodată aranjate și își păstrează locul. Dialogurile plutesc mereu.
+Niciuna încă.
+Adaugă o aplicație deschisă
+Deschide întâi aplicația, apoi alege-o aici.
+Alege…
+Nicio altă fereastră deschisă
+Trage o fereastră peste alta ca să le schimbi. Lăsată pe bară sau pe o margine, plutește liber; „Lasă fereastra să plutească” o aduce înapoi. Spațiile vin din pagina General.
+Două ferestre își schimbă locurile – lasă una peste cealaltă sau folosește tastele.
+Comutator principal pentru tragere și taste.
+Trage o fereastră peste mijlocul alteia – previzualizarea arată două săgeți – și dă drumul. La aranjarea automată ajunge oriunde peste cealaltă fereastră.
+Ferestre principale: %1
+KSnapUnity: %1
+Aranjare automată pornită
+Aranjare automată oprită
+Deschide editorul de setări
+Fă clic, apoi OK – se deschide editorul de setări.
+✔ Gata – fă clic pe OK pentru a deschide editorul de setări.
+Mod
+<b>Modul 1</b><br/>Bara de fixare și marginile ecranului
+Oprit = modul 1, pornit = modul 2
+<b>Modul 2</b><br/>Aranjare automată
+Schimbă modul cu:
+Tasta se schimbă în editorul de setări. Ambele moduri au nevoie de aranjarea automată și de bară sau de marginile ecranului.
+Setări rapide
+Culorile barei:

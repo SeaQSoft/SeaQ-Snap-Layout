@@ -1,35 +1,25 @@
 Fermer
 Restaurer
 Agrandir
-Déplier
-Replier
 Diviser côte à côte
 Diviser en haut et en bas
 Supprimer la zone
 Charger un modèle…
 Cliquez sur une zone pour la sélectionner · double-clic pour la diviser · faites glisser les séparateurs
 %1 zones sur %2
-SeaQ Snap Layout – Éditeur de réglages
-pour KDE · v%1
 Général
 Apparence
 Comportement & animation
 Dispositions
 À propos & aide
 Actif
-En pause
 Faites glisser une fenêtre vers le bord supérieur de l’écran et déposez-la sur une zone.
 Ancrage
-Afficher la barre d’ancrage en faisant glisser une fenêtre vers le bord supérieur
-Montrer où la fenêtre va se placer
 Restaurer la taille d’origine en sortant la fenêtre
 Espacement
 Écart entre les fenêtres
 Écart avec le bord de l’écran
-Applications exclues
-Classes de fenêtres pour lesquelles la barre n’apparaît jamais, une par ligne.
 Astuce
-KDE agrandit les fenêtres glissées vers le bord supérieur. Pour un ancrage plus fluide, désactivez cela dans Configuration du système → Bords de l’écran.
 Valeurs recommandées
 Couleurs, taille et forme de la barre d’ancrage.
 Aperçu
@@ -81,8 +71,6 @@ Dupliquer
 Supprimer
 Fonctionnement
 Saisissez une fenêtre par sa barre de titre et faites-la glisser vers le haut. La barre descend ; déposez la fenêtre sur une zone et elle occupe exactement cet espace. Écartez-la à nouveau et elle retrouve sa taille d’origine.
-Ouvrir l’éditeur de réglages
-Configuration du système → Gestion des fenêtres → Scripts KWin → icône d’engrenage à côté de « SeaQ Snap Layout » → « Ouvrir l’éditeur de réglages Snap Layout » → OK.
 Informations
 Version
 Auteur
@@ -102,8 +90,6 @@ Enregistrer
 Oui
 Zone %1
 Déposez la fenêtre sur une zone
-SeaQ Snap Layout : activer/désactiver
-SeaQ Snap Layout : tester la barre
 Moitiés
 Deux tiers
 Trois colonnes
@@ -115,13 +101,6 @@ Haut / bas
 Pile + principale
 Six tuiles
 Barre latérale + grille
-Faites glisser les fenêtres vers le bord supérieur de l’écran et déposez-les sur une zone.
-Éditeur de réglages
-Ouvrir l’éditeur de réglages Snap Layout
-✔ Prêt – cliquez sur OK pour ouvrir l’éditeur de réglages.
-Réglages rapides
-Couleurs de la barre :
-Tous les autres réglages – apparence, taille, animation, comportement et vos propres dispositions – se font dans l’éditeur de réglages Snap Layout.
 Paramètres
 Aucun
 Modifier
@@ -131,27 +110,21 @@ Définir
 Supprimer
 Barre d’ancrage
 Bords de l’écran
-Autres façons d’ancrer
+Autres façons
 Aimant de fenêtres
 Raccourcis clavier
 Raccourcis
-Quatre façons d’ancrer les fenêtres. Chacune s’active et se désactive séparément.
 Fonctions
 Poussez une fenêtre contre un bord ou un coin : agrandir, moitiés, quarts.
 Les fenêtres s’attachent entre elles et aux bords de l’écran.
 Ancrez la fenêtre active avec des combinaisons de touches.
 Aperçus
 Afficher les aperçus dans la couleur d’accentuation
-Désactivé : un cadre neutre. S’applique à tous les aperçus.
-Classes de fenêtres qui ne sont jamais ancrées, une par ligne.
 KDE possède ses propres actions de bord d’écran et son propre ancrage des fenêtres. Si la même fonction est active ici, désactivez celle de KDE : Configuration du système → Gestion des fenêtres → Bords de l’écran, et Comportement des fenêtres → Déplacement.
 Poussez une fenêtre contre un bord ou un coin de l’écran et elle remplit cette partie. Fonctionne avec ou sans la barre d’ancrage.
 Plein écran
 Moitié haute
 Désactivé
-Moitié basse
-Moitié gauche
-Moitié droite
 Bords et coins
 Utiliser les bords de l’écran
 Indépendant de la barre d’ancrage. Chaque bord s’active séparément.
@@ -197,7 +170,6 @@ Tout reprendre
 Les garder
 Bon à savoir
 Les actions d’ancrage utilisent les mêmes espaces que la barre et mémorisent la taille d’avant l’ancrage : « Restaurer la taille d’avant l’ancrage » la rétablit.
-SeaQ Snap Layout : %1
 Ancrer à la moitié gauche
 Ancrer à la moitié droite
 Ancrer à la moitié haute
@@ -228,9 +200,7 @@ Meta+Maj + touche
 Ctrl+Maj+Alt + touche
 Ctrl+Alt + pavé numérique
 Aucun raccourci
-Cliquez, puis OK – l'éditeur de paramètres s'ouvre.
 Résistance au chevauchement
-Jusqu'où il faut pousser une fenêtre dans une autre avant qu'elle ne lâche. 0 = les fenêtres peuvent se chevaucher librement.
 Rétablir la valeur par défaut
 Réinitialiser toutes les touches
 Redonne à chaque action la touche du schéma choisi et supprime les touches que le schéma n'a pas.
@@ -241,7 +211,6 @@ Quand vous redimensionnez une fenêtre, celles qui la touchent déplacent le bor
 Garder les fenêtres empilées alignées
 Les fenêtres l'une au-dessus de l'autre gardent leurs bords gauche et droit ensemble, les fenêtres côte à côte leurs bords haut et bas.
 Secouer pour détacher
-Secouez la souris pendant le redimensionnement et les autres fenêtres reviennent en place.
 Estomper les autres fenêtres
 Pendant le redimensionnement, les fenêtres qui ne suivent pas sont affichées en transparence.
 Aperçu de la barre d'ancrage
@@ -257,11 +226,156 @@ Une courte poussée donne la moitié ou le quart. Gardez la fenêtre un peu plus
 Durée de maintien
 Combien de temps la fenêtre doit rester au bord avant de s'agrandir.
 La mosaïque de bord de KDE
-L'agrandissement et la mosaïque de KDE aux bords de l'écran – avec leur contour – sont en pause tant que SeaQ Snap Layout tourne, pour qu'un seul aperçu apparaisse. Vos réglages KDE ne sont pas modifiés : désactivez ceci, désactivez ou supprimez SeaQ Snap Layout et le comportement de KDE revient.
 L'aimantation des fenêtres de KDE
 Mettre en pause les zones d'aimantation de KDE tant que l'aimant est actif
-Pour qu'un seul aimant tire sur une fenêtre. Vos réglages KDE ne sont pas modifiés : désactivez ceci, désactivez ou supprimez SeaQ Snap Layout et l'aimantation de KDE revient.
-Soutenir SeaQ Snap Layout
-Si SeaQ Snap Layout vous plaît, vous pouvez soutenir son développement – merci !
 Faire un don avec PayPal
 Offrez-moi un café
+pour KWin · v%1
+Disposition automatique
+Disposer les fenêtres
+Échanger les fenêtres
+Chaque fonction peut être activée ou désactivée séparément.
+Chaque fenêtre trouve sa place toute seule, comme dans un gestionnaire de fenêtres en mosaïque.
+Une fenêtre s’arrête au bord d’une autre, même si vous la déplacez vite. Secouez la souris ou continuez à pousser un instant pour la libérer. 0 = les fenêtres peuvent se chevaucher librement.
+Secouez vite la souris d’avant en arrière pendant le redimensionnement et les autres fenêtres reviennent. Un geste rapide dans une seule direction ne les libère jamais.
+Chaque fenêtre trouve sa place à l’écran toute seule. Les nouvelles fenêtres s’ajoutent, celles qu’on ferme laissent la place aux autres.
+Mosaïque
+Disposer les fenêtres automatiquement
+Désactivé : les fenêtres restent là où vous les posez. Les autres fonctions marchent dans les deux cas.
+Disposition
+Fenêtre principale
+Taille de la zone principale
+Change aussi quand vous redimensionnez la fenêtre principale à la main.
+Fenêtres principales
+Combien de fenêtres partagent la zone principale (disposition « Principale et pile »).
+Échanger
+Déposer une fenêtre sur une autre
+Touches
+Modifiez-les sur la page Raccourcis clavier. Avec la disposition automatique, les fenêtres échangent aussi leur place dans l’ordre.
+Échanger avec la fenêtre de gauche
+Échanger avec la fenêtre de droite
+Échanger avec la fenêtre du dessus
+Échanger avec la fenêtre du dessous
+Disposition automatique on/off
+Disposition suivante
+En faire la fenêtre principale
+Laisser flotter la fenêtre (quitter la mosaïque)
+Zone principale plus grande
+Zone principale plus petite
+Principale et pile
+Principale au centre
+Colonnes
+Lignes
+Grille
+Spirale
+Une à la fois
+Changer de mode (ancrage / mosaïque)
+Une fenêtre principale de plus
+Une fenêtre principale de moins
+Avancer la fenêtre d’une place
+Reculer la fenêtre d’une place
+Modes
+Spirale intérieure
+Réduire
+Aperçu en direct
+Désactivé
+Bord haut : plein écran
+Bord haut : moitié haute
+Bord haut : maximiser
+Faites glisser une fenêtre contre un bord…
+Bord gauche : moitié gauche
+Coin : un quart
+Approchez une fenêtre des autres…
+De près, les bords se collent
+Le redimensionnement s’aimante aussi – ici sur toute la hauteur
+Tirez un bord commun…
+…les voisines grandissent et rétrécissent avec lui
+…dans toutes les directions
+Une fenêtre
+Une nouvelle fenêtre arrive
+Une se ferme – les autres comblent le vide
+Saisissez la fenêtre A…
+…faites-la glisser sur la fenêtre B…
+…lâchez : elles échangent leurs places
+La barre et les bords de l’écran gênent la disposition automatique. Ils fonctionnent donc comme deux modes – changez avec le raccourci ou ici.
+Mode 1 – Barre d’ancrage et bords de l’écran
+Barre d’ancrage, bords de l’écran, aimant de fenêtres, raccourcis et échange de fenêtres.
+Mode 2 – Disposition automatique
+Disposition automatique, échange de fenêtres, raccourcis et l’aimant pour les fenêtres flottantes.
+La disposition automatique est désactivée – seul le mode 1 fonctionne et le raccourci de mode ne fait rien.
+La barre et les bords sont désactivés – seul le mode 2 fonctionne et le raccourci de mode ne fait rien.
+Changer de mode
+Aucune touche
+Changer la touche
+KSnapUnity – Éditeur de réglages
+Mode actif
+Barre d’ancrage et bords de l’écran
+Cliquez ou appuyez sur %1 pour changer de mode.
+Un seul mode est activé.
+Deux fenêtres échangent leurs places : déposez l’une sur l’autre, ou par touche.
+La maximisation et la mosaïque propres à KDE sur les bords – avec leur contour – sont en pause tant que KSnapUnity fonctionne, pour qu’un seul aperçu apparaisse. Vos réglages KDE ne changent pas : désactivez ceci, désactivez ou supprimez KSnapUnity et le comportement de KDE revient.
+Ainsi un seul aimant tire sur une fenêtre. Vos réglages KDE ne changent pas : désactivez ceci, désactivez ou supprimez KSnapUnity et l’ancrage de KDE revient.
+Snap Smarter. Work Better.
+K pour KWin · Snap pour un ancrage plus malin · Unity pour tout dans un seul système
+Unified
+Toutes les fonctions de fenêtres dans un seul système.
+Natural
+Un comportement des fenêtres intuitif et naturel.
+Intelligent
+Disposition et détection intelligentes.
+Dispositions d’ancrage et disposition automatique.
+Your Workflow
+S’adapte à votre façon de travailler.
+L’ancrage et la disposition automatique fonctionnent comme deux modes – un raccourci passe de l’un à l’autre.
+Soutenir KSnapUnity
+Si vous aimez KSnapUnity, vous pouvez soutenir son développement – merci !
+Dispositions personnelles
+Chaque disposition créée sur la page Dispositions peut aussi ranger les fenêtres – elle apparaît ci-dessus. La fenêtre 1 prend la zone 1, et ainsi de suite ; les fenêtres en plus partagent la dernière zone. Avec moins de fenêtres que de zones, « Principale et pile » est utilisé, pour éviter les trous.
+Ouvrir le créateur de dispositions
+Disposition selon le nombre de fenêtres
+Changer de disposition tout seul
+Exemple : deux fenêtres côte à côte, dès trois principale et pile, dès cinq une grille. Sans règle adaptée, la disposition choisie ci-dessus s’applique.
+À partir de
+fenêtres :
+Supprimer la règle
+Ajouter une règle
+Zone principale à droite
+Inverse la disposition : la fenêtre principale à droite, les autres à gauche.
+Nouvelles fenêtres
+Se placent à la fin
+Prennent la place principale
+À côté de la fenêtre active
+Une seule fenêtre
+Largeur
+Sous 100 %, une fenêtre seule reste centrée – idéal sur les écrans larges.
+Pas de marge extérieure
+Une fenêtre seule occupe tout l’écran, même si une marge est définie.
+Les fenêtres glissent à leur place
+Quand une fenêtre s’ouvre, se ferme ou s’échange, les autres bougent en douceur au lieu de sauter.
+Durée
+Toujours flottantes
+Ces applications ne sont jamais rangées et gardent leur place. Les boîtes de dialogue flottent toujours.
+Aucune pour l’instant.
+Ajouter une application ouverte
+Ouvrez d’abord l’application, puis choisissez-la ici.
+Choisir…
+Aucune autre fenêtre ouverte
+Glissez une fenêtre sur une autre pour les échanger. Déposée sur la barre ou un bord de l’écran, elle flotte librement ; « Laisser flotter la fenêtre » la ramène. Les espacements viennent de la page Général.
+Deux fenêtres échangent leurs places – déposez l’une sur l’autre ou utilisez les touches.
+Interrupteur principal pour le glisser et les touches.
+Glissez une fenêtre au-dessus du centre d’une autre – l’aperçu montre deux flèches – et lâchez. Avec la disposition automatique, n’importe où sur l’autre fenêtre suffit.
+Fenêtres principales : %1
+KSnapUnity: %1
+Disposition automatique activée
+Disposition automatique désactivée
+Ouvrir l’éditeur de réglages
+Cliquez, puis OK – l’éditeur de réglages s’ouvre.
+✔ Prêt – cliquez sur OK pour ouvrir l’éditeur de réglages.
+Mode
+<b>Mode 1</b><br/>Barre d’ancrage et bords de l’écran
+Désactivé = mode 1, activé = mode 2
+<b>Mode 2</b><br/>Disposition automatique
+Changer de mode avec :
+La touche se change dans l’éditeur de réglages. Les deux modes demandent la disposition automatique et la barre ou les bords de l’écran.
+Réglages rapides
+Couleurs de la barre :

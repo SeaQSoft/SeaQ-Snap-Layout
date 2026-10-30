@@ -1,35 +1,25 @@
 Zamknij
 Przywróć
 Maksymalizuj
-Rozwiń
-Zwiń
 Podziel obok siebie
 Podziel na górę i dół
 Usuń strefę
 Wczytaj szablon…
 Kliknij strefę, aby ją zaznaczyć · kliknij dwukrotnie, aby podzielić · przeciągaj separatory
 %1 z %2 stref
-SeaQ Snap Layout – Edytor ustawień
-dla KDE · v%1
 Ogólne
 Wygląd
 Zachowanie i animacja
 Układy
 O programie i pomoc
 Aktywne
-Wstrzymane
 Przeciągnij okno do górnej krawędzi ekranu i upuść je na strefę.
 Przyciąganie
-Pokazuj pasek przy przeciąganiu okna do górnej krawędzi
-Pokazuj, gdzie trafi okno
 Przywracaj pierwotny rozmiar po wyciągnięciu okna
 Odstępy
 Odstęp między oknami
 Odstęp od krawędzi ekranu
-Wykluczone aplikacje
-Klasy okien, dla których pasek nigdy się nie pojawia, po jednej w wierszu.
 Wskazówka
-KDE maksymalizuje okna przeciągnięte do górnej krawędzi. Aby przyciąganie działało płynniej, wyłącz to w Ustawieniach systemowych → Krawędzie ekranu.
 Zalecane wartości
 Kolory, rozmiar i kształt paska.
 Podgląd
@@ -81,8 +71,6 @@ Duplikuj
 Usuń
 Jak to działa
 Chwyć okno za pasek tytułu i przeciągnij je w górę. Pasek zjeżdża w dół; upuść okno na strefę, a wypełni dokładnie ten obszar. Gdy je znowu wyciągniesz, odzyska poprzedni rozmiar.
-Otwieranie edytora ustawień
-Ustawienia systemowe → Zarządzanie oknami → Skrypty KWin → ikona koła zębatego przy „SeaQ Snap Layout” → „Otwórz edytor ustawień Snap Layout” → OK.
 Informacje
 Wersja
 Autor
@@ -102,8 +90,6 @@ Zapisz
 Tak
 Strefa %1
 Upuść okno na strefę
-SeaQ Snap Layout: włącz/wyłącz
-SeaQ Snap Layout: testuj pasek
 Połówki
 Dwie trzecie
 Trzy kolumny
@@ -115,13 +101,6 @@ Góra / dół
 Stos + główne
 Sześć kafelków
 Panel boczny + siatka
-Przeciągaj okna do górnej krawędzi ekranu i upuszczaj je na strefę.
-Edytor ustawień
-Otwórz edytor ustawień Snap Layout
-✔ Gotowe – kliknij OK, aby otworzyć edytor ustawień.
-Szybkie ustawienia
-Kolory paska:
-Wszystkie pozostałe ustawienia – wygląd, rozmiar, animację, zachowanie i własne układy – zmieniasz w edytorze ustawień Snap Layout.
 Ustawienia
 Brak
 Zmień
@@ -131,27 +110,21 @@ Ustaw
 Usuń
 Pasek przyciągania
 Krawędzie ekranu
-Więcej sposobów przyciągania
+Więcej sposobów
 Magnes okien
 Skróty klawiszowe
 Skróty
-Cztery sposoby przyciągania okien. Każdy można włączyć i wyłączyć osobno.
 Funkcje
 Dociśnij okno do krawędzi lub rogu: maksymalizacja, połowy, ćwiartki.
 Okna przyklejają się do siebie i do krawędzi ekranu.
 Przyciągaj aktywne okno kombinacjami klawiszy.
 Podglądy
 Pokazuj podglądy w kolorze akcentu
-Wyłączone: neutralna ramka. Dotyczy wszystkich podglądów.
-Klasy okien, które nigdy nie są przyciągane, jedna w wierszu.
 KDE ma własne akcje krawędzi ekranu i własne przyciąganie okien. Jeśli ta sama funkcja jest włączona tutaj, wyłącz tę z KDE: Ustawienia systemowe → Zarządzanie oknami → Krawędzie ekranu oraz Zachowanie okien → Przesuwanie.
 Dociśnij okno do krawędzi lub rogu ekranu, a wypełni tę część. Działa z paskiem przyciągania lub bez niego.
 Pełny ekran
 Górna połowa
 Wyłączone
-Dolna połowa
-Lewa połowa
-Prawa połowa
 Krawędzie i rogi
 Używaj krawędzi ekranu
 Niezależne od paska przyciągania. Każdą krawędź można włączyć osobno.
@@ -197,7 +170,6 @@ Przejmij wszystkie
 Zostaw je
 Dobrze wiedzieć
 Akcje przyciągania używają tych samych odstępów co pasek i zapamiętują rozmiar sprzed przyciągnięcia: „Przywróć rozmiar sprzed przyciągnięcia” go przywraca.
-SeaQ Snap Layout: %1
 Przyciągnij do lewej połowy
 Przyciągnij do prawej połowy
 Przyciągnij do górnej połowy
@@ -228,9 +200,7 @@ Meta+Shift + klawisz
 Ctrl+Shift+Alt + klawisz
 Ctrl+Alt + klawiatura numeryczna
 Bez skrótów
-Kliknij, a potem OK – otworzy się edytor ustawień.
 Opór przed nakładaniem
-Jak głęboko trzeba wepchnąć okno w inne, zanim je puści. 0 = okna mogą swobodnie na siebie nachodzić.
 Przywróć domyślne
 Przywróć wszystkie klawisze
 Ponownie daje każdej akcji klawisz z wybranego schematu i usuwa klawisze, których schemat nie ma.
@@ -241,7 +211,6 @@ Gdy zmieniasz rozmiar okna, okna, które go dotykają, przesuwają wspólną kra
 Utrzymuj okna w stosie w jednej linii
 Okna jedno nad drugim trzymają razem lewe i prawe krawędzie, okna obok siebie górne i dolne.
 Potrząśnij, aby puścić
-Potrząśnij myszą podczas zmiany rozmiaru, a pozostałe okna wrócą na miejsce.
 Przyciemnij pozostałe okna
 Podczas zmiany rozmiaru okna, które nie podążają, są wyświetlane jako przezroczyste.
 Podgląd paska przyciągania
@@ -257,11 +226,156 @@ Krótkie pchnięcie daje połowę lub ćwiartkę. Przytrzymaj okno trochę dłu�
 Czas przytrzymania
 Jak długo okno musi pozostać przy krawędzi, zanim urośnie.
 Własne kafelkowanie krawędzi KDE
-Maksymalizacja i kafelkowanie KDE przy krawędziach ekranu – z obrysem – są wstrzymane, dopóki działa SeaQ Snap Layout, aby pojawiał się tylko jeden podgląd. Twoje ustawienia KDE nie zmieniają się: wyłącz to, wyłącz lub usuń SeaQ Snap Layout, a zachowanie KDE wróci.
 Własne przyciąganie okien KDE
 Wstrzymaj strefy przyciągania KDE, gdy magnes jest włączony
-Aby tylko jeden magnes ciągnął okno. Twoje ustawienia KDE nie zmieniają się: wyłącz to, wyłącz lub usuń SeaQ Snap Layout, a przyciąganie KDE wróci.
-Wesprzyj SeaQ Snap Layout
-Jeśli lubisz SeaQ Snap Layout, możesz wesprzeć jego rozwój – dziękuję!
 Wesprzyj przez PayPal
 Postaw mi kawę
+dla KWin · v%1
+Automatyczne kafelkowanie
+Układanie okien
+Zamiana okien
+Każdą funkcję można włączać i wyłączać osobno.
+Każde okno samo znajduje swoje miejsce, jak w kafelkowym menedżerze okien.
+Okno zatrzymuje się na krawędzi innego, także gdy przesuwasz je szybko. Potrząśnij myszą lub pchaj jeszcze chwilę, aby je odczepić. 0 = okna mogą swobodnie na siebie nachodzić.
+Podczas zmiany rozmiaru szybko potrząśnij myszą w przód i w tył, a pozostałe okna wrócą. Szybkie szarpnięcie w jednym kierunku nigdy ich nie odczepia.
+Każde okno samo znajduje swoje miejsce na ekranie. Nowe okna dołączają, zamknięte robią miejsce pozostałym.
+Kafelkowanie
+Układaj okna automatycznie
+Wyłączone: okna zostają tam, gdzie je położysz. Pozostałe funkcje działają tak czy inaczej.
+Układ
+Okno główne
+Rozmiar obszaru głównego
+Zmienia się też, gdy ręcznie zmienisz rozmiar okna głównego.
+Okna główne
+Ile okien dzieli obszar główny (układ „Główne i stos”).
+Zamień
+Upuść okno na inne
+Klawisze
+Zmienisz je na stronie Skróty klawiszowe. Przy automatycznym kafelkowaniu okna zamieniają się też miejscami w kolejności.
+Zamień z oknem po lewej
+Zamień z oknem po prawej
+Zamień z oknem powyżej
+Zamień z oknem poniżej
+Automatyczne kafelkowanie wł./wył.
+Następny układ kafelków
+Uczyń oknem głównym
+Uwolnij okno (wyjdź z kafelkowania)
+Większy obszar główny
+Mniejszy obszar główny
+Główne i stos
+Główne pośrodku
+Kolumny
+Wiersze
+Siatka
+Spirala
+Po jednym
+Przełącz tryb (przyciąganie / kafelki)
+Jedno okno główne więcej
+Jedno okno główne mniej
+Przesuń okno o miejsce dalej
+Przesuń okno o miejsce wstecz
+Tryby
+Spirala do środka
+Minimalizuj
+Podgląd na żywo
+Wyłączone
+Górna krawędź: pełny ekran
+Górna krawędź: górna połowa
+Górna krawędź: maksymalizuj
+Przeciągnij okno do krawędzi…
+Lewa krawędź: lewa połowa
+Róg: ćwiartka
+Przesuń okno w stronę innych…
+Z bliska krawędzie się sklejają
+Zmiana rozmiaru też przyciąga – tu do pełnej wysokości
+Przeciągnij wspólną krawędź…
+…sąsiedzi rosną i maleją razem z nią
+…w każdym kierunku
+Jedno okno
+Dochodzi nowe okno
+Jedno się zamyka – pozostałe wypełniają lukę
+Chwyć okno A…
+…przeciągnij je na okno B…
+…puść: zamieniają się miejscami
+Pasek i krawędzie ekranu przeszkadzają automatycznemu kafelkowaniu. Dlatego działają jako dwa tryby – przełączaj skrótem lub tutaj.
+Tryb 1 – pasek przyciągania i krawędzie ekranu
+Pasek przyciągania, krawędzie ekranu, magnes okien, skróty i zamiana okien.
+Tryb 2 – automatyczne kafelkowanie
+Automatyczne kafelkowanie, zamiana okien, skróty i magnes dla okien pływających.
+Automatyczne kafelkowanie jest wyłączone – działa tylko tryb 1, a skrót trybu nic nie robi.
+Pasek i krawędzie są wyłączone – działa tylko tryb 2, a skrót trybu nic nie robi.
+Przełącz tryb
+Brak klawisza
+Zmień klawisz
+KSnapUnity – edytor ustawień
+Aktywny tryb
+Pasek przyciągania i krawędzie ekranu
+Kliknij lub naciśnij %1, aby przełączyć tryb.
+Włączony jest tylko jeden tryb.
+Dwa okna zamieniają się miejscami: upuść jedno na drugie albo klawiszem.
+Własne maksymalizowanie i kafelkowanie KDE na krawędziach – z obrysem – jest wstrzymane, dopóki działa KSnapUnity, więc widać tylko jeden podgląd. Ustawienia KDE się nie zmieniają: wyłącz to, dezaktywuj lub usuń KSnapUnity, a zachowanie KDE wróci.
+Dzięki temu okno ciągnie tylko jeden magnes. Ustawienia KDE się nie zmieniają: wyłącz to, dezaktywuj lub usuń KSnapUnity, a przyciąganie KDE wróci.
+Snap Smarter. Work Better.
+K jak KWin · Snap jak sprytniejsze przyciąganie · Unity jak wszystko w jednym systemie
+Unified
+Wszystkie funkcje okien w jednym systemie.
+Natural
+Intuicyjne, naturalne zachowanie okien.
+Intelligent
+Inteligentne układanie i wykrywanie.
+Układy przyciągania i automatyczne kafelkowanie.
+Your Workflow
+Dopasowuje się do twojego sposobu pracy.
+Przyciąganie i automatyczne kafelkowanie działają jako dwa tryby – jeden skrót przełącza między nimi.
+Wesprzyj KSnapUnity
+Jeśli lubisz KSnapUnity, możesz wesprzeć jego rozwój – dziękujemy!
+Własne układy
+Każdy układ zbudowany na stronie Układy może też układać okna – pojawia się powyżej. Okno 1 dostaje strefę 1 itd.; dodatkowe okna dzielą ostatnią strefę. Gdy okien jest mniej niż stref, używany jest „Główne i stos”, żeby nie było dziur.
+Otwórz kreator układów
+Układ według liczby okien
+Zmieniaj układ samodzielnie
+Przykład: dwa okna obok siebie, od trzech główne i stos, od pięciu siatka. Bez pasującej reguły obowiązuje układ wybrany wyżej.
+Od
+okien:
+Usuń regułę
+Dodaj regułę
+Obszar główny po prawej
+Odbija układ: okno główne po prawej, pozostałe po lewej.
+Nowe okna
+Dołączają na końcu
+Zajmują miejsce główne
+Obok aktywnego okna
+Pojedyncze okno
+Szerokość
+Poniżej 100 % samotne okno zostaje na środku – ładnie na szerokich ekranach.
+Bez marginesu zewnętrznego
+Samotne okno zajmuje cały ekran, nawet przy ustawionym marginesie.
+Okna płynnie wsuwają się na miejsce
+Gdy okno się otwiera, zamyka lub zamienia, pozostałe przesuwają się płynnie zamiast skakać.
+Czas trwania
+Zawsze pływające
+Te programy nigdy nie są układane i zachowują swoje miejsce. Okna dialogowe zawsze pływają.
+Jeszcze brak.
+Dodaj otwarty program
+Najpierw otwórz program, potem wybierz go tutaj.
+Wybierz…
+Brak innych otwartych okien
+Przeciągnij okno na inne, aby je zamienić. Upuszczone na pasek lub krawędź ekranu pływa swobodnie; „Uwolnij okno” przywraca je. Odstępy ustawia się na stronie Ogólne.
+Dwa okna zamieniają się miejscami – upuść jedno na drugie albo użyj klawiszy.
+Główny przełącznik przeciągania i klawiszy.
+Przeciągnij okno nad środek innego – podgląd pokaże dwie strzałki – i puść. Przy automatycznym kafelkowaniu wystarczy dowolne miejsce nad drugim oknem.
+Okna główne: %1
+KSnapUnity: %1
+Automatyczne kafelkowanie włączone
+Automatyczne kafelkowanie wyłączone
+Otwórz edytor ustawień
+Kliknij, potem OK – otworzy się edytor ustawień.
+✔ Gotowe – kliknij OK, aby otworzyć edytor ustawień.
+Tryb
+<b>Tryb 1</b><br/>Pasek przyciągania i krawędzie ekranu
+Wył. = tryb 1, wł. = tryb 2
+<b>Tryb 2</b><br/>Automatyczne kafelkowanie
+Przełączanie trybu:
+Klawisz zmienisz w edytorze ustawień. Oba tryby wymagają automatycznego kafelkowania oraz paska lub krawędzi ekranu.
+Szybkie ustawienia
+Kolory paska:

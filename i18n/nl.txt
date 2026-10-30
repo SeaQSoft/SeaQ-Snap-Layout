@@ -1,35 +1,25 @@
 Sluiten
 Herstellen
 Maximaliseren
-Uitvouwen
-Invouwen
 Naast elkaar splitsen
 Boven en onder splitsen
 Zone verwijderen
 Sjabloon laden…
 Klik op een zone om te selecteren · dubbelklik om te splitsen · sleep de scheidingslijnen
 %1 van %2 zones
-SeaQ Snap Layout – Instellingeneditor
-voor KDE · v%1
 Algemeen
 Uiterlijk
 Gedrag & animatie
 Indelingen
 Over & hulp
 Actief
-Gepauzeerd
 Sleep een venster naar de bovenrand van het scherm en zet het neer op een zone.
 Vastklikken
-Snapbalk tonen bij slepen van een venster naar de bovenrand
-Tonen waar het venster terechtkomt
 Oorspronkelijke grootte herstellen bij wegslepen
 Tussenruimte
 Ruimte tussen vensters
 Ruimte tot de schermrand
-Uitgesloten toepassingen
-Vensterklassen die nooit de snapbalk tonen, één per regel.
 Tip
-KDE maximaliseert vensters die naar de bovenrand worden gesleept. Schakel dit voor soepeler vastklikken uit in Systeeminstellingen → Schermranden.
 Aanbevolen waarden
 Kleuren, grootte en vorm van de snapbalk.
 Voorbeeld
@@ -81,8 +71,6 @@ Dupliceren
 Verwijderen
 Zo werkt het
 Pak een venster bij de titelbalk en sleep het omhoog. De snapbalk schuift naar beneden; zet het venster neer op een zone en het vult precies dat gebied. Sleep het weer weg en het krijgt zijn oude grootte terug.
-De instellingeneditor openen
-Systeeminstellingen → Vensterbeheer → KWin-scripts → tandwielpictogram naast ‘SeaQ Snap Layout’ → ‘Snap Layout-instellingeneditor openen’ → OK.
 Informatie
 Versie
 Auteur
@@ -102,8 +90,6 @@ Opslaan
 Ja
 Zone %1
 Zet het venster neer op een zone
-SeaQ Snap Layout: aan/uit
-SeaQ Snap Layout: snapbalk testen
 Helften
 Twee derde
 Drie kolommen
@@ -115,13 +101,6 @@ Boven / onder
 Stapel + hoofd
 Zes tegels
 Zijbalk + raster
-Sleep vensters naar de bovenrand van het scherm en zet ze neer op een zone.
-Instellingeneditor
-Snap Layout-instellingeneditor openen
-✔ Klaar – klik op OK om de instellingeneditor te openen.
-Snelle instellingen
-Kleuren van de snapbalk:
-Alle overige instellingen – uiterlijk, grootte, animatie, gedrag en je eigen indelingen – wijzig je in de Snap Layout-instellingeneditor.
 Instellingen
 Geen
 Wijzigen
@@ -131,27 +110,21 @@ Instellen
 Verwijderen
 Snapbalk
 Schermranden
-Meer manieren om te snappen
+Meer manieren
 Venstermagneet
 Sneltoetsen
 Sneltoetsen
-Vier manieren om vensters te snappen. Elke manier is apart aan en uit te zetten.
 Functies
 Duw een venster tegen een rand of hoek: maximaliseren, helften, kwarten.
 Vensters plakken aan elkaar en aan de schermranden.
 Snap het actieve venster met toetscombinaties.
 Voorbeelden
 Voorbeelden in de accentkleur tonen
-Uit: een neutraal kader. Geldt voor alle voorbeelden.
-Vensterklassen die nooit worden gesnapt, één per regel.
 KDE heeft eigen schermrandacties en een eigen vensteruitlijning. Staat dezelfde functie hier aan, zet die van KDE dan uit: Systeeminstellingen → Vensterbeheer → Schermranden, en Venstergedrag → Verplaatsen.
 Duw een venster tegen een rand of hoek van het scherm en het vult dat deel. Werkt met of zonder de snapbalk.
 Volledig scherm
 Bovenste helft
 Uit
-Onderste helft
-Linkerhelft
-Rechterhelft
 Randen en hoeken
 Schermranden gebruiken
 Los van de snapbalk. Elke rand is apart in te schakelen.
@@ -197,7 +170,6 @@ Alles overnemen
 Laten staan
 Goed om te weten
 De snapacties gebruiken dezelfde ruimtes als de snapbalk en onthouden de grootte van vóór het snappen: „Grootte van vóór het snappen herstellen” zet die terug.
-SeaQ Snap Layout: %1
 Naar de linkerhelft snappen
 Naar de rechterhelft snappen
 Naar de bovenste helft snappen
@@ -228,9 +200,7 @@ Meta+Shift + toets
 Ctrl+Shift+Alt + toets
 Ctrl+Alt + numeriek toetsenblok
 Geen sneltoetsen
-Klik, en dan OK – de instellingeneditor gaat open.
 Weerstand tegen overlappen
-Hoe ver je een venster in een ander moet duwen voordat het loslaat. 0 = vensters mogen vrij overlappen.
 Standaard herstellen
 Alle toetsen herstellen
 Geeft elke actie weer de toets van het gekozen schema en verwijdert toetsen die het schema niet heeft.
@@ -241,7 +211,6 @@ Als je een venster van grootte verandert, schuiven vensters die het raken de ged
 Gestapelde vensters op één lijn houden
 Vensters boven elkaar houden hun linker- en rechterrand bij elkaar, vensters naast elkaar hun boven- en onderrand.
 Schudden om los te laten
-Schud de muis tijdens het vergroten of verkleinen en de andere vensters springen terug.
 Andere vensters vervagen
 Tijdens het vergroten of verkleinen worden vensters die niet meegaan doorzichtig getoond.
 Voorbeeld van de snapbalk
@@ -257,11 +226,156 @@ Een korte duw geeft de helft of het kwart. Houd het venster iets langer aan de r
 Houdtijd
 Hoe lang het venster aan de rand moet blijven voordat het groeit.
 KDE's eigen randtegels
-KDE's eigen maximaliseren en tegelen aan de schermranden – met de omtrek – pauzeert zolang SeaQ Snap Layout draait, zodat er maar één voorbeeld verschijnt. Je KDE-instellingen worden niet veranderd: zet dit uit, schakel SeaQ Snap Layout uit of verwijder het, en KDE's eigen gedrag is terug.
 KDE's eigen venstersnappen
 KDE's snapzones pauzeren zolang de magneet aan staat
-Zodat maar één magneet aan een venster trekt. Je KDE-instellingen worden niet veranderd: zet dit uit, schakel SeaQ Snap Layout uit of verwijder het, en KDE's eigen snappen is terug.
-SeaQ Snap Layout steunen
-Als je SeaQ Snap Layout fijn vindt, kun je de ontwikkeling steunen – bedankt!
 Doneren met PayPal
 Trakteer me op een koffie
+voor KWin · v%1
+Automatisch tegelen
+Vensters ordenen
+Vensters wisselen
+Elke functie kan los worden in- en uitgeschakeld.
+Elk venster krijgt vanzelf zijn plek, zoals in een tegelende vensterbeheerder.
+Een venster stopt aan de rand van een ander, ook als je het snel beweegt. Schud de muis of blijf even duwen om los te laten. 0 = vensters mogen vrij overlappen.
+Schud bij het van grootte veranderen de muis snel heen en weer, en de andere vensters springen terug. Een snelle ruk in één richting laat nooit los.
+Elk venster krijgt vanzelf zijn plek op het scherm. Nieuwe vensters schuiven aan, gesloten vensters maken plaats voor de andere.
+Tegelen
+Vensters automatisch ordenen
+Uit: vensters blijven waar je ze neerzet. De andere functies werken hoe dan ook.
+Indeling
+Hoofdvenster
+Grootte van het hoofdgebied
+Verandert ook als je het hoofdvenster met de hand van grootte verandert.
+Hoofdvensters
+Hoeveel vensters het hoofdgebied delen (indeling “Hoofd en stapel”).
+Wisselen
+Een venster op een ander laten vallen
+Toetsen
+Wijzig ze op de pagina Sneltoetsen. Met automatisch tegelen wisselen de vensters ook van plek in de volgorde.
+Wisselen met het venster links
+Wisselen met het venster rechts
+Wisselen met het venster erboven
+Wisselen met het venster eronder
+Automatisch tegelen aan/uit
+Volgende tegelindeling
+Hoofdvenster maken
+Venster laten zweven (tegelen verlaten)
+Hoofdgebied groter
+Hoofdgebied kleiner
+Hoofd en stapel
+Hoofd in het midden
+Kolommen
+Rijen
+Raster
+Spiraal
+Eén tegelijk
+Modus wisselen (vastklikken / tegelen)
+Eén hoofdvenster meer
+Eén hoofdvenster minder
+Venster één plek vooruit
+Venster één plek terug
+Modi
+Spiraal naar binnen
+Minimaliseren
+Live-voorbeeld
+Uitgeschakeld
+Bovenrand: volledig scherm
+Bovenrand: bovenste helft
+Bovenrand: maximaliseren
+Sleep een venster tegen een rand…
+Linkerrand: linkerhelft
+Hoek: een kwart
+Beweeg een venster naar andere…
+Dichtbij plakken de randen aan elkaar
+Ook formaat wijzigen klikt vast – hier tot de volle hoogte
+Sleep aan een gedeelde rand…
+…de buren groeien en krimpen mee
+…in elke richting
+Eén venster
+Er komt een nieuw venster bij
+Eén sluit – de andere vullen het gat
+Pak venster A…
+…sleep het op venster B…
+…laat los: ze wisselen van plaats
+De snapbalk en de schermranden zitten automatisch tegelen in de weg. Daarom draaien ze als twee modi – wissel met de sneltoets of hier.
+Modus 1 – Snapbalk en schermranden
+Snapbalk, schermranden, venstermagneet, sneltoetsen en vensters wisselen.
+Modus 2 – Automatisch tegelen
+Automatisch tegelen, vensters wisselen, sneltoetsen en de magneet voor zwevende vensters.
+Automatisch tegelen staat uit – alleen modus 1 draait en de modussneltoets doet niets.
+Snapbalk en randen staan uit – alleen modus 2 draait en de modussneltoets doet niets.
+Modus wisselen
+Geen toets
+Toets wijzigen
+KSnapUnity – Instellingeneditor
+Actieve modus
+Snapbalk en schermranden
+Klik of druk op %1 om van modus te wisselen.
+Er staat maar één modus aan.
+Twee vensters wisselen van plaats: laat het ene op het andere vallen, of met een toets.
+Het eigen maximaliseren en tegelen van KDE aan de randen – met de omtrek – pauzeert zolang KSnapUnity draait, zodat er maar één voorbeeld verschijnt. Je KDE-instellingen veranderen niet: zet dit uit, schakel KSnapUnity uit of verwijder het en het gedrag van KDE is terug.
+Zo trekt maar één magneet aan een venster. Je KDE-instellingen veranderen niet: zet dit uit, schakel KSnapUnity uit of verwijder het en het vastklikken van KDE is terug.
+Snap Smarter. Work Better.
+K van KWin · Snap van slimmer vastklikken · Unity van alles in één systeem
+Unified
+Alle vensterfuncties in één systeem.
+Natural
+Intuïtief, natuurlijk venstergedrag.
+Intelligent
+Slim indelen en herkennen.
+Snap-indelingen en automatisch tegelen.
+Your Workflow
+Past bij hoe jij werkt.
+Vastklikken en automatisch tegelen draaien als twee modi – één sneltoets wisselt ertussen.
+Steun KSnapUnity
+Vind je KSnapUnity fijn, dan kun je de ontwikkeling steunen – dank je!
+Eigen indelingen
+Elke indeling die je op de pagina Indelingen bouwt, kan ook vensters ordenen – ze verschijnt hierboven. Venster 1 krijgt zone 1 enzovoort; extra vensters delen de laatste zone. Met minder vensters dan zones wordt „Hoofd en stapel” gebruikt, zodat er geen gaten ontstaan.
+Indelingenbouwer openen
+Indeling naar aantal vensters
+Indeling zelf wisselen
+Voorbeeld: twee vensters naast elkaar, vanaf drie hoofd en stapel, vanaf vijf een raster. Zonder passende regel geldt de indeling die hierboven is gekozen.
+Vanaf
+vensters:
+Regel verwijderen
+Regel toevoegen
+Hoofdgebied rechts
+Spiegelt de indeling: het hoofdvenster rechts, de andere links.
+Nieuwe vensters
+Achteraan aansluiten
+De hoofdplaats nemen
+Naast het actieve venster
+Eén enkel venster
+Breedte
+Onder 100 % blijft een los venster in het midden – mooi op brede schermen.
+Geen buitenmarge
+Een los venster gebruikt het hele scherm, ook als er een marge is ingesteld.
+Vensters glijden naar hun plek
+Als een venster opent, sluit of wisselt, bewegen de andere soepel in plaats van te springen.
+Duur
+Altijd zwevend
+Deze programma’s worden nooit geordend en houden hun eigen plek. Dialogen zweven altijd.
+Nog geen.
+Een geopend programma toevoegen
+Open eerst het programma en kies het dan hier.
+Kiezen…
+Geen ander venster open
+Sleep een venster op een ander om ze te wisselen. Laat je het los op de snapbalk of een schermrand, dan zweeft het vrij; „Venster laten zweven” haalt het terug. De tussenruimtes komen van de pagina Algemeen.
+Twee vensters wisselen van plaats – laat het ene op het andere vallen of gebruik de toetsen.
+Hoofdschakelaar voor slepen en de toetsen.
+Sleep een venster boven het midden van een ander – het voorbeeld toont twee pijlen – en laat los. Bij automatisch tegelen volstaat elke plek boven het andere venster.
+Hoofdvensters: %1
+KSnapUnity: %1
+Automatisch tegelen aan
+Automatisch tegelen uit
+Instellingeneditor openen
+Klik, dan OK – de instellingeneditor gaat open.
+✔ Klaar – klik op OK om de instellingeneditor te openen.
+Modus
+<b>Modus 1</b><br/>Snapbalk en schermranden
+Uit = modus 1, aan = modus 2
+<b>Modus 2</b><br/>Automatisch tegelen
+Modus wisselen met:
+De toets wijzig je in de instellingeneditor. Beide modi hebben automatisch tegelen en de snapbalk of de schermranden nodig.
+Snelle instellingen
+Kleuren van de snapbalk:

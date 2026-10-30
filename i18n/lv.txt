@@ -1,35 +1,25 @@
 Aizvērt
 Atjaunot
 Maksimizēt
-Izvērst
-Sakļaut
 Sadalīt blakus
 Sadalīt augšā un apakšā
 Noņemt zonu
 Ielādēt veidni…
 Noklikšķiniet uz zonas, lai to atlasītu · dubultklikšķis to sadala · velciet atdalītājus
 %1 no %2 zonām
-SeaQ Snap Layout – Iestatījumu redaktors
-KDE · v%1
 Vispārīgi
 Izskats
 Uzvedība un animācija
 Izkārtojumi
 Par un palīdzība
 Aktīvs
-Pauzēts
 Velciet logu uz ekrāna augšmalu un nometiet to uz zonas.
 Piesaiste
-Rādīt joslu, velkot logu uz augšmalu
-Rādīt, kur logs tiks novietots
 Atjaunot sākotnējo izmēru, izvelkot logu ārā
 Atstarpes
 Atstarpe starp logiem
 Atstarpe līdz ekrāna malai
-Izslēgtās lietotnes
-Logu klases, kurām josla nekad netiek rādīta, pa vienai rindā.
 Padoms
-KDE maksimizē logus, kas pievilkti pie augšmalas. Vienmērīgākai piesaistei izslēdziet to sadaļā Sistēmas iestatījumi → Ekrāna malas.
 Ieteicamās vērtības
 Joslas krāsas, izmērs un forma.
 Priekšskatījums
@@ -81,8 +71,6 @@ Dublēt
 Dzēst
 Kā tas darbojas
 Satveriet logu aiz virsrakstjoslas un velciet to augšup. Josla nolaižas; nometiet logu uz zonas, un tas aizņems tieši šo laukumu. Ja to atkal izvelkat, tas atgūst iepriekšējo izmēru.
-Iestatījumu redaktora atvēršana
-Sistēmas iestatījumi → Logu pārvaldība → KWin skripti → zobrata ikona pie “SeaQ Snap Layout” → “Atvērt Snap Layout iestatījumu redaktoru” → Labi.
 Informācija
 Versija
 Autors
@@ -102,8 +90,6 @@ Saglabāt
 Jā
 Zona %1
 Nometiet logu uz zonas
-SeaQ Snap Layout: ieslēgt/izslēgt
-SeaQ Snap Layout: pārbaudīt joslu
 Puses
 Divas trešdaļas
 Trīs kolonnas
@@ -115,13 +101,6 @@ Augša / apakša
 Kaudze + galvenais
 Sešas flīzes
 Sānjosla + režģis
-Velciet logus uz ekrāna augšmalu un nometiet tos uz zonas.
-Iestatījumu redaktors
-Atvērt Snap Layout iestatījumu redaktoru
-✔ Gatavs – noklikšķiniet uz Labi, lai atvērtu iestatījumu redaktoru.
-Ātrie iestatījumi
-Joslas krāsas:
-Visus pārējos iestatījumus – izskatu, izmēru, animāciju, uzvedību un savus izkārtojumus – maina Snap Layout iestatījumu redaktorā.
 Iestatījumi
 Nav
 Mainīt
@@ -131,27 +110,21 @@ Iestatīt
 Noņemt
 Piestiprināšanas josla
 Ekrāna malas
-Vairāk piestiprināšanas veidu
+Vairāk veidu
 Logu magnēts
 Īsinājumtaustiņi
 Īsceļi
-Četri veidi, kā piestiprināt logus. Katru var ieslēgt un izslēgt atsevišķi.
 Funkcijas
 Piespiediet logu pie malas vai stūra: maksimizēt, puses, ceturtdaļas.
 Logi pielīp cits citam un ekrāna malām.
 Piestipriniet aktīvo logu ar taustiņu kombinācijām.
 Priekšskatījumi
 Rādīt priekšskatījumus akcenta krāsā
-Izslēgts: neitrāls rāmis. Attiecas uz visiem priekšskatījumiem.
-Logu klases, kas nekad netiek piestiprinātas, pa vienai rindā.
 KDE ir savas ekrāna malu darbības un sava logu piestiprināšana. Ja šeit ir ieslēgta tā pati funkcija, izslēdziet KDE funkciju: Sistēmas iestatījumi → Logu pārvaldība → Ekrāna malas, kā arī Logu uzvedība → Pārvietošana.
 Piespiediet logu pie ekrāna malas vai stūra, un tas aizpildīs šo daļu. Darbojas ar joslu vai bez tās.
 Pilnekrāns
 Augšējā puse
 Izslēgts
-Apakšējā puse
-Kreisā puse
-Labā puse
 Malas un stūri
 Izmantot ekrāna malas
 Neatkarīgi no joslas. Katru malu var ieslēgt atsevišķi.
@@ -197,7 +170,6 @@ Pārņemt visus
 Paturēt
 Labi zināt
 Piestiprināšanas darbības izmanto tās pašas atstarpes kā josla un atceras izmēru pirms piestiprināšanas: “Atjaunot izmēru pirms piestiprināšanas” to atgriež.
-SeaQ Snap Layout: %1
 Piestiprināt kreisajā pusē
 Piestiprināt labajā pusē
 Piestiprināt augšējā pusē
@@ -228,9 +200,7 @@ Meta+Shift + taustiņš
 Ctrl+Shift+Alt + taustiņš
 Ctrl+Alt + ciparu bloks
 Bez īsceļiem
-Noklikšķiniet, tad Labi – atveras iestatījumu redaktors.
 Pretestība pārklāšanai
-Cik dziļi logs jāiebīda citā, pirms tas atlaiž. 0 = logi var brīvi pārklāties.
 Atjaunot noklusējumu
 Atiestatīt visus taustiņus
 Katrai darbībai atkal piešķir izvēlētās shēmas taustiņu un noņem taustiņus, kuru shēmā nav.
@@ -241,7 +211,6 @@ Mainot loga izmēru, logi, kas tam pieskaras, pārvieto kopīgo malu līdzi – 
 Turēt sakrautos logus vienā līnijā
 Logi viens virs otra tur kreiso un labo malu kopā, logi blakus – augšējo un apakšējo.
 Sakratīt, lai atlaistu
-Mainot izmēru, sakratiet peli, un pārējie logi atlec atpakaļ.
 Aptumšot pārējos logus
 Mainot izmēru, logi, kas neseko, tiek rādīti caurspīdīgi.
 Piesaistes joslas priekšskatījums
@@ -257,11 +226,156 @@ Turēt pie malas, lai aizpildītu brīvo vietu
 Turēšanas laiks
 Cik ilgi logam jāpaliek pie malas, pirms tas izaug.
 KDE pašas malu flīzēšana
-KDE pašas maksimizēšana un flīzēšana pie ekrāna malām – ar kontūru – ir pauzēta, kamēr darbojas SeaQ Snap Layout, lai parādītos tikai viens priekšskatījums. Jūsu KDE iestatījumi netiek mainīti: izslēdziet šo, atspējojiet vai noņemiet SeaQ Snap Layout, un KDE uzvedība atgriežas.
 KDE pašas logu piesaiste
 Pauzēt KDE piesaistes zonas, kamēr magnēts ir ieslēgts
-Lai logu vilktu tikai viens magnēts. Jūsu KDE iestatījumi netiek mainīti: izslēdziet šo, atspējojiet vai noņemiet SeaQ Snap Layout, un KDE piesaiste atgriežas.
-Atbalstīt SeaQ Snap Layout
-Ja jums patīk SeaQ Snap Layout, varat atbalstīt tā izstrādi – paldies!
 Ziedot ar PayPal
 Uzsauc man kafiju
+KWin · v%1
+Automātiska flīzēšana
+Logu izkārtošana
+Logu apmaiņa
+Katru funkciju var ieslēgt un izslēgt atsevišķi.
+Katrs logs pats atrod savu vietu, kā flīzējošā logu pārvaldniekā.
+Logs apstājas pie cita loga malas, arī ja to kustini ātri. Sakrati peli vai pastum vēl mirkli, lai atbrīvotu. 0 = logi drīkst brīvi pārklāties.
+Mainot izmēru, ātri sakrati peli uz priekšu un atpakaļ, un pārējie logi atlec atpakaļ. Ātrs rāviens vienā virzienā tos nekad neatbrīvo.
+Katrs logs pats atrod savu vietu ekrānā. Jauni logi pievienojas, aizvērtie atbrīvo vietu citiem.
+Flīzēšana
+Izkārtot logus automātiski
+Izslēgts: logi paliek tur, kur tos noliec. Pārējās funkcijas darbojas jebkurā gadījumā.
+Izkārtojums
+Galvenais logs
+Galvenā apgabala izmērs
+Mainās arī tad, kad galvenā loga izmēru maini ar roku.
+Galvenie logi
+Cik logu dala galveno apgabalu (izkārtojums “Galvenais un kaudze”).
+Apmainīt
+Nomest logu uz cita
+Taustiņi
+Maini tos lapā Tastatūras īsinājumtaustiņi. Ar automātisku flīzēšanu logi samaina vietas arī secībā.
+Samainīt ar logu pa kreisi
+Samainīt ar logu pa labi
+Samainīt ar logu augšā
+Samainīt ar logu apakšā
+Automātiska flīzēšana ieslēgt/izslēgt
+Nākamais flīzēšanas izkārtojums
+Padarīt par galveno logu
+Ļaut logam peldēt (iziet no flīzēšanas)
+Lielāks galvenais apgabals
+Mazāks galvenais apgabals
+Galvenais un kaudze
+Galvenais vidū
+Kolonnas
+Rindas
+Režģis
+Spirāle
+Pa vienam
+Pārslēgt režīmu (piestiprināšana / flīzēšana)
+Vēl viens galvenais logs
+Par vienu galveno logu mazāk
+Pārvietot logu vienu vietu uz priekšu
+Pārvietot logu vienu vietu atpakaļ
+Režīmi
+Spirāle uz iekšu
+Minimizēt
+Tiešraides priekšskatījums
+Izslēgts
+Augšējā mala: pilnekrāns
+Augšējā mala: augšējā puse
+Augšējā mala: maksimizēt
+Velciet logu pret malu…
+Kreisā mala: kreisā puse
+Stūris: ceturtdaļa
+Pārvietojiet logu pie citiem…
+Tuvumā malas salīp kopā
+Arī izmēra maiņa piestiprinās – šeit līdz pilnam augstumam
+Velciet kopīgu malu…
+…kaimiņi aug un sarūk līdzi
+…visos virzienos
+Viens logs
+Pievienojas jauns logs
+Viens aizveras – pārējie aizpilda spraugu
+Satveriet logu A…
+…velciet to uz logu B…
+…atlaidiet: tie apmainās vietām
+Josla un ekrāna malas traucē automātisko flīzēšanu. Tāpēc tie darbojas kā divi režīmi – pārslēdziet ar īsinājumtaustiņu vai šeit.
+1. režīms – piestiprināšanas josla un ekrāna malas
+Piestiprināšanas josla, ekrāna malas, logu magnēts, īsinājumtaustiņi un logu apmaiņa.
+2. režīms – automātiska flīzēšana
+Automātiska flīzēšana, logu apmaiņa, īsinājumtaustiņi un magnēts peldošiem logiem.
+Automātiskā flīzēšana ir izslēgta – darbojas tikai 1. režīms, un režīma taustiņš neko nedara.
+Josla un malas ir izslēgtas – darbojas tikai 2. režīms, un režīma taustiņš neko nedara.
+Pārslēgt režīmu
+Nav taustiņa
+Mainīt taustiņu
+KSnapUnity – iestatījumu redaktors
+Aktīvais režīms
+Piestiprināšanas josla un ekrāna malas
+Noklikšķiniet vai nospiediet %1, lai pārslēgtu režīmu.
+Ieslēgts ir tikai viens režīms.
+Divi logi apmainās vietām: nometiet vienu uz otra vai ar taustiņu.
+Paša KDE maksimizēšana un flīzēšana pie malām – ar kontūru – tiek apturēta, kamēr darbojas KSnapUnity, lai būtu tikai viens priekšskatījums. Jūsu KDE iestatījumi nemainās: izslēdziet šo, atspējojiet vai noņemiet KSnapUnity, un KDE uzvedība atgriežas.
+Tā logu velk tikai viens magnēts. Jūsu KDE iestatījumi nemainās: izslēdziet šo, atspējojiet vai noņemiet KSnapUnity, un KDE piestiprināšana atgriežas.
+Snap Smarter. Work Better.
+K – KWin · Snap – gudrāka piestiprināšana · Unity – viss vienā sistēmā
+Unified
+Visas logu funkcijas vienā sistēmā.
+Natural
+Intuitīva, dabiska logu uzvedība.
+Intelligent
+Gudra izkārtošana un atpazīšana.
+Piestiprināšanas izkārtojumi un automātiska flīzēšana.
+Your Workflow
+Pielāgojas jūsu darba stilam.
+Piestiprināšana un automātiskā flīzēšana darbojas kā divi režīmi – viens īsinājumtaustiņš pārslēdz starp tiem.
+Atbalstiet KSnapUnity
+Ja jums patīk KSnapUnity, varat atbalstīt tā izstrādi – paldies!
+Savi izkārtojumi
+Katrs izkārtojums, ko izveidojat lapā Izkārtojumi, var arī kārtot logus – tas parādās augšā. 1. logs saņem 1. zonu utt.; papildu logi dala pēdējo zonu. Ja logu ir mazāk nekā zonu, tiek lietots „Galvenais un kaudze“, lai nepaliktu caurumi.
+Atvērt izkārtojumu veidotāju
+Izkārtojums pēc logu skaita
+Mainīt izkārtojumu pašam
+Piemērs: divi logi blakus, no trim galvenais un kaudze, no pieciem režģis. Bez atbilstoša noteikuma tiek lietots augšā izvēlētais izkārtojums.
+No
+logiem:
+Noņemt noteikumu
+Pievienot noteikumu
+Galvenā zona labajā pusē
+Spoguļo izkārtojumu: galvenais logs pa labi, pārējie pa kreisi.
+Jauni logi
+Nostājas beigās
+Ieņem galveno vietu
+Blakus aktīvajam logam
+Viens logs
+Platums
+Zem 100 % vienīgais logs paliek centrā – skaisti platos ekrānos.
+Bez ārējās atkāpes
+Vienīgais logs aizņem visu ekrānu, pat ja atkāpe ir iestatīta.
+Logi vienmērīgi slīd savā vietā
+Kad logs atveras, aizveras vai apmainās, pārējie kustas vienmērīgi, nevis lēkā.
+Ilgums
+Vienmēr peldoši
+Šīs lietotnes nekad netiek kārtotas un saglabā savu vietu. Dialogi vienmēr peld.
+Pagaidām nav.
+Pievienot atvērtu lietotni
+Vispirms atveriet lietotni, tad izvēlieties to šeit.
+Izvēlēties…
+Nav atvērta cita loga
+Velciet logu uz cita, lai tos apmainītu. Nomests uz joslas vai ekrāna malas, tas brīvi peld; „Ļaut logam peldēt“ to atgriež. Atstarpes nāk no lapas Vispārīgi.
+Divi logi apmainās vietām – nometiet vienu uz otra vai izmantojiet taustiņus.
+Galvenais slēdzis vilkšanai un taustiņiem.
+Velciet logu virs cita loga vidus – priekšskatījums rāda divas bultas – un atlaidiet. Automātiskajā flīzēšanā pietiek ar jebkuru vietu virs otra loga.
+Galvenie logi: %1
+KSnapUnity: %1
+Automātiskā flīzēšana ieslēgta
+Automātiskā flīzēšana izslēgta
+Atvērt iestatījumu redaktoru
+Noklikšķiniet, tad Labi – atveras iestatījumu redaktors.
+✔ Gatavs – noklikšķiniet Labi, lai atvērtu iestatījumu redaktoru.
+Režīms
+<b>1. režīms</b><br/>Piestiprināšanas josla un ekrāna malas
+Izsl. = 1. režīms, iesl. = 2. režīms
+<b>2. režīms</b><br/>Automātiska flīzēšana
+Režīma pārslēgšana ar:
+Taustiņu maināt iestatījumu redaktorā. Abiem režīmiem vajag automātisku flīzēšanu un joslu vai ekrāna malas.
+Ātrie iestatījumi
+Joslas krāsas:

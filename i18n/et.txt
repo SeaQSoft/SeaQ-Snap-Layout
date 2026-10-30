@@ -1,35 +1,25 @@
 Sulge
 Taasta
 Maksimeeri
-Laienda
-Ahenda
 Jaga kõrvuti
 Jaga üles ja alla
 Eemalda tsoon
 Laadi mall…
 Klõpsa tsoonil selle valimiseks · topeltklõps jagab · lohista eraldajaid
 %1 / %2 tsooni
-SeaQ Snap Layout – Seadistuste redaktor
-KDEile · v%1
 Üldine
 Välimus
 Käitumine ja animatsioon
 Paigutused
 Teave ja abi
 Aktiivne
-Peatatud
 Lohista aken ekraani ülaserva ja aseta see tsoonile.
 Haakimine
-Näita haakeriba, kui akent lohistatakse ülaserva
-Näita, kuhu aken satub
 Taasta algne suurus, kui aken välja lohistatakse
 Vahed
 Vahe akende vahel
 Vahe ekraani servani
-Välistatud rakendused
-Akende klassid, mille puhul riba kunagi ei ilmu, üks rea kohta.
 Nõuanne
-KDE maksimeerib ülaserva lohistatud aknad. Sujuvamaks haakimiseks lülita see välja: Süsteemi seadistused → Ekraani servad.
 Soovitatud väärtused
 Haakeriba värvid, suurus ja kuju.
 Eelvaade
@@ -81,8 +71,6 @@ Klooni
 Kustuta
 Kuidas see töötab
 Haara aken tiitliribast ja lohista see üles. Riba libiseb alla; aseta aken tsoonile ja see täidab täpselt selle ala. Kui lohistad selle uuesti välja, saab see tagasi oma endise suuruse.
-Seadistuste redaktori avamine
-Süsteemi seadistused → Aknahaldus → KWini skriptid → hammasratta ikoon „SeaQ Snap Layout“ kõrval → „Ava Snap Layouti seadistuste redaktor“ → OK.
 Teave
 Versioon
 Autor
@@ -102,8 +90,6 @@ Salvesta
 Jah
 Tsoon %1
 Aseta aken tsoonile
-SeaQ Snap Layout: sisse/välja
-SeaQ Snap Layout: proovi riba
 Pooled
 Kaks kolmandikku
 Kolm veergu
@@ -115,13 +101,6 @@ Keskne fookus
 Virn + põhi
 Kuus paani
 Külgriba + ruudustik
-Lohista aknad ekraani ülaserva ja aseta need tsoonile.
-Seadistuste redaktor
-Ava Snap Layouti seadistuste redaktor
-✔ Valmis – klõpsa OK, et avada seadistuste redaktor.
-Kiirseadistused
-Riba värvid:
-Kõik muud seadistused – välimus, suurus, animatsioon, käitumine ja oma paigutused – muudetakse Snap Layouti seadistuste redaktoris.
 Seaded
 Puudub
 Muuda
@@ -131,27 +110,21 @@ Määra
 Eemalda
 Haakeriba
 Ekraani servad
-Veel viise haakimiseks
+Veel viise
 Aknamagnet
 Kiirklahvid
 Otseteed
-Neli viisi akende haakimiseks. Igaüht saab eraldi sisse ja välja lülitada.
 Funktsioonid
 Lükka aken vastu serva või nurka: maksimeeri, pooled, veerandid.
 Aknad kleepuvad üksteise ja ekraani servade külge.
 Haagi aktiivne aken klahvikombinatsioonidega.
 Eelvaated
 Näita eelvaateid rõhuvärviga
-Väljas: neutraalne raam. Kehtib kõigile eelvaadetele.
-Akende klassid, mida kunagi ei haagita, üks rea kohta.
 KDE-l on oma ekraaniserva toimingud ja oma akende haakimine. Kui sama funktsioon on siin sees, lülita KDE oma välja: Süsteemi seadistused → Aknahaldus → Ekraani servad ning Akende käitumine → Liigutamine.
 Lükka aken vastu ekraani serva või nurka ja see täidab selle osa. Töötab haakeribaga või ilma.
 Täisekraan
 Ülemine pool
 Väljas
-Alumine pool
-Vasak pool
-Parem pool
 Servad ja nurgad
 Kasuta ekraani servi
 Haakeribast sõltumatu. Iga serva saab eraldi sisse lülitada.
@@ -197,7 +170,6 @@ Võta kõik üle
 Jäta alles
 Hea teada
 Haakimistoimingud kasutavad samu vahesid kui haakeriba ja jätavad meelde haakimiseelse suuruse: „Taasta haakimiseelne suurus” toob selle tagasi.
-SeaQ Snap Layout: %1
 Haagi vasakusse poolde
 Haagi paremasse poolde
 Haagi ülemisse poolde
@@ -228,9 +200,7 @@ Meta+Shift + klahv
 Ctrl+Shift+Alt + klahv
 Ctrl+Alt + numbriklahvistik
 Kiirklahve pole
-Klõpsa, siis OK – seadete redaktor avaneb.
 Takistus kattumisele
-Kui kaugele pead akna teise sisse lükkama, enne kui see lahti laseb. 0 = aknad võivad vabalt kattuda.
 Lähtesta vaikeväärtusele
 Lähtesta kõik klahvid
 Annab igale toimingule taas valitud skeemi klahvi ja eemaldab klahvid, mida skeemis pole.
@@ -241,7 +211,6 @@ Kui muudad akna suurust, liigutavad seda puudutavad aknad ühist serva kaasa –
 Hoia virnastatud aknad ühel joonel
 Üksteise kohal olevad aknad hoiavad vasakut ja paremat serva koos, kõrvuti aknad ülemist ja alumist.
 Raputa lahti
-Raputa suuruse muutmise ajal hiirt ja teised aknad hüppavad tagasi.
 Tuhmista teised aknad
 Suuruse muutmise ajal näidatakse aknaid, mis ei järgne, läbipaistvana.
 Kinnitusriba eelvaade
@@ -257,11 +226,156 @@ Lühike tõuge annab poole või veerandi. Hoia akent serva juures veidi kauem ja
 Hoidmisaeg
 Kui kaua peab aken serva juures olema, enne kui see kasvab.
 KDE enda servaplaatimine
-KDE enda maksimeerimine ja plaatimine ekraani servadel – koos kontuuriga – on peatatud, kuni SeaQ Snap Layout töötab, et kuvataks ainult üks eelvaade. Sinu KDE seadeid ei muudeta: lülita see välja, keela või eemalda SeaQ Snap Layout ja KDE enda käitumine on tagasi.
 KDE enda akende kinnitumine
 Peata KDE kinnitustsoonid, kui magnet on sees
-Et akent tõmbaks ainult üks magnet. Sinu KDE seadeid ei muudeta: lülita see välja, keela või eemalda SeaQ Snap Layout ja KDE enda kinnitumine on tagasi.
-Toeta SeaQ Snap Layouti
-Kui SeaQ Snap Layout sulle meeldib, saad selle arendust toetada – aitäh!
 Anneta PayPaliga
 Osta mulle kohv
+KWinile · v%1
+Automaatne paanimine
+Akende paigutamine
+Akende vahetamine
+Iga funktsiooni saab eraldi sisse ja välja lülitada.
+Iga aken leiab oma koha ise, nagu paaniva aknahalduri puhul.
+Aken peatub teise akna serva juures, ka siis, kui liigutad seda kiiresti. Raputa hiirt või lükka veel hetk, et lahti lasta. 0 = aknad võivad vabalt kattuda.
+Raputa suuruse muutmise ajal hiirt kiiresti edasi-tagasi ja teised aknad hüppavad tagasi. Kiire tõmme ühes suunas ei lase neid kunagi lahti.
+Iga aken leiab oma koha ekraanil ise. Uued aknad liituvad, suletud teevad teistele ruumi.
+Paanimine
+Paiguta aknad automaatselt
+Väljas: aknad jäävad sinna, kuhu need paned. Teised funktsioonid töötavad igal juhul.
+Paigutus
+Peaaken
+Põhiala suurus
+Muutub ka siis, kui muudad peaakna suurust käsitsi.
+Peaaknad
+Mitu akent jagavad põhiala (paigutus „Pea ja virn“).
+Vaheta
+Akna kukutamine teisele
+Klahvid
+Muuda neid lehel Kiirklahvid. Automaatse paanimise korral vahetavad aknad ka järjekorras kohad.
+Vaheta vasakpoolse aknaga
+Vaheta parempoolse aknaga
+Vaheta ülemise aknaga
+Vaheta alumise aknaga
+Automaatne paanimine sisse/välja
+Järgmine paanimise paigutus
+Tee peaaknaks
+Lase aknal hõljuda (lahku paanimisest)
+Suurem põhiala
+Väiksem põhiala
+Pea ja virn
+Pea keskel
+Veerud
+Read
+Ruudustik
+Spiraal
+Üks korraga
+Vaheta režiimi (haakimine / paanimine)
+Üks peaaken rohkem
+Üks peaaken vähem
+Liiguta akent koht edasi
+Liiguta akent koht tagasi
+Režiimid
+Spiraal sissepoole
+Minimeeri
+Reaalajas eelvaade
+Välja lülitatud
+Ülemine serv: täisekraan
+Ülemine serv: ülemine pool
+Ülemine serv: maksimeeri
+Lohista aken vastu serva…
+Vasak serv: vasak pool
+Nurk: veerand
+Liiguta akent teiste poole…
+Lähedal jäävad servad kokku
+Ka suuruse muutmine haagib – siin täiskõrguseni
+Lohista ühist serva…
+…naabrid kasvavad ja kahanevad sellega
+…igas suunas
+Üks aken
+Uus aken liitub
+Üks sulgub – teised täidavad tühimiku
+Haara aken A…
+…lohista see aknale B…
+…lase lahti: nad vahetavad kohad
+Haakeriba ja ekraani servad segavad automaatset paanimist. Seepärast töötavad need kahe režiimina – vaheta kiirklahviga või siin.
+Režiim 1 – haakeriba ja ekraani servad
+Haakeriba, ekraani servad, aknamagnet, kiirklahvid ja akende vahetamine.
+Režiim 2 – automaatne paanimine
+Automaatne paanimine, akende vahetamine, kiirklahvid ja magnet hõljuvatele akendele.
+Automaatne paanimine on välja lülitatud – töötab ainult režiim 1 ja režiimi kiirklahv ei tee midagi.
+Haakeriba ja servad on välja lülitatud – töötab ainult režiim 2 ja režiimi kiirklahv ei tee midagi.
+Vaheta režiimi
+Klahv puudub
+Muuda klahvi
+KSnapUnity – seadete redaktor
+Aktiivne režiim
+Haakeriba ja ekraani servad
+Klõpsa või vajuta %1 režiimi vahetamiseks.
+Sisse on lülitatud ainult üks režiim.
+Kaks akent vahetavad kohad: lase üks teisele või klahviga.
+KDE enda maksimeerimine ja paanimine servadel – koos piirjoonega – peatub, kuni KSnapUnity töötab, nii et näha on vaid üks eelvaade. Su KDE seaded ei muutu: lülita see välja, keela või eemalda KSnapUnity ja KDE käitumine on tagasi.
+Nii tõmbab akent ainult üks magnet. Su KDE seaded ei muutu: lülita see välja, keela või eemalda KSnapUnity ja KDE haakimine on tagasi.
+Snap Smarter. Work Better.
+K nagu KWin · Snap nagu nutikam haakimine · Unity nagu kõik ühes süsteemis
+Unified
+Kõik aknafunktsioonid ühes süsteemis.
+Natural
+Intuitiivne, loomulik akende käitumine.
+Intelligent
+Nutikas paigutus ja tuvastus.
+Haakepaigutused ja automaatne paanimine.
+Your Workflow
+Sobib sinu tööviisiga.
+Haakimine ja automaatne paanimine töötavad kahe režiimina – üks kiirklahv vahetab nende vahel.
+Toeta KSnapUnity’t
+Kui KSnapUnity sulle meeldib, saad selle arendust toetada – aitäh!
+Omad paigutused
+Iga paigutus, mille ehitad lehel Paigutused, oskab ka aknaid paigutada – see ilmub ülal. Aken 1 saab tsooni 1 ja nii edasi; lisaaknad jagavad viimast tsooni. Kui aknaid on vähem kui tsoone, kasutatakse „Pea ja virn“, et auke ei tekiks.
+Ava paigutuste ehitaja
+Paigutus akende arvu järgi
+Vaheta paigutust ise
+Näide: kaks akent kõrvuti, alates kolmest pea ja virn, alates viiest ruudustik. Sobiva reeglita kehtib ülal valitud paigutus.
+Alates
+aknast:
+Eemalda reegel
+Lisa reegel
+Peaala paremal
+Peegeldab paigutust: peaaken paremal, teised vasakul.
+Uued aknad
+Lähevad lõppu
+Võtavad peakoha
+Aktiivse akna kõrvale
+Üksik aken
+Laius
+Alla 100 % jääb üksik aken keskele – kena laial ekraanil.
+Välisveerist pole
+Üksik aken kasutab kogu ekraani, isegi kui veeris on määratud.
+Aknad libisevad oma kohale
+Kui aken avaneb, sulgub või vahetab kohta, liiguvad teised sujuvalt, mitte hüppeliselt.
+Kestus
+Alati hõljuvad
+Neid rakendusi ei paigutata kunagi ja nad hoiavad oma kohta. Dialoogid hõljuvad alati.
+Veel pole.
+Lisa avatud rakendus
+Ava rakendus esmalt ja vali see siis siit.
+Vali…
+Teist avatud akent pole
+Lohista aken teisele, et neid vahetada. Haakeribale või ekraani servale lastuna hõljub see vabalt; „Lase aknal hõljuda“ toob selle tagasi. Vahed tulevad lehelt Üldine.
+Kaks akent vahetavad kohad – lase üks teisele või kasuta klahve.
+Pealüliti lohistamisele ja klahvidele.
+Lohista aken teise keskele – eelvaade näitab kahte noolt – ja lase lahti. Automaatse paanimise korral piisab ükskõik kus teise akna kohal.
+Peaaknaid: %1
+KSnapUnity: %1
+Automaatne paanimine sees
+Automaatne paanimine väljas
+Ava seadete redaktor
+Klõpsa, siis OK – seadete redaktor avaneb.
+✔ Valmis – klõpsa OK, et avada seadete redaktor.
+Režiim
+<b>Režiim 1</b><br/>Haakeriba ja ekraani servad
+Väljas = režiim 1, sees = režiim 2
+<b>Režiim 2</b><br/>Automaatne paanimine
+Vaheta režiimi klahviga:
+Klahvi muudad seadete redaktoris. Mõlemad režiimid vajavad automaatset paanimist ja haakeriba või ekraani servi.
+Kiirseaded
+Haakeriba värvid:

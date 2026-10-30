@@ -1,35 +1,25 @@
 Close
 Restore
 Maximize
-Expand
-Collapse
 Split side by side
 Split top and bottom
 Remove zone
 Load template…
 Click a zone to select it · double-click to split · drag the dividers
 %1 of %2 zones
-SeaQ Snap Layout – Settings editor
-for KDE · v%1
 General
 Appearance
 Behavior & Animation
 Layouts
 About & Help
 Active
-Paused
 Drag a window to the top edge of the screen and drop it onto a zone.
 Snapping
-Show the snap bar when dragging a window to the top edge
-Preview where the window will land
 Restore the original size when dragging a window out
 Spacing
 Gap between windows
 Gap to the screen edge
-Excluded applications
-Window classes that never show the snap bar, one per line.
 Tip
-KDE maximizes windows that are dragged to the top edge. For smoother snapping, turn this off in System Settings → Screen Edges.
 Recommended values
 Colors, size and shape of the snap bar.
 Preview
@@ -81,8 +71,6 @@ Duplicate
 Delete
 How it works
 Grab a window by its title bar and drag it up. The snap bar slides down; drop the window onto a zone and it fills exactly that area. Drag it away again and it gets its old size back.
-Opening the settings editor
-System Settings → Window Management → KWin Scripts → gear icon next to “SeaQ Snap Layout” → “Open Snap Layout settings editor” → OK.
 Information
 Version
 Author
@@ -102,8 +90,6 @@ Save
 Yes
 Zone %1
 Drop the window onto a zone
-SeaQ Snap Layout: turn on/off
-SeaQ Snap Layout: test the snap bar
 Halves
 Two thirds
 Three columns
@@ -115,13 +101,6 @@ Top / bottom
 Stack + main
 Six tiles
 Sidebar + grid
-Drag windows to the top edge of the screen and drop them onto a zone.
-Settings editor
-Open Snap Layout settings editor
-✔ Ready – click OK to open the settings editor.
-Quick settings
-Snap bar colors:
-All other settings – appearance, size, animation, behavior and your own layouts – are changed in the Snap Layout settings editor.
 Settings
 None
 Change
@@ -131,27 +110,21 @@ Set
 Remove
 Snap bar
 Screen edges
-More ways to snap
+More ways
 Window magnet
 Keyboard shortcuts
 Shortcuts
-Four ways to snap windows. Each one can be switched on and off on its own.
 Features
 Push a window against an edge or corner: maximize, halves, quarters.
 Windows stick to each other and to the screen edges.
 Snap the active window with key combinations.
 Previews
 Show previews in the accent color
-Off: a neutral frame. Applies to all previews.
-Window classes that are never snapped, one per line.
 KDE has its own screen edge actions and window snapping. When the same feature is on here, turn KDE's off: System Settings → Window Management → Screen Edges, and Window Behavior → Movement.
 Push a window against an edge or a corner of the screen and it fills that part. Works with or without the snap bar.
 Fullscreen
 Top half
 Off
-Bottom half
-Left half
-Right half
 Edges and corners
 Use screen edges
 Independent of the snap bar. Each edge can be switched on its own.
@@ -197,7 +170,6 @@ Take over all
 Keep them
 Good to know
 The snapping actions use the same gaps as the snap bar and remember the size before snapping: “Restore the size before snapping” brings it back.
-SeaQ Snap Layout: %1
 Snap to the left half
 Snap to the right half
 Snap to the top half
@@ -228,9 +200,7 @@ Meta+Shift + key
 Ctrl+Shift+Alt + key
 Ctrl+Alt + number block
 No shortcuts
-Click, then OK – the settings editor opens.
 Resistance against overlapping
-How far you have to push a window into another one before it lets go. 0 = windows can overlap freely.
 Reset to default
 Reset all keys
 Gives every action the key of the chosen scheme again and removes keys the scheme does not have.
@@ -241,7 +211,6 @@ When you resize a window, windows that touch it move their shared edge along –
 Keep stacked windows in line
 Windows above each other keep their left and right edges together, windows side by side their top and bottom edges.
 Shake to let go
-Shake the mouse while resizing and the other windows jump back.
 Fade the other windows
 While resizing, windows that do not follow are shown transparent.
 Snap bar preview
@@ -257,11 +226,156 @@ A short push gives the half or quarter. Keep the window at the edge a moment lon
 Hold time
 How long the window has to stay at the edge before it grows.
 KDE's own edge tiling
-KDE's own maximize and tile at the screen edges – with its outline – pause while SeaQ Snap Layout runs, so only one preview appears. Your KDE settings are not changed: switch this off, disable or remove SeaQ Snap Layout and KDE's own behavior is back.
 KDE's own window snapping
 Pause KDE's snap zones while the magnet is on
-So only one magnet pulls at a window. Your KDE settings are not changed: switch this off, disable or remove SeaQ Snap Layout and KDE's own snapping is back.
-Support SeaQ Snap Layout
-If you like SeaQ Snap Layout, you can support its development – thank you!
 Donate with PayPal
 Buy me a coffee
+for KWin · v%1
+Automatic tiling
+Arrange windows
+Swap windows
+Every feature can be switched on and off on its own.
+Every window gets its place by itself, like in a tiling window manager.
+A window stops at the edge of another one, also when you move it fast. Shake the mouse or keep pushing for a moment to let go. 0 = windows can overlap freely.
+Shake the mouse quickly back and forth while resizing and the other windows jump back. A fast pull in one direction never lets go.
+Every window gets its place on the screen by itself. New windows join in, closed ones leave room for the others.
+Tiling
+Arrange windows automatically
+Off: windows stay where you put them. The other features work either way.
+Layout
+Main window
+Size of the main area
+Also changes when you resize the main window by hand.
+Main windows
+How many windows share the main area (layout “Main and stack”).
+Swap
+Drop a window onto another one
+Keys
+Change them on the Keyboard shortcuts page. With automatic tiling, the windows also trade their places in the order.
+Swap with the window on the left
+Swap with the window on the right
+Swap with the window above
+Swap with the window below
+Automatic tiling on/off
+Next tiling layout
+Make it the main window
+Float the window (leave tiling)
+Main area bigger
+Main area smaller
+Main and stack
+Main in the middle
+Columns
+Rows
+Grid
+Spiral
+One at a time
+Switch mode (snapping / tiling)
+One more main window
+One main window less
+Move the window one place on
+Move the window one place back
+Modes
+Dwindle
+Minimize
+Live preview
+Switched off
+Top edge: full screen
+Top edge: top half
+Top edge: maximize
+Drag a window against an edge…
+Left edge: left half
+Corner: a quarter
+Move a window towards others…
+Close by, the edges stick together
+Resizing snaps too – here to the full height
+Drag a shared edge…
+…the neighbours grow and shrink with it
+…in every direction
+One window
+A new window joins
+One closes – the others fill the gap
+Grab window A…
+…drag it onto window B…
+…let go: they trade places
+Snap bar and screen edges get in the way of automatic tiling. So they run as two modes – switch between them with the shortcut or here.
+Mode 1 – Snap bar and screen edges
+Snap bar, screen edges, window magnet, shortcuts and swap windows.
+Mode 2 – Automatic tiling
+Automatic tiling, swap windows, shortcuts, and the window magnet for floating windows.
+Automatic tiling is switched off – only mode 1 runs and the mode shortcut does nothing.
+Snap bar and screen edges are switched off – only mode 2 runs and the mode shortcut does nothing.
+Switch mode
+No key
+Change key
+KSnapUnity – Settings editor
+Active mode
+Snap bar and screen edges
+Click or press %1 to switch the mode.
+Only one mode is switched on.
+Two windows trade places: drop one onto the other, or by key.
+KDE's own maximize and tile at the screen edges – with its outline – pause while KSnapUnity runs, so only one preview appears. Your KDE settings are not changed: switch this off, disable or remove KSnapUnity and KDE's own behavior is back.
+So only one magnet pulls at a window. Your KDE settings are not changed: switch this off, disable or remove KSnapUnity and KDE's own snapping is back.
+Snap Smarter. Work Better.
+K for KWin · Snap for snapping smarter · Unity for everything in one system
+Unified
+All window features in one system.
+Natural
+Intuitive, natural window behavior.
+Intelligent
+Smart arranging and detection.
+Snap layouts and automatic tiling.
+Your Workflow
+Fits the way you work.
+Snapping and automatic tiling run as two modes – one shortcut switches between them.
+Support KSnapUnity
+If you like KSnapUnity, you can support its development – thank you!
+Own layouts
+Every layout you build on the Layouts page can arrange windows too – it appears above. Window 1 gets zone 1 and so on; more windows share the last zone. With fewer windows than zones “Main and stack” is used, so no holes appear.
+Open the layout builder
+Layout by number of windows
+Switch the layout by itself
+Example: two windows side by side, from three on main and stack, from five a grid. Without a matching rule the layout chosen above is used.
+From
+windows:
+Remove rule
+Add rule
+Main area on the right
+Mirrors the layout: the main window sits on the right, the others on the left.
+New windows
+Join at the end
+Take the main place
+Next to the active window
+A single window
+Width
+Less than 100 % keeps a lone window centered – nice on wide screens.
+No outer margin
+A lone window uses the whole screen, even when a margin is set.
+Windows glide to their place
+When a window opens, closes or swaps, the others move smoothly instead of jumping.
+Duration
+Always floating
+These applications are never arranged and keep their own place. Dialogs always float.
+None yet.
+Add an open application
+Open the application first, then pick it here.
+Choose…
+No other window open
+Drag a window onto another one to swap them. Drop it on the snap bar or a screen edge and it floats freely; “Float the window” brings it back. Gaps come from the General page.
+Two windows trade places – drop one onto the other, or use the keys.
+Main switch for dragging and the keys.
+Drag a window over the middle of another one – the preview shows two arrows – and let go. With automatic tiling anywhere over the other window will do.
+Main windows: %1
+KSnapUnity: %1
+Automatic tiling on
+Automatic tiling off
+Open settings editor
+Click, then OK – the settings editor opens.
+✔ Ready – click OK to open the settings editor.
+Mode
+<b>Mode 1</b><br/>Snap bar and screen edges
+Off = Mode 1, on = Mode 2
+<b>Mode 2</b><br/>Automatic tiling
+Switch modes with:
+Change the key in the settings editor. Both modes need automatic tiling and the snap bar or screen edges switched on.
+Quick settings
+Snap bar colors:

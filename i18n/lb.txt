@@ -1,35 +1,25 @@
 Zoumaachen
 Restauréieren
 Maximéieren
-Opklappen
-Zouklappen
 Niewenteneen deelen
 Uewen an ënnen deelen
 Zon ewechhuelen
 Virlag lueden…
 Klickt op eng Zon fir se ze wielen · Duebelklick deelt se · Trennlinnen mat der Maus zéien
 %1 vun %2 Zonen
-SeaQ Snap Layout – Astellungseditor
-fir KDE · v%1
 Allgemeng
 Ausgesinn
 Verhalen & Animatioun
 Layouten
 Info & Hëllef
 Aktiv
-Pauséiert
 Zitt eng Fënster un den ieweschte Bildschiermrand a leet se op eng Zon of.
 Andocken
-Snap-Leescht weisen, wann eng Fënster un den ieweschte Rand gezu gëtt
-Weisen, wou d’Fënster landt
 Ursprénglech Gréisst restauréieren, wann d’Fënster erausgezu gëtt
 Ofstänn
 Ofstand tëscht Fënsteren
 Ofstand zum Bildschiermrand
-Ausgeschloss Applikatiounen
-Fënsterklassen, bei deenen d’Leescht ni erschéngt, eng pro Linn.
 Tipp
-KDE maximéiert Fënsteren, déi un den ieweschte Rand gezu ginn. Fir méi flüssegt Andocken schalt dat ënner Systemastellungen → Bildschiermränner aus.
 Recommandéiert Wäerter
 Faarwen, Gréisst a Form vun der Snap-Leescht.
 Virschau
@@ -81,8 +71,6 @@ Duplizéieren
 Läschen
 Esou funktionéiert et
 Gräift eng Fënster un der Titelleescht a zitt se no uewen. D’Leescht fiert erof; leet d’Fënster op eng Zon of an si fëllt genee dee Beräich. Zitt se erëm ewech, da kritt se hir al Gréisst zréck.
-Astellungseditor opmaachen
-Systemastellungen → Fënsterverwaltung → KWin-Skripter → Zännrad bei „SeaQ Snap Layout“ → „Snap Layout Astellungseditor opmaachen“ → OK.
 Informatiounen
 Versioun
 Auteur
@@ -102,8 +90,6 @@ Späicheren
 Jo
 Zon %1
 Fënster op eng Zon ofleeën
-SeaQ Snap Layout: un/aus
-SeaQ Snap Layout: Snap-Leescht testen
 Hallefen
 Zwee Drëttel
 Dräi Kolonnen
@@ -115,13 +101,6 @@ Uewen / Ënnen
 Stapel + Haapt
 Sechs Kachelen
 Säitebar + Raster
-Zitt Fënsteren un den ieweschte Bildschiermrand a leet se op eng Zon of.
-Astellungseditor
-Snap Layout Astellungseditor opmaachen
-✔ Prett – klickt op OK, fir den Astellungseditor opzemaachen.
-Quick-Astellungen
-Faarwen vun der Leescht:
-All aner Astellungen – Ausgesinn, Gréisst, Animatioun, Verhalen an eege Layouten – mécht een am Snap Layout Astellungseditor.
 Astellungen
 Keng
 Änneren
@@ -131,27 +110,21 @@ Setzen
 Ewechhuelen
 Snap-Leescht
 Bildschierm-Kanten
-Méi Weeër fir anzerasten
+Méi Weeër
 Fënster-Magnéit
 Tastekombinatiounen
 Kierzelen
-Véier Weeër, Fënsteren anzerasten. All eenzel léisst sech eleng an- an ausschalten.
 Funktiounen
 Dréck eng Fënster géint eng Kant oder en Eck: maximéieren, Hälften, Véierelen.
 Fënsteren halen openeen an un de Bildschierm-Kanten.
 Déi aktiv Fënster mat Tastekombinatiounen arasten.
 Virschauen
 Virschauen an der Akzentfaarf weisen
-Aus: en neutrale Rumm. Gëllt fir all Virschauen.
-Fënsterklassen, déi ni agerast ginn, eng pro Linn.
 KDE huet seng eege Bildschierm-Kanten-Aktiounen an säin eegent Arasten. Wann déiselwecht Funktioun hei un ass, schalt déi vu KDE aus: Systemastellungen → Fënsterverwaltung → Bildschierm-Kanten, an Fënsterverhalen → Réckelen.
 Dréck eng Fënster géint eng Kant oder en Eck vum Bildschierm, an si fëllt deen Deel aus. Geet mat oder ouni Snap-Leescht.
 Vollbild
 Iewescht Hällef
 Aus
-Ënnescht Hällef
-Lénks Hällef
-Riets Hällef
 Kanten an Ecken
 Bildschierm-Kanten benotzen
 Onofhängeg vun der Snap-Leescht. All Kant léisst sech eleng schalten.
@@ -197,7 +170,6 @@ All iwwerhuelen
 Halen
 Gutt ze wëssen
 D’Arast-Aktioune benotzen déiselwecht Ofstänn wéi d’Snap-Leescht a mierken sech d’Gréisst vu virum Arasten: „Gréisst vu virum Arasten zrécksetzen“ bréngt se zréck.
-SeaQ Snap Layout: %1
 An déi lénks Hällef
 An déi riets Hällef
 An déi iewescht Hällef
@@ -228,9 +200,7 @@ Meta+Shift + Tast
 Strg+Shift+Alt + Tast
 Strg+Alt + Zifferblock
 Keng Kierzelen
-Klickt, dann OK – den Astellungseditor gëtt opgemaach.
 Widderstand géint Iwwerlappen
-Wéi wäit Dir eng Fënster an eng aner drécke musst, ier se lassléisst. 0 = Fënstere kënne sech fräi iwwerlappen.
 Op Standard zerécksetzen
 All Tasten zerécksetzen
 Gëtt all Aktioun erëm d'Tast vum gewielte Schema a läscht Tasten, déi d'Schema net huet.
@@ -241,7 +211,6 @@ Wann Dir eng Fënster an der Gréisst ännert, réckelen d'Fënsteren, déi se b
 Gestapelt Fënsteren an enger Linn halen
 Fënsteren iwwerteneen halen hir lénks a riets Kanten zesummen, Fënsteren nieftenee hir iewescht an ënnescht.
 Rësele fir ze léisen
-Rëselt d'Maus beim Gréisst-Änneren, an déi aner Fënstere sprange zréck.
 Aner Fënsteren ausblenden
 Beim Gréisst-Änneren ginn Fënsteren, déi net matginn, duerchsichteg gewisen.
 Virschau vun der Snap-Leescht
@@ -257,11 +226,156 @@ E kuerze Stouss gëtt d'Halschent oder de Véierel. Halt d'Fënster e bësse mé
 Halzäit
 Wéi laang d'Fënster un der Kant bleiwe muss, ier se wiisst.
 KDE säin eegent Kante-Kachelen
-KDE säin eegent Maximéieren a Kachelen un de Schiermkanten – mam Contour – paus, soulaang SeaQ Snap Layout leeft, fir datt nëmmen eng Virschau erschéngt. Är KDE-Astellunge ginn net geännert: schalt dat aus, desaktivéiert oder läscht SeaQ Snap Layout, an d'Verhale vu KDE ass erëm do.
 KDE säin eegent Fënster-Aklacken
 KDE seng Aklack-Zonen pauséieren, soulaang de Magnéit un ass
-Fir datt nëmmen ee Magnéit un enger Fënster zitt. Är KDE-Astellunge ginn net geännert: schalt dat aus, desaktivéiert oder läscht SeaQ Snap Layout, an d'Aklacke vu KDE ass erëm do.
-SeaQ Snap Layout ënnerstëtzen
-Wann Iech SeaQ Snap Layout gefält, kënnt Dir d'Entwécklung ënnerstëtzen – merci!
 Mat PayPal spenden
 Buy me a coffee
+fir KWin · v%1
+Automatesch Kachelen
+Fënsteren arrangéieren
+Fënsteren tauschen
+All Funktioun kann eenzel un- an ausgeschalt ginn.
+All Fënster fënnt seng Plaz vu selwer, wéi an engem kachelende Fënstermanager.
+Eng Fënster stoppt um Rand vun enger anerer, och wann s du se séier beweegs. Rëssel d’Maus oder dréck nach e Moment weider, fir se lass ze loossen. 0 = Fënstere kënne sech fräi iwwerlappen.
+Rëssel beim Gréisst-Änneren d’Maus séier hin an hier, an déi aner Fënsteren sprangen zréck. E séieren Zuch an eng Richtung léist se ni.
+All Fënster fënnt hir Plaz um Bildschierm vu selwer. Nei Fënsteren reien sech an, zougemaachter maache Plaz fir déi aner.
+Kachelen
+Fënsteren automatesch arrangéieren
+Aus: Fënsteren bleiwen, wou s du se hileeës. Déi aner Funktiounen ginn esou oder esou.
+Layout
+Haaptfënster
+Gréisst vum Haaptberäich
+Ännert sech och, wann s du d’Haaptfënster mat der Hand méi grouss oder méi kleng zéis.
+Haaptfënsteren
+Wéi vill Fënsteren den Haaptberäich deelen (Layout „Haapt a Stapel“).
+Tauschen
+Eng Fënster op eng aner falen loossen
+Tasten
+Änner se op der Säit Tastekombinatiounen. Beim automatesche Kachelen tauschen d’Fënsteren och hir Plaz an der Reiefolleg.
+Mat der Fënster lénks tauschen
+Mat der Fënster riets tauschen
+Mat der Fënster driwwer tauschen
+Mat der Fënster drënner tauschen
+Automatesch Kachelen un/aus
+Nächst Kachel-Layout
+Zur Haaptfënster maachen
+Fënster schwiewe loossen (Kachelen verloossen)
+Haaptberäich méi grouss
+Haaptberäich méi kleng
+Haapt a Stapel
+Haapt an der Mëtt
+Kolonnen
+Reien
+Gitter
+Spiral
+Eng nom aneren
+Modus wiesselen (Arasten / Kachelen)
+Eng Haaptfënster méi
+Eng Haaptfënster manner
+Fënster eng Plaz no vir
+Fënster eng Plaz no hannen
+Modi
+Spiral no bannen
+Minimiséieren
+Live-Virschau
+Ausgeschalt
+Ieweschte Rand: ganze Bildschierm
+Ieweschte Rand: iewescht Hallschent
+Ieweschte Rand: maximéieren
+Zitt eng Fënster géint e Rand …
+Lénke Rand: lénks Hallschent
+Eck: e Véierel
+Beweeg eng Fënster op aner zou …
+No beieneen pechen d’Kanten zesummen
+Och d’Gréisst-Änneren rascht an – hei op déi voll Héicht
+Zitt un enger gemeinsamer Kant …
+… d’Noperen wuessen a schrumpfe mat
+… an all Richtung
+Eng Fënster
+Eng nei Fënster kënnt derbäi
+Eng mécht zou – déi aner fëllen d’Lück
+Huel d’Fënster A …
+… zitt se op d’Fënster B …
+… lass loossen: si tauschen d’Plazen
+Snap-Leescht a Bildschierm-Kanten stéieren dat automatescht Kachelen. Dofir lafe se als zwee Modi – wiessel mat der Tastekombinatioun oder hei.
+Modus 1 – Snap-Leescht a Bildschierm-Kanten
+Snap-Leescht, Bildschierm-Kanten, Fënster-Magnéit, Tastekombinatiounen a Fënsteren tauschen.
+Modus 2 – Automatesch Kachelen
+Automatesch Kachelen, Fënsteren tauschen, Tastekombinatiounen an de Magnéit fir fräi Fënsteren.
+Automatesch Kachelen ass aus – nëmme Modus 1 leeft, an d’Modus-Tast mécht näischt.
+Snap-Leescht a Kante sinn aus – nëmme Modus 2 leeft, an d’Modus-Tast mécht näischt.
+Modus wiesselen
+Keng Tast
+Tast änneren
+KSnapUnity – Astellungseditor
+Aktive Modus
+Snap-Leescht a Bildschierm-Kanten
+Klick oder dréck %1, fir de Modus ze wiesselen.
+Nëmmen ee Modus ass an.
+Zwou Fënstere tauschen d’Plazen: eng op déi aner zéien oder mat enger Tast.
+KDE säin eegent Maximéieren a Kachelen un de Kanten – mat sengem Ëmress – mécht Paus, soulaang KSnapUnity leeft, fir datt nëmmen eng Virschau erschéngt. Deng KDE-Astellunge bleiwen onverännert: schalt dat aus, desaktivéier oder läsch KSnapUnity an d’KDE-Verhalen ass zeréck.
+Sou zitt nëmmen ee Magnéit un enger Fënster. Deng KDE-Astellunge bleiwen onverännert: schalt dat aus, desaktivéier oder läsch KSnapUnity an d’KDE-Arasten ass zeréck.
+Snap Smarter. Work Better.
+K fir KWin · Snap fir méi schlau Arasten · Unity fir alles an engem System
+Unified
+All Fënsterfunktiounen an engem System.
+Natural
+Intuitiivt, natierlecht Fënsterverhalen.
+Intelligent
+Schlau Uerdnen an Erkennen.
+Snap-Layouten an automatesch Kachelen.
+Your Workflow
+Passt sech denger Aarbechtsweis un.
+Arasten an automatesch Kachelen lafen als zwee Modi – eng Tastekombinatioun wiesselt tëscht hinnen.
+KSnapUnity ënnerstëtzen
+Wann der KSnapUnity gefält, kanns de d’Entwécklung ënnerstëtzen – merci!
+Eege Layouten
+All Layout, deen s de op der Säit Layouten bauls, kann och Fënsteren uerdnen – en erschéngt uewen. Fënster 1 kritt Zon 1 a sou weider; weider Fënsteren deelen déi lescht Zon. Mat manner Fënstere wéi Zonen gëtt „Haapt a Stapel“ benotzt, fir datt keng Lächer entstinn.
+Layout-Baukaste opmaachen
+Layout no Unzuel vun de Fënsteren
+Layout eleng wiesselen
+Beispill: zwou Fënsteren nieftenee, vun dräi un Haapt a Stapel, vu fënnef un e Gitter. Ouni passend Regel gëllt den uewe gewielte Layout.
+Vun
+Fënsteren:
+Regel ewechhuelen
+Regel derbäisetzen
+Haaptberäich riets
+Spigelt de Layout: d’Haaptfënster riets, déi aner lénks.
+Nei Fënsteren
+Hannen ustellen
+D’Haaptplaz huelen
+Nieft déi aktiv Fënster
+Eng eenzel Fënster
+Breet
+Ënner 100 % bleift eng eenzel Fënster an der Mëtt – schéin op breede Bildschiermer.
+Keen Ausseabstand
+Eng eenzel Fënster notzt de ganze Bildschierm, och wann en Abstand agestallt ass.
+Fënsteren gleede sanft op hir Plaz
+Wann eng Fënster opgeet, zougeet oder tauscht, beweegen déi aner sech sanft amplaz ze sprangen.
+Dauer
+Ëmmer fräi
+Dës Programmer ginn ni geuerdnet a behalen hir eege Plaz. Dialoger sinn ëmmer fräi.
+Nach keng.
+Oppene Programm derbäisetzen
+Maach de Programm fir d’éischt op a wiel en dann hei.
+Wielen …
+Keng aner Fënster op
+Zitt eng Fënster op eng aner, fir se ze tauschen. Op der Snap-Leescht oder engem Rand lassgelooss, schwieft se fräi; „Fënster schwiewe loossen“ hëlt se zeréck. D’Ofstänn kommen vun der Säit Allgemeng.
+Zwou Fënstere tauschen d’Plazen – eng op déi aner zéien oder d’Taste benotzen.
+Haaptschalter fir d’Zéien an d’Tasten.
+Zitt eng Fënster iwwer d’Mëtt vun enger anerer – d’Virschau weist zwee Feiler – a looss lass. Beim automatesche Kachelen geet iergendwou iwwer der anerer Fënster.
+Haaptfënsteren: %1
+KSnapUnity: %1
+Automatesch Kachelen un
+Automatesch Kachelen aus
+Astellungseditor opmaachen
+Klick, dann OK – den Astellungseditor geet op.
+✔ Prett – klick OK, fir den Astellungseditor opzemaachen.
+Modus
+<b>Modus 1</b><br/>Snap-Leescht a Bildschierm-Kanten
+Aus = Modus 1, un = Modus 2
+<b>Modus 2</b><br/>Automatesch Kachelen
+Modus wiessele mat:
+D’Tast ännerst de am Astellungseditor. Béid Modi brauchen dat automatescht Kachelen an d’Snap-Leescht oder d’Bildschierm-Kanten.
+Quick-Astellungen
+Faarwe vun der Snap-Leescht:
