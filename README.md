@@ -35,7 +35,8 @@ Drag a window to the top edge and drop it onto a zone of the snap bar – or let
 
 
 
-https://github.com/user-attachments/assets/1777d77f-b5f0-4997-ae7f-a3260bd680aa
+https://github.com/user-attachments/assets/f1261c84-a939-486f-a3a0-a93ae2cb755b
+
 
 
 
