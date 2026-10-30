@@ -1,38 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Quick menu behind the gear icon in System Settings → KWin Scripts.
-     Source strings are English; System Settings translates them through the
-     .mo files in contents/locale (domain "kdesnaplayout"). -->
+<!-- Quick settings behind the gear icon in System Settings → KWin Scripts.
+     The big button opens the settings editor; below are the most used
+     switches. Source strings are English; System Settings translates them
+     through the .mo files in contents/locale (domain "kdesnaplayout"). -->
 <ui version="4.0">
  <class>KDESnapLayoutQuickMenu</class>
  <widget class="QWidget" name="KDESnapLayoutQuickMenu">
   <property name="geometry">
-   <rect><x>0</x><y>0</y><width>520</width><height>330</height></rect>
+   <rect><x>0</x><y>0</y><width>520</width><height>520</height></rect>
   </property>
+  <property name="styleSheet"><string notr="true">QCheckBox { spacing: 10px; padding: 3px 0; }
+QCheckBox::indicator { width: 34px; height: 16px; border-radius: 10px; border: 2px solid rgba(128,128,128,0.55);
+  background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #ffffff, stop:0.47 #ffffff, stop:0.475 rgba(128,128,128,0.55), stop:1 rgba(128,128,128,0.55)); }
+QCheckBox::indicator:checked { border: 2px solid palette(highlight);
+  background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 palette(highlight), stop:0.525 palette(highlight), stop:0.53 #ffffff, stop:1 #ffffff); }
+QCheckBox::indicator:disabled { border: 2px solid rgba(128,128,128,0.3); }
+QGroupBox { font-weight: bold; border: 1px solid rgba(128,128,128,0.35); border-radius: 8px; margin-top: 12px; padding: 14px 10px 8px 10px; }
+QGroupBox::title { subcontrol-origin: margin; left: 12px; padding: 0 4px; }
+QGroupBox QLabel, QGroupBox QCheckBox, QGroupBox QComboBox { font-weight: normal; }</string></property>
   <layout class="QVBoxLayout" name="mainLayout">
-   <property name="spacing"><number>14</number></property>
+   <property name="spacing"><number>10</number></property>
    <item>
     <widget class="QLabel" name="subtitle">
-     <property name="text"><string>Drag windows to the top edge of the screen and drop them onto a zone.</string></property>
+     <property name="text"><string>Snap Smarter. Work Better.</string></property>
+     <property name="alignment"><set>Qt::AlignHCenter</set></property>
+     <property name="styleSheet"><string notr="true">font-size: 11pt; font-style: italic; padding: 2px 0 6px 0;</string></property>
      <property name="wordWrap"><bool>true</bool></property>
     </widget>
    </item>
    <item>
-    <widget class="QGroupBox" name="editorBox">
-     <property name="title"><string>Settings editor</string></property>
-     <layout class="QVBoxLayout" name="editorLayout">
-      <property name="spacing"><number>8</number></property>
-      <item>
-       <widget class="QPushButton" name="openButton">
-        <property name="text"><string>Open Snap Layout settings editor</string></property>
-        <property name="icon"><iconset theme="configure"/></property>
-        <property name="iconSize"><size><width>22</width><height>22</height></size></property>
-        <property name="minimumSize"><size><width>0</width><height>46</height></size></property>
-        <property name="checkable"><bool>true</bool></property>
-        <property name="toolTip"><string>Click, then OK – the settings editor opens.</string></property>
-        <!-- Once clicked the button is filled with the system accent color. The
-             text uses the system's "selected text" color, which Plasma picks to
-             match the accent: white on dark accents, black on light ones. -->
-        <property name="styleSheet"><string notr="true">QPushButton:checked {
+    <widget class="QPushButton" name="openButton">
+     <property name="text"><string>Open settings editor</string></property>
+     <property name="icon"><iconset theme="configure"/></property>
+     <property name="iconSize"><size><width>24</width><height>24</height></size></property>
+     <property name="minimumSize"><size><width>0</width><height>50</height></size></property>
+     <property name="checkable"><bool>true</bool></property>
+     <property name="toolTip"><string>Click, then OK – the settings editor opens.</string></property>
+     <!-- once clicked the button is filled with the system accent color -->
+     <property name="styleSheet"><string notr="true">QPushButton { font-size: 11pt; }
+QPushButton:checked {
   background-color: palette(highlight);
   color: palette(highlighted-text);
   border: 1px solid palette(highlight);
@@ -41,19 +47,77 @@
   padding: 4px 12px;
 }
 QPushButton:checked:hover { border: 1px solid palette(highlighted-text); }</string></property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QCheckBox" name="kcfg_OpenSettings">
-        <property name="visible"><bool>false</bool></property>
-        <property name="text"><string notr="true">OpenSettings</string></property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLabel" name="readyHint">
-        <property name="visible"><bool>false</bool></property>
-        <property name="text"><string>✔ Ready – click OK to open the settings editor.</string></property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QSpinBox" name="kcfg_OpenCounter">
+     <property name="visible"><bool>false</bool></property>
+     <property name="maximum"><number>2000000000</number></property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="readyHint">
+     <property name="visible"><bool>false</bool></property>
+     <property name="text"><string>✔ Ready – click OK to open the settings editor.</string></property>
+     <property name="wordWrap"><bool>true</bool></property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="modeBox">
+     <property name="title"><string>Mode</string></property>
+     <layout class="QGridLayout" name="modeGrid">
+      <property name="horizontalSpacing"><number>12</number></property>
+      <item row="0" column="0">
+       <widget class="QLabel" name="mode1">
+        <property name="text"><string>&lt;b&gt;Mode 1&lt;/b&gt;&lt;br/&gt;Snap bar and screen edges</string></property>
+        <property name="alignment"><set>Qt::AlignRight|Qt::AlignVCenter</set></property>
         <property name="wordWrap"><bool>true</bool></property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QCheckBox" name="kcfg_TileMode">
+        <property name="text"><string/></property>
+        <property name="toolTip"><string>Off = Mode 1, on = Mode 2</string></property>
+        <property name="sizePolicy"><sizepolicy hsizetype="Fixed" vsizetype="Fixed"/></property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="mode2">
+        <property name="text"><string>&lt;b&gt;Mode 2&lt;/b&gt;&lt;br/&gt;Automatic tiling</string></property>
+        <property name="wordWrap"><bool>true</bool></property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="3">
+       <layout class="QHBoxLayout" name="modeKeyRow">
+        <item>
+         <spacer name="mkLeft"><property name="orientation"><enum>Qt::Horizontal</enum></property></spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="modeKeyLabel">
+          <property name="text"><string>Switch modes with:</string></property>
+         </widget>
+        </item>
+        <item>
+         <!-- written by the script: always the key that is really set -->
+         <widget class="QLineEdit" name="kcfg_ModeKey">
+          <property name="readOnly"><bool>true</bool></property>
+          <property name="focusPolicy"><enum>Qt::NoFocus</enum></property>
+          <property name="alignment"><set>Qt::AlignCenter</set></property>
+          <property name="maximumWidth"><number>170</number></property>
+          <property name="styleSheet"><string notr="true">QLineEdit { font-weight: bold; border: 1px solid rgba(128,128,128,0.5); border-radius: 6px; padding: 2px 8px; background: rgba(128,128,128,0.12); }</string></property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="mkRight"><property name="orientation"><enum>Qt::Horizontal</enum></property></spacer>
+        </item>
+       </layout>
+      </item>
+      <item row="2" column="0" colspan="3">
+       <widget class="QLabel" name="modeKey">
+        <property name="text"><string>Change the key in the settings editor. Both modes need automatic tiling and the snap bar or screen edges switched on.</string></property>
+        <property name="wordWrap"><bool>true</bool></property>
+        <property name="alignment"><set>Qt::AlignHCenter</set></property>
+        <property name="styleSheet"><string notr="true">color: #8a8d91; font-size: 9pt; padding-top: 4px;</string></property>
        </widget>
       </item>
      </layout>
@@ -62,34 +126,52 @@ QPushButton:checked:hover { border: 1px solid palette(highlighted-text); }</stri
    <item>
     <widget class="QGroupBox" name="quickBox">
      <property name="title"><string>Quick settings</string></property>
-     <layout class="QHBoxLayout" name="quickLayout">
-      <item>
+     <layout class="QGridLayout" name="quickGrid">
+      <property name="horizontalSpacing"><number>24</number></property>
+      <property name="verticalSpacing"><number>6</number></property>
+      <item row="0" column="0">
        <widget class="QLabel" name="themeLabel">
         <property name="text"><string>Snap bar colors:</string></property>
        </widget>
       </item>
-      <item>
-       <widget class="QComboBox" name="kcfg_themeMode">
-        <property name="minimumSize"><size><width>220</width><height>0</height></size></property>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="kcfg_ThemeMode">
         <item><property name="text"><string>System</string></property></item>
         <item><property name="text"><string>Light</string></property></item>
         <item><property name="text"><string>Dark</string></property></item>
        </widget>
       </item>
-      <item>
-       <spacer name="themeSpacer">
-        <property name="orientation"><enum>Qt::Horizontal</enum></property>
-       </spacer>
+      <item row="1" column="0">
+       <widget class="QCheckBox" name="kcfg_SnapEnabled">
+        <property name="text"><string>Snap bar</string></property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QCheckBox" name="kcfg_EdgeEnabled">
+        <property name="text"><string>Screen edges</string></property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QCheckBox" name="kcfg_MagnetEnabled">
+        <property name="text"><string>Window magnet</string></property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QCheckBox" name="kcfg_KeysEnabled">
+        <property name="text"><string>Shortcuts</string></property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QCheckBox" name="kcfg_SwapEnabled">
+        <property name="text"><string>Swap windows</string></property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QCheckBox" name="kcfg_TileEnabled">
+        <property name="text"><string>Automatic tiling</string></property>
+       </widget>
       </item>
      </layout>
-    </widget>
-   </item>
-   <item>
-    <widget class="QLabel" name="info">
-     <property name="text"><string>All other settings – appearance, size, animation, behavior and your own layouts – are changed in the Snap Layout settings editor.</string></property>
-     <property name="wordWrap"><bool>true</bool></property>
-     <property name="frameShape"><enum>QFrame::StyledPanel</enum></property>
-     <property name="margin"><number>10</number></property>
     </widget>
    </item>
    <item>
@@ -104,8 +186,8 @@ QPushButton:checked:hover { border: 1px solid palette(highlighted-text); }</stri
   <connection>
    <sender>openButton</sender>
    <signal>clicked()</signal>
-   <receiver>kcfg_OpenSettings</receiver>
-   <slot>toggle()</slot>
+   <receiver>kcfg_OpenCounter</receiver>
+   <slot>stepUp()</slot>
   </connection>
   <connection>
    <sender>openButton</sender>

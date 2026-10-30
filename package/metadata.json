@@ -6,16 +6,16 @@
             }
         ],
         "Category": "Window Management",
-        "Description": "Snap windows the way you like: snap bar with layouts at the top edge, screen edges and corners, a window magnet with sticky edges and keyboard shortcuts – each one can be switched on its own.",
+        "Description": "2 modes, 6 features: smart snapping and automatic tiling.",
         "EnabledByDefault": false,
         "Icon": "preferences-system-windows",
         "Id": "kdesnaplayout",
         "License": "GPL-3.0-or-later",
-        "Name": "SeaQ Snap Layout (for KDE)",
-        "Version": "1.9.0",
-        "Description[de]": "Fenster einrasten, wie du willst: Snap-Leiste mit Layouts am oberen Rand, Bildschirmkanten und Ecken, Fenster-Magnet mit klebenden Kanten und Tastenkürzel – alles einzeln schaltbar.",
-        "Website": "https://github.com/SeaQSoft/SeaQ-Snap-Layout",
-        "BugReportUrl": "https://github.com/SeaQSoft/SeaQ-Snap-Layout/issues"
+        "Name": "KSnapUnity",
+        "Version": "2.3.4",
+        "Description[de]": "2 Modi, 6 Funktionen: smartes Einrasten und automatisches Anordnen.",
+        "Website": "https://github.com/SeaQSoft/KSnapUnity",
+        "BugReportUrl": "https://github.com/SeaQSoft/KSnapUnity/issues"
     },
     "KPackageStructure": "KWin/Script",
     "X-Plasma-API": "declarativescript",

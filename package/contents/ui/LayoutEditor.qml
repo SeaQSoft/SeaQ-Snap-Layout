@@ -64,7 +64,7 @@ ColumnLayout {
             enabled: ed.hasSelection && ed.zoneCount > 1
             onClicked: ed.removeSelected()
         }
-        ComboBox {
+        SafeCombo {
             id: tpl
             width: 220
             model: L.templates().map(function (t) { return I.layoutName(t.name); })

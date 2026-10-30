@@ -4,8 +4,9 @@ import QtQuick.Layouts
 import "../code/layouts.js" as L
 import "../code/i18n.js" as I
 import "../code/keys.js" as K
+import "../code/tiling.js" as T
 
-// Content of the settings editor window. Colors come from the system palette
+// Content of the settings window. Colors come from the system palette
 // (app.ui); the snap bar's own colors (app.pal) are only used in previews.
 Item {
     id: win
@@ -144,6 +145,89 @@ Item {
         AccentSwitch { checked: win.cfg[fr.key]; onToggled: win.cfg[fr.key] = checked }
     }
 
+    // Snapping (bar + edges) and tiling run as two modes. Shows which one is
+    // active, what belongs to it and the key that switches.
+    component ModeCard: Card {
+        title: I.tr("Modes")
+        Label {
+            Layout.fillWidth: true
+            wrapMode: Text.WordWrap
+            opacity: 0.8
+            text: I.tr("Snap bar and screen edges get in the way of automatic tiling. So they run as two modes – switch between them with the shortcut or here.")
+        }
+        Repeater {
+            model: [
+                { n: "1", tiling: false, t: I.tr("Mode 1 – Snap bar and screen edges"),
+                  d: I.tr("Snap bar, screen edges, window magnet, shortcuts and swap windows.") },
+                { n: "2", tiling: true, t: I.tr("Mode 2 – Automatic tiling"),
+                  d: I.tr("Automatic tiling, swap windows, shortcuts, and the window magnet for floating windows.") }
+            ]
+            delegate: Rectangle {
+                id: modeOpt
+                required property var modelData
+                readonly property bool on: win.app.tilingMode === modelData.tiling
+                Layout.fillWidth: true
+                implicitHeight: modeOptRow.implicitHeight + 20
+                radius: 8
+                color: on ? Qt.rgba(win.ui.accent.r, win.ui.accent.g, win.ui.accent.b, 0.16)
+                          : (modeOptMouse.containsMouse && win.app.modesAvailable ? Qt.rgba(win.ui.text.r, win.ui.text.g, win.ui.text.b, 0.05) : "transparent")
+                border.width: on ? 2 : 1
+                border.color: on ? win.ui.accent : win.ui.line
+                opacity: on || win.app.modesAvailable ? 1 : 0.55
+                RowLayout {
+                    id: modeOptRow
+                    anchors.fill: parent
+                    anchors.margins: 10
+                    spacing: 12
+                    Rectangle {
+                        implicitWidth: 30; implicitHeight: 30; radius: 15
+                        color: modeOpt.on ? win.ui.accent : "transparent"
+                        border.width: modeOpt.on ? 0 : 1
+                        border.color: win.ui.line
+                        Label { anchors.centerIn: parent; text: modeOpt.modelData.n; font.bold: true; color: modeOpt.on ? win.ui.accentText : win.ui.text }
+                    }
+                    ColumnLayout {
+                        Layout.fillWidth: true
+                        spacing: 2
+                        Label { text: modeOpt.modelData.t; font.bold: true; Layout.fillWidth: true; wrapMode: Text.WordWrap }
+                        Label { text: modeOpt.modelData.d; opacity: 0.75; Layout.fillWidth: true; wrapMode: Text.WordWrap }
+                    }
+                    Label { visible: modeOpt.on; text: I.tr("Active"); color: win.ui.accent; font.bold: true }
+                }
+                MouseArea {
+                    id: modeOptMouse
+                    anchors.fill: parent
+                    hoverEnabled: true
+                    onClicked: win.setMode(modeOpt.modelData.tiling)
+                }
+            }
+        }
+        Label {
+            Layout.fillWidth: true
+            visible: !win.app.modesAvailable
+            wrapMode: Text.WordWrap
+            color: win.ui.accent
+            text: !win.cfg.tileEnabled
+                ? I.tr("Automatic tiling is switched off – only mode 1 runs and the mode shortcut does nothing.")
+                : I.tr("Snap bar and screen edges are switched off – only mode 2 runs and the mode shortcut does nothing.")
+        }
+        RowLayout {
+            Layout.fillWidth: true
+            spacing: 10
+            Label { text: I.tr("Switch mode"); Layout.fillWidth: true }
+            Repeater {
+                model: win.modeKeys()
+                delegate: KeyChip { required property var modelData; code: modelData }
+            }
+            Label { visible: win.modeKeys().length === 0; text: I.tr("No key"); opacity: 0.6 }
+            AccentButton {
+                text: I.tr("Change key")
+                icon.name: "document-edit"
+                onClicked: { pages.currentIndex = 6; win.editingAction = "KDESnapLayoutModeSwitch"; }
+            }
+        }
+    }
+
     component PageTitle: ColumnLayout {
         id: pt
         property string title
@@ -163,8 +247,10 @@ Item {
         property bool current: false
         signal clicked()
         Layout.fillWidth: true
-        implicitHeight: 36
+        implicitHeight: 30
         radius: 6
+        // keep the chosen page in view when the list scrolls
+        onCurrentChanged: if (current) Qt.callLater(win.showNavItem, si)
         color: current ? win.ui.accent
                        : (siMouse.containsMouse ? Qt.rgba(win.ui.text.r, win.ui.text.g, win.ui.text.b, 0.08) : "transparent")
         RowLayout {
@@ -441,7 +527,7 @@ Item {
                         }
                     }
                     Label { text: "+"; height: keyBox.height; verticalAlignment: Text.AlignVCenter; leftPadding: 2; rightPadding: 2 }
-                    ComboBox {
+                    SafeCombo {
                         id: keyBox
                         width: 130
                         model: K.KEYS.map(function (k) { return k[0]; })
@@ -480,6 +566,24 @@ Item {
             }
         }
         Rectangle { Layout.fillWidth: true; height: 1; color: win.ui.line; opacity: 0.6 }
+    }
+
+    function showNavItem(item) {
+        if (!item || !navFlick) return;
+        const p = item.mapToItem(navFlick.contentItem, 0, 0);
+        if (p.y < navFlick.contentY) navFlick.contentY = Math.max(0, p.y - 8);
+        else if (p.y + item.height > navFlick.contentY + navFlick.height)
+            navFlick.contentY = Math.min(navFlick.contentHeight - navFlick.height, p.y + item.height - navFlick.height + 8);
+    }
+
+    // the keys that switch the mode (empty when none is set)
+    function modeKeys() {
+        app.shortcuts.revision;
+        return app.shortcuts.keys["KDESnapLayoutModeSwitch"] || [];
+    }
+    function setMode(tiling) {
+        if (!app.modesAvailable) return;
+        cfg.tileMode = tiling;
     }
 
     // ------------------------------------------------------- keyboard logic
@@ -605,7 +709,7 @@ Item {
                 anchors.fill: parent
                 leftPadding: win.app.titleAlign === "center" ? side : leftEdge
                 rightPadding: win.app.titleAlign === "center" ? side : rightEdge
-                text: I.tr("SeaQ Snap Layout – Settings editor")
+                text: I.tr("KSnapUnity – Settings editor")
                 font: win.app.titleFont
                 // the theme's title color, unless it would be unreadable on our background
                 readonly property real lumDiff: Math.abs(win.lum(win.app.titleColor) - win.lum(titleBar.color))
@@ -658,28 +762,31 @@ Item {
                         Layout.bottomMargin: 14
                         Layout.topMargin: 6
                         Image {
-                            source: "../icons/kdesnaplayout.svg"
+                            source: "../icons/snapmagic.png"
                             sourceSize: Qt.size(40, 40)
                         }
                         ColumnLayout {
                             spacing: 0
-                            Label { text: "SeaQ Snap Layout"; font.bold: true; font.pointSize: Qt.application.font.pointSize + 2 }
-                            Label { text: I.tr("for KDE · v%1", win.app.version); opacity: 0.6 }
+                            Label { text: "KSnapUnity"; font.bold: true; font.pointSize: Qt.application.font.pointSize + 2 }
+                            Label { text: I.tr("for KWin · v%1", win.app.version); opacity: 0.6 }
                         }
                     }
 
                     // the page list scrolls on its own when the window is low,
                     // so it never runs into the feature switches below
                     Flickable {
+                        id: navFlick
+                        objectName: "navFlick"
                         Layout.fillWidth: true
                         Layout.fillHeight: true
                         clip: true
                         contentHeight: navCol.implicitHeight
                         boundsBehavior: Flickable.StopAtBounds
-                        ScrollBar.vertical: ScrollBar { policy: ScrollBar.AsNeeded }
+                        // the bar gets its own lane so it never covers an entry
+                        ScrollBar.vertical: ScrollBar { id: navBar; policy: ScrollBar.AsNeeded }
                         ColumnLayout {
                             id: navCol
-                            width: parent.width
+                            width: navFlick.width - (navFlick.contentHeight > navFlick.height + 1 ? navBar.width + 4 : 0)
                             spacing: 4
                             Repeater {
                                 // h: section header shown above the entry
@@ -688,23 +795,26 @@ Item {
                                     { t: I.tr("Appearance"),           i: "preferences-desktop-color", p: 1, h: I.tr("Snap bar") },
                                     { t: I.tr("Behavior & Animation"), i: "preferences-desktop-animations", p: 2, h: "" },
                                     { t: I.tr("Layouts"),              i: "view-grid", p: 3, h: "" },
-                                    { t: I.tr("Screen edges"),         i: "transform-move", p: 4, h: I.tr("More ways to snap") },
+                                    { t: I.tr("Screen edges"),         i: "transform-move", p: 4, h: I.tr("More ways") },
                                     { t: I.tr("Window magnet"),        i: "snap-bounding-box", p: 5, h: "" },
                                     { t: I.tr("Keyboard shortcuts"),   i: "preferences-desktop-keyboard-shortcut", p: 6, h: "" },
+                                    { t: I.tr("Automatic tiling"),     i: "view-split-left-right", p: 8, h: I.tr("Arrange windows") },
+                                    { t: I.tr("Swap windows"),         i: "exchange-positions", p: 9, h: "" },
                                     { t: I.tr("About & Help"),         i: "help-about", p: 7, h: " " }
                                 ]
                                 delegate: ColumnLayout {
                                     required property var modelData
                                     Layout.fillWidth: true
                                     spacing: 2
+                                    Item { visible: modelData.h === " "; implicitHeight: 6 }   // just a little air
                                     Label {
-                                        visible: modelData.h !== ""
+                                        visible: modelData.h.trim() !== ""
                                         text: modelData.h.trim()
                                         Layout.fillWidth: true
-                                        Layout.topMargin: 14
+                                        Layout.topMargin: 6
                                         Layout.leftMargin: 10
                                         Layout.rightMargin: 6
-                                        Layout.bottomMargin: 4
+                                        Layout.bottomMargin: 2
                                         wrapMode: Text.WordWrap
                                         lineHeight: 1.1
                                         opacity: 0.55
@@ -724,10 +834,59 @@ Item {
                         }
                     }
 
+                    // which mode runs right now; click to switch
+                    Rectangle {
+                        id: modeBadge
+                        objectName: "modeBadge"
+                        Layout.fillWidth: true
+                        Layout.topMargin: 6
+                        implicitHeight: modeBadgeRow.implicitHeight + 10
+                        radius: 8
+                        color: Qt.rgba(win.ui.accent.r, win.ui.accent.g, win.ui.accent.b, modeBadgeMouse.containsMouse && win.app.modesAvailable ? 0.24 : 0.14)
+                        border.width: 1
+                        border.color: Qt.rgba(win.ui.accent.r, win.ui.accent.g, win.ui.accent.b, 0.55)
+                        // compact: the number shows the running mode, one click switches
+                        RowLayout {
+                            id: modeBadgeRow
+                            anchors.fill: parent
+                            anchors.leftMargin: 8; anchors.rightMargin: 10
+                            anchors.topMargin: 5; anchors.bottomMargin: 5
+                            spacing: 8
+                            Rectangle {
+                                implicitWidth: 22; implicitHeight: 22; radius: 11
+                                color: win.ui.accent
+                                Label { anchors.centerIn: parent; text: win.app.tilingMode ? "2" : "1"; color: win.ui.accentText; font.bold: true }
+                            }
+                            Label {
+                                text: I.tr("Switch mode")
+                                font.bold: true
+                                Layout.fillWidth: true
+                                elide: Text.ElideRight
+                            }
+                            Label {
+                                visible: win.app.modesAvailable
+                                text: "⇄"
+                                opacity: 0.7
+                                font.pointSize: Qt.application.font.pointSize + 1
+                            }
+                        }
+                        MouseArea {
+                            id: modeBadgeMouse
+                            anchors.fill: parent
+                            hoverEnabled: true
+                            cursorShape: win.app.modesAvailable ? Qt.PointingHandCursor : Qt.ArrowCursor
+                            onClicked: if (win.app.modesAvailable) win.app.switchMode()
+                            ToolTip.visible: containsMouse
+                            ToolTip.text: (win.app.tilingMode ? I.tr("Mode 2 – Automatic tiling") : I.tr("Mode 1 – Snap bar and screen edges")) + "\n"
+                                + (win.app.modesAvailable ? I.tr("Click or press %1 to switch the mode.", win.modeKeys().length ? K.toText(win.modeKeys()[0]) : "–")
+                                : I.tr("Only one mode is switched on."))
+                        }
+                    }
+
                     // every feature can be switched on its own, right from here
                     Rectangle {
                         Layout.fillWidth: true
-                        Layout.topMargin: 10
+                        Layout.topMargin: 6
                         implicitHeight: featCol.implicitHeight + 20
                         radius: 8
                         color: win.ui.card
@@ -736,21 +895,23 @@ Item {
                         ColumnLayout {
                             id: featCol
                             anchors.fill: parent
-                            anchors.margins: 10
-                            spacing: 6
+                            anchors.margins: 8
+                            spacing: 0
                             Repeater {
                                 model: [
                                     { t: I.tr("Snap bar"), k: "snapEnabled" },
                                     { t: I.tr("Screen edges"), k: "edgeEnabled" },
                                     { t: I.tr("Window magnet"), k: "magnetEnabled" },
-                                    { t: I.tr("Shortcuts"), k: "keysEnabled" }
+                                    { t: I.tr("Shortcuts"), k: "keysEnabled" },
+                                    { t: I.tr("Automatic tiling"), k: "tileEnabled" },
+                                    { t: I.tr("Swap windows"), k: "swapEnabled" }
                                 ]
                                 // fixed row height: some styles draw their switch larger
                                 // than its implicit size, rows must not overlap then
                                 delegate: RowLayout {
                                     required property var modelData
                                     Layout.fillWidth: true
-                                    Layout.preferredHeight: Math.max(30, featSw.implicitHeight + 4)
+                                    Layout.preferredHeight: Math.max(28, featSw.implicitHeight + 2)
                                     spacing: 8
                                     Label {
                                         text: modelData.t
@@ -793,7 +954,7 @@ Item {
                         Item { implicitHeight: 12 }
                         PageTitle {
                             title: I.tr("General")
-                            subtitle: I.tr("Four ways to snap windows. Each one can be switched on and off on its own.")
+                            subtitle: I.tr("Every feature can be switched on and off on its own.")
                         }
 
                         Card {
@@ -814,7 +975,17 @@ Item {
                                 text: I.tr("Keyboard shortcuts"); page: 6; key: "keysEnabled"
                                 desc: I.tr("Snap the active window with key combinations.")
                             }
+                            FeatureRow {
+                                text: I.tr("Automatic tiling"); page: 8; key: "tileEnabled"
+                                desc: I.tr("Every window gets its place by itself, like in a tiling window manager.")
+                            }
+                            FeatureRow {
+                                text: I.tr("Swap windows"); page: 9; key: "swapEnabled"
+                                desc: I.tr("Two windows trade places: drop one onto the other, or by key.")
+                            }
                         }
+
+                        ModeCard {}
 
                         Card {
                             title: I.tr("Previews")
@@ -869,24 +1040,6 @@ Item {
                             }
                         }
 
-                        Card {
-                            title: I.tr("Excluded applications")
-                            Label {
-                                Layout.fillWidth: true
-                                wrapMode: Text.WordWrap
-                                opacity: 0.7
-                                text: I.tr("Window classes that are never snapped, one per line.")
-                            }
-                            ScrollView {
-                                Layout.fillWidth: true
-                                Layout.preferredHeight: 90
-                                TextArea {
-                                    text: win.cfg.excludedApps
-                                    placeholderText: "krita\nsteam"
-                                    onTextChanged: if (text !== win.cfg.excludedApps) win.cfg.excludedApps = text
-                                }
-                            }
-                        }
 
                         Card {
                             title: I.tr("Tip")
@@ -1231,7 +1384,7 @@ Item {
                             }
                             SettingRow {
                                 text: I.tr("Motion curve")
-                                ComboBox {
+                                SafeCombo {
                                     implicitWidth: 230
                                     model: [I.tr("Smooth (default)"), I.tr("Quick"), I.tr("Bouncy"),
                                             I.tr("Dynamic"), I.tr("Soft"), I.tr("Linear")]
@@ -1416,51 +1569,7 @@ Item {
                         }
 
                         // what each edge does, drawn on a small monitor
-                        Monitor {
-                            id: edgeMap
-                            opacity: win.cfg.edgeEnabled ? 1 : 0.5
-                            readonly property real g: 6                                  // gap between tiles
-                            readonly property real sw: screenW
-                            readonly property real sh: screenH
-                            readonly property real cw: Math.max(sw * 0.15, sw * win.cfg.edgeCornerSize / 100)
-                            readonly property real ch: Math.max(sh * 0.2, sh * win.cfg.edgeCornerSize / 100)
-                            ZoneTile {   // top
-                                x: edgeMap.cw + edgeMap.g; y: edgeMap.g
-                                width: edgeMap.sw - 2 * edgeMap.cw - 2 * edgeMap.g; height: edgeMap.ch - edgeMap.g
-                                on: win.cfg.edgeTop !== 3
-                                label: [I.tr("Maximize"), I.tr("Fullscreen"), I.tr("Top half"), I.tr("Off")][Math.max(0, Math.min(3, win.cfg.edgeTop))]
-                            }
-                            ZoneTile {   // bottom
-                                x: edgeMap.cw + edgeMap.g; y: edgeMap.sh - edgeMap.ch
-                                width: edgeMap.sw - 2 * edgeMap.cw - 2 * edgeMap.g; height: edgeMap.ch - edgeMap.g
-                                on: win.cfg.edgeBottom; label: I.tr("Bottom half")
-                            }
-                            ZoneTile {   // left
-                                x: edgeMap.g; y: edgeMap.ch + edgeMap.g
-                                width: edgeMap.cw - edgeMap.g; height: edgeMap.sh - 2 * edgeMap.ch - 2 * edgeMap.g
-                                on: win.cfg.edgeSides; label: I.tr("Left half")
-                            }
-                            ZoneTile {   // right
-                                x: edgeMap.sw - edgeMap.cw; y: edgeMap.ch + edgeMap.g
-                                width: edgeMap.cw - edgeMap.g; height: edgeMap.sh - 2 * edgeMap.ch - 2 * edgeMap.g
-                                on: win.cfg.edgeSides; label: I.tr("Right half")
-                            }
-                            Repeater {
-                                model: 4
-                                ZoneTile {
-                                    required property int index
-                                    width: edgeMap.cw - edgeMap.g; height: edgeMap.ch - edgeMap.g
-                                    x: index % 2 === 0 ? edgeMap.g : edgeMap.sw - edgeMap.cw
-                                    y: index < 2 ? edgeMap.g : edgeMap.sh - edgeMap.ch
-                                    on: win.cfg.edgeCorners
-                                    label: "¼"
-                                }
-                            }
-                            MiniWindow {   // the window being pushed
-                                width: edgeMap.sw * 0.26; height: edgeMap.sh * 0.3
-                                x: (edgeMap.sw - width) / 2; y: (edgeMap.sh - height) / 2 + 4
-                            }
-                        }
+                        LiveDemo { kind: "edges"; app: win.app; active: win.cfg.edgeEnabled; running: win.visible && pages.currentIndex === 4 }
 
                         Card {
                             title: I.tr("Edges and corners")
@@ -1473,7 +1582,7 @@ Item {
                             SettingRow {
                                 text: I.tr("Top edge")
                                 enabled: win.cfg.edgeEnabled
-                                ComboBox {
+                                SafeCombo {
                                     implicitWidth: 230
                                     model: [I.tr("Maximize"), I.tr("Fullscreen"), I.tr("Top half"), I.tr("Off")]
                                     currentIndex: Math.max(0, Math.min(3, win.cfg.edgeTop))
@@ -1579,7 +1688,7 @@ Item {
                             title: I.tr("KDE's own edge tiling")
                             SwitchRow {
                                 text: I.tr("Pause KDE's edge tiling and its preview")
-                                desc: I.tr("KDE's own maximize and tile at the screen edges – with its outline – pause while SeaQ Snap Layout runs, so only one preview appears. Your KDE settings are not changed: switch this off, disable or remove SeaQ Snap Layout and KDE's own behavior is back.")
+                                desc: I.tr("KDE's own maximize and tile at the screen edges – with its outline – pause while KSnapUnity runs, so only one preview appears. Your KDE settings are not changed: switch this off, disable or remove KSnapUnity and KDE's own behavior is back.")
                                 checked: win.cfg.kdeEdgesOff
                                 onToggled: (v) => win.cfg.kdeEdgesOff = v
                             }
@@ -1614,33 +1723,7 @@ Item {
                         }
 
                         // two windows sticking together, with the snap band between them
-                        Monitor {
-                            id: magMap
-                            opacity: win.cfg.magnetEnabled ? 1 : 0.5
-                            readonly property real band: Math.min(magMap.screenW * 0.12, Math.max(4, win.cfg.magnetDistance * 0.9))
-                            MiniWindow {
-                                id: wa
-                                x: magMap.screenW * 0.1; y: magMap.screenH * 0.2
-                                width: magMap.screenW * 0.36; height: magMap.screenH * 0.6
-                            }
-                            Rectangle {   // where the other window clicks into place
-                                x: wa.x + wa.width; y: wa.y; width: magMap.band; height: wa.height
-                                color: Qt.rgba(win.ui.accent.r, win.ui.accent.g, win.ui.accent.b, 0.45)
-                                border.width: 1; border.color: Qt.lighter(win.ui.accent, 1.5)
-                            }
-                            MiniWindow {
-                                id: wb
-                                shade: 0.72
-                                x: wa.x + wa.width + magMap.band * 0.6; y: wa.y + magMap.screenH * 0.08
-                                width: magMap.screenW * 0.34; height: wa.height - magMap.screenH * 0.08
-                                Label {
-                                    anchors.centerIn: parent
-                                    anchors.verticalCenterOffset: 6
-                                    text: "⟵ " + win.cfg.magnetDistance + " px"
-                                    color: "#1b1e23"; font.bold: true
-                                }
-                            }
-                        }
+                        LiveDemo { kind: "magnet"; app: win.app; active: win.cfg.magnetEnabled; running: win.visible && pages.currentIndex === 5 }
 
                         Card {
                             title: I.tr("Magnet")
@@ -1660,7 +1743,7 @@ Item {
                             }
                             SliderRow {
                                 text: I.tr("Resistance against overlapping")
-                                desc: I.tr("How far you have to push a window into another one before it lets go. 0 = windows can overlap freely.")
+                                desc: I.tr("A window stops at the edge of another one, also when you move it fast. Shake the mouse or keep pushing for a moment to let go. 0 = windows can overlap freely.")
                                 enabled: win.cfg.magnetEnabled
                                 from: 0; to: 200; step: 4; unit: "px"
                                 value: win.cfg.magnetResist
@@ -1710,7 +1793,7 @@ Item {
                             }
                             SwitchRow {
                                 text: I.tr("Shake to let go")
-                                desc: I.tr("Shake the mouse while resizing and the other windows jump back.")
+                                desc: I.tr("Shake the mouse quickly back and forth while resizing and the other windows jump back. A fast pull in one direction never lets go.")
                                 enabled: win.cfg.stickyEnabled
                                 checked: win.cfg.stickyShake
                                 onToggled: (v) => win.cfg.stickyShake = v
@@ -1728,7 +1811,7 @@ Item {
                             title: I.tr("KDE's own window snapping")
                             SwitchRow {
                                 text: I.tr("Pause KDE's snap zones while the magnet is on")
-                                desc: I.tr("So only one magnet pulls at a window. Your KDE settings are not changed: switch this off, disable or remove SeaQ Snap Layout and KDE's own snapping is back.")
+                                desc: I.tr("So only one magnet pulls at a window. Your KDE settings are not changed: switch this off, disable or remove KSnapUnity and KDE's own snapping is back.")
                                 enabled: win.cfg.magnetEnabled
                                 checked: win.cfg.kdeSnapOff
                                 onToggled: (v) => win.cfg.kdeSnapOff = v
@@ -1774,7 +1857,7 @@ Item {
                             SettingRow {
                                 text: I.tr("Key scheme")
                                 desc: I.tr("Sets the keys of all actions at once. You can still change single keys below.")
-                                ComboBox {
+                                SafeCombo {
                                     id: schemeBox
                                     implicitWidth: 250
                                     textRole: "t"
@@ -1872,13 +1955,116 @@ Item {
                         spacing: 16
                         Item { implicitHeight: 12 }
                         PageTitle { title: I.tr("About & Help") }
+
+                        // KSnapUnity: the name explained
+                        Rectangle {
+                            Layout.fillWidth: true
+                            implicitHeight: heroCol.implicitHeight + 40
+                            radius: 12
+                            gradient: Gradient {
+                                orientation: Gradient.Horizontal
+                                GradientStop { position: 0; color: Qt.rgba(win.ui.accent.r, win.ui.accent.g, win.ui.accent.b, 0.22) }
+                                GradientStop { position: 1; color: Qt.rgba(win.ui.accent.r, win.ui.accent.g, win.ui.accent.b, 0.06) }
+                            }
+                            border.width: 1
+                            border.color: Qt.rgba(win.ui.accent.r, win.ui.accent.g, win.ui.accent.b, 0.45)
+                            ColumnLayout {
+                                id: heroCol
+                                anchors.fill: parent
+                                anchors.margins: 20
+                                spacing: 14
+                                RowLayout {
+                                    spacing: 16
+                                    Image { source: "../icons/snapmagic.png"; sourceSize: Qt.size(64, 64) }
+                                    ColumnLayout {
+                                        spacing: 2
+                                        Label { text: "KSnapUnity"; font.bold: true; font.pointSize: Qt.application.font.pointSize + 9 }
+                                        Label { text: I.tr("Snap Smarter. Work Better."); color: win.ui.accent; font.bold: true; font.pointSize: Qt.application.font.pointSize + 2 }
+                                        Label {
+                                            text: I.tr("K for KWin · Snap for snapping smarter · Unity for everything in one system")
+                                            opacity: 0.7
+                                            wrapMode: Text.WordWrap
+                                            Layout.fillWidth: true
+                                        }
+                                    }
+                                }
+                                GridLayout {
+                                    Layout.fillWidth: true
+                                    columns: width > 640 ? 5 : 3
+                                    columnSpacing: 10
+                                    rowSpacing: 10
+                                    Repeater {
+                                        model: [
+                                            ["U", "Unified", I.tr("All window features in one system.")],
+                                            ["N", "Natural", I.tr("Intuitive, natural window behavior.")],
+                                            ["I", "Intelligent", I.tr("Smart arranging and detection.")],
+                                            ["T", "Tiling", I.tr("Snap layouts and automatic tiling.")],
+                                            ["Y", "Your Workflow", I.tr("Fits the way you work.")]
+                                        ]
+                                        delegate: Rectangle {
+                                            required property var modelData
+                                            Layout.fillWidth: true
+                                            Layout.fillHeight: true      // all tiles as high as the highest
+                                            Layout.preferredWidth: 1
+                                            implicitHeight: letterCol.implicitHeight + 24
+                                            radius: 10
+                                            color: win.ui.card
+                                            border.width: 1
+                                            border.color: win.ui.line
+                                            ColumnLayout {
+                                                id: letterCol
+                                                anchors.left: parent.left; anchors.right: parent.right; anchors.top: parent.top
+                                                anchors.margins: 12
+                                                spacing: 4
+                                                Rectangle {
+                                                    implicitWidth: 34; implicitHeight: 34; radius: 9
+                                                    color: win.ui.accent
+                                                    Label { anchors.centerIn: parent; text: modelData[0]; color: win.ui.accentText; font.bold: true; font.pointSize: Qt.application.font.pointSize + 4 }
+                                                }
+                                                Label { text: modelData[1]; font.bold: true; Layout.fillWidth: true; wrapMode: Text.WordWrap }
+                                                Label { text: modelData[2]; opacity: 0.75; Layout.fillWidth: true; wrapMode: Text.WordWrap; font.pointSize: Math.max(7, Qt.application.font.pointSize - 0.5) }
+                                                Item { Layout.fillHeight: true }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
                         Card {
-                            title: I.tr("Support SeaQ Snap Layout")
+                            title: I.tr("How it works")
+                            Label {
+                                Layout.fillWidth: true
+                                wrapMode: Text.WordWrap
+                                text: I.tr("Grab a window by its title bar and drag it up. The snap bar slides down; drop the window onto a zone and it fills exactly that area. Drag it away again and it gets its old size back.")
+                            }
+                        }
+                        Card {
+                            title: I.tr("Features")
+                            Repeater {
+                                model: [
+                                    [I.tr("Screen edges"), I.tr("Push a window against an edge or corner: maximize, halves, quarters.")],
+                                    [I.tr("Window magnet"), I.tr("Windows stick to each other and to the screen edges.")],
+                                    [I.tr("Keyboard shortcuts"), I.tr("Snap the active window with key combinations.")],
+                                    [I.tr("Swap windows"), I.tr("Two windows trade places: drop one onto the other, or by key.")],
+                                    [I.tr("Automatic tiling"), I.tr("Every window gets its place by itself, like in a tiling window manager.")],
+                                    [I.tr("Modes"), I.tr("Snapping and automatic tiling run as two modes – one shortcut switches between them.")]
+                                ]
+                                delegate: ColumnLayout {
+                                    required property var modelData
+                                    Layout.fillWidth: true
+                                    spacing: 2
+                                    Label { text: modelData[0]; font.bold: true }
+                                    Label { text: modelData[1]; Layout.fillWidth: true; wrapMode: Text.WordWrap; opacity: 0.8 }
+                                }
+                            }
+                        }
+                        Card {
+                            title: I.tr("Support KSnapUnity")
                             Label {
                                 Layout.fillWidth: true
                                 wrapMode: Text.WordWrap
                                 opacity: 0.8
-                                text: I.tr("If you like SeaQ Snap Layout, you can support its development – thank you!")
+                                text: I.tr("If you like KSnapUnity, you can support its development – thank you!")
                             }
                             RowLayout {
                                 Layout.fillWidth: true
@@ -1901,39 +2087,6 @@ Item {
                             }
                         }
                         Card {
-                            title: I.tr("How it works")
-                            Label {
-                                Layout.fillWidth: true
-                                wrapMode: Text.WordWrap
-                                text: I.tr("Grab a window by its title bar and drag it up. The snap bar slides down; drop the window onto a zone and it fills exactly that area. Drag it away again and it gets its old size back.")
-                            }
-                        }
-                        Card {
-                            title: I.tr("More ways to snap")
-                            Repeater {
-                                model: [
-                                    [I.tr("Screen edges"), I.tr("Push a window against an edge or corner: maximize, halves, quarters.")],
-                                    [I.tr("Window magnet"), I.tr("Windows stick to each other and to the screen edges.")],
-                                    [I.tr("Keyboard shortcuts"), I.tr("Snap the active window with key combinations.")]
-                                ]
-                                delegate: ColumnLayout {
-                                    required property var modelData
-                                    Layout.fillWidth: true
-                                    spacing: 2
-                                    Label { text: modelData[0]; font.bold: true }
-                                    Label { text: modelData[1]; Layout.fillWidth: true; wrapMode: Text.WordWrap; opacity: 0.8 }
-                                }
-                            }
-                        }
-                        Card {
-                            title: I.tr("Opening the settings editor")
-                            Label {
-                                Layout.fillWidth: true
-                                wrapMode: Text.WordWrap
-                                text: I.tr("System Settings → Window Management → KWin Scripts → gear icon next to “SeaQ Snap Layout” → “Open Snap Layout settings editor” → OK.")
-                            }
-                        }
-                        Card {
                             title: I.tr("Information")
                             GridLayout {
                                 columns: 2
@@ -1952,6 +2105,385 @@ Item {
                         Item { implicitHeight: 16 }
                     }
                 }
+
+                // ================================================ automatic tiling
+                ScrollView {
+                    id: svT
+                    clip: true
+                    contentWidth: availableWidth
+                    ColumnLayout {
+                        x: 28
+                        width: svT.availableWidth - 56
+                        spacing: 16
+                        Item { implicitHeight: 12 }
+                        PageTitle {
+                            title: I.tr("Automatic tiling")
+                            subtitle: I.tr("Every window gets its place on the screen by itself. New windows join in, closed ones leave room for the others.")
+                        }
+
+                        // the chosen layout with four windows
+                        LiveDemo { kind: "tiling"; app: win.app; active: win.cfg.tileEnabled; running: win.visible && pages.currentIndex === 8 }
+
+                        ModeCard {}
+
+                        Card {
+                            title: I.tr("Tiling")
+                            SwitchRow {
+                                text: I.tr("Arrange windows automatically")
+                                desc: I.tr("Off: windows stay where you put them. The other features work either way.")
+                                checked: win.cfg.tileEnabled
+                                onToggled: (v) => win.cfg.tileEnabled = v
+                            }
+                        }
+
+                        Card {
+                            title: I.tr("Layout")
+                            Flow {
+                                Layout.fillWidth: true
+                                spacing: 10
+                                Repeater {
+                                    // built-in layouts and the own ones from the layout builder
+                                    model: { win.cfg.layoutsJson; win.app.layoutModel.count; return win.app.tilerItem.allLayouts(); }
+                                    delegate: Rectangle {
+                                        id: lc
+                                        required property var modelData
+                                        readonly property bool sel: win.cfg.tileLayout === modelData.id
+                                        readonly property int shown: modelData.own ? Math.max(2, (win.app.tilerItem.zonesOf(modelData.id) || []).length) : 4
+                                        width: 138; height: 112
+                                        radius: 8
+                                        color: sel ? Qt.rgba(win.ui.accent.r, win.ui.accent.g, win.ui.accent.b, 0.16)
+                                                   : (lcMouse.containsMouse ? Qt.rgba(win.ui.text.r, win.ui.text.g, win.ui.text.b, 0.06) : "transparent")
+                                        border.width: sel ? 2 : 1
+                                        border.color: sel ? win.ui.accent : win.ui.line
+                                        Item {
+                                            id: lcBox
+                                            x: 14; y: 12; width: lc.width - 28; height: 60
+                                            Repeater {
+                                                model: T.arrange(lc.modelData.id, lc.shown, { x: 0, y: 0, width: lcBox.width, height: lcBox.height },
+                                                                 { gap: 3, ratio: 0.55, masters: 1, flip: win.cfg.tileFlip, zones: win.app.tilerItem.zonesOf(lc.modelData.id) })
+                                                delegate: Rectangle {
+                                                    required property var modelData
+                                                    required property int index
+                                                    x: modelData.x; y: modelData.y; width: modelData.width; height: modelData.height
+                                                    radius: 2
+                                                    color: index === 0 ? win.ui.accent : Qt.rgba(win.ui.accent.r, win.ui.accent.g, win.ui.accent.b, 0.45)
+                                                    opacity: lc.modelData.id === "monocle" && index < 3 ? 0 : 1
+                                                }
+                                            }
+                                        }
+                                        Label {
+                                            x: 6; width: lc.width - 12
+                                            y: 76; height: lc.height - 80
+                                            horizontalAlignment: Text.AlignHCenter
+                                            verticalAlignment: Text.AlignVCenter
+                                            wrapMode: Text.WordWrap
+                                            maximumLineCount: 2
+                                            lineHeight: 0.9
+                                            elide: Text.ElideRight
+                                            text: lc.modelData.own ? I.layoutName(lc.modelData.text) : I.tr(lc.modelData.text)
+                                            font.bold: lc.sel
+                                        }
+                                        MouseArea { id: lcMouse; anchors.fill: parent; hoverEnabled: true; onClicked: win.cfg.tileLayout = lc.modelData.id }
+                                    }
+                                }
+                            }
+                        }
+
+                        Card {
+                            title: I.tr("Own layouts")
+                            Label {
+                                Layout.fillWidth: true
+                                wrapMode: Text.WordWrap
+                                opacity: 0.8
+                                text: I.tr("Every layout you build on the Layouts page can arrange windows too – it appears above. Window 1 gets zone 1 and so on; more windows share the last zone. With fewer windows than zones “Main and stack” is used, so no holes appear.")
+                            }
+                            RowLayout {
+                                Item { Layout.fillWidth: true }
+                                AccentButton { text: I.tr("Open the layout builder"); icon.name: "view-grid"; onClicked: pages.currentIndex = 3 }
+                            }
+                        }
+
+                        Card {
+                            id: rulesCard
+                            title: I.tr("Layout by number of windows")
+                            property var rules: { try { return JSON.parse(win.cfg.tileRules || "[]"); } catch (e) { return []; } }
+                            function save(list) {
+                                list.sort(function (a, b) { return a.n - b.n; });
+                                win.cfg.tileRules = JSON.stringify(list);
+                            }
+                            function setRule(i, field, v) {
+                                const list = JSON.parse(JSON.stringify(rules));
+                                list[i][field] = v;
+                                save(list);
+                            }
+                            SwitchRow {
+                                text: I.tr("Switch the layout by itself")
+                                desc: I.tr("Example: two windows side by side, from three on main and stack, from five a grid. Without a matching rule the layout chosen above is used.")
+                                checked: win.cfg.tileRulesOn
+                                onToggled: (v) => win.cfg.tileRulesOn = v
+                            }
+                            Repeater {
+                                model: win.cfg.tileRulesOn ? rulesCard.rules : []
+                                delegate: RowLayout {
+                                    id: rr
+                                    required property var modelData
+                                    required property int index
+                                    Layout.fillWidth: true
+                                    spacing: 10
+                                    Label { text: I.tr("From") }
+                                    SpinBox {
+                                        from: 1; to: 12
+                                        value: rr.modelData.n
+                                        onValueModified: rulesCard.setRule(rr.index, "n", value)
+                                    }
+                                    Label { text: I.tr("windows:") }
+                                    SafeCombo {
+                                        id: ruleBox
+                                        Layout.fillWidth: true
+                                        textRole: "t"
+                                        readonly property var all: { win.cfg.layoutsJson; return win.app.tilerItem.allLayouts(); }
+                                        model: all.map(function (l) { return { t: l.own ? I.layoutName(l.text) : I.tr(l.text), id: l.id }; })
+                                        currentIndex: Math.max(0, all.findIndex(function (l) { return l.id === rr.modelData.l; }))
+                                        onActivated: (i) => rulesCard.setRule(rr.index, "l", all[i].id)
+                                    }
+                                    ToolButton {
+                                        icon.name: "list-remove"
+                                        enabled: rulesCard.rules.length > 1
+                                        onClicked: { const list = rulesCard.rules.slice(); list.splice(rr.index, 1); rulesCard.save(list); }
+                                        ToolTip.visible: hovered; ToolTip.text: I.tr("Remove rule")
+                                    }
+                                }
+                            }
+                            RowLayout {
+                                visible: win.cfg.tileRulesOn
+                                Item { Layout.fillWidth: true }
+                                AccentButton {
+                                    text: I.tr("Add rule")
+                                    icon.name: "list-add"
+                                    enabled: rulesCard.rules.length < 6
+                                    onClicked: {
+                                        const list = rulesCard.rules.slice();
+                                        const last = list.length ? list[list.length - 1].n : 1;
+                                        list.push({ n: Math.min(12, last + 1), l: "grid" });
+                                        rulesCard.save(list);
+                                    }
+                                }
+                            }
+                        }
+
+                        Card {
+                            title: I.tr("Main window")
+                            SliderRow {
+                                text: I.tr("Size of the main area")
+                                desc: I.tr("Also changes when you resize the main window by hand.")
+                                from: 20; to: 80; unit: "%"
+                                value: win.cfg.tileRatio
+                                onMoved: (v) => win.cfg.tileRatio = v
+                            }
+                            SliderRow {
+                                text: I.tr("Main windows")
+                                desc: I.tr("How many windows share the main area (layout “Main and stack”).")
+                                from: 1; to: 4
+                                value: win.cfg.tileMasters
+                                onMoved: (v) => win.cfg.tileMasters = v
+                            }
+                            SwitchRow {
+                                text: I.tr("Main area on the right")
+                                desc: I.tr("Mirrors the layout: the main window sits on the right, the others on the left.")
+                                checked: win.cfg.tileFlip
+                                onToggled: (v) => win.cfg.tileFlip = v
+                            }
+                            SettingRow {
+                                text: I.tr("New windows")
+                                SafeCombo {
+                                    implicitWidth: 250
+                                    model: [I.tr("Join at the end"), I.tr("Take the main place"), I.tr("Next to the active window")]
+                                    currentIndex: win.cfg.tileInsert > 0 ? win.cfg.tileInsert : (win.cfg.tileNewFirst ? 1 : 0)
+                                    onActivated: (i) => { win.cfg.tileInsert = i; win.cfg.tileNewFirst = (i === 1); }
+                                }
+                            }
+                        }
+
+                        Card {
+                            title: I.tr("A single window")
+                            SliderRow {
+                                text: I.tr("Width")
+                                desc: I.tr("Less than 100 % keeps a lone window centered – nice on wide screens.")
+                                from: 40; to: 100; unit: "%"
+                                value: win.cfg.tileSingleWidth
+                                onMoved: (v) => win.cfg.tileSingleWidth = v
+                            }
+                            SwitchRow {
+                                text: I.tr("No outer margin")
+                                desc: I.tr("A lone window uses the whole screen, even when a margin is set.")
+                                checked: win.cfg.tileSingleNoGap
+                                onToggled: (v) => win.cfg.tileSingleNoGap = v
+                            }
+                        }
+
+                        Card {
+                            title: I.tr("Animation")
+                            SwitchRow {
+                                text: I.tr("Windows glide to their place")
+                                desc: I.tr("When a window opens, closes or swaps, the others move smoothly instead of jumping.")
+                                checked: win.cfg.tileAnimate
+                                onToggled: (v) => win.cfg.tileAnimate = v
+                            }
+                            SliderRow {
+                                text: I.tr("Duration")
+                                enabled: win.cfg.tileAnimate
+                                from: 80; to: 500; step: 10; unit: "ms"
+                                value: win.cfg.tileAnimMs
+                                onMoved: (v) => win.cfg.tileAnimMs = v
+                            }
+                        }
+
+                        Card {
+                            title: I.tr("Always floating")
+                            Label {
+                                Layout.fillWidth: true
+                                wrapMode: Text.WordWrap
+                                opacity: 0.8
+                                text: I.tr("These applications are never arranged and keep their own place. Dialogs always float.")
+                            }
+                            // the chosen apps as chips (no typing: KWin's own windows get no keyboard)
+                            Flow {
+                                id: floatFlow
+                                Layout.fillWidth: true
+                                spacing: 8
+                                readonly property var apps: String(win.cfg.tileFloatApps || "").split(/[,\s]+/).filter(function (s) { return s !== ""; })
+                                Label { visible: floatFlow.apps.length === 0; text: I.tr("None yet."); opacity: 0.6 }
+                                Repeater {
+                                    model: floatFlow.apps
+                                    delegate: Rectangle {
+                                        required property string modelData
+                                        height: 30; radius: 15
+                                        width: chipRow.implicitWidth + 22
+                                        color: Qt.rgba(win.ui.accent.r, win.ui.accent.g, win.ui.accent.b, 0.16)
+                                        border.width: 1
+                                        border.color: Qt.rgba(win.ui.accent.r, win.ui.accent.g, win.ui.accent.b, 0.55)
+                                        Row {
+                                            id: chipRow
+                                            anchors.centerIn: parent
+                                            spacing: 6
+                                            Label { text: modelData; anchors.verticalCenter: parent.verticalCenter }
+                                            Label {
+                                                text: "✕"; opacity: chipX.containsMouse ? 1 : 0.6
+                                                anchors.verticalCenter: parent.verticalCenter
+                                                MouseArea {
+                                                    id: chipX
+                                                    anchors.fill: parent; anchors.margins: -6
+                                                    hoverEnabled: true; cursorShape: Qt.PointingHandCursor
+                                                    onClicked: win.cfg.tileFloatApps = floatFlow.apps.filter(function (a) { return a !== modelData; }).join(", ")
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            SettingRow {
+                                text: I.tr("Add an open application")
+                                desc: I.tr("Open the application first, then pick it here.")
+                                SafeCombo {
+                                    id: appPick
+                                    implicitWidth: 260
+                                    property var list: []
+                                    model: list
+                                    displayText: list.length ? I.tr("Choose…") : I.tr("No other window open")
+                                    popup.onAboutToShow: list = win.app.openAppClasses().filter(function (c) { return floatFlow.apps.indexOf(c) < 0; })
+                                    Component.onCompleted: list = win.app.openAppClasses().filter(function (c) { return floatFlow.apps.indexOf(c) < 0; })
+                                    onActivated: (i) => {
+                                        const add = list[i];
+                                        if (add) win.cfg.tileFloatApps = floatFlow.apps.concat([add]).join(", ");
+                                        list = win.app.openAppClasses().filter(function (c) { return c !== add && floatFlow.apps.indexOf(c) < 0; });
+                                    }
+                                }
+                            }
+                        }
+
+                        Card {
+                            title: I.tr("Good to know")
+                            Label {
+                                Layout.fillWidth: true
+                                wrapMode: Text.WordWrap
+                                text: I.tr("Drag a window onto another one to swap them. Drop it on the snap bar or a screen edge and it floats freely; “Float the window” brings it back. Gaps come from the General page.")
+                            }
+                        }
+
+                        RowLayout {
+                            Item { Layout.fillWidth: true }
+                            AccentButton { text: I.tr("Recommended values"); icon.name: "edit-undo"; onClicked: win.app.resetGroup(win.app.groupTiling) }
+                        }
+                        Item { implicitHeight: 16 }
+                    }
+                }
+
+                // ==================================================== swap windows
+                ScrollView {
+                    id: svS
+                    clip: true
+                    contentWidth: availableWidth
+                    ColumnLayout {
+                        x: 28
+                        width: svS.availableWidth - 56
+                        spacing: 16
+                        Item { implicitHeight: 12 }
+                        PageTitle {
+                            title: I.tr("Swap windows")
+                            subtitle: I.tr("Two windows trade places – drop one onto the other, or use the keys.")
+                        }
+
+                        // two windows: A is dropped onto B
+                        LiveDemo { kind: "swap"; app: win.app; active: win.cfg.swapEnabled; running: win.visible && pages.currentIndex === 9 }
+
+                        Card {
+                            title: I.tr("Swap")
+                            SwitchRow {
+                                text: I.tr("Swap windows")
+                                desc: I.tr("Main switch for dragging and the keys.")
+                                checked: win.cfg.swapEnabled
+                                onToggled: (v) => win.cfg.swapEnabled = v
+                            }
+                            SwitchRow {
+                                text: I.tr("Drop a window onto another one")
+                                desc: I.tr("Drag a window over the middle of another one – the preview shows two arrows – and let go. With automatic tiling anywhere over the other window will do.")
+                                enabled: win.cfg.swapEnabled
+                                checked: win.cfg.swapDrag
+                                onToggled: (v) => win.cfg.swapDrag = v
+                            }
+                        }
+
+                        Card {
+                            title: I.tr("Keys")
+                            Repeater {
+                                model: K.ACTIONS.filter(function (a) { return K.SWAPS[a.id]; })
+                                delegate: RowLayout {
+                                    required property var modelData
+                                    Layout.fillWidth: true
+                                    spacing: 10
+                                    Label { text: I.tr(modelData.text); Layout.fillWidth: true; wrapMode: Text.WordWrap }
+                                    Repeater {
+                                        model: { win.app.shortcuts.revision; return win.app.shortcuts.keys[modelData.id] || []; }
+                                        delegate: KeyChip { required property int modelData; code: modelData }
+                                    }
+                                }
+                            }
+                            Label {
+                                Layout.fillWidth: true
+                                wrapMode: Text.WordWrap
+                                opacity: 0.7
+                                text: I.tr("Change them on the Keyboard shortcuts page. With automatic tiling, the windows also trade their places in the order.")
+                            }
+                        }
+
+                        RowLayout {
+                            Item { Layout.fillWidth: true }
+                            AccentButton { text: I.tr("Recommended values"); icon.name: "edit-undo"; onClicked: win.app.resetGroup(win.app.groupSwap) }
+                        }
+                        Item { implicitHeight: 16 }
+                    }
+                }
+
             }
         }
     }
@@ -1962,22 +2494,29 @@ Item {
         else if (kind === "A") app.toggleMaximize();
     }
 
+    // a click anywhere brings the editor to the front (KWin does not do that
+    // for its own windows); a PointHandler only watches, controls still work
+    PointHandler { onActiveChanged: if (active) win.app.raiseEditor() }
+
     // ----------------------------------------------------------- resize grips
     component Grip: MouseArea {
         property int mode: 0     // 1 width, 2 height, 3 both
         z: 40
         visible: win.framed && !win.app.dlgMaximized
+        hoverEnabled: true
         onPressed: win.app.beginWindowDrag()
         onPositionChanged: if (pressed) win.app.resizeWindow(mode)
         onReleased: win.app.endWindowDrag()
     }
-    Grip { mode: 1; width: 6; anchors.right: parent.right; anchors.top: parent.top; anchors.bottom: parent.bottom; anchors.topMargin: win.app.titleBarHeight; anchors.bottomMargin: 18; cursorShape: Qt.SizeHorCursor }
-    Grip { mode: 2; height: 6; anchors.left: parent.left; anchors.right: parent.right; anchors.bottom: parent.bottom; anchors.rightMargin: 18; cursorShape: Qt.SizeVerCursor }
-    Grip {
-        mode: 3; width: 18; height: 18
-        anchors.right: parent.right; anchors.bottom: parent.bottom
-        cursorShape: Qt.SizeFDiagCursor
-    }
+    // all four edges and corners; the top edge sits above the title bar drag
+    Grip { mode: 1; width: 8; anchors.right: parent.right; anchors.top: parent.top; anchors.bottom: parent.bottom; anchors.topMargin: 14; anchors.bottomMargin: 14; cursorShape: Qt.SizeHorCursor }
+    Grip { mode: 4; width: 8; anchors.left: parent.left; anchors.top: parent.top; anchors.bottom: parent.bottom; anchors.topMargin: 14; anchors.bottomMargin: 14; cursorShape: Qt.SizeHorCursor }
+    Grip { mode: 2; height: 8; anchors.left: parent.left; anchors.right: parent.right; anchors.bottom: parent.bottom; anchors.leftMargin: 14; anchors.rightMargin: 14; cursorShape: Qt.SizeVerCursor }
+    Grip { mode: 8; height: 4; anchors.left: parent.left; anchors.right: parent.right; anchors.top: parent.top; anchors.leftMargin: 14; anchors.rightMargin: 14; cursorShape: Qt.SizeVerCursor }
+    Grip { mode: 3; width: 14; height: 14; anchors.right: parent.right; anchors.bottom: parent.bottom; cursorShape: Qt.SizeFDiagCursor }
+    Grip { mode: 6; width: 14; height: 14; anchors.left: parent.left; anchors.bottom: parent.bottom; cursorShape: Qt.SizeBDiagCursor }
+    Grip { mode: 9; width: 14; height: 14; anchors.right: parent.right; anchors.top: parent.top; cursorShape: Qt.SizeBDiagCursor }
+    Grip { mode: 12; width: 14; height: 14; anchors.left: parent.left; anchors.top: parent.top; cursorShape: Qt.SizeFDiagCursor }
 
     // ------------------------------------------------------- layout actions
     function editLayout(i) {

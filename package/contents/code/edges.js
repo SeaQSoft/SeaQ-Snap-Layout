@@ -320,6 +320,217 @@ function shakeStep(s, value, threshold) {
     return s.count;
 }
 
+// Shaking, but only counted when it is quick and clear: a turn is a change
+// of direction after at least `threshold` px; `windowMs` keeps only recent
+// turns. A fast pull in one direction never counts, however far it goes.
+// s: from newShake(start position)
+function shakeTimed(s, value, threshold, now, windowMs) {
+    if (s.dir === 0) {
+        if (Math.abs(value - s.ext) >= threshold) { s.dir = value > s.ext ? 1 : -1; s.ext = value; }
+    } else if (s.dir > 0) {
+        if (value > s.ext) s.ext = value;
+        else if (s.ext - value >= threshold) { s.times.push(now); s.dir = -1; s.ext = value; }
+    } else {
+        if (value < s.ext) s.ext = value;
+        else if (value - s.ext >= threshold) { s.times.push(now); s.dir = 1; s.ext = value; }
+    }
+    while (s.times.length && now - s.times[0] > windowMs) s.times.shift();
+    return s.times.length;
+}
+function newShake(v) { return { ext: v, dir: 0, times: [] }; }
+
+// Every window that shares an edge line with the resized window `a`, also
+// through other windows: two small windows stacked next to a big one move
+// together, a 2x2 grid moves along its middle lines, and so on.
+// others: [{ id, r }], o: { tol, aligned, area }
+// returns { id: { l, r, t, b } } with the same link format as stickyLink
+function stickyGroup(a, others, o) {
+    const tol = Math.max(0, o.tol);
+    const ar = o.area;
+    const out = {};
+    const add = function (id, k, e, off) {
+        if (!out[id]) out[id] = { l: null, r: null, t: null, b: null };
+        if (!out[id][k]) out[id][k] = { e: e, off: off };
+    };
+    const lines = [["l", true], ["r", true], ["t", false], ["b", false]];
+    for (let n = 0; n < lines.length; n++) {
+        const k = lines[n][0], vertical = lines[n][1];
+        const pos = edgeOf(a, k);
+        if (ar) {
+            const border = k === "l" ? ar.x : k === "r" ? right(ar) : k === "t" ? ar.y : bottom(ar);
+            if (Math.abs(pos - border) <= 2) continue;     // the screen edge is no shared line
+        }
+        // span of a member along the line
+        const span = function (r) { return vertical ? [r.y, bottom(r)] : [r.x, right(r)]; };
+        const members = [span(a)];
+        const facingSide = (k === "l" || k === "t") ? "before" : "after";
+        let added = true;
+        const done = {};
+        while (added) {
+            added = false;
+            for (let i = 0; i < others.length; i++) {
+                const ob = others[i];
+                if (done[ob.id]) continue;
+                const b = ob.r;
+                // which edge of b lies on the line, and is it facing or in line with a
+                let eb = null;
+                const lo = vertical ? b.x : b.y, hi = vertical ? right(b) : bottom(b);
+                const before = Math.abs(hi - pos) <= tol && hi <= pos + 2;   // b ends at the line
+                const after = Math.abs(lo - pos) <= tol && lo >= pos - 2;    // b starts at the line
+                if (before && !after) eb = vertical ? "r" : "b";
+                else if (after && !before) eb = vertical ? "l" : "t";
+                else continue;
+                const side = (eb === "r" || eb === "b") ? "before" : "after";
+                const facing = side === facingSide;
+                if (!facing && !o.aligned) continue;
+                if (!facing && Math.abs((vertical ? (eb === "r" ? hi : lo) : (eb === "b" ? hi : lo)) - pos) > 2) continue;
+                // connected to the group along the line?
+                const sb = span(b);
+                let joined = false;
+                for (let m = 0; m < members.length; m++) {
+                    const sm = members[m];
+                    const overlap = Math.min(sm[1], sb[1]) - Math.max(sm[0], sb[0]);
+                    if (facing ? overlap >= 8 : overlap >= -tol) { joined = true; break; }
+                }
+                if (!joined) continue;
+                done[ob.id] = true;
+                members.push(sb);
+                added = true;
+                add(ob.id, k, eb, pos - edgeOf(b, eb));
+            }
+        }
+    }
+    return out;
+}
+
+// --------------------------------------------------- holding edges
+// While a window is moved (or an edge resized), an edge that runs into another
+// window stops there and stays there - also when the mouse is moved fast and
+// jumps far past it in one step. It lets go when
+//   * the window is pulled back,
+//   * the mouse is shaken (quick back and forth),
+//   * or the edge is pushed further than `resist` px for `holdMs`.
+// Blocking edges: the free screen border (o.screen) and the facing edges of
+// windows that share a stretch with the moved window.
+
+function newHold(r) {
+    return { x: null, y: null, passed: {}, free: false,
+             sx: newShake(r.x + r.width / 2), sy: newShake(r.y + r.height / 2) };
+}
+
+// blockers for one edge: [{ key, p, s }] (s=+1: edge must stay >= p, -1: <= p)
+function blockersFor(edge, r, others, bounds, o) {
+    const out = [];
+    const gap = Math.max(0, o.gap || 0);
+    if (o.screen && bounds) {
+        if (edge === "l") out.push({ key: "sl", p: bounds.x, s: 1 });
+        if (edge === "r") out.push({ key: "sr", p: right(bounds), s: -1 });
+        if (edge === "t") out.push({ key: "st", p: bounds.y, s: 1 });
+        if (edge === "b") out.push({ key: "sb", p: bottom(bounds), s: -1 });
+    }
+    if (o.windows) {
+        for (let i = 0; i < others.length; i++) {
+            const w = others[i];
+            const vOver = Math.min(bottom(r), bottom(w)) - Math.max(r.y, w.y);
+            const hOver = Math.min(right(r), right(w)) - Math.max(r.x, w.x);
+            if ((edge === "l" || edge === "r") && vOver > 0) {
+                if (edge === "l") out.push({ key: "w" + i + "l", p: right(w) + gap, s: 1 });
+                else out.push({ key: "w" + i + "r", p: w.x - gap, s: -1 });
+            }
+            if ((edge === "t" || edge === "b") && hOver > 0) {
+                if (edge === "t") out.push({ key: "w" + i + "t", p: bottom(w) + gap, s: 1 });
+                else out.push({ key: "w" + i + "b", p: w.y - gap, s: -1 });
+            }
+        }
+    }
+    return out;
+}
+
+// raw: where KWin would put the window now, prev: what we showed last time,
+// edges: which edges move ({l,r,t,b}, all four for a move), now: ms
+// o: { distance, windows, screen, gap, resist, holdMs }
+function holdStep(raw, prev, others, bounds, o, st, now, edges) {
+    const resist = Math.max(0, o.resist || 0);
+    const holdMs = o.holdMs === undefined ? 600 : o.holdMs;
+    const moving = edges.l && edges.r && edges.t && edges.b;
+    // a clear shake lets go of everything for the rest of this drag
+    if (!st.free && resist > 0) {
+        const cx = raw.x + raw.width / 2, cy = raw.y + raw.height / 2;
+        const sx = moving ? cx : (edges.l ? raw.x : right(raw));
+        const sy = moving ? cy : (edges.t ? raw.y : bottom(raw));
+        if (shakeTimed(st.sx, sx, 90, now, 1400) >= 3 || shakeTimed(st.sy, sy, 90, now, 1400) >= 3) {
+            st.free = true; st.x = null; st.y = null;
+        }
+    }
+    // alignment within the snap distance, no resistance (that is done here)
+    const opts = { distance: o.distance, windows: o.windows, screen: o.screen, gap: o.gap, resist: 0 };
+    let r = magnet(raw, others, bounds, opts, edges);
+    if (resist <= 0 || st.free) { st.x = null; st.y = null; return r; }
+
+    const axes = [["x", "l", "r"], ["y", "t", "b"]];
+    for (let n = 0; n < axes.length; n++) {
+        const ax = axes[n][0];
+        const lo = axes[n][1], hi = axes[n][2];
+        const val = function (rc, e) { return edgeOf(rc, e); };
+        let h = st[ax];
+        // still held?
+        if (h) {
+            const depth = (h.p - val(raw, h.edge)) * h.s;          // > 0: pushing into it
+            const list = blockersFor(h.edge, raw, others, bounds, o);
+            let still = false;
+            for (let i = 0; i < list.length; i++) if (list[i].key === h.key) { still = true; break; }
+            if (depth <= 0 || !still) h = null;                      // pulled back or slid past
+            else if (depth >= resist) {
+                if (h.pushSince === null) h.pushSince = now;
+                if (now - h.pushSince >= holdMs) { st.passed[h.key] = true; h = null; }
+            } else h.pushSince = null;
+            st[ax] = h;
+        }
+        // newly crossed a blocker since the last step?
+        if (!h) {
+            const cands = [];
+            if (edges[lo]) cands.push(lo);
+            if (edges[hi]) cands.push(hi);
+            let best = null;
+            for (let c = 0; c < cands.length; c++) {
+                const e = cands[c];
+                const list = blockersFor(e, raw, others, bounds, o);
+                for (let i = 0; i < list.length; i++) {
+                    const b = list[i];
+                    const before = (val(prev, e) - b.p) * b.s;    // >= 0: was on the free side
+                    const nowD = (val(raw, e) - b.p) * b.s;       // < 0: went past
+                    if (before >= -1 && nowD < 0) {
+                        if (st.passed[b.key]) continue;
+                        if (best === null || before < best.before) best = { key: b.key, p: b.p, s: b.s, edge: e, before: before };
+                    } else if (nowD >= 0 && st.passed[b.key]) {
+                        delete st.passed[b.key];                     // back on the free side
+                    }
+                }
+            }
+            if (best) {
+                h = { key: best.key, p: best.p, s: best.s, edge: best.edge, pushSince: null };
+                const depth = (h.p - val(raw, h.edge)) * h.s;
+                if (depth >= resist) h.pushSince = now;
+                st[ax] = h;
+            }
+        }
+        if (h) {
+            // put the held edge on the blocking line
+            if (moving) {
+                const d = h.p - val(raw, h.edge);
+                if (ax === "x") r = rect(raw.x + d, r.y, raw.width, r.height);
+                else r = rect(r.x, raw.y + d, r.width, raw.height);
+            } else {
+                let x1 = r.x, x2 = right(r), y1 = r.y, y2 = bottom(r);
+                if (h.edge === "l") x1 = h.p; else if (h.edge === "r") x2 = h.p;
+                else if (h.edge === "t") y1 = h.p; else y2 = h.p;
+                r = rect(x1, y1, x2 - x1, y2 - y1);
+            }
+        }
+    }
+    return rect(Math.round(r.x), Math.round(r.y), Math.round(r.width), Math.round(r.height));
+}
+
 // ---------------------------------------------------- hold to fill
 // Held a little longer at an edge, a half or a quarter grows towards the
 // middle of the screen until it meets the next window (or the screen edge).

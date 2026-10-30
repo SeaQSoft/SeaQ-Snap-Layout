@@ -92,14 +92,38 @@ var ACTIONS = [
     { id: "KDESnapLayoutToggle",      group: "features", text: "Snap bar on/off",                 key: "",       num: "" },
     { id: "KDESnapLayoutToggleEdges", group: "features", text: "Screen edges on/off",             key: "",       num: "" },
     { id: "KDESnapLayoutToggleMagnet",group: "features", text: "Window magnet on/off",            key: "",       num: "" },
-    { id: "KDESnapLayoutDemo",        group: "features", text: "Test the snap bar",               key: "",       num: "" }
+    { id: "KDESnapLayoutDemo",        group: "features", text: "Test the snap bar",               key: "",       num: "" },
+    { id: "KDESnapLayoutModeSwitch",  group: "modes",    text: "Switch mode (snapping / tiling)", key: "A",      num: "A" },
+    { id: "KDESnapLayoutSwapLeft",    group: "switch",   text: "Swap with the window on the left",  key: "Left",  num: "", extra: true },
+    { id: "KDESnapLayoutSwapRight",   group: "switch",   text: "Swap with the window on the right", key: "Right", num: "", extra: true },
+    { id: "KDESnapLayoutSwapUp",      group: "switch",   text: "Swap with the window above",        key: "Up",    num: "", extra: true },
+    { id: "KDESnapLayoutSwapDown",    group: "switch",   text: "Swap with the window below",        key: "Down",  num: "", extra: true },
+    { id: "KDESnapLayoutTileToggle",  group: "tiling",   text: "Automatic tiling on/off",         key: "",       num: "" },
+    { id: "KDESnapLayoutTileCycle",   group: "tiling",   text: "Next tiling layout",              key: "N",      num: "" },
+    { id: "KDESnapLayoutTileMain",    group: "tiling",   text: "Make it the main window",         key: "M",      num: "" },
+    { id: "KDESnapLayoutTileFloat",   group: "tiling",   text: "Float the window (leave tiling)", key: "O",      num: "" },
+    { id: "KDESnapLayoutTileGrow",    group: "tiling",   text: "Main area bigger",                key: ".",      num: "" },
+    { id: "KDESnapLayoutTileShrink",  group: "tiling",   text: "Main area smaller",               key: ",",      num: "" },
+    { id: "KDESnapLayoutTileMoreMain", group: "tiling",  text: "One more main window",            key: "]",      num: "" },
+    { id: "KDESnapLayoutTileLessMain", group: "tiling",  text: "One main window less",            key: "[",      num: "" },
+    { id: "KDESnapLayoutTileForward", group: "tiling",   text: "Move the window one place on",    key: "",       num: "" },
+    { id: "KDESnapLayoutTileBack",    group: "tiling",   text: "Move the window one place back",  key: "",       num: "" }
 ];
+
+// swap actions -> direction
+var SWAPS = {
+    KDESnapLayoutSwapLeft: "left", KDESnapLayoutSwapRight: "right",
+    KDESnapLayoutSwapUp: "up", KDESnapLayoutSwapDown: "down"
+};
 
 var GROUPS = [
     { id: "halves",   text: "Halves" },
     { id: "quarters", text: "Quarters" },
     { id: "thirds",   text: "Thirds" },
     { id: "window",   text: "Window" },
+    { id: "modes",    text: "Modes" },
+    { id: "switch",   text: "Swap windows" },
+    { id: "tiling",   text: "Automatic tiling" },
     { id: "features", text: "Features" }
 ];
 
@@ -123,10 +147,15 @@ function actionById(id) {
 // key of an action in a scheme, 0 = none
 function schemeKey(action, scheme) {
     if (!scheme || scheme.id === "none") return 0;
-    var name = scheme.keypad ? action.num : action.key;
+    if (action.fixed) return action.fixed;                 // same key in every scheme
+    var name = scheme.keypad ? (action.extra ? action.key : action.num) : action.key;
     if (!name) return 0;
     var k = BY_NAME[name.toLowerCase()];
-    return k ? (scheme.mods | k) : 0;
+    if (!k) return 0;
+    var mods = scheme.mods;
+    // swapping uses one modifier more than snapping with the same arrow
+    if (action.extra) mods |= !(mods & SHIFT) ? SHIFT : (!(mods & CTRL) ? CTRL : (!(mods & ALT) ? ALT : META));
+    return mods | k;
 }
 
 function defaultKey(action) { return schemeKey(action, SCHEMES[0]); }

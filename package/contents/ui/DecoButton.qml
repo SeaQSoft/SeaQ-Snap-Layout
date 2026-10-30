@@ -12,15 +12,15 @@ import "../code/i18n.js" as I
 Item {
     id: btn
 
-    property string kind: "X"          // M app icon, A maximize, X close
+    property string kind: "X"          // M app icon, I minimize, A maximize, X close
     property var app
     signal activated()
 
-    readonly property string tip: kind === "M" ? "" : kind === "X" ? I.tr("Close")
+    readonly property string tip: kind === "M" ? "" : kind === "X" ? I.tr("Close") : kind === "I" ? I.tr("Minimize")
                                  : (app.dlgMaximized ? I.tr("Restore") : I.tr("Maximize"))
 
-    readonly property string auroraeFile: kind === "X" ? "close" : (app.dlgMaximized ? "restore" : "maximize")
-    readonly property string iconName: kind === "X" ? "window-close"
+    readonly property string auroraeFile: kind === "X" ? "close" : kind === "I" ? "minimize" : (app.dlgMaximized ? "restore" : "maximize")
+    readonly property string iconName: kind === "X" ? "window-close" : kind === "I" ? "window-minimize"
                                      : (app.dlgMaximized ? "window-restore" : "window-maximize")
 
     readonly property bool useAurorae: kind !== "M" && app.auroraeName !== "" && aurorae.status === Loader.Ready && aurorae.item && aurorae.item.ok
@@ -33,7 +33,7 @@ Item {
     Image {
         visible: btn.kind === "M"
         anchors.centerIn: parent
-        source: visible ? "../icons/kdesnaplayout.svg" : ""
+        source: visible ? "../icons/snapmagic.png" : ""
         sourceSize: Qt.size(Math.round(btn.height * 0.8), Math.round(btn.height * 0.8))
     }
 
@@ -74,7 +74,7 @@ Item {
             // last resort if no icon component could be loaded
             anchors.centerIn: parent
             visible: icon.status !== Loader.Ready
-            text: btn.kind === "X" ? "✕" : "▢"
+            text: btn.kind === "X" ? "✕" : btn.kind === "I" ? "–" : "▢"
             color: btn.app.ui.text
         }
     }

@@ -7,15 +7,30 @@ import "../code/layouts.js" as L
 import "../code/i18n.js" as I
 import "../code/edges.js" as E
 import "../code/keys.js" as K
+import "../code/tiling.js" as T
 
-// SeaQ Snap Layout
+// KSnapUnity – Snap Smarter. Work Better.
 // Drag a window towards the top edge, the snap bar slides down, drop the
-// window on a zone and it gets resized into place.
+// window on a zone and it gets resized into place. Around that: screen edges,
+// a window magnet with sticky edges, swapping windows, keyboard shortcuts and
+// automatic tiling. Snapping (bar + edges) and tiling get in each other's way,
+// so they run as two modes; a shortcut switches between them.
 Item {
     id: root
 
-    readonly property string version: "1.9.0"
+    readonly property string version: "2.3.4"
     readonly property string author: "SeaQ"
+
+    // ------------------------------------------------------------------ modes
+    // Mode 1: snap bar + screen edges (+ magnet, keys, swap).
+    // Mode 2: automatic tiling (+ magnet for floating windows, keys, swap).
+    // With tiling switched off there is only mode 1; with snap bar and screen
+    // edges both off there is only mode 2.
+    readonly property bool snapFeatures: cfg.snapEnabled || cfg.edgeEnabled
+    readonly property bool modesAvailable: cfg.tileEnabled && snapFeatures
+    readonly property bool tilingMode: cfg.tileEnabled && (cfg.tileMode || !snapFeatures)
+    readonly property bool snapOn: cfg.snapEnabled && !tilingMode
+    readonly property bool edgeOn: cfg.edgeEnabled && !tilingMode
 
     property alias settings: cfg
     property alias layoutModel: layoutsList
@@ -43,7 +58,12 @@ Item {
         magnetResize: true, magnetGap: false, magnetResist: 48,
         stickyEnabled: true, stickyAligned: true, stickyShake: true, stickyDim: true,
         edgeFill: true, edgeFillDelay: 700, kdeEdgesOff: true, kdeSnapOff: true,
-        keysEnabled: true, keyScheme: "ctrlalt"
+        keysEnabled: true, keyScheme: "ctrlalt", keysVersion: 0,
+        tileEnabled: false, tileLayout: "tile", tileRatio: 55, tileMasters: 1, tileNewFirst: false,
+        tileInsert: 0, tileFlip: false, tileSingleWidth: 100, tileSingleNoGap: false,
+        tileRulesOn: false, tileRules: "[{\"n\":2,\"l\":\"columns\"},{\"n\":3,\"l\":\"tile\"},{\"n\":5,\"l\":\"grid\"}]",
+        tileAnimate: true, tileAnimMs: 160, tileFloatApps: "",
+        swapEnabled: true, swapDrag: true
     })
     readonly property var groupGeneral: ["snapEnabled", "showPreview", "restoreSize", "windowGap", "edgeMargin"]
     readonly property var groupAppearance: ["themeMode", "useSystemAccent", "customAccent", "barOpacity",
@@ -54,6 +74,10 @@ Item {
     readonly property var groupMagnet: ["magnetEnabled", "magnetDistance", "magnetWindows", "magnetScreen",
         "magnetResize", "magnetGap", "magnetResist",
         "stickyEnabled", "stickyAligned", "stickyShake", "stickyDim", "kdeSnapOff"]
+    readonly property var groupTiling: ["tileEnabled", "tileLayout", "tileRatio", "tileMasters", "tileNewFirst",
+        "tileInsert", "tileFlip", "tileSingleWidth", "tileSingleNoGap", "tileRulesOn", "tileRules",
+        "tileAnimate", "tileAnimMs", "tileFloatApps"]
+    readonly property var groupSwap: ["swapEnabled", "swapDrag"]
     readonly property var groupBehavior: ["triggerDistance", "twoStage", "peekDistance", "activationWidth",
         "showDelay", "hideDelay", "hideMargin", "slideDistance", "slideInDuration", "slideOutDuration",
         "easingStyle", "fadeEnabled"]
@@ -133,6 +157,32 @@ Item {
 
         property bool keysEnabled: true
         property string keyScheme: "ctrlalt"   // last scheme applied in the editor
+        property int keysVersion: 0            // 2: mode key moved to Ctrl+Alt+A
+
+        // automatic tiling
+        property bool tileEnabled: false
+        property string tileLayout: "tile"     // see tiling.js LAYOUTS
+        property int tileRatio: 55             // percent of the width for the main window
+        property int tileMasters: 1
+        property bool tileNewFirst: false      // old switch, kept for tileInsert = 1
+        property int tileInsert: 0             // new windows: 0 at the end, 1 main place, 2 after the active one
+        property bool tileFlip: false          // main area on the right
+        property int tileSingleWidth: 100      // a single window: percent of the width, centered
+        property bool tileSingleNoGap: false   // a single window ignores the outer margin
+        property bool tileRulesOn: false       // layout by number of windows
+        property string tileRules: "[{\"n\":2,\"l\":\"columns\"},{\"n\":3,\"l\":\"tile\"},{\"n\":5,\"l\":\"grid\"}]"
+        property bool tileAnimate: true        // windows glide to their place
+        property int tileAnimMs: 160
+        property string tileFloatApps: ""      // window classes that never take part, comma separated
+
+        // swapping windows
+        property bool swapEnabled: true
+        property bool swapDrag: true           // drop a window on another one to trade places
+
+        property bool tileMode: false          // mode 2 (tiling) is the active one
+        // quick settings: last values seen in kwinrc (see pollQuick)
+        property int lastOpenCount: -1
+        property string lastQuick: ""
 
         property string layoutsJson: ""
         property bool lastOpenFlag: false
@@ -160,7 +210,7 @@ Item {
         readonly property color zoneBorder: dark ? Qt.rgba(1, 1, 1, 0.12) : Qt.rgba(0, 0, 0, 0.10)
     }
 
-    // Colors of the settings editor window. Always taken from the system,
+    // Colors of the settings window. Always taken from the system,
     // regardless of what the snap bar uses.
     QtObject {
         id: uiColors
@@ -248,6 +298,12 @@ Item {
     property var hooked: ({})
     property var snapped: ({})
     property var dragStartSize: null
+    property var dragOrig: null              // rect of the dragged window before the drag
+    property var dragSnapRec: null           // its "snapped" record, if it had one
+    property bool dragTiled: false           // the dragged window is tiled automatically
+    property var swapCandidate: null         // window under the cursor that could trade places
+    property var swapTarget: null            // ... once the cursor rested there long enough
+    property bool previewSwap: false
     property var pendingWin: null
     property rect pendingRect: Qt.rect(0, 0, 0, 0)
     property int reapplyCount: 0
@@ -263,6 +319,9 @@ Item {
     property var resizeWin: null
     property var resizeStart: null
     property var resizeLast: null            // last rect KWin reported while resizing
+    property var holdState: null             // magnet edges held at a window (see E.holdStep)
+    property var holdPrev: null              // rect shown in the last step
+    property var settleList: []              // [{ w, rect }] re-applied after a resize
 
     // sticky edges: windows that follow the one being resized
     property var stickyLinks: []             // [{ w, orig, req, link, opacity, id }]
@@ -307,15 +366,15 @@ Item {
             && Math.abs(a.width - b.width) <= 3 && Math.abs(a.height - b.height) <= 3;
     }
 
+    // The script's own windows (settings editor, OSD) are
+    // KWin-internal windows and must never be snapped, tiled or swapped.
     function isExcluded(w) {
-        if (!cfg.excludedApps) return false;
-        const rc = String(w.resourceClass || "").toLowerCase();
-        const list = cfg.excludedApps.split(/[\n,;]/);
-        for (let i = 0; i < list.length; i++) {
-            const e = list[i].trim().toLowerCase();
-            if (e && e === rc) return true;
-        }
-        return false;
+        // our own windows (overlay, editor, OSD) are never
+        // moved, tiled or magnetized – KWin may report them as normal windows
+        try {
+            if (String(w.resourceClass || "").toLowerCase().indexOf("kwin") === 0) return true;
+            return String(w.caption || "").indexOf("KSnapUnity") === 0;
+        } catch (e) { return false; }
     }
 
     function isEligible(w) {
@@ -451,9 +510,13 @@ Item {
         return rectOf(w.frameGeometry);
     }
 
+    // The magnet keeps an edge at a window it ran into, also when the mouse
+    // jumps far past it in a fast move. Pull back, shake or push long to let go.
     function applyMagnet(w, edges, cur) {
         const g = cur || rectOf(w.frameGeometry);
-        const r = E.magnet(g, dragOthers, areaOf(w), magnetOptions(), edges);
+        if (!holdState) { holdState = E.newHold(g); holdPrev = g; }
+        const r = E.holdStep(g, holdPrev, dragOthers, areaOf(w), magnetOptions(), holdState, Date.now(), edges);
+        holdPrev = r;
         lastMagnet = r;
         if (Math.abs(r.x - g.x) >= 1 || Math.abs(r.y - g.y) >= 1 || Math.abs(r.width - g.width) >= 1 || Math.abs(r.height - g.height) >= 1)
             w.frameGeometry = Qt.rect(r.x, r.y, r.width, r.height);
@@ -462,7 +525,7 @@ Item {
     function onStepped(w, r) {
         if (w === dragWin) {
             updateDrag();
-            const busy = edgePending !== "" || (barState === 2 && hoverZone >= 0);
+            const busy = edgePending !== "" || (barState === 2 && hoverZone >= 0) || !!swapTarget || dragTiled;
             if (cfg.magnetEnabled && !busy) applyMagnet(w, { l: true, r: true, t: true, b: true }, stepRect(w, r));
             else lastMagnet = null;
         } else if (w === resizeWin && resizeStart) {
@@ -470,10 +533,13 @@ Item {
             resizeLast = cur;
             // The window being resized belongs to KWin until the button is let go;
             // the magnet result is only applied then. The neighbours follow live.
-            if (cfg.magnetEnabled && cfg.magnetResize) {
+            if (cfg.magnetEnabled && cfg.magnetResize && !tiler.isTiled(w)) {
                 const edges = E.resizedEdges(resizeStart, cur);
-                lastMagnet = (edges.l || edges.r || edges.t || edges.b)
-                    ? E.magnet(cur, dragOthers, areaOf(w), magnetOptions(), edges) : null;
+                if (!holdState) { holdState = E.newHold(resizeStart); holdPrev = resizeStart; }
+                if (edges.l || edges.r || edges.t || edges.b) {
+                    lastMagnet = E.holdStep(cur, holdPrev, dragOthers, areaOf(w), magnetOptions(), holdState, Date.now(), edges);
+                    holdPrev = lastMagnet;
+                } else lastMagnet = null;
             }
             if (stickyLinks.length) stickyStep(w, cur);
         }
@@ -484,21 +550,26 @@ Item {
         stickyLinks = []; stickyFaded = [];
         stickyMoved = { l: false, r: false, t: false, b: false };
         const a = rectOf(w.frameGeometry);
-        stickyShakeW = { val: a.width, turnVal: a.width, dir: 0, count: 0 };
-        stickyShakeH = { val: a.height, turnVal: a.height, dir: 0, count: 0 };
+        stickyShakeW = E.newShake(a.width);
+        stickyShakeH = E.newShake(a.height);
         const area = areaOf(w);
-        const opts = { tol: Math.max(0, cfg.windowGap) + 6, aligned: cfg.stickyAligned, area: area };
-        const links = [], faded = [];
+        const cands = [], faded = [];
         const list = Workspace.stackingOrder || [];
         for (let i = 0; i < list.length; i++) {
             const o = list[i];
             if (!o || o === w || !o.normalWindow || o.minimized || !onCurrentDesktop(o)) continue;
             if (o.output && w.output && o.output !== w.output) continue;
-            const b = rectOf(o.frameGeometry);
             const big = o.fullScreen || sameRect(o.frameGeometry, area);
-            const link = (big || !o.resizeable || isExcluded(o)) ? null : E.stickyLink(a, b, opts);
-            if (link) links.push({ w: o, orig: b, req: b, link: link, opacity: o.opacity, id: String(o.internalId) });
-            else faded.push({ w: o, opacity: o.opacity, done: false });
+            if (big || !o.resizeable || isExcluded(o)) { faded.push({ w: o, opacity: o.opacity, done: false }); continue; }
+            cands.push({ id: String(o.internalId), r: rectOf(o.frameGeometry), w: o });
+        }
+        // every window on a shared line follows, also through other windows
+        const group = E.stickyGroup(a, cands, { tol: Math.max(0, cfg.windowGap) + 6, aligned: cfg.stickyAligned, area: area });
+        const links = [];
+        for (let j = 0; j < cands.length; j++) {
+            const c = cands[j];
+            if (group[c.id]) links.push({ w: c.w, orig: c.r, req: c.r, link: group[c.id], opacity: c.w.opacity, id: c.id, n: 0 });
+            else faded.push({ w: c.w, opacity: c.w.opacity, done: false });
         }
         stickyLinks = links;
         stickyFaded = links.length ? faded : [];
@@ -520,14 +591,21 @@ Item {
             b: stickyMoved.b || Math.abs(cur.y + cur.height - s0.y - s0.height) >= 1
         };
         if (cfg.stickyShake) {
-            const turns = Math.max(E.shakeStep(stickyShakeW, cur.width, 200), E.shakeStep(stickyShakeH, cur.height, 200));
-            if (turns >= 4) { stickyEnd(true); return; }
+            // only a clear, quick back and forth lets go - never a fast pull
+            const now = Date.now();
+            const turns = Math.max(E.shakeTimed(stickyShakeW, cur.width, 90, now, 1400),
+                                   E.shakeTimed(stickyShakeH, cur.height, 90, now, 1400));
+            if (turns >= 3) { stickyEnd(true); return; }
         }
         const area = areaOf(w);
         for (let i = 0; i < stickyLinks.length; i++) {
             const k = stickyLinks[i];
             const g = E.stickyRect(k.orig, k.link, cur, stickyMoved, stickyLimits(k.w, k.orig, area));
-            if (g.x !== k.req.x || g.y !== k.req.y || g.width !== k.req.width || g.height !== k.req.height) {
+            const changed = g.x !== k.req.x || g.y !== k.req.y || g.width !== k.req.width || g.height !== k.req.height;
+            // a request can get lost while the app is still busy with the last
+            // one; send it again every few steps until the window is there
+            const behind = !changed && !sameRect(k.w.frameGeometry, g) && (++k.n % 3 === 0);
+            if (changed || behind) {
                 k.req = g;
                 k.w.frameGeometry = Qt.rect(g.x, g.y, g.width, g.height);
             }
@@ -542,10 +620,13 @@ Item {
 
     // undo: put the neighbours back (shaken loose)
     function stickyEnd(undo) {
+        const settle = [];
         for (let i = 0; i < stickyLinks.length; i++) {
             const k = stickyLinks[i];
-            if (undo) k.w.frameGeometry = Qt.rect(k.orig.x, k.orig.y, k.orig.width, k.orig.height);
-            else {
+            const target = undo ? k.orig : k.req;
+            k.w.frameGeometry = Qt.rect(target.x, target.y, target.width, target.height);
+            settle.push({ w: k.w, rect: target });
+            if (!undo) {
                 // a window we snapped stays "snapped" in its new place
                 const rec = snapped[k.id];
                 if (rec && sameRect(Qt.rect(k.orig.x, k.orig.y, k.orig.width, k.orig.height), rec.rect))
@@ -557,6 +638,9 @@ Item {
             if (f.done) { try { f.w.opacity = f.opacity; } catch (e) {} }
         }
         stickyLinks = []; stickyFaded = [];
+        // make sure every window really ended up where it belongs
+        settleList = settle;
+        if (settle.length) { settleTimer.count = 0; settleTimer.restart(); }
     }
 
     // ----------------------------------------------------------- window hooks
@@ -575,7 +659,13 @@ Item {
             stepped: function (r) { if (root) root.onStepped(w, r); },
             finished: function () { if (root) root.onMoveFinished(w); }
         };
+        fns.state = function () { if (root) root.windowStateChanged(w); };
         hookFns[id] = fns;
+        const sigs = ["minimizedChanged", "outputChanged", "desktopsChanged", "fullScreenChanged", "maximizedChanged"];
+        fns.sigs = [];
+        for (let i = 0; i < sigs.length; i++) {
+            try { if (w[sigs[i]]) { w[sigs[i]].connect(fns.state); fns.sigs.push(sigs[i]); } } catch (e) {}
+        }
         w.interactiveMoveResizeStarted.connect(fns.started);
         w.interactiveMoveResizeStepped.connect(fns.stepped);
         w.interactiveMoveResizeFinished.connect(fns.finished);
@@ -588,6 +678,7 @@ Item {
                 f.w.interactiveMoveResizeStarted.disconnect(f.started);
                 f.w.interactiveMoveResizeStepped.disconnect(f.stepped);
                 f.w.interactiveMoveResizeFinished.disconnect(f.finished);
+                for (let i = 0; i < (f.sigs || []).length; i++) f.w[f.sigs[i]].disconnect(f.state);
             } catch (e) {}
         }
         hookFns = ({});
@@ -596,24 +687,43 @@ Item {
 
     Component.onDestruction: { restoreKdeOptions(); unhookAll(); }
 
+    property var mru: []                     // ids, most recently active first
+
+    function showOsd(text) {
+        refreshScreen(outputAt(Workspace.cursorPos));
+        osd.show(text, areaGeo);
+    }
+
+    function windowStateChanged(w) {
+        if (tiler.active && !tiler.applying) tiler.schedule();
+    }
+
     function onMoveStarted(w) {
         if (!w || !isEligible(w)) return;
-        if (!w.move) {
+        // Some clients report the move flag only a moment after the start
+        // signal; everything that is not a resize is treated as a move.
+        if (w.resize && !w.move) {
             // resizing: the magnet and the sticky edges take part
-            const mag = cfg.magnetEnabled && cfg.magnetResize;
-            if (w.resize && (mag || cfg.stickyEnabled)) {
+            // A tiled window belongs to the tiling: no magnet, no sticky
+            // neighbours – the others are arranged anew once it is let go.
+            const tiledR = tiler.isTiled(w);
+            const mag = cfg.magnetEnabled && cfg.magnetResize && !tiledR;
+            if (w.resize && (mag || cfg.stickyEnabled || tiledR)) {
                 resizeWin = w;
                 resizeStart = rectOf(w.frameGeometry);
                 resizeLast = null;
                 lastMagnet = null;
-                if (cfg.stickyEnabled) stickyStart(w); else stickyLinks = [];
+                holdState = null; holdPrev = null;
+                if (cfg.stickyEnabled && !tiledR) stickyStart(w); else { stickyLinks = []; stickyFaded = []; }
                 // windows that follow the resize are no magnet targets
                 const skip = stickyLinks.map(function (k) { return k.w; });
                 dragOthers = mag ? otherRects(w, skip) : [];
             }
             return;
         }
-        if (!cfg.snapEnabled && !cfg.edgeEnabled && !cfg.magnetEnabled) return;
+        const tiled = tiler.isTiled(w);
+        const swapping = cfg.swapEnabled && cfg.swapDrag;
+        if (!snapOn && !edgeOn && !cfg.magnetEnabled && !tiled && !swapping) return;
         reapplyTimer.stop();
         pendingWin = null;
         demoStep.stop();
@@ -622,10 +732,14 @@ Item {
         const id = String(w.internalId);
         const rec = snapped[id];
         const fg = w.frameGeometry;
+        dragOrig = rectOf(fg);
+        dragSnapRec = rec && sameRect(fg, rec.rect) ? rec : null;
+        dragTiled = tiled;
+        swapCandidate = null; swapTarget = null;
         let startW = fg.width, startH = fg.height;
         // A snapped window gets its old size back once you pull it out again.
         // Keep the cursor at the same relative spot on the title bar.
-        if (rec && cfg.restoreSize && sameRect(fg, rec.rect)) {
+        if (rec && cfg.restoreSize && sameRect(fg, rec.rect) && !tiled && !tilingMode) {
             const c = Workspace.cursorPos;
             const ratio = (c.x - fg.x) / Math.max(1, fg.width);
             w.frameGeometry = Qt.rect(Math.round(c.x - rec.w * ratio), fg.y, rec.w, rec.h);
@@ -636,39 +750,159 @@ Item {
 
         dragWin = w;
         refreshScreen(outputAt(Workspace.cursorPos));
-        dragOthers = cfg.magnetEnabled ? otherRects(w) : [];
-        dragBlockers = cfg.edgeEnabled && cfg.edgeSmart ? dockedRects(w) : [];
-        fillOthers = cfg.edgeEnabled && cfg.edgeFill ? otherRects(w) : [];
+        dragOthers = cfg.magnetEnabled && !tiled ? otherRects(w) : [];
+        holdPrev = rectOf(w.frameGeometry);
+        holdState = E.newHold(holdPrev);
+        dragBlockers = edgeOn && cfg.edgeSmart ? dockedRects(w) : [];
+        fillOthers = edgeOn && cfg.edgeFill ? otherRects(w) : [];
         edgeStage = 1;
         lastMagnet = null;
         edgePending = ""; edgeActive = "";
         setHover(-1, -1);
         barState = 0;
-        if (cfg.snapEnabled || cfg.edgeEnabled) overlayShow();
+        if (snapOn || edgeOn || swapping || tiled) overlayShow();
         updateDrag();
     }
 
     function onMoveFinished(w) {
         if (w === resizeWin) {
             const m = lastMagnet;
-            if (m && !sameRect(resizeLast || w.frameGeometry, m)) {
+            const held = m && !sameRect(resizeLast || w.frameGeometry, m);
+            if (held) {
                 w.frameGeometry = Qt.rect(m.x, m.y, m.width, m.height);
                 if (stickyLinks.length) stickyStep(w, m);
             }
             stickyEnd(false);
+            if (held) {
+                settleList = settleList.concat([{ w: w, rect: m }]);
+                settleTimer.count = 0; settleTimer.restart();
+            }
+            if (tiler.isTiled(w)) tiler.resized(w, held ? m : rectOf(resizeLast || w.frameGeometry));
             resizeWin = null; resizeStart = null; resizeLast = null; lastMagnet = null;
+            holdState = null; holdPrev = null;
             return;
         }
         if (w !== dragWin) return;
         const li = hoverLayout, zi = hoverZone;
         const area = Qt.rect(areaGeo.x, areaGeo.y, areaGeo.width, areaGeo.height);
-        const z = (cfg.snapEnabled && barState === 2 && zi >= 0 && li >= 0 && li < barLayouts.length) ? barLayouts[li].zones[zi] : null;
+        const z = (snapOn && barState === 2 && zi >= 0 && li >= 0 && li < barLayouts.length) ? barLayouts[li].zones[zi] : null;
         const plan = !z && edgeActive ? edgePlan(edgeActive) : null;
         const mag = cfg.magnetEnabled ? lastMagnet : null;
+        const target = swapTarget;
+        const tiled = dragTiled;
         endDrag();
-        if (z) snapWindow(w, z, area);
-        else if (plan) applyPlan(w, plan);
+        if (z || plan) {
+            // a tiled window dropped on the bar or an edge leaves the tiling
+            if (tiled) tiler.setFloating(w, true);
+            if (z) snapWindow(w, z, area); else applyPlan(w, plan);
+        }
+        else if (target) swapPlaces(w, target, dragOrig, dragSnapRec);
+        else if (tiled) tiler.schedule();
         else if (mag && !sameRect(w.frameGeometry, mag)) w.frameGeometry = Qt.rect(mag.x, mag.y, mag.width, mag.height);
+    }
+
+    // ------------------------------------------------------------ swapping
+    // The window under the cursor, from the top of the stack down.
+    function windowAt(p, skip) {
+        const list = Workspace.stackingOrder || [];
+        for (let i = list.length - 1; i >= 0; i--) {
+            const o = list[i];
+            // our own windows (overlay, button) and closing ones are see-through
+            if (!o || o === skip || o.deleted || !o.normalWindow || o.minimized || isExcluded(o) || !onCurrentDesktop(o)) continue;
+            const g = o.frameGeometry;
+            if (p.x >= g.x && p.x < g.x + g.width && p.y >= g.y && p.y < g.y + g.height) return o;
+        }
+        return null;
+    }
+
+    // While dragging: rest the cursor over the middle of another window (or
+    // anywhere over a tiled one while tiling) and the two trade places on drop.
+    function updateSwap(p) {
+        if (!dragWin) return;
+        const allowed = dragTiled || (cfg.swapEnabled && cfg.swapDrag);
+        // only a zone of the snap bar or a screen edge in reach wins over swapping
+        const busy = edgePending !== "" || edgeActive !== "" || (barState === 2 && hoverZone >= 0);
+        let t = null;
+        if (allowed && !busy) {
+            const o = windowAt(p, dragWin);
+            if (o && isEligible(o)) {
+                const g = o.frameGeometry;
+                const inner = dragTiled
+                    || (p.x > g.x + g.width * 0.25 && p.x < g.x + g.width * 0.75
+                        && p.y > g.y + g.height * 0.25 && p.y < g.y + g.height * 0.75);
+                if (inner) t = o;
+            }
+        }
+        if (t === swapCandidate) return;
+        swapCandidate = t;
+        setSwapTarget(t);
+    }
+
+    function setSwapTarget(t) {
+        if (t === swapTarget) return;
+        swapTarget = t;
+        if (t) lastMagnet = null;
+        updatePreview();
+    }
+
+    // a goes to b's place, b to `aRect` (where a was before the drag)
+    function swapPlaces(a, b, aRect, aRec) {
+        if (!a || !b || a === b) return;
+        const ra = aRect || rectOf(a.frameGeometry), rb = rectOf(b.frameGeometry);
+        const ta = tiler.isTiled(a), tb = tiler.isTiled(b);
+        if (ta && tb) { tiler.swap(a, b); return; }
+        const ka = String(a.internalId), kb = String(b.internalId);
+        const recA = aRec || (snapped[ka] && sameRect(Qt.rect(ra.x, ra.y, ra.width, ra.height), snapped[ka].rect) ? snapped[ka] : null);
+        const recB = snapped[kb] && sameRect(b.frameGeometry, snapped[kb].rect) ? snapped[kb] : null;
+        if (tb) { tiler.replace(a, b); setRect(b, ra); return; }
+        if (ta) { tiler.replace(b, a); setRect(a, rb); return; }
+        setRect(a, rb);
+        setRect(b, ra);
+        // a snapped place stays snapped for the window that moves in
+        delete snapped[ka]; delete snapped[kb];
+        if (recB) snapped[ka] = { w: recA ? recA.w : ra.width, h: recA ? recA.h : ra.height, rect: { x: rb.x, y: rb.y, width: rb.width, height: rb.height } };
+        if (recA) snapped[kb] = { w: recB ? recB.w : rb.width, h: recB ? recB.h : rb.height, rect: { x: ra.x, y: ra.y, width: ra.width, height: ra.height } };
+    }
+
+    // set a rect and keep it there for a moment (apps sometimes answer late)
+    function setRect(w, r) {
+        const rc = Qt.rect(Math.round(r.x), Math.round(r.y), Math.round(r.width), Math.round(r.height));
+        try { if (w.tile) w.tile = null; } catch (e) {}
+        try { if (isMaximized(w, areaOf(w))) w.setMaximize(false, false); } catch (e) {}
+        w.frameGeometry = rc;
+        settleList = settleList.filter(function (it) { return it.w !== w; }).concat([{ w: w, rect: rc }]);
+        settleTimer.count = 0; settleTimer.restart();
+    }
+
+    // the nearest window in a direction ("left", "right", "up", "down")
+    function neighbourIn(w, dir) {
+        const r = rectOf(w.frameGeometry);
+        const cx = r.x + r.width / 2, cy = r.y + r.height / 2;
+        const list = Workspace.stackingOrder || [];
+        let best = null, bestD = 1e9;
+        for (let i = 0; i < list.length; i++) {
+            const o = list[i];
+            if (!o || o === w || !isEligible(o) || o.minimized || !onCurrentDesktop(o)) continue;
+            if (o.output && w.output && o.output !== w.output) continue;
+            const g = o.frameGeometry;
+            const ox = g.x + g.width / 2, oy = g.y + g.height / 2;
+            const vOver = Math.min(r.y + r.height, g.y + g.height) - Math.max(r.y, g.y);
+            const hOver = Math.min(r.x + r.width, g.x + g.width) - Math.max(r.x, g.x);
+            let d = -1;
+            if (dir === "left" && ox < cx - 1) d = (cx - ox) + (vOver > 0 ? 0 : 5000) + Math.abs(cy - oy) * 0.5;
+            if (dir === "right" && ox > cx + 1) d = (ox - cx) + (vOver > 0 ? 0 : 5000) + Math.abs(cy - oy) * 0.5;
+            if (dir === "up" && oy < cy - 1) d = (cy - oy) + (hOver > 0 ? 0 : 5000) + Math.abs(cx - ox) * 0.5;
+            if (dir === "down" && oy > cy + 1) d = (oy - cy) + (hOver > 0 ? 0 : 5000) + Math.abs(cx - ox) * 0.5;
+            if (d >= 0 && d < bestD) { bestD = d; best = o; }
+        }
+        return best;
+    }
+
+    function swapDirection(dir) {
+        const w = Workspace.activeWindow;
+        if (!isEligible(w)) return;
+        const n = neighbourIn(w, dir);
+        if (n) swapPlaces(w, n, null, null);
     }
 
     function applyPlan(w, plan) {
@@ -683,6 +917,9 @@ Item {
 
     function endDrag() {
         dragWin = null;
+        dragTiled = false;
+        swapCandidate = null;
+        swapTarget = null;
         showTimer.stop();
         hideTimer.stop();
         edgeTimer.stop();
@@ -724,9 +961,10 @@ Item {
         const out = outputAt(p);
         if (out !== curOutput) refreshScreen(out);
 
-        const edge = dragWin && cfg.edgeEnabled ? currentEdge(p) : "";
+        const edge = dragWin && edgeOn ? currentEdge(p) : "";
         setEdge(edge);
-        if (cfg.snapEnabled || demoMode) updateBar(p, edge);
+        if (snapOn || demoMode) updateBar(p, edge);
+        updateSwap(p);
     }
 
     function updateBar(p, edge) {
@@ -784,7 +1022,10 @@ Item {
         } else if (edgeActive && cfg.edgePreview) {
             const plan = edgePlan(edgeActive);
             if (plan) r = plan.rect;
+        } else if (swapTarget) {
+            r = rectOf(swapTarget.frameGeometry);
         }
+        previewSwap = !!r && !!swapTarget && !(zi >= 0 && li >= 0) && !edgeActive;
         if (r) {
             previewRect = Qt.rect(r.x - scrGeo.x, r.y - scrGeo.y, r.width, r.height);
             previewVisible = true;
@@ -862,12 +1103,15 @@ Item {
     property bool dlgMaximized: false
     property var dlgSaved: null
     property var dlgDrag: null
-    readonly property int dlgMinW: 820
-    readonly property int dlgMinH: 480
+    readonly property int dlgMinW: 680
+    readonly property int dlgMinH: 420
 
     function openSettings() {
         readDecoration();
         if (layoutsDialog.visible) {
+            const ew = editorWindow();
+            try { if (ew && ew.minimized) ew.minimized = false; } catch (e) {}
+            try { layoutsDialog.showNormal(); } catch (e) {}
             try { layoutsDialog.raise(); layoutsDialog.requestActivate(); } catch (e) {}
             return;
         }
@@ -877,6 +1121,9 @@ Item {
         dlgH = Math.min(areaGeo.height, Math.max(dlgMinH, Math.min(880, Math.round(areaGeo.height * 0.92))));
         layoutsDialog.x = Math.round(areaGeo.x + (areaGeo.width - dlgW) / 2);
         layoutsDialog.y = Math.round(areaGeo.y + (areaGeo.height - dlgH) / 2);
+        // a resize by KWin replaces these bindings; bring them back
+        editorHost.width = Qt.binding(() => root.dlgW);
+        editorHost.height = Qt.binding(() => root.dlgH);
         layoutsDialog.visible = true;
         shortcutService.readAll(K.ACTIONS, shortcutText);
         try { layoutsDialog.raise(); layoutsDialog.requestActivate(); } catch (e) {}
@@ -887,9 +1134,13 @@ Item {
         dlgDrag = null;
     }
 
-    function beginWindowDrag() {
-        const c = Workspace.cursorPos;
-        dlgDrag = { cx: c.x, cy: c.y, x: layoutsDialog.x, y: layoutsDialog.y, w: dlgW, h: dlgH };
+    function beginWindowDrag(at) {
+        const c = at || Workspace.cursorPos;
+        const ew = editorWindow();
+        let g = { x: layoutsDialog.x, y: layoutsDialog.y, width: dlgW, height: dlgH };
+        try { if (ew && ew.frameGeometry.width > 0) g = ew.frameGeometry; } catch (e) {}
+        dlgDrag = { cx: c.x, cy: c.y, x: Math.round(g.x), y: Math.round(g.y), w: Math.round(g.width), h: Math.round(g.height), win: ew };
+        raiseEditor();
     }
     function endWindowDrag() { dlgDrag = null; }
 
@@ -900,35 +1151,59 @@ Item {
             // dragging a maximized window restores it under the cursor
             const rel = (dlgDrag.cx - layoutsDialog.x) / Math.max(1, dlgW);
             dlgMaximized = false;
-            if (dlgSaved) { dlgW = dlgSaved.w; dlgH = dlgSaved.h; }
-            dlgDrag = { cx: c.x, cy: c.y, x: Math.round(c.x - dlgW * rel), y: layoutsDialog.y, w: dlgW, h: dlgH };
+            const ew = dlgDrag.win;
+            if (dlgSaved) setEditorGeometry(Math.round(c.x - dlgSaved.w * rel), layoutsDialog.y, dlgSaved.w, dlgSaved.h);
+            dlgDrag = { cx: c.x, cy: c.y, x: Math.round(c.x - dlgW * rel), y: layoutsDialog.y, w: dlgW, h: dlgH, win: ew };
         }
         layoutsDialog.x = Math.round(dlgDrag.x + c.x - dlgDrag.cx);
         layoutsDialog.y = Math.round(Math.max(virtGeo.y, dlgDrag.y + c.y - dlgDrag.cy));
     }
 
-    function resizeWindow(mode) {
+    // mode bits: 1 right, 2 bottom, 4 left, 8 top
+    function resizeWindow(mode, at) {
         if (!dlgDrag) return;
-        const c = Workspace.cursorPos;
-        if (mode & 1) dlgW = Math.max(dlgMinW, Math.round(dlgDrag.w + c.x - dlgDrag.cx));
-        if (mode & 2) dlgH = Math.max(dlgMinH, Math.round(dlgDrag.h + c.y - dlgDrag.cy));
+        const c = at || Workspace.cursorPos;
+        const dx = c.x - dlgDrag.cx, dy = c.y - dlgDrag.cy;
+        let x = dlgDrag.x, y = dlgDrag.y, w = dlgDrag.w, h = dlgDrag.h;
+        if (mode & 1) w = Math.max(dlgMinW, Math.round(dlgDrag.w + dx));
+        if (mode & 2) h = Math.max(dlgMinH, Math.round(dlgDrag.h + dy));
+        if (mode & 4) { w = Math.max(dlgMinW, Math.round(dlgDrag.w - dx)); x = dlgDrag.x + dlgDrag.w - w; }
+        if (mode & 8) { h = Math.max(dlgMinH, Math.round(dlgDrag.h - dy)); y = dlgDrag.y + dlgDrag.h - h; }
+        setEditorGeometry(x, y, w, h);
+    }
+
+    // the editor as KWin sees it (found by its title)
+    function editorWindow() {
+        try {
+            const list = Workspace.windowList();
+            for (let i = 0; i < list.length; i++)
+                if (String(list[i].caption || "") === String(layoutsDialog.title)) return list[i];
+        } catch (e) {}
+        return null;
+    }
+    function raiseEditor() {
+        const ew = editorWindow();
+        try { if (ew) Workspace.raiseWindow(ew); } catch (e) {}
+        try { layoutsDialog.raise(); } catch (e) {}
+    }
+    // Size and position go through KWin itself (like for any other window)
+    // and through the dialog, whichever of the two gets there first.
+    function setEditorGeometry(x, y, w, h) {
+        dlgW = w; dlgH = h;
+        layoutsDialog.x = x; layoutsDialog.y = y;
+        const ew = (dlgDrag && dlgDrag.win) || editorWindow();
+        try { if (ew) ew.frameGeometry = Qt.rect(x, y, w, h); } catch (e) {}
     }
 
     function toggleMaximize() {
         if (!dlgMaximized) {
             dlgSaved = { x: layoutsDialog.x, y: layoutsDialog.y, w: dlgW, h: dlgH };
             refreshScreen(outputAt(Qt.point(layoutsDialog.x + 20, layoutsDialog.y + 20)));
-            dlgW = areaGeo.width;
-            dlgH = areaGeo.height;
-            layoutsDialog.x = areaGeo.x;
-            layoutsDialog.y = areaGeo.y;
+            setEditorGeometry(areaGeo.x, areaGeo.y, areaGeo.width, areaGeo.height);
             dlgMaximized = true;
         } else {
             dlgMaximized = false;
-            if (dlgSaved) {
-                dlgW = dlgSaved.w; dlgH = dlgSaved.h;
-                layoutsDialog.x = dlgSaved.x; layoutsDialog.y = dlgSaved.y;
-            }
+            if (dlgSaved) setEditorGeometry(dlgSaved.x, dlgSaved.y, dlgSaved.w, dlgSaved.h);
         }
     }
 
@@ -1002,7 +1277,7 @@ Item {
     property bool kdeApplying: false
 
     function kdeWanted() {
-        const edges = cfg.kdeEdgesOff && (cfg.snapEnabled || cfg.edgeEnabled);
+        const edges = cfg.kdeEdgesOff && (snapOn || edgeOn || tilingMode);
         const snap = cfg.kdeSnapOff && cfg.magnetEnabled;
         return {
             max: edges ? false : kdeSaved.max,
@@ -1225,33 +1500,150 @@ Item {
         // no properties on purpose: nothing ever gets written to kwinrc
     }
 
-    function readOpenFlag() {
+    // value of one quick-menu entry; missing = the default from main.xml
+    function quickValue(key, def) {
+        let v;
+        try { v = kwinrcReader.value(key, def); } catch (e) { v = def; }
+        if (v === undefined || v === null || v === "") return def;
+        if (typeof def === "boolean") return v === true || String(v).toLowerCase() === "true";
+        const n = parseInt(v, 10);
+        return isNaN(n) ? def : n;
+    }
+
+    // The quick menu writes kwinrc; the editor writes kde-snaplayout.ini. A
+    // quick value only wins when it really changed since we last looked, so
+    // a stale value shown in the dialog never undoes a change made in the editor.
+    readonly property var quickKeys: [
+        { k: "ThemeMode", c: "themeMode", d: 0 },
+        { k: "SnapEnabled", c: "snapEnabled", d: true },
+        { k: "EdgeEnabled", c: "edgeEnabled", d: true },
+        { k: "MagnetEnabled", c: "magnetEnabled", d: true },
+        { k: "KeysEnabled", c: "keysEnabled", d: true },
+        { k: "SwapEnabled", c: "swapEnabled", d: true },
+        { k: "TileEnabled", c: "tileEnabled", d: false },
+        { k: "TileMode", c: "tileMode", d: false }
+    ]
+
+    // returns true when the editor should open
+    function pollQuick() {
         try { kwinrcReader.sync(); } catch (e) {}
-        let v = false;
-        try { v = kwinrcReader.value("OpenSettings", false); } catch (e) { v = false; }
-        return v === true || String(v).toLowerCase() === "true";
-    }
-
-    function checkOpenRequest() {
-        const flag = readOpenFlag();
-        if (flag === cfg.lastOpenFlag) return false;
-        cfg.lastOpenFlag = flag;
-        try { cfg.sync(); } catch (e) {}
-        return true;
-    }
-
-    // The quick menu also has the color scheme switch. Only a change there
-    // is applied, so the editor's own choice isn't overwritten every second.
-    function checkGearTheme() {
-        let v = -1;
-        try { v = Number(kwinrcReader.value("themeMode", 0)); } catch (e) { v = -1; }
-        if (isNaN(v) || v < 0 || v > 2) return;
-        if (cfg.lastGearTheme === -1) { cfg.lastGearTheme = v; return; }
-        if (v !== cfg.lastGearTheme) {
-            cfg.lastGearTheme = v;
-            cfg.themeMode = v;
-            try { cfg.sync(); } catch (e) {}
+        let last = {};
+        try { last = cfg.lastQuick ? JSON.parse(cfg.lastQuick) : null; } catch (e) { last = null; }
+        const first = last === null;
+        const now = {};
+        let changed = false, dirty = false;
+        for (let i = 0; i < quickKeys.length; i++) {
+            const q = quickKeys[i];
+            now[q.k] = quickValue(q.k, q.d);
         }
+        // our own write may not have reached kwinrc yet: wait for it (or give
+        // up after a few seconds) instead of taking the old values back
+        let waiting = false;
+        if (quickPending) {
+            if (JSON.stringify(now) === quickPending.js) quickPending = null;
+            else if (Date.now() - quickPending.t < 5000) waiting = true;
+            else { quickPending = null; last = now; dirty = true; }
+        }
+        for (let i = 0; i < quickKeys.length && !waiting; i++) {
+            const q = quickKeys[i];
+            const v = now[q.k];
+            if (first) { dirty = true; continue; }
+            if (last[q.k] !== v) {
+                dirty = true;
+                if (cfg[q.c] !== v) { cfg[q.c] = v; changed = true; }
+            }
+        }
+        if (dirty) cfg.lastQuick = JSON.stringify(now);
+        // the big button counts up every time it is clicked
+        let open = false;
+        const count = quickValue("OpenCounter", 0);
+        if (count !== cfg.lastOpenCount) {
+            open = cfg.lastOpenCount !== -1;
+            cfg.lastOpenCount = count;
+            dirty = true;
+        }
+        if (dirty || changed) { try { cfg.sync(); } catch (e) {} }
+        if (changed && !first) showOsd(modeText());
+        return open;
+    }
+
+    // Editor and shortcuts -> quick settings. KWin scripts cannot write config
+    // files, and rewriting kwinrc by hand would risk breaking it. Plasma's
+    // scripting interface writes it through KConfig, so the quick menu always
+    // shows the real values. Without plasmashell this simply does nothing.
+    property var quickWriter: null
+    property var quickPending: null
+    // the mode key as text for the quick settings ("Ctrl+Alt+A")
+    property string lastModeKey: ""
+    function modeKeyText() {
+        const k = shortcutService.keys["KDESnapLayoutModeSwitch"];
+        if (k === undefined) return lastModeKey || K.toText(K.defaultKey(K.actionById("KDESnapLayoutModeSwitch")));
+        return k.length ? k.map(K.toText).join(", ") : "–";
+    }
+    Connections {
+        target: shortcutService
+        function onRevisionChanged() { root.writeQuickSoon(); }
+    }
+
+    // Once: the mode key moves from Ctrl+Alt+Space to Ctrl+Alt+A, which
+    // "Automatic tiling on/off" had before. A key you chose yourself stays.
+    function migrateKeys() {
+        const mode = K.actionById("KDESnapLayoutModeSwitch"), tile = K.actionById("KDESnapLayoutTileToggle");
+        if (cfg.keysVersion >= 2) { shortcutService.read(mode.id, shortcutText(mode)); return; }
+        shortcutService.enqueue({ method: "shortcut", id: shortcutService.actionIdFor(mode.id, shortcutText(mode)), cb: function (ok, reply) {
+            if (!ok) return;          // kglobalaccel not there: try again next start
+            const codes = shortcutService.codesOf(reply);
+            const old = K.CTRL | K.ALT | 0x20;
+            if (codes.length === 0 || (codes.length === 1 && codes[0] === old)) {
+                shortcutService.assign(tile.id, shortcutText(tile), 0);
+                shortcutService.assign(mode.id, shortcutText(mode), K.CTRL | K.ALT | 0x41);
+            } else shortcutService.setKeys(mode.id, codes);
+            cfg.keysVersion = 2;
+            try { cfg.sync(); } catch (e) {}
+        } });
+    }
+    Timer { id: migrateTimer; interval: 2500; onTriggered: root.migrateKeys() }
+
+    function writeQuickSoon() { quickWriteTimer.restart(); }
+    Timer { id: quickWriteTimer; interval: 400; onTriggered: root.writeQuick() }
+    function writeQuick() {
+        const now = {};
+        for (let i = 0; i < quickKeys.length; i++) {
+            const q = quickKeys[i];
+            now[q.k] = typeof q.d === "boolean" ? !!cfg[q.c] : (parseInt(cfg[q.c], 10) || 0);
+        }
+        const js = JSON.stringify(now);
+        const mk = modeKeyText();
+        if (js === cfg.lastQuick && mk === lastModeKey) return;
+        let script = "var c = ConfigFile('kwinrc'); c.group = 'Script-kdesnaplayout';";
+        for (const k in now) script += " c.writeEntry('" + k + "', '" + String(now[k]) + "');";
+        script += " c.writeEntry('ModeKey', '" + mk.replace(/'/g, "") + "');";
+        try {
+            if (!quickWriter)
+                quickWriter = Qt.createQmlObject('import org.kde.kwin; DBusCall { service: "org.kde.plasmashell"; path: "/PlasmaShell"; '
+                                                 + 'dbusInterface: "org.kde.PlasmaShell"; method: "evaluateScript" }', root, "quickWriter");
+            quickWriter.arguments = [script];
+            quickWriter.call();
+        } catch (e) {
+            console.log("[kdesnaplayout] quick settings not updated:", e);
+            return;
+        }
+        // what we wrote is not a change made in the quick menu
+        lastModeKey = mk;
+        cfg.lastQuick = js;
+        quickPending = { js: js, t: Date.now() };
+        try { cfg.sync(); } catch (e) {}
+    }
+    Connections {
+        target: cfg
+        function onThemeModeChanged() { root.writeQuickSoon(); }
+        function onSnapEnabledChanged() { root.writeQuickSoon(); }
+        function onEdgeEnabledChanged() { root.writeQuickSoon(); }
+        function onMagnetEnabledChanged() { root.writeQuickSoon(); }
+        function onKeysEnabledChanged() { root.writeQuickSoon(); }
+        function onSwapEnabledChanged() { root.writeQuickSoon(); }
+        function onTileEnabledChanged() { root.writeQuickSoon(); }
+        function onTileModeChanged() { root.writeQuickSoon(); }
     }
 
     // ------------------------------------------------------------------ timers
@@ -1293,6 +1685,31 @@ Item {
             root.barExpanded = false;
         }
     }
+    Timer {                       // apps place their new windows a moment after they appear
+        id: tilerLate
+        interval: 350
+        onTriggered: tiler.retile()
+    }
+    Timer {
+        id: settleTimer
+        property int count: 0
+        interval: 70
+        repeat: true
+        onTriggered: {
+            const list = root.settleList;
+            let off = 0;
+            for (let i = 0; i < list.length; i++) {
+                const it = list[i];
+                try {
+                    if (!root.sameRect(it.w.frameGeometry, Qt.rect(it.rect.x, it.rect.y, it.rect.width, it.rect.height))) {
+                        it.w.frameGeometry = Qt.rect(it.rect.x, it.rect.y, it.rect.width, it.rect.height);
+                        off++;
+                    }
+                } catch (e) {}
+            }
+            if (off === 0 || ++count >= 6) { stop(); root.settleList = []; }
+        }
+    }
     Timer {
         id: reapplyTimer
         interval: 50
@@ -1306,7 +1723,15 @@ Item {
                     w.frameGeometry = root.pendingRect;
                 }
             } catch (e) { root.pendingWin = null; stop(); return; }
-            if (++root.reapplyCount >= 5) { root.pendingWin = null; stop(); }
+            if (++root.reapplyCount >= 10) {
+                // still not where it belongs: tell the log which app refused
+                try {
+                    if (!root.sameRect(w.frameGeometry, root.pendingRect))
+                        console.log("[kdesnaplayout] could not place", w.resourceClass, "wanted", JSON.stringify(root.pendingRect),
+                                    "got", JSON.stringify(root.rectOf(w.frameGeometry)), "min", JSON.stringify(w.minSize));
+                } catch (e) {}
+                root.pendingWin = null; stop();
+            }
         }
     }
     // demo: handle -> open bar -> walk over a few layouts -> slide away
@@ -1339,7 +1764,11 @@ Item {
     // --------------------------------------------------------- workspace hooks
     Connections {
         target: Workspace
-        function onWindowAdded(w) { root.hookWindow(w); }
+        function onWindowAdded(w) {
+            root.hookWindow(w);
+            tiler.revive(w);
+            if (tiler.active) { tiler.schedule(); tilerLate.restart(); }
+        }
         function onWindowRemoved(w) {
             const id = String(w.internalId);
             delete root.hooked[id];
@@ -1350,8 +1779,19 @@ Item {
             if (root.resizeWin === w) { root.stickyEnd(false); root.resizeWin = null; root.resizeStart = null; }
             root.stickyLinks = root.stickyLinks.filter(function (k) { return k.w !== w; });
             root.stickyFaded = root.stickyFaded.filter(function (f) { return f.w !== w; });
+            root.settleList = root.settleList.filter(function (f) { return f.w !== w; });
+            if (root.swapCandidate === w || root.swapTarget === w) { root.swapCandidate = null; root.setSwapTarget(null); }
+            tiler.untrack(w);
+            tiler.schedule();
         }
-        function onCursorPosChanged() { if (root.dragWin) root.updateDrag(); }
+        function onWindowActivated(w) {
+            if (!w) return;
+            const id = String(w.internalId);
+            root.mru = [id].concat(root.mru.filter(function (x) { return x !== id; })).slice(0, 200);
+        }
+        function onCursorPosChanged() {
+            if (root.dragWin) root.updateDrag();
+        }
         function onScreensChanged() { root.refreshVirtual(); }
     }
 
@@ -1359,7 +1799,7 @@ Item {
     // Every action is a KWin global shortcut. The sequence here is only the
     // default; KDE keeps the user's choice (System Settings → Shortcuts, or the
     // Keyboard page of the editor, which talks to kglobalaccel directly).
-    function shortcutText(a) { return I.tr("SeaQ Snap Layout: %1", I.tr(a.text)); }
+    function shortcutText(a) { return I.tr("KSnapUnity: %1", I.tr(a.text)); }
 
     Instantiator {
         model: K.ACTIONS
@@ -1374,6 +1814,43 @@ Item {
 
     property alias shortcuts: shortcutService
     ShortcutService { id: shortcutService }
+
+    property alias tiling: tiler
+    Tiler { id: tiler; app: root }
+
+    function saveSettings() { try { cfg.sync(); } catch (e) {} }
+    // window classes of the open windows (for "Always floating")
+    function openAppClasses() {
+        const out = [];
+        let list = [];
+        try { list = Workspace.windowList(); } catch (e) { list = Workspace.stackingOrder || []; }
+        for (let i = 0; i < list.length; i++) {
+            const w = list[i];
+            try {
+                if (!w || w.deleted || !w.normalWindow || isExcluded(w)) continue;
+                const c = String(w.resourceClass || "").toLowerCase();
+                if (c && out.indexOf(c) < 0) out.push(c);
+            } catch (e) {}
+        }
+        return out.sort();
+    }
+    function trLayoutName(id) { return T.isZones(id) ? I.layoutName(String(id).substring(6)) : I.tr(T.LAYOUTS[T.layoutIndex(id)].text); }
+    property alias tilerItem: tiler
+
+    function modeText() {
+        return tilingMode ? I.tr("Mode 2 – Automatic tiling") : I.tr("Mode 1 – Snap bar and screen edges");
+    }
+
+    // The mode shortcut: switches between snapping and tiling. Only possible
+    // when both sides are switched on; otherwise it just shows what runs.
+    function switchMode() {
+        if (modesAvailable) {
+            cfg.tileMode = !cfg.tileMode;
+            try { cfg.sync(); } catch (e) {}
+        }
+        showOsd(modeText());
+    }
+    onTilingModeChanged: { if (dragWin) endDrag(); barState = 0; setHover(-1, -1); writeQuickSoon(); }
 
     function toggleSetting(key) {
         cfg[key] = !cfg[key];
@@ -1390,9 +1867,33 @@ Item {
         if (id === "KDESnapLayoutToggleEdges") return toggleSetting("edgeEnabled");
         if (id === "KDESnapLayoutToggleMagnet") return toggleSetting("magnetEnabled");
         if (id === "KDESnapLayoutDemo") return demoBar();
+        if (id === "KDESnapLayoutModeSwitch") return switchMode();
+        if (id === "KDESnapLayoutTileToggle") {
+            toggleSetting("tileEnabled");
+            return showOsd(I.tr(cfg.tileEnabled ? "Automatic tiling on" : "Automatic tiling off") + " · " + modeText());
+        }
+        const aw = Workspace.activeWindow;
+        // tiling keys only do something while tiling runs
+        if (id === "KDESnapLayoutTileCycle") return tilingMode ? tiler.cycleLayout() : undefined;
+        if (id === "KDESnapLayoutTileGrow") return tilingMode ? tiler.changeRatio(5) : undefined;
+        if (id === "KDESnapLayoutTileShrink") return tilingMode ? tiler.changeRatio(-5) : undefined;
+        if (id === "KDESnapLayoutTileMoreMain") return tilingMode ? tiler.changeMasters(1) : undefined;
+        if (id === "KDESnapLayoutTileLessMain") return tilingMode ? tiler.changeMasters(-1) : undefined;
+        if (id === "KDESnapLayoutTileForward") return (tilingMode && isEligible(aw)) ? tiler.moveInOrder(aw, 1) : undefined;
+        if (id === "KDESnapLayoutTileBack") return (tilingMode && isEligible(aw)) ? tiler.moveInOrder(aw, -1) : undefined;
+        if (id === "KDESnapLayoutTileFloat") return (tilingMode && isEligible(aw)) ? tiler.toggleFloat(aw) : undefined;
+        if (id === "KDESnapLayoutTileMain") return (tilingMode && isEligible(aw)) ? tiler.promote(aw) : undefined;
+        if (K.SWAPS[id]) return cfg.swapEnabled ? swapDirection(K.SWAPS[id]) : undefined;
 
         const w = Workspace.activeWindow;
         if (!isEligible(w)) return;
+        // In mode 2 a tiled window belongs to the tiling: the arrow keys move it
+        // to its neighbour's place, the other snapping keys leave it alone.
+        if (tilingMode && tiler.isTiled(w)) {
+            const dirs = { KDESnapLayoutLeft: "left", KDESnapLayoutRight: "right", KDESnapLayoutTop: "up", KDESnapLayoutBottom: "down" };
+            if (dirs[id]) swapDirection(dirs[id]);
+            return;
+        }
         // a geometry still being re-applied from an earlier snap must not
         // undo what this key does
         if (pendingWin === w) { reapplyTimer.stop(); pendingWin = null; }
@@ -1404,6 +1905,8 @@ Item {
         // the size to come back to: the one before the first snap
         const pre = inPlace ? { w: rec.w, h: rec.h } : (isMaximized(w, area) ? null : { w: g.width, h: g.height });
 
+        // a tiled window that gets snapped, centered or maximized by key leaves the tiling
+        if (tiler.isTiled(w) && (K.ZONES[id] || id === "KDESnapLayoutCenter" || id === "KDESnapLayoutMaximize")) tiler.setFloating(w, true);
         if (K.ZONES[id]) {
             snapWindowRect(w, L.targetRect(area, K.ZONES[id], cfg.windowGap, cfg.edgeMargin), pre);
         } else if (id === "KDESnapLayoutMaximize") {
@@ -1435,10 +1938,11 @@ Item {
         readDecoration();
         const list = Workspace.stackingOrder;
         for (let i = 0; i < list.length; i++) hookWindow(list[i]);
-        if (checkOpenRequest()) openTimer.start();
-        checkGearTheme();
+        if (pollQuick()) openTimer.start();
         applyKdeOverrides();
         kwinrcWatch.start();
+        writeQuickSoon();
+        migrateTimer.start();
     }
 
     Timer {
@@ -1446,8 +1950,7 @@ Item {
         interval: 1000
         repeat: true
         onTriggered: {
-            if (root.checkOpenRequest()) root.openSettings();
-            root.checkGearTheme();
+            if (root.pollQuick()) root.openSettings();
             // pick up a changed window decoration while the editor is open
             if (layoutsDialog.visible) root.readDecoration(true);
         }
@@ -1463,7 +1966,7 @@ Item {
     // Click-through layer above everything, covering all screens.
     PlasmaCore.Dialog {
         id: overlay
-        title: "SeaQ Snap Layout"
+        title: "KSnapUnity"
         location: PlasmaCore.Types.Desktop
         type: PlasmaCore.Dialog.OnScreenDisplay
         backgroundHints: PlasmaCore.Types.NoBackground
@@ -1504,6 +2007,25 @@ Item {
                     Behavior on y      { enabled: preview.opacity > 0.05; NumberAnimation { duration: 140; easing.type: Easing.OutCubic } }
                     Behavior on width  { enabled: preview.opacity > 0.05; NumberAnimation { duration: 140; easing.type: Easing.OutCubic } }
                     Behavior on height { enabled: preview.opacity > 0.05; NumberAnimation { duration: 140; easing.type: Easing.OutCubic } }
+                    // trading places: two arrows in the middle
+                    Rectangle {
+                        anchors.centerIn: parent
+                        visible: root.previewSwap
+                        width: 64; height: 64; radius: 32
+                        color: Qt.rgba(preview.tint.r, preview.tint.g, preview.tint.b, 0.85)
+                        Canvas {
+                            anchors.centerIn: parent
+                            width: 34; height: 34
+                            onPaint: {
+                                const c = getContext("2d");
+                                c.reset(); c.strokeStyle = "white"; c.fillStyle = "white"; c.lineWidth = 3; c.lineCap = "round";
+                                c.beginPath(); c.moveTo(5, 11); c.lineTo(28, 11); c.stroke();
+                                c.beginPath(); c.moveTo(30, 11); c.lineTo(23, 4); c.lineTo(23, 18); c.closePath(); c.fill();
+                                c.beginPath(); c.moveTo(29, 23); c.lineTo(6, 23); c.stroke();
+                                c.beginPath(); c.moveTo(4, 23); c.lineTo(11, 16); c.lineTo(11, 30); c.closePath(); c.fill();
+                            }
+                        }
+                    }
                 }
 
                 SnapBar {
@@ -1526,6 +2048,8 @@ Item {
                     x: Math.round((screenItem.width - width) / 2)
                     y: -200
                     opacity: 0
+                    // in mode 2 (tiling) the bar never shows, not even its edge
+                    visible: root.snapOn || root.demoMode
                 }
 
                 NumberAnimation { id: slideAnim; target: snapBar; property: "y" }
@@ -1534,14 +2058,17 @@ Item {
         }
     }
 
+    Osd { id: osd; app: root }
+
     // ----------------------------------------------------------- editor window
     PlasmaCore.Dialog {
         id: layoutsDialog
-        title: I.tr("SeaQ Snap Layout – Settings editor")
+        title: I.tr("KSnapUnity – Settings editor")
         location: PlasmaCore.Types.Floating
         type: PlasmaCore.Dialog.Normal
         backgroundHints: PlasmaCore.Types.NoBackground
-        flags: Qt.FramelessWindowHint | Qt.WindowStaysOnTopHint
+        // no "stay on top": the editor stacks like every other window
+        flags: Qt.FramelessWindowHint
         hideOnWindowDeactivate: false
         visible: false
 
